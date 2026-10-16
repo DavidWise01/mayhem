@@ -1,0 +1,1 @@
+{"slug": "three-gap-sunflower", "seal": "e6bab99d1b24e80bced17210cb1be9914a10d6ddb72c3c0ac50debcb7e0740b0", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

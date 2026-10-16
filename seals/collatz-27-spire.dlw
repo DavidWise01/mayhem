@@ -1,0 +1,1 @@
+{"slug": "collatz-27-spire", "seal": "b6276c0bf00ae0df34ee7d0006ca9cc391bf509db317b1b5a4a0975aa53480b3", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

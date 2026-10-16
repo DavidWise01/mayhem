@@ -1,0 +1,1 @@
+{"slug": "odd-squares-stairs", "seal": "e800885763c91135714c5f6da1b65c0f6a9cd0f4a059bd8d45c66c5307a427b8", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "fibonacci-vault", "seal": "8add289cce605969882e887cca774e7c5f484d495bad0e48d59554f568179e29", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "prime-gaps-cathedral", "seal": "d34c1c998d50f1ba9981a17cce318cfb082331435c20d195f0ad205847ebc1df", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

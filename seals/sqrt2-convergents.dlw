@@ -1,0 +1,1 @@
+{"slug": "sqrt2-convergents", "seal": "d15327db651886b8f8c1e6bf4b1ff16b3437b3b33e6358c35ae6358e8f5aae8f", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

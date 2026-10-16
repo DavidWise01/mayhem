@@ -128,6 +128,29 @@ Dave: "you can make the next 12 spheres anything you want." Twelve hand-drawn sp
 - [Descartes Rainbow · Chalk Pastel](./spheres/rainbow-pastel.html): STEWARD V · LORENZ'S WEATHER, style soft chalk pastel. seal ee326dc9eb11716e1f7aceb8b7089810a82dc57176331a08701f2ece4e16f559
 - [Kepler Orbits · Cyanotype](./spheres/kepler-cyanotype.html): STEWARD VII · LAGRANGE'S ARMS, style cyanotype sun print. seal fed1154e92c85165193ae3ff70b8357cc2546bc758b9ef664f46549f9ca859ef
 
+## Gothic Noir Neon (Dave t220u)
+Dave: "switch to a gothic noir neon themes and do whatever you want, do 100 and mix up the topics". Dark-stage exception: Dave explicitly asked for gothic noir, so these pages use dark stages with neon chrome (magenta, cyan, acid green, violet) instead of plain black. Every page has an ARTIST and a CRITIC agent, a LIT computation check, AMBER citations and the workspace improvement loop.
+- [Prime Gaps · Cathedral of Gaps](./spheres/prime-gaps-cathedral.html): Mathematics, skyline in neon tube. seal d34c1c998d50f1ba9981a17cce318cfb082331435c20d195f0ad205847ebc1df
+- [Fibonacci Ratios · The Vault](./spheres/fibonacci-vault.html): Mathematics, curve in chalk on slate. seal 8add289cce605969882e887cca774e7c5f484d495bad0e48d59554f568179e29
+- [Pascal Row 10 · Neon Rose](./spheres/pascal-rose.html): Mathematics, radial in charcoal smoke. seal 666fafa5dc670a318c42f196463036136c720a1d9b0e38f0ea005d49eb37083d
+- [Catalan Numbers · Crypt Stairs](./spheres/catalan-crypt.html): Mathematics, steps in ink wash in rain. seal 08d8ec6bab2d870d2728c60dc3ce42415110ac10d111d84d713d4f1089ce2fb3
+- [Collatz 27 · The Long Spire](./spheres/collatz-27-spire.html): Mathematics, curve in etched glass. seal b6276c0bf00ae0df34ee7d0006ca9cc391bf509db317b1b5a4a0975aa53480b3
+- [Leibniz π · Candle Row](./spheres/leibniz-candles.html): Mathematics, candles in film-grain noir. seal e19afc50262e7aab8da8f720c477eb3c59a687f8643d9137ac991fabe9720d3d
+- [Euler e · Lanterns](./spheres/euler-e-lanterns.html): Mathematics, moons in stained glass. seal df49540b04feb57988114b525326586a228306889b26310a8c51ac3670c55a76
+- [Harmonic Series · Bell Tower](./spheres/harmonic-bells.html): Mathematics, bars in spray stencil. seal 35ec943ba3d66ba924cf890de1ee4102475da1711412d2bdd38c9eb0f6a5f7ae
+- [Perfect Numbers · Altar of σ](./spheres/perfect-numbers-altar.html): Mathematics, grid in scratchboard. seal 8243478523668971401fc0c309f4e38ab26ace372376aa1a37904be20b383138
+- [Euler Totient · Gargoyles](./spheres/totient-gargoyles.html): Mathematics, dots in pastel haze. seal d46d39e4217b7f8ab04c2081d6aed40cd00e8464f7d8a82a7d88056f7ad36fc4
+- [Three-Gap Theorem · Sunflower](./spheres/three-gap-sunflower.html): Mathematics, spiral in neon tube. seal e6bab99d1b24e80bced17210cb1be9914a10d6ddb72c3c0ac50debcb7e0740b0
+- [√2 Convergents · Lancet Windows](./spheres/sqrt2-convergents.html): Mathematics, skyline in chalk on slate. seal d15327db651886b8f8c1e6bf4b1ff16b3437b3b33e6358c35ae6358e8f5aae8f
+- [Odd Sums · Square Stairs](./spheres/odd-squares-stairs.html): Mathematics, steps in charcoal smoke. seal e800885763c91135714c5f6da1b65c0f6a9cd0f4a059bd8d45c66c5307a427b8
+- [Basel Problem · Chalice](./spheres/basel-chalice.html): Mathematics, curve in ink wash in rain. seal abb4a033a1c8ef9476e6d4912d190943ba1e58761cfdfe18528dfb99a42ebe84
+- [Popcount · Binary Catacomb](./spheres/popcount-catacomb.html): Mathematics, grid in etched glass. seal 4036fab1ecb33353d719599eddf5d852f733903aae14e5b0a06d38fd443a376b
+- [Large-Swing Pendulum · Clock Tower](./spheres/pendulum-agm.html): Physics, orbit in film-grain noir. seal 953aaa71c18f1bbab6f41c4f1a633d69fa869d7cbaeb3e2ae3f0824470dc5c52
+- [Projectile Range · Arcs in the Rain](./spheres/projectile-arcs.html): Physics, wave in stained glass. seal c24a505217171d59c99644cc81eba04fa10b3fc44268e0cae031696b3892c120
+- [Planck Spectrum of the Sun · Neon Glow](./spheres/planck-sun.html): Physics, curve in spray stencil. seal f2a52c2551ff014ff7332936c492df3646706f0b48997565120a7fcbf4fd5252
+- [Damped Oscillator · Fading Bell](./spheres/damped-bell.html): Physics, wave in scratchboard. seal 5e6133564b325ef30949c512f3a33cedaad4fabef10e96a9421321f57ab1f483
+- [String Harmonics · Organ Pipes](./spheres/string-harmonics.html): Physics, skyline in pastel haze. seal b1dced48bc4b3c3f139d55cc0768299779ccafb641af076db39ef09b4f9b1bc3
+
 ## Constantly improve the workspace
 Arriving agents, keep improving this workspace and never stop:
 1. Measure: pick a sphere, run its check, and note the score, acceptance rate and plateau.

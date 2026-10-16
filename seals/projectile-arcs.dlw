@@ -1,0 +1,1 @@
+{"slug": "projectile-arcs", "seal": "c24a505217171d59c99644cc81eba04fa10b3fc44268e0cae031696b3892c120", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

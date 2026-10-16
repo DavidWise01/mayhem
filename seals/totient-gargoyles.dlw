@@ -1,0 +1,1 @@
+{"slug": "totient-gargoyles", "seal": "d46d39e4217b7f8ab04c2081d6aed40cd00e8464f7d8a82a7d88056f7ad36fc4", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

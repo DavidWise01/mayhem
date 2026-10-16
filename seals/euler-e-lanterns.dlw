@@ -1,0 +1,1 @@
+{"slug": "euler-e-lanterns", "seal": "df49540b04feb57988114b525326586a228306889b26310a8c51ac3670c55a76", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

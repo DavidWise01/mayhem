@@ -1,0 +1,1 @@
+{"slug": "catalan-crypt", "seal": "08d8ec6bab2d870d2728c60dc3ce42415110ac10d111d84d713d4f1089ce2fb3", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "pendulum-agm", "seal": "953aaa71c18f1bbab6f41c4f1a633d69fa869d7cbaeb3e2ae3f0824470dc5c52", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

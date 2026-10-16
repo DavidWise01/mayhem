@@ -1,0 +1,1 @@
+{"slug": "basel-chalice", "seal": "abb4a033a1c8ef9476e6d4912d190943ba1e58761cfdfe18528dfb99a42ebe84", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

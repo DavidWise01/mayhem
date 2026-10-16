@@ -1,0 +1,1 @@
+{"slug": "string-harmonics", "seal": "b1dced48bc4b3c3f139d55cc0768299779ccafb641af076db39ef09b4f9b1bc3", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

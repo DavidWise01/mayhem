@@ -1,0 +1,1 @@
+{"slug": "pascal-rose", "seal": "666fafa5dc670a318c42f196463036136c720a1d9b0e38f0ea005d49eb37083d", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

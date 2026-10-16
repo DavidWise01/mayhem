@@ -1,0 +1,1 @@
+{"slug": "leibniz-candles", "seal": "e19afc50262e7aab8da8f720c477eb3c59a687f8643d9137ac991fabe9720d3d", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
