@@ -1,0 +1,1 @@
+{"slug": "mandelbrot-escape", "seal": "76d3fc588d8dc440085a20adf6e121655dbe2bffebb28b4a2b246f95e39ed381", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

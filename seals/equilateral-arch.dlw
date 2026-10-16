@@ -1,0 +1,1 @@
+{"slug": "equilateral-arch", "seal": "26579483953a90b95b4dc5162d4da6d7cfa6c2c8ec6889372c0952a342d073be", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

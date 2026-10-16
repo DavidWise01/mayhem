@@ -1,0 +1,1 @@
+{"slug": "brachistochrone", "seal": "f098eb61915ad5b8f6d777b60488aa8e9af51ffe2aa786c65067c08640490242", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

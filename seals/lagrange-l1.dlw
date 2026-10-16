@@ -1,0 +1,1 @@
+{"slug": "lagrange-l1", "seal": "77986030230e0f202d8c9cc14fcfc39a49222a52d63dd2617b1337d177815a1d", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "game-of-nim-xor", "seal": "098098d1f38cb91a526327979a52002485ac9c060bd08121b655904bce090835", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

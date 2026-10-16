@@ -1,0 +1,1 @@
+{"slug": "napier-bones", "seal": "ca7c8f2fddb54deff976af62be2d7f8e5c422d9f90fe0cae997ffc191c0032ae", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

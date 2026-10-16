@@ -1,0 +1,1 @@
+{"slug": "hamming-74", "seal": "8aa6ea77e1a5a7990072f67d67aa9abb81d03762b0cbdced2e7ae1c70c9e1fa5", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

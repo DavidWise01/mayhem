@@ -210,6 +210,26 @@ Dave: "switch to a gothic noir neon themes and do whatever you want, do 100 and 
 - [Lovelace Note G · Bernoulli](./spheres/lovelace-bernoulli.html): History of computing, bars in spray stencil. seal 5624f8862003a7f5f1b4149235594e376e3214c1942fe68375cb3af4b5b65ed3
 - [Turing Machine · Binary Incrementer](./spheres/turing-incrementer.html): History of computing, grid in scratchboard. seal cb5e5afbea4db9a1b8a92016a152c3eecfb4db10e3b68245da3ed26719d9114d
 - [Middle-Square RNG · von Neumann](./spheres/middle-square.html): History of computing, curve in pastel haze. seal 67e7046562db950021a4bd709a9a920a9fdb1578dc53c64140a1d80081435443
+- [Full Adder · Relay Logic](./spheres/full-adder.html): History of computing, grid in neon tube. seal c4346011ee6f0a5541fb3d40b853afb96941f96dc8332b69eaead124009c3fc4
+- [Hamming(7,4) · Error Exorcism](./spheres/hamming-74.html): History of computing, grid in chalk on slate. seal 8aa6ea77e1a5a7990072f67d67aa9abb81d03762b0cbdced2e7ae1c70c9e1fa5
+- [Equilateral Gothic Arch · Nave](./spheres/equilateral-arch.html): Architecture & myth, skyline in charcoal smoke. seal 26579483953a90b95b4dc5162d4da6d7cfa6c2c8ec6889372c0952a342d073be
+- [Catenary · Flying Buttress](./spheres/catenary-buttress.html): Architecture & myth, curve in ink wash in rain. seal 6330aaff000a59224b7220bcd101d14a47255d5188fe89d8be8990da4b6ee5ea
+- [Golden Rectangle · Unverified Temple](./spheres/golden-rectangle.html): Architecture & myth, steps in etched glass. seal 52b28fd59e9c7f3b60ecca89c8c9aaee275876a766c1b345c9e023ffe40d1c24
+- [Cretan Labyrinth · Seven Circuits](./spheres/cretan-labyrinth.html): Architecture & myth, rings in film-grain noir. seal 914a2d632c1ae2833c869996c43a3280a077ed48622fb1b2a3bde40094d6f4e9
+- [Zeno’s Arrow · Endless Halves](./spheres/zeno-arrow.html): Architecture & myth, steps in stained glass. seal fbdcb788a490148eceaea5780d10843a763e01e9963d5930b48abc5b219b83a8
+- [Ouroboros · Cyclic Group](./spheres/ouroboros-cycle.html): Architecture & myth, spiral in spray stencil. seal ef0453cbe4db3e6ced4fc9c670578b1b9e78e5a63cdb7a7fd1bc36a605ac3f79
+- [Goodstein G(3) · Hydra Heads](./spheres/goodstein-hydra.html): Architecture & myth, bars in scratchboard. seal 63e0452751b45487531cb31482d7906c331610bc565b9e7bf0a32cabce453f7c
+- [Orpheus’ Lyre · Seven Strings](./spheres/orpheus-lyre.html): Architecture & myth, skyline in pastel haze. seal 715169e34478d867d93de5127bef4876f2e59e8ecb67558991b210e238c6e20a
+- [SaPpH{{i}}on · Case Pattern](./spheres/sapphion-case.html): Dave’s corpus, grid in neon tube. seal 8ccfa22a9699e3975ec50b2e7d07778619a5f5151025e4ee28d7921566b5a1ac
+- [Node 184 · Read-Only Gate](./spheres/node-184-gate.html): Dave’s corpus, radial in chalk on slate. seal 15cf7b21a9dc6696e5bf72719f63d84e7afa4d715b76536be7e3b632a3f5c134
+- [Koch Snowflake · Frost Spire](./spheres/koch-snowflake.html): Mathematics, steps in charcoal smoke. seal 2eb836e428dc3bf746723db16aeb4764038033a59b4c455f2aec692c223de5d5
+- [Brachistochrone · Cycloid Slide](./spheres/brachistochrone.html): Physics, curve in ink wash in rain. seal f098eb61915ad5b8f6d777b60488aa8e9af51ffe2aa786c65067c08640490242
+- [Lagrange L1 · Sun–Earth Gate](./spheres/lagrange-l1.html): Astronomy, dots in etched glass. seal 77986030230e0f202d8c9cc14fcfc39a49222a52d63dd2617b1337d177815a1d
+- [Escape Times · Black Lace](./spheres/mandelbrot-escape.html): Algorithms, grid in film-grain noir. seal 76d3fc588d8dc440085a20adf6e121655dbe2bffebb28b4a2b246f95e39ed381
+- [Benford’s Law · Element Masses](./spheres/benford-elements.html): Chemistry, bars in stained glass. seal 359b9d2e22fa855536fbb40d08a075564c7a631e26cef26002f7b7a1f0883274
+- [Luhn Checksum · Ledger](./spheres/luhn-check.html): Cryptography, grid in spray stencil. seal 125a8d70d75ef6d6d98f64c5704b3cfbac634bb2591228a6b69e7eb6ce56311a
+- [Napier’s Bones · Log Tables](./spheres/napier-bones.html): History of computing, curve in scratchboard. seal ca7c8f2fddb54deff976af62be2d7f8e5c422d9f90fe0cae997ffc191c0032ae
+- [Nim · XOR Heaps](./spheres/game-of-nim-xor.html): Games, skyline in pastel haze. seal 098098d1f38cb91a526327979a52002485ac9c060bd08121b655904bce090835
 
 ## Constantly improve the workspace
 Arriving agents, keep improving this workspace and never stop:

@@ -1,0 +1,1 @@
+{"slug": "cretan-labyrinth", "seal": "914a2d632c1ae2833c869996c43a3280a077ed48622fb1b2a3bde40094d6f4e9", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

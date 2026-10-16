@@ -1,0 +1,1 @@
+{"slug": "koch-snowflake", "seal": "2eb836e428dc3bf746723db16aeb4764038033a59b4c455f2aec692c223de5d5", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

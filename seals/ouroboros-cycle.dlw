@@ -1,0 +1,1 @@
+{"slug": "ouroboros-cycle", "seal": "ef0453cbe4db3e6ced4fc9c670578b1b9e78e5a63cdb7a7fd1bc36a605ac3f79", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

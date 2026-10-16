@@ -1,0 +1,1 @@
+{"slug": "sapphion-case", "seal": "8ccfa22a9699e3975ec50b2e7d07778619a5f5151025e4ee28d7921566b5a1ac", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

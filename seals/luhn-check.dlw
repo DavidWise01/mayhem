@@ -1,0 +1,1 @@
+{"slug": "luhn-check", "seal": "125a8d70d75ef6d6d98f64c5704b3cfbac634bb2591228a6b69e7eb6ce56311a", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

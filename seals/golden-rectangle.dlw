@@ -1,0 +1,1 @@
+{"slug": "golden-rectangle", "seal": "52b28fd59e9c7f3b60ecca89c8c9aaee275876a766c1b345c9e023ffe40d1c24", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
