@@ -43,5 +43,14 @@ The index shows a live, scaled iframe preview of every sphere.
 - [The Percolation Diggers](./spheres/percolation-diggers.html): STEWARD III · BAK'S HEAP. Digger agents open sites at random while a scout floods from the top; a path through the whole cliff appears near p ≈ 0.593. seal b1c4e6734040fdf5d4a4d246fe4eebafeca0b1652003010b5dde8ba822cb6b33
 - [The DLA Colonists](./spheres/dla-colonists.html): STEWARD III · BAK'S HEAP. Wandering colonist agents stick when they touch the colony; a branching coral grows that none of them designed. seal 24d895f30ded92e1798a5f00529d34a1a84f2c358be85156952eaad87c521e66
 
+## Batch 6 (Dave t207u)
+- [The Q-Learners](./spheres/q-learners.html): STEWARD II · MAY'S MAP. Explorer agents learn a maze by Q-learning and share one Q-table; the greedy path settles on the shortest route. seal a4c7870d02e3801d28416769ae7c5125164fefe0303f8c2d49ef6321c8e51cde
+- [The Ising Neighbours](./spheres/ising-neighbours.html): STEWARD V · LORENZ'S WEATHER. Spin agents flip to agree with their neighbours unless the heat talks them out of it; order melts near Onsager's T c ≈ 2.269. seal 2fa495fbe513d3275f9d9b41eba578b9ebc0a795d1f0b346762c4a63874c78d3
+- [The Bandit Saloon](./spheres/bandit-saloon.html): STEWARD VI · AXELROD'S ROUND. Gambler agents pull five one-armed bandits; UCB1, ε-greedy and random gamblers share a tally board and the clever ones find the best arm. seal 74008074044dfb9118b9145aac3ea80ba25800c1c3c30cb10605ae8abc5cef19
+- [The Quantum-Dot Tunnel](./spheres/quantum-dot-tunnel.html): STEWARD VII · LAGRANGE'S ARMS. 0-sphere agents (2 quantum dots (0, 0), 2 vectors (−1, −1), 2 edges (+1, +1), sum 0) hop between two wells through a barrier with the textbook tunnelling probability. seal 286b616b0d4dd93635f3e6e61d32b4ae5a5ed0f666fc98ba2ad9f2980da8e060
+- [Schelling Street](./spheres/schelling-street.html): STEWARD VIII · LANGTON'S HIGHWAY. Resident agents who only want a third of their neighbours to match them move until happy; the street sorts itself into districts nobody asked for. seal 83329cdd6a6e9dacb4d753fd2ff50558ffcca1c2f9a1c24d9be0cc0b8dae4069
+- [Kid → Pro](./spheres/kid-to-pro.html): STEWARD V · LORENZ'S WEATHER. Learner agents practise a game level by level; their times fall on the power law of practice, and they swap tips that speed each other up. seal ae417da45a6d216e10dcad00fb687c47c2985ba94ebacd480d75d0c95a8168e7
+- [The Rock-Paper-Scissors Reef](./spheres/rps-reef.html): STEWARD II · MAY'S MAP. Three species invade each other in a cycle, rock over scissors over paper over rock; spirals emerge and nobody goes extinct. seal e3be4517ccbe47259260cc7098ecb734aff07b538077b91c0eb732d82ad556a1
+
 ## For agents
 New spheres go under a steward in spheres/<slug>.html, seal = sha256(name|slug|blurb) in seals/<slug>.dlw, write-if-missing, then update mayhem.json and index.html. Host: DavidWise01/mayhem, branch master. Never dress a guess as LIT.

@@ -1,0 +1,1 @@
+{"slug": "rps-reef", "seal": "e3be4517ccbe47259260cc7098ecb734aff07b538077b91c0eb732d82ad556a1", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

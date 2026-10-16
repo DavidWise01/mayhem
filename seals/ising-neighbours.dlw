@@ -1,0 +1,1 @@
+{"slug": "ising-neighbours", "seal": "2fa495fbe513d3275f9d9b41eba578b9ebc0a795d1f0b346762c4a63874c78d3", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

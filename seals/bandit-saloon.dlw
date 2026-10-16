@@ -1,0 +1,1 @@
+{"slug": "bandit-saloon", "seal": "74008074044dfb9118b9145aac3ea80ba25800c1c3c30cb10605ae8abc5cef19", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

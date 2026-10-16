@@ -1,0 +1,1 @@
+{"slug": "quantum-dot-tunnel", "seal": "286b616b0d4dd93635f3e6e61d32b4ae5a5ed0f666fc98ba2ad9f2980da8e060", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

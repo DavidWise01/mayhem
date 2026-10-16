@@ -1,0 +1,1 @@
+{"slug": "schelling-street", "seal": "83329cdd6a6e9dacb4d753fd2ff50558ffcca1c2f9a1c24d9be0cc0b8dae4069", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

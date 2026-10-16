@@ -81,6 +81,22 @@
      "blurb": "Firefly agents with their own rhythms nudge toward the flashes they see; past a critical coupling the choir flashes as one.",
      "seal": "c21560728e58cac2eedfdd80994843d7ce2e0412961111e5ecd9eafeab325074",
      "claim": "LIT check · AMBER refs · MODEL agents"
+    },
+    {
+     "name": "The Q-Learners",
+     "slug": "q-learners",
+     "path": "spheres/q-learners.html",
+     "blurb": "Explorer agents learn a maze by Q-learning and share one Q-table; the greedy path settles on the shortest route.",
+     "seal": "a4c7870d02e3801d28416769ae7c5125164fefe0303f8c2d49ef6321c8e51cde",
+     "claim": "LIT check · AMBER refs · MODEL agents"
+    },
+    {
+     "name": "The Rock-Paper-Scissors Reef",
+     "slug": "rps-reef",
+     "path": "spheres/rps-reef.html",
+     "blurb": "Three species invade each other in a cycle, rock over scissors over paper over rock; spirals emerge and nobody goes extinct.",
+     "seal": "e3be4517ccbe47259260cc7098ecb734aff07b538077b91c0eb732d82ad556a1",
+     "claim": "LIT check · AMBER refs · MODEL agents"
     }
    ]
   },
@@ -184,6 +200,22 @@
      "blurb": "Two thousand walker agents stagger at random; together they draw the diffusion law ⟨r²⟩ = t, and the club secretary reads it live.",
      "seal": "0deb043a63e8a20d52b944e68a21c267628799f5ba569958ddd6a2d150857d64",
      "claim": "LIT check · AMBER refs · MODEL agents"
+    },
+    {
+     "name": "The Ising Neighbours",
+     "slug": "ising-neighbours",
+     "path": "spheres/ising-neighbours.html",
+     "blurb": "Spin agents flip to agree with their neighbours unless the heat talks them out of it; order melts near Onsager's T c ≈ 2.269.",
+     "seal": "2fa495fbe513d3275f9d9b41eba578b9ebc0a795d1f0b346762c4a63874c78d3",
+     "claim": "LIT check · AMBER refs · MODEL agents"
+    },
+    {
+     "name": "Kid → Pro",
+     "slug": "kid-to-pro",
+     "path": "spheres/kid-to-pro.html",
+     "blurb": "Learner agents practise a game level by level; their times fall on the power law of practice, and they swap tips that speed each other up.",
+     "seal": "ae417da45a6d216e10dcad00fb687c47c2985ba94ebacd480d75d0c95a8168e7",
+     "claim": "LIT check · AMBER refs · MODEL agents"
     }
    ]
   },
@@ -212,6 +244,14 @@
      "path": "spheres/elo-ladder.html",
      "blurb": "Six bot players with hidden strengths play matches; Elo ratings on the shared ladder sort them into their true order.",
      "seal": "dfad3beb017037aca22a7645261ada315af2ec208a47e6ca992e55e7f6995bb7",
+     "claim": "LIT check · AMBER refs · MODEL agents"
+    },
+    {
+     "name": "The Bandit Saloon",
+     "slug": "bandit-saloon",
+     "path": "spheres/bandit-saloon.html",
+     "blurb": "Gambler agents pull five one-armed bandits; UCB1, ε-greedy and random gamblers share a tally board and the clever ones find the best arm.",
+     "seal": "74008074044dfb9118b9145aac3ea80ba25800c1c3c30cb10605ae8abc5cef19",
      "claim": "LIT check · AMBER refs · MODEL agents"
     }
    ]
@@ -242,6 +282,14 @@
      "blurb": "Stayer and switcher agents play the three-door game; the switchers' tally climbs toward two-thirds and converts the stayers.",
      "seal": "3a96315e587fc6514a399b3e1d6359214ae9ccecef7cd06db1a9af5856d3b9f7",
      "claim": "LIT check · AMBER refs · MODEL agents"
+    },
+    {
+     "name": "The Quantum-Dot Tunnel",
+     "slug": "quantum-dot-tunnel",
+     "path": "spheres/quantum-dot-tunnel.html",
+     "blurb": "0-sphere agents (2 quantum dots (0, 0), 2 vectors (−1, −1), 2 edges (+1, +1), sum 0) hop between two wells through a barrier with the textbook tunnelling probability.",
+     "seal": "286b616b0d4dd93635f3e6e61d32b4ae5a5ed0f666fc98ba2ad9f2980da8e060",
+     "claim": "LIT check · AMBER refs · MODEL agents"
     }
    ]
   },
@@ -271,6 +319,14 @@
      "blurb": "Agents fight eight model Robot Masters in different orders and share which weapon beats whom; the weakness chain emerges.",
      "seal": "e53bb4ee520157428741898e7d0c3fb7e0520ca1e8e1fd80711a4380d0afbe95",
      "claim": "LIT check · AMBER refs · MODEL agents"
+    },
+    {
+     "name": "Schelling Street",
+     "slug": "schelling-street",
+     "path": "spheres/schelling-street.html",
+     "blurb": "Resident agents who only want a third of their neighbours to match them move until happy; the street sorts itself into districts nobody asked for.",
+     "seal": "83329cdd6a6e9dacb4d753fd2ff50558ffcca1c2f9a1c24d9be0cc0b8dae4069",
+     "claim": "LIT check · AMBER refs · MODEL agents"
     }
    ]
   }
@@ -279,5 +335,6 @@
  "agentic": "Dave t196u: \"keep going, i think agentic is what i meant not generative lol\"",
  "batch_3": "Dave t197u: \"percect keep going, do as many as you can per turn withough losing quality\"",
  "batch_4": "Dave t198u: \"keep going please, retry zelda mega man\"",
- "batch_5": "Dave t199u: \"i love it keep going, put some black/wht/gray screens playing some snippests\""
+ "batch_5": "Dave t199u: \"i love it keep going, put some black/wht/gray screens playing some snippests\"",
+ "batch_6": "Dave t207u: \"nice can you continue buildiing shpheres for mayhem please. agentic\""
 }

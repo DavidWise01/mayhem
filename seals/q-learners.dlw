@@ -1,0 +1,1 @@
+{"slug": "q-learners", "seal": "a4c7870d02e3801d28416769ae7c5125164fefe0303f8c2d49ef6321c8e51cde", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
