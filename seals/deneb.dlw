@@ -1,0 +1,1 @@
+{"slug": "deneb", "seal": "c638882f586faff7f6e0a5fbe10974db7272ac065853fbbe12fdc8ebab544c01", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "proxima", "seal": "17e86188570d6d14a32395ea81c9fe32dbba85ec070107b083739849ff20e01f", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

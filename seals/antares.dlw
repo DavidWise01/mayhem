@@ -1,0 +1,1 @@
+{"slug": "antares", "seal": "c3ec4cb28b28a6f6cc241aaf449ab7183d6b4738ada4c2f697f3a2ded9af94d5", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

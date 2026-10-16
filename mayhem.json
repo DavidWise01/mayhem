@@ -2043,5 +2043,379 @@
     "path": "spheres/lineage/lineage-index.html"
    }
   ]
+ },
+ "batch_stars": {
+  "said": "Dave t224u: keep it going please, build out all the stars you know about and their types right dwarfs giants, red blue purple",
+  "label": "MODEL structure; LIT/AMBER astronomy",
+  "pages": [
+   {
+    "name": "Class O · Blue Stars",
+    "slug": "class-o",
+    "blurb": "Spectral class O (>30,000 K): blue. Spectral signature: ionized helium (He II) lines. Rendered as a 3D star with an ARTIST and a CRITIC.",
+    "seal": "6656993aa3bc77ebe0cba1ee855bc7a6f3fb0193dd0f6f9f189bbea53ec5189a",
+    "crumb": "SPECTRAL CLASS O",
+    "path": "spheres/stars/class-o.html"
+   },
+   {
+    "name": "Class B · Blue-White Stars",
+    "slug": "class-b",
+    "blurb": "Spectral class B (10,000–30,000 K): blue-white. Spectral signature: neutral helium lines. Rendered as a 3D star with an ARTIST and a CRITIC.",
+    "seal": "c3a6df73347087be3f754df943ee3d8aacb03fbeb468d7d84375efdbf6c17961",
+    "crumb": "SPECTRAL CLASS B",
+    "path": "spheres/stars/class-b.html"
+   },
+   {
+    "name": "Class A · White Stars",
+    "slug": "class-a",
+    "blurb": "Spectral class A (7,500–10,000 K): white. Spectral signature: strongest hydrogen Balmer lines. Rendered as a 3D star with an ARTIST and a CRITIC.",
+    "seal": "a82cc105339909e5b46205ad4a8889a111eb0696e2ba43a06e8b8b77fba09428",
+    "crumb": "SPECTRAL CLASS A",
+    "path": "spheres/stars/class-a.html"
+   },
+   {
+    "name": "Class F · Yellow-White Stars",
+    "slug": "class-f",
+    "blurb": "Spectral class F (6,000–7,500 K): yellow-white. Spectral signature: ionized calcium (Ca II) strengthening. Rendered as a 3D star with an ARTIST and a CRITIC.",
+    "seal": "53c7064d310018a8bfd94001720b762e467a12752d57b03f4e7563c5055921df",
+    "crumb": "SPECTRAL CLASS F",
+    "path": "spheres/stars/class-f.html"
+   },
+   {
+    "name": "Class G · Yellow Stars",
+    "slug": "class-g",
+    "blurb": "Spectral class G (5,200–6,000 K): yellow (white to the eye in space). Spectral signature: Ca II H&amp. Rendered as a 3D star with an ARTIST and a CRITIC.",
+    "seal": "399d25a44a26d7ace59545374d5fa2f64592f5bbde2bfe516dbd6f70f0ef9bae",
+    "crumb": "SPECTRAL CLASS G",
+    "path": "spheres/stars/class-g.html"
+   },
+   {
+    "name": "Class K · Orange Stars",
+    "slug": "class-k",
+    "blurb": "Spectral class K (3,700–5,200 K): orange. Spectral signature: neutral metal lines, weak hydrogen. Rendered as a 3D star with an ARTIST and a CRITIC.",
+    "seal": "20478f78b9442bf7f51decd95bf334164c7261aef66fa56ab48498500ff415d7",
+    "crumb": "SPECTRAL CLASS K",
+    "path": "spheres/stars/class-k.html"
+   },
+   {
+    "name": "Class M · Red Stars",
+    "slug": "class-m",
+    "blurb": "Spectral class M (2,400–3,700 K): red. Spectral signature: titanium oxide (TiO) molecular bands. Rendered as a 3D star with an ARTIST and a CRITIC.",
+    "seal": "68ce0961bcaaa5e3c01e37e449a6714e753d479a7c978d0ca16f5ab4762b6161",
+    "crumb": "SPECTRAL CLASS M",
+    "path": "spheres/stars/class-m.html"
+   },
+   {
+    "name": "Class L · Deep Stars",
+    "slug": "class-l",
+    "blurb": "Spectral class L (~1,300–2,400 K): deep red. Spectral signature: metal hydrides (FeH, CrH), alkali lines. Rendered as a 3D star with an ARTIST and a CRITIC.",
+    "seal": "4cc2f7c312815eca25f82531fb98fbe32d0c1babe34a6769f96449a05dd23c42",
+    "crumb": "SPECTRAL CLASS L",
+    "path": "spheres/stars/class-l.html"
+   },
+   {
+    "name": "Class T · Magenta Stars",
+    "slug": "class-t",
+    "blurb": "Spectral class T (~550–1,300 K): magenta / deep red (predicted to the eye, AMBER). Spectral signature: methane (CH₄) absorption. Rendered as a 3D star with an ARTIST and a CRITIC.",
+    "seal": "80c938da8500503419f99bcd09b07e6014d4466f8df1276401b9f7981aaf6701",
+    "crumb": "SPECTRAL CLASS T",
+    "path": "spheres/stars/class-t.html"
+   },
+   {
+    "name": "Class Y · Dark; Stars",
+    "slug": "class-y",
+    "blurb": "Spectral class Y (<~550 K): dark; peaks in the infrared. Spectral signature: ammonia (NH₃) features. Rendered as a 3D star with an ARTIST and a CRITIC.",
+    "seal": "05a857db14a9b0bd697603b9143b5c6be27ac63785e14b9c76315e4b8bb2beda",
+    "crumb": "SPECTRAL CLASS Y",
+    "path": "spheres/stars/class-y.html"
+   },
+   {
+    "name": "Main Sequence",
+    "slug": "main-sequence",
+    "blurb": "Main Sequence: Core hydrogen fusion; the Sun is in the middle of its ~10-billion-year main-sequence life. An ARTIST agent builds it in 3D, and a CRITIC scores the form.",
+    "seal": "1f09beb4d89cf6386f865367f132473d5df6664c829d3ad1bf4cc25e35fd2395",
+    "crumb": "TYPE",
+    "path": "spheres/stars/main-sequence.html"
+   },
+   {
+    "name": "Red Dwarf",
+    "slug": "red-dwarf",
+    "blurb": "Red Dwarf: Small M-type main-sequence stars (~0. An ARTIST agent builds it in 3D, and a CRITIC scores the form.",
+    "seal": "2b3e96d5921ed6317b9156bbf42657590ee0309677a85ac74e2e6178e67c27bc",
+    "crumb": "TYPE",
+    "path": "spheres/stars/red-dwarf.html"
+   },
+   {
+    "name": "Subgiant",
+    "slug": "subgiant",
+    "blurb": "Subgiant: Core hydrogen exhausted; shell burning begins and the star brightens and swells as it leaves the main sequence. An ARTIST agent builds it in 3D, and a CRITIC scores the form.",
+    "seal": "e39cf127c3d36b926b62c997a5f0b3139a07dc7b6ad1a28542c55dfa5135b97f",
+    "crumb": "TYPE",
+    "path": "spheres/stars/subgiant.html"
+   },
+   {
+    "name": "Red Giant",
+    "slug": "red-giant",
+    "blurb": "Red Giant: Hydrogen-shell burning around an inert helium core; radius ~10–100+ R☉. An ARTIST agent builds it in 3D, and a CRITIC scores the form.",
+    "seal": "81b1cb4421674453ba3f19a3be681f9631ccb6033469dfc03d4eb00f51c9a71f",
+    "crumb": "TYPE",
+    "path": "spheres/stars/red-giant.html"
+   },
+   {
+    "name": "Blue Giant",
+    "slug": "blue-giant",
+    "blurb": "Blue Giant: Hot luminous O/B stars of luminosity class III–II. An ARTIST agent builds it in 3D, and a CRITIC scores the form.",
+    "seal": "2434b52af50de2703ac3b474c9587992e2856789265d874e69f86597f31b1b1f",
+    "crumb": "TYPE",
+    "path": "spheres/stars/blue-giant.html"
+   },
+   {
+    "name": "Red Supergiant",
+    "slug": "red-supergiant",
+    "blurb": "Red Supergiant: The largest stars by volume: class I, cool (~3,500 K), radii of hundreds to over 1,000 R☉. An ARTIST agent builds it in 3D, and a CRITIC scores the form.",
+    "seal": "3ba69f9e0432f340ac127a31bebea420809d57f5ef8c90d26cc7b4d2626c1dc2",
+    "crumb": "TYPE",
+    "path": "spheres/stars/red-supergiant.html"
+   },
+   {
+    "name": "Blue Supergiant",
+    "slug": "blue-supergiant",
+    "blurb": "Blue Supergiant: Hot class I stars (~10,000–50,000 K) with huge luminosity and strong winds. An ARTIST agent builds it in 3D, and a CRITIC scores the form.",
+    "seal": "3b9aed9378678e9c2e1c03bd7374473c2d4c62d4a6049652dedb5c4d840df112",
+    "crumb": "TYPE",
+    "path": "spheres/stars/blue-supergiant.html"
+   },
+   {
+    "name": "Hypergiant",
+    "slug": "hypergiant",
+    "blurb": "Hypergiant: Luminosity class 0 (or Ia+): the most luminous stars, near the Eddington limit and losing mass violently. An ARTIST agent builds it in 3D, and a CRITIC scores the form.",
+    "seal": "85dcb5b421b3df987787701053f9beb318bee11d502dec9e7efacea7483e9ba4",
+    "crumb": "TYPE",
+    "path": "spheres/stars/hypergiant.html"
+   },
+   {
+    "name": "White Dwarf",
+    "slug": "white-dwarf",
+    "blurb": "White Dwarf: Electron-degenerate remnant of stars up to ~8 M☉: about Earth-sized, with a teaspoon weighing tons. An ARTIST agent builds it in 3D, and a CRITIC scores the form.",
+    "seal": "1c44fb62893edc2520a524a827eedec4f884c479610a28c8c1dfa8b6885323c5",
+    "crumb": "TYPE",
+    "path": "spheres/stars/white-dwarf.html"
+   },
+   {
+    "name": "Neutron Star · Pulsar · Magnetar",
+    "slug": "neutron-star",
+    "blurb": "Neutron Star · Pulsar · Magnetar: Collapsed core held up by neutron degeneracy and nuclear forces: ~1. An ARTIST agent builds it in 3D, and a CRITIC scores the form.",
+    "seal": "cf97f4c3059e1290e0c1404b1ff6d61425cc3eb3c77b4d347f4f68af5c0b0699",
+    "crumb": "TYPE",
+    "path": "spheres/stars/neutron-star.html"
+   },
+   {
+    "name": "Black Hole",
+    "slug": "black-hole",
+    "blurb": "Black Hole: Stellar-mass black holes form from the collapse of very massive stars. An ARTIST agent builds it in 3D, and a CRITIC scores the form.",
+    "seal": "88a5902b13ee7885861a0fccdeeaa0793f2602ece9eacb7ea815e5e345ccece8",
+    "crumb": "TYPE",
+    "path": "spheres/stars/black-hole.html"
+   },
+   {
+    "name": "Wolf-Rayet",
+    "slug": "wolf-rayet",
+    "blurb": "Wolf-Rayet: Massive stars stripped of their hydrogen envelopes, with dense winds and broad emission lines (WN nitrogen, WC carbon, WO oxygen). An ARTIST agent builds it in 3D, and a CRITIC scores the form.",
+    "seal": "7c5675a5ed1e1fbd5b2307ec772685665066f9ab9870e6e8d00ef56a3430b5b7",
+    "crumb": "TYPE",
+    "path": "spheres/stars/wolf-rayet.html"
+   },
+   {
+    "name": "Carbon Star",
+    "slug": "carbon-star",
+    "blurb": "Carbon Star: Cool giants with more carbon than oxygen (C/O > 1), so carbon molecules (C₂, CN) redden them deeply. An ARTIST agent builds it in 3D, and a CRITIC scores the form.",
+    "seal": "1c9df8e447760b60743977be2f3089df56a230e9f6b238fd7ff880bd203a61d1",
+    "crumb": "TYPE",
+    "path": "spheres/stars/carbon-star.html"
+   },
+   {
+    "name": "The Sun",
+    "slug": "sun",
+    "blurb": "The Sun (G2V): 5,772 K, radius 1 R☉, luminosity 1 L☉, 8.3 light-minutes. Drawn in 3D by an ARTIST agent and scored by a CRITIC.",
+    "seal": "9e52e1337cb40f059fbd3dd1c6ce0d910bdcf3ec1a0105b2bbcfb1e083e00956",
+    "crumb": "FAMOUS STAR · G2V",
+    "path": "spheres/stars/sun.html"
+   },
+   {
+    "name": "Sirius A",
+    "slug": "sirius-a",
+    "blurb": "Sirius A (A0mA1 Va): 9,940 K, radius 1.71 R☉, luminosity 25.4 L☉, 8.6 ly. Drawn in 3D by an ARTIST agent and scored by a CRITIC.",
+    "seal": "73882087051e8bcf68a24865448bf765b35dbb33b202f15bb345d31c83e163d5",
+    "crumb": "FAMOUS STAR · A0mA1 Va",
+    "path": "spheres/stars/sirius-a.html"
+   },
+   {
+    "name": "Sirius B",
+    "slug": "sirius-b",
+    "blurb": "Sirius B (DA2 white dwarf): 25,000 K, radius 0.0084 R☉, luminosity 0.056 L☉, 8.6 ly. Drawn in 3D by an ARTIST agent and scored by a CRITIC.",
+    "seal": "5cc224264acdba82ff9295d84b528e778e799507b5f914e3b378738ba5c321a7",
+    "crumb": "FAMOUS STAR · DA2 white dwarf",
+    "path": "spheres/stars/sirius-b.html"
+   },
+   {
+    "name": "Betelgeuse",
+    "slug": "betelgeuse",
+    "blurb": "Betelgeuse (M1–M2 Ia–ab): 3,600 K, radius 764 R☉, luminosity 126000 L☉, ~550 ly (AMBER). Drawn in 3D by an ARTIST agent and scored by a CRITIC.",
+    "seal": "1b9374d5b683e424fbe374ab697410974e50d755019746bb2262dccc23be0483",
+    "crumb": "FAMOUS STAR · M1–M2 Ia–ab",
+    "path": "spheres/stars/betelgeuse.html"
+   },
+   {
+    "name": "Rigel",
+    "slug": "rigel",
+    "blurb": "Rigel (B8 Ia): 12,100 K, radius 78.9 R☉, luminosity 120000 L☉, ~860 ly (AMBER). Drawn in 3D by an ARTIST agent and scored by a CRITIC.",
+    "seal": "647e68e0957203937c1699a56bcef6b7f91acc95a05e1f6378619ec793db09ce",
+    "crumb": "FAMOUS STAR · B8 Ia",
+    "path": "spheres/stars/rigel.html"
+   },
+   {
+    "name": "Vega",
+    "slug": "vega",
+    "blurb": "Vega (A0 Va): 9,602 K, radius 2.36 R☉, luminosity 40.1 L☉, 25 ly. Drawn in 3D by an ARTIST agent and scored by a CRITIC.",
+    "seal": "09ff095ef682cc8f7c14c02f8a61fd9ab880b9f7f2631b40ee5a8c753bc0bc4b",
+    "crumb": "FAMOUS STAR · A0 Va",
+    "path": "spheres/stars/vega.html"
+   },
+   {
+    "name": "Proxima Centauri",
+    "slug": "proxima",
+    "blurb": "Proxima Centauri (M5.5 Ve): 3,042 K, radius 0.154 R☉, luminosity 0.00155 L☉, 4.24 ly. Drawn in 3D by an ARTIST agent and scored by a CRITIC.",
+    "seal": "17e86188570d6d14a32395ea81c9fe32dbba85ec070107b083739849ff20e01f",
+    "crumb": "FAMOUS STAR · M5.5 Ve",
+    "path": "spheres/stars/proxima.html"
+   },
+   {
+    "name": "Polaris",
+    "slug": "polaris",
+    "blurb": "Polaris (F7 Ib): 6,015 K, radius 37.5 R☉, luminosity 1260 L☉, ~433 ly (AMBER). Drawn in 3D by an ARTIST agent and scored by a CRITIC.",
+    "seal": "84339d83d7e399cc328214fa08209bf53a53b6d57644df1ba95299bac3c3f889",
+    "crumb": "FAMOUS STAR · F7 Ib",
+    "path": "spheres/stars/polaris.html"
+   },
+   {
+    "name": "Antares",
+    "slug": "antares",
+    "blurb": "Antares (M1.5 Iab): 3,660 K, radius 680 R☉, luminosity 75900 L☉, ~550 ly (AMBER). Drawn in 3D by an ARTIST agent and scored by a CRITIC.",
+    "seal": "c3ec4cb28b28a6f6cc241aaf449ab7183d6b4738ada4c2f697f3a2ded9af94d5",
+    "crumb": "FAMOUS STAR · M1.5 Iab",
+    "path": "spheres/stars/antares.html"
+   },
+   {
+    "name": "UY Scuti",
+    "slug": "uy-scuti",
+    "blurb": "UY Scuti (M4 Ia): 3,365 K, radius 909 R☉, luminosity 100000 L☉, ~5,900 ly (AMBER). Drawn in 3D by an ARTIST agent and scored by a CRITIC.",
+    "seal": "b18a161de98829a4af618dde898c1e3b93d8fa126eea59ea8a409b37a401f6cc",
+    "crumb": "FAMOUS STAR · M4 Ia",
+    "path": "spheres/stars/uy-scuti.html"
+   },
+   {
+    "name": "R136a1",
+    "slug": "r136a1",
+    "blurb": "R136a1 (WN5h): 46,000 K, radius 39.2 R☉, luminosity 4.68e+06 L☉, ~163,000 ly (LMC). Drawn in 3D by an ARTIST agent and scored by a CRITIC.",
+    "seal": "dabbc2e203ac43521812490ab7c01d486de4e877be6edc675eeaaacce87a60d9",
+    "crumb": "FAMOUS STAR · WN5h",
+    "path": "spheres/stars/r136a1.html"
+   },
+   {
+    "name": "Eta Carinae",
+    "slug": "eta-carinae",
+    "blurb": "Eta Carinae (LBV + O/WR binary): 20,000 K, radius 240 R☉, luminosity 4.6e+06 L☉, ~7,500 ly (AMBER). Drawn in 3D by an ARTIST agent and scored by a CRITIC.",
+    "seal": "862d9aeb1675d5a5fe53cf90f66549e0b1f3d67c91eff275829042ce97698627",
+    "crumb": "FAMOUS STAR · LBV + O/WR binary",
+    "path": "spheres/stars/eta-carinae.html"
+   },
+   {
+    "name": "Aldebaran",
+    "slug": "aldebaran",
+    "blurb": "Aldebaran (K5+ III): 3,900 K, radius 45.1 R☉, luminosity 439 L☉, 65 ly. Drawn in 3D by an ARTIST agent and scored by a CRITIC.",
+    "seal": "9d8618af0f6fb7bfc741f63dd1bbe090dd670dccdf60bbebd81e97616ab8df15",
+    "crumb": "FAMOUS STAR · K5+ III",
+    "path": "spheres/stars/aldebaran.html"
+   },
+   {
+    "name": "Arcturus",
+    "slug": "arcturus",
+    "blurb": "Arcturus (K1.5 III): 4,286 K, radius 25.4 R☉, luminosity 170 L☉, 36.7 ly. Drawn in 3D by an ARTIST agent and scored by a CRITIC.",
+    "seal": "384b213faf234a9c661cf9f6abed889ce7259c6ee8901b676a342ee56f789e1f",
+    "crumb": "FAMOUS STAR · K1.5 III",
+    "path": "spheres/stars/arcturus.html"
+   },
+   {
+    "name": "Deneb",
+    "slug": "deneb",
+    "blurb": "Deneb (A2 Ia): 8,525 K, radius 203 R☉, luminosity 196000 L☉, ~2,600 ly (AMBER). Drawn in 3D by an ARTIST agent and scored by a CRITIC.",
+    "seal": "c638882f586faff7f6e0a5fbe10974db7272ac065853fbbe12fdc8ebab544c01",
+    "crumb": "FAMOUS STAR · A2 Ia",
+    "path": "spheres/stars/deneb.html"
+   },
+   {
+    "name": "Canopus",
+    "slug": "canopus",
+    "blurb": "Canopus (A9 II): 7,400 K, radius 71 R☉, luminosity 10700 L☉, 310 ly. Drawn in 3D by an ARTIST agent and scored by a CRITIC.",
+    "seal": "47dce03a6339d4506d3942818e59c703bc6a7567e35336073e0327c01dad52ef",
+    "crumb": "FAMOUS STAR · A9 II",
+    "path": "spheres/stars/canopus.html"
+   },
+   {
+    "name": "Alpha Centauri A & B",
+    "slug": "alpha-centauri",
+    "blurb": "Alpha Centauri A & B (G2V + K1V): 5,790 K, radius 1.22 R☉, luminosity 1.52 L☉, 4.37 ly. Drawn in 3D by an ARTIST agent and scored by a CRITIC.",
+    "seal": "da60dfe198b5ba4b006eb07e640146836215939492224a86e1f3ac53297a5707",
+    "crumb": "FAMOUS STAR · G2V + K1V",
+    "path": "spheres/stars/alpha-centauri.html"
+   },
+   {
+    "name": "VY Canis Majoris",
+    "slug": "vy-cma",
+    "blurb": "VY Canis Majoris (M5e Ia): 3,490 K, radius 1420 R☉, luminosity 270000 L☉, ~3,900 ly (AMBER). Drawn in 3D by an ARTIST agent and scored by a CRITIC.",
+    "seal": "1ad1f430d5010db26f0c9a0e84c036f50a69a2402d2b767cbef1c63bec51f3eb",
+    "crumb": "FAMOUS STAR · M5e Ia",
+    "path": "spheres/stars/vy-cma.html"
+   },
+   {
+    "name": "Barnard's Star",
+    "slug": "barnards",
+    "blurb": "Barnard's Star (M4 V): 3,195 K, radius 0.187 R☉, luminosity 0.0034 L☉, 5.96 ly. Drawn in 3D by an ARTIST agent and scored by a CRITIC.",
+    "seal": "6ebecc74bdeb4835719c153ed428835429dc979ab3d7bc1f01a911ab7a01af5f",
+    "crumb": "FAMOUS STAR · M4 V",
+    "path": "spheres/stars/barnards.html"
+   },
+   {
+    "name": "Crab Pulsar",
+    "slug": "crab-pulsar",
+    "blurb": "The Crab Pulsar (PSR B0531+21): a neutron star spinning ~30 times a second at the heart of the Crab Nebula, left by the supernova seen in 1054.",
+    "seal": "e6998854997d5e078654b80068cdad5c185a058e927e76714ae7faf0a4073427",
+    "crumb": "FAMOUS · PULSAR",
+    "path": "spheres/stars/crab-pulsar.html"
+   },
+   {
+    "name": "Sagittarius A*",
+    "slug": "sgr-a-star",
+    "blurb": "Sagittarius A*: the Milky Way's central black hole, ~4.3 million solar masses, imaged by the Event Horizon Telescope in 2022.",
+    "seal": "594822bfd469fcf74e3e132e11de1edd029c7c51d8eaf963acc824307af3ae55",
+    "crumb": "FAMOUS · SUPERMASSIVE BLACK HOLE",
+    "path": "spheres/stars/sgr-a-star.html"
+   },
+   {
+    "name": "Why No Purple Stars",
+    "slug": "why-no-purple",
+    "blurb": "Dave asked for purple stars. Real stars glow close to a blackbody, and blackbody colour runs red → orange → yellow → white → blue-white, never purple. The T dwarfs are a possible magenta exception.",
+    "seal": "099d1f99dcecc6265ed99f0f89bf1e402055c37be0efee09eaaa1ca8118de1ca",
+    "crumb": "THE PURPLE ANSWER",
+    "path": "spheres/stars/why-no-purple.html"
+   },
+   {
+    "name": "Stars · Dwarfs, Giants, Red, Blue (and Purple)",
+    "slug": "stars-index",
+    "blurb": "Every kind of star in 46 pages: the spectral classes O to Y, giants, dwarfs and remnants, about 20 famous stars, and why no star is purple, all in 3D with an interactive H–R diagram.",
+    "seal": "4cde28e0dcda2e184f68bf7ab3c5dceb6c7d662f743b25a92c94a2bc185c9b06",
+    "crumb": "INDEX",
+    "path": "spheres/stars/stars-index.html"
+   }
+  ]
  }
 }

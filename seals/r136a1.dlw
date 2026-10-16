@@ -1,0 +1,1 @@
+{"slug": "r136a1", "seal": "dabbc2e203ac43521812490ab7c01d486de4e877be6edc675eeaaacce87a60d9", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

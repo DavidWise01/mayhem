@@ -1,0 +1,1 @@
+{"slug": "wolf-rayet", "seal": "7c5675a5ed1e1fbd5b2307ec772685665066f9ab9870e6e8d00ef56a3430b5b7", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

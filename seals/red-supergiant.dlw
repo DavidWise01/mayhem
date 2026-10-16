@@ -1,0 +1,1 @@
+{"slug": "red-supergiant", "seal": "3ba69f9e0432f340ac127a31bebea420809d57f5ef8c90d26cc7b4d2626c1dc2", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

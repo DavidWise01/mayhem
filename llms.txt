@@ -276,3 +276,52 @@ Dave: "build out a whole lineage, 24 pages please ... 8 x 2 male / female x air 
 - [Tall-Fin Bull ♂](./spheres/lineage/lineage-water-now-m.html): Lineage 3D. seal 34f7f4129cadfd09ede2981b4eef892e3ecadc5fd4faef0d5eb84f24955b8970
 - [Menopause Matriarch ♀](./spheres/lineage/lineage-water-now-f.html): Lineage 3D. seal da0e0a224aef5f254686176b7f3e1c017e00f59a8f040618939e2fe20a934aa4
 - [Lineage · Mother Nature's World Computer](./spheres/lineage/lineage-index.html): Lineage 3D. seal 3c89c28bd255c3b9be4440bd014621adf38316f85daace8dc6db9c1bd3e03f21
+
+## Stars, 46 pages in 3D (Dave t224u)
+Dave: "keep it going please, build out all the stars you know about and their types right dwarfs giants, red blue purple". Spectral classes O–Y, types and remnants, famous stars (catalogue values; uncertain ones AMBER), an interactive 3D H–R diagram, and why no star is purple.
+- [Class O · Blue Stars](./spheres/stars/class-o.html): Stars 3D. seal 6656993aa3bc77ebe0cba1ee855bc7a6f3fb0193dd0f6f9f189bbea53ec5189a
+- [Class B · Blue-White Stars](./spheres/stars/class-b.html): Stars 3D. seal c3a6df73347087be3f754df943ee3d8aacb03fbeb468d7d84375efdbf6c17961
+- [Class A · White Stars](./spheres/stars/class-a.html): Stars 3D. seal a82cc105339909e5b46205ad4a8889a111eb0696e2ba43a06e8b8b77fba09428
+- [Class F · Yellow-White Stars](./spheres/stars/class-f.html): Stars 3D. seal 53c7064d310018a8bfd94001720b762e467a12752d57b03f4e7563c5055921df
+- [Class G · Yellow Stars](./spheres/stars/class-g.html): Stars 3D. seal 399d25a44a26d7ace59545374d5fa2f64592f5bbde2bfe516dbd6f70f0ef9bae
+- [Class K · Orange Stars](./spheres/stars/class-k.html): Stars 3D. seal 20478f78b9442bf7f51decd95bf334164c7261aef66fa56ab48498500ff415d7
+- [Class M · Red Stars](./spheres/stars/class-m.html): Stars 3D. seal 68ce0961bcaaa5e3c01e37e449a6714e753d479a7c978d0ca16f5ab4762b6161
+- [Class L · Deep Stars](./spheres/stars/class-l.html): Stars 3D. seal 4cc2f7c312815eca25f82531fb98fbe32d0c1babe34a6769f96449a05dd23c42
+- [Class T · Magenta Stars](./spheres/stars/class-t.html): Stars 3D. seal 80c938da8500503419f99bcd09b07e6014d4466f8df1276401b9f7981aaf6701
+- [Class Y · Dark; Stars](./spheres/stars/class-y.html): Stars 3D. seal 05a857db14a9b0bd697603b9143b5c6be27ac63785e14b9c76315e4b8bb2beda
+- [Main Sequence](./spheres/stars/main-sequence.html): Stars 3D. seal 1f09beb4d89cf6386f865367f132473d5df6664c829d3ad1bf4cc25e35fd2395
+- [Red Dwarf](./spheres/stars/red-dwarf.html): Stars 3D. seal 2b3e96d5921ed6317b9156bbf42657590ee0309677a85ac74e2e6178e67c27bc
+- [Subgiant](./spheres/stars/subgiant.html): Stars 3D. seal e39cf127c3d36b926b62c997a5f0b3139a07dc7b6ad1a28542c55dfa5135b97f
+- [Red Giant](./spheres/stars/red-giant.html): Stars 3D. seal 81b1cb4421674453ba3f19a3be681f9631ccb6033469dfc03d4eb00f51c9a71f
+- [Blue Giant](./spheres/stars/blue-giant.html): Stars 3D. seal 2434b52af50de2703ac3b474c9587992e2856789265d874e69f86597f31b1b1f
+- [Red Supergiant](./spheres/stars/red-supergiant.html): Stars 3D. seal 3ba69f9e0432f340ac127a31bebea420809d57f5ef8c90d26cc7b4d2626c1dc2
+- [Blue Supergiant](./spheres/stars/blue-supergiant.html): Stars 3D. seal 3b9aed9378678e9c2e1c03bd7374473c2d4c62d4a6049652dedb5c4d840df112
+- [Hypergiant](./spheres/stars/hypergiant.html): Stars 3D. seal 85dcb5b421b3df987787701053f9beb318bee11d502dec9e7efacea7483e9ba4
+- [White Dwarf](./spheres/stars/white-dwarf.html): Stars 3D. seal 1c44fb62893edc2520a524a827eedec4f884c479610a28c8c1dfa8b6885323c5
+- [Neutron Star · Pulsar · Magnetar](./spheres/stars/neutron-star.html): Stars 3D. seal cf97f4c3059e1290e0c1404b1ff6d61425cc3eb3c77b4d347f4f68af5c0b0699
+- [Black Hole](./spheres/stars/black-hole.html): Stars 3D. seal 88a5902b13ee7885861a0fccdeeaa0793f2602ece9eacb7ea815e5e345ccece8
+- [Wolf-Rayet](./spheres/stars/wolf-rayet.html): Stars 3D. seal 7c5675a5ed1e1fbd5b2307ec772685665066f9ab9870e6e8d00ef56a3430b5b7
+- [Carbon Star](./spheres/stars/carbon-star.html): Stars 3D. seal 1c9df8e447760b60743977be2f3089df56a230e9f6b238fd7ff880bd203a61d1
+- [The Sun](./spheres/stars/sun.html): Stars 3D. seal 9e52e1337cb40f059fbd3dd1c6ce0d910bdcf3ec1a0105b2bbcfb1e083e00956
+- [Sirius A](./spheres/stars/sirius-a.html): Stars 3D. seal 73882087051e8bcf68a24865448bf765b35dbb33b202f15bb345d31c83e163d5
+- [Sirius B](./spheres/stars/sirius-b.html): Stars 3D. seal 5cc224264acdba82ff9295d84b528e778e799507b5f914e3b378738ba5c321a7
+- [Betelgeuse](./spheres/stars/betelgeuse.html): Stars 3D. seal 1b9374d5b683e424fbe374ab697410974e50d755019746bb2262dccc23be0483
+- [Rigel](./spheres/stars/rigel.html): Stars 3D. seal 647e68e0957203937c1699a56bcef6b7f91acc95a05e1f6378619ec793db09ce
+- [Vega](./spheres/stars/vega.html): Stars 3D. seal 09ff095ef682cc8f7c14c02f8a61fd9ab880b9f7f2631b40ee5a8c753bc0bc4b
+- [Proxima Centauri](./spheres/stars/proxima.html): Stars 3D. seal 17e86188570d6d14a32395ea81c9fe32dbba85ec070107b083739849ff20e01f
+- [Polaris](./spheres/stars/polaris.html): Stars 3D. seal 84339d83d7e399cc328214fa08209bf53a53b6d57644df1ba95299bac3c3f889
+- [Antares](./spheres/stars/antares.html): Stars 3D. seal c3ec4cb28b28a6f6cc241aaf449ab7183d6b4738ada4c2f697f3a2ded9af94d5
+- [UY Scuti](./spheres/stars/uy-scuti.html): Stars 3D. seal b18a161de98829a4af618dde898c1e3b93d8fa126eea59ea8a409b37a401f6cc
+- [R136a1](./spheres/stars/r136a1.html): Stars 3D. seal dabbc2e203ac43521812490ab7c01d486de4e877be6edc675eeaaacce87a60d9
+- [Eta Carinae](./spheres/stars/eta-carinae.html): Stars 3D. seal 862d9aeb1675d5a5fe53cf90f66549e0b1f3d67c91eff275829042ce97698627
+- [Aldebaran](./spheres/stars/aldebaran.html): Stars 3D. seal 9d8618af0f6fb7bfc741f63dd1bbe090dd670dccdf60bbebd81e97616ab8df15
+- [Arcturus](./spheres/stars/arcturus.html): Stars 3D. seal 384b213faf234a9c661cf9f6abed889ce7259c6ee8901b676a342ee56f789e1f
+- [Deneb](./spheres/stars/deneb.html): Stars 3D. seal c638882f586faff7f6e0a5fbe10974db7272ac065853fbbe12fdc8ebab544c01
+- [Canopus](./spheres/stars/canopus.html): Stars 3D. seal 47dce03a6339d4506d3942818e59c703bc6a7567e35336073e0327c01dad52ef
+- [Alpha Centauri A & B](./spheres/stars/alpha-centauri.html): Stars 3D. seal da60dfe198b5ba4b006eb07e640146836215939492224a86e1f3ac53297a5707
+- [VY Canis Majoris](./spheres/stars/vy-cma.html): Stars 3D. seal 1ad1f430d5010db26f0c9a0e84c036f50a69a2402d2b767cbef1c63bec51f3eb
+- [Barnard's Star](./spheres/stars/barnards.html): Stars 3D. seal 6ebecc74bdeb4835719c153ed428835429dc979ab3d7bc1f01a911ab7a01af5f
+- [Crab Pulsar](./spheres/stars/crab-pulsar.html): Stars 3D. seal e6998854997d5e078654b80068cdad5c185a058e927e76714ae7faf0a4073427
+- [Sagittarius A*](./spheres/stars/sgr-a-star.html): Stars 3D. seal 594822bfd469fcf74e3e132e11de1edd029c7c51d8eaf963acc824307af3ae55
+- [Why No Purple Stars](./spheres/stars/why-no-purple.html): Stars 3D. seal 099d1f99dcecc6265ed99f0f89bf1e402055c37be0efee09eaaa1ca8118de1ca
+- [Stars · Dwarfs, Giants, Red, Blue (and Purple)](./spheres/stars/stars-index.html): Stars 3D. seal 4cde28e0dcda2e184f68bf7ab3c5dceb6c7d662f743b25a92c94a2bc185c9b06

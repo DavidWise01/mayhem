@@ -1,0 +1,1 @@
+{"slug": "subgiant", "seal": "e39cf127c3d36b926b62c997a5f0b3139a07dc7b6ad1a28542c55dfa5135b97f", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "neutron-star", "seal": "cf97f4c3059e1290e0c1404b1ff6d61425cc3eb3c77b4d347f4f68af5c0b0699", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

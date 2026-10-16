@@ -1,0 +1,1 @@
+{"slug": "polaris", "seal": "84339d83d7e399cc328214fa08209bf53a53b6d57644df1ba95299bac3c3f889", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

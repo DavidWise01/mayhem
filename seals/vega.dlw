@@ -1,0 +1,1 @@
+{"slug": "vega", "seal": "09ff095ef682cc8f7c14c02f8a61fd9ab880b9f7f2631b40ee5a8c753bc0bc4b", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

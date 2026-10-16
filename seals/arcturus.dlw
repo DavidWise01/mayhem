@@ -1,0 +1,1 @@
+{"slug": "arcturus", "seal": "384b213faf234a9c661cf9f6abed889ce7259c6ee8901b676a342ee56f789e1f", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

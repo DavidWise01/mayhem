@@ -1,0 +1,1 @@
+{"slug": "carbon-star", "seal": "1c9df8e447760b60743977be2f3089df56a230e9f6b238fd7ff880bd203a61d1", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

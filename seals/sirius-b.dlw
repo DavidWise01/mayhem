@@ -1,0 +1,1 @@
+{"slug": "sirius-b", "seal": "5cc224264acdba82ff9295d84b528e778e799507b5f914e3b378738ba5c321a7", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

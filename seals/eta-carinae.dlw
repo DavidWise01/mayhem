@@ -1,0 +1,1 @@
+{"slug": "eta-carinae", "seal": "862d9aeb1675d5a5fe53cf90f66549e0b1f3d67c91eff275829042ce97698627", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

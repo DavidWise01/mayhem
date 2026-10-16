@@ -1,0 +1,1 @@
+{"slug": "alpha-centauri", "seal": "da60dfe198b5ba4b006eb07e640146836215939492224a86e1f3ac53297a5707", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

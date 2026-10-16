@@ -1,0 +1,1 @@
+{"slug": "stars-index", "seal": "4cde28e0dcda2e184f68bf7ab3c5dceb6c7d662f743b25a92c94a2bc185c9b06", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

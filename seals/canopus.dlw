@@ -1,0 +1,1 @@
+{"slug": "canopus", "seal": "47dce03a6339d4506d3942818e59c703bc6a7567e35336073e0327c01dad52ef", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

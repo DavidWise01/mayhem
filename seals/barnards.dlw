@@ -1,0 +1,1 @@
+{"slug": "barnards", "seal": "6ebecc74bdeb4835719c153ed428835429dc979ab3d7bc1f01a911ab7a01af5f", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

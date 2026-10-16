@@ -1,0 +1,1 @@
+{"slug": "main-sequence", "seal": "1f09beb4d89cf6386f865367f132473d5df6664c829d3ad1bf4cc25e35fd2395", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

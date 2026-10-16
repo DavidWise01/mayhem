@@ -1,0 +1,1 @@
+{"slug": "class-g", "seal": "399d25a44a26d7ace59545374d5fa2f64592f5bbde2bfe516dbd6f70f0ef9bae", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "class-f", "seal": "53c7064d310018a8bfd94001720b762e467a12752d57b03f4e7563c5055921df", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

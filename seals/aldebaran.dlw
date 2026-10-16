@@ -1,0 +1,1 @@
+{"slug": "aldebaran", "seal": "9d8618af0f6fb7bfc741f63dd1bbe090dd670dccdf60bbebd81e97616ab8df15", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

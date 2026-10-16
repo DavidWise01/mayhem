@@ -1,0 +1,1 @@
+{"slug": "white-dwarf", "seal": "1c44fb62893edc2520a524a827eedec4f884c479610a28c8c1dfa8b6885323c5", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

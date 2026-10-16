@@ -1,0 +1,1 @@
+{"slug": "vy-cma", "seal": "1ad1f430d5010db26f0c9a0e84c036f50a69a2402d2b767cbef1c63bec51f3eb", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
