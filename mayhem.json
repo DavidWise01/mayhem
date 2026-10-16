@@ -88,6 +88,15 @@
      "seal": "c3ebb753e86b6cf45f0d30c585f9bf00cbb4bebe121ed0b6c79d9bc3e58ecc11",
      "claim": "LIT data from Dave's NES-agent logs · MODEL hand-drawn art",
      "style": "blueprint doodle"
+    },
+    {
+     "name": "Penrose Rhombs · Tesserae",
+     "slug": "penrose-mosaic",
+     "path": "spheres/penrose-mosaic.html",
+     "blurb": "An ARTIST agent lays Penrose thick and thin rhombs around a star; a CRITIC checks the 72° and 36° angles and the golden ratio between the counts.",
+     "seal": "41297666292e196ee23c684e795521a5624864714e30b09eb194a760ecbc754a",
+     "claim": "LIT theory checks · MODEL hand-drawn art",
+     "style": "hand-set tesserae mosaic"
     }
    ]
   },
@@ -196,6 +205,15 @@
      "seal": "af87977e35d76c62c5ea01ffc2e8d2a58a2fb9b3613aac490e0c8d147351f19b",
      "claim": "LIT data from Dave's NES-agent logs · MODEL hand-drawn art",
      "style": "field-journal pencil sketch"
+    },
+    {
+     "name": "Voronoi Cells · Stained Watercolour",
+     "slug": "voronoi-watercolour",
+     "path": "spheres/voronoi-watercolour.html",
+     "blurb": "Cells like tissue under a microscope: the ARTIST moves 8 seeds, the cells are painted by nearest seed, and the CRITIC checks the seeds against a seeded target layout.",
+     "seal": "50d966298871fc00ba956d6782a81079f8ea421bdf06774ca54db2d7cc87af78",
+     "claim": "LIT theory checks · MODEL hand-drawn art",
+     "style": "stained-glass watercolour"
     }
    ]
   },
@@ -278,6 +296,24 @@
      "seal": "dc815e06b340160f4ad6fe4243ed573037bc5d6725451c7f4fe068359a5e379f",
      "claim": "LIT data from Dave's NES-agent logs · MODEL hand-drawn art",
      "style": "linocut print"
+    },
+    {
+     "name": "Seahorse Valley · Gouache",
+     "slug": "mandelbrot-gouache",
+     "path": "spheres/mandelbrot-gouache.html",
+     "blurb": "An ARTIST agent pans a gouache window over the Mandelbrot set looking for Seahorse Valley; a CRITIC checks for c = −0.75 + 0.1i.",
+     "seal": "fa7b7233dbd0b5b9bb06facf07b94a2ae6a483a5e646956d4aca3b3e09d50903",
+     "claim": "LIT theory checks · MODEL hand-drawn art",
+     "style": "opaque gouache"
+    },
+    {
+     "name": "Turing Spots · Batik",
+     "slug": "turing-batik",
+     "path": "spheres/turing-batik.html",
+     "blurb": "Wax-resist batik made by a Gray–Scott reaction–diffusion run: the ARTIST tunes feed and kill, and the CRITIC looks for the spot-forming F = 0.035, k = 0.065.",
+     "seal": "60ebc7abeab5be02cbfe38c63d837c4f89010064a7e1238e4a6a80869851ba6b",
+     "claim": "LIT theory checks · MODEL hand-drawn art",
+     "style": "wax-resist batik"
     }
    ]
   },
@@ -351,6 +387,24 @@
      "seal": "e1639072d66132768871f1a85e2ac131f8d50e1e98ea5372d216b57cc8686c9c",
      "claim": "LIT data from Dave's NES-agent logs · MODEL hand-drawn art",
      "style": "wax crayon"
+    },
+    {
+     "name": "Spirograph · Gel Pen",
+     "slug": "spirograph-gelpen",
+     "path": "spheres/spirograph-gelpen.html",
+     "blurb": "Gel pen in a toothed wheel: the ARTIST picks the ring, wheel and pen hole, and the CRITIC looks for the R = 5, r = 3, d = 2.5 hypotrochoid, which closes after 3 turns.",
+     "seal": "7593840ac708f13db741083ab833ad3bfc429bf1dd252156fe481af2aaa8ad5f",
+     "claim": "LIT theory checks · MODEL hand-drawn art",
+     "style": "glitter gel pen"
+    },
+    {
+     "name": "Galton Board · Woodcut",
+     "slug": "galton-woodcut",
+     "path": "spheres/galton-woodcut.html",
+     "blurb": "Balls rattle through 8 rows of pegs: the ARTIST carves the 9 bin heights and the CRITIC compares them with the binomial law C(8,k)/256.",
+     "seal": "30609cd46e5f70788d997ec4b25c5e863725f3495e506369752d30670f0be7af",
+     "claim": "LIT theory checks · MODEL hand-drawn art",
+     "style": "woodcut print"
     }
    ]
   },
@@ -442,6 +496,24 @@
      "seal": "fdad804f5770bc717b173726f08bb9ae0cfafb4892d7f18bbccc0666399c2f94",
      "claim": "LIT data from Dave's NES-agent logs · MODEL hand-drawn art",
      "style": "charcoal smudge"
+    },
+    {
+     "name": "Chladni Figures · Sand on Brass",
+     "slug": "chladni-sand",
+     "path": "spheres/chladni-sand.html",
+     "blurb": "An ARTIST agent picks the mode numbers of a vibrating square plate and scatters sand on the nodal lines; a CRITIC checks for mode (2,5).",
+     "seal": "14e5a1e8e4806c8c381f53105f8343b7e8feb46cae6b3e5be8679b3430052331",
+     "claim": "LIT theory checks · MODEL hand-drawn art",
+     "style": "sand-on-brass stipple"
+    },
+    {
+     "name": "Descartes Rainbow · Chalk Pastel",
+     "slug": "rainbow-pastel",
+     "path": "spheres/rainbow-pastel.html",
+     "blurb": "Sunlight refracts through a raindrop: the ARTIST sets the refractive index and the arc radius, and the CRITIC checks Descartes' ~42° primary bow for water (n = 1.333).",
+     "seal": "ee326dc9eb11716e1f7aceb8b7089810a82dc57176331a08701f2ece4e16f559",
+     "claim": "LIT theory checks · MODEL hand-drawn art",
+     "style": "soft chalk pastel"
     }
    ]
   },
@@ -542,6 +614,15 @@
      "seal": "d4431541577a2d8a7b5173d0cd73e9572a60d10db650c526d780f6ba6d5a3a48",
      "claim": "LIT data from Dave's NES-agent logs · MODEL hand-drawn art",
      "style": "risograph zine"
+    },
+    {
+     "name": "Fourier Epicycles · Copperplate Fae",
+     "slug": "fourier-fae-copperplate",
+     "path": "spheres/fourier-fae-copperplate.html",
+     "blurb": "Spinning circles trace a winged-fae silhouette (MODEL shape): the ARTIST sets the epicycle radii and the CRITIC compares them with the shape's DFT.",
+     "seal": "349b980464d1ff30edfafa746d1881126026bbf86fe9bdd517df5c881499c8ee",
+     "claim": "LIT theory checks · MODEL hand-drawn art",
+     "style": "copperplate engraving"
     }
    ]
   },
@@ -615,6 +696,24 @@
      "seal": "78c2c93bd489a6c079886cfdc3c221152bf9faeecdf7708e2e602a381923792c",
      "claim": "LIT data from Dave's NES-agent logs · MODEL hand-drawn art",
      "style": "notebook-margin ballpoint doodle"
+    },
+    {
+     "name": "Harmonograph · Ink Pendulum",
+     "slug": "harmonograph-ink",
+     "path": "spheres/harmonograph-ink.html",
+     "blurb": "Two pendulums drive a pen; the ARTIST tunes the frequencies and the phase, and the CRITIC looks for the closed 3:2 Lissajous figure with a π/2 phase.",
+     "seal": "1fb041c23230549460c928ddc526c09f92c7b497ba019ac43cc13d55c7a3116d",
+     "claim": "LIT theory checks · MODEL hand-drawn art",
+     "style": "pendulum ink on rag paper"
+    },
+    {
+     "name": "Kepler Orbits · Cyanotype",
+     "slug": "kepler-cyanotype",
+     "path": "spheres/kepler-cyanotype.html",
+     "blurb": "A sun print of Mars's ellipse: the ARTIST sets the semi-major axis and the eccentricity, and the CRITIC checks a = 1.524 AU, e = 0.093 and Kepler's T² = a³.",
+     "seal": "fed1154e92c85165193ae3ff70b8357cc2546bc758b9ef664f46549f9ca859ef",
+     "claim": "LIT theory checks · MODEL hand-drawn art",
+     "style": "cyanotype sun print"
     }
    ]
   },
@@ -688,6 +787,15 @@
      "seal": "96472074cf979ed95d5b67020ba5d81222b05411350e776893a02f2f20e6da07",
      "claim": "LIT data from Dave's NES-agent logs · MODEL hand-drawn art",
      "style": "watercolour journal"
+    },
+    {
+     "name": "Hilbert Curve · Embroidery",
+     "slug": "hilbert-embroidery",
+     "path": "spheres/hilbert-embroidery.html",
+     "blurb": "Thread follows a space-filling curve: the ARTIST chooses the order and the stitch length, and the CRITIC checks an order-3 Hilbert curve that fills the hoop.",
+     "seal": "fb3ebafa7c1b722fb091a1cbda9aae6fc8dbdb876fda968a9719b556b18a78ca",
+     "claim": "LIT theory checks · MODEL hand-drawn art",
+     "style": "cross-stitch embroidery"
     }
    ]
   }
@@ -703,5 +811,6 @@
  "fae_v2": "Dave t211u: \"make these more involved, 2 agents per sphere agentic and generative please, think canvas svg training\". All 20 fae spheres upgraded in place (ARTIST + CRITIC/TEACHER, seal-derived target, hill-climb training, live SVG + JSON export). Seals unchanged.",
  "fae_v3": "Dave t212u (yes): restore lost content alongside training. Drawing pages: style pass on trained best + narrated 8-step tutorial. Sprite pages: 4×4 sheet + idle/walk/attack/cast built from the trained figure. Seals unchanged.",
  "batch_node184": "Dave t213u: \"now make 10 around these please\". Built around his NULLRIDER · Node 184 Inference Observatory files (app.js, build .py, built HTML).",
- "batch_learned": "Dave t215u: 10 hand-drawn spheres on what the agents learned playing Metroid and Punch-Out!!, built from A:\\mayhem.txt and the nes-agents-app corpora. Each carries a workspace improvement loop."
+ "batch_learned": "Dave t215u: 10 hand-drawn spheres on what the agents learned playing Metroid and Punch-Out!!, built from A:\\mayhem.txt and the nes-agents-app corpora. Each carries a workspace improvement loop.",
+ "batch_cabinet": "Dave t219u: 12 spheres, themes my choice (MODEL), Cabinet of Wonders."
 }

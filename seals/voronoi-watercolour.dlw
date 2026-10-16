@@ -1,0 +1,1 @@
+{"slug": "voronoi-watercolour", "seal": "50d966298871fc00ba956d6782a81079f8ea421bdf06774ca54db2d7cc87af78", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

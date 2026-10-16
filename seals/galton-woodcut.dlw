@@ -1,0 +1,1 @@
+{"slug": "galton-woodcut", "seal": "30609cd46e5f70788d997ec4b25c5e863725f3495e506369752d30670f0be7af", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

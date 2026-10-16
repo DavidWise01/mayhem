@@ -1,0 +1,1 @@
+{"slug": "hilbert-embroidery", "seal": "fb3ebafa7c1b722fb091a1cbda9aae6fc8dbdb876fda968a9719b556b18a78ca", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

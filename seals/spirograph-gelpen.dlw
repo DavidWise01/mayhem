@@ -1,0 +1,1 @@
+{"slug": "spirograph-gelpen", "seal": "7593840ac708f13db741083ab833ad3bfc429bf1dd252156fe481af2aaa8ad5f", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

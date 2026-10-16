@@ -1,0 +1,1 @@
+{"slug": "penrose-mosaic", "seal": "41297666292e196ee23c684e795521a5624864714e30b09eb194a760ecbc754a", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "fourier-fae-copperplate", "seal": "349b980464d1ff30edfafa746d1881126026bbf86fe9bdd517df5c881499c8ee", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

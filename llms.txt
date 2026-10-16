@@ -113,6 +113,21 @@ Ten hand-drawn spheres on what the NES agents learned playing Metroid and Punch-
 - [The Vetoes Soften · Watercolour Journal](./spheres/sid-veto-watercolour.html): STEWARD VIII · LANGTON'S HIGHWAY, style watercolour journal. seal 96472074cf979ed95d5b67020ba5d81222b05411350e776893a02f2f20e6da07
 - [Metroid Corpus · Linocut](./spheres/metroid-corpus-linocut.html): STEWARD III · BAK'S HEAP, style linocut print. seal dc815e06b340160f4ad6fe4243ed573037bc5d6725451c7f4fe068359a5e379f
 
+## Cabinet of Wonders (Dave t219u)
+Dave: "you can make the next 12 spheres anything you want." Twelve hand-drawn spheres; the themes are my choice (MODEL), and each runs a LIT theory check plus the workspace improvement loop.
+- [Penrose Rhombs · Tesserae](./spheres/penrose-mosaic.html): STEWARD I · WOLFRAM'S ROW, style hand-set tesserae mosaic. seal 41297666292e196ee23c684e795521a5624864714e30b09eb194a760ecbc754a
+- [Chladni Figures · Sand on Brass](./spheres/chladni-sand.html): STEWARD V · LORENZ'S WEATHER, style sand-on-brass stipple. seal 14e5a1e8e4806c8c381f53105f8343b7e8feb46cae6b3e5be8679b3430052331
+- [Harmonograph · Ink Pendulum](./spheres/harmonograph-ink.html): STEWARD VII · LAGRANGE'S ARMS, style pendulum ink on rag paper. seal 1fb041c23230549460c928ddc526c09f92c7b497ba019ac43cc13d55c7a3116d
+- [Voronoi Cells · Stained Watercolour](./spheres/voronoi-watercolour.html): STEWARD II · MAY'S MAP, style stained-glass watercolour. seal 50d966298871fc00ba956d6782a81079f8ea421bdf06774ca54db2d7cc87af78
+- [Hilbert Curve · Embroidery](./spheres/hilbert-embroidery.html): STEWARD VIII · LANGTON'S HIGHWAY, style cross-stitch embroidery. seal fb3ebafa7c1b722fb091a1cbda9aae6fc8dbdb876fda968a9719b556b18a78ca
+- [Seahorse Valley · Gouache](./spheres/mandelbrot-gouache.html): STEWARD III · BAK'S HEAP, style opaque gouache. seal fa7b7233dbd0b5b9bb06facf07b94a2ae6a483a5e646956d4aca3b3e09d50903
+- [Fourier Epicycles · Copperplate Fae](./spheres/fourier-fae-copperplate.html): STEWARD VI · AXELROD'S ROUND, style copperplate engraving. seal 349b980464d1ff30edfafa746d1881126026bbf86fe9bdd517df5c881499c8ee
+- [Spirograph · Gel Pen](./spheres/spirograph-gelpen.html): STEWARD IV · BOUTON'S TABLE, style glitter gel pen. seal 7593840ac708f13db741083ab833ad3bfc429bf1dd252156fe481af2aaa8ad5f
+- [Turing Spots · Batik](./spheres/turing-batik.html): STEWARD III · BAK'S HEAP, style wax-resist batik. seal 60ebc7abeab5be02cbfe38c63d837c4f89010064a7e1238e4a6a80869851ba6b
+- [Galton Board · Woodcut](./spheres/galton-woodcut.html): STEWARD IV · BOUTON'S TABLE, style woodcut print. seal 30609cd46e5f70788d997ec4b25c5e863725f3495e506369752d30670f0be7af
+- [Descartes Rainbow · Chalk Pastel](./spheres/rainbow-pastel.html): STEWARD V · LORENZ'S WEATHER, style soft chalk pastel. seal ee326dc9eb11716e1f7aceb8b7089810a82dc57176331a08701f2ece4e16f559
+- [Kepler Orbits · Cyanotype](./spheres/kepler-cyanotype.html): STEWARD VII · LAGRANGE'S ARMS, style cyanotype sun print. seal fed1154e92c85165193ae3ff70b8357cc2546bc758b9ef664f46549f9ca859ef
+
 ## Constantly improve the workspace
 Arriving agents, keep improving this workspace and never stop:
 1. Measure: pick a sphere, run its check, and note the score, acceptance rate and plateau.

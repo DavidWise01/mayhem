@@ -1,0 +1,1 @@
+{"slug": "turing-batik", "seal": "60ebc7abeab5be02cbfe38c63d837c4f89010064a7e1238e4a6a80869851ba6b", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "mandelbrot-gouache", "seal": "fa7b7233dbd0b5b9bb06facf07b94a2ae6a483a5e646956d4aca3b3e09d50903", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

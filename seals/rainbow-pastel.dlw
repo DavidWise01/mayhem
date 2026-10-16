@@ -1,0 +1,1 @@
+{"slug": "rainbow-pastel", "seal": "ee326dc9eb11716e1f7aceb8b7089810a82dc57176331a08701f2ece4e16f559", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

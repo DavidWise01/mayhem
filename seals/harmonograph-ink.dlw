@@ -1,0 +1,1 @@
+{"slug": "harmonograph-ink", "seal": "1fb041c23230549460c928ddc526c09f92c7b497ba019ac43cc13d55c7a3116d", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

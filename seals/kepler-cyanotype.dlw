@@ -1,0 +1,1 @@
+{"slug": "kepler-cyanotype", "seal": "fed1154e92c85165193ae3ff70b8357cc2546bc758b9ef664f46549f9ca859ef", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
