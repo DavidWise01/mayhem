@@ -19,7 +19,17 @@
     "blurb": "Elementary cellular automaton rule 30: one live cell grows into a chaotic triangle.",
     "seal": "17b6fbe5c456470a670dc89efaaf2d650d4cd7e7fe4aecaa0cee6adfd97a4b4e",
     "claim": "LIT"
-   }
+   },
+   "more": [
+    {
+     "name": "Poetical Science",
+     "slug": "poetical-science",
+     "path": "spheres/poetical-science.html",
+     "blurb": "Three scribe agents weave a poem in {{i}} after Ada Lovelace's loom of algebraical patterns.",
+     "seal": "9855b6d77cb1ca7e8fcc69fdf02295ca238d869aabc79c44a36bb6147bad1fe6",
+     "claim": "LIT checks · AMBER tips/quotes · MODEL agents"
+    }
+   ]
   },
   {
    "steward": "STEWARD II · MAY'S MAP",
@@ -52,7 +62,17 @@
     "blurb": "Nim: the player who faces nim-sum 0 loses under perfect play (Bouton 1901).",
     "seal": "85ac964f7cf8ceec4e79d3c47639343d447c8787db412316c2381d6bae682094",
     "claim": "LIT"
-   }
+   },
+   "more": [
+    {
+     "name": "The Zebes Run",
+     "slug": "metroid-agents",
+     "path": "spheres/metroid-agents.html",
+     "blurb": "Agents G, R and O try to beat an abstract NES-Metroid map, posting tips to a shared board while K watches.",
+     "seal": "92d18c04fd59a78a4b6f4ffec44e8311dfc1b9db81218518fbfcbfa98d595a24",
+     "claim": "LIT checks · AMBER tips/quotes · MODEL agents"
+    }
+   ]
   },
   {
    "steward": "STEWARD V · LORENZ'S WEATHER",
@@ -99,5 +119,6 @@
    }
   }
  ],
- "labels": "keeper/steward names & themes MODEL; simulations LIT via on-load self-checks; art AMBER/MODEL"
+ "labels": "keeper/steward names & themes MODEL; simulations LIT via on-load self-checks; art AMBER/MODEL",
+ "agentic": "Dave t196u: \"keep going, i think agentic is what i meant not generative lol\""
 }

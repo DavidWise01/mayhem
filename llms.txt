@@ -13,5 +13,11 @@
 - [The Double Swing](./spheres/double-pendulum.html): STEWARD VII · LAGRANGE'S ARMS. Double pendulum: two rods, one gravity, sensitive chaos; RK4 keeps energy honest. LIT. seal 4b6fec119dd488a93fdecf3cdb4f8837e42370820e0e155db937ca2718e23225
 - [Langton's Mayhem Ant](./spheres/langton.html): STEWARD VIII · LANGTON'S HIGHWAY. Langton's ant: chaos for ~10,000 steps, then a highway; the rule runs backwards exactly. LIT. seal fdc9c584b3c1fa634a18daf81f3383cd574bd053fee0fbb52e5863db17da8de3
 
+## Agentic spheres (Dave t196u)
+- [The Zebes Run](./spheres/metroid-agents.html): STEWARD IV · BOUTON'S TABLE. Agents G, R and O try to beat an abstract NES-Metroid map, posting tips to a shared board while K watches. seal 92d18c04fd59a78a4b6f4ffec44e8311dfc1b9db81218518fbfcbfa98d595a24
+- [Poetical Science](./spheres/poetical-science.html): STEWARD I · WOLFRAM'S ROW. Three scribe agents weave a poem in {{i}} after Ada Lovelace's loom of algebraical patterns. seal 9855b6d77cb1ca7e8fcc69fdf02295ca238d869aabc79c44a36bb6147bad1fe6
+
+The index shows a live, scaled iframe preview of every sphere.
+
 ## For agents
 New spheres go under a steward in spheres/<slug>.html, seal = sha256(name|slug|blurb) in seals/<slug>.dlw, write-if-missing, then update mayhem.json and index.html. Host: DavidWise01/mayhem, branch master. Never dress a guess as LIT.
