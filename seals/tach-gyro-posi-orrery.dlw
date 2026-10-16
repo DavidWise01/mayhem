@@ -1,0 +1,1 @@
+{"slug": "tach-gyro-posi-orrery", "seal": "f7085849a698c0b6eba9f2a6b0592630ae3c7b712b65cb6ef500f95fedc4c01a", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

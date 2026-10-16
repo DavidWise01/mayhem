@@ -70,6 +70,15 @@
      "seal": "a6e071b30951754217769fb92d16cbf38d7442d1e922d3d0c558bfb2fe5bd6bd",
      "claim": "LIT checks · AMBER inspiration · MODEL art",
      "style": "neon"
+    },
+    {
+     "name": "The 365-Cell Mosaic · Node 184",
+     "slug": "node-184-mosaic",
+     "path": "spheres/node-184-mosaic.html",
+     "blurb": "An artist agent lays tesserae for Node 184's 365 symbolic cells (TACH 118 · GYRO 118 · POSI 118 · RESERVE 11) while a critic counts every band.",
+     "seal": "e9eb6a5d5ab50c258887ba542757de80e8a62282010ffa31c3aea8caf24d46b7",
+     "claim": "LIT checks · MODEL art · Dave's Node 184 constants verbatim",
+     "style": "Byzantine tesserae mosaic"
     }
    ]
   },
@@ -151,6 +160,24 @@
      "seal": "81619f3aeebe9f69b6439982f5f301e02e6f702ccf93f04049eafde9e092ebca",
      "claim": "LIT checks · AMBER inspiration · MODEL art",
      "style": "dark fantasy"
+    },
+    {
+     "name": "Tach −2 / Gyro 0 / Posi +3 · Orrery",
+     "slug": "tach-gyro-posi-orrery",
+     "path": "spheres/tach-gyro-posi-orrery.html",
+     "blurb": "Three rings orbit SCALAR 0 at Dave's radii 1.45 · 1.10 · 0.75; the artist engraves them and the critic measures every ratio and the engine sum −2 + 0 + 3.",
+     "seal": "f7085849a698c0b6eba9f2a6b0592630ae3c7b712b65cb6ef500f95fedc4c01a",
+     "claim": "LIT checks · MODEL art · Dave's Node 184 constants verbatim",
+     "style": "brass orrery engraving"
+    },
+    {
+     "name": "BUILD_INLINE · Bauhaus",
+     "slug": "build-inline-bauhaus",
+     "path": "spheres/build-inline-bauhaus.html",
+     "blurb": "Dave's build script inlines ENG, INF, LAB and APP into one standalone page; the artist arranges the four blocks and the critic checks their order and the closing-script-tag guard.",
+     "seal": "acf8d90ecb0a1d505aa3cfab2b8e5079ec23b29498f88e69e4861f5b3ccc23c0",
+     "claim": "LIT checks · MODEL art · Dave's Node 184 constants verbatim",
+     "style": "Bauhaus composition"
     }
    ]
   },
@@ -206,6 +233,15 @@
      "seal": "2bf3d806fd3a93cfe12fa0ef7593b1a749c51cf7e6747488c8a2c703a25b83ff",
      "claim": "LIT checks · AMBER inspiration · MODEL art",
      "style": "goth"
+    },
+    {
+     "name": "The 7.3 Renewal Weave",
+     "slug": "renewal-7-3-weave",
+     "path": "spheres/renewal-7-3-weave.html",
+     "blurb": "Each row of the weave is one renewal cycle; the artist picks how many threads to renew and the critic holds it to Dave's fractional carry: exactly 73 retirements in 10 cycles.",
+     "seal": "24993011aeed19256a1e45b4dceef87d12ad3342181ee810cdbd4f6ac7c2aa09",
+     "claim": "LIT checks · MODEL art · Dave's Node 184 constants verbatim",
+     "style": "woven textile"
     }
    ]
   },
@@ -261,6 +297,15 @@
      "seal": "481b372f965441b8aafd7ec74091e644f5a03274c93092e7bfddde8d3fe40d77",
      "claim": "LIT checks · AMBER inspiration · MODEL art",
      "style": "vaporwave"
+    },
+    {
+     "name": "ALERT · CLEAR · ABSTAIN · Risograph",
+     "slug": "alert-clear-abstain-riso",
+     "path": "spheres/alert-clear-abstain-riso.html",
+     "blurb": "The artist tunes INFER's high/low thresholds on a synthetic Node 184 world, printing each cell's decision; the critic scores accuracy on decided cells times coverage with the hidden truth.",
+     "seal": "437b714fb9561d815e92081901d5c7aa2c7b511aabf9ab204cd7ef90f8bd6d5a",
+     "claim": "LIT checks · MODEL art · Dave's Node 184 constants verbatim",
+     "style": "two-colour risograph"
     }
    ]
   },
@@ -334,6 +379,15 @@
      "seal": "aad35542413aa15b62849c2e87859dc1a0c2a7786509e145553753e64341ff41",
      "claim": "LIT checks · AMBER inspiration · MODEL art",
      "style": "pastel kawaii"
+    },
+    {
+     "name": "Fingerprint Blueprint · Read-Only 184",
+     "slug": "fingerprint-blueprint",
+     "path": "spheres/fingerprint-blueprint.html",
+     "blurb": "The registry's change-indicator fingerprint (FNV, never an authenticity signature) is drafted as a blueprint glyph; the artist sketches the 8 hex digits and the critic checks them against the fingerprint.",
+     "seal": "2c3a4ce5cfc650634c3874699910416a2de3033c82db495f74d7ebee2f9fcd9b",
+     "claim": "LIT checks · MODEL art · Dave's Node 184 constants verbatim",
+     "style": "architectural blueprint"
     }
    ]
   },
@@ -398,6 +452,24 @@
      "seal": "2eec2eb7f600c92f0c3f0da1271a06bfb2cc429f967498bcecc8a7bd0eaae93c",
      "claim": "LIT checks · AMBER inspiration · MODEL art",
      "style": "16-bit SNES"
+    },
+    {
+     "name": "Sensor Dropout · Glitch",
+     "slug": "sensor-dropout-glitch",
+     "path": "spheres/sensor-dropout-glitch.html",
+     "blurb": "Missing sensors become glitch slices: the artist tunes dropout and the alarm/drift sensitivities; the critic holds them to the observatory's 25% default and Dave's sensor model 0.82 / 0.70.",
+     "seal": "436bdeacb244ad5f8d7af7e0aef046b3ded01f449d46e346fd2d75d54691731b",
+     "claim": "LIT checks · MODEL art · Dave's Node 184 constants verbatim",
+     "style": "glitch art"
+    },
+    {
+     "name": "7.5° Symbolic Aperture · Kaleidoscope",
+     "slug": "aperture-7-5-kaleidoscope",
+     "path": "spheres/aperture-7-5-kaleidoscope.html",
+     "blurb": "Node 184's 7.5° symbolic aperture becomes a kaleidoscope; the artist tunes the wedge angle and fold, and the critic holds it to 7.5° (48 wedges) with alternating mirror folds.",
+     "seal": "4febf9232f21d1b9a5a8b7873fb5c094bf440c66313f285d7c684ec1c1e003de",
+     "claim": "LIT checks · MODEL art · Dave's Node 184 constants verbatim",
+     "style": "stained kaleidoscope"
     }
    ]
   },
@@ -453,6 +525,15 @@
      "seal": "026762986c40185fa5602c99dcee1f9675f4560593921a75b6d730869afc4747",
      "claim": "LIT checks · AMBER inspiration · MODEL art",
      "style": "Game Boy 4-green"
+    },
+    {
+     "name": "prior184 · Ink Brush",
+     "slug": "prior-184-ink",
+     "path": "spheres/prior-184-ink.html",
+     "blurb": "The artist paints the age prior as one brush stroke through six control points; the critic compares it with prior184(age) = clamp(0.07 + 0.16·age/50, 0.02, 0.35).",
+     "seal": "1a0a06bc18890dd9122ee37a019503c05e9ae8aa05ec29967e7474784f79508f",
+     "claim": "LIT checks · MODEL art · Dave's Node 184 constants verbatim",
+     "style": "ink brush calligraphy"
     }
    ]
   },
@@ -508,6 +589,15 @@
      "seal": "dfce65054a2fd79e550fc3e7620fbc8c3081cc520405cf98640c243455d5221e",
      "claim": "LIT checks · AMBER inspiration · MODEL art",
      "style": "cyberpunk"
+    },
+    {
+     "name": "40 Unseen Worlds · Constellation",
+     "slug": "holdout-constellation",
+     "path": "spheres/holdout-constellation.html",
+     "blurb": "Forty holdout worlds (seeds 20801…20840) are stars; the artist places them and the critic scores how close each lies to where random184(seed) puts it.",
+     "seal": "3607ed1c9fea8f8c85c4ca7b00c70f06eefae132f1928ecc2d8164bc5076cd1a",
+     "claim": "LIT checks · MODEL art · Dave's Node 184 constants verbatim",
+     "style": "star-chart constellation"
     }
    ]
   }
@@ -521,5 +611,6 @@
  "art_pages": "Dave t209u: \"not kid pro. all of the pages you build lol. should be art pages, do a how you draw fantasy characters, referant sarah j maas please, do up 10 of them please real quick. thank you. make them dif art sytles\". Going forward every Mayhem sphere is an art page.",
  "sprites": "Dave t210u: \"i love it, now in sprite form for 10 pages, neon, noir , goth etc etc\"",
  "fae_v2": "Dave t211u: \"make these more involved, 2 agents per sphere agentic and generative please, think canvas svg training\". All 20 fae spheres upgraded in place (ARTIST + CRITIC/TEACHER, seal-derived target, hill-climb training, live SVG + JSON export). Seals unchanged.",
- "fae_v3": "Dave t212u (yes): restore lost content alongside training. Drawing pages: style pass on trained best + narrated 8-step tutorial. Sprite pages: 4×4 sheet + idle/walk/attack/cast built from the trained figure. Seals unchanged."
+ "fae_v3": "Dave t212u (yes): restore lost content alongside training. Drawing pages: style pass on trained best + narrated 8-step tutorial. Sprite pages: 4×4 sheet + idle/walk/attack/cast built from the trained figure. Seals unchanged.",
+ "batch_node184": "Dave t213u: \"now make 10 around these please\". Built around his NULLRIDER · Node 184 Inference Observatory files (app.js, build .py, built HTML)."
 }

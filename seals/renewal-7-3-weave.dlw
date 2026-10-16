@@ -1,0 +1,1 @@
+{"slug": "renewal-7-3-weave", "seal": "24993011aeed19256a1e45b4dceef87d12ad3342181ee810cdbd4f6ac7c2aa09", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -87,6 +87,19 @@ Dave: "make these more involved, 2 agents per sphere agentic and generative plea
 ## Fae v3 (Dave t212u)
 The content lost in v2 is back, alongside the training. Drawing pages get the style pass on the trained best figure and the 8-step tutorial again. Sprite pages get a 4×4 sheet with idle, walk, attack and cast cycles built from the trained figure. Seals are unchanged.
 
+## Node 184 batch (Dave t213u)
+Dave: "now make 10 around these please". Ten art spheres built around his NULLRIDER · Node 184 Inference Observatory files. Each has 2 agents (ARTIST + CRITIC), canvas plus SVG training and its own style. Constants are kept verbatim.
+- [The 365-Cell Mosaic · Node 184](./spheres/node-184-mosaic.html): STEWARD I · WOLFRAM'S ROW, style Byzantine tesserae mosaic. seal e9eb6a5d5ab50c258887ba542757de80e8a62282010ffa31c3aea8caf24d46b7
+- [Tach −2 / Gyro 0 / Posi +3 · Orrery](./spheres/tach-gyro-posi-orrery.html): STEWARD II · MAY'S MAP, style brass orrery engraving. seal f7085849a698c0b6eba9f2a6b0592630ae3c7b712b65cb6ef500f95fedc4c01a
+- [The 7.3 Renewal Weave](./spheres/renewal-7-3-weave.html): STEWARD III · BAK'S HEAP, style woven textile. seal 24993011aeed19256a1e45b4dceef87d12ad3342181ee810cdbd4f6ac7c2aa09
+- [ALERT · CLEAR · ABSTAIN · Risograph](./spheres/alert-clear-abstain-riso.html): STEWARD IV · BOUTON'S TABLE, style two-colour risograph. seal 437b714fb9561d815e92081901d5c7aa2c7b511aabf9ab204cd7ef90f8bd6d5a
+- [Fingerprint Blueprint · Read-Only 184](./spheres/fingerprint-blueprint.html): STEWARD V · LORENZ'S WEATHER, style architectural blueprint. seal 2c3a4ce5cfc650634c3874699910416a2de3033c82db495f74d7ebee2f9fcd9b
+- [Sensor Dropout · Glitch](./spheres/sensor-dropout-glitch.html): STEWARD VI · AXELROD'S ROUND, style glitch art. seal 436bdeacb244ad5f8d7af7e0aef046b3ded01f449d46e346fd2d75d54691731b
+- [prior184 · Ink Brush](./spheres/prior-184-ink.html): STEWARD VII · LAGRANGE'S ARMS, style ink brush calligraphy. seal 1a0a06bc18890dd9122ee37a019503c05e9ae8aa05ec29967e7474784f79508f
+- [40 Unseen Worlds · Constellation](./spheres/holdout-constellation.html): STEWARD VIII · LANGTON'S HIGHWAY, style star-chart constellation. seal 3607ed1c9fea8f8c85c4ca7b00c70f06eefae132f1928ecc2d8164bc5076cd1a
+- [BUILD_INLINE · Bauhaus](./spheres/build-inline-bauhaus.html): STEWARD II · MAY'S MAP, style Bauhaus composition. seal acf8d90ecb0a1d505aa3cfab2b8e5079ec23b29498f88e69e4861f5b3ccc23c0
+- [7.5° Symbolic Aperture · Kaleidoscope](./spheres/aperture-7-5-kaleidoscope.html): STEWARD VI · AXELROD'S ROUND, style stained kaleidoscope. seal 4febf9232f21d1b9a5a8b7873fb5c094bf440c66313f285d7c684ec1c1e003de
+
 ## For agents
 New Mayhem spheres are art pages (Dave t209u).
 New spheres go under a steward in spheres/<slug>.html, seal = sha256(name|slug|blurb) in seals/<slug>.dlw, write-if-missing, then update mayhem.json and index.html. Host: DavidWise01/mayhem, branch master. Never dress a guess as LIT.

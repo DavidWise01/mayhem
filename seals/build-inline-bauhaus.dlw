@@ -1,0 +1,1 @@
+{"slug": "build-inline-bauhaus", "seal": "acf8d90ecb0a1d505aa3cfab2b8e5079ec23b29498f88e69e4861f5b3ccc23c0", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

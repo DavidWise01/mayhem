@@ -1,0 +1,1 @@
+{"slug": "aperture-7-5-kaleidoscope", "seal": "4febf9232f21d1b9a5a8b7873fb5c094bf440c66313f285d7c684ec1c1e003de", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

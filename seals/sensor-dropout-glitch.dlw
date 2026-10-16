@@ -1,0 +1,1 @@
+{"slug": "sensor-dropout-glitch", "seal": "436bdeacb244ad5f8d7af7e0aef046b3ded01f449d46e346fd2d75d54691731b", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

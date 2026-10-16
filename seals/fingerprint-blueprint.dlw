@@ -1,0 +1,1 @@
+{"slug": "fingerprint-blueprint", "seal": "2c3a4ce5cfc650634c3874699910416a2de3033c82db495f74d7ebee2f9fcd9b", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
