@@ -1,0 +1,1 @@
+{"slug": "screening-room", "seal": "c8fc59fb783824a328beaedb890f541d0b33b281c38ee62134a76706d5ea7cc9", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

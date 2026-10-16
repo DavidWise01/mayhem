@@ -37,5 +37,11 @@ The index shows a live, scaled iframe preview of every sphere.
 - [The Firefly Choir](./spheres/firefly-choir.html): STEWARD II · MAY'S MAP. Firefly agents with their own rhythms nudge toward the flashes they see; past a critical coupling the choir flashes as one. seal c21560728e58cac2eedfdd80994843d7ce2e0412961111e5ecd9eafeab325074
 - [The Monty Hall Agents](./spheres/monty-hall-agents.html): STEWARD VII · LAGRANGE'S ARMS. Stayer and switcher agents play the three-door game; the switchers' tally climbs toward two-thirds and converts the stayers. seal 3a96315e587fc6514a399b3e1d6359214ae9ccecef7cd06db1a9af5856d3b9f7
 
+## Batch 5 (Dave t199u)
+- [The Screening Room](./spheres/screening-room.html): STEWARD I · WOLFRAM'S ROW. Six black-and-white CRT screens loop live snippets of Mayhem spheres; a projectionist agent swaps reels by audience vote. seal c8fc59fb783824a328beaedb890f541d0b33b281c38ee62134a76706d5ea7cc9
+- [The Collatz Climbers](./spheres/collatz-climbers.html): STEWARD I · WOLFRAM'S ROW. Climber agents follow n → n/2 or 3n+1 and post record trajectories; every climber found so far comes down to 1. seal c833c001e255a8acffca7c0b9c2cfe9841d32260e752b14f6dc3a311d6089515
+- [The Percolation Diggers](./spheres/percolation-diggers.html): STEWARD III · BAK'S HEAP. Digger agents open sites at random while a scout floods from the top; a path through the whole cliff appears near p ≈ 0.593. seal b1c4e6734040fdf5d4a4d246fe4eebafeca0b1652003010b5dde8ba822cb6b33
+- [The DLA Colonists](./spheres/dla-colonists.html): STEWARD III · BAK'S HEAP. Wandering colonist agents stick when they touch the colony; a branching coral grows that none of them designed. seal 24d895f30ded92e1798a5f00529d34a1a84f2c358be85156952eaad87c521e66
+
 ## For agents
 New spheres go under a steward in spheres/<slug>.html, seal = sha256(name|slug|blurb) in seals/<slug>.dlw, write-if-missing, then update mayhem.json and index.html. Host: DavidWise01/mayhem, branch master. Never dress a guess as LIT.

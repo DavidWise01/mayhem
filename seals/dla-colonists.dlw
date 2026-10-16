@@ -1,0 +1,1 @@
+{"slug": "dla-colonists", "seal": "24d895f30ded92e1798a5f00529d34a1a84f2c358be85156952eaad87c521e66", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

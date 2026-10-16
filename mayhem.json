@@ -36,6 +36,22 @@
      "blurb": "Agent Turing machines with 2 states race to write the most 1s and halt; the board keeps the record.",
      "seal": "4d6ee4044c231a569010772a922ac7b73fcd7c6d737b995c6451ca28149943cb",
      "claim": "LIT check · AMBER refs · MODEL agents"
+    },
+    {
+     "name": "The Screening Room",
+     "slug": "screening-room",
+     "path": "spheres/screening-room.html",
+     "blurb": "Six black-and-white CRT screens loop live snippets of Mayhem spheres; a projectionist agent swaps reels by audience vote.",
+     "seal": "c8fc59fb783824a328beaedb890f541d0b33b281c38ee62134a76706d5ea7cc9",
+     "claim": "LIT check · AMBER refs · MODEL agents"
+    },
+    {
+     "name": "The Collatz Climbers",
+     "slug": "collatz-climbers",
+     "path": "spheres/collatz-climbers.html",
+     "blurb": "Climber agents follow n → n/2 or 3n+1 and post record trajectories; every climber found so far comes down to 1.",
+     "seal": "c833c001e255a8acffca7c0b9c2cfe9841d32260e752b14f6dc3a311d6089515",
+     "claim": "LIT check · AMBER refs · MODEL agents"
     }
    ]
   },
@@ -85,6 +101,22 @@
      "path": "spheres/ant-roads.html",
      "blurb": "Ant agents lay pheromone on a tour of cities; shared scent finds a short round trip that no ant planned.",
      "seal": "03f617a4217a4679fa14e0a7f2fc2677659bb96c7a4bf1269c00e80d4409fce5",
+     "claim": "LIT check · AMBER refs · MODEL agents"
+    },
+    {
+     "name": "The Percolation Diggers",
+     "slug": "percolation-diggers",
+     "path": "spheres/percolation-diggers.html",
+     "blurb": "Digger agents open sites at random while a scout floods from the top; a path through the whole cliff appears near p ≈ 0.593.",
+     "seal": "b1c4e6734040fdf5d4a4d246fe4eebafeca0b1652003010b5dde8ba822cb6b33",
+     "claim": "LIT check · AMBER refs · MODEL agents"
+    },
+    {
+     "name": "The DLA Colonists",
+     "slug": "dla-colonists",
+     "path": "spheres/dla-colonists.html",
+     "blurb": "Wandering colonist agents stick when they touch the colony; a branching coral grows that none of them designed.",
+     "seal": "24d895f30ded92e1798a5f00529d34a1a84f2c358be85156952eaad87c521e66",
      "claim": "LIT check · AMBER refs · MODEL agents"
     }
    ]
@@ -246,5 +278,6 @@
  "labels": "keeper/steward names & themes MODEL; simulations LIT via on-load self-checks; art AMBER/MODEL",
  "agentic": "Dave t196u: \"keep going, i think agentic is what i meant not generative lol\"",
  "batch_3": "Dave t197u: \"percect keep going, do as many as you can per turn withough losing quality\"",
- "batch_4": "Dave t198u: \"keep going please, retry zelda mega man\""
+ "batch_4": "Dave t198u: \"keep going please, retry zelda mega man\"",
+ "batch_5": "Dave t199u: \"i love it keep going, put some black/wht/gray screens playing some snippests\""
 }

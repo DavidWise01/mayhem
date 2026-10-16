@@ -1,0 +1,1 @@
+{"slug": "percolation-diggers", "seal": "b1c4e6734040fdf5d4a4d246fe4eebafeca0b1652003010b5dde8ba822cb6b33", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
