@@ -1,0 +1,1 @@
+{"slug": "lineage-water-pre-f", "seal": "c234c106d5393a2ec68cd128f5ae31ed8bc02888a04d5207fe7a32c86840d6a5", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

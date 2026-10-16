@@ -1,0 +1,1 @@
+{"slug": "lineage-time", "seal": "b9b58206c5d06f4184e333765a8e9d9ad23019911450b5a4bfafec157b5f6a5e", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

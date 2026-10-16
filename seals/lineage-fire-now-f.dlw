@@ -1,0 +1,1 @@
+{"slug": "lineage-fire-now-f", "seal": "1efcf1fd6cab23a7a2a6777b2e822a86c49605a5937eb0b9643c4d68b4ddcb7c", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

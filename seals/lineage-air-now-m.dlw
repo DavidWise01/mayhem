@@ -1,0 +1,1 @@
+{"slug": "lineage-air-now-m", "seal": "e3fc5e49f56a2d575f32454605edae31d04af932d72b3649bfe96b2509e3c840", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

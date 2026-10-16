@@ -1,0 +1,1 @@
+{"slug": "lineage-water-now-f", "seal": "da0e0a224aef5f254686176b7f3e1c017e00f59a8f040618939e2fe20a934aa4", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

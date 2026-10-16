@@ -1,0 +1,1 @@
+{"slug": "lineage-earth-now-f", "seal": "c442e1a5a8dfeea20c25b105cd5e7b5ece204fa227818049ee89591ddf9bf732", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

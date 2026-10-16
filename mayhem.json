@@ -1844,5 +1844,204 @@
  "batch_learned": "Dave t215u: 10 hand-drawn spheres on what the agents learned playing Metroid and Punch-Out!!, built from A:\\mayhem.txt and the nes-agents-app corpora. Each carries a workspace improvement loop.",
  "batch_cabinet": "Dave t219u: 12 spheres, themes my choice (MODEL), Cabinet of Wonders.",
  "batch_noir": "Dave t220u: \"i like that, switch to a gothic noir neon themes and do whatever you want, do 100 and mix up the topics\".",
- "batch_sapphon3d": "Dave t221u: 3D, high res from now on. 3boyd not found (WALL)."
+ "batch_sapphon3d": "Dave t221u: 3D, high res from now on. 3boyd not found (WALL).",
+ "batch_lineage": {
+  "said": "Dave t223u: build out a whole lineage, 24 pages please (verbatim in llms.txt and on every page)",
+  "quote_t222u": "sapphon is the bacteria to the virus nice lol.",
+  "label": "MODEL structure; LIT/AMBER biology and chemistry",
+  "pages": [
+   {
+    "name": "Time · The First Species",
+    "slug": "lineage-time",
+    "blurb": "Time as a species of its own: the geologic clock from Earth's formation 4,540 million years ago, eon by eon, drawn as a 3D clock face by an ARTIST and scored by a CRITIC.",
+    "seal": "b9b58206c5d06f4184e333765a8e9d9ad23019911450b5a4bfafec157b5f6a5e",
+    "crumb": "SPECIES 9 OF 10 · TIME",
+    "path": "spheres/lineage/lineage-time.html"
+   },
+   {
+    "name": "Shadow · The Five Extinctions",
+    "slug": "lineage-shadow",
+    "blurb": "Shadow as the species that follows every lineage: the Big Five mass extinctions, drawn as an eclipse ring by an ARTIST and scored by a CRITIC.",
+    "seal": "41c183ad09bfbabc2f5fe7426fe5dd0d3774d2cdaea7ef908504c0dcea3bc5d3",
+    "crumb": "SPECIES 10 OF 10 · SHADOW",
+    "path": "spheres/lineage/lineage-shadow.html"
+   },
+   {
+    "name": "The Four Bases · H, He, Be, C",
+    "slug": "lineage-bases",
+    "blurb": "Hydrogen, helium, beryllium and carbon: the real nuclear road from H through He and unstable Be-8 to C-12 (the triple-alpha process), and which base feeds which element line (MODEL).",
+    "seal": "9b3662a009df56f6e1e0adf47890066cfc3b6e7086062c2b2fbc904be31872a7",
+    "crumb": "CHEMICAL BASES",
+    "path": "spheres/lineage/lineage-bases.html"
+   },
+   {
+    "name": "Earth · Element Line",
+    "slug": "lineage-earth",
+    "blurb": "The Earth element: its prehistoric and modern lines, male and female, on the carbon base (MODEL), with the real evolutionary track drawn in 3D by an ARTIST and scored by a CRITIC.",
+    "seal": "667ea21e977719f4756cb1c9e0f5023ff86c288c71325e5f524c62605482aef6",
+    "crumb": "ELEMENT · EARTH",
+    "path": "spheres/lineage/lineage-earth.html"
+   },
+   {
+    "name": "Air · Element Line",
+    "slug": "lineage-air",
+    "blurb": "The Air element: its prehistoric and modern lines, male and female, on the beryllium base (MODEL), with the real evolutionary track drawn in 3D by an ARTIST and scored by a CRITIC.",
+    "seal": "2756ec0971e114ae0ac4910ac81ad4604cbdf8476ab52699abe0eb874a18c4f2",
+    "crumb": "ELEMENT · AIR",
+    "path": "spheres/lineage/lineage-air.html"
+   },
+   {
+    "name": "Fire · Element Line",
+    "slug": "lineage-fire",
+    "blurb": "The Fire element: its prehistoric and modern lines, male and female, on the helium base (MODEL), with the real evolutionary track drawn in 3D by an ARTIST and scored by a CRITIC.",
+    "seal": "6cd3a9232269a0551cd4a1beeb509dbb3f132210fd18fcbb73004b0a343d56d8",
+    "crumb": "ELEMENT · FIRE",
+    "path": "spheres/lineage/lineage-fire.html"
+   },
+   {
+    "name": "Water · Element Line",
+    "slug": "lineage-water",
+    "blurb": "The Water element: its prehistoric and modern lines, male and female, on the hydrogen base (MODEL), with the real evolutionary track drawn in 3D by an ARTIST and scored by a CRITIC.",
+    "seal": "e5b639287df3e6f5cf4fa544d8086f2eb0cf04aed8f0a44d0688e31b8d45eac9",
+    "crumb": "ELEMENT · WATER",
+    "path": "spheres/lineage/lineage-water.html"
+   },
+   {
+    "name": "Sauropod Bull · Argentinosaurus ♂",
+    "slug": "lineage-earth-pre-m",
+    "blurb": "Earth line, prehistoric, male: Sauropod Bull · Argentinosaurus (Dinosauria). Real biology, with an ARTIST agent building its 3D form and a CRITIC scoring it.",
+    "seal": "eb31ece6a7fec91ec2f40909276810018e187e6e3c277c48fcf1f529f08fb32c",
+    "crumb": "EARTH · PREHISTORIC · ♂",
+    "path": "spheres/lineage/lineage-earth-pre-m.html"
+   },
+   {
+    "name": "Medullary Hen · Tyrannosaurus MOR 1125 ♀",
+    "slug": "lineage-earth-pre-f",
+    "blurb": "Earth line, prehistoric, female: Medullary Hen · Tyrannosaurus MOR 1125 (Dinosauria). Real biology, with an ARTIST agent building its 3D form and a CRITIC scoring it.",
+    "seal": "8d0bf61779a728f65087448aba5219e3dd67ed296a3a33f59088cac34fdfc46e",
+    "crumb": "EARTH · PREHISTORIC · ♀",
+    "path": "spheres/lineage/lineage-earth-pre-f.html"
+   },
+   {
+    "name": "Musth Bull ♂",
+    "slug": "lineage-earth-now-m",
+    "blurb": "Earth line, now, male: Musth Bull (Elephantidae). Real biology, with an ARTIST agent building its 3D form and a CRITIC scoring it.",
+    "seal": "184a6f46477e1688de43fbed63904bf31270b30e12d1ef32d87e05e7ee2294d0",
+    "crumb": "EARTH · NOW · ♂",
+    "path": "spheres/lineage/lineage-earth-now-m.html"
+   },
+   {
+    "name": "Matriarch ♀",
+    "slug": "lineage-earth-now-f",
+    "blurb": "Earth line, now, female: Matriarch (Elephantidae). Real biology, with an ARTIST agent building its 3D form and a CRITIC scoring it.",
+    "seal": "c442e1a5a8dfeea20c25b105cd5e7b5ece204fa227818049ee89591ddf9bf732",
+    "crumb": "EARTH · NOW · ♀",
+    "path": "spheres/lineage/lineage-earth-now-f.html"
+   },
+   {
+    "name": "Crested Male · Pteranodon ♂",
+    "slug": "lineage-air-pre-m",
+    "blurb": "Air line, prehistoric, male: Crested Male · Pteranodon (Pterosauria). Real biology, with an ARTIST agent building its 3D form and a CRITIC scoring it.",
+    "seal": "dbb249d8574e9e6121b24617f48ab332978cc6ef9c6f7e6b006d030278b2ec5b",
+    "crumb": "AIR · PREHISTORIC · ♂",
+    "path": "spheres/lineage/lineage-air-pre-m.html"
+   },
+   {
+    "name": "Mrs T · Darwinopterus ♀",
+    "slug": "lineage-air-pre-f",
+    "blurb": "Air line, prehistoric, female: Mrs T · Darwinopterus (Pterosauria). Real biology, with an ARTIST agent building its 3D form and a CRITIC scoring it.",
+    "seal": "5134f274f5976804e5055c096c8f3caec455640d8c0365ad1472f8a84c332427",
+    "crumb": "AIR · PREHISTORIC · ♀",
+    "path": "spheres/lineage/lineage-air-pre-f.html"
+   },
+   {
+    "name": "Tiercel ♂",
+    "slug": "lineage-air-now-m",
+    "blurb": "Air line, now, male: Tiercel (Falco peregrinus). Real biology, with an ARTIST agent building its 3D form and a CRITIC scoring it.",
+    "seal": "e3fc5e49f56a2d575f32454605edae31d04af932d72b3649bfe96b2509e3c840",
+    "crumb": "AIR · NOW · ♂",
+    "path": "spheres/lineage/lineage-air-now-m.html"
+   },
+   {
+    "name": "Falcon ♀",
+    "slug": "lineage-air-now-f",
+    "blurb": "Air line, now, female: Falcon (Falco peregrinus). Real biology, with an ARTIST agent building its 3D form and a CRITIC scoring it.",
+    "seal": "8535e7c678dcb2dac1df28b5ed54e9569fb239fec14401498937f00fa9d78175",
+    "crumb": "AIR · NOW · ♀",
+    "path": "spheres/lineage/lineage-air-now-f.html"
+   },
+   {
+    "name": "Vent Father ♂",
+    "slug": "lineage-fire-pre-m",
+    "blurb": "Fire line, prehistoric, male: Vent Father (Vent Thermophiles). Real biology, with an ARTIST agent building its 3D form and a CRITIC scoring it.",
+    "seal": "f3d164561587ffd7dafc27ac65e93b8e6767d9fd534519f6bbf89b868c56fc0a",
+    "crumb": "FIRE · PREHISTORIC · ♂",
+    "path": "spheres/lineage/lineage-fire-pre-m.html"
+   },
+   {
+    "name": "Vent Mother ♀",
+    "slug": "lineage-fire-pre-f",
+    "blurb": "Fire line, prehistoric, female: Vent Mother (Vent Thermophiles). Real biology, with an ARTIST agent building its 3D form and a CRITIC scoring it.",
+    "seal": "1e091b8f024be5b86da4c0d7bbb14040252de65e4c8a934a12c6da7304f7d823",
+    "crumb": "FIRE · PREHISTORIC · ♀",
+    "path": "spheres/lineage/lineage-fire-pre-f.html"
+   },
+   {
+    "name": "Fire-Chaser ♂",
+    "slug": "lineage-fire-now-m",
+    "blurb": "Fire line, now, male: Fire-Chaser (Melanophila). Real biology, with an ARTIST agent building its 3D form and a CRITIC scoring it.",
+    "seal": "6a9a11a2cd286eee459d639294d97ff7ba46d824800e6d9065cbeb01b6c66273",
+    "crumb": "FIRE · NOW · ♂",
+    "path": "spheres/lineage/lineage-fire-now-m.html"
+   },
+   {
+    "name": "Ash-Layer ♀",
+    "slug": "lineage-fire-now-f",
+    "blurb": "Fire line, now, female: Ash-Layer (Melanophila). Real biology, with an ARTIST agent building its 3D form and a CRITIC scoring it.",
+    "seal": "1efcf1fd6cab23a7a2a6777b2e822a86c49605a5937eb0b9643c4d68b4ddcb7c",
+    "crumb": "FIRE · NOW · ♀",
+    "path": "spheres/lineage/lineage-fire-now-f.html"
+   },
+   {
+    "name": "Shonisaurus ♂",
+    "slug": "lineage-water-pre-m",
+    "blurb": "Water line, prehistoric, male: Shonisaurus (Ichthyosauria). Real biology, with an ARTIST agent building its 3D form and a CRITIC scoring it.",
+    "seal": "6ea177ccf52bd36849e9e20e40b73c2529ea05844584aba30ff1da0a327760bc",
+    "crumb": "WATER · PREHISTORIC · ♂",
+    "path": "spheres/lineage/lineage-water-pre-m.html"
+   },
+   {
+    "name": "Birth-Giver · Stenopterygius ♀",
+    "slug": "lineage-water-pre-f",
+    "blurb": "Water line, prehistoric, female: Birth-Giver · Stenopterygius (Ichthyosauria). Real biology, with an ARTIST agent building its 3D form and a CRITIC scoring it.",
+    "seal": "c234c106d5393a2ec68cd128f5ae31ed8bc02888a04d5207fe7a32c86840d6a5",
+    "crumb": "WATER · PREHISTORIC · ♀",
+    "path": "spheres/lineage/lineage-water-pre-f.html"
+   },
+   {
+    "name": "Tall-Fin Bull ♂",
+    "slug": "lineage-water-now-m",
+    "blurb": "Water line, now, male: Tall-Fin Bull (Orcinus orca). Real biology, with an ARTIST agent building its 3D form and a CRITIC scoring it.",
+    "seal": "34f7f4129cadfd09ede2981b4eef892e3ecadc5fd4faef0d5eb84f24955b8970",
+    "crumb": "WATER · NOW · ♂",
+    "path": "spheres/lineage/lineage-water-now-m.html"
+   },
+   {
+    "name": "Menopause Matriarch ♀",
+    "slug": "lineage-water-now-f",
+    "blurb": "Water line, now, female: Menopause Matriarch (Orcinus orca). Real biology, with an ARTIST agent building its 3D form and a CRITIC scoring it.",
+    "seal": "da0e0a224aef5f254686176b7f3e1c017e00f59a8f040618939e2fe20a934aa4",
+    "crumb": "WATER · NOW · ♀",
+    "path": "spheres/lineage/lineage-water-now-f.html"
+   },
+   {
+    "name": "Lineage · Mother Nature's World Computer",
+    "slug": "lineage-index",
+    "blurb": "A whole lineage in 24 pages: Time, Shadow and the H/He/Be/C bases at the root, then Earth, Air, Fire and Water, each with a prehistoric and a present-day line, male and female, all in 3D.",
+    "seal": "3c89c28bd255c3b9be4440bd014621adf38316f85daace8dc6db9c1bd3e03f21",
+    "crumb": "INDEX",
+    "path": "spheres/lineage/lineage-index.html"
+   }
+  ]
+ }
 }

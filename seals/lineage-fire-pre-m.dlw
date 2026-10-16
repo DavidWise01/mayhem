@@ -1,0 +1,1 @@
+{"slug": "lineage-fire-pre-m", "seal": "f3d164561587ffd7dafc27ac65e93b8e6767d9fd534519f6bbf89b868c56fc0a", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

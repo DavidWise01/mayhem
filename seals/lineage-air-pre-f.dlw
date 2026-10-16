@@ -1,0 +1,1 @@
+{"slug": "lineage-air-pre-f", "seal": "5134f274f5976804e5055c096c8f3caec455640d8c0365ad1472f8a84c332427", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

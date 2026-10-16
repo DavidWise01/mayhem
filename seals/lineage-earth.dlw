@@ -1,0 +1,1 @@
+{"slug": "lineage-earth", "seal": "667ea21e977719f4756cb1c9e0f5023ff86c288c71325e5f524c62605482aef6", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

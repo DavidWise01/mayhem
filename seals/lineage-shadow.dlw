@@ -1,0 +1,1 @@
+{"slug": "lineage-shadow", "seal": "41c183ad09bfbabc2f5fe7426fe5dd0d3774d2cdaea7ef908504c0dcea3bc5d3", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
