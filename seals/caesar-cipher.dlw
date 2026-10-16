@@ -1,0 +1,1 @@
+{"slug": "caesar-cipher", "seal": "5a169705ba51b74dbc452dc744fe8a41231b7adf87b1d88018448e6926d32b01", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

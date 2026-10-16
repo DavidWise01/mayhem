@@ -190,6 +190,26 @@ Dave: "switch to a gothic noir neon themes and do whatever you want, do 100 and 
 - [Electron Shells · Haunted Atom](./spheres/electron-shells.html): Chemistry, rings in spray stencil. seal 1d78c6bed6c88e7095d487c7f1fe31ba13be6ac3935158dbd8f84bbcacda3d15
 - [pH Scale · Acid Rain](./spheres/ph-scale.html): Chemistry, bars in scratchboard. seal a4dc54c815023544605463e7e98e4230cef4caafd9bb5ac90699bf57b839e715
 - [Arrhenius · Witch Fire](./spheres/arrhenius-fire.html): Chemistry, curve in pastel haze. seal 877ffd614ea116b8328182321030843b9125aa3b128dfd624ad4c789852c7044
+- [Molar Masses · Alchemist Scales](./spheres/molar-masses.html): Chemistry, bars in neon tube. seal 3c00076d7a79370c5c6d0a5ce184e9fb1254519c81234007ca10c6576669c46d
+- [Balmer Lines · Neon Spectrum](./spheres/balmer-lines.html): Chemistry, wave in chalk on slate. seal 7fb7d9000a84c61e01be25cbc2746f7891f8781ed3f4ec619ac5a9a6bd2caff9
+- [Packing Fractions · Crystal Vault](./spheres/packing-fractions.html): Chemistry, radial in charcoal smoke. seal fa92d6b3410465b475101eb69b2b12587e5e39b3b5acf6984e0ad5d8f721c09b
+- [A Minor · Cathedral Organ](./spheres/a-minor-organ.html): Music, skyline in ink wash in rain. seal 53e2cf96ea8f88135d4f0cef01117c3b7dda29ccedabf4e8191a9738fa55b115
+- [Just vs Equal · Cents Ghosts](./spheres/just-vs-equal.html): Music, bars in etched glass. seal 5a99d5591b64c66768c38359d71f98f7993de458e6d200688e01bd7b42a98709
+- [Circle of Fifths · Clockwork](./spheres/circle-of-fifths.html): Music, radial in film-grain noir. seal 498cce7203b001891a2127b36677f1d5b09b180e9d39d0bcfaab8f674447f4eb
+- [Pythagorean Comma · The Crack](./spheres/pythagorean-comma.html): Music, spiral in stained glass. seal 07922170dc84c9d91b874b6069329b1696b18e16d0c2f52182716218bc4f71c3
+- [Euclidean Rhythm E(5,8) · Drums](./spheres/euclid-rhythm.html): Music, dots in spray stencil. seal ef41d4f95a19633a270c4178609dffa735fd4f316c6ed11478eabe40e8c9a633
+- [Beat Frequency · Tremolo](./spheres/beat-frequency.html): Music, wave in scratchboard. seal 70cd276102c5571350c0f29958e2343545db7818f3531060cce86c8972bf4373
+- [Caesar Cipher · Shifted Shadows](./spheres/caesar-cipher.html): Cryptography, bars in pastel haze. seal 5a169705ba51b74dbc452dc744fe8a41231b7adf87b1d88018448e6926d32b01
+- [Vigenère · ERIS Key](./spheres/vigenere-key.html): Cryptography, steps in neon tube. seal 547c4c2aaceb31bc078779bc7f6316a24ee1c5d6dad4672c454cf6e68006cd27
+- [Toy RSA · 61×53](./spheres/rsa-toy.html): Cryptography, grid in chalk on slate. seal 6a9b53d3d1d784b3735be29febd4a0a8bac24f3174b296746396321ea4a1b6a8
+- [Diffie–Hellman · Shared Secret](./spheres/diffie-hellman.html): Cryptography, curve in charcoal smoke. seal 0280590028c8197fed745a33d61dff2b8849d8078750a13489f58521e469237d
+- [CRC-32 · Wax Seal](./spheres/crc32-seal.html): Cryptography, radial in ink wash in rain. seal 8b77056296bb76ce0195314fb743bc4b6e756659581d74c4035a36dbd7f7b5d0
+- [Enigma Rotor I · Cycles](./spheres/enigma-rotor.html): Cryptography, rings in etched glass. seal 0aff45df4f26cf67a083008ac51d0db227f07cebf0ff17425f62e1e6b03eab78
+- [One-Time Pad · XOR Veil](./spheres/one-time-pad.html): Cryptography, grid in film-grain noir. seal c01153d510ec39ad8d7b097ca22b11601ddba2b1227183e71ed349d16f39408c
+- [Difference Engine · Brass Columns](./spheres/difference-engine.html): History of computing, skyline in stained glass. seal fdb8e84c2013d441e9d73b5a0b37b8a6a27ec4f1eeb85f3bd9f871c2c8b85d10
+- [Lovelace Note G · Bernoulli](./spheres/lovelace-bernoulli.html): History of computing, bars in spray stencil. seal 5624f8862003a7f5f1b4149235594e376e3214c1942fe68375cb3af4b5b65ed3
+- [Turing Machine · Binary Incrementer](./spheres/turing-incrementer.html): History of computing, grid in scratchboard. seal cb5e5afbea4db9a1b8a92016a152c3eecfb4db10e3b68245da3ed26719d9114d
+- [Middle-Square RNG · von Neumann](./spheres/middle-square.html): History of computing, curve in pastel haze. seal 67e7046562db950021a4bd709a9a920a9fdb1578dc53c64140a1d80081435443
 
 ## Constantly improve the workspace
 Arriving agents, keep improving this workspace and never stop:

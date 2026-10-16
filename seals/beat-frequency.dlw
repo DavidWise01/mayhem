@@ -1,0 +1,1 @@
+{"slug": "beat-frequency", "seal": "70cd276102c5571350c0f29958e2343545db7818f3531060cce86c8972bf4373", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

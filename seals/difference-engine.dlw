@@ -1,0 +1,1 @@
+{"slug": "difference-engine", "seal": "fdb8e84c2013d441e9d73b5a0b37b8a6a27ec4f1eeb85f3bd9f871c2c8b85d10", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

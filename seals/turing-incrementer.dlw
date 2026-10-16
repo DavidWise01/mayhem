@@ -1,0 +1,1 @@
+{"slug": "turing-incrementer", "seal": "cb5e5afbea4db9a1b8a92016a152c3eecfb4db10e3b68245da3ed26719d9114d", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

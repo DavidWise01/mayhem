@@ -1,0 +1,1 @@
+{"slug": "rsa-toy", "seal": "6a9b53d3d1d784b3735be29febd4a0a8bac24f3174b296746396321ea4a1b6a8", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

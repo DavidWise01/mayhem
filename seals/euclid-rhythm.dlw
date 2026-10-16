@@ -1,0 +1,1 @@
+{"slug": "euclid-rhythm", "seal": "ef41d4f95a19633a270c4178609dffa735fd4f316c6ed11478eabe40e8c9a633", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

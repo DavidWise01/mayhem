@@ -1,0 +1,1 @@
+{"slug": "vigenere-key", "seal": "547c4c2aaceb31bc078779bc7f6316a24ee1c5d6dad4672c454cf6e68006cd27", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "a-minor-organ", "seal": "53e2cf96ea8f88135d4f0cef01117c3b7dda29ccedabf4e8191a9738fa55b115", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

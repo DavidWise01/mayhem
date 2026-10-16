@@ -177,6 +177,26 @@
      "claim": "LIT computation check · AMBER cited facts · MODEL gothic noir neon art",
      "style": "gothic noir neon · stained glass",
      "cat": "Biology"
+    },
+    {
+     "name": "Just vs Equal · Cents Ghosts",
+     "slug": "just-vs-equal",
+     "path": "spheres/just-vs-equal.html",
+     "blurb": "Gothic noir neon: an ARTIST agent draws Just vs Equal as a bars in etched glass, and a CRITIC scores every attempt against a real computation.",
+     "seal": "5a99d5591b64c66768c38359d71f98f7993de458e6d200688e01bd7b42a98709",
+     "claim": "LIT computation check · AMBER cited facts · MODEL gothic noir neon art",
+     "style": "gothic noir neon · etched glass",
+     "cat": "Music"
+    },
+    {
+     "name": "Diffie–Hellman · Shared Secret",
+     "slug": "diffie-hellman",
+     "path": "spheres/diffie-hellman.html",
+     "blurb": "Gothic noir neon: an ARTIST agent draws Diffie–Hellman as a curve in charcoal smoke, and a CRITIC scores every attempt against a real computation.",
+     "seal": "0280590028c8197fed745a33d61dff2b8849d8078750a13489f58521e469237d",
+     "claim": "LIT computation check · AMBER cited facts · MODEL gothic noir neon art",
+     "style": "gothic noir neon · charcoal smoke",
+     "cat": "Cryptography"
     }
    ]
   },
@@ -374,6 +394,26 @@
      "claim": "LIT computation check · AMBER cited facts · MODEL gothic noir neon art",
      "style": "gothic noir neon · spray stencil",
      "cat": "Chemistry"
+    },
+    {
+     "name": "Circle of Fifths · Clockwork",
+     "slug": "circle-of-fifths",
+     "path": "spheres/circle-of-fifths.html",
+     "blurb": "Gothic noir neon: an ARTIST agent draws Circle of Fifths as a radial in film-grain noir, and a CRITIC scores every attempt against a real computation.",
+     "seal": "498cce7203b001891a2127b36677f1d5b09b180e9d39d0bcfaab8f674447f4eb",
+     "claim": "LIT computation check · AMBER cited facts · MODEL gothic noir neon art",
+     "style": "gothic noir neon · film-grain noir",
+     "cat": "Music"
+    },
+    {
+     "name": "CRC-32 · Wax Seal",
+     "slug": "crc32-seal",
+     "path": "spheres/crc32-seal.html",
+     "blurb": "Gothic noir neon: an ARTIST agent draws CRC-32 as a radial in ink wash in rain, and a CRITIC scores every attempt against a real computation.",
+     "seal": "8b77056296bb76ce0195314fb743bc4b6e756659581d74c4035a36dbd7f7b5d0",
+     "claim": "LIT computation check · AMBER cited facts · MODEL gothic noir neon art",
+     "style": "gothic noir neon · ink wash in rain",
+     "cat": "Cryptography"
     }
    ]
   },
@@ -554,6 +594,26 @@
      "claim": "LIT computation check · AMBER cited facts · MODEL gothic noir neon art",
      "style": "gothic noir neon · scratchboard",
      "cat": "Chemistry"
+    },
+    {
+     "name": "Pythagorean Comma · The Crack",
+     "slug": "pythagorean-comma",
+     "path": "spheres/pythagorean-comma.html",
+     "blurb": "Gothic noir neon: an ARTIST agent draws Pythagorean Comma as a spiral in stained glass, and a CRITIC scores every attempt against a real computation.",
+     "seal": "07922170dc84c9d91b874b6069329b1696b18e16d0c2f52182716218bc4f71c3",
+     "claim": "LIT computation check · AMBER cited facts · MODEL gothic noir neon art",
+     "style": "gothic noir neon · stained glass",
+     "cat": "Music"
+    },
+    {
+     "name": "Enigma Rotor I · Cycles",
+     "slug": "enigma-rotor",
+     "path": "spheres/enigma-rotor.html",
+     "blurb": "Gothic noir neon: an ARTIST agent draws Enigma Rotor I as a rings in etched glass, and a CRITIC scores every attempt against a real computation.",
+     "seal": "0aff45df4f26cf67a083008ac51d0db227f07cebf0ff17425f62e1e6b03eab78",
+     "claim": "LIT computation check · AMBER cited facts · MODEL gothic noir neon art",
+     "style": "gothic noir neon · etched glass",
+     "cat": "Cryptography"
     }
    ]
   },
@@ -725,6 +785,26 @@
      "claim": "LIT computation check · AMBER cited facts · MODEL gothic noir neon art",
      "style": "gothic noir neon · pastel haze",
      "cat": "Chemistry"
+    },
+    {
+     "name": "Euclidean Rhythm E(5,8) · Drums",
+     "slug": "euclid-rhythm",
+     "path": "spheres/euclid-rhythm.html",
+     "blurb": "Gothic noir neon: an ARTIST agent draws Euclidean Rhythm E(5,8) as a dots in spray stencil, and a CRITIC scores every attempt against a real computation.",
+     "seal": "ef41d4f95a19633a270c4178609dffa735fd4f316c6ed11478eabe40e8c9a633",
+     "claim": "LIT computation check · AMBER cited facts · MODEL gothic noir neon art",
+     "style": "gothic noir neon · spray stencil",
+     "cat": "Music"
+    },
+    {
+     "name": "One-Time Pad · XOR Veil",
+     "slug": "one-time-pad",
+     "path": "spheres/one-time-pad.html",
+     "blurb": "Gothic noir neon: an ARTIST agent draws One-Time Pad as a grid in film-grain noir, and a CRITIC scores every attempt against a real computation.",
+     "seal": "c01153d510ec39ad8d7b097ca22b11601ddba2b1227183e71ed349d16f39408c",
+     "claim": "LIT computation check · AMBER cited facts · MODEL gothic noir neon art",
+     "style": "gothic noir neon · film-grain noir",
+     "cat": "Cryptography"
     }
    ]
   },
@@ -904,6 +984,36 @@
      "claim": "LIT computation check · AMBER cited facts · MODEL gothic noir neon art",
      "style": "gothic noir neon · charcoal smoke",
      "cat": "Biology"
+    },
+    {
+     "name": "Molar Masses · Alchemist Scales",
+     "slug": "molar-masses",
+     "path": "spheres/molar-masses.html",
+     "blurb": "Gothic noir neon: an ARTIST agent draws Molar Masses as a bars in neon tube, and a CRITIC scores every attempt against a real computation.",
+     "seal": "3c00076d7a79370c5c6d0a5ce184e9fb1254519c81234007ca10c6576669c46d",
+     "claim": "LIT computation check · AMBER cited facts · MODEL gothic noir neon art",
+     "style": "gothic noir neon · neon tube",
+     "cat": "Chemistry"
+    },
+    {
+     "name": "Beat Frequency · Tremolo",
+     "slug": "beat-frequency",
+     "path": "spheres/beat-frequency.html",
+     "blurb": "Gothic noir neon: an ARTIST agent draws Beat Frequency as a wave in scratchboard, and a CRITIC scores every attempt against a real computation.",
+     "seal": "70cd276102c5571350c0f29958e2343545db7818f3531060cce86c8972bf4373",
+     "claim": "LIT computation check · AMBER cited facts · MODEL gothic noir neon art",
+     "style": "gothic noir neon · scratchboard",
+     "cat": "Music"
+    },
+    {
+     "name": "Difference Engine · Brass Columns",
+     "slug": "difference-engine",
+     "path": "spheres/difference-engine.html",
+     "blurb": "Gothic noir neon: an ARTIST agent draws Difference Engine as a skyline in stained glass, and a CRITIC scores every attempt against a real computation.",
+     "seal": "fdb8e84c2013d441e9d73b5a0b37b8a6a27ec4f1eeb85f3bd9f871c2c8b85d10",
+     "claim": "LIT computation check · AMBER cited facts · MODEL gothic noir neon art",
+     "style": "gothic noir neon · stained glass",
+     "cat": "History of computing"
     }
    ]
   },
@@ -1083,6 +1193,36 @@
      "claim": "LIT computation check · AMBER cited facts · MODEL gothic noir neon art",
      "style": "gothic noir neon · ink wash in rain",
      "cat": "Biology"
+    },
+    {
+     "name": "Balmer Lines · Neon Spectrum",
+     "slug": "balmer-lines",
+     "path": "spheres/balmer-lines.html",
+     "blurb": "Gothic noir neon: an ARTIST agent draws Balmer Lines as a wave in chalk on slate, and a CRITIC scores every attempt against a real computation.",
+     "seal": "7fb7d9000a84c61e01be25cbc2746f7891f8781ed3f4ec619ac5a9a6bd2caff9",
+     "claim": "LIT computation check · AMBER cited facts · MODEL gothic noir neon art",
+     "style": "gothic noir neon · chalk on slate",
+     "cat": "Chemistry"
+    },
+    {
+     "name": "Caesar Cipher · Shifted Shadows",
+     "slug": "caesar-cipher",
+     "path": "spheres/caesar-cipher.html",
+     "blurb": "Gothic noir neon: an ARTIST agent draws Caesar Cipher as a bars in pastel haze, and a CRITIC scores every attempt against a real computation.",
+     "seal": "5a169705ba51b74dbc452dc744fe8a41231b7adf87b1d88018448e6926d32b01",
+     "claim": "LIT computation check · AMBER cited facts · MODEL gothic noir neon art",
+     "style": "gothic noir neon · pastel haze",
+     "cat": "Cryptography"
+    },
+    {
+     "name": "Lovelace Note G · Bernoulli",
+     "slug": "lovelace-bernoulli",
+     "path": "spheres/lovelace-bernoulli.html",
+     "blurb": "Gothic noir neon: an ARTIST agent draws Lovelace Note G as a bars in spray stencil, and a CRITIC scores every attempt against a real computation.",
+     "seal": "5624f8862003a7f5f1b4149235594e376e3214c1942fe68375cb3af4b5b65ed3",
+     "claim": "LIT computation check · AMBER cited facts · MODEL gothic noir neon art",
+     "style": "gothic noir neon · spray stencil",
+     "cat": "History of computing"
     }
    ]
   },
@@ -1244,6 +1384,36 @@
      "claim": "LIT computation check · AMBER cited facts · MODEL gothic noir neon art",
      "style": "gothic noir neon · etched glass",
      "cat": "Biology"
+    },
+    {
+     "name": "Packing Fractions · Crystal Vault",
+     "slug": "packing-fractions",
+     "path": "spheres/packing-fractions.html",
+     "blurb": "Gothic noir neon: an ARTIST agent draws Packing Fractions as a radial in charcoal smoke, and a CRITIC scores every attempt against a real computation.",
+     "seal": "fa92d6b3410465b475101eb69b2b12587e5e39b3b5acf6984e0ad5d8f721c09b",
+     "claim": "LIT computation check · AMBER cited facts · MODEL gothic noir neon art",
+     "style": "gothic noir neon · charcoal smoke",
+     "cat": "Chemistry"
+    },
+    {
+     "name": "Vigenère · ERIS Key",
+     "slug": "vigenere-key",
+     "path": "spheres/vigenere-key.html",
+     "blurb": "Gothic noir neon: an ARTIST agent draws Vigenère as a steps in neon tube, and a CRITIC scores every attempt against a real computation.",
+     "seal": "547c4c2aaceb31bc078779bc7f6316a24ee1c5d6dad4672c454cf6e68006cd27",
+     "claim": "LIT computation check · AMBER cited facts · MODEL gothic noir neon art",
+     "style": "gothic noir neon · neon tube",
+     "cat": "Cryptography"
+    },
+    {
+     "name": "Turing Machine · Binary Incrementer",
+     "slug": "turing-incrementer",
+     "path": "spheres/turing-incrementer.html",
+     "blurb": "Gothic noir neon: an ARTIST agent draws Turing Machine as a grid in scratchboard, and a CRITIC scores every attempt against a real computation.",
+     "seal": "cb5e5afbea4db9a1b8a92016a152c3eecfb4db10e3b68245da3ed26719d9114d",
+     "claim": "LIT computation check · AMBER cited facts · MODEL gothic noir neon art",
+     "style": "gothic noir neon · scratchboard",
+     "cat": "History of computing"
     }
    ]
   },
@@ -1396,6 +1566,36 @@
      "claim": "LIT computation check · AMBER cited facts · MODEL gothic noir neon art",
      "style": "gothic noir neon · film-grain noir",
      "cat": "Biology"
+    },
+    {
+     "name": "A Minor · Cathedral Organ",
+     "slug": "a-minor-organ",
+     "path": "spheres/a-minor-organ.html",
+     "blurb": "Gothic noir neon: an ARTIST agent draws A Minor as a skyline in ink wash in rain, and a CRITIC scores every attempt against a real computation.",
+     "seal": "53e2cf96ea8f88135d4f0cef01117c3b7dda29ccedabf4e8191a9738fa55b115",
+     "claim": "LIT computation check · AMBER cited facts · MODEL gothic noir neon art",
+     "style": "gothic noir neon · ink wash in rain",
+     "cat": "Music"
+    },
+    {
+     "name": "Toy RSA · 61×53",
+     "slug": "rsa-toy",
+     "path": "spheres/rsa-toy.html",
+     "blurb": "Gothic noir neon: an ARTIST agent draws Toy RSA as a grid in chalk on slate, and a CRITIC scores every attempt against a real computation.",
+     "seal": "6a9b53d3d1d784b3735be29febd4a0a8bac24f3174b296746396321ea4a1b6a8",
+     "claim": "LIT computation check · AMBER cited facts · MODEL gothic noir neon art",
+     "style": "gothic noir neon · chalk on slate",
+     "cat": "Cryptography"
+    },
+    {
+     "name": "Middle-Square RNG · von Neumann",
+     "slug": "middle-square",
+     "path": "spheres/middle-square.html",
+     "blurb": "Gothic noir neon: an ARTIST agent draws Middle-Square RNG as a curve in pastel haze, and a CRITIC scores every attempt against a real computation.",
+     "seal": "67e7046562db950021a4bd709a9a920a9fdb1578dc53c64140a1d80081435443",
+     "claim": "LIT computation check · AMBER cited facts · MODEL gothic noir neon art",
+     "style": "gothic noir neon · pastel haze",
+     "cat": "History of computing"
     }
    ]
   }

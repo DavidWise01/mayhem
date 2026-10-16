@@ -1,0 +1,1 @@
+{"slug": "one-time-pad", "seal": "c01153d510ec39ad8d7b097ca22b11601ddba2b1227183e71ed349d16f39408c", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

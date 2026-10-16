@@ -1,0 +1,1 @@
+{"slug": "pythagorean-comma", "seal": "07922170dc84c9d91b874b6069329b1696b18e16d0c2f52182716218bc4f71c3", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

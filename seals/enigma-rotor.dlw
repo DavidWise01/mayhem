@@ -1,0 +1,1 @@
+{"slug": "enigma-rotor", "seal": "0aff45df4f26cf67a083008ac51d0db227f07cebf0ff17425f62e1e6b03eab78", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

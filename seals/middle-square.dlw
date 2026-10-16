@@ -1,0 +1,1 @@
+{"slug": "middle-square", "seal": "67e7046562db950021a4bd709a9a920a9fdb1578dc53c64140a1d80081435443", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
