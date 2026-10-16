@@ -1,0 +1,1 @@
+{"slug": "stokes-drag", "seal": "1373b560b6080b2062b80a60e3a9d096b20dab1b8dee2d03a275618c600065d6", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -361,3 +361,31 @@ Dave: "build out this for 32 pages please, generative, agentic, cooperative". So
 - [Family · YOU + THEM + IT](./spheres/omnibus/you-them-it.html): Omnibus 3D. seal d595e0905bfa24e188b49a9352a341cdad0b414e387b8bd5fee7e99e23c18cb5
 - [END OF BLUEPRINT / START OF LIGHT](./spheres/omnibus/end-of-blueprint.html): Omnibus 3D. seal e85ceee2dbb0710531f29638bce3e615f661b2697c1b6a6bfe286baceff38eb8
 - [FINAL OMNIBUS · FROM 24 TO XERSES TO ETHICS](./spheres/omnibus/omnibus-index.html): Omnibus 3D. seal 67d9cb138a4beede39ca81e99514528a29ef0cf39545b46195791fa95c04c3bd
+
+## Stokes math, 24 pages + index in 3D (Dave t226u)
+Dave: "perfect now build out the stokes math 24 pages". No stokes source found in his repos (WALL), so these pages cover real Stokes mathematics. Every page verifies a numeric identity on load. Cooperative BUILDER + WEAVER agents share a reward; the shared board is localStorage mayhem-stokes-board.
+- [Generalized Stokes Theorem](./spheres/stokes/generalized-stokes.html): Stokes 3D. seal 77880d7580d1ead9bc4cf5831ef90cf3a988ea907fc168acaaed82dbc6ea599d
+- [Kelvin–Stokes Theorem](./spheres/stokes/kelvin-stokes.html): Stokes 3D. seal 0fe44357c735d8c85312e5e08f03ba2caa0405f4ba95b18c50cb33e1bdf92458
+- [Curl](./spheres/stokes/curl.html): Stokes 3D. seal 87a9eac6d7f69a90053e8a5af91f14583cd854cd8f53b04c0fc4d12048b47a35
+- [Circulation & the Vortex](./spheres/stokes/circulation.html): Stokes 3D. seal 1a78e46a0da01a3bae0dc73cb1b3c1b16238d1f662ac9827bc24d3671dbebc9b
+- [Divergence Theorem (Gauss)](./spheres/stokes/divergence-theorem.html): Stokes 3D. seal b540b54383a472963015a716930611b36e1c1994d481dfa007fff23cec3a6282
+- [Green's Theorem](./spheres/stokes/greens-theorem.html): Stokes 3D. seal b6769e55ef5ec4accf36471707aff7a18d9f035980653966d5526fad026e54a8
+- [Differential Forms · d² = 0](./spheres/stokes/differential-forms.html): Stokes 3D. seal a6643d52c131cdd52b0efac2dfee519403b40d9b3c72b7683bd5abd8e0c16dc7
+- [Wedge Product & Orientation](./spheres/stokes/wedge-product.html): Stokes 3D. seal fb703abbdabb5dcf31219dbfe6628300264f083855df36622740fcc55b28958b
+- [FTC · Stokes in Dimension 1](./spheres/stokes/ftc-zero-stokes.html): Stokes 3D. seal e235bb842f6f07278c851c3e70628f2d35959885250ba07df68bfa08f0b33f69
+- [Ampère's Law via Stokes](./spheres/stokes/amperes-law.html): Stokes 3D. seal 934145971f800840d4bd3c4db5c04c9251e1512f8645fb18ca32d2996ef6ea50
+- [Navier–Stokes Equations](./spheres/stokes/navier-stokes.html): Stokes 3D. seal adf6081d4c83a0589ede5b693ffaa8a12983d0b706c536b5566cc475950e4a64
+- [Navier–Stokes Millennium Prize](./spheres/stokes/millennium-prize.html): Stokes 3D. seal d1ba194c772e21258880547869fce196aa49c99367bd21a4341ef29daa161619
+- [Reynolds Number](./spheres/stokes/reynolds-number.html): Stokes 3D. seal 52230ad29b60de02a7461872eca6efb27c932638bde6cf458308a522c37e78f3
+- [Stokes Flow · Life at Low Re](./spheres/stokes/stokes-flow.html): Stokes 3D. seal 0f575b85e5354a1d23fcebed66ac8a07b9ecca16f7ba5c2d093a6b699032bfd1
+- [Stokes' Drag Law](./spheres/stokes/stokes-drag.html): Stokes 3D. seal 1373b560b6080b2062b80a60e3a9d096b20dab1b8dee2d03a275618c600065d6
+- [Falling Sphere Simulation](./spheres/stokes/falling-sphere.html): Stokes 3D. seal 5c970d23d0582ee8766c7300ca74bef0195d56186f89aca70e47d75cf2e26428
+- [Millikan's Oil Drop](./spheres/stokes/millikan-oil-drop.html): Stokes 3D. seal 5e27259ef3d59b9f20aec9d5139559bb522d19424f37efc8c053145f2f94e41e
+- [Stokes Parameters](./spheres/stokes/stokes-parameters.html): Stokes 3D. seal b23f7ec76a296e7c58075c5b116d7614fdb8b68f1faa2fbc8c5dab85ff6c4880
+- [Poincaré Sphere & Malus](./spheres/stokes/poincare-sphere.html): Stokes 3D. seal 0eb3c07efe5ca0d6d07915d2ef94842c2861632bba6a980f79c1e63f7a7ac3bf
+- [Airy Function](./spheres/stokes/airy-function.html): Stokes 3D. seal 352b3a3f88a5b30cec90a67c34fcb08358e96e7ddfa69b4d5fff7fbe4bbf7ff9
+- [Stokes Phenomenon](./spheres/stokes/stokes-phenomenon.html): Stokes 3D. seal e322900748818ae5a2f1bf561a7689db5f248a9c294f3537922ce9eec40de79f
+- [Stokes Waves](./spheres/stokes/stokes-waves.html): Stokes 3D. seal e7a48cdb1cd65f9853944f8e2164c3b026a99cd68b1536b194c2b62891ac81ed
+- [Stokes Shift](./spheres/stokes/stokes-shift.html): Stokes 3D. seal 2d6784e5fd0fca8645ca1fc3c43e667891c62c79c3cdd4ad83443d7c8512ab99
+- [Sir George Gabriel Stokes](./spheres/stokes/george-stokes.html): Stokes 3D. seal a92b4a76c4b120494acd0c332a68e73c202050bfda7b7da1067273375e150ad9
+- [Stokes · ∫∂Ω ω = ∫Ω dω](./spheres/stokes/stokes-index.html): Stokes 3D. seal b3fc647910d54dd77c9992a8e0e11385ec07fb35da9d0bfb2a3967224bc00e8b

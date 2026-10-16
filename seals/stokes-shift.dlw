@@ -1,0 +1,1 @@
+{"slug": "stokes-shift", "seal": "2d6784e5fd0fca8645ca1fc3c43e667891c62c79c3cdd4ad83443d7c8512ab99", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

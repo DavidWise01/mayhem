@@ -1,0 +1,1 @@
+{"slug": "greens-theorem", "seal": "b6769e55ef5ec4accf36471707aff7a18d9f035980653966d5526fad026e54a8", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

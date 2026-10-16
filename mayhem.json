@@ -2688,5 +2688,212 @@
     "path": "spheres/omnibus/omnibus-index.html"
    }
   ]
+ },
+ "batch_stokes": {
+  "said": "Dave t226u: perfect now build out the stokes math 24 pages",
+  "source": "WALL: no stokes source in DavidWise01; real mathematics",
+  "cooperative": "MODEL: BUILDER + WEAVER shared reward; localStorage mayhem-stokes-board",
+  "pages": [
+   {
+    "name": "Generalized Stokes Theorem",
+    "slug": "generalized-stokes",
+    "blurb": "Generalized Stokes Theorem: real Stokes mathematics in 3D, with a numeric identity verified on load, built by cooperating BUILDER and WEAVER agents.",
+    "seal": "77880d7580d1ead9bc4cf5831ef90cf3a988ea907fc168acaaed82dbc6ea599d",
+    "crumb": "THEOREM",
+    "path": "spheres/stokes/generalized-stokes.html"
+   },
+   {
+    "name": "Kelvin–Stokes Theorem",
+    "slug": "kelvin-stokes",
+    "blurb": "Kelvin–Stokes Theorem: real Stokes mathematics in 3D, with a numeric identity verified on load, built by cooperating BUILDER and WEAVER agents.",
+    "seal": "0fe44357c735d8c85312e5e08f03ba2caa0405f4ba95b18c50cb33e1bdf92458",
+    "crumb": "THEOREM",
+    "path": "spheres/stokes/kelvin-stokes.html"
+   },
+   {
+    "name": "Curl",
+    "slug": "curl",
+    "blurb": "Curl: real Stokes mathematics in 3D, with a numeric identity verified on load, built by cooperating BUILDER and WEAVER agents.",
+    "seal": "87a9eac6d7f69a90053e8a5af91f14583cd854cd8f53b04c0fc4d12048b47a35",
+    "crumb": "OPERATOR",
+    "path": "spheres/stokes/curl.html"
+   },
+   {
+    "name": "Circulation & the Vortex",
+    "slug": "circulation",
+    "blurb": "Circulation & the Vortex: real Stokes mathematics in 3D, with a numeric identity verified on load, built by cooperating BUILDER and WEAVER agents.",
+    "seal": "1a78e46a0da01a3bae0dc73cb1b3c1b16238d1f662ac9827bc24d3671dbebc9b",
+    "crumb": "FIELD",
+    "path": "spheres/stokes/circulation.html"
+   },
+   {
+    "name": "Divergence Theorem (Gauss)",
+    "slug": "divergence-theorem",
+    "blurb": "Divergence Theorem (Gauss): real Stokes mathematics in 3D, with a numeric identity verified on load, built by cooperating BUILDER and WEAVER agents.",
+    "seal": "b540b54383a472963015a716930611b36e1c1994d481dfa007fff23cec3a6282",
+    "crumb": "THEOREM",
+    "path": "spheres/stokes/divergence-theorem.html"
+   },
+   {
+    "name": "Green's Theorem",
+    "slug": "greens-theorem",
+    "blurb": "Green's Theorem: real Stokes mathematics in 3D, with a numeric identity verified on load, built by cooperating BUILDER and WEAVER agents.",
+    "seal": "b6769e55ef5ec4accf36471707aff7a18d9f035980653966d5526fad026e54a8",
+    "crumb": "THEOREM",
+    "path": "spheres/stokes/greens-theorem.html"
+   },
+   {
+    "name": "Differential Forms · d² = 0",
+    "slug": "differential-forms",
+    "blurb": "Differential Forms · d² = 0: real Stokes mathematics in 3D, with a numeric identity verified on load, built by cooperating BUILDER and WEAVER agents.",
+    "seal": "a6643d52c131cdd52b0efac2dfee519403b40d9b3c72b7683bd5abd8e0c16dc7",
+    "crumb": "FORMS",
+    "path": "spheres/stokes/differential-forms.html"
+   },
+   {
+    "name": "Wedge Product & Orientation",
+    "slug": "wedge-product",
+    "blurb": "Wedge Product & Orientation: real Stokes mathematics in 3D, with a numeric identity verified on load, built by cooperating BUILDER and WEAVER agents.",
+    "seal": "fb703abbdabb5dcf31219dbfe6628300264f083855df36622740fcc55b28958b",
+    "crumb": "FORMS",
+    "path": "spheres/stokes/wedge-product.html"
+   },
+   {
+    "name": "FTC · Stokes in Dimension 1",
+    "slug": "ftc-zero-stokes",
+    "blurb": "FTC · Stokes in Dimension 1: real Stokes mathematics in 3D, with a numeric identity verified on load, built by cooperating BUILDER and WEAVER agents.",
+    "seal": "e235bb842f6f07278c851c3e70628f2d35959885250ba07df68bfa08f0b33f69",
+    "crumb": "THEOREM",
+    "path": "spheres/stokes/ftc-zero-stokes.html"
+   },
+   {
+    "name": "Ampère's Law via Stokes",
+    "slug": "amperes-law",
+    "blurb": "Ampère's Law via Stokes: real Stokes mathematics in 3D, with a numeric identity verified on load, built by cooperating BUILDER and WEAVER agents.",
+    "seal": "934145971f800840d4bd3c4db5c04c9251e1512f8645fb18ca32d2996ef6ea50",
+    "crumb": "PHYSICS",
+    "path": "spheres/stokes/amperes-law.html"
+   },
+   {
+    "name": "Navier–Stokes Equations",
+    "slug": "navier-stokes",
+    "blurb": "Navier–Stokes Equations: real Stokes mathematics in 3D, with a numeric identity verified on load, built by cooperating BUILDER and WEAVER agents.",
+    "seal": "adf6081d4c83a0589ede5b693ffaa8a12983d0b706c536b5566cc475950e4a64",
+    "crumb": "FLUIDS",
+    "path": "spheres/stokes/navier-stokes.html"
+   },
+   {
+    "name": "Navier–Stokes Millennium Prize",
+    "slug": "millennium-prize",
+    "blurb": "Navier–Stokes Millennium Prize: real Stokes mathematics in 3D, with a numeric identity verified on load, built by cooperating BUILDER and WEAVER agents.",
+    "seal": "d1ba194c772e21258880547869fce196aa49c99367bd21a4341ef29daa161619",
+    "crumb": "OPEN PROBLEM",
+    "path": "spheres/stokes/millennium-prize.html"
+   },
+   {
+    "name": "Reynolds Number",
+    "slug": "reynolds-number",
+    "blurb": "Reynolds Number: real Stokes mathematics in 3D, with a numeric identity verified on load, built by cooperating BUILDER and WEAVER agents.",
+    "seal": "52230ad29b60de02a7461872eca6efb27c932638bde6cf458308a522c37e78f3",
+    "crumb": "FLUIDS",
+    "path": "spheres/stokes/reynolds-number.html"
+   },
+   {
+    "name": "Stokes Flow · Life at Low Re",
+    "slug": "stokes-flow",
+    "blurb": "Stokes Flow · Life at Low Re: real Stokes mathematics in 3D, with a numeric identity verified on load, built by cooperating BUILDER and WEAVER agents.",
+    "seal": "0f575b85e5354a1d23fcebed66ac8a07b9ecca16f7ba5c2d093a6b699032bfd1",
+    "crumb": "FLUIDS",
+    "path": "spheres/stokes/stokes-flow.html"
+   },
+   {
+    "name": "Stokes' Drag Law",
+    "slug": "stokes-drag",
+    "blurb": "Stokes' Drag Law: real Stokes mathematics in 3D, with a numeric identity verified on load, built by cooperating BUILDER and WEAVER agents.",
+    "seal": "1373b560b6080b2062b80a60e3a9d096b20dab1b8dee2d03a275618c600065d6",
+    "crumb": "FLUIDS",
+    "path": "spheres/stokes/stokes-drag.html"
+   },
+   {
+    "name": "Falling Sphere Simulation",
+    "slug": "falling-sphere",
+    "blurb": "Falling Sphere Simulation: real Stokes mathematics in 3D, with a numeric identity verified on load, built by cooperating BUILDER and WEAVER agents.",
+    "seal": "5c970d23d0582ee8766c7300ca74bef0195d56186f89aca70e47d75cf2e26428",
+    "crumb": "SIMULATION",
+    "path": "spheres/stokes/falling-sphere.html"
+   },
+   {
+    "name": "Millikan's Oil Drop",
+    "slug": "millikan-oil-drop",
+    "blurb": "Millikan's Oil Drop: real Stokes mathematics in 3D, with a numeric identity verified on load, built by cooperating BUILDER and WEAVER agents.",
+    "seal": "5e27259ef3d59b9f20aec9d5139559bb522d19424f37efc8c053145f2f94e41e",
+    "crumb": "HISTORY",
+    "path": "spheres/stokes/millikan-oil-drop.html"
+   },
+   {
+    "name": "Stokes Parameters",
+    "slug": "stokes-parameters",
+    "blurb": "Stokes Parameters: real Stokes mathematics in 3D, with a numeric identity verified on load, built by cooperating BUILDER and WEAVER agents.",
+    "seal": "b23f7ec76a296e7c58075c5b116d7614fdb8b68f1faa2fbc8c5dab85ff6c4880",
+    "crumb": "OPTICS",
+    "path": "spheres/stokes/stokes-parameters.html"
+   },
+   {
+    "name": "Poincaré Sphere & Malus",
+    "slug": "poincare-sphere",
+    "blurb": "Poincaré Sphere & Malus: real Stokes mathematics in 3D, with a numeric identity verified on load, built by cooperating BUILDER and WEAVER agents.",
+    "seal": "0eb3c07efe5ca0d6d07915d2ef94842c2861632bba6a980f79c1e63f7a7ac3bf",
+    "crumb": "OPTICS",
+    "path": "spheres/stokes/poincare-sphere.html"
+   },
+   {
+    "name": "Airy Function",
+    "slug": "airy-function",
+    "blurb": "Airy Function: real Stokes mathematics in 3D, with a numeric identity verified on load, built by cooperating BUILDER and WEAVER agents.",
+    "seal": "352b3a3f88a5b30cec90a67c34fcb08358e96e7ddfa69b4d5fff7fbe4bbf7ff9",
+    "crumb": "SPECIAL FUNCTION",
+    "path": "spheres/stokes/airy-function.html"
+   },
+   {
+    "name": "Stokes Phenomenon",
+    "slug": "stokes-phenomenon",
+    "blurb": "Stokes Phenomenon: real Stokes mathematics in 3D, with a numeric identity verified on load, built by cooperating BUILDER and WEAVER agents.",
+    "seal": "e322900748818ae5a2f1bf561a7689db5f248a9c294f3537922ce9eec40de79f",
+    "crumb": "ASYMPTOTICS",
+    "path": "spheres/stokes/stokes-phenomenon.html"
+   },
+   {
+    "name": "Stokes Waves",
+    "slug": "stokes-waves",
+    "blurb": "Stokes Waves: real Stokes mathematics in 3D, with a numeric identity verified on load, built by cooperating BUILDER and WEAVER agents.",
+    "seal": "e7a48cdb1cd65f9853944f8e2164c3b026a99cd68b1536b194c2b62891ac81ed",
+    "crumb": "WAVES",
+    "path": "spheres/stokes/stokes-waves.html"
+   },
+   {
+    "name": "Stokes Shift",
+    "slug": "stokes-shift",
+    "blurb": "Stokes Shift: real Stokes mathematics in 3D, with a numeric identity verified on load, built by cooperating BUILDER and WEAVER agents.",
+    "seal": "2d6784e5fd0fca8645ca1fc3c43e667891c62c79c3cdd4ad83443d7c8512ab99",
+    "crumb": "SPECTROSCOPY",
+    "path": "spheres/stokes/stokes-shift.html"
+   },
+   {
+    "name": "Sir George Gabriel Stokes",
+    "slug": "george-stokes",
+    "blurb": "Sir George Gabriel Stokes: real Stokes mathematics in 3D, with a numeric identity verified on load, built by cooperating BUILDER and WEAVER agents.",
+    "seal": "a92b4a76c4b120494acd0c332a68e73c202050bfda7b7da1067273375e150ad9",
+    "crumb": "HISTORY",
+    "path": "spheres/stokes/george-stokes.html"
+   },
+   {
+    "name": "Stokes · ∫∂Ω ω = ∫Ω dω",
+    "slug": "stokes-index",
+    "blurb": "Stokes math in 24 3D pages: the generalized and classical theorems, Navier–Stokes and the Millennium Prize, Stokes drag and flow, polarization, the Airy function, waves, fluorescence, and George Stokes himself.",
+    "seal": "b3fc647910d54dd77c9992a8e0e11385ec07fb35da9d0bfb2a3967224bc00e8b",
+    "crumb": "INDEX",
+    "path": "spheres/stokes/stokes-index.html"
+   }
+  ]
  }
 }

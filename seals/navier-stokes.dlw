@@ -1,0 +1,1 @@
+{"slug": "navier-stokes", "seal": "adf6081d4c83a0589ede5b693ffaa8a12983d0b706c536b5566cc475950e4a64", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

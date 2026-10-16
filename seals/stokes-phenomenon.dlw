@@ -1,0 +1,1 @@
+{"slug": "stokes-phenomenon", "seal": "e322900748818ae5a2f1bf561a7689db5f248a9c294f3537922ce9eec40de79f", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

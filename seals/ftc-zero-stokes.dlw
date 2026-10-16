@@ -1,0 +1,1 @@
+{"slug": "ftc-zero-stokes", "seal": "e235bb842f6f07278c851c3e70628f2d35959885250ba07df68bfa08f0b33f69", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "circulation", "seal": "1a78e46a0da01a3bae0dc73cb1b3c1b16238d1f662ac9827bc24d3671dbebc9b", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

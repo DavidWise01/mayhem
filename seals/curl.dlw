@@ -1,0 +1,1 @@
+{"slug": "curl", "seal": "87a9eac6d7f69a90053e8a5af91f14583cd854cd8f53b04c0fc4d12048b47a35", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

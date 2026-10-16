@@ -1,0 +1,1 @@
+{"slug": "kelvin-stokes", "seal": "0fe44357c735d8c85312e5e08f03ba2caa0405f4ba95b18c50cb33e1bdf92458", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

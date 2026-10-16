@@ -1,0 +1,1 @@
+{"slug": "stokes-waves", "seal": "e7a48cdb1cd65f9853944f8e2164c3b026a99cd68b1536b194c2b62891ac81ed", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

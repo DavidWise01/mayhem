@@ -1,0 +1,1 @@
+{"slug": "amperes-law", "seal": "934145971f800840d4bd3c4db5c04c9251e1512f8645fb18ca32d2996ef6ea50", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "differential-forms", "seal": "a6643d52c131cdd52b0efac2dfee519403b40d9b3c72b7683bd5abd8e0c16dc7", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

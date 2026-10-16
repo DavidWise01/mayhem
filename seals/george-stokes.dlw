@@ -1,0 +1,1 @@
+{"slug": "george-stokes", "seal": "a92b4a76c4b120494acd0c332a68e73c202050bfda7b7da1067273375e150ad9", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

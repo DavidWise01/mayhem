@@ -1,0 +1,1 @@
+{"slug": "wedge-product", "seal": "fb703abbdabb5dcf31219dbfe6628300264f083855df36622740fcc55b28958b", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
