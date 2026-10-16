@@ -1,0 +1,1 @@
+{"slug": "vickrey-hall", "seal": "d32ab1af38155f59527e37ff5088a08918899538ce9419f5e471912fed7574d3", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

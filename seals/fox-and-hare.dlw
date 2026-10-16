@@ -1,0 +1,1 @@
+{"slug": "fox-and-hare", "seal": "7f0b0f21a328f2bd492fcc82f0be97f49a0454e3d16223f51155cf4d1b6cc49c", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

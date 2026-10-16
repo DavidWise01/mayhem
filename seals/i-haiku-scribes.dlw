@@ -1,0 +1,1 @@
+{"slug": "i-haiku-scribes", "seal": "67d9e1a7530f9d6b6f45d9341a39a7ffb8df45a04a6325a135e49e5631ca2e0e", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

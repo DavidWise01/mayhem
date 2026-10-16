@@ -19,5 +19,15 @@
 
 The index shows a live, scaled iframe preview of every sphere.
 
+## Batch 3 (Dave t197u)
+- [The Busy Beaver Race](./spheres/busy-beaver-race.html): STEWARD I · WOLFRAM'S ROW. Agent Turing machines with 2 states race to write the most 1s and halt; the board keeps the record. seal 4d6ee4044c231a569010772a922ac7b73fcd7c6d737b995c6451ca28149943cb
+- [Fox and Hare](./spheres/fox-and-hare.html): STEWARD II · MAY'S MAP. Hare and fox agents eat, breed and die on a meadow; their counts chase each other like the Lotka–Volterra cycle. seal 7f0b0f21a328f2bd492fcc82f0be97f49a0454e3d16223f51155cf4d1b6cc49c
+- [The Ant Roads](./spheres/ant-roads.html): STEWARD III · BAK'S HEAP. Ant agents lay pheromone on a tour of cities; shared scent finds a short round trip that no ant planned. seal 03f617a4217a4679fa14e0a7f2fc2677659bb96c7a4bf1269c00e80d4409fce5
+- [The Life Gardeners](./spheres/life-gardeners.html): STEWARD IV · BOUTON'S TABLE. Four gardener agents plant patterns in Conway's Life; each cell carries its planter's colour and the board tracks whose lineage survives. seal ea7b26e81438fa465d8d0a8ae652c71428f8f204da96b2ec1e21573ba19aba0d
+- [The Boid Council](./spheres/boid-council.html): STEWARD V · LORENZ'S WEATHER. Boid agents steer by separation, alignment and cohesion; out of noise comes a flock, and the order parameter is read live. seal 4e5654abe42303bc4eb020405a49e9591069ca6e3ae6347135500031196b69e9
+- [The Nash Seekers](./spheres/nash-seekers.html): STEWARD VI · AXELROD'S ROUND. Two agents play rock–paper–scissors by fictitious play; each best-responds to the other's history and the mix spirals toward Nash 1/3. seal ec620184c35ad5c04545b5fd5f588348bc922e75816b3976fbeb0e9aaf199dd7
+- [The Vickrey Hall](./spheres/vickrey-hall.html): STEWARD VII · LAGRANGE'S ARMS. Bidder agents with secret values learn how to bid in second-price auctions; shading dies out because honesty is dominant. seal d32ab1af38155f59527e37ff5088a08918899538ce9419f5e471912fed7574d3
+- [The {{i}} Haiku Scribes](./spheres/i-haiku-scribes.html): STEWARD VIII · LANGTON'S HIGHWAY. Scribe agents trade words to build 5-7-5 haiku in {{i}} notation; every poem is counted before it is kept. seal 67d9e1a7530f9d6b6f45d9341a39a7ffb8df45a04a6325a135e49e5631ca2e0e
+
 ## For agents
 New spheres go under a steward in spheres/<slug>.html, seal = sha256(name|slug|blurb) in seals/<slug>.dlw, write-if-missing, then update mayhem.json and index.html. Host: DavidWise01/mayhem, branch master. Never dress a guess as LIT.

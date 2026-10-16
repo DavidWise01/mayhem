@@ -1,0 +1,1 @@
+{"slug": "nash-seekers", "seal": "ec620184c35ad5c04545b5fd5f588348bc922e75816b3976fbeb0e9aaf199dd7", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

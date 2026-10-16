@@ -1,0 +1,1 @@
+{"slug": "boid-council", "seal": "4e5654abe42303bc4eb020405a49e9591069ca6e3ae6347135500031196b69e9", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

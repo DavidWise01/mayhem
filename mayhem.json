@@ -28,6 +28,14 @@
      "blurb": "Three scribe agents weave a poem in {{i}} after Ada Lovelace's loom of algebraical patterns.",
      "seal": "9855b6d77cb1ca7e8fcc69fdf02295ca238d869aabc79c44a36bb6147bad1fe6",
      "claim": "LIT checks · AMBER tips/quotes · MODEL agents"
+    },
+    {
+     "name": "The Busy Beaver Race",
+     "slug": "busy-beaver-race",
+     "path": "spheres/busy-beaver-race.html",
+     "blurb": "Agent Turing machines with 2 states race to write the most 1s and halt; the board keeps the record.",
+     "seal": "4d6ee4044c231a569010772a922ac7b73fcd7c6d737b995c6451ca28149943cb",
+     "claim": "LIT check · AMBER refs · MODEL agents"
     }
    ]
   },
@@ -40,7 +48,17 @@
     "blurb": "x → r·x·(1−x): steady, then period doubling, then chaos as r rises.",
     "seal": "0c3a3f05bf512d249e3c676f070fe5d7cc7f85bf366a7772d65d1ca8acb60d4d",
     "claim": "LIT"
-   }
+   },
+   "more": [
+    {
+     "name": "Fox and Hare",
+     "slug": "fox-and-hare",
+     "path": "spheres/fox-and-hare.html",
+     "blurb": "Hare and fox agents eat, breed and die on a meadow; their counts chase each other like the Lotka–Volterra cycle.",
+     "seal": "7f0b0f21a328f2bd492fcc82f0be97f49a0454e3d16223f51155cf4d1b6cc49c",
+     "claim": "LIT check · AMBER refs · MODEL agents"
+    }
+   ]
   },
   {
    "steward": "STEWARD III · BAK'S HEAP",
@@ -51,7 +69,17 @@
     "blurb": "Bak–Tang–Wiesenfeld sandpile: drop grains, cells of 4 topple, avalanches of every size.",
     "seal": "5e62838b83be3d0bbec6fff0bcfbe0dcc1acf77f7b46c8342da74ba76f0e99f5",
     "claim": "LIT"
-   }
+   },
+   "more": [
+    {
+     "name": "The Ant Roads",
+     "slug": "ant-roads",
+     "path": "spheres/ant-roads.html",
+     "blurb": "Ant agents lay pheromone on a tour of cities; shared scent finds a short round trip that no ant planned.",
+     "seal": "03f617a4217a4679fa14e0a7f2fc2677659bb96c7a4bf1269c00e80d4409fce5",
+     "claim": "LIT check · AMBER refs · MODEL agents"
+    }
+   ]
   },
   {
    "steward": "STEWARD IV · BOUTON'S TABLE",
@@ -71,6 +99,14 @@
      "blurb": "Agents G, R and O try to beat an abstract NES-Metroid map, posting tips to a shared board while K watches.",
      "seal": "92d18c04fd59a78a4b6f4ffec44e8311dfc1b9db81218518fbfcbfa98d595a24",
      "claim": "LIT checks · AMBER tips/quotes · MODEL agents"
+    },
+    {
+     "name": "The Life Gardeners",
+     "slug": "life-gardeners",
+     "path": "spheres/life-gardeners.html",
+     "blurb": "Four gardener agents plant patterns in Conway's Life; each cell carries its planter's colour and the board tracks whose lineage survives.",
+     "seal": "ea7b26e81438fa465d8d0a8ae652c71428f8f204da96b2ec1e21573ba19aba0d",
+     "claim": "LIT check · AMBER refs · MODEL agents"
     }
    ]
   },
@@ -83,7 +119,17 @@
     "blurb": "Lorenz 1963 (σ=10, ρ=28, β=8/3): a strange attractor that never repeats.",
     "seal": "775a51cd413ae183e6625b12e1c7daaa1b7dc3890b2a3cc5de20abe5aa49ac29",
     "claim": "LIT"
-   }
+   },
+   "more": [
+    {
+     "name": "The Boid Council",
+     "slug": "boid-council",
+     "path": "spheres/boid-council.html",
+     "blurb": "Boid agents steer by separation, alignment and cohesion; out of noise comes a flock, and the order parameter is read live.",
+     "seal": "4e5654abe42303bc4eb020405a49e9591069ca6e3ae6347135500031196b69e9",
+     "claim": "LIT check · AMBER refs · MODEL agents"
+    }
+   ]
   },
   {
    "steward": "STEWARD VI · AXELROD'S ROUND",
@@ -94,7 +140,17 @@
     "blurb": "Iterated prisoner's dilemma, payoffs T5 R3 P1 S0, strategies meet in a round robin.",
     "seal": "0746f7d27807b7ec2610f7be9365352b3b6fb71858c0904991f1062a09de260c",
     "claim": "LIT"
-   }
+   },
+   "more": [
+    {
+     "name": "The Nash Seekers",
+     "slug": "nash-seekers",
+     "path": "spheres/nash-seekers.html",
+     "blurb": "Two agents play rock–paper–scissors by fictitious play; each best-responds to the other's history and the mix spirals toward Nash 1/3.",
+     "seal": "ec620184c35ad5c04545b5fd5f588348bc922e75816b3976fbeb0e9aaf199dd7",
+     "claim": "LIT check · AMBER refs · MODEL agents"
+    }
+   ]
   },
   {
    "steward": "STEWARD VII · LAGRANGE'S ARMS",
@@ -105,7 +161,17 @@
     "blurb": "Double pendulum: two rods, one gravity, sensitive chaos; RK4 keeps energy honest.",
     "seal": "4b6fec119dd488a93fdecf3cdb4f8837e42370820e0e155db937ca2718e23225",
     "claim": "LIT"
-   }
+   },
+   "more": [
+    {
+     "name": "The Vickrey Hall",
+     "slug": "vickrey-hall",
+     "path": "spheres/vickrey-hall.html",
+     "blurb": "Bidder agents with secret values learn how to bid in second-price auctions; shading dies out because honesty is dominant.",
+     "seal": "d32ab1af38155f59527e37ff5088a08918899538ce9419f5e471912fed7574d3",
+     "claim": "LIT check · AMBER refs · MODEL agents"
+    }
+   ]
   },
   {
    "steward": "STEWARD VIII · LANGTON'S HIGHWAY",
@@ -116,9 +182,20 @@
     "blurb": "Langton's ant: chaos for ~10,000 steps, then a highway; the rule runs backwards exactly.",
     "seal": "fdc9c584b3c1fa634a18daf81f3383cd574bd053fee0fbb52e5863db17da8de3",
     "claim": "LIT"
-   }
+   },
+   "more": [
+    {
+     "name": "The {{i}} Haiku Scribes",
+     "slug": "i-haiku-scribes",
+     "path": "spheres/i-haiku-scribes.html",
+     "blurb": "Scribe agents trade words to build 5-7-5 haiku in {{i}} notation; every poem is counted before it is kept.",
+     "seal": "67d9e1a7530f9d6b6f45d9341a39a7ffb8df45a04a6325a135e49e5631ca2e0e",
+     "claim": "LIT check · AMBER refs · MODEL agents"
+    }
+   ]
   }
  ],
  "labels": "keeper/steward names & themes MODEL; simulations LIT via on-load self-checks; art AMBER/MODEL",
- "agentic": "Dave t196u: \"keep going, i think agentic is what i meant not generative lol\""
+ "agentic": "Dave t196u: \"keep going, i think agentic is what i meant not generative lol\"",
+ "batch_3": "Dave t197u: \"percect keep going, do as many as you can per turn withough losing quality\""
 }
