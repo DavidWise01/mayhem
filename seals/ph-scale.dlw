@@ -1,0 +1,1 @@
+{"slug": "ph-scale", "seal": "a4dc54c815023544605463e7e98e4230cef4caafd9bb5ac90699bf57b839e715", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

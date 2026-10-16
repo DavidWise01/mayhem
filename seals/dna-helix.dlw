@@ -1,0 +1,1 @@
+{"slug": "dna-helix", "seal": "b65c6de643029c8aba851f94292d74b8ecf3f5676f26e93272b4160de4fbdbe9", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

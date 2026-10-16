@@ -1,0 +1,1 @@
+{"slug": "arrhenius-fire", "seal": "877ffd614ea116b8328182321030843b9125aa3b128dfd624ad4c789852c7044", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

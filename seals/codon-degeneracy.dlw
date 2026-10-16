@@ -1,0 +1,1 @@
+{"slug": "codon-degeneracy", "seal": "1d9a7896ea506b1544f767e6cbf58c1893d67de389a89d175ef28800231dbfea", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

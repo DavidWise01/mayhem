@@ -1,0 +1,1 @@
+{"slug": "logistic-bifurcation", "seal": "7c2195c50f0f32d4e66d413dc9a113448b494ac2fc6b564ae1c5985db2ce0c65", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

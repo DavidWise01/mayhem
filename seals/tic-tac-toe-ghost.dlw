@@ -1,0 +1,1 @@
+{"slug": "tic-tac-toe-ghost", "seal": "d410630e04e755d1b8d953dc967893d2b9931da093432aac3563ccd0f0b0504b", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

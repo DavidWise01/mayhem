@@ -1,0 +1,1 @@
+{"slug": "monty-hall-doors", "seal": "422ffb53bc3fb91d46d4f4cb1f97259f8aca997d050655d065937e03dca7487d", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "sir-plague", "seal": "2cb391038ce47b37b61c411a1cdf6917644e8b7f722b3b77a5ad3bc6f0d135bc", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

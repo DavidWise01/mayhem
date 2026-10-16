@@ -170,6 +170,26 @@ Dave: "switch to a gothic noir neon themes and do whatever you want, do 100 and 
 - [Prime Counting · π(x) vs x/ln x](./spheres/prime-counting.html): Algorithms, curve in spray stencil. seal c1c9010ba6ea29726f78a38d4f0007aa4e81c70f88a15d816a9fbfc88ba933a0
 - [Random Walk · Fog](./spheres/random-walk-fog.html): Algorithms, dots in scratchboard. seal ec9ee983c2693b6ce5c2f8f5197eca0d00939735a51924d1a5206a16a804f912
 - [Subtraction Nim {1,3,4} · Grundy Crypt](./spheres/nim-grundy.html): Games, grid in pastel haze. seal 94b68830b04f623732411cc258fe9320dac740f57d897f05cc3da011d6229acb
+- [Tic-Tac-Toe · Ghost Game](./spheres/tic-tac-toe-ghost.html): Games, grid in neon tube. seal d410630e04e755d1b8d953dc967893d2b9931da093432aac3563ccd0f0b0504b
+- [Knight Moves · Iron Horse](./spheres/knight-moves.html): Games, grid in chalk on slate. seal 806dd2397e0295b3e1c30268e0a089854f5c2595a756dd75621f6d27340a3578
+- [Eight Queens · Crowned Graves](./spheres/eight-queens.html): Games, dots in charcoal smoke. seal 8d26c184793e9e8abe247b2eced0083c50355daeddfa743f9d46638f6af2b5d7
+- [Monty Hall · Three Doors](./spheres/monty-hall-doors.html): Games, bars in ink wash in rain. seal 422ffb53bc3fb91d46d4f4cb1f97259f8aca997d050655d065937e03dca7487d
+- [Two Dice · Bone Throw](./spheres/two-dice.html): Games, bars in etched glass. seal 11c68993fe106448a51dc32233a5a4f1c36f63de3138ec6e52acc3561e84f3f5
+- [Poker Hands · Neon Cards](./spheres/poker-hands.html): Games, radial in film-grain noir. seal b9c466d7388c925d7373b5bb2f386a57c1968fbb800a396479325cdaffd6f6db
+- [Elo Expectation · Duel](./spheres/elo-duel.html): Games, curve in stained glass. seal 7066a37c9bc72fffbe634ae4679c2c1b858a5affd0ecdcb6b1b186cd24bf3405
+- [Tit-for-Tat · Iterated Dilemma](./spheres/tit-for-tat.html): Games, bars in spray stencil. seal 5aabba9cdc46c47bc413677c5d3f314fec3499cfc335315c2f0a2fa878c9b64c
+- [Shidoku · Latin Grave](./spheres/sudoku-4.html): Games, grid in scratchboard. seal 7d3895320eed6c46f6284d8158d4653ae155115aefe24940526ee65e689352fc
+- [NES Lore · 2A03 Notes](./spheres/nes-palette-lore.html): Games, wave in pastel haze. seal f5f80bfec19dd15ecb0bf0f4bca1cfdd0beceb5ac89c3b238c124e863371cfea
+- [Logistic Map · Bifurcation Briars](./spheres/logistic-bifurcation.html): Biology, dots in neon tube. seal 7c2195c50f0f32d4e66d413dc9a113448b494ac2fc6b564ae1c5985db2ce0c65
+- [SIR Plague · Masque](./spheres/sir-plague.html): Biology, curve in chalk on slate. seal 2cb391038ce47b37b61c411a1cdf6917644e8b7f722b3b77a5ad3bc6f0d135bc
+- [Phyllotaxis · Thorns](./spheres/phyllotaxis-thorns.html): Biology, spiral in charcoal smoke. seal bae2ee163c6773d15b82ebfc0eb47b10419d9cbbad1588419bd23997c5b8bcf7
+- [DNA GC Content · Double Helix](./spheres/dna-helix.html): Biology, wave in ink wash in rain. seal b65c6de643029c8aba851f94292d74b8ecf3f5676f26e93272b4160de4fbdbe9
+- [Codon Degeneracy · 64 Coffins](./spheres/codon-degeneracy.html): Biology, bars in etched glass. seal 1d9a7896ea506b1544f767e6cbf58c1893d67de389a89d175ef28800231dbfea
+- [Kleiber’s Law · Beasts](./spheres/kleiber-beasts.html): Biology, skyline in film-grain noir. seal 37acd2e9d060054a2fb0c08678b032c4e034f94dacd113482fba0528dcff60a1
+- [Leaky Integrate-and-Fire · Neuron Sparks](./spheres/lif-neuron.html): Biology, curve in stained glass. seal 376327993764cf775a28615c3251bbccf82c2a8dc22c91b1a7e53b8d2592ee1f
+- [Electron Shells · Haunted Atom](./spheres/electron-shells.html): Chemistry, rings in spray stencil. seal 1d78c6bed6c88e7095d487c7f1fe31ba13be6ac3935158dbd8f84bbcacda3d15
+- [pH Scale · Acid Rain](./spheres/ph-scale.html): Chemistry, bars in scratchboard. seal a4dc54c815023544605463e7e98e4230cef4caafd9bb5ac90699bf57b839e715
+- [Arrhenius · Witch Fire](./spheres/arrhenius-fire.html): Chemistry, curve in pastel haze. seal 877ffd614ea116b8328182321030843b9125aa3b128dfd624ad4c789852c7044
 
 ## Constantly improve the workspace
 Arriving agents, keep improving this workspace and never stop:

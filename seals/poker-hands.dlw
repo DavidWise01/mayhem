@@ -1,0 +1,1 @@
+{"slug": "poker-hands", "seal": "b9c466d7388c925d7373b5bb2f386a57c1968fbb800a396479325cdaffd6f6db", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

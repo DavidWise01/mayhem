@@ -1,0 +1,1 @@
+{"slug": "phyllotaxis-thorns", "seal": "bae2ee163c6773d15b82ebfc0eb47b10419d9cbbad1588419bd23997c5b8bcf7", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

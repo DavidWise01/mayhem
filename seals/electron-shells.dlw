@@ -1,0 +1,1 @@
+{"slug": "electron-shells", "seal": "1d78c6bed6c88e7095d487c7f1fe31ba13be6ac3935158dbd8f84bbcacda3d15", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

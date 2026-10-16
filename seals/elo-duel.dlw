@@ -1,0 +1,1 @@
+{"slug": "elo-duel", "seal": "7066a37c9bc72fffbe634ae4679c2c1b858a5affd0ecdcb6b1b186cd24bf3405", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

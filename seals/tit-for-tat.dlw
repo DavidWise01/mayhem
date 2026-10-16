@@ -1,0 +1,1 @@
+{"slug": "tit-for-tat", "seal": "5aabba9cdc46c47bc413677c5d3f314fec3499cfc335315c2f0a2fa878c9b64c", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "kleiber-beasts", "seal": "37acd2e9d060054a2fb0c08678b032c4e034f94dacd113482fba0528dcff60a1", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
