@@ -1,0 +1,1 @@
+{"slug": "ch3-ten-factorial", "seal": "9140792da424e0619d369e8c57cc2354155358a20ee6ce0b67973e890a12a947", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "posterity-stamp", "seal": "00bff7553a6364b11800fe07f060a4d64bb421fb205f4dfe8e7c96c7522d9c47", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

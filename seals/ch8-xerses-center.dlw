@@ -1,0 +1,1 @@
+{"slug": "ch8-xerses-center", "seal": "0478f55cf26f2b681756eae85d2ffe11e3e7dbb7342a0ae4f88278512e9b2126", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

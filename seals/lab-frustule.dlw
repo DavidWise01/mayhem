@@ -1,0 +1,1 @@
+{"slug": "lab-frustule", "seal": "9749ba40c9d161c1c5b7eb409fb8c6c1263ed54d8a3dcfa3670d740895bcbebb", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

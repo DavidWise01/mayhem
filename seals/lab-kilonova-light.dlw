@@ -1,0 +1,1 @@
+{"slug": "lab-kilonova-light", "seal": "1d08b5815ce0dae17328296d97a8ace16372ef8afad8424bc6932deb88f21fde", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

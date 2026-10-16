@@ -1,0 +1,1 @@
+{"slug": "lab-piezo", "seal": "db4944dfb60208ee4ec3eda35067b81a9b54fcde833dddd708e77c03100077ae", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

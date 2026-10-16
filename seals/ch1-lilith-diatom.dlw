@@ -1,0 +1,1 @@
+{"slug": "ch1-lilith-diatom", "seal": "a5072166f7915b5684e0f67c88503b1e20fd8db77073fee24d46928ee21d2e99", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

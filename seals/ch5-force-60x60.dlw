@@ -1,0 +1,1 @@
+{"slug": "ch5-force-60x60", "seal": "c084b16aaf60313529b73ca7a77b26aed9ca1d2044230740a895d4fa53cc9b5c", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

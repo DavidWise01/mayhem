@@ -1,0 +1,1 @@
+{"slug": "you-them-it", "seal": "d595e0905bfa24e188b49a9352a341cdad0b414e387b8bd5fee7e99e23c18cb5", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

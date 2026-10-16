@@ -1,0 +1,1 @@
+{"slug": "lab-leap-rule", "seal": "38b2f52bdb29ca07a48b75c3473e1a8fd413b482cf3605f1e2b894bb3b532d18", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

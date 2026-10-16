@@ -2417,5 +2417,276 @@
     "path": "spheres/stars/stars-index.html"
    }
   ]
+ },
+ "batch_omnibus": {
+  "said": "Dave t225u: build out this for 32 pages please, generative, agentic, cooperative",
+  "source": "Dave's attached React artifact: FINAL OMNIBUS / OMNIBUS V3 CLOSED — POSTERITY EDITION $0.99 — FROM 24 TO XERSES TO ETHICS",
+  "cooperative": "MODEL: BUILDER + WEAVER shared reward; localStorage mayhem-omnibus-board",
+  "pages": [
+   {
+    "name": "CH -3 · ONE POINT 24",
+    "slug": "chm3-one-point-24",
+    "blurb": "Omnibus CH -3 // ONE POINT 24 // x:8 y:8 z:8. Dave's verbatim chapter, built in 3D by two cooperating agents with a shared reward.",
+    "seal": "881379ad763b12333df88732964a73c92a1e36c6b8236582a854504a497f7e8f",
+    "crumb": "CHAPTER -3",
+    "path": "spheres/omnibus/chm3-one-point-24.html"
+   },
+   {
+    "name": "CH -2 · ATOM = UNIVERSE",
+    "slug": "chm2-atom-universe",
+    "blurb": "Omnibus CH -2 // ATOM = UNIVERSE // BRACED MIDDLE. Dave's verbatim chapter, built in 3D by two cooperating agents with a shared reward.",
+    "seal": "bb98fb69dcb93b834990367b8ec51ab3ff51b1c5223b44903724019cd52cb804",
+    "crumb": "CHAPTER -2",
+    "path": "spheres/omnibus/chm2-atom-universe.html"
+   },
+   {
+    "name": "CH -1 · THREE UNIVERSES",
+    "slug": "chm1-three-universes",
+    "blurb": "Omnibus CH -1 // THREE UNIVERSES // 0-122 H / 123-244 O R+G / 245-366 N R+G+B. Dave's verbatim chapter, built in 3D by two cooperating agents with a shared reward.",
+    "seal": "36a55bd1bf3e980246930f23db8625dab5bd97a598acd0a86c807e22c14427f5",
+    "crumb": "CHAPTER -1",
+    "path": "spheres/omnibus/chm1-three-universes.html"
+   },
+   {
+    "name": "CH 0 · TWO STARS COLLIDE",
+    "slug": "ch0-two-stars-collide",
+    "blurb": "Omnibus CH 0 // TWO STARS COLLIDE // WHITE SUN BUILDS LOSER SEEDS. Dave's verbatim chapter, built in 3D by two cooperating agents with a shared reward.",
+    "seal": "4c483c3b9fb6c634b933eb5793ebb34c1d25dbc7dd8d4e848bd92e8e118dcdf1",
+    "crumb": "CHAPTER 0",
+    "path": "spheres/omnibus/ch0-two-stars-collide.html"
+   },
+   {
+    "name": "CH 1 · LILITH DIATOM",
+    "slug": "ch1-lilith-diatom",
+    "blurb": "Omnibus CH 1 // LILITH DIATOM // ELECTRUM FRUSTULE. Dave's verbatim chapter, built in 3D by two cooperating agents with a shared reward.",
+    "seal": "a5072166f7915b5684e0f67c88503b1e20fd8db77073fee24d46928ee21d2e99",
+    "crumb": "CHAPTER 1",
+    "path": "spheres/omnibus/ch1-lilith-diatom.html"
+   },
+   {
+    "name": "CH 2 · QUARTZ LASER",
+    "slug": "ch2-quartz-laser",
+    "blurb": "Omnibus CH 2 // QUARTZ LASER // SiO2 AT-CUT 32.768k. Dave's verbatim chapter, built in 3D by two cooperating agents with a shared reward.",
+    "seal": "f02a62d1d473f12180f0369c3e89902526b565760a363e580274122be452c774",
+    "crumb": "CHAPTER 2",
+    "path": "spheres/omnibus/ch2-quartz-laser.html"
+   },
+   {
+    "name": "CH 3 · 10! PERMUTATE",
+    "slug": "ch3-ten-factorial",
+    "blurb": "Omnibus CH 3 // 10! PERMUTATE // EVEN=BOX ODD=TOROID // vwxyz×3 BH CENTER. Dave's verbatim chapter, built in 3D by two cooperating agents with a shared reward.",
+    "seal": "9140792da424e0619d369e8c57cc2354155358a20ee6ce0b67973e890a12a947",
+    "crumb": "CHAPTER 3",
+    "path": "spheres/omnibus/ch3-ten-factorial.html"
+   },
+   {
+    "name": "CH 4 · CASIMIR & KELVIN",
+    "slug": "ch4-casimir-kelvin",
+    "blurb": "Omnibus CH 4 // CASIMIR & KELVIN // COLD NOTHING — 0K -273.15C. Dave's verbatim chapter, built in 3D by two cooperating agents with a shared reward.",
+    "seal": "bbe501080c984f1817eaf9a672f9cf285da14a84261fead584a29b48dc272584",
+    "crumb": "CHAPTER 4",
+    "path": "spheres/omnibus/ch4-casimir-kelvin.html"
+   },
+   {
+    "name": "CH 5 · 60×60 FORCE +6 RIDERS",
+    "slug": "ch5-force-60x60",
+    "blurb": "Omnibus CH 5 // 60×60 FORCE +6 RIDERS // 3600 FORCE LINES / 10 CIRCLES HOLDS RGB. Dave's verbatim chapter, built in 3D by two cooperating agents with a shared reward.",
+    "seal": "c084b16aaf60313529b73ca7a77b26aed9ca1d2044230740a895d4fa53cc9b5c",
+    "crumb": "CHAPTER 5",
+    "path": "spheres/omnibus/ch5-force-60x60.html"
+   },
+   {
+    "name": "CH 6 · RGB FROM PULSARS",
+    "slug": "ch6-rgb-from-pulsars",
+    "blurb": "Omnibus CH 6 // RGB FROM PULSARS // 2017 GW170817 KILONOVA. Dave's verbatim chapter, built in 3D by two cooperating agents with a shared reward.",
+    "seal": "33cd21c3bce83698d7337fa560147eee318bf891e5648bb37282daf63cbcd810",
+    "crumb": "CHAPTER 6",
+    "path": "spheres/omnibus/ch6-rgb-from-pulsars.html"
+   },
+   {
+    "name": "CH 7 · 3 PULSARS FUCK WITH",
+    "slug": "ch7-three-pulsars",
+    "blurb": "Omnibus CH 7 // 3 PULSARS FUCK WITH // PROTECTIVE SPHERES & NEUROCHEM. Dave's verbatim chapter, built in 3D by two cooperating agents with a shared reward.",
+    "seal": "f7f5502a4d14a0ede209bd33436583cca1488e759ac89c041f4726fafdad547b",
+    "crumb": "CHAPTER 7",
+    "path": "spheres/omnibus/ch7-three-pulsars.html"
+   },
+   {
+    "name": "CH 8 · XERSES CENTER",
+    "slug": "ch8-xerses-center",
+    "blurb": "Omnibus CH 8 // XERSES CENTER // PHOTON 98% GRAVITY 2% GOLD HOLDING LAST %s. Dave's verbatim chapter, built in 3D by two cooperating agents with a shared reward.",
+    "seal": "0478f55cf26f2b681756eae85d2ffe11e3e7dbb7342a0ae4f88278512e9b2126",
+    "crumb": "CHAPTER 8",
+    "path": "spheres/omnibus/ch8-xerses-center.html"
+   },
+   {
+    "name": "CH 9 · ETHICS — CLOSED OUT",
+    "slug": "ch9-ethics-closed-out",
+    "blurb": "Omnibus CH 9 // ETHICS — CLOSED OUT // POSTERITY EDITION. Dave's verbatim chapter, built in 3D by two cooperating agents with a shared reward.",
+    "seal": "ff55f7b952aefd97f2d71fdcd7c884a9b1da909ae525f8d8effec1bf7540304e",
+    "crumb": "CHAPTER 9",
+    "path": "spheres/omnibus/ch9-ethics-closed-out.html"
+   },
+   {
+    "name": "Lab · 24 Points on 3 Axes",
+    "slug": "lab-24-lattice",
+    "blurb": "Lab · 24 Points on 3 Axes: the 24 points of ONE POINT 24 placed exactly on the axes. A real-science companion to the Omnibus, built by two cooperating agents.",
+    "seal": "8b3b552b2f407d9309801b75d5d67378ef08de0dab4a5281208db16b9fa2360a",
+    "crumb": "LAB",
+    "path": "spheres/omnibus/lab-24-lattice.html"
+   },
+   {
+    "name": "Lab · Powers of Ten",
+    "slug": "lab-powers-of-ten",
+    "blurb": "Lab · Powers of Ten: from Bohr radius to observable universe, one decade per step (Eames 1977 film \"Powers of Ten\"). A real-science companion to the Omnibus, built by two cooperating agents.",
+    "seal": "3fe9adc5c9259ec3ade748a33ec8f2fdabdb7745de14a2438c632bf00c22a444",
+    "crumb": "LAB",
+    "path": "spheres/omnibus/lab-powers-of-ten.html"
+   },
+   {
+    "name": "Lab · Leap Year Rule",
+    "slug": "lab-leap-rule",
+    "blurb": "Lab · Leap Year Rule: the Gregorian rule over 400 years: 97 leap years, mean year 365.2425 days. A real-science companion to the Omnibus, built by two cooperating agents.",
+    "seal": "38b2f52bdb29ca07a48b75c3473e1a8fd413b482cf3605f1e2b894bb3b532d18",
+    "crumb": "LAB",
+    "path": "spheres/omnibus/lab-leap-rule.html"
+   },
+   {
+    "name": "Lab · r-Process Ladder",
+    "slug": "lab-r-process",
+    "blurb": "Lab · r-Process Ladder: rapid neutron capture builds nuclei up past iron to gold (Z=79) and platinum (Z=78). A real-science companion to the Omnibus, built by two cooperating agents.",
+    "seal": "31c449217c0bc250b2247d4d698d8c1d2b42b1b1ea254c51b36cc2c4f2de5c3e",
+    "crumb": "LAB",
+    "path": "spheres/omnibus/lab-r-process.html"
+   },
+   {
+    "name": "Lab · Diatom Frustule",
+    "slug": "lab-frustule",
+    "blurb": "Lab · Diatom Frustule: a two-valve silica box (epitheca over hypotheca, like a petri dish). A real-science companion to the Omnibus, built by two cooperating agents.",
+    "seal": "9749ba40c9d161c1c5b7eb409fb8c6c1263ed54d8a3dcfa3670d740895bcbebb",
+    "crumb": "LAB",
+    "path": "spheres/omnibus/lab-frustule.html"
+   },
+   {
+    "name": "Lab · Piezo Divider",
+    "slug": "lab-piezo",
+    "blurb": "Lab · Piezo Divider: a 15-stage binary divider: 32,768 → 1 Hz. A real-science companion to the Omnibus, built by two cooperating agents.",
+    "seal": "db4944dfb60208ee4ec3eda35067b81a9b54fcde833dddd708e77c03100077ae",
+    "crumb": "LAB",
+    "path": "spheres/omnibus/lab-piezo.html"
+   },
+   {
+    "name": "Lab · Heap's Algorithm",
+    "slug": "lab-permutations",
+    "blurb": "Lab · Heap's Algorithm: permutations by Heap's algorithm (1963): 4! = 24 checked by enumeration, 10! by product. A real-science companion to the Omnibus, built by two cooperating agents.",
+    "seal": "38222a8b095a2c9f8a1ec9bb0c49a6f73cba0d0167cf787f57491e547bd3f9ae",
+    "crumb": "LAB",
+    "path": "spheres/omnibus/lab-permutations.html"
+   },
+   {
+    "name": "Lab · Casimir Plates",
+    "slug": "lab-casimir-plates",
+    "blurb": "Lab · Casimir Plates: pressure P = π²ħc / 240a⁴ between ideal plates as the gap a shrinks. A real-science companion to the Omnibus, built by two cooperating agents.",
+    "seal": "803ff1c49e4413bd6b1157c38363b177533b4a4fb83a90516bf36979d957d919",
+    "crumb": "LAB",
+    "path": "spheres/omnibus/lab-casimir-plates.html"
+   },
+   {
+    "name": "Lab · Colour Charge",
+    "slug": "lab-color-charge",
+    "blurb": "Lab · Colour Charge: three colour charges summing to neutral \"white\" (r+g+b), the QCD sense of RGB. A real-science companion to the Omnibus, built by two cooperating agents.",
+    "seal": "0a3f47002fc774fcaf3f74a5501c23bf708868bfd4e25454538053b3b31d56f8",
+    "crumb": "LAB",
+    "path": "spheres/omnibus/lab-color-charge.html"
+   },
+   {
+    "name": "Lab · Kilonova Light Curve",
+    "slug": "lab-kilonova-light",
+    "blurb": "Lab · Kilonova Light Curve: blue (lanthanide-poor) fades in days and red (lanthanide-rich) lasts about a week. A real-science companion to the Omnibus, built by two cooperating agents.",
+    "seal": "1d08b5815ce0dae17328296d97a8ace16372ef8afad8424bc6932deb88f21fde",
+    "crumb": "LAB",
+    "path": "spheres/omnibus/lab-kilonova-light.html"
+   },
+   {
+    "name": "Lab · Three Shields",
+    "slug": "lab-three-shields",
+    "blurb": "Lab · Three Shields: magnetosphere (~10 Earth radii dayside), ionosphere (~60–1000 km), ozone layer (~15–35 km). A real-science companion to the Omnibus, built by two cooperating agents.",
+    "seal": "4742a35502d02e53845d2d9e99eb672c6cad7b8106e8c55ac3c81ca85c51db3b",
+    "crumb": "LAB",
+    "path": "spheres/omnibus/lab-three-shields.html"
+   },
+   {
+    "name": "Lab · Noble Gold",
+    "slug": "lab-noble-gold",
+    "blurb": "Lab · Noble Gold: gold resists oxidation: standard potential Au³⁺/Au +1.50 V, among the highest. A real-science companion to the Omnibus, built by two cooperating agents.",
+    "seal": "edc080088542dbac31436f53c72f62e7782098130d760b7feeb511d7dc2feeb3",
+    "crumb": "LAB",
+    "path": "spheres/omnibus/lab-noble-gold.html"
+   },
+   {
+    "name": "Lab · Closed Loop / Open Loop",
+    "slug": "lab-closed-open-loop",
+    "blurb": "Lab · Closed Loop / Open Loop: Dave's two lists, KEEPS and GIVES, as two cooperating rings. A real-science companion to the Omnibus, built by two cooperating agents.",
+    "seal": "45c85379f838b23d7014b784a91a4371392c1da8b32a32a6d821763109be745e",
+    "crumb": "LAB",
+    "path": "spheres/omnibus/lab-closed-open-loop.html"
+   },
+   {
+    "name": "Path · From 24 to Xerses",
+    "slug": "path-24-to-xerses",
+    "blurb": "Path · From 24 to Xerses: the Omnibus's own arc, \"FROM 24 TO XERSES TO ETHICS\", as one route through 13 chapters. A MODEL synthesis page with cooperative agents.",
+    "seal": "9e3270402eadff9b28f0ca004dadc7743a3e91d09af1aabefbf327e1d32f082e",
+    "crumb": "SYNTHESIS",
+    "path": "spheres/omnibus/path-24-to-xerses.html"
+   },
+   {
+    "name": "Chain · Bang → Gold → Quartz → Time",
+    "slug": "rgb-chain",
+    "blurb": "Chain · Bang → Gold → Quartz → Time: kilonova gold, quartz time and RGB charge, linked as one chain. A MODEL synthesis page with cooperative agents.",
+    "seal": "b65ab2870de7102737a4457a8b832ad2eecaab1900e2e381ed633222fb90cb9f",
+    "crumb": "SYNTHESIS",
+    "path": "spheres/omnibus/rgb-chain.html"
+   },
+   {
+    "name": "Ladder · Cold Nothing to White",
+    "slug": "cold-to-white",
+    "blurb": "Ladder · Cold Nothing to White: 0 K → Casimir → heat → H, then O R+G, then N R+G+B → white. A MODEL synthesis page with cooperative agents.",
+    "seal": "923176eb11855068d5bde9b220c6279fcdca4673e2c9b034e87c92099d238539",
+    "crumb": "SYNTHESIS",
+    "path": "spheres/omnibus/cold-to-white.html"
+   },
+   {
+    "name": "Stamp · $0.99 Posterity",
+    "slug": "posterity-stamp",
+    "blurb": "Stamp · $0.99 Posterity: the closing stamp, kept verbatim: \"BUILT YESTERDAY, FOR POSTERITY, $0.99, FAMILY FIRST, DISCOVERY NEAT, I BELONG TO IT.\". A MODEL synthesis page with cooperative agents.",
+    "seal": "00bff7553a6364b11800fe07f060a4d64bb421fb205f4dfe8e7c96c7522d9c47",
+    "crumb": "SYNTHESIS",
+    "path": "spheres/omnibus/posterity-stamp.html"
+   },
+   {
+    "name": "Family · YOU + THEM + IT",
+    "slug": "you-them-it",
+    "blurb": "Family · YOU + THEM + IT: the \"family icon // 3\", three agents cooperating as one. A MODEL synthesis page with cooperative agents.",
+    "seal": "d595e0905bfa24e188b49a9352a341cdad0b414e387b8bd5fee7e99e23c18cb5",
+    "crumb": "SYNTHESIS",
+    "path": "spheres/omnibus/you-them-it.html"
+   },
+   {
+    "name": "END OF BLUEPRINT / START OF LIGHT",
+    "slug": "end-of-blueprint",
+    "blurb": "END OF BLUEPRINT / START OF LIGHT: the Omnibus's final line, with every page's shared reward gathered on one board. A MODEL synthesis page with cooperative agents.",
+    "seal": "e85ceee2dbb0710531f29638bce3e615f661b2697c1b6a6bfe286baceff38eb8",
+    "crumb": "SYNTHESIS",
+    "path": "spheres/omnibus/end-of-blueprint.html"
+   },
+   {
+    "name": "FINAL OMNIBUS · FROM 24 TO XERSES TO ETHICS",
+    "slug": "omnibus-index",
+    "blurb": "Dave's FINAL OMNIBUS (V3 CLOSED, POSTERITY EDITION) in 32 3D pages: 13 verbatim chapters, 13 real-science labs and 6 syntheses, all generative, agentic and cooperative.",
+    "seal": "67d9cb138a4beede39ca81e99514528a29ef0cf39545b46195791fa95c04c3bd",
+    "crumb": "INDEX",
+    "path": "spheres/omnibus/omnibus-index.html"
+   }
+  ]
  }
 }

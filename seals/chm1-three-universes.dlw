@@ -1,0 +1,1 @@
+{"slug": "chm1-three-universes", "seal": "36a55bd1bf3e980246930f23db8625dab5bd97a598acd0a86c807e22c14427f5", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

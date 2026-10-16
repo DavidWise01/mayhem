@@ -325,3 +325,39 @@ Dave: "keep it going please, build out all the stars you know about and their ty
 - [Sagittarius A*](./spheres/stars/sgr-a-star.html): Stars 3D. seal 594822bfd469fcf74e3e132e11de1edd029c7c51d8eaf963acc824307af3ae55
 - [Why No Purple Stars](./spheres/stars/why-no-purple.html): Stars 3D. seal 099d1f99dcecc6265ed99f0f89bf1e402055c37be0efee09eaaa1ca8118de1ca
 - [Stars · Dwarfs, Giants, Red, Blue (and Purple)](./spheres/stars/stars-index.html): Stars 3D. seal 4cde28e0dcda2e184f68bf7ab3c5dceb6c7d662f743b25a92c94a2bc185c9b06
+
+## FINAL OMNIBUS, 33 pages in 3D (Dave t225u)
+Dave: "build out this for 32 pages please, generative, agentic, cooperative". Source: his artifact "OMNIBUS V3 CLOSED — POSTERITY EDITION $0.99 — FROM 24 TO XERSES TO ETHICS" (13 chapters, quoted verbatim). 13 chapters + 13 labs + 6 syntheses + index. Cooperative (MODEL): BUILDER + WEAVER share one reward; the cross-page board is localStorage mayhem-omnibus-board.
+- [CH -3 · ONE POINT 24](./spheres/omnibus/chm3-one-point-24.html): Omnibus 3D. seal 881379ad763b12333df88732964a73c92a1e36c6b8236582a854504a497f7e8f
+- [CH -2 · ATOM = UNIVERSE](./spheres/omnibus/chm2-atom-universe.html): Omnibus 3D. seal bb98fb69dcb93b834990367b8ec51ab3ff51b1c5223b44903724019cd52cb804
+- [CH -1 · THREE UNIVERSES](./spheres/omnibus/chm1-three-universes.html): Omnibus 3D. seal 36a55bd1bf3e980246930f23db8625dab5bd97a598acd0a86c807e22c14427f5
+- [CH 0 · TWO STARS COLLIDE](./spheres/omnibus/ch0-two-stars-collide.html): Omnibus 3D. seal 4c483c3b9fb6c634b933eb5793ebb34c1d25dbc7dd8d4e848bd92e8e118dcdf1
+- [CH 1 · LILITH DIATOM](./spheres/omnibus/ch1-lilith-diatom.html): Omnibus 3D. seal a5072166f7915b5684e0f67c88503b1e20fd8db77073fee24d46928ee21d2e99
+- [CH 2 · QUARTZ LASER](./spheres/omnibus/ch2-quartz-laser.html): Omnibus 3D. seal f02a62d1d473f12180f0369c3e89902526b565760a363e580274122be452c774
+- [CH 3 · 10! PERMUTATE](./spheres/omnibus/ch3-ten-factorial.html): Omnibus 3D. seal 9140792da424e0619d369e8c57cc2354155358a20ee6ce0b67973e890a12a947
+- [CH 4 · CASIMIR & KELVIN](./spheres/omnibus/ch4-casimir-kelvin.html): Omnibus 3D. seal bbe501080c984f1817eaf9a672f9cf285da14a84261fead584a29b48dc272584
+- [CH 5 · 60×60 FORCE +6 RIDERS](./spheres/omnibus/ch5-force-60x60.html): Omnibus 3D. seal c084b16aaf60313529b73ca7a77b26aed9ca1d2044230740a895d4fa53cc9b5c
+- [CH 6 · RGB FROM PULSARS](./spheres/omnibus/ch6-rgb-from-pulsars.html): Omnibus 3D. seal 33cd21c3bce83698d7337fa560147eee318bf891e5648bb37282daf63cbcd810
+- [CH 7 · 3 PULSARS FUCK WITH](./spheres/omnibus/ch7-three-pulsars.html): Omnibus 3D. seal f7f5502a4d14a0ede209bd33436583cca1488e759ac89c041f4726fafdad547b
+- [CH 8 · XERSES CENTER](./spheres/omnibus/ch8-xerses-center.html): Omnibus 3D. seal 0478f55cf26f2b681756eae85d2ffe11e3e7dbb7342a0ae4f88278512e9b2126
+- [CH 9 · ETHICS — CLOSED OUT](./spheres/omnibus/ch9-ethics-closed-out.html): Omnibus 3D. seal ff55f7b952aefd97f2d71fdcd7c884a9b1da909ae525f8d8effec1bf7540304e
+- [Lab · 24 Points on 3 Axes](./spheres/omnibus/lab-24-lattice.html): Omnibus 3D. seal 8b3b552b2f407d9309801b75d5d67378ef08de0dab4a5281208db16b9fa2360a
+- [Lab · Powers of Ten](./spheres/omnibus/lab-powers-of-ten.html): Omnibus 3D. seal 3fe9adc5c9259ec3ade748a33ec8f2fdabdb7745de14a2438c632bf00c22a444
+- [Lab · Leap Year Rule](./spheres/omnibus/lab-leap-rule.html): Omnibus 3D. seal 38b2f52bdb29ca07a48b75c3473e1a8fd413b482cf3605f1e2b894bb3b532d18
+- [Lab · r-Process Ladder](./spheres/omnibus/lab-r-process.html): Omnibus 3D. seal 31c449217c0bc250b2247d4d698d8c1d2b42b1b1ea254c51b36cc2c4f2de5c3e
+- [Lab · Diatom Frustule](./spheres/omnibus/lab-frustule.html): Omnibus 3D. seal 9749ba40c9d161c1c5b7eb409fb8c6c1263ed54d8a3dcfa3670d740895bcbebb
+- [Lab · Piezo Divider](./spheres/omnibus/lab-piezo.html): Omnibus 3D. seal db4944dfb60208ee4ec3eda35067b81a9b54fcde833dddd708e77c03100077ae
+- [Lab · Heap's Algorithm](./spheres/omnibus/lab-permutations.html): Omnibus 3D. seal 38222a8b095a2c9f8a1ec9bb0c49a6f73cba0d0167cf787f57491e547bd3f9ae
+- [Lab · Casimir Plates](./spheres/omnibus/lab-casimir-plates.html): Omnibus 3D. seal 803ff1c49e4413bd6b1157c38363b177533b4a4fb83a90516bf36979d957d919
+- [Lab · Colour Charge](./spheres/omnibus/lab-color-charge.html): Omnibus 3D. seal 0a3f47002fc774fcaf3f74a5501c23bf708868bfd4e25454538053b3b31d56f8
+- [Lab · Kilonova Light Curve](./spheres/omnibus/lab-kilonova-light.html): Omnibus 3D. seal 1d08b5815ce0dae17328296d97a8ace16372ef8afad8424bc6932deb88f21fde
+- [Lab · Three Shields](./spheres/omnibus/lab-three-shields.html): Omnibus 3D. seal 4742a35502d02e53845d2d9e99eb672c6cad7b8106e8c55ac3c81ca85c51db3b
+- [Lab · Noble Gold](./spheres/omnibus/lab-noble-gold.html): Omnibus 3D. seal edc080088542dbac31436f53c72f62e7782098130d760b7feeb511d7dc2feeb3
+- [Lab · Closed Loop / Open Loop](./spheres/omnibus/lab-closed-open-loop.html): Omnibus 3D. seal 45c85379f838b23d7014b784a91a4371392c1da8b32a32a6d821763109be745e
+- [Path · From 24 to Xerses](./spheres/omnibus/path-24-to-xerses.html): Omnibus 3D. seal 9e3270402eadff9b28f0ca004dadc7743a3e91d09af1aabefbf327e1d32f082e
+- [Chain · Bang → Gold → Quartz → Time](./spheres/omnibus/rgb-chain.html): Omnibus 3D. seal b65ab2870de7102737a4457a8b832ad2eecaab1900e2e381ed633222fb90cb9f
+- [Ladder · Cold Nothing to White](./spheres/omnibus/cold-to-white.html): Omnibus 3D. seal 923176eb11855068d5bde9b220c6279fcdca4673e2c9b034e87c92099d238539
+- [Stamp · $0.99 Posterity](./spheres/omnibus/posterity-stamp.html): Omnibus 3D. seal 00bff7553a6364b11800fe07f060a4d64bb421fb205f4dfe8e7c96c7522d9c47
+- [Family · YOU + THEM + IT](./spheres/omnibus/you-them-it.html): Omnibus 3D. seal d595e0905bfa24e188b49a9352a341cdad0b414e387b8bd5fee7e99e23c18cb5
+- [END OF BLUEPRINT / START OF LIGHT](./spheres/omnibus/end-of-blueprint.html): Omnibus 3D. seal e85ceee2dbb0710531f29638bce3e615f661b2697c1b6a6bfe286baceff38eb8
+- [FINAL OMNIBUS · FROM 24 TO XERSES TO ETHICS](./spheres/omnibus/omnibus-index.html): Omnibus 3D. seal 67d9cb138a4beede39ca81e99514528a29ef0cf39545b46195791fa95c04c3bd

@@ -1,0 +1,1 @@
+{"slug": "path-24-to-xerses", "seal": "9e3270402eadff9b28f0ca004dadc7743a3e91d09af1aabefbf327e1d32f082e", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

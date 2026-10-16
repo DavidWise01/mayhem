@@ -1,0 +1,1 @@
+{"slug": "omnibus-index", "seal": "67d9cb138a4beede39ca81e99514528a29ef0cf39545b46195791fa95c04c3bd", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

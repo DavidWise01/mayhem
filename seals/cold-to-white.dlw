@@ -1,0 +1,1 @@
+{"slug": "cold-to-white", "seal": "923176eb11855068d5bde9b220c6279fcdca4673e2c9b034e87c92099d238539", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

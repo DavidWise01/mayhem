@@ -1,0 +1,1 @@
+{"slug": "chm3-one-point-24", "seal": "881379ad763b12333df88732964a73c92a1e36c6b8236582a854504a497f7e8f", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

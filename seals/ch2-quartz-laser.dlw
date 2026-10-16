@@ -1,0 +1,1 @@
+{"slug": "ch2-quartz-laser", "seal": "f02a62d1d473f12180f0369c3e89902526b565760a363e580274122be452c774", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

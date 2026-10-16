@@ -1,0 +1,1 @@
+{"slug": "lab-three-shields", "seal": "4742a35502d02e53845d2d9e99eb672c6cad7b8106e8c55ac3c81ca85c51db3b", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

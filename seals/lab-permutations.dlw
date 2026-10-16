@@ -1,0 +1,1 @@
+{"slug": "lab-permutations", "seal": "38222a8b095a2c9f8a1ec9bb0c49a6f73cba0d0167cf787f57491e547bd3f9ae", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

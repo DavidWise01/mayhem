@@ -1,0 +1,1 @@
+{"slug": "lab-casimir-plates", "seal": "803ff1c49e4413bd6b1157c38363b177533b4a4fb83a90516bf36979d957d919", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
