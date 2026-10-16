@@ -1,0 +1,1 @@
+{"slug": "fire-queen-sprite", "seal": "2eec2eb7f600c92f0c3f0da1271a06bfb2cc429f967498bcecc8a7bd0eaae93c", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

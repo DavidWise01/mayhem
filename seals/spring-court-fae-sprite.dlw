@@ -1,0 +1,1 @@
+{"slug": "spring-court-fae-sprite", "seal": "9b768533244edbc110d0dc8f8beb30bcae7fee9c419b36685e7017d287b76554", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

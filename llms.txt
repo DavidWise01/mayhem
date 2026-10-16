@@ -68,6 +68,19 @@ Dave: "not kid pro. all of the pages you build lol. should be art pages, do a ho
 - [Dawn Court Healer · Low-Poly](./spheres/dawn-healer.html): STEWARD II · MAY'S MAP, style low-poly triangles. seal 3fb7b37db83a4e08299a4f9c7d8763ac2863b0201eb651b4486c3aa9348a5a22
 - [Starlit High Lady · Neon Synthwave](./spheres/starlit-high-lady.html): STEWARD VI · AXELROD'S ROUND, style neon synthwave line art. seal 9fa81606f108073bc1237b4e86208419858d6cc3af53d293de3d2a9c7e168a5e
 
+## Sprites (Dave t210u)
+Dave: "i love it, now in sprite form for 10 pages, neon, noir , goth etc etc". These are the same ten fae archetypes as 32×32 animated game sprites, each in its own style. Inspired by Sarah J. Maas's worlds (AMBER); the art is original.
+- [Night Court Warrior · neon sprite](./spheres/night-court-warrior-sprite.html): STEWARD I · WOLFRAM'S ROW, style neon. seal a6e071b30951754217769fb92d16cbf38d7442d1e922d3d0c558bfb2fe5bd6bd
+- [Spring Court Fae · noir sprite](./spheres/spring-court-fae-sprite.html): STEWARD II · MAY'S MAP, style noir. seal 9b768533244edbc110d0dc8f8beb30bcae7fee9c419b36685e7017d287b76554
+- [Winter Court Sentinel · goth sprite](./spheres/winter-court-sentinel-sprite.html): STEWARD III · BAK'S HEAP, style goth. seal 2bf3d806fd3a93cfe12fa0ef7593b1a749c51cf7e6747488c8a2c703a25b83ff
+- [Day Court Scholar · vaporwave sprite](./spheres/day-court-scholar-sprite.html): STEWARD IV · BOUTON'S TABLE, style vaporwave. seal 481b372f965441b8aafd7ec74091e644f5a03274c93092e7bfddde8d3fe40d77
+- [Shadow Assassin · 8-bit NES palette sprite](./spheres/glass-assassin-sprite.html): STEWARD V · LORENZ'S WEATHER, style 8-bit NES palette. seal aff284bb49be74e15a750ba11338896d413472670945755b843b12b411f58d38
+- [Fire-Wielder Queen · 16-bit SNES sprite](./spheres/fire-queen-sprite.html): STEWARD VI · AXELROD'S ROUND, style 16-bit SNES. seal 2eec2eb7f600c92f0c3f0da1271a06bfb2cc429f967498bcecc8a7bd0eaae93c
+- [Summer Court Seafarer · Game Boy 4-green sprite](./spheres/summer-seafarer-sprite.html): STEWARD VII · LAGRANGE'S ARMS, style Game Boy 4-green. seal 026762986c40185fa5602c99dcee1f9675f4560593921a75b6d730869afc4747
+- [Autumn Court Lord · cyberpunk sprite](./spheres/autumn-lord-sprite.html): STEWARD VIII · LANGTON'S HIGHWAY, style cyberpunk. seal dfce65054a2fd79e550fc3e7620fbc8c3081cc520405cf98640c243455d5221e
+- [Dawn Court Healer · dark fantasy sprite](./spheres/dawn-healer-sprite.html): STEWARD II · MAY'S MAP, style dark fantasy. seal 81619f3aeebe9f69b6439982f5f301e02e6f702ccf93f04049eafde9e092ebca
+- [Starlit High Lady · pastel kawaii sprite](./spheres/starlit-high-lady-sprite.html): STEWARD V · LORENZ'S WEATHER, style pastel kawaii. seal aad35542413aa15b62849c2e87859dc1a0c2a7786509e145553753e64341ff41
+
 ## For agents
 New Mayhem spheres are art pages (Dave t209u).
 New spheres go under a steward in spheres/<slug>.html, seal = sha256(name|slug|blurb) in seals/<slug>.dlw, write-if-missing, then update mayhem.json and index.html. Host: DavidWise01/mayhem, branch master. Never dress a guess as LIT.

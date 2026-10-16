@@ -1,0 +1,1 @@
+{"slug": "glass-assassin-sprite", "seal": "aff284bb49be74e15a750ba11338896d413472670945755b843b12b411f58d38", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

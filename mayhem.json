@@ -61,6 +61,15 @@
      "seal": "2ca4d9d14c81f67029ae4a4cde028d8b74ca762685ca1c9919c92c84657d1da8",
      "claim": "LIT checks · AMBER inspiration · MODEL art",
      "style": "art nouveau"
+    },
+    {
+     "name": "Night Court Warrior · neon sprite",
+     "slug": "night-court-warrior-sprite",
+     "path": "spheres/night-court-warrior-sprite.html",
+     "blurb": "An agent pixel artist builds a 32×32 Night Court Warrior game sprite in neon style, then animates idle, walk, attack and wings/cast cycles from its sheet.",
+     "seal": "a6e071b30951754217769fb92d16cbf38d7442d1e922d3d0c558bfb2fe5bd6bd",
+     "claim": "LIT checks · AMBER inspiration · MODEL art",
+     "style": "neon"
     }
    ]
   },
@@ -124,6 +133,24 @@
      "seal": "3fb7b37db83a4e08299a4f9c7d8763ac2863b0201eb651b4486c3aa9348a5a22",
      "claim": "LIT checks · AMBER inspiration · MODEL art",
      "style": "low-poly triangles"
+    },
+    {
+     "name": "Spring Court Fae · noir sprite",
+     "slug": "spring-court-fae-sprite",
+     "path": "spheres/spring-court-fae-sprite.html",
+     "blurb": "An agent pixel artist builds a 32×32 Spring Court Fae game sprite in noir style, then animates idle, walk, attack and wings/cast cycles from its sheet.",
+     "seal": "9b768533244edbc110d0dc8f8beb30bcae7fee9c419b36685e7017d287b76554",
+     "claim": "LIT checks · AMBER inspiration · MODEL art",
+     "style": "noir"
+    },
+    {
+     "name": "Dawn Court Healer · dark fantasy sprite",
+     "slug": "dawn-healer-sprite",
+     "path": "spheres/dawn-healer-sprite.html",
+     "blurb": "An agent pixel artist builds a 32×32 Dawn Court Healer game sprite in dark fantasy style, then animates idle, walk, attack and wings/cast cycles from its sheet.",
+     "seal": "81619f3aeebe9f69b6439982f5f301e02e6f702ccf93f04049eafde9e092ebca",
+     "claim": "LIT checks · AMBER inspiration · MODEL art",
+     "style": "dark fantasy"
     }
    ]
   },
@@ -170,6 +197,15 @@
      "seal": "1aae2af4893f098bdcbeeda4b5d4e4a2228ae2b73e8e9d4516c90ec3591bc28e",
      "claim": "LIT checks · AMBER inspiration · MODEL art",
      "style": "stained glass"
+    },
+    {
+     "name": "Winter Court Sentinel · goth sprite",
+     "slug": "winter-court-sentinel-sprite",
+     "path": "spheres/winter-court-sentinel-sprite.html",
+     "blurb": "An agent pixel artist builds a 32×32 Winter Court Sentinel game sprite in goth style, then animates idle, walk, attack and wings/cast cycles from its sheet.",
+     "seal": "2bf3d806fd3a93cfe12fa0ef7593b1a749c51cf7e6747488c8a2c703a25b83ff",
+     "claim": "LIT checks · AMBER inspiration · MODEL art",
+     "style": "goth"
     }
    ]
   },
@@ -216,6 +252,15 @@
      "seal": "5cdfc429169b38668634a5f8c337187c4a0e21eddd58adddf077cc77c96aae48",
      "claim": "LIT checks · AMBER inspiration · MODEL art",
      "style": "ukiyo-e woodblock"
+    },
+    {
+     "name": "Day Court Scholar · vaporwave sprite",
+     "slug": "day-court-scholar-sprite",
+     "path": "spheres/day-court-scholar-sprite.html",
+     "blurb": "An agent pixel artist builds a 32×32 Day Court Scholar game sprite in vaporwave style, then animates idle, walk, attack and wings/cast cycles from its sheet.",
+     "seal": "481b372f965441b8aafd7ec74091e644f5a03274c93092e7bfddde8d3fe40d77",
+     "claim": "LIT checks · AMBER inspiration · MODEL art",
+     "style": "vaporwave"
     }
    ]
   },
@@ -271,6 +316,24 @@
      "seal": "24504d090799be2ff9bbee33f5f519588e5d4aabb4fec5e73b5fe53dff68b919",
      "claim": "LIT checks · AMBER inspiration · MODEL art",
      "style": "ink sumi-e"
+    },
+    {
+     "name": "Shadow Assassin · 8-bit NES palette sprite",
+     "slug": "glass-assassin-sprite",
+     "path": "spheres/glass-assassin-sprite.html",
+     "blurb": "An agent pixel artist builds a 32×32 Shadow Assassin game sprite in 8-bit NES palette style, then animates idle, walk, attack and wings/cast cycles from its sheet.",
+     "seal": "aff284bb49be74e15a750ba11338896d413472670945755b843b12b411f58d38",
+     "claim": "LIT checks · AMBER inspiration · MODEL art",
+     "style": "8-bit NES palette"
+    },
+    {
+     "name": "Starlit High Lady · pastel kawaii sprite",
+     "slug": "starlit-high-lady-sprite",
+     "path": "spheres/starlit-high-lady-sprite.html",
+     "blurb": "An agent pixel artist builds a 32×32 Starlit High Lady game sprite in pastel kawaii style, then animates idle, walk, attack and wings/cast cycles from its sheet.",
+     "seal": "aad35542413aa15b62849c2e87859dc1a0c2a7786509e145553753e64341ff41",
+     "claim": "LIT checks · AMBER inspiration · MODEL art",
+     "style": "pastel kawaii"
     }
    ]
   },
@@ -326,6 +389,15 @@
      "seal": "9fa81606f108073bc1237b4e86208419858d6cc3af53d293de3d2a9c7e168a5e",
      "claim": "LIT checks · AMBER inspiration · MODEL art",
      "style": "neon synthwave line art"
+    },
+    {
+     "name": "Fire-Wielder Queen · 16-bit SNES sprite",
+     "slug": "fire-queen-sprite",
+     "path": "spheres/fire-queen-sprite.html",
+     "blurb": "An agent pixel artist builds a 32×32 Fire-Wielder Queen game sprite in 16-bit SNES style, then animates idle, walk, attack and wings/cast cycles from its sheet.",
+     "seal": "2eec2eb7f600c92f0c3f0da1271a06bfb2cc429f967498bcecc8a7bd0eaae93c",
+     "claim": "LIT checks · AMBER inspiration · MODEL art",
+     "style": "16-bit SNES"
     }
    ]
   },
@@ -372,6 +444,15 @@
      "seal": "6beaa5a545c9c0087b812b672d759d41d734e5915e2f15d705318a7392921712",
      "claim": "LIT checks · AMBER inspiration · MODEL art",
      "style": "pixel art"
+    },
+    {
+     "name": "Summer Court Seafarer · Game Boy 4-green sprite",
+     "slug": "summer-seafarer-sprite",
+     "path": "spheres/summer-seafarer-sprite.html",
+     "blurb": "An agent pixel artist builds a 32×32 Summer Court Seafarer game sprite in Game Boy 4-green style, then animates idle, walk, attack and wings/cast cycles from its sheet.",
+     "seal": "026762986c40185fa5602c99dcee1f9675f4560593921a75b6d730869afc4747",
+     "claim": "LIT checks · AMBER inspiration · MODEL art",
+     "style": "Game Boy 4-green"
     }
    ]
   },
@@ -418,6 +499,15 @@
      "seal": "c79743a2456637678673af1c51e5c614d58ca2fe14018a9095331a02f091d510",
      "claim": "LIT checks · AMBER inspiration · MODEL art",
      "style": "pointillism"
+    },
+    {
+     "name": "Autumn Court Lord · cyberpunk sprite",
+     "slug": "autumn-lord-sprite",
+     "path": "spheres/autumn-lord-sprite.html",
+     "blurb": "An agent pixel artist builds a 32×32 Autumn Court Lord game sprite in cyberpunk style, then animates idle, walk, attack and wings/cast cycles from its sheet.",
+     "seal": "dfce65054a2fd79e550fc3e7620fbc8c3081cc520405cf98640c243455d5221e",
+     "claim": "LIT checks · AMBER inspiration · MODEL art",
+     "style": "cyberpunk"
     }
    ]
   }
@@ -428,5 +518,6 @@
  "batch_4": "Dave t198u: \"keep going please, retry zelda mega man\"",
  "batch_5": "Dave t199u: \"i love it keep going, put some black/wht/gray screens playing some snippests\"",
  "batch_6": "Dave t207u: \"nice can you continue buildiing shpheres for mayhem please. agentic\"",
- "art_pages": "Dave t209u: \"not kid pro. all of the pages you build lol. should be art pages, do a how you draw fantasy characters, referant sarah j maas please, do up 10 of them please real quick. thank you. make them dif art sytles\". Going forward every Mayhem sphere is an art page."
+ "art_pages": "Dave t209u: \"not kid pro. all of the pages you build lol. should be art pages, do a how you draw fantasy characters, referant sarah j maas please, do up 10 of them please real quick. thank you. make them dif art sytles\". Going forward every Mayhem sphere is an art page.",
+ "sprites": "Dave t210u: \"i love it, now in sprite form for 10 pages, neon, noir , goth etc etc\""
 }

@@ -1,0 +1,1 @@
+{"slug": "night-court-warrior-sprite", "seal": "a6e071b30951754217769fb92d16cbf38d7442d1e922d3d0c558bfb2fe5bd6bd", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

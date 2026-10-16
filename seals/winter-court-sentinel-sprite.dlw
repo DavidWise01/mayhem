@@ -1,0 +1,1 @@
+{"slug": "winter-court-sentinel-sprite", "seal": "2bf3d806fd3a93cfe12fa0ef7593b1a749c51cf7e6747488c8a2c703a25b83ff", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "dawn-healer-sprite", "seal": "81619f3aeebe9f69b6439982f5f301e02e6f702ccf93f04049eafde9e092ebca", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
