@@ -79,6 +79,15 @@
      "seal": "e9eb6a5d5ab50c258887ba542757de80e8a62282010ffa31c3aea8caf24d46b7",
      "claim": "LIT checks · MODEL art · Dave's Node 184 constants verbatim",
      "style": "Byzantine tesserae mosaic"
+    },
+    {
+     "name": "Metroid · Best-Combo Blueprint Doodle",
+     "slug": "metroid-best-combo-blueprint",
+     "path": "spheres/metroid-best-combo-blueprint.html",
+     "blurb": "A radial blueprint doodle of which button combo the Metroid agents named 'best combo for situation …' most often; the ARTIST drafts the spokes and the CRITIC measures them.",
+     "seal": "c3ebb753e86b6cf45f0d30c585f9bf00cbb4bebe121ed0b6c79d9bc3e58ecc11",
+     "claim": "LIT data from Dave's NES-agent logs · MODEL hand-drawn art",
+     "style": "blueprint doodle"
     }
    ]
   },
@@ -178,6 +187,15 @@
      "seal": "acf8d90ecb0a1d505aa3cfab2b8e5079ec23b29498f88e69e4861f5b3ccc23c0",
      "claim": "LIT checks · MODEL art · Dave's Node 184 constants verbatim",
      "style": "Bauhaus composition"
+    },
+    {
+     "name": "Metroid · Field Journal of New Areas",
+     "slug": "metroid-field-journal",
+     "path": "spheres/metroid-field-journal.html",
+     "blurb": "An ARTIST agent sketches the route Gravity actually logged through Metroid's new screen areas, and a CRITIC checks every waypoint against the log.",
+     "seal": "af87977e35d76c62c5ea01ffc2e8d2a58a2fb9b3613aac490e0c8d147351f19b",
+     "claim": "LIT data from Dave's NES-agent logs · MODEL hand-drawn art",
+     "style": "field-journal pencil sketch"
     }
    ]
   },
@@ -242,6 +260,24 @@
      "seal": "24993011aeed19256a1e45b4dceef87d12ad3342181ee810cdbd4f6ac7c2aa09",
      "claim": "LIT checks · MODEL art · Dave's Node 184 constants verbatim",
      "style": "woven textile"
+    },
+    {
+     "name": "Nicki Goes Pro · Comic Panels",
+     "slug": "nicki-level-comic",
+     "path": "spheres/nicki-level-comic.html",
+     "blurb": "Four comic panels: an ARTIST agent inks Nicki's real Punch-Out!! level-ups, and a CRITIC checks each panel's height against the logged xp.",
+     "seal": "87a687452c6120648dd7931136266c76046854e49e09c79d6e80a02372d7a683",
+     "claim": "LIT data from Dave's NES-agent logs · MODEL hand-drawn art",
+     "style": "comic panel ink + halftone"
+    },
+    {
+     "name": "Metroid Corpus · Linocut",
+     "slug": "metroid-corpus-linocut",
+     "path": "spheres/metroid-corpus-linocut.html",
+     "blurb": "A linocut of which Metroid button combos worked, from the shared corpus; the ARTIST carves the blocks and the CRITIC checks each worked rate. The page also lists what the logs never recorded.",
+     "seal": "dc815e06b340160f4ad6fe4243ed573037bc5d6725451c7f4fe068359a5e379f",
+     "claim": "LIT data from Dave's NES-agent logs · MODEL hand-drawn art",
+     "style": "linocut print"
     }
    ]
   },
@@ -306,6 +342,15 @@
      "seal": "437b714fb9561d815e92081901d5c7aa2c7b511aabf9ab204cd7ef90f8bd6d5a",
      "claim": "LIT checks · MODEL art · Dave's Node 184 constants verbatim",
      "style": "two-colour risograph"
+    },
+    {
+     "name": "Turn Rewards · Crayon",
+     "slug": "turn-rewards-crayon",
+     "path": "spheres/turn-rewards-crayon.html",
+     "blurb": "A crayon drawing of how much reward each agent earned per logged turn, Metroid against Punch-Out!!; the ARTIST colours the bars and the CRITIC checks each mean.",
+     "seal": "e1639072d66132768871f1a85e2ac131f8d50e1e98ea5372d216b57cc8686c9c",
+     "claim": "LIT data from Dave's NES-agent logs · MODEL hand-drawn art",
+     "style": "wax crayon"
     }
    ]
   },
@@ -388,6 +433,15 @@
      "seal": "2c3a4ce5cfc650634c3874699910416a2de3033c82db495f74d7ebee2f9fcd9b",
      "claim": "LIT checks · MODEL art · Dave's Node 184 constants verbatim",
      "style": "architectural blueprint"
+    },
+    {
+     "name": "L/R Balance · Charcoal Scales",
+     "slug": "left-right-charcoal",
+     "path": "spheres/left-right-charcoal.html",
+     "blurb": "A charcoal pair of scales weighing the agents' LEFT against RIGHT presses; the ARTIST draws the pans and the CRITIC weighs them against the logged L/R balance.",
+     "seal": "fdad804f5770bc717b173726f08bb9ae0cfafb4892d7f18bbccc0666399c2f94",
+     "claim": "LIT data from Dave's NES-agent logs · MODEL hand-drawn art",
+     "style": "charcoal smudge"
     }
    ]
   },
@@ -470,6 +524,24 @@
      "seal": "4febf9232f21d1b9a5a8b7873fb5c094bf440c66313f285d7c684ec1c1e003de",
      "claim": "LIT checks · MODEL art · Dave's Node 184 constants verbatim",
      "style": "stained kaleidoscope"
+    },
+    {
+     "name": "Punch-Out!! · Chalkboard of What Landed",
+     "slug": "punchout-chalkboard",
+     "path": "spheres/punchout-chalkboard.html",
+     "blurb": "An ARTIST agent chalks a bar for each Punch-Out!! button combo and a CRITIC measures it against what Nicki's corpus says actually worked.",
+     "seal": "c079c1614494f57cc2150658d09793575227102e354570437d92ca8fda4af26a",
+     "claim": "LIT data from Dave's NES-agent logs · MODEL hand-drawn art",
+     "style": "chalkboard"
+    },
+    {
+     "name": "Who Took Whose Advice · Riso Zine",
+     "slug": "helpers-riso-zine",
+     "path": "spheres/helpers-riso-zine.html",
+     "blurb": "A riso zine page of how often each helper agent's advice was adopted in Punch-Out!!; the ARTIST prints the overlapping blobs and the CRITIC checks each adoption rate.",
+     "seal": "d4431541577a2d8a7b5173d0cd73e9572a60d10db650c526d780f6ba6d5a3a48",
+     "claim": "LIT data from Dave's NES-agent logs · MODEL hand-drawn art",
+     "style": "risograph zine"
     }
    ]
   },
@@ -534,6 +606,15 @@
      "seal": "1a0a06bc18890dd9122ee37a019503c05e9ae8aa05ec29967e7474784f79508f",
      "claim": "LIT checks · MODEL art · Dave's Node 184 constants verbatim",
      "style": "ink brush calligraphy"
+    },
+    {
+     "name": "Memory Turns · Notebook Margin",
+     "slug": "memory-notebook-margin",
+     "path": "spheres/memory-notebook-margin.html",
+     "blurb": "Ballpoint doodles in a notebook margin compare how much memory the agents used per turn in Metroid against Punch-Out!!; the ARTIST doodles the stacks and the CRITIC counts them.",
+     "seal": "78c2c93bd489a6c079886cfdc3c221152bf9faeecdf7708e2e602a381923792c",
+     "claim": "LIT data from Dave's NES-agent logs · MODEL hand-drawn art",
+     "style": "notebook-margin ballpoint doodle"
     }
    ]
   },
@@ -598,6 +679,15 @@
      "seal": "3607ed1c9fea8f8c85c4ca7b00c70f06eefae132f1928ecc2d8164bc5076cd1a",
      "claim": "LIT checks · MODEL art · Dave's Node 184 constants verbatim",
      "style": "star-chart constellation"
+    },
+    {
+     "name": "The Vetoes Soften · Watercolour Journal",
+     "slug": "sid-veto-watercolour",
+     "path": "spheres/sid-veto-watercolour.html",
+     "blurb": "Watercolour washes trace how often the SID-1 veto fired on each Punch-Out!! turn, falling across the run; the ARTIST lays the washes and the CRITIC checks each level.",
+     "seal": "96472074cf979ed95d5b67020ba5d81222b05411350e776893a02f2f20e6da07",
+     "claim": "LIT data from Dave's NES-agent logs · MODEL hand-drawn art",
+     "style": "watercolour journal"
     }
    ]
   }
@@ -612,5 +702,6 @@
  "sprites": "Dave t210u: \"i love it, now in sprite form for 10 pages, neon, noir , goth etc etc\"",
  "fae_v2": "Dave t211u: \"make these more involved, 2 agents per sphere agentic and generative please, think canvas svg training\". All 20 fae spheres upgraded in place (ARTIST + CRITIC/TEACHER, seal-derived target, hill-climb training, live SVG + JSON export). Seals unchanged.",
  "fae_v3": "Dave t212u (yes): restore lost content alongside training. Drawing pages: style pass on trained best + narrated 8-step tutorial. Sprite pages: 4×4 sheet + idle/walk/attack/cast built from the trained figure. Seals unchanged.",
- "batch_node184": "Dave t213u: \"now make 10 around these please\". Built around his NULLRIDER · Node 184 Inference Observatory files (app.js, build .py, built HTML)."
+ "batch_node184": "Dave t213u: \"now make 10 around these please\". Built around his NULLRIDER · Node 184 Inference Observatory files (app.js, build .py, built HTML).",
+ "batch_learned": "Dave t215u: 10 hand-drawn spheres on what the agents learned playing Metroid and Punch-Out!!, built from A:\\mayhem.txt and the nes-agents-app corpora. Each carries a workspace improvement loop."
 }

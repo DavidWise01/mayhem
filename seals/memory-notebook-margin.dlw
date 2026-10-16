@@ -1,0 +1,1 @@
+{"slug": "memory-notebook-margin", "seal": "78c2c93bd489a6c079886cfdc3c221152bf9faeecdf7708e2e602a381923792c", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

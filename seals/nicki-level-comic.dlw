@@ -1,0 +1,1 @@
+{"slug": "nicki-level-comic", "seal": "87a687452c6120648dd7931136266c76046854e49e09c79d6e80a02372d7a683", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

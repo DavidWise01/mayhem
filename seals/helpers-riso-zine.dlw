@@ -1,0 +1,1 @@
+{"slug": "helpers-riso-zine", "seal": "d4431541577a2d8a7b5173d0cd73e9572a60d10db650c526d780f6ba6d5a3a48", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

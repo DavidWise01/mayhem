@@ -1,0 +1,1 @@
+{"slug": "metroid-corpus-linocut", "seal": "dc815e06b340160f4ad6fe4243ed573037bc5d6725451c7f4fe068359a5e379f", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

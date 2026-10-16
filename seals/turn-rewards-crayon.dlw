@@ -1,0 +1,1 @@
+{"slug": "turn-rewards-crayon", "seal": "e1639072d66132768871f1a85e2ac131f8d50e1e98ea5372d216b57cc8686c9c", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

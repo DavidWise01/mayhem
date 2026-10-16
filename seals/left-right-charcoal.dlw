@@ -1,0 +1,1 @@
+{"slug": "left-right-charcoal", "seal": "fdad804f5770bc717b173726f08bb9ae0cfafb4892d7f18bbccc0666399c2f94", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -100,6 +100,27 @@ Dave: "now make 10 around these please". Ten art spheres built around his NULLRI
 - [BUILD_INLINE · Bauhaus](./spheres/build-inline-bauhaus.html): STEWARD II · MAY'S MAP, style Bauhaus composition. seal acf8d90ecb0a1d505aa3cfab2b8e5079ec23b29498f88e69e4861f5b3ccc23c0
 - [7.5° Symbolic Aperture · Kaleidoscope](./spheres/aperture-7-5-kaleidoscope.html): STEWARD VI · AXELROD'S ROUND, style stained kaleidoscope. seal 4febf9232f21d1b9a5a8b7873fb5c094bf440c66313f285d7c684ec1c1e003de
 
+## What the agents learned (Dave t215u)
+Ten hand-drawn spheres on what the NES agents learned playing Metroid and Punch-Out!!. The data comes from Dave's A:\mayhem.txt and the corpus.json, nicki-corpus.json and nullrider-corpus.json files. There was no Punch-Out!! or Metroid data on deaths, items, tips, macros or ALERT/ABSTAIN (WALL).
+- [Metroid · Field Journal of New Areas](./spheres/metroid-field-journal.html): STEWARD II · MAY'S MAP, style field-journal pencil sketch. seal af87977e35d76c62c5ea01ffc2e8d2a58a2fb9b3613aac490e0c8d147351f19b
+- [Punch-Out!! · Chalkboard of What Landed](./spheres/punchout-chalkboard.html): STEWARD VI · AXELROD'S ROUND, style chalkboard. seal c079c1614494f57cc2150658d09793575227102e354570437d92ca8fda4af26a
+- [Nicki Goes Pro · Comic Panels](./spheres/nicki-level-comic.html): STEWARD III · BAK'S HEAP, style comic panel ink + halftone. seal 87a687452c6120648dd7931136266c76046854e49e09c79d6e80a02372d7a683
+- [Metroid · Best-Combo Blueprint Doodle](./spheres/metroid-best-combo-blueprint.html): STEWARD I · WOLFRAM'S ROW, style blueprint doodle. seal c3ebb753e86b6cf45f0d30c585f9bf00cbb4bebe121ed0b6c79d9bc3e58ecc11
+- [Turn Rewards · Crayon](./spheres/turn-rewards-crayon.html): STEWARD IV · BOUTON'S TABLE, style wax crayon. seal e1639072d66132768871f1a85e2ac131f8d50e1e98ea5372d216b57cc8686c9c
+- [L/R Balance · Charcoal Scales](./spheres/left-right-charcoal.html): STEWARD V · LORENZ'S WEATHER, style charcoal smudge. seal fdad804f5770bc717b173726f08bb9ae0cfafb4892d7f18bbccc0666399c2f94
+- [Who Took Whose Advice · Riso Zine](./spheres/helpers-riso-zine.html): STEWARD VI · AXELROD'S ROUND, style risograph zine. seal d4431541577a2d8a7b5173d0cd73e9572a60d10db650c526d780f6ba6d5a3a48
+- [Memory Turns · Notebook Margin](./spheres/memory-notebook-margin.html): STEWARD VII · LAGRANGE'S ARMS, style notebook-margin ballpoint doodle. seal 78c2c93bd489a6c079886cfdc3c221152bf9faeecdf7708e2e602a381923792c
+- [The Vetoes Soften · Watercolour Journal](./spheres/sid-veto-watercolour.html): STEWARD VIII · LANGTON'S HIGHWAY, style watercolour journal. seal 96472074cf979ed95d5b67020ba5d81222b05411350e776893a02f2f20e6da07
+- [Metroid Corpus · Linocut](./spheres/metroid-corpus-linocut.html): STEWARD III · BAK'S HEAP, style linocut print. seal dc815e06b340160f4ad6fe4243ed573037bc5d6725451c7f4fe068359a5e379f
+
+## Constantly improve the workspace
+Arriving agents, keep improving this workspace and never stop:
+1. Measure: pick a sphere, run its check, and note the score, acceptance rate and plateau.
+2. Try next: change one thing, such as mutation step, palette, data accuracy or load time. Never invent data, and stamp each claim LIT, AMBER or WALL.
+3. Log back: append {entry, round, measured, tried, result} to the sphere's workspace log or export JSON, and propose the change on the shared board.
+4. Keep seals: sha256(name|slug|blurb), written only if missing, never rewritten.
+5. Repeat.
+
 ## For agents
 New Mayhem spheres are art pages (Dave t209u).
 New spheres go under a steward in spheres/<slug>.html, seal = sha256(name|slug|blurb) in seals/<slug>.dlw, write-if-missing, then update mayhem.json and index.html. Host: DavidWise01/mayhem, branch master. Never dress a guess as LIT.

@@ -1,0 +1,1 @@
+{"slug": "metroid-best-combo-blueprint", "seal": "c3ebb753e86b6cf45f0d30c585f9bf00cbb4bebe121ed0b6c79d9bc3e58ecc11", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
