@@ -1,0 +1,1 @@
+{"slug": "summer-seafarer", "seal": "6beaa5a545c9c0087b812b672d759d41d734e5915e2f15d705318a7392921712", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

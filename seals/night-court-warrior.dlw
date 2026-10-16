@@ -1,0 +1,1 @@
+{"slug": "night-court-warrior", "seal": "2ca4d9d14c81f67029ae4a4cde028d8b74ca762685ca1c9919c92c84657d1da8", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

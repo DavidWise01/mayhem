@@ -1,0 +1,1 @@
+{"slug": "glass-assassin", "seal": "24504d090799be2ff9bbee33f5f519588e5d4aabb4fec5e73b5fe53dff68b919", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

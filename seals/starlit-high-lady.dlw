@@ -1,0 +1,1 @@
+{"slug": "starlit-high-lady", "seal": "9fa81606f108073bc1237b4e86208419858d6cc3af53d293de3d2a9c7e168a5e", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

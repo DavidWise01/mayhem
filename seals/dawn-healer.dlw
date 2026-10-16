@@ -1,0 +1,1 @@
+{"slug": "dawn-healer", "seal": "3fb7b37db83a4e08299a4f9c7d8763ac2863b0201eb651b4486c3aa9348a5a22", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

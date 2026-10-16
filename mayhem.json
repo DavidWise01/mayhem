@@ -52,6 +52,15 @@
      "blurb": "Climber agents follow n → n/2 or 3n+1 and post record trajectories; every climber found so far comes down to 1.",
      "seal": "c833c001e255a8acffca7c0b9c2cfe9841d32260e752b14f6dc3a311d6089515",
      "claim": "LIT check · AMBER refs · MODEL agents"
+    },
+    {
+     "name": "Night Court Warrior · Art Nouveau",
+     "slug": "night-court-warrior",
+     "path": "spheres/night-court-warrior.html",
+     "blurb": "How to draw a winged Night Court-style fae warrior in an art-nouveau poster style: halo frame, sweeping lines, starlit light.",
+     "seal": "2ca4d9d14c81f67029ae4a4cde028d8b74ca762685ca1c9919c92c84657d1da8",
+     "claim": "LIT checks · AMBER inspiration · MODEL art",
+     "style": "art nouveau"
     }
    ]
   },
@@ -97,6 +106,24 @@
      "blurb": "Three species invade each other in a cycle, rock over scissors over paper over rock; spirals emerge and nobody goes extinct.",
      "seal": "e3be4517ccbe47259260cc7098ecb734aff07b538077b91c0eb732d82ad556a1",
      "claim": "LIT check · AMBER refs · MODEL agents"
+    },
+    {
+     "name": "Spring Court Fae · Watercolour Wash",
+     "slug": "spring-court-fae",
+     "path": "spheres/spring-court-fae.html",
+     "blurb": "How to draw a Spring Court-style High Fae in loose watercolour: soft blooms of colour, petal light.",
+     "seal": "eed404e55a47ed31053eeaea74b71bffec0eeb63271f143ee3e73b7ccb54cc71",
+     "claim": "LIT checks · AMBER inspiration · MODEL art",
+     "style": "watercolour wash"
+    },
+    {
+     "name": "Dawn Court Healer · Low-Poly",
+     "slug": "dawn-healer",
+     "path": "spheres/dawn-healer.html",
+     "blurb": "How to draw a Dawn Court-style healer fae in low-poly triangles: paint it, then facet it.",
+     "seal": "3fb7b37db83a4e08299a4f9c7d8763ac2863b0201eb651b4486c3aa9348a5a22",
+     "claim": "LIT checks · AMBER inspiration · MODEL art",
+     "style": "low-poly triangles"
     }
    ]
   },
@@ -134,6 +161,15 @@
      "blurb": "Wandering colonist agents stick when they touch the colony; a branching coral grows that none of them designed.",
      "seal": "24d895f30ded92e1798a5f00529d34a1a84f2c358be85156952eaad87c521e66",
      "claim": "LIT check · AMBER refs · MODEL agents"
+    },
+    {
+     "name": "Winter Court Sentinel · Stained Glass",
+     "slug": "winter-court-sentinel",
+     "path": "spheres/winter-court-sentinel.html",
+     "blurb": "How to draw a Winter Court-style sentinel as stained glass: jewel panes and heavy leading.",
+     "seal": "1aae2af4893f098bdcbeeda4b5d4e4a2228ae2b73e8e9d4516c90ec3591bc28e",
+     "claim": "LIT checks · AMBER inspiration · MODEL art",
+     "style": "stained glass"
     }
    ]
   },
@@ -171,6 +207,15 @@
      "blurb": "Agents L, I and N quest across an abstract Hyrule graph for eight Triforce pieces, posting tips when gates block them while K watches.",
      "seal": "e731955c9f59a91bc325c077c9e99c01f5d8963f26b1765814b758c6f239df6d",
      "claim": "LIT check · AMBER refs · MODEL agents"
+    },
+    {
+     "name": "Day Court Scholar · Ukiyo-e Woodblock",
+     "slug": "day-court-scholar",
+     "path": "spheres/day-court-scholar.html",
+     "blurb": "How to draw a Day Court-style scholar fae as a ukiyo-e woodblock print: flat colours, wave bands, indigo key lines.",
+     "seal": "5cdfc429169b38668634a5f8c337187c4a0e21eddd58adddf077cc77c96aae48",
+     "claim": "LIT checks · AMBER inspiration · MODEL art",
+     "style": "ukiyo-e woodblock"
     }
    ]
   },
@@ -217,6 +262,15 @@
      "seal": "ae417da45a6d216e10dcad00fb687c47c2985ba94ebacd480d75d0c95a8168e7",
      "claim": "LIT check · AMBER refs · MODEL agents",
      "rework": "Dave t208u: \"i love it but shoudl be learn to draw geometricaly with traingles, tehn non with circles\". Stage 1 triangles on geometric targets; stage 2 circles on organic targets after 3 drawings at IoU ≥ 0.80 (MODEL). Blurb and seal unchanged."
+    },
+    {
+     "name": "Shadow Assassin · Ink Sumi-e",
+     "slug": "glass-assassin",
+     "path": "spheres/glass-assassin.html",
+     "blurb": "How to draw a Throne-of-Glass-style assassin in sumi-e brush ink: few strokes, red seal, paper glow.",
+     "seal": "24504d090799be2ff9bbee33f5f519588e5d4aabb4fec5e73b5fe53dff68b919",
+     "claim": "LIT checks · AMBER inspiration · MODEL art",
+     "style": "ink sumi-e"
     }
    ]
   },
@@ -254,6 +308,24 @@
      "blurb": "Gambler agents pull five one-armed bandits; UCB1, ε-greedy and random gamblers share a tally board and the clever ones find the best arm.",
      "seal": "74008074044dfb9118b9145aac3ea80ba25800c1c3c30cb10605ae8abc5cef19",
      "claim": "LIT check · AMBER refs · MODEL agents"
+    },
+    {
+     "name": "Fire-Wielder Queen · Cel-Shaded Anime",
+     "slug": "fire-queen",
+     "path": "spheres/fire-queen.html",
+     "blurb": "How to draw a fire-wielding fae queen in cel-shaded anime style: hard-edged shadow, bright flame.",
+     "seal": "d946e2a7d9c0bd1f4d0695de331a6ef1e58179a3258f3b28863ad410314646bc",
+     "claim": "LIT checks · AMBER inspiration · MODEL art",
+     "style": "cel-shaded anime"
+    },
+    {
+     "name": "Starlit High Lady · Neon Synthwave",
+     "slug": "starlit-high-lady",
+     "path": "spheres/starlit-high-lady.html",
+     "blurb": "How to draw a starlit High Lady in neon synthwave line art: grid horizon, sun, glowing outlines.",
+     "seal": "9fa81606f108073bc1237b4e86208419858d6cc3af53d293de3d2a9c7e168a5e",
+     "claim": "LIT checks · AMBER inspiration · MODEL art",
+     "style": "neon synthwave line art"
     }
    ]
   },
@@ -291,6 +363,15 @@
      "blurb": "0-sphere agents (2 quantum dots (0, 0), 2 vectors (−1, −1), 2 edges (+1, +1), sum 0) hop between two wells through a barrier with the textbook tunnelling probability.",
      "seal": "286b616b0d4dd93635f3e6e61d32b4ae5a5ed0f666fc98ba2ad9f2980da8e060",
      "claim": "LIT check · AMBER refs · MODEL agents"
+    },
+    {
+     "name": "Summer Court Seafarer · Pixel Art",
+     "slug": "summer-seafarer",
+     "path": "spheres/summer-seafarer.html",
+     "blurb": "How to draw a Summer Court-style seafarer fae as pixel art: build it smooth, then snap it to a chunky grid.",
+     "seal": "6beaa5a545c9c0087b812b672d759d41d734e5915e2f15d705318a7392921712",
+     "claim": "LIT checks · AMBER inspiration · MODEL art",
+     "style": "pixel art"
     }
    ]
   },
@@ -328,6 +409,15 @@
      "blurb": "Resident agents who only want a third of their neighbours to match them move until happy; the street sorts itself into districts nobody asked for.",
      "seal": "83329cdd6a6e9dacb4d753fd2ff50558ffcca1c2f9a1c24d9be0cc0b8dae4069",
      "claim": "LIT check · AMBER refs · MODEL agents"
+    },
+    {
+     "name": "Autumn Court Lord · Pointillism",
+     "slug": "autumn-lord",
+     "path": "spheres/autumn-lord.html",
+     "blurb": "How to draw a flame-haired Autumn Court-style lord in pointillist dots: build the colour, then dissolve it into points.",
+     "seal": "c79743a2456637678673af1c51e5c614d58ca2fe14018a9095331a02f091d510",
+     "claim": "LIT checks · AMBER inspiration · MODEL art",
+     "style": "pointillism"
     }
    ]
   }
@@ -337,5 +427,6 @@
  "batch_3": "Dave t197u: \"percect keep going, do as many as you can per turn withough losing quality\"",
  "batch_4": "Dave t198u: \"keep going please, retry zelda mega man\"",
  "batch_5": "Dave t199u: \"i love it keep going, put some black/wht/gray screens playing some snippests\"",
- "batch_6": "Dave t207u: \"nice can you continue buildiing shpheres for mayhem please. agentic\""
+ "batch_6": "Dave t207u: \"nice can you continue buildiing shpheres for mayhem please. agentic\"",
+ "art_pages": "Dave t209u: \"not kid pro. all of the pages you build lol. should be art pages, do a how you draw fantasy characters, referant sarah j maas please, do up 10 of them please real quick. thank you. make them dif art sytles\". Going forward every Mayhem sphere is an art page."
 }

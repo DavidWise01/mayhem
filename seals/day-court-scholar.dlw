@@ -1,0 +1,1 @@
+{"slug": "day-court-scholar", "seal": "5cdfc429169b38668634a5f8c337187c4a0e21eddd58adddf077cc77c96aae48", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

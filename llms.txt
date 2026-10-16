@@ -55,5 +55,19 @@ The index shows a live, scaled iframe preview of every sphere.
 ## Rework (Dave t208u)
 - [Kid → Pro](./spheres/kid-to-pro.html): Dave: "i love it but shoudl be learn to draw geometricaly with traingles, tehn non with circles". Agents learn to draw: triangles on geometric targets, then circles on non-geometric targets once IoU ≥ 0.80 three times. Levels Kid→Rookie→Player→Ace→pro. Blurb and seal unchanged (MODEL).
 
+## Art pages (Dave t209u)
+Dave: "not kid pro. all of the pages you build lol. should be art pages, do a how you draw fantasy characters, referant sarah j maas please, do up 10 of them please real quick. thank you. make them dif art sytles". From now on every new Mayhem sphere is an art page. The ten below are how-to-draw fantasy character tutorials inspired by Sarah J. Maas's A Court of Thorns and Roses / Throne of Glass worlds (AMBER). They use original archetypes, art and wording, and quote no book text.
+- [Night Court Warrior · Art Nouveau](./spheres/night-court-warrior.html): STEWARD I · WOLFRAM'S ROW, style art nouveau. seal 2ca4d9d14c81f67029ae4a4cde028d8b74ca762685ca1c9919c92c84657d1da8
+- [Spring Court Fae · Watercolour Wash](./spheres/spring-court-fae.html): STEWARD II · MAY'S MAP, style watercolour wash. seal eed404e55a47ed31053eeaea74b71bffec0eeb63271f143ee3e73b7ccb54cc71
+- [Winter Court Sentinel · Stained Glass](./spheres/winter-court-sentinel.html): STEWARD III · BAK'S HEAP, style stained glass. seal 1aae2af4893f098bdcbeeda4b5d4e4a2228ae2b73e8e9d4516c90ec3591bc28e
+- [Day Court Scholar · Ukiyo-e Woodblock](./spheres/day-court-scholar.html): STEWARD IV · BOUTON'S TABLE, style ukiyo-e woodblock. seal 5cdfc429169b38668634a5f8c337187c4a0e21eddd58adddf077cc77c96aae48
+- [Shadow Assassin · Ink Sumi-e](./spheres/glass-assassin.html): STEWARD V · LORENZ'S WEATHER, style ink sumi-e. seal 24504d090799be2ff9bbee33f5f519588e5d4aabb4fec5e73b5fe53dff68b919
+- [Fire-Wielder Queen · Cel-Shaded Anime](./spheres/fire-queen.html): STEWARD VI · AXELROD'S ROUND, style cel-shaded anime. seal d946e2a7d9c0bd1f4d0695de331a6ef1e58179a3258f3b28863ad410314646bc
+- [Summer Court Seafarer · Pixel Art](./spheres/summer-seafarer.html): STEWARD VII · LAGRANGE'S ARMS, style pixel art. seal 6beaa5a545c9c0087b812b672d759d41d734e5915e2f15d705318a7392921712
+- [Autumn Court Lord · Pointillism](./spheres/autumn-lord.html): STEWARD VIII · LANGTON'S HIGHWAY, style pointillism. seal c79743a2456637678673af1c51e5c614d58ca2fe14018a9095331a02f091d510
+- [Dawn Court Healer · Low-Poly](./spheres/dawn-healer.html): STEWARD II · MAY'S MAP, style low-poly triangles. seal 3fb7b37db83a4e08299a4f9c7d8763ac2863b0201eb651b4486c3aa9348a5a22
+- [Starlit High Lady · Neon Synthwave](./spheres/starlit-high-lady.html): STEWARD VI · AXELROD'S ROUND, style neon synthwave line art. seal 9fa81606f108073bc1237b4e86208419858d6cc3af53d293de3d2a9c7e168a5e
+
 ## For agents
+New Mayhem spheres are art pages (Dave t209u).
 New spheres go under a steward in spheres/<slug>.html, seal = sha256(name|slug|blurb) in seals/<slug>.dlw, write-if-missing, then update mayhem.json and index.html. Host: DavidWise01/mayhem, branch master. Never dress a guess as LIT.

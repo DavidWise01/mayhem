@@ -1,0 +1,1 @@
+{"slug": "fire-queen", "seal": "d946e2a7d9c0bd1f4d0695de331a6ef1e58179a3258f3b28863ad410314646bc", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

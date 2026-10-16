@@ -1,0 +1,1 @@
+{"slug": "autumn-lord", "seal": "c79743a2456637678673af1c51e5c614d58ca2fe14018a9095331a02f091d510", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

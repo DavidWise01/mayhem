@@ -1,0 +1,1 @@
+{"slug": "winter-court-sentinel", "seal": "1aae2af4893f098bdcbeeda4b5d4e4a2228ae2b73e8e9d4516c90ec3591bc28e", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
