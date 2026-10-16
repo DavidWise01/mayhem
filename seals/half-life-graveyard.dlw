@@ -1,0 +1,1 @@
+{"slug": "half-life-graveyard", "seal": "16b835ec16772b2fb5bfad845403c6e613ad41bb0d0331e6bb70735d575bfede", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

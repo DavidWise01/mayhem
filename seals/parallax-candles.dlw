@@ -1,0 +1,1 @@
+{"slug": "parallax-candles", "seal": "e053dddd842ae099824b3954e6fbc68dacfd92c59415fe63f0798406dcdcfaf2", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "bubble-sort-crypt", "seal": "7ce8dbca0754539252fd147ef7241b5325dea77acabace9405b4922b8d90ade9", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

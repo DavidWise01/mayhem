@@ -1,0 +1,1 @@
+{"slug": "hanoi-towers", "seal": "5cb93d49e3ffe65c52af60ae87112dd95d2ad92c4a48a702de16716ae7332ade", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

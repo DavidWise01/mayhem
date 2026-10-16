@@ -1,0 +1,1 @@
+{"slug": "saros-cycle", "seal": "2c64b704679df811daf9fdbdada448f2ccc42a49358f742ab580b33241492035", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

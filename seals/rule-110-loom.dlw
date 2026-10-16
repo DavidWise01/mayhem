@@ -1,0 +1,1 @@
+{"slug": "rule-110-loom", "seal": "14c32c5c5b92f2dc19ef417ddd599e3af7345674ccd2f4aba299eda59a9517ca", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

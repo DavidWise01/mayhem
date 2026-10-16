@@ -1,0 +1,1 @@
+{"slug": "knapsack-reliquary", "seal": "c485a81eceb5fe91963c1c30867895ce7b1b465a3e3e3a78ed25f5734ee08829", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

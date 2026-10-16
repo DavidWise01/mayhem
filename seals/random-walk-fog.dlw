@@ -1,0 +1,1 @@
+{"slug": "random-walk-fog", "seal": "ec9ee983c2693b6ce5c2f8f5197eca0d00939735a51924d1a5206a16a804f912", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

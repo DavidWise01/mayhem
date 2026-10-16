@@ -1,0 +1,1 @@
+{"slug": "dijkstra-catacombs", "seal": "d9a51190844f68baa3934a8e99ca466c40079d2a79ea05163695f9e2acca1e5d", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

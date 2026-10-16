@@ -1,0 +1,1 @@
+{"slug": "binary-search-depth", "seal": "f3133ad89fe094ae96df8516f1e92a14c0c5219b9fe3b78f3b842e6aa2047920", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

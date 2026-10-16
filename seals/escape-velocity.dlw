@@ -1,0 +1,1 @@
+{"slug": "escape-velocity", "seal": "6c555a64c965624ce00dff17bd1954ae60b29601d47f9ac4f2460f0735e84caa", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "equation-of-time", "seal": "0f4f0033afa9d9b07619cc373300075c73562d5f6b2774c67bf9aec2857620c4", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

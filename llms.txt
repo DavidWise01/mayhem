@@ -150,6 +150,26 @@ Dave: "switch to a gothic noir neon themes and do whatever you want, do 100 and 
 - [Planck Spectrum of the Sun · Neon Glow](./spheres/planck-sun.html): Physics, curve in spray stencil. seal f2a52c2551ff014ff7332936c492df3646706f0b48997565120a7fcbf4fd5252
 - [Damped Oscillator · Fading Bell](./spheres/damped-bell.html): Physics, wave in scratchboard. seal 5e6133564b325ef30949c512f3a33cedaad4fabef10e96a9421321f57ab1f483
 - [String Harmonics · Organ Pipes](./spheres/string-harmonics.html): Physics, skyline in pastel haze. seal b1dced48bc4b3c3f139d55cc0768299779ccafb641af076db39ef09b4f9b1bc3
+- [Half-Life · Graveyard of Atoms](./spheres/half-life-graveyard.html): Physics, dots in neon tube. seal 16b835ec16772b2fb5bfad845403c6e613ad41bb0d0331e6bb70735d575bfede
+- [Critical Angles · Cursed Gems](./spheres/critical-angle-gems.html): Physics, radial in chalk on slate. seal c2b34c36160bd0959cb681d526f45868a9ab1a7ffd0375914fc21070435d842f
+- [Escape Velocity · Four Worlds](./spheres/escape-velocity.html): Physics, bars in charcoal smoke. seal 6c555a64c965624ce00dff17bd1954ae60b29601d47f9ac4f2460f0735e84caa
+- [Planetary Years · Orrery of the Damned](./spheres/planet-periods.html): Astronomy, orbit in ink wash in rain. seal 232c5fe2f882bbc9877085e82913b44cc6309eef9f4732cd8dd36c1fc0ce0f5c
+- [Parallax · Standard Candles](./spheres/parallax-candles.html): Astronomy, dots in etched glass. seal e053dddd842ae099824b3954e6fbc68dacfd92c59415fe63f0798406dcdcfaf2
+- [Saros Cycle · Eclipse Clock](./spheres/saros-cycle.html): Astronomy, rings in film-grain noir. seal 2c64b704679df811daf9fdbdada448f2ccc42a49358f742ab580b33241492035
+- [Equation of Time · Analemma Gallows](./spheres/equation-of-time.html): Astronomy, curve in stained glass. seal 0f4f0033afa9d9b07619cc373300075c73562d5f6b2774c67bf9aec2857620c4
+- [Synodic Periods · Wandering Lanterns](./spheres/synodic-periods.html): Astronomy, bars in spray stencil. seal 9706e9f3523f389d4c0fa68da8893202326f00b8fb5264c6f69b7d7bd1b019ad
+- [Bubble Sort · Crypt Passes](./spheres/bubble-sort-crypt.html): Algorithms, steps in scratchboard. seal 7ce8dbca0754539252fd147ef7241b5325dea77acabace9405b4922b8d90ade9
+- [Binary Search · Descent](./spheres/binary-search-depth.html): Algorithms, skyline in pastel haze. seal f3133ad89fe094ae96df8516f1e92a14c0c5219b9fe3b78f3b842e6aa2047920
+- [Dijkstra · Catacomb Paths](./spheres/dijkstra-catacombs.html): Algorithms, radial in neon tube. seal d9a51190844f68baa3934a8e99ca466c40079d2a79ea05163695f9e2acca1e5d
+- [R-Pentomino · Life in the Ruins](./spheres/r-pentomino.html): Algorithms, bars in chalk on slate. seal f54af18e5efda00d267e08dd2bcf07b5798f36ca4947ef5416f9aa4c5be90201
+- [Rule 110 · Loom](./spheres/rule-110-loom.html): Algorithms, grid in charcoal smoke. seal 14c32c5c5b92f2dc19ef417ddd599e3af7345674ccd2f4aba299eda59a9517ca
+- [Knapsack · Reliquary](./spheres/knapsack-reliquary.html): Algorithms, bars in ink wash in rain. seal c485a81eceb5fe91963c1c30867895ce7b1b465a3e3e3a78ed25f5734ee08829
+- [Huffman Code · Hanging Tree](./spheres/huffman-tree.html): Algorithms, steps in etched glass. seal 33e747ce1a4497dd8dc42b8bbffe8589965f4fa769407603521fb9c8e5aec1a8
+- [Edit Distance · kitten → sitting](./spheres/levenshtein-ghosts.html): Algorithms, curve in film-grain noir. seal ecd5a4a14700542d90bcd8830f3c10e890a202963816f25fa32b6a5514db4767
+- [Towers of Hanoi · Bell Towers](./spheres/hanoi-towers.html): Algorithms, skyline in stained glass. seal 5cb93d49e3ffe65c52af60ae87112dd95d2ad92c4a48a702de16716ae7332ade
+- [Prime Counting · π(x) vs x/ln x](./spheres/prime-counting.html): Algorithms, curve in spray stencil. seal c1c9010ba6ea29726f78a38d4f0007aa4e81c70f88a15d816a9fbfc88ba933a0
+- [Random Walk · Fog](./spheres/random-walk-fog.html): Algorithms, dots in scratchboard. seal ec9ee983c2693b6ce5c2f8f5197eca0d00939735a51924d1a5206a16a804f912
+- [Subtraction Nim {1,3,4} · Grundy Crypt](./spheres/nim-grundy.html): Games, grid in pastel haze. seal 94b68830b04f623732411cc258fe9320dac740f57d897f05cc3da011d6229acb
 
 ## Constantly improve the workspace
 Arriving agents, keep improving this workspace and never stop:

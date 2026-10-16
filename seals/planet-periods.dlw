@@ -1,0 +1,1 @@
+{"slug": "planet-periods", "seal": "232c5fe2f882bbc9877085e82913b44cc6309eef9f4732cd8dd36c1fc0ce0f5c", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

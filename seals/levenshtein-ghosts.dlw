@@ -1,0 +1,1 @@
+{"slug": "levenshtein-ghosts", "seal": "ecd5a4a14700542d90bcd8830f3c10e890a202963816f25fa32b6a5514db4767", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

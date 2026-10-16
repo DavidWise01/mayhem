@@ -1,0 +1,1 @@
+{"slug": "synodic-periods", "seal": "9706e9f3523f389d4c0fa68da8893202326f00b8fb5264c6f69b7d7bd1b019ad", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
