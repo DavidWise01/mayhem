@@ -1,0 +1,1 @@
+{"slug": "robot-master-order", "seal": "e53bb4ee520157428741898e7d0c3fb7e0520ca1e8e1fd80711a4380d0afbe95", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "hyrule-run", "seal": "e731955c9f59a91bc325c077c9e99c01f5d8963f26b1765814b758c6f239df6d", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

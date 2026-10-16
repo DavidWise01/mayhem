@@ -57,6 +57,14 @@
      "blurb": "Hare and fox agents eat, breed and die on a meadow; their counts chase each other like the Lotka–Volterra cycle.",
      "seal": "7f0b0f21a328f2bd492fcc82f0be97f49a0454e3d16223f51155cf4d1b6cc49c",
      "claim": "LIT check · AMBER refs · MODEL agents"
+    },
+    {
+     "name": "The Firefly Choir",
+     "slug": "firefly-choir",
+     "path": "spheres/firefly-choir.html",
+     "blurb": "Firefly agents with their own rhythms nudge toward the flashes they see; past a critical coupling the choir flashes as one.",
+     "seal": "c21560728e58cac2eedfdd80994843d7ce2e0412961111e5ecd9eafeab325074",
+     "claim": "LIT check · AMBER refs · MODEL agents"
     }
    ]
   },
@@ -107,6 +115,14 @@
      "blurb": "Four gardener agents plant patterns in Conway's Life; each cell carries its planter's colour and the board tracks whose lineage survives.",
      "seal": "ea7b26e81438fa465d8d0a8ae652c71428f8f204da96b2ec1e21573ba19aba0d",
      "claim": "LIT check · AMBER refs · MODEL agents"
+    },
+    {
+     "name": "The Hyrule Run",
+     "slug": "hyrule-run",
+     "path": "spheres/hyrule-run.html",
+     "blurb": "Agents L, I and N quest across an abstract Hyrule graph for eight Triforce pieces, posting tips when gates block them while K watches.",
+     "seal": "e731955c9f59a91bc325c077c9e99c01f5d8963f26b1765814b758c6f239df6d",
+     "claim": "LIT check · AMBER refs · MODEL agents"
     }
    ]
   },
@@ -127,6 +143,14 @@
      "path": "spheres/boid-council.html",
      "blurb": "Boid agents steer by separation, alignment and cohesion; out of noise comes a flock, and the order parameter is read live.",
      "seal": "4e5654abe42303bc4eb020405a49e9591069ca6e3ae6347135500031196b69e9",
+     "claim": "LIT check · AMBER refs · MODEL agents"
+    },
+    {
+     "name": "The Drunkards’ Club",
+     "slug": "drunkards-club",
+     "path": "spheres/drunkards-club.html",
+     "blurb": "Two thousand walker agents stagger at random; together they draw the diffusion law ⟨r²⟩ = t, and the club secretary reads it live.",
+     "seal": "0deb043a63e8a20d52b944e68a21c267628799f5ba569958ddd6a2d150857d64",
      "claim": "LIT check · AMBER refs · MODEL agents"
     }
    ]
@@ -149,6 +173,14 @@
      "blurb": "Two agents play rock–paper–scissors by fictitious play; each best-responds to the other's history and the mix spirals toward Nash 1/3.",
      "seal": "ec620184c35ad5c04545b5fd5f588348bc922e75816b3976fbeb0e9aaf199dd7",
      "claim": "LIT check · AMBER refs · MODEL agents"
+    },
+    {
+     "name": "The Elo Ladder",
+     "slug": "elo-ladder",
+     "path": "spheres/elo-ladder.html",
+     "blurb": "Six bot players with hidden strengths play matches; Elo ratings on the shared ladder sort them into their true order.",
+     "seal": "dfad3beb017037aca22a7645261ada315af2ec208a47e6ca992e55e7f6995bb7",
+     "claim": "LIT check · AMBER refs · MODEL agents"
     }
    ]
   },
@@ -169,6 +201,14 @@
      "path": "spheres/vickrey-hall.html",
      "blurb": "Bidder agents with secret values learn how to bid in second-price auctions; shading dies out because honesty is dominant.",
      "seal": "d32ab1af38155f59527e37ff5088a08918899538ce9419f5e471912fed7574d3",
+     "claim": "LIT check · AMBER refs · MODEL agents"
+    },
+    {
+     "name": "The Monty Hall Agents",
+     "slug": "monty-hall-agents",
+     "path": "spheres/monty-hall-agents.html",
+     "blurb": "Stayer and switcher agents play the three-door game; the switchers' tally climbs toward two-thirds and converts the stayers.",
+     "seal": "3a96315e587fc6514a399b3e1d6359214ae9ccecef7cd06db1a9af5856d3b9f7",
      "claim": "LIT check · AMBER refs · MODEL agents"
     }
    ]
@@ -191,11 +231,20 @@
      "blurb": "Scribe agents trade words to build 5-7-5 haiku in {{i}} notation; every poem is counted before it is kept.",
      "seal": "67d9e1a7530f9d6b6f45d9341a39a7ffb8df45a04a6325a135e49e5631ca2e0e",
      "claim": "LIT check · AMBER refs · MODEL agents"
+    },
+    {
+     "name": "The Robot Master Order",
+     "slug": "robot-master-order",
+     "path": "spheres/robot-master-order.html",
+     "blurb": "Agents fight eight model Robot Masters in different orders and share which weapon beats whom; the weakness chain emerges.",
+     "seal": "e53bb4ee520157428741898e7d0c3fb7e0520ca1e8e1fd80711a4380d0afbe95",
+     "claim": "LIT check · AMBER refs · MODEL agents"
     }
    ]
   }
  ],
  "labels": "keeper/steward names & themes MODEL; simulations LIT via on-load self-checks; art AMBER/MODEL",
  "agentic": "Dave t196u: \"keep going, i think agentic is what i meant not generative lol\"",
- "batch_3": "Dave t197u: \"percect keep going, do as many as you can per turn withough losing quality\""
+ "batch_3": "Dave t197u: \"percect keep going, do as many as you can per turn withough losing quality\"",
+ "batch_4": "Dave t198u: \"keep going please, retry zelda mega man\""
 }

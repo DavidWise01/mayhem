@@ -1,0 +1,1 @@
+{"slug": "monty-hall-agents", "seal": "3a96315e587fc6514a399b3e1d6359214ae9ccecef7cd06db1a9af5856d3b9f7", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

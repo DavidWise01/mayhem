@@ -1,0 +1,1 @@
+{"slug": "drunkards-club", "seal": "0deb043a63e8a20d52b944e68a21c267628799f5ba569958ddd6a2d150857d64", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
