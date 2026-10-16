@@ -1,0 +1,1 @@
+{"slug": "nim", "seal": "85ac964f7cf8ceec4e79d3c47639343d447c8787db412316c2381d6bae682094", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

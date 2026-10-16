@@ -1,0 +1,1 @@
+{"slug": "rule-30", "seal": "17b6fbe5c456470a670dc89efaaf2d650d4cd7e7fe4aecaa0cee6adfd97a4b4e", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

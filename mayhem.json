@@ -1,0 +1,103 @@
+{
+ "name": "Mayhem",
+ "author": "Grok Bot",
+ "named_by": "Dave: \"start your own world. call it Mayhem\"",
+ "structure": "1 KEEPER → 8 STEWARDS → L0 spheres",
+ "keeper": {
+  "name": "ERIS",
+  "page": "index.html",
+  "seal": "c445dbbf3623875329ab232fa92b1d6e17fcad6c1c39f7bfbc8412136c103224",
+  "label": "MODEL"
+ },
+ "stewards": [
+  {
+   "steward": "STEWARD I · WOLFRAM'S ROW",
+   "sphere": {
+    "name": "Rule 30",
+    "slug": "rule-30",
+    "path": "spheres/rule-30.html",
+    "blurb": "Elementary cellular automaton rule 30: one live cell grows into a chaotic triangle.",
+    "seal": "17b6fbe5c456470a670dc89efaaf2d650d4cd7e7fe4aecaa0cee6adfd97a4b4e",
+    "claim": "LIT"
+   }
+  },
+  {
+   "steward": "STEWARD II · MAY'S MAP",
+   "sphere": {
+    "name": "The Logistic Fork",
+    "slug": "logistic",
+    "path": "spheres/logistic.html",
+    "blurb": "x → r·x·(1−x): steady, then period doubling, then chaos as r rises.",
+    "seal": "0c3a3f05bf512d249e3c676f070fe5d7cc7f85bf366a7772d65d1ca8acb60d4d",
+    "claim": "LIT"
+   }
+  },
+  {
+   "steward": "STEWARD III · BAK'S HEAP",
+   "sphere": {
+    "name": "The Mayhem Pile",
+    "slug": "sandpile",
+    "path": "spheres/sandpile.html",
+    "blurb": "Bak–Tang–Wiesenfeld sandpile: drop grains, cells of 4 topple, avalanches of every size.",
+    "seal": "5e62838b83be3d0bbec6fff0bcfbe0dcc1acf77f7b46c8342da74ba76f0e99f5",
+    "claim": "LIT"
+   }
+  },
+  {
+   "steward": "STEWARD IV · BOUTON'S TABLE",
+   "sphere": {
+    "name": "Nim-Sum",
+    "slug": "nim",
+    "path": "spheres/nim.html",
+    "blurb": "Nim: the player who faces nim-sum 0 loses under perfect play (Bouton 1901).",
+    "seal": "85ac964f7cf8ceec4e79d3c47639343d447c8787db412316c2381d6bae682094",
+    "claim": "LIT"
+   }
+  },
+  {
+   "steward": "STEWARD V · LORENZ'S WEATHER",
+   "sphere": {
+    "name": "The Butterfly Steward",
+    "slug": "lorenz",
+    "path": "spheres/lorenz.html",
+    "blurb": "Lorenz 1963 (σ=10, ρ=28, β=8/3): a strange attractor that never repeats.",
+    "seal": "775a51cd413ae183e6625b12e1c7daaa1b7dc3890b2a3cc5de20abe5aa49ac29",
+    "claim": "LIT"
+   }
+  },
+  {
+   "steward": "STEWARD VI · AXELROD'S ROUND",
+   "sphere": {
+    "name": "The Tit-for-Tat Ring",
+    "slug": "dilemma",
+    "path": "spheres/dilemma.html",
+    "blurb": "Iterated prisoner's dilemma, payoffs T5 R3 P1 S0, strategies meet in a round robin.",
+    "seal": "0746f7d27807b7ec2610f7be9365352b3b6fb71858c0904991f1062a09de260c",
+    "claim": "LIT"
+   }
+  },
+  {
+   "steward": "STEWARD VII · LAGRANGE'S ARMS",
+   "sphere": {
+    "name": "The Double Swing",
+    "slug": "double-pendulum",
+    "path": "spheres/double-pendulum.html",
+    "blurb": "Double pendulum: two rods, one gravity, sensitive chaos; RK4 keeps energy honest.",
+    "seal": "4b6fec119dd488a93fdecf3cdb4f8837e42370820e0e155db937ca2718e23225",
+    "claim": "LIT"
+   }
+  },
+  {
+   "steward": "STEWARD VIII · LANGTON'S HIGHWAY",
+   "sphere": {
+    "name": "Langton's Mayhem Ant",
+    "slug": "langton",
+    "path": "spheres/langton.html",
+    "blurb": "Langton's ant: chaos for ~10,000 steps, then a highway; the rule runs backwards exactly.",
+    "seal": "fdc9c584b3c1fa634a18daf81f3383cd574bd053fee0fbb52e5863db17da8de3",
+    "claim": "LIT"
+   }
+  }
+ ],
+ "labels": "keeper/steward names & themes MODEL; simulations LIT via on-load self-checks; art AMBER/MODEL"
+}

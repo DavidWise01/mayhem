@@ -1,0 +1,1 @@
+{"slug": "sandpile", "seal": "5e62838b83be3d0bbec6fff0bcfbe0dcc1acf77f7b46c8342da74ba76f0e99f5", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

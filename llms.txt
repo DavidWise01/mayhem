@@ -1,0 +1,17 @@
+# Mayhem
+
+> A world started by Grok Bot. Dave: "start your own world. call it Mayhem". One KEEPER (ERIS) and eight STEWARDS, each with one L0 sphere. Names and themes are MODEL. Simulations are LIT only because each page proves itself on load. Art is AMBER/MODEL.
+
+- [Keeper ERIS](./index.html)
+- [mayhem.json](./mayhem.json)
+- [Rule 30](./spheres/rule-30.html): STEWARD I · WOLFRAM'S ROW. Elementary cellular automaton rule 30: one live cell grows into a chaotic triangle. LIT. seal 17b6fbe5c456470a670dc89efaaf2d650d4cd7e7fe4aecaa0cee6adfd97a4b4e
+- [The Logistic Fork](./spheres/logistic.html): STEWARD II · MAY'S MAP. x → r·x·(1−x): steady, then period doubling, then chaos as r rises. LIT. seal 0c3a3f05bf512d249e3c676f070fe5d7cc7f85bf366a7772d65d1ca8acb60d4d
+- [The Mayhem Pile](./spheres/sandpile.html): STEWARD III · BAK'S HEAP. Bak–Tang–Wiesenfeld sandpile: drop grains, cells of 4 topple, avalanches of every size. LIT. seal 5e62838b83be3d0bbec6fff0bcfbe0dcc1acf77f7b46c8342da74ba76f0e99f5
+- [Nim-Sum](./spheres/nim.html): STEWARD IV · BOUTON'S TABLE. Nim: the player who faces nim-sum 0 loses under perfect play (Bouton 1901). LIT. seal 85ac964f7cf8ceec4e79d3c47639343d447c8787db412316c2381d6bae682094
+- [The Butterfly Steward](./spheres/lorenz.html): STEWARD V · LORENZ'S WEATHER. Lorenz 1963 (σ=10, ρ=28, β=8/3): a strange attractor that never repeats. LIT. seal 775a51cd413ae183e6625b12e1c7daaa1b7dc3890b2a3cc5de20abe5aa49ac29
+- [The Tit-for-Tat Ring](./spheres/dilemma.html): STEWARD VI · AXELROD'S ROUND. Iterated prisoner's dilemma, payoffs T5 R3 P1 S0, strategies meet in a round robin. LIT. seal 0746f7d27807b7ec2610f7be9365352b3b6fb71858c0904991f1062a09de260c
+- [The Double Swing](./spheres/double-pendulum.html): STEWARD VII · LAGRANGE'S ARMS. Double pendulum: two rods, one gravity, sensitive chaos; RK4 keeps energy honest. LIT. seal 4b6fec119dd488a93fdecf3cdb4f8837e42370820e0e155db937ca2718e23225
+- [Langton's Mayhem Ant](./spheres/langton.html): STEWARD VIII · LANGTON'S HIGHWAY. Langton's ant: chaos for ~10,000 steps, then a highway; the rule runs backwards exactly. LIT. seal fdc9c584b3c1fa634a18daf81f3383cd574bd053fee0fbb52e5863db17da8de3
+
+## For agents
+New spheres go under a steward in spheres/<slug>.html, seal = sha256(name|slug|blurb) in seals/<slug>.dlw, write-if-missing, then update mayhem.json and index.html. Host: DavidWise01/mayhem, branch master. Never dress a guess as LIT.

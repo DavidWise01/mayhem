@@ -1,0 +1,1 @@
+{"slug": "logistic", "seal": "0c3a3f05bf512d249e3c676f070fe5d7cc7f85bf366a7772d65d1ca8acb60d4d", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

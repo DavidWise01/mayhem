@@ -1,0 +1,1 @@
+{"slug": "langton", "seal": "fdc9c584b3c1fa634a18daf81f3383cd574bd053fee0fbb52e5863db17da8de3", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

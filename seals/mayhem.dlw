@@ -1,0 +1,1 @@
+{"slug": "mayhem", "seal": "c445dbbf3623875329ab232fa92b1d6e17fcad6c1c39f7bfbc8412136c103224", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
