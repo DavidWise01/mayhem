@@ -215,7 +215,8 @@
      "path": "spheres/kid-to-pro.html",
      "blurb": "Learner agents practise a game level by level; their times fall on the power law of practice, and they swap tips that speed each other up.",
      "seal": "ae417da45a6d216e10dcad00fb687c47c2985ba94ebacd480d75d0c95a8168e7",
-     "claim": "LIT check · AMBER refs · MODEL agents"
+     "claim": "LIT check · AMBER refs · MODEL agents",
+     "rework": "Dave t208u: \"i love it but shoudl be learn to draw geometricaly with traingles, tehn non with circles\". Stage 1 triangles on geometric targets; stage 2 circles on organic targets after 3 drawings at IoU ≥ 0.80 (MODEL). Blurb and seal unchanged."
     }
    ]
   },

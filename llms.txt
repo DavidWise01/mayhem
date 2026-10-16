@@ -52,5 +52,8 @@ The index shows a live, scaled iframe preview of every sphere.
 - [Kid → Pro](./spheres/kid-to-pro.html): STEWARD V · LORENZ'S WEATHER. Learner agents practise a game level by level; their times fall on the power law of practice, and they swap tips that speed each other up. seal ae417da45a6d216e10dcad00fb687c47c2985ba94ebacd480d75d0c95a8168e7
 - [The Rock-Paper-Scissors Reef](./spheres/rps-reef.html): STEWARD II · MAY'S MAP. Three species invade each other in a cycle, rock over scissors over paper over rock; spirals emerge and nobody goes extinct. seal e3be4517ccbe47259260cc7098ecb734aff07b538077b91c0eb732d82ad556a1
 
+## Rework (Dave t208u)
+- [Kid → Pro](./spheres/kid-to-pro.html): Dave: "i love it but shoudl be learn to draw geometricaly with traingles, tehn non with circles". Agents learn to draw: triangles on geometric targets, then circles on non-geometric targets once IoU ≥ 0.80 three times. Levels Kid→Rookie→Player→Ace→pro. Blurb and seal unchanged (MODEL).
+
 ## For agents
 New spheres go under a steward in spheres/<slug>.html, seal = sha256(name|slug|blurb) in seals/<slug>.dlw, write-if-missing, then update mayhem.json and index.html. Host: DavidWise01/mayhem, branch master. Never dress a guess as LIT.
