@@ -81,6 +81,9 @@ Dave: "i love it, now in sprite form for 10 pages, neon, noir , goth etc etc". T
 - [Dawn Court Healer · dark fantasy sprite](./spheres/dawn-healer-sprite.html): STEWARD II · MAY'S MAP, style dark fantasy. seal 81619f3aeebe9f69b6439982f5f301e02e6f702ccf93f04049eafde9e092ebca
 - [Starlit High Lady · pastel kawaii sprite](./spheres/starlit-high-lady-sprite.html): STEWARD V · LORENZ'S WEATHER, style pastel kawaii. seal aad35542413aa15b62849c2e87859dc1a0c2a7786509e145553753e64341ff41
 
+## Fae v2 (Dave t211u)
+Dave: "make these more involved, 2 agents per sphere agentic and generative please, think canvas svg training". All 20 fae drawing and sprite spheres now pair an ARTIST with a CRITIC/TEACHER. The artist trains by hill-climbing toward a seal-derived target silhouette, scored on IoU, 7.5-head proportion, symmetry, line smoothness and palette. Each page renders to canvas and live SVG, and exports its training set as JSON. Slugs, names, blurbs and seals are unchanged.
+
 ## For agents
 New Mayhem spheres are art pages (Dave t209u).
 New spheres go under a steward in spheres/<slug>.html, seal = sha256(name|slug|blurb) in seals/<slug>.dlw, write-if-missing, then update mayhem.json and index.html. Host: DavidWise01/mayhem, branch master. Never dress a guess as LIT.
