@@ -227,6 +227,16 @@
      "claim": "LIT computation check · AMBER cited facts · MODEL gothic noir neon art",
      "style": "gothic noir neon · stained glass",
      "cat": "Chemistry"
+    },
+    {
+     "name": "Sapphon Bonding · 0-Spheres in 3D",
+     "slug": "sapphon-bond-3d",
+     "path": "spheres/sapphon-bond-3d.html",
+     "blurb": "Four 0-spheres bond into a sapphon, rendered in 3D: an ARTIST agent moves them in space and a CRITIC scores how regular the tetrahedron is.",
+     "seal": "79cab965769affaef9125e87cae0f0e59303ac204fd6b1c1fc1e612b06e71434",
+     "claim": "LIT counts from sapph-i-on sapphon.json · MODEL 3D art",
+     "style": "3D WebGL · gothic noir neon",
+     "cat": "SaPpH{{i}}on 3D"
     }
    ]
   },
@@ -474,6 +484,16 @@
      "claim": "LIT computation check · AMBER cited facts · MODEL gothic noir neon art",
      "style": "gothic noir neon · spray stencil",
      "cat": "Cryptography"
+    },
+    {
+     "name": "88 Groups · Sapphon & Ion Constellation",
+     "slug": "sapphon-constellation-3d",
+     "path": "spheres/sapphon-constellation-3d.html",
+     "blurb": "All 88 groups of SaPpH{{i}}on, in 3D: 42 sapphons (4 members), 45 ions (3 members) and 1 centre. The ARTIST places the shells and the CRITIC scores their separation.",
+     "seal": "b43501f3538a06e64fd0d29b76b78c8ab737c199c65c0ddde17bc6fc64c1c86f",
+     "claim": "LIT counts from sapph-i-on sapphon.json · MODEL 3D art",
+     "style": "3D WebGL · gothic noir neon",
+     "cat": "SaPpH{{i}}on 3D"
     }
    ]
   },
@@ -704,6 +724,16 @@
      "claim": "LIT computation check · AMBER cited facts · MODEL gothic noir neon art",
      "style": "gothic noir neon · scratchboard",
      "cat": "History of computing"
+    },
+    {
+     "name": "World 7 · 7^3 Cube of Domains",
+     "slug": "world-7-cube-3d",
+     "path": "spheres/world-7-cube-3d.html",
+     "blurb": "SaPpH{{i}}on's structure as a voxel cube in 3D: 8 keepers × 64 domains = 512, around a 7×7×7 core for the 343 workshop pages. The ARTIST sizes the lattices and the CRITIC counts them.",
+     "seal": "f91fd33fe3d1feb3edf9be5084ce20382025ef8b850d44cecce04b28cf9c0416",
+     "claim": "LIT counts from sapph-i-on sapphon.json · MODEL 3D art",
+     "style": "3D WebGL · gothic noir neon",
+     "cat": "SaPpH{{i}}on 3D"
     }
    ]
   },
@@ -1813,5 +1843,6 @@
  "batch_node184": "Dave t213u: \"now make 10 around these please\". Built around his NULLRIDER · Node 184 Inference Observatory files (app.js, build .py, built HTML).",
  "batch_learned": "Dave t215u: 10 hand-drawn spheres on what the agents learned playing Metroid and Punch-Out!!, built from A:\\mayhem.txt and the nes-agents-app corpora. Each carries a workspace improvement loop.",
  "batch_cabinet": "Dave t219u: 12 spheres, themes my choice (MODEL), Cabinet of Wonders.",
- "batch_noir": "Dave t220u: \"i like that, switch to a gothic noir neon themes and do whatever you want, do 100 and mix up the topics\"."
+ "batch_noir": "Dave t220u: \"i like that, switch to a gothic noir neon themes and do whatever you want, do 100 and mix up the topics\".",
+ "batch_sapphon3d": "Dave t221u: 3D, high res from now on. 3boyd not found (WALL)."
 }

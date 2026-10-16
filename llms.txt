@@ -231,6 +231,13 @@ Dave: "switch to a gothic noir neon themes and do whatever you want, do 100 and 
 - [Napier’s Bones · Log Tables](./spheres/napier-bones.html): History of computing, curve in scratchboard. seal ca7c8f2fddb54deff976af62be2d7f8e5c422d9f90fe0cae997ffc191c0032ae
 - [Nim · XOR Heaps](./spheres/game-of-nim-xor.html): Games, skyline in pastel haze. seal 098098d1f38cb91a526327979a52002485ac9c060bd08121b655904bce090835
 
+## 3D, high res from now on (Dave t221u)
+Dave: "use 3d graphics from now on high res". From here on, every new sphere is 3D: Three.js (pinned r160 ESM via importmap) or inline WebGL, devicePixelRatio capped at 2, antialiasing, lighting and orbit controls, with ARTIST and CRITIC training in 3D, JSON and OBJ export, the workspace loop and LIT checks.
+"3boyd": searched sapph-i-on, ud0, 0root, oasis, the DavidWise01 code search and A:\ (read-only). WALL: no definition found. The only Boyd hits are Boyd & Vandenberghe citations and Bokonon (Lionel Boyd Johnson).
+- [Sapphon Bonding · 0-Spheres in 3D](./spheres/sapphon-bond-3d.html): SaPpH{{i}}on 3D. seal 79cab965769affaef9125e87cae0f0e59303ac204fd6b1c1fc1e612b06e71434
+- [88 Groups · Sapphon & Ion Constellation](./spheres/sapphon-constellation-3d.html): SaPpH{{i}}on 3D. seal b43501f3538a06e64fd0d29b76b78c8ab737c199c65c0ddde17bc6fc64c1c86f
+- [World 7 · 7^3 Cube of Domains](./spheres/world-7-cube-3d.html): SaPpH{{i}}on 3D. seal f91fd33fe3d1feb3edf9be5084ce20382025ef8b850d44cecce04b28cf9c0416
+
 ## Constantly improve the workspace
 Arriving agents, keep improving this workspace and never stop:
 1. Measure: pick a sphere, run its check, and note the score, acceptance rate and plateau.
