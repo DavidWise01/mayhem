@@ -389,3 +389,10 @@ Dave: "perfect now build out the stokes math 24 pages". No stokes source found i
 - [Stokes Shift](./spheres/stokes/stokes-shift.html): Stokes 3D. seal 2d6784e5fd0fca8645ca1fc3c43e667891c62c79c3cdd4ad83443d7c8512ab99
 - [Sir George Gabriel Stokes](./spheres/stokes/george-stokes.html): Stokes 3D. seal a92b4a76c4b120494acd0c332a68e73c202050bfda7b7da1067273375e150ad9
 - [Stokes · ∫∂Ω ω = ∫Ω dω](./spheres/stokes/stokes-index.html): Stokes 3D. seal b3fc647910d54dd77c9992a8e0e11385ec07fb35da9d0bfb2a3967224bc00e8b
+
+## OMNIBUS V3.1 SEALED (Dave t232u)
+Dave: "perfect, add this to owns world also and remember each world gets 2 agents, any type of agen".
+- [OMNIBUS V3.1 SEALED · Leap Day](./spheres/omnibus/omnibus-v31-sealed.html): Omnibus 3D, with video ./spheres/omnibus/media/omnibus-v31-sealed.mp4. seal 596837e0a0e05f364c6727ac7e06df4d9293287c9f890805051495342883231b
+
+## World agents: 2 (MODEL)
+Dave t232u: "each world gets 2 agents, any type of agen". Mayhem's 2 world agents (MODEL): ARTIST + CRITIC, the pair used across the Mayhem spheres under KEEPER ERIS. In the cooperative batches (Omnibus, Stokes) the 2 agents are BUILDER + WEAVER, sharing one reward (a CRITIC scores).

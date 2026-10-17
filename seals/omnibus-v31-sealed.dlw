@@ -1,0 +1,1 @@
+{"slug": "omnibus-v31-sealed", "seal": "596837e0a0e05f364c6727ac7e06df4d9293287c9f890805051495342883231b", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

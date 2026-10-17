@@ -2686,6 +2686,15 @@
     "seal": "67d9cb138a4beede39ca81e99514528a29ef0cf39545b46195791fa95c04c3bd",
     "crumb": "INDEX",
     "path": "spheres/omnibus/omnibus-index.html"
+   },
+   {
+    "name": "OMNIBUS V3.1 SEALED · Leap Day",
+    "slug": "omnibus-v31-sealed",
+    "blurb": "OMNIBUS V3.1 SEALED: Dave's Leap Day 2024 video (1x1.1 growth, RGB Pulsars, 98% Gravity, 2% Gold, FAMILY FIRST ETHIC, POSTERITY $0.99) set in 3D, with two cooperating agents.",
+    "seal": "596837e0a0e05f364c6727ac7e06df4d9293287c9f890805051495342883231b",
+    "crumb": "V3.1 SEALED",
+    "path": "spheres/omnibus/omnibus-v31-sealed.html",
+    "video": "spheres/omnibus/media/omnibus-v31-sealed.mp4"
    }
   ]
  },
@@ -2895,5 +2904,19 @@
     "path": "spheres/stokes/stokes-index.html"
    }
   ]
+ },
+ "batch_omnibus_v31": "Dave t232u: perfect, add this to owns world also and remember each world gets 2 agents, any type of agen",
+ "world_agents": {
+  "count": 2,
+  "agents": [
+   "ARTIST",
+   "CRITIC"
+  ],
+  "cooperative_batches": [
+   "BUILDER",
+   "WEAVER"
+  ],
+  "said": "Dave t232u: each world gets 2 agents, any type of agen",
+  "label": "MODEL"
  }
 }
