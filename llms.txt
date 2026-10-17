@@ -516,6 +516,7 @@ Creative-freedom batch: 2025-2026 JWST (MoM-z14, PAN-z14-1, Abell2744-QSO1, RBH-
 ## Protein Folding 3D (t249)
 Dave t249u verbatim: "perfect im gonna run it, can you build some pages on protein folding, the math and the difficulty, edutaiton please, use this wasm engine"
 Educational batch on protein folding math and difficulty, computed on Dave's I-13 direct WASM engine (v0.3, copied verbatim to spheres/protein-folding/engine/; every page re-emits the module and checks SHA-256 5295b80d8f87007ca898d526c09fc2bfb4d586b53966b984f99845a9d8fa4b7d before running). Agents ARTIST + CRITIC (MODEL). Board key mayhem-protein-folding-board. Sources cited on each page.
+Dave's own verifier passes: with his source i13-suite-v0.3.html (sha256 537608007d2e80382529bc557d7c698ea54a129703cb3c339b09f0ce1268a34e) placed unchanged at engine/i13-download/, `node verify-i13-direct.js` returns PASS, and build-i13-direct.js reproduces the shipped engine html byte for byte.
 - [Protein Folding · Index](./spheres/protein-folding/protein-folding-index.html): Protein Folding 3D. seal 4fb8b77ec6dc42c3fb62006353c81f8a073fe1525942575365c8b957b711c0ec
 - [Levinthal’s Paradox · 3²⁰⁰ vs a Millisecond](./spheres/protein-folding/levinthal-paradox.html): Protein Folding 3D. seal 9e90d74fba3538dfc1ad527c32c9fd18b653857a44c4f5f2c1b45850a28598ae
 - [Anfinsen’s Dogma · The Sequence Knows](./spheres/protein-folding/anfinsen-dogma.html): Protein Folding 3D. seal 15723ebbe4fdbf3af5616c23a4b9cd608471d35d3e96b272b2974e427e17250d
