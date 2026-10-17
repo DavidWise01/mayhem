@@ -3757,5 +3757,113 @@
     "crumb": "INDEX"
    }
   ]
+ },
+ "batch_protein_folding": {
+  "said": [
+   "Dave t249u: perfect im gonna run it, can you build some pages on protein folding, the math and the difficulty, edutaiton please, use this wasm engine"
+  ],
+  "folder": "spheres/protein-folding",
+  "count": 13,
+  "agents": "ARTIST + CRITIC; localStorage mayhem-protein-folding-board (MODEL)",
+  "engine": {
+   "name": "I-13 direct WASM v0.3 (Dave's, verbatim)",
+   "path": "spheres/protein-folding/engine/",
+   "sha256": "5295b80d8f87007ca898d526c09fc2bfb4d586b53966b984f99845a9d8fa4b7d",
+   "note": "each page emits and verifies the module at startup, runs its numbers on the I-13 VM, and names what JS does instead (enumeration, random numbers, atan2, plotting)"
+  },
+  "sources_note": "each page lists browsed sources (Oct 2026)",
+  "pages": [
+   {
+    "name": "Protein Folding · Index",
+    "slug": "protein-folding-index",
+    "blurb": "Dave asked for protein folding: the math and the difficulty, as edutainment, on his I-13 WASM engine. 12 pages from Levinthal’s count to AlphaFold, each one booting the engine, checking its SHA-256 and running real folding math on the VM.",
+    "seal": "4fb8b77ec6dc42c3fb62006353c81f8a073fe1525942575365c8b957b711c0ec",
+    "crumb": "INDEX"
+   },
+   {
+    "name": "Levinthal’s Paradox · 3²⁰⁰ vs a Millisecond",
+    "slug": "levinthal-paradox",
+    "blurb": "A 100-residue chain has 200 backbone torsions. At 3 states each that is 3²⁰⁰ ≈ 2.7 × 10⁹⁵ shapes, so a blind search would outlast the universe by 10⁶⁵, yet small proteins fold in milliseconds or less.",
+    "seal": "9e90d74fba3538dfc1ad527c32c9fd18b653857a44c4f5f2c1b45850a28598ae",
+    "crumb": "MATH · THE COUNT"
+   },
+   {
+    "name": "Anfinsen’s Dogma · The Sequence Knows",
+    "slug": "anfinsen-dogma",
+    "blurb": "Anfinsen unfolded ribonuclease A, scrambled its 4 disulfides, and watched it refold to full activity. The native fold is the free-energy minimum, written in the sequence. Random pairing of 8 cysteines gives 105 options, and only 1 is native.",
+    "seal": "15723ebbe4fdbf3af5616c23a4b9cd608471d35d3e96b272b2974e427e17250d",
+    "crumb": "BIOLOGY · THERMODYNAMIC HYPOTHESIS"
+   },
+   {
+    "name": "Energy Landscapes & Folding Funnels",
+    "slug": "folding-funnel",
+    "blurb": "Folding is a descent on a rugged funnel: many high-entropy unfolded states at the rim, one low-energy native state at the bottom. The exact density of states of a 14-residue HP chain shows the funnel in numbers, with Z, P(native) and the heat-capacity peak.",
+    "seal": "f7d43ca97a8e18e15816d83ecc45cb87c8e37e5f2c4a8ee89f2eed819a55edb8",
+    "crumb": "PHYSICS · LANDSCAPE"
+   },
+   {
+    "name": "The HP Lattice · Fold It Yourself",
+    "slug": "hp-lattice-folder",
+    "blurb": "Dill’s HP model: residues are H (hydrophobic) or P (polar) on a lattice, and each non-bonded H–H contact scores −1. Fold the classic 20-mer benchmark by hand and let Dave’s I-13 VM count the energy and catch crossings from raw coordinates.",
+    "seal": "95b792d153581be9aeae8a4f8df27994517e794e6d6c0216cbaa03821e3c0203",
+    "crumb": "COMPUTING · INTERACTIVE FOLDER"
+   },
+   {
+    "name": "Why Folding Is NP-Hard",
+    "slug": "hp-np-hard",
+    "blurb": "Finding the lowest-energy HP fold is NP-complete in 2D (Crescenzi et al. 1998) and in 3D (Berger & Leighton 1998). The number of chain shapes grows like 2.638ⁿ on the square lattice, so exact search hits a wall long before real protein sizes.",
+    "seal": "8f74b964b6574df75c641f8d60f5dc876867a0c1ac0e9bc3c24f355f522b4284",
+    "crumb": "MATH · COMPLEXITY"
+   },
+   {
+    "name": "Ramachandran Plot · φ and ψ",
+    "slug": "ramachandran-phi-psi",
+    "blurb": "Each residue’s backbone has two free torsions, φ (C–N–Cα–C) and ψ (N–Cα–C–N). The peptide bond ω is fixed near 180°. Atoms clash in most of the φ/ψ square, so helices and sheets sit in a few allowed islands. Click the plot to set φ and ψ, and the I-13 VM measures them back from the built atoms.",
+    "seal": "9b67a15d0eca425c4b8adbf2c9d1f59b55ad4085dac661888baccf907571e9dd",
+    "crumb": "BIOLOGY · BACKBONE ANGLES"
+   },
+   {
+    "name": "α-Helix & β-Sheet · 3.6 per Turn",
+    "slug": "helix-and-sheet",
+    "blurb": "Pauling’s α-helix has 3.6 residues per turn, a 1.5 Å rise and a 5.4 Å pitch, with each C=O bonded to the N–H four residues on. β-strands lie about 3.3 Å per residue and pair into sheets. The I-13 VM builds the helix with its own sine series.",
+    "seal": "e7ee23f0a51a0fcf362a32dec11dc22a6f390f939290e77fd1e092a3d9a63282",
+    "crumb": "BIOLOGY · SECONDARY STRUCTURE"
+   },
+   {
+    "name": "ΔG = ΔH − TΔS · Two-State Folding",
+    "slug": "two-state-folding",
+    "blurb": "Proteins are only marginally stable, often 5–15 kcal/mol, the small difference of two huge terms ΔH and TΔS. With a heat-capacity change ΔC_p the stability curve bends down at both ends: heat and cold denaturation. Two-state kinetics give the chevron plot.",
+    "seal": "57faf03ca89dcf10fdb0075ef101d2a811ef8df0bec40f6eefc791cb2a145e0e",
+    "crumb": "PHYSICS · THERMODYNAMICS & KINETICS"
+   },
+   {
+    "name": "Metropolis & Simulated Annealing",
+    "slug": "metropolis-annealing",
+    "blurb": "Metropolis (1953) keeps a move that raises the energy by ΔE with probability e^(−ΔE/T). Annealing (Kirkpatrick 1983) lowers T slowly so the chain can escape traps. Here a 48-mer is annealed against a quench, with every acceptance table built by the I-13 VM.",
+    "seal": "14e2619bc24c36f9f8300131c62586b0e30cce1c420df086d717c9126bf8740a",
+    "crumb": "COMPUTING · MONTE CARLO"
+   },
+   {
+    "name": "Femtoseconds vs Milliseconds · MD & Anton",
+    "slug": "md-timescales",
+    "blurb": "Molecular dynamics must step at about 2 fs to follow bond vibrations (a C–H stretch lasts 11 fs), but folding takes µs to s. That is 10⁹–10¹⁵ steps. D. E. Shaw’s Anton machines reached 85 and then 212 µs/day on the DHFR benchmark.",
+    "seal": "4b7fd3405b2edc0c24421f462ddf6a6b03159d5d89c97f760ec8ac7529c78962",
+    "crumb": "PHYSICS · MOLECULAR DYNAMICS"
+   },
+   {
+    "name": "AlphaFold2 & CASP14 · Solved and Unsolved",
+    "slug": "alphafold-casp14",
+    "blurb": "At CASP14 (2020), AlphaFold2 reached a median domain GDT_TS of 92.4 and 0.96 Å backbone accuracy, against 2.8 Å for the next best method. It largely solved single-chain structure prediction, but not how proteins fold, how they move, or disorder.",
+    "seal": "0fd953da9db9b544f5efcf3e7a9f4667c6b98ce33a863dcf02a37d9624ef21c1",
+    "crumb": "AI · STRUCTURE PREDICTION"
+   },
+   {
+    "name": "Misfolding · Prions & Amyloid",
+    "slug": "misfolding-amyloid",
+    "blurb": "Misfolded proteins can stack into amyloid, cross-β fibrils with strands 4.7 Å apart and sheets about 10 Å apart, linked to Alzheimer’s, Parkinson’s and prion disease. Growth is sigmoidal, and adding seed fibrils removes the lag.",
+    "seal": "761c451b32e01b742f64b3456108b31f56682f97b687307773d4bba41d8a3ac6",
+    "crumb": "BIOLOGY · WHEN IT GOES WRONG"
+   }
+  ]
  }
 }

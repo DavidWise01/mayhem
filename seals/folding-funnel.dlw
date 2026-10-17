@@ -1,0 +1,1 @@
+{"slug": "folding-funnel", "seal": "f7d43ca97a8e18e15816d83ecc45cb87c8e37e5f2c4a8ee89f2eed819a55edb8", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

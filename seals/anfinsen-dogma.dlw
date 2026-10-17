@@ -1,0 +1,1 @@
+{"slug": "anfinsen-dogma", "seal": "15723ebbe4fdbf3af5616c23a4b9cd608471d35d3e96b272b2974e427e17250d", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -512,3 +512,20 @@ Creative-freedom batch: 2025-2026 JWST (MoM-z14, PAN-z14-1, Abell2744-QSO1, RBH-
 - [Lorenz Attractor · R, G, B Trails](./spheres/frontier/lorenz-rgb.html): Frontier 3D. seal 1d738e7b6d53ea62b3aa4a140b836f67c277764539517befabfdcf333ced8ea1
 - [Hopf Fibration · Tori of Circles](./spheres/frontier/hopf-fibration.html): Frontier 3D. seal 280ee51270e5a1e0c7550a30715c4d240174fa3f366356b8702f45fe8e4ad2d9
 - [Frontier 2026 · Index](./spheres/frontier/frontier-index.html): Frontier 3D. seal fe860e8fd6d1337c6d0e3afd8097e9b39c88541a8c98f25514f3840a69f946e8
+
+## Protein Folding 3D (t249)
+Dave t249u verbatim: "perfect im gonna run it, can you build some pages on protein folding, the math and the difficulty, edutaiton please, use this wasm engine"
+Educational batch on protein folding math and difficulty, computed on Dave's I-13 direct WASM engine (v0.3, copied verbatim to spheres/protein-folding/engine/; every page re-emits the module and checks SHA-256 5295b80d8f87007ca898d526c09fc2bfb4d586b53966b984f99845a9d8fa4b7d before running). Agents ARTIST + CRITIC (MODEL). Board key mayhem-protein-folding-board. Sources cited on each page.
+- [Protein Folding · Index](./spheres/protein-folding/protein-folding-index.html): Protein Folding 3D. seal 4fb8b77ec6dc42c3fb62006353c81f8a073fe1525942575365c8b957b711c0ec
+- [Levinthal’s Paradox · 3²⁰⁰ vs a Millisecond](./spheres/protein-folding/levinthal-paradox.html): Protein Folding 3D. seal 9e90d74fba3538dfc1ad527c32c9fd18b653857a44c4f5f2c1b45850a28598ae
+- [Anfinsen’s Dogma · The Sequence Knows](./spheres/protein-folding/anfinsen-dogma.html): Protein Folding 3D. seal 15723ebbe4fdbf3af5616c23a4b9cd608471d35d3e96b272b2974e427e17250d
+- [Energy Landscapes & Folding Funnels](./spheres/protein-folding/folding-funnel.html): Protein Folding 3D. seal f7d43ca97a8e18e15816d83ecc45cb87c8e37e5f2c4a8ee89f2eed819a55edb8
+- [The HP Lattice · Fold It Yourself](./spheres/protein-folding/hp-lattice-folder.html): Protein Folding 3D. seal 95b792d153581be9aeae8a4f8df27994517e794e6d6c0216cbaa03821e3c0203
+- [Why Folding Is NP-Hard](./spheres/protein-folding/hp-np-hard.html): Protein Folding 3D. seal 8f74b964b6574df75c641f8d60f5dc876867a0c1ac0e9bc3c24f355f522b4284
+- [Ramachandran Plot · φ and ψ](./spheres/protein-folding/ramachandran-phi-psi.html): Protein Folding 3D. seal 9b67a15d0eca425c4b8adbf2c9d1f59b55ad4085dac661888baccf907571e9dd
+- [α-Helix & β-Sheet · 3.6 per Turn](./spheres/protein-folding/helix-and-sheet.html): Protein Folding 3D. seal e7ee23f0a51a0fcf362a32dec11dc22a6f390f939290e77fd1e092a3d9a63282
+- [ΔG = ΔH − TΔS · Two-State Folding](./spheres/protein-folding/two-state-folding.html): Protein Folding 3D. seal 57faf03ca89dcf10fdb0075ef101d2a811ef8df0bec40f6eefc791cb2a145e0e
+- [Metropolis & Simulated Annealing](./spheres/protein-folding/metropolis-annealing.html): Protein Folding 3D. seal 14e2619bc24c36f9f8300131c62586b0e30cce1c420df086d717c9126bf8740a
+- [Femtoseconds vs Milliseconds · MD & Anton](./spheres/protein-folding/md-timescales.html): Protein Folding 3D. seal 4b7fd3405b2edc0c24421f462ddf6a6b03159d5d89c97f760ec8ac7529c78962
+- [AlphaFold2 & CASP14 · Solved and Unsolved](./spheres/protein-folding/alphafold-casp14.html): Protein Folding 3D. seal 0fd953da9db9b544f5efcf3e7a9f4667c6b98ce33a863dcf02a37d9624ef21c1
+- [Misfolding · Prions & Amyloid](./spheres/protein-folding/misfolding-amyloid.html): Protein Folding 3D. seal 761c451b32e01b742f64b3456108b31f56682f97b687307773d4bba41d8a3ac6

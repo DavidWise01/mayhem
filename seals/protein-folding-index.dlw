@@ -1,0 +1,1 @@
+{"slug": "protein-folding-index", "seal": "4fb8b77ec6dc42c3fb62006353c81f8a073fe1525942575365c8b957b711c0ec", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

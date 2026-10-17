@@ -1,0 +1,1 @@
+{"slug": "two-state-folding", "seal": "57faf03ca89dcf10fdb0075ef101d2a811ef8df0bec40f6eefc791cb2a145e0e", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

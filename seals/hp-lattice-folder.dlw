@@ -1,0 +1,1 @@
+{"slug": "hp-lattice-folder", "seal": "95b792d153581be9aeae8a4f8df27994517e794e6d6c0216cbaa03821e3c0203", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

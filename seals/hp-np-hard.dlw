@@ -1,0 +1,1 @@
+{"slug": "hp-np-hard", "seal": "8f74b964b6574df75c641f8d60f5dc876867a0c1ac0e9bc3c24f355f522b4284", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

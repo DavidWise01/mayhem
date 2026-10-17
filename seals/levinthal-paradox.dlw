@@ -1,0 +1,1 @@
+{"slug": "levinthal-paradox", "seal": "9e90d74fba3538dfc1ad527c32c9fd18b653857a44c4f5f2c1b45850a28598ae", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

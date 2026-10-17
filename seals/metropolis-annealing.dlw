@@ -1,0 +1,1 @@
+{"slug": "metropolis-annealing", "seal": "14e2619bc24c36f9f8300131c62586b0e30cce1c420df086d717c9126bf8740a", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
