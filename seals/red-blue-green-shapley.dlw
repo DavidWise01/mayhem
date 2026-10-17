@@ -1,0 +1,1 @@
+{"slug": "red-blue-green-shapley", "seal": "d8f1d304e5b3223dbb60d9e3e1104e88cf433ef6c359ea10975d59198f37a718", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

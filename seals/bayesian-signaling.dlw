@@ -1,0 +1,1 @@
+{"slug": "bayesian-signaling", "seal": "392b884715b407409b2837c7a7f4bc76285a495e93be1ac54ffeead226eab6c8", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

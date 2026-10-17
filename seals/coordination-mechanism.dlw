@@ -1,0 +1,1 @@
+{"slug": "coordination-mechanism", "seal": "47c57bf8ed45a7c15a996001f119b9a1c39efb3e092a3851dd7996fd3736737c", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

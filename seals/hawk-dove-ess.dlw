@@ -1,0 +1,1 @@
+{"slug": "hawk-dove-ess", "seal": "ce65d171b06485890a72ede7665b95a9d6e4ce008dc9dde0af3445d4cbfc72c1", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

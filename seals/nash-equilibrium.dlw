@@ -1,0 +1,1 @@
+{"slug": "nash-equilibrium", "seal": "3afa08eb27967daee258c593cb6b2b2ba336b21b182a68889f4f8d32eaa1c7c1", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

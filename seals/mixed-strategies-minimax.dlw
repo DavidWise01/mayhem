@@ -1,0 +1,1 @@
+{"slug": "mixed-strategies-minimax", "seal": "d446ead8317ad58279fbdf5d6e6faaf96054fb0e2e1a6f0e3d51d3a7405d9b1b", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

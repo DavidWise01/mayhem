@@ -3865,5 +3865,150 @@
     "crumb": "BIOLOGY · WHEN IT GOES WRONG"
    }
   ]
+ },
+ "batch_game_theory_sapphons": {
+  "said": [
+   "Dave t252: i love that set up can you build some pages looking into game theory and those sappons you just built, see if you can build some folded stars and stuff"
+  ],
+  "folder": "spheres/game-theory-sapphons",
+  "count": 16,
+  "agents": "regret-matching pairs per page; localStorage mayhem-game-theory-sapphons-board (MODEL)",
+  "engine": {
+   "name": "I-13 direct WASM v0.3 (Dave's, verbatim)",
+   "path": "spheres/protein-folding/engine/ (referenced, not copied)",
+   "sha256": "5295b80d8f87007ca898d526c09fc2bfb4d586b53966b984f99845a9d8fa4b7d",
+   "note": "each page loads ../protein-folding/i13-loader.js, verifies the module, runs NashConv and its lab math on the I-13 VM; JS does random draws, acos and plotting"
+  },
+  "sources_note": "each page lists browsed sources (Oct 2026); DOIs checked against Crossref",
+  "pages": [
+   {
+    "name": "Nash Equilibrium · No Regrets",
+    "slug": "nash-equilibrium",
+    "blurb": "A Nash equilibrium is a strategy for each player such that nobody gains by changing alone. Nash proved in 1950 that every finite game has one if mixing is allowed. Type any 2 × 2 game and the I-13 VM finds every equilibrium, pure and mixed.",
+    "seal": "3afa08eb27967daee258c593cb6b2b2ba336b21b182a68889f4f8d32eaa1c7c1",
+    "crumb": "GAME THEORY · EQUILIBRIUM",
+    "cat": "Game theory"
+   },
+   {
+    "name": "Prisoner’s Dilemma · Axelrod’s Tournaments",
+    "slug": "prisoners-dilemma-axelrod",
+    "blurb": "In one round, defecting always pays more, yet two defectors do worse than two cooperators. Axelrod’s 1980 computer tournaments, with 14 entries and then 62, were both won by the simplest rule: TIT FOR TAT. Here 7 classic strategies replay a 200-move round-robin on the I-13 VM.",
+    "seal": "b4a6b025b06d957259255f0025b335c47a52783530ca8d6f91a03a2d2f052309",
+    "crumb": "GAME THEORY · COOPERATION",
+    "cat": "Game theory"
+   },
+   {
+    "name": "Mixed Strategies & Minimax",
+    "slug": "mixed-strategies-minimax",
+    "blurb": "Some games have no stable pure choice: in Matching Pennies or a penalty kick, any pattern can be exploited. The answer is to randomise. Von Neumann’s 1928 minimax theorem says every zero-sum game has a value that both sides can guarantee, and the I-13 VM finds it.",
+    "seal": "d446ead8317ad58279fbdf5d6e6faaf96054fb0e2e1a6f0e3d51d3a7405d9b1b",
+    "crumb": "GAME THEORY · ZERO-SUM",
+    "cat": "Game theory"
+   },
+   {
+    "name": "Hawk–Dove · Evolutionarily Stable Strategies",
+    "slug": "hawk-dove-ess",
+    "blurb": "Animals fighting over a resource of value V can escalate (Hawk) or display (Dove); escalating risks an injury costing C. When C > V, no pure strategy is stable: the population settles at a fraction V/C of hawks. Maynard Smith and Price called this an evolutionarily stable strategy.",
+    "seal": "ce65d171b06485890a72ede7665b95a9d6e4ce008dc9dde0af3445d4cbfc72c1",
+    "crumb": "GAME THEORY · EVOLUTION",
+    "cat": "Game theory"
+   },
+   {
+    "name": "Coordination & Mechanism Design",
+    "slug": "coordination-mechanism",
+    "blurb": "In a coordination game everyone wants to match, but there can be several equilibria: hunt the stag together, or each take a safe hare. Mechanism design runs the other way: choose the rules so selfish play gives the outcome you want. Vickrey’s second-price auction makes honest bidding optimal.",
+    "seal": "47c57bf8ed45a7c15a996001f119b9a1c39efb3e092a3851dd7996fd3736737c",
+    "crumb": "GAME THEORY · DESIGNING THE RULES",
+    "cat": "Game theory"
+   },
+   {
+    "name": "Repeated Games & the Folk Theorem",
+    "slug": "repeated-games-folk-theorem",
+    "blurb": "Play the Prisoner’s Dilemma again and again, and the future can discipline the present. If players value tomorrow enough (discount factor δ ≥ 1/2 here), grim trigger keeps cooperation going. The folk theorem says almost any fair-enough average payoff can be sustained.",
+    "seal": "fc816380d15838fa7dc5d55fc7a3d885b4f011a83956fc92760139652e5eae5f",
+    "crumb": "GAME THEORY · THE SHADOW OF THE FUTURE",
+    "cat": "Game theory"
+   },
+   {
+    "name": "Bayesian Games & Signaling",
+    "slug": "bayesian-signaling",
+    "blurb": "When players hold private information, they are of different types, and what they do can reveal their type. Harsanyi turned this into Bayesian games; Spence showed that costly education can signal productivity even when it teaches nothing. Both the separating and the pooling outcome can be equilibria.",
+    "seal": "392b884715b407409b2837c7a7f4bc76285a495e93be1ac54ffeead226eab6c8",
+    "crumb": "GAME THEORY · HIDDEN TYPES",
+    "cat": "Game theory"
+   },
+   {
+    "name": "Punch-Out Tells · The Rose Triad as a Signaling Game",
+    "slug": "punch-out-tells-triad",
+    "blurb": "Punch-Out opponents telegraph their attacks: a flash, a wind-up, a sound. Reading a tell is a signaling game, because the opponent can also feint. Here Dave’s rose triad (OBSERVE 0.3 s through the {{-2,0,3}} filter, RESPOND 0.2 s, SUB ID 0.1 s always watching .3.2) runs on the I-13 VM, frame by frame.",
+    "seal": "0a1fd09e52838fbfaff6365889688ee6175b67af978de5ab62958e2e8f2b59b2",
+    "crumb": "SAPPHON · REACTION TIME",
+    "cat": "Sapphons"
+   },
+   {
+    "name": "Three Streams · Trust as Bayesian Updating",
+    "slug": "sapphon-trust-bayes",
+    "blurb": "Patricia hears three streams. LS Patricia learns and reacts, Toph centers and observes, RS probes warily, and each watches a different third of the screen (the t245 COOP views). Fusing them well is Bayesian: keep a Beta belief in each stream and weight its vote by log-odds. The I-13 VM does the updating.",
+    "seal": "94d4ff5250032a786846d915ad7b96b189212ab422716fca4bd10a8376bf2855",
+    "crumb": "SAPPHON · COOP VIEWS",
+    "cat": "Sapphons"
+   },
+   {
+    "name": "RED · BLUE · GREEN · Shapley Values",
+    "slug": "red-blue-green-shapley",
+    "blurb": "Dave’s four-sapphon radial: RED (what happens to Patricia, and memory), BLUE (how to respond), GREEN (was it successful), with Patricia’s amethyst core making the final call. Treat the three as a coalition: how much of a good turn does each deserve? Shapley’s 1953 value answers that, and the I-13 VM computes it.",
+    "seal": "d8f1d304e5b3223dbb60d9e3e1104e88cf433ef6c359ea10975d59198f37a718",
+    "crumb": "SAPPHON · COOPERATIVE GAME",
+    "cat": "Sapphons"
+   },
+   {
+    "name": "The JIT Radial · ±1° per Turn as a Random Walk",
+    "slug": "jit-radial-random-walk",
+    "blurb": "Dave’s Just-In-Time radial: a 360° ring whose needle moves +1° when a turn worked and −1° when it failed, with two tracks: what was tried and what happened, and what has happened and why. Mathematically, the needle is a random walk. The I-13 VM computes its exact distribution and the gambler’s-ruin odds.",
+    "seal": "0b4b17952bdb888211bf11841b64822f344e8cb1bacf9fd82b0487b9121c0a6b",
+    "crumb": "SAPPHON · WIN–LOSS NEEDLE",
+    "cat": "Sapphons"
+   },
+   {
+    "name": "Star Polygons {n/k} · Schläfli",
+    "slug": "star-polygons-schlafli",
+    "blurb": "Join every k-th of n points on a circle and you draw the star polygon {n/k}. If gcd(n, k) = 1 it is one stroke; otherwise it falls apart into a compound, like the hexagram {6/2} = two triangles. The I-13 VM computes the gcd and every vertex with its own sine series.",
+    "seal": "c0f8a1d2a26a9b65572da15c629439afb18fbf2e88cd64d9288aaddcaaf22bf7",
+    "crumb": "FOLDED STARS · POLYGONS",
+    "cat": "Folded stars"
+   },
+   {
+    "name": "The Four Kepler–Poinsot Stars",
+    "slug": "kepler-poinsot",
+    "blurb": "There are exactly four regular star polyhedra. Kepler found the two stellated dodecahedra (1619), Poinsot added the great dodecahedron and great icosahedron (1809), and Cauchy proved there are no more (1813). All four are built here from the icosahedron’s and dodecahedron’s vertices, and the VM checks Euler and Cayley.",
+    "seal": "999d93a64852ebf5bd6adb81991c12efae132ee225391f54e3340fd1471dad57",
+    "crumb": "FOLDED STARS · REGULAR STAR POLYHEDRA",
+    "cat": "Folded stars"
+   },
+   {
+    "name": "Stella Octangula · Two Tetrahedra",
+    "slug": "stella-octangula",
+    "blurb": "Extend the eight faces of an octahedron until they meet again and you get Kepler’s stella octangula: two interpenetrating tetrahedra, eight points, the only stellation of the octahedron. It fills exactly half of its cube. Slide the fold and watch the caps rise.",
+    "seal": "9d79fd8b5deed46f51cea150af573fb85371f0542b81c334dc5390fad3ed3038",
+    "crumb": "FOLDED STARS · STELLATION",
+    "cat": "Folded stars"
+   },
+   {
+    "name": "Folded Paper Stars · Lucky Stars & Froebel",
+    "slug": "origami-folded-stars",
+    "blurb": "Tie a paper strip in an overhand knot, flatten it, and the knot is a regular pentagon. Wrap the rest of the strip around it and pinch the edges, and it puffs into a lucky star. Four woven strips make a 16-pointed Froebel star. The I-13 VM computes the pentagon and the fold angles.",
+    "seal": "a55571831e11da41fe5002806867ff4a73064071eab40b09ffdebcf4f07e3d40",
+    "crumb": "FOLDED STARS · ORIGAMI",
+    "cat": "Folded stars"
+   },
+   {
+    "name": "Game Theory & Sapphons · Index",
+    "slug": "game-theory-sapphons-index",
+    "blurb": "Dave asked for game theory, his sapphons, and folded stars. Fifteen pages: seven on real game theory, four that read Patricia’s sapphon architecture as games, and four on star polygons, star polyhedra and paper stars. Every page boots his I-13 engine, checks its SHA-256 and computes on the VM.",
+    "seal": "c0c110fd3209336edd990b844a7dc42a2f1abcb08220bac76230752b13daea00",
+    "crumb": "INDEX",
+    "cat": "Index"
+   }
+  ]
  }
 }

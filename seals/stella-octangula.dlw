@@ -1,0 +1,1 @@
+{"slug": "stella-octangula", "seal": "9d79fd8b5deed46f51cea150af573fb85371f0542b81c334dc5390fad3ed3038", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

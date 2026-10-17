@@ -1,0 +1,1 @@
+{"slug": "repeated-games-folk-theorem", "seal": "fc816380d15838fa7dc5d55fc7a3d885b4f011a83956fc92760139652e5eae5f", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
