@@ -1,0 +1,1 @@
+{"slug": "positronium-511", "seal": "53551e827691203f0d400997744dcf7a44cf1018e287c9264e25df453855d4ec", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

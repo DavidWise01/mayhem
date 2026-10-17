@@ -1,0 +1,1 @@
+{"slug": "cpt-symmetry", "seal": "989b12516da38355425e31bbc2db6c4e18c81075b5b1d6decadbfc6bda163cee", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

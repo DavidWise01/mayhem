@@ -1,0 +1,1 @@
+{"slug": "torus-euler", "seal": "3bba1f03cfd5d94e366e4b4de97302a6e266422241684643cdb894d639e54d9c", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

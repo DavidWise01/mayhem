@@ -1,0 +1,1 @@
+{"slug": "sakharov-conditions", "seal": "c322ba9d9fb8b3f399ba565a4ae9be5aeb892b25501a00b990d1d983c529b434", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

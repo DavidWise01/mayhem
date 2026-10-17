@@ -1,0 +1,1 @@
+{"slug": "three-way-interactions", "seal": "6d9f5af6e2f4ff75630f3165efa2bd164b6ee5b59b205cba40c37c5fbb604937", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -3092,5 +3092,264 @@
    }
   ]
  },
- "star_scale_t234": "Dave t234u (verbatim in llms.txt). 10 colours: white, black, red , blue, green , yellow,  orange, purple , brown , void/silver; object mapping MODEL"
+ "star_scale_t234": "Dave t234u (verbatim in llms.txt). 10 colours: white, black, red , blue, green , yellow,  orange, purple , brown , void/silver; object mapping MODEL",
+ "batch_torus_stars": {
+  "said": [
+   "Dave t237u: well there is three types of stars aroudn the torroid ant that antimatter , matter , gravity",
+   "Dave t238u: yes please, max capacity"
+  ],
+  "dave_model": "three types of stars around the toroid: antimatter, matter, gravity",
+  "repo_search": "no explicit three-star-type toroid model found (WALL); related verbatim quotes from 0root aeon-dot-v2/final-form and I13-H1.1 CORTEX-TOROID5 on dave-toroid-sources",
+  "agents": "BUILDER + WEAVER + CRITIC; localStorage mayhem-torus-board (MODEL)",
+  "pages": [
+   {
+    "name": "The Toroid and Its Three Stars",
+    "slug": "torus-three-stars",
+    "blurb": "Dave's model in 3D: matter stars (gold), antimatter stars (violet) and gravity stars (black, with accretion rings) orbiting one toroid.",
+    "seal": "ba28b9be5fa7b4e41ab7af89500bc68f2ed075ba1a658bec49990be8a2787d0d",
+    "crumb": "DAVE'S MODEL",
+    "path": "spheres/torus-stars/torus-three-stars.html"
+   },
+   {
+    "name": "Matter Stars",
+    "slug": "matter-star",
+    "blurb": "Matter stars: every star we have ever observed. The Sun turns 4.26 million tonnes of mass into light every second.",
+    "seal": "b5eeb9253f6f5d47a0aeeaf63657c1f61fe6cfa3732b10efeee6030afdd91bd3",
+    "crumb": "DAVE'S MODEL · MATTER",
+    "path": "spheres/torus-stars/matter-star.html"
+   },
+   {
+    "name": "Antimatter Stars",
+    "slug": "antimatter-star",
+    "blurb": "Antimatter stars: by CPT symmetry an antistar would shine exactly like a star. You could only tell them apart by the 511 keV and pion-decay gamma rays where it touches ordinary matter.",
+    "seal": "a89d0c58ff4f902b58ca2e0a87425b49e97be407dee1e299d6b154dd9ca46ba3",
+    "crumb": "DAVE'S MODEL · ANTIMATTER",
+    "path": "spheres/torus-stars/antimatter-star.html"
+   },
+   {
+    "name": "Gravity Stars",
+    "slug": "gravity-star",
+    "blurb": "Gravity stars: the objects that are mostly gravity. Black holes are real. Gravastars and boson stars are hypothetical. Gravitational-wave sources are where we actually \"see\" them.",
+    "seal": "9a7682d5f6399876ab3bf1f4abd774c5305ff81fedfdf0de64844215c90a0127",
+    "crumb": "DAVE'S MODEL · GRAVITY",
+    "path": "spheres/torus-stars/gravity-star.html"
+   },
+   {
+    "name": "Annihilation · E = mc²",
+    "slug": "annihilation-e-mc2",
+    "blurb": "When matter meets antimatter, 100% of the rest mass becomes energy. One gram of each gives about 43 kilotons of TNT.",
+    "seal": "577d6ce476c441feacc3278e066aa87e142bfcc3964205f3a8f865171fe5781b",
+    "crumb": "ANNIHILATION",
+    "path": "spheres/torus-stars/annihilation-e-mc2.html"
+   },
+   {
+    "name": "Positronium & the 511 keV Line",
+    "slug": "positronium-511",
+    "blurb": "An electron and a positron briefly orbit each other as positronium, then annihilate into gamma rays of exactly m_e c² = 511 keV.",
+    "seal": "53551e827691203f0d400997744dcf7a44cf1018e287c9264e25df453855d4ec",
+    "crumb": "ANNIHILATION",
+    "path": "spheres/torus-stars/positronium-511.html"
+   },
+   {
+    "name": "The Galactic 511 keV Glow",
+    "slug": "galactic-511",
+    "blurb": "The Milky Way's centre glows at 511 keV: positrons annihilate there at about 10⁴³ per second, and their source is still a mystery.",
+    "seal": "b630d96646105dca4eb47c9daf6a0a0eae447a2156792ab1fc6209b8ec676d58",
+    "crumb": "ANNIHILATION",
+    "path": "spheres/torus-stars/galactic-511.html"
+   },
+   {
+    "name": "Baryon Asymmetry",
+    "slug": "baryon-asymmetry",
+    "blurb": "Why is there anything at all? For every ~1.6 billion photons there is about one baryon, and almost no antibaryons.",
+    "seal": "63c833ea5f1eecca8275f76ac8ef94f2367469011f7d349257be693713739d89",
+    "crumb": "ASYMMETRY",
+    "path": "spheres/torus-stars/baryon-asymmetry.html"
+   },
+   {
+    "name": "Sakharov's Three Conditions",
+    "slug": "sakharov-conditions",
+    "blurb": "Andrei Sakharov, 1967: to make more matter than antimatter, a universe needs three things.",
+    "seal": "c322ba9d9fb8b3f399ba565a4ae9be5aeb892b25501a00b990d1d983c529b434",
+    "crumb": "ASYMMETRY",
+    "path": "spheres/torus-stars/sakharov-conditions.html"
+   },
+   {
+    "name": "CP Violation · Kaons",
+    "slug": "cp-violation",
+    "blurb": "1964: neutral kaons decayed in a way that broke CP symmetry, the first crack between matter and antimatter.",
+    "seal": "5fd02e60399b1bc3bd0671cf17ef391ac797c232b1a340fc05c0c6d41cfd4d85",
+    "crumb": "ASYMMETRY",
+    "path": "spheres/torus-stars/cp-violation.html"
+   },
+   {
+    "name": "CPT Symmetry",
+    "slug": "cpt-symmetry",
+    "blurb": "Flip charge, mirror space and reverse time together, and physics stays the same. That is why an antistar would look exactly like a star.",
+    "seal": "989b12516da38355425e31bbc2db6c4e18c81075b5b1d6decadbfc6bda163cee",
+    "crumb": "SYMMETRY",
+    "path": "spheres/torus-stars/cpt-symmetry.html"
+   },
+   {
+    "name": "ALPHA · Antihydrogen Spectrum",
+    "slug": "alpha-antihydrogen-1s2s",
+    "blurb": "CERN's ALPHA experiment shone a 243 nm laser on trapped antihydrogen. The 1S–2S line matched hydrogen to about 2 parts in 10¹².",
+    "seal": "9631cd98a1ddf5f44291e3c8bcbea0a9f7447c25053c10c401e547b46fb2a1fd",
+    "crumb": "CPT TEST",
+    "path": "spheres/torus-stars/alpha-antihydrogen-1s2s.html"
+   },
+   {
+    "name": "ALPHA-g · Antimatter Falls Down",
+    "slug": "antihydrogen-gravity",
+    "blurb": "2023: ALPHA-g let antihydrogen fall. It fell down, at about 0.75 g with large errors, consistent with ordinary gravity.",
+    "seal": "d45867df50a8355e4b0dc8339f8546247671a67f7bbd02b03bd6371443665171",
+    "crumb": "GRAVITY TEST",
+    "path": "spheres/torus-stars/antihydrogen-gravity.html"
+   },
+   {
+    "name": "Antiprotons in Cosmic Rays",
+    "slug": "cosmic-ray-antiprotons",
+    "blurb": "Cosmic rays contain about 1 antiproton per 10,000 protons, made in collisions rather than in antistars.",
+    "seal": "6b8ec433adeb8849ac6a39dd9467b8e589231d611db709b7b24342156fc964b6",
+    "crumb": "COSMIC RAYS",
+    "path": "spheres/torus-stars/cosmic-ray-antiprotons.html"
+   },
+   {
+    "name": "The Positron Excess",
+    "slug": "positron-excess",
+    "blurb": "PAMELA (2009) and AMS-02 found more high-energy positrons than expected, rising above ~10 GeV.",
+    "seal": "b1d326a7d9b922d606a233d8d1c8aeb06c78456248feede03346f0e322751773",
+    "crumb": "COSMIC RAYS",
+    "path": "spheres/torus-stars/positron-excess.html"
+   },
+   {
+    "name": "AMS-02 Antihelium & Antistar Limits",
+    "slug": "ams-antihelium",
+    "blurb": "An antihelium nucleus would be hard to make by collisions, which is why AMS-02's handful of candidates attracted attention.",
+    "seal": "a37335f9e31c53d1a0d0b6eff71046d876f3aef1eedc5b28fd9333b8c3b5e457",
+    "crumb": "COSMIC RAYS",
+    "path": "spheres/torus-stars/ams-antihelium.html"
+   },
+   {
+    "name": "Black Holes · Schwarzschild",
+    "slug": "black-hole-schwarzschild",
+    "blurb": "Schwarzschild found the first black-hole solution in 1916, in a WWI trench. A 10-solar-mass black hole is 59 km across.",
+    "seal": "9a25259014a9ce796b2e7bc4221669b3c4ad8f3f436c8df2e1ae0d265caaa03d",
+    "crumb": "GRAVITY",
+    "path": "spheres/torus-stars/black-hole-schwarzschild.html"
+   },
+   {
+    "name": "Gravastars",
+    "slug": "gravastar",
+    "blurb": "A gravastar (Mazur and Mottola, 2001): a hypothetical shell of exotic matter around a de Sitter vacuum core, with no horizon and no singularity.",
+    "seal": "ddd7b160eb8087f5a583532960d8387c612efbc362b133bfd30f166f24f8df8c",
+    "crumb": "HYPOTHETICAL",
+    "path": "spheres/torus-stars/gravastar.html"
+   },
+   {
+    "name": "Boson Stars",
+    "slug": "boson-star",
+    "blurb": "A boson star is a hypothetical star made of a scalar field: a giant coherent wave held together by its own gravity.",
+    "seal": "09266f146a685a4ed92a6e39a61952157803cf1f77d4589a5fa5931386bb9fc5",
+    "crumb": "HYPOTHETICAL",
+    "path": "spheres/torus-stars/boson-star.html"
+   },
+   {
+    "name": "GW150914 · The First Chirp",
+    "slug": "ligo-gw150914",
+    "blurb": "14 Sept 2015: LIGO heard two black holes of 36 and 29 suns merge into one of 62. Three suns' worth of mass left as gravitational waves.",
+    "seal": "4e9e721b5a8d6c2c06bd5be906d07cc5dd4b22591611155837366ea8938ee24c",
+    "crumb": "GRAVITATIONAL WAVES",
+    "path": "spheres/torus-stars/ligo-gw150914.html"
+   },
+   {
+    "name": "LIGO · Measuring 10⁻¹⁸ m",
+    "slug": "gravitational-waves",
+    "blurb": "LIGO's 4 km arms change length by a thousandth of a proton's width. Gravity stars announce themselves this way.",
+    "seal": "db7ffaa9a2f483b551cc8714bed99526c5c76571a440c0924a988277b9ec832f",
+    "crumb": "GRAVITATIONAL WAVES",
+    "path": "spheres/torus-stars/gravitational-waves.html"
+   },
+   {
+    "name": "The Torus · Euler Characteristic 0",
+    "slug": "torus-euler",
+    "blurb": "A torus has V − E + F = 0: genus 1, one hole, the shape of Dave's toroid.",
+    "seal": "3bba1f03cfd5d94e366e4b4de97302a6e266422241684643cdb894d639e54d9c",
+    "crumb": "TOPOLOGY",
+    "path": "spheres/torus-stars/torus-euler.html"
+   },
+   {
+    "name": "The Flat Torus",
+    "slug": "flat-torus",
+    "blurb": "Glue the opposite edges of a square and you get a torus with zero curvature everywhere. Pac-Man and Asteroids are played on one.",
+    "seal": "56d0fe9ee3b34affc4a44bc6cf44dea959fe9014b1b7517d1cfedb5ad31f0019",
+    "crumb": "TOPOLOGY",
+    "path": "spheres/torus-stars/flat-torus.html"
+   },
+   {
+    "name": "Torus Knots",
+    "slug": "torus-knots",
+    "blurb": "A (p,q) torus knot winds p times around one way and q times around the other. The trefoil is (2,3).",
+    "seal": "7f87cd875a156bd2523d7df37dff8bad8d728c70d251b1a86a5205ac065a63c6",
+    "crumb": "TOPOLOGY",
+    "path": "spheres/torus-stars/torus-knots.html"
+   },
+   {
+    "name": "Tokamak · Plasma Toroid",
+    "slug": "tokamak",
+    "blurb": "A tokamak bottles a star in a toroid. ITER aims for 500 MW of fusion power from 50 MW of heating.",
+    "seal": "4d2dd08e6afc7a288790c14ccd6eff66675ff519c1bb7d2c43408fbf57e3f1d5",
+    "crumb": "TOROIDS IN PHYSICS",
+    "path": "spheres/torus-stars/tokamak.html"
+   },
+   {
+    "name": "Toroidal Fields Inside Stars",
+    "slug": "stellar-toroidal-fields",
+    "blurb": "Inside the Sun, differential rotation winds poloidal field lines into toroidal bands: the Ω-effect of the solar dynamo.",
+    "seal": "6b952d270df25b5233a2f143d57c87d48d645e4d38e178e8f2c723d40b8ca1a7",
+    "crumb": "TOROIDS IN PHYSICS",
+    "path": "spheres/torus-stars/stellar-toroidal-fields.html"
+   },
+   {
+    "name": "Penning Traps · Holding Antimatter",
+    "slug": "penning-trap",
+    "blurb": "Antimatter is stored in Penning traps: a strong magnetic field plus electric end-caps. CERN's BASE kept antiprotons for over a year.",
+    "seal": "681176a922558e7eee9480fd63e1934fe7599a5a5ec0da14905f27033113bf51",
+    "crumb": "TOROIDS IN PHYSICS",
+    "path": "spheres/torus-stars/penning-trap.html"
+   },
+   {
+    "name": "The Ideal Toroid · Ampère",
+    "slug": "toroid-ampere",
+    "blurb": "Inside a wound toroid the field is B = μ₀NI/(2πr). Outside it is zero, which is why the toroid is the perfect magnetic bottle in textbooks.",
+    "seal": "71beb232efb703fd04ef12676d41d7a537b3467839a02675e3c070c75c2ce6ea",
+    "crumb": "TOROIDS IN PHYSICS",
+    "path": "spheres/torus-stars/toroid-ampere.html"
+   },
+   {
+    "name": "Matter × Antimatter × Gravity",
+    "slug": "three-way-interactions",
+    "blurb": "How Dave's three types would interact: matter and antimatter annihilate (100%), both fall into gravity stars (up to 5.7–42%), and matter stars burn by fusion (0.7%).",
+    "seal": "6d9f5af6e2f4ff75630f3165efa2bd164b6ee5b59b205cba40c37c5fbb604937",
+    "crumb": "INTERACTIONS",
+    "path": "spheres/torus-stars/three-way-interactions.html"
+   },
+   {
+    "name": "Dave's Toroid Sources · Verbatim",
+    "slug": "dave-toroid-sources",
+    "blurb": "What Dave's repos already say about matter, antimatter and the toroid, quoted verbatim from 0root and I13-H1.1.",
+    "seal": "df8a45763ff3afeb96eb462a402c422298cf008dbf076968a6ffd75fee4f2837",
+    "crumb": "SOURCES",
+    "path": "spheres/torus-stars/dave-toroid-sources.html"
+   },
+   {
+    "name": "Torus Stars · Antimatter, Matter, Gravity",
+    "slug": "torus-index",
+    "blurb": "Dave's three star types around the toroid (antimatter, matter, gravity) in 31 3D pages, with the real physics alongside: annihilation, baryon asymmetry, CPT, ALPHA, cosmic rays, black holes, LIGO, torus topology and tokamaks.",
+    "seal": "383abbe498b94a7ce51363165a5e1a841759744e79f1b13ce540759ad501d1cf",
+    "crumb": "INDEX",
+    "path": "spheres/torus-stars/torus-index.html"
+   }
+  ]
+ }
 }

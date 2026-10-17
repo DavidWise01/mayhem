@@ -422,3 +422,37 @@ Dave: "more art please, but this is physics, think nitrogen star, hydrogen star 
 ## Star Scale & Spectroscopy (Dave t234u)
 Dave: "i love that, can you make one on what the scale difference and the biggrsts stars we know and the spectogrophay pleasse. thinking this 10 colors or so , white, black, red , blue, green , yellow,  orange, purple , brown , void/silver".
 - [Star Scale & Spectroscopy · 10 Colours](./spheres/nho-stars/star-scale-spectroscopy.html): N·H·O Stars 3D. seal a940cf5286163b4c1b7eb037aefe74140bab8423776835beb1928a4fde0f8d77
+
+## Torus Stars, 31 pages in 3D (Dave t237u/t238u)
+Dave: "well there is three types of stars aroudn the torroid ant that antimatter , matter , gravity" / "yes please, max capacity". Dave's model, kept verbatim: antimatter, matter and gravity stars around a toroid. Real-physics notes are separate: no antimatter star observed (WALL); Dupourqué et al. 2021 limits and AMS-02 antihelium candidates are AMBER; gravastars and boson stars are hypothetical. Two cooperative agents (BUILDER + WEAVER) with a CRITIC; the shared board is localStorage mayhem-torus-board.
+- [The Toroid and Its Three Stars](./spheres/torus-stars/torus-three-stars.html): Torus Stars 3D. seal ba28b9be5fa7b4e41ab7af89500bc68f2ed075ba1a658bec49990be8a2787d0d
+- [Matter Stars](./spheres/torus-stars/matter-star.html): Torus Stars 3D. seal b5eeb9253f6f5d47a0aeeaf63657c1f61fe6cfa3732b10efeee6030afdd91bd3
+- [Antimatter Stars](./spheres/torus-stars/antimatter-star.html): Torus Stars 3D. seal a89d0c58ff4f902b58ca2e0a87425b49e97be407dee1e299d6b154dd9ca46ba3
+- [Gravity Stars](./spheres/torus-stars/gravity-star.html): Torus Stars 3D. seal 9a7682d5f6399876ab3bf1f4abd774c5305ff81fedfdf0de64844215c90a0127
+- [Annihilation · E = mc²](./spheres/torus-stars/annihilation-e-mc2.html): Torus Stars 3D. seal 577d6ce476c441feacc3278e066aa87e142bfcc3964205f3a8f865171fe5781b
+- [Positronium & the 511 keV Line](./spheres/torus-stars/positronium-511.html): Torus Stars 3D. seal 53551e827691203f0d400997744dcf7a44cf1018e287c9264e25df453855d4ec
+- [The Galactic 511 keV Glow](./spheres/torus-stars/galactic-511.html): Torus Stars 3D. seal b630d96646105dca4eb47c9daf6a0a0eae447a2156792ab1fc6209b8ec676d58
+- [Baryon Asymmetry](./spheres/torus-stars/baryon-asymmetry.html): Torus Stars 3D. seal 63c833ea5f1eecca8275f76ac8ef94f2367469011f7d349257be693713739d89
+- [Sakharov's Three Conditions](./spheres/torus-stars/sakharov-conditions.html): Torus Stars 3D. seal c322ba9d9fb8b3f399ba565a4ae9be5aeb892b25501a00b990d1d983c529b434
+- [CP Violation · Kaons](./spheres/torus-stars/cp-violation.html): Torus Stars 3D. seal 5fd02e60399b1bc3bd0671cf17ef391ac797c232b1a340fc05c0c6d41cfd4d85
+- [CPT Symmetry](./spheres/torus-stars/cpt-symmetry.html): Torus Stars 3D. seal 989b12516da38355425e31bbc2db6c4e18c81075b5b1d6decadbfc6bda163cee
+- [ALPHA · Antihydrogen Spectrum](./spheres/torus-stars/alpha-antihydrogen-1s2s.html): Torus Stars 3D. seal 9631cd98a1ddf5f44291e3c8bcbea0a9f7447c25053c10c401e547b46fb2a1fd
+- [ALPHA-g · Antimatter Falls Down](./spheres/torus-stars/antihydrogen-gravity.html): Torus Stars 3D. seal d45867df50a8355e4b0dc8339f8546247671a67f7bbd02b03bd6371443665171
+- [Antiprotons in Cosmic Rays](./spheres/torus-stars/cosmic-ray-antiprotons.html): Torus Stars 3D. seal 6b8ec433adeb8849ac6a39dd9467b8e589231d611db709b7b24342156fc964b6
+- [The Positron Excess](./spheres/torus-stars/positron-excess.html): Torus Stars 3D. seal b1d326a7d9b922d606a233d8d1c8aeb06c78456248feede03346f0e322751773
+- [AMS-02 Antihelium & Antistar Limits](./spheres/torus-stars/ams-antihelium.html): Torus Stars 3D. seal a37335f9e31c53d1a0d0b6eff71046d876f3aef1eedc5b28fd9333b8c3b5e457
+- [Black Holes · Schwarzschild](./spheres/torus-stars/black-hole-schwarzschild.html): Torus Stars 3D. seal 9a25259014a9ce796b2e7bc4221669b3c4ad8f3f436c8df2e1ae0d265caaa03d
+- [Gravastars](./spheres/torus-stars/gravastar.html): Torus Stars 3D. seal ddd7b160eb8087f5a583532960d8387c612efbc362b133bfd30f166f24f8df8c
+- [Boson Stars](./spheres/torus-stars/boson-star.html): Torus Stars 3D. seal 09266f146a685a4ed92a6e39a61952157803cf1f77d4589a5fa5931386bb9fc5
+- [GW150914 · The First Chirp](./spheres/torus-stars/ligo-gw150914.html): Torus Stars 3D. seal 4e9e721b5a8d6c2c06bd5be906d07cc5dd4b22591611155837366ea8938ee24c
+- [LIGO · Measuring 10⁻¹⁸ m](./spheres/torus-stars/gravitational-waves.html): Torus Stars 3D. seal db7ffaa9a2f483b551cc8714bed99526c5c76571a440c0924a988277b9ec832f
+- [The Torus · Euler Characteristic 0](./spheres/torus-stars/torus-euler.html): Torus Stars 3D. seal 3bba1f03cfd5d94e366e4b4de97302a6e266422241684643cdb894d639e54d9c
+- [The Flat Torus](./spheres/torus-stars/flat-torus.html): Torus Stars 3D. seal 56d0fe9ee3b34affc4a44bc6cf44dea959fe9014b1b7517d1cfedb5ad31f0019
+- [Torus Knots](./spheres/torus-stars/torus-knots.html): Torus Stars 3D. seal 7f87cd875a156bd2523d7df37dff8bad8d728c70d251b1a86a5205ac065a63c6
+- [Tokamak · Plasma Toroid](./spheres/torus-stars/tokamak.html): Torus Stars 3D. seal 4d2dd08e6afc7a288790c14ccd6eff66675ff519c1bb7d2c43408fbf57e3f1d5
+- [Toroidal Fields Inside Stars](./spheres/torus-stars/stellar-toroidal-fields.html): Torus Stars 3D. seal 6b952d270df25b5233a2f143d57c87d48d645e4d38e178e8f2c723d40b8ca1a7
+- [Penning Traps · Holding Antimatter](./spheres/torus-stars/penning-trap.html): Torus Stars 3D. seal 681176a922558e7eee9480fd63e1934fe7599a5a5ec0da14905f27033113bf51
+- [The Ideal Toroid · Ampère](./spheres/torus-stars/toroid-ampere.html): Torus Stars 3D. seal 71beb232efb703fd04ef12676d41d7a537b3467839a02675e3c070c75c2ce6ea
+- [Matter × Antimatter × Gravity](./spheres/torus-stars/three-way-interactions.html): Torus Stars 3D. seal 6d9f5af6e2f4ff75630f3165efa2bd164b6ee5b59b205cba40c37c5fbb604937
+- [Dave's Toroid Sources · Verbatim](./spheres/torus-stars/dave-toroid-sources.html): Torus Stars 3D. seal df8a45763ff3afeb96eb462a402c422298cf008dbf076968a6ffd75fee4f2837
+- [Torus Stars · Antimatter, Matter, Gravity](./spheres/torus-stars/torus-index.html): Torus Stars 3D. seal 383abbe498b94a7ce51363165a5e1a841759744e79f1b13ce540759ad501d1cf

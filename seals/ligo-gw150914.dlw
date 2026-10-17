@@ -1,0 +1,1 @@
+{"slug": "ligo-gw150914", "seal": "4e9e721b5a8d6c2c06bd5be906d07cc5dd4b22591611155837366ea8938ee24c", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "baryon-asymmetry", "seal": "63c833ea5f1eecca8275f76ac8ef94f2367469011f7d349257be693713739d89", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

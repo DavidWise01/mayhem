@@ -1,0 +1,1 @@
+{"slug": "cosmic-ray-antiprotons", "seal": "6b8ec433adeb8849ac6a39dd9467b8e589231d611db709b7b24342156fc964b6", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

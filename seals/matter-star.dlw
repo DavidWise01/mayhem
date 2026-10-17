@@ -1,0 +1,1 @@
+{"slug": "matter-star", "seal": "b5eeb9253f6f5d47a0aeeaf63657c1f61fe6cfa3732b10efeee6030afdd91bd3", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

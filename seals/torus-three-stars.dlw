@@ -1,0 +1,1 @@
+{"slug": "torus-three-stars", "seal": "ba28b9be5fa7b4e41ab7af89500bc68f2ed075ba1a658bec49990be8a2787d0d", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "black-hole-schwarzschild", "seal": "9a25259014a9ce796b2e7bc4221669b3c4ad8f3f436c8df2e1ae0d265caaa03d", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

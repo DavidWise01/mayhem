@@ -1,0 +1,1 @@
+{"slug": "antihydrogen-gravity", "seal": "d45867df50a8355e4b0dc8339f8546247671a67f7bbd02b03bd6371443665171", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "ams-antihelium", "seal": "a37335f9e31c53d1a0d0b6eff71046d876f3aef1eedc5b28fd9333b8c3b5e457", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

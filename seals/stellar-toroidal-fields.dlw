@@ -1,0 +1,1 @@
+{"slug": "stellar-toroidal-fields", "seal": "6b952d270df25b5233a2f143d57c87d48d645e4d38e178e8f2c723d40b8ca1a7", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

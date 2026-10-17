@@ -1,0 +1,1 @@
+{"slug": "torus-knots", "seal": "7f87cd875a156bd2523d7df37dff8bad8d728c70d251b1a86a5205ac065a63c6", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

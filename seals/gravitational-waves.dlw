@@ -1,0 +1,1 @@
+{"slug": "gravitational-waves", "seal": "db7ffaa9a2f483b551cc8714bed99526c5c76571a440c0924a988277b9ec832f", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

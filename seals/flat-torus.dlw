@@ -1,0 +1,1 @@
+{"slug": "flat-torus", "seal": "56d0fe9ee3b34affc4a44bc6cf44dea959fe9014b1b7517d1cfedb5ad31f0019", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

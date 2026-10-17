@@ -1,0 +1,1 @@
+{"slug": "cp-violation", "seal": "5fd02e60399b1bc3bd0671cf17ef391ac797c232b1a340fc05c0c6d41cfd4d85", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

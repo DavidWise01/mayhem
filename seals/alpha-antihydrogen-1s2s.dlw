@@ -1,0 +1,1 @@
+{"slug": "alpha-antihydrogen-1s2s", "seal": "9631cd98a1ddf5f44291e3c8bcbea0a9f7447c25053c10c401e547b46fb2a1fd", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

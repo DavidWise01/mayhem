@@ -1,0 +1,1 @@
+{"slug": "gravity-star", "seal": "9a7682d5f6399876ab3bf1f4abd774c5305ff81fedfdf0de64844215c90a0127", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "boson-star", "seal": "09266f146a685a4ed92a6e39a61952157803cf1f77d4589a5fa5931386bb9fc5", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
