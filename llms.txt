@@ -418,3 +418,7 @@ Dave: "more art please, but this is physics, think nitrogen star, hydrogen star 
 - [3606 Force Lines](./spheres/nho-stars/3606-force-lines.html): N·H·O Stars 3D. seal a99e5f83c16c0e3dac99bf6c24fb97edb6f1b970e9c5e36dc71d59defe430e90
 - [Father Time and Mother Nature](./spheres/nho-stars/father-time-mother-nature.html): N·H·O Stars 3D. seal b9b44daf5ad816d5b4f17adcd51f0ccbe589a678b5430c000417bdc0aabadde6
 - [N·H·O Stars · Red, Green, Blue · A Star and a Dot](./spheres/nho-stars/nho-index.html): N·H·O Stars 3D. seal 765918258947eee99ca235a76063f5eb3903fef3e0c0a187929a9c3d94670ae2
+
+## Star Scale & Spectroscopy (Dave t234u)
+Dave: "i love that, can you make one on what the scale difference and the biggrsts stars we know and the spectogrophay pleasse. thinking this 10 colors or so , white, black, red , blue, green , yellow,  orange, purple , brown , void/silver".
+- [Star Scale & Spectroscopy · 10 Colours](./spheres/nho-stars/star-scale-spectroscopy.html): N·H·O Stars 3D. seal a940cf5286163b4c1b7eb037aefe74140bab8423776835beb1928a4fde0f8d77

@@ -3081,7 +3081,16 @@
     "seal": "765918258947eee99ca235a76063f5eb3903fef3e0c0a187929a9c3d94670ae2",
     "crumb": "INDEX",
     "path": "spheres/nho-stars/nho-index.html"
+   },
+   {
+    "name": "Star Scale & Spectroscopy · 10 Colours",
+    "slug": "star-scale-spectroscopy",
+    "blurb": "How big stars get, from a 12 km neutron star to Stephenson 2-18 at about 2,150 suns wide, a ranked table of the biggest stars, O–M absorption spectra with real lines, Wien's law, and Dave's 10 colours.",
+    "seal": "a940cf5286163b4c1b7eb037aefe74140bab8423776835beb1928a4fde0f8d77",
+    "crumb": "SCALE · SPECTRA",
+    "path": "spheres/nho-stars/star-scale-spectroscopy.html"
    }
   ]
- }
+ },
+ "star_scale_t234": "Dave t234u (verbatim in llms.txt). 10 colours: white, black, red , blue, green , yellow,  orange, purple , brown , void/silver; object mapping MODEL"
 }

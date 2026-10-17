@@ -1,0 +1,1 @@
+{"slug": "star-scale-spectroscopy", "seal": "a940cf5286163b4c1b7eb037aefe74140bab8423776835beb1928a4fde0f8d77", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
