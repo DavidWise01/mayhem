@@ -1,0 +1,1 @@
+{"slug": "era-05-roads-faiths", "seal": "d63e07b8f4b419523abee7de17a525259df26604c412228feb2c57ab76b64c96", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

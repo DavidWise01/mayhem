@@ -1,0 +1,1 @@
+{"slug": "dossier-siddhartha-gautama-the-buddha", "seal": "ef17cab5c9005df7c2e9dd5b1c0ec0858ce4942177608b8c5f83fcab0a20c381", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

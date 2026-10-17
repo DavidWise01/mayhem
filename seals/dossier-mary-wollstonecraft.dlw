@@ -1,0 +1,1 @@
+{"slug": "dossier-mary-wollstonecraft", "seal": "9208017323c2a37bbcc6f6a9b9b262e6e31778c47039df7525c7a43dce7261b1", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

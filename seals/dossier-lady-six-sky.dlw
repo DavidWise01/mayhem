@@ -1,0 +1,1 @@
+{"slug": "dossier-lady-six-sky", "seal": "d4083b03518b84ae45a9e84b5889172b928adb836b885a7f5644d5371b5a904e", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

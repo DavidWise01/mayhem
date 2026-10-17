@@ -1,0 +1,1 @@
+{"slug": "dossier-xu-mu", "seal": "4dea0aa82c70f048c066fbba2f8c0aeb451cd459a457b6b8671c06c5911b4646", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "sapphon-dossiers-method", "seal": "25e5945b3c3449de4facd0f9f603de0f56df41f8d5f83f9ef746633a99e32e43", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

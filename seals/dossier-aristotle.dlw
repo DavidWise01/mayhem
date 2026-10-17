@@ -1,0 +1,1 @@
+{"slug": "dossier-aristotle", "seal": "c8ad79d74bd21932070ec0565c547e718fee6b5237b40808ace8637d4ccb6a5a", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

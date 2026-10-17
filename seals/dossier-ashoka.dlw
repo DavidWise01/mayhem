@@ -1,0 +1,1 @@
+{"slug": "dossier-ashoka", "seal": "fc6f8fec88fbb854d4acf04bcfa8392bf54530180b185048229b2c599fc85cca", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

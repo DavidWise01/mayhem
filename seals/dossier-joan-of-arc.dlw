@@ -1,0 +1,1 @@
+{"slug": "dossier-joan-of-arc", "seal": "164b929fe73c16675427c7be10a5b05709282d7fc1a1c37a3aed19ca452619e9", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

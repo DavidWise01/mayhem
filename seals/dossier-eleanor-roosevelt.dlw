@@ -1,0 +1,1 @@
+{"slug": "dossier-eleanor-roosevelt", "seal": "243cb180c1fd61a34170203d620419fd59de8ced195264a092debeccceeb6c73", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "dossier-toni-morrison", "seal": "bdd618815337bfbcedc962126c6d591cd6c23e88f2559728d210b8dd81b3fa74", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

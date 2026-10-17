@@ -1,0 +1,1 @@
+{"slug": "dossier-imhotep", "seal": "03d65427dc0353de7e5c9ada8cf11bb7afa2ec896d18bc232ec903a71d6822c5", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

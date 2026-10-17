@@ -1,0 +1,1 @@
+{"slug": "dossier-hipparchia-of-maroneia", "seal": "ed20f9b8f35d03f16893aa37de1ab0f604a237da7e36fa1db4ca574ce3c5b31f", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

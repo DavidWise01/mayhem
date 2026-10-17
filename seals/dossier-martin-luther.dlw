@@ -1,0 +1,1 @@
+{"slug": "dossier-martin-luther", "seal": "bb1ea8645ddca8af1f3135c8eea35c43b6c5d356efd949b52ec15683d52852c0", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

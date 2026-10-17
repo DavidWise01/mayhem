@@ -1,0 +1,1 @@
+{"slug": "dossier-ezana-of-axum", "seal": "ce204974be06217c599cce8fa9177b02a4252a1a3f4542f2aa1086cbb11d6365", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

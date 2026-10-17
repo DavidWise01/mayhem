@@ -1,0 +1,1 @@
+{"slug": "dossier-al-khwarizmi", "seal": "9697b459e3938043d9d14f2792adb060765e7230d95315c1c8d760eea35dc0e1", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

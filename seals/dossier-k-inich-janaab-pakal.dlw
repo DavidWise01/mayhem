@@ -1,0 +1,1 @@
+{"slug": "dossier-k-inich-janaab-pakal", "seal": "16d0ed4141fc2ca06cdfcd650970772357dd895156d306d61b23809599645758", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

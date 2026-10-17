@@ -1,0 +1,1 @@
+{"slug": "dossier-sor-juana-ines-de-la-cruz", "seal": "2cbbd2d0f75fd7d243e6e05ebd4e647e68c9495a9f33a1b4d1e8804ef9a36e9e", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

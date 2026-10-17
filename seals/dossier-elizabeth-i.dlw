@@ -1,0 +1,1 @@
+{"slug": "dossier-elizabeth-i", "seal": "b05adf12c4f60747b0da874142f0b6e6cf7b96370c297069ffd6eb975c4e1962", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

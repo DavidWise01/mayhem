@@ -1,0 +1,1 @@
+{"slug": "era-01-dawn-of-writing", "seal": "2be715c435ae3e0ebfbb2cd216190f7bf4b8295ede4c8d4d2b0ff5ae73bf4b8c", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

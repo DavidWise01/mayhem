@@ -1,0 +1,1 @@
+{"slug": "dossier-martin-luther-king-jr", "seal": "984a06d1bc46645c3b7bac9653efa7d5f1e9637db24528bd8e26b76933a782c6", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "dossier-guru-nanak", "seal": "0aca5fdb16fe7bea1a2016b87957b428f3b943323f4eaaacfedd0e9a9ab133af", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

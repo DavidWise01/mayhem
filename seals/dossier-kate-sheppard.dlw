@@ -1,0 +1,1 @@
+{"slug": "dossier-kate-sheppard", "seal": "97caafaf5d2d93d33d3c2130d1983965fcb0fc6f0edbfc9bb30d987cef625de4", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

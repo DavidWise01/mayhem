@@ -1,0 +1,1 @@
+{"slug": "dossier-hetepheres-i", "seal": "383f8d3236a64d587cca74845d351c0e647966f819e353e72560d7239dc1427e", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

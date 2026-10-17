@@ -1,0 +1,1 @@
+{"slug": "dossier-cyrus-the-great", "seal": "c4d3e285810df947c6c8b920347bb6dc601e0901ac1df6dbabd8ef8dd8884340", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

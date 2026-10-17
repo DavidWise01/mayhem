@@ -1,0 +1,1 @@
+{"slug": "dossier-empress-dowager-cixi", "seal": "4e8d07f6c2ce714b51807a36431fb562c8fd6ff078a8cd707343b06041d55ec3", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

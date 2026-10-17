@@ -1,0 +1,1 @@
+{"slug": "dossier-zoroaster", "seal": "c2e36808f817c5b910803920a695895aa960ecbc12785f52c4a125b062d53b2d", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

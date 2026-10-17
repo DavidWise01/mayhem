@@ -1,0 +1,1 @@
+{"slug": "era-03-iron-early-axial", "seal": "bca272c4c5ecf3780e04324a2ac064525dd553a032cf0765fd785ae049fc700f", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "dossier-aryabhata", "seal": "899a9985bde800ca46b8d69d9b413f4a43881b2629d27129dcbecb7230c2758d", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

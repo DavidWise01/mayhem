@@ -1,0 +1,1 @@
+{"slug": "dossier-hypatia", "seal": "5551d2f9727514b9a7b91778704f08b1cddc55cbdfbeff76382fa039182be57d", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

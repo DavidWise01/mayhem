@@ -1,0 +1,1 @@
+{"slug": "era-07-silk-roads-steppe", "seal": "10e43d99c16575815222ff3f9b2f71ef33952ce4a3fed03e2a3ddd0ee4691c14", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

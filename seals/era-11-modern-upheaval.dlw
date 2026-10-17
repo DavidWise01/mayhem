@@ -1,0 +1,1 @@
+{"slug": "era-11-modern-upheaval", "seal": "318f85cdb46cfbb4dd0578fa919ea095e33e1959e766a59262792dd07f002831", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

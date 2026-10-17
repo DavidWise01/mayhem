@@ -1,0 +1,1 @@
+{"slug": "dossier-sejong-the-great", "seal": "a1d590d561a5b3d5e54b866b08f7b50849cd952d577ec75a21179e81aba3ae19", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

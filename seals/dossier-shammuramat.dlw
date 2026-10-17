@@ -1,0 +1,1 @@
+{"slug": "dossier-shammuramat", "seal": "f28da2aac1600dee29e492886dbb9024ad59b0b6efe7c49c9f11402dd37a9e91", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

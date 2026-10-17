@@ -1,0 +1,1 @@
+{"slug": "dossier-jayavarman-vii", "seal": "2ccb0c71540e9aa85c5740608f53b460f66fd66be08a23d4a38c16507ec9c412", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

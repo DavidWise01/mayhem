@@ -1,0 +1,1 @@
+{"slug": "dossier-tomyris", "seal": "09753b1f3608e57113b5104f6a3b4429c00317f40a712438f5cf9d6561e27e71", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

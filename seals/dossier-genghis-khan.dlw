@@ -1,0 +1,1 @@
+{"slug": "dossier-genghis-khan", "seal": "be9bcb5cff5f87531fdf8ab7c5435256fb0cf78b184bc79eca131059c6bc870f", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

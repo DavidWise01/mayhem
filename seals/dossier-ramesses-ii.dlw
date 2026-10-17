@@ -1,0 +1,1 @@
+{"slug": "dossier-ramesses-ii", "seal": "6d96f7f5995e96b3cdf65c658fb61c18b8a805de0d14436ce6b6a7fd4ea25a57", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

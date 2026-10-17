@@ -1,0 +1,1 @@
+{"slug": "dossier-kubaba", "seal": "2ddbaf78562520a47bf4e7a691506ae3371575a1b5bb48bd3263de1ccf87824d", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

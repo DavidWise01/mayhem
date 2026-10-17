@@ -1,0 +1,1 @@
+{"slug": "dossier-tamar-of-georgia", "seal": "9e8cac4a7b2f109d433c02db46ff54307b52a08c9d540cc17a0c2f527e00f9fd", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

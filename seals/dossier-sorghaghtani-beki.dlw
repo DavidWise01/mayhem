@@ -1,0 +1,1 @@
+{"slug": "dossier-sorghaghtani-beki", "seal": "5b09dee0531b5e8faa5692fd4936c493c5ddbd9fbf3855c57af006e968a273fb", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

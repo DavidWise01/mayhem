@@ -1,0 +1,1 @@
+{"slug": "dossier-sargon-of-akkad", "seal": "f917ca55bcd2b70a8fd937cf73015dc4396e9c8e5636a0036fd8185fa50a570a", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

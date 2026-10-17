@@ -1,0 +1,1 @@
+{"slug": "dossier-florence-nightingale", "seal": "06f5792823be88cc285f4da7fe618bfe594373237b3d1ea48ee5103c1eada3bb", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

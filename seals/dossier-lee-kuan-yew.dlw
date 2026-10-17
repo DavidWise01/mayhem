@@ -1,0 +1,1 @@
+{"slug": "dossier-lee-kuan-yew", "seal": "a6f1092ca153f2667feed95b603e3819cb313b8d656541eeab0daa2dfb8e43f8", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

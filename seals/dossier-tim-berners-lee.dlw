@@ -1,0 +1,1 @@
+{"slug": "dossier-tim-berners-lee", "seal": "0dec5d8a3e9043c86d7307b45879f5aff8114972111a853c451d7324c9aac3c6", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

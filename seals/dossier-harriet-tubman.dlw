@@ -1,0 +1,1 @@
+{"slug": "dossier-harriet-tubman", "seal": "c0c25d167c54ae4638d311daac85f51f4c180fe1fa00e86eb1ea2a8f8a6b7972", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

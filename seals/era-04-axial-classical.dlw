@@ -1,0 +1,1 @@
+{"slug": "era-04-axial-classical", "seal": "61af9a4d1f289d031c8786a9b169561a7915b872e38dd07fede735a4080e3614", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

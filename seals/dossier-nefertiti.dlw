@@ -1,0 +1,1 @@
+{"slug": "dossier-nefertiti", "seal": "71148070521eca20db1dbd6d5317b48751025e8e359c681bfbca4bb45f971b89", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

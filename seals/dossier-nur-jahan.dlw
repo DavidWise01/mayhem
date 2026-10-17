@@ -1,0 +1,1 @@
+{"slug": "dossier-nur-jahan", "seal": "0d148fbf18a4e8d7c16051491d220034b429169f1c8588f8f6bc15cc8ac28604", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "dossier-amina-of-zazzau", "seal": "4a1aca190be7945a230bf7ec176b208f2f38cdaf1ebbcaa93c59829bcb593af0", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

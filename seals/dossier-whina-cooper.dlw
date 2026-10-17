@@ -1,0 +1,1 @@
+{"slug": "dossier-whina-cooper", "seal": "ffc9bf91297ad2c5e63992d274d34ad2b989fb54e1b6cb1caf6d8bcfc2bc8799", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "dossier-yaa-asantewaa", "seal": "e060cd8a74c3d474cfd5bd3cfc0c468a3828d54574ae046f5644b036ef14e307", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

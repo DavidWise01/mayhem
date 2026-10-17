@@ -1,0 +1,1 @@
+{"slug": "dossier-sanghamitta", "seal": "a19da12077c8d1ca0936b7ae056728482ccab92367c4c8a348df08da2a5fb54f", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "dossier-ban-zhao", "seal": "1df9481dbe5c8497840348a97033755f7f18cd08a41a5a4c04b7a2c1d5d25942", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

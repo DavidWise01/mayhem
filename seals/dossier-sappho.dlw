@@ -1,0 +1,1 @@
+{"slug": "dossier-sappho", "seal": "8fdc84a082f15b4f9f8dc52cf900fb36218399804f590c4c5087a33fed4a25ee", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

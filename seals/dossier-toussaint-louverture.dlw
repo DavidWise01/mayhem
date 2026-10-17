@@ -1,0 +1,1 @@
+{"slug": "dossier-toussaint-louverture", "seal": "e3e34f06896710e75518680bf7767e6548944c8bbf122e0578db9a956861af47", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "dossier-qiu-jin", "seal": "927c01372aaf8a024eab339f6d4c3dcb625fed6ac7d8d5ff8d3779afc1fe7b2a", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

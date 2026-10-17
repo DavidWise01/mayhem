@@ -1,0 +1,1 @@
+{"slug": "dossier-tapputi", "seal": "0838b591d07dfe64d9ebeee81eaeaeafed87596d22039150242e657e255b5584", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

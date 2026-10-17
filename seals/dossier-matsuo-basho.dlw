@@ -1,0 +1,1 @@
+{"slug": "dossier-matsuo-basho", "seal": "78f8901f3f45d15584c346fa5b4f75cd24982c648bfbd334818a8e5902cc2d5d", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

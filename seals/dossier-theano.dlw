@@ -1,0 +1,1 @@
+{"slug": "dossier-theano", "seal": "47916de775b90bef65c773b554d67d4714532e3a171fb22dd42c44180cff629b", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

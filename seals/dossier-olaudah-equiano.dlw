@@ -1,0 +1,1 @@
+{"slug": "dossier-olaudah-equiano", "seal": "75c5907f9485970c111813ad58c7e600245005ceb4b462db32cc1a4d4a2a3552", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

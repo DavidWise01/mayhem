@@ -1,0 +1,1 @@
+{"slug": "dossier-catherine-the-great", "seal": "2bab92fe52a6c2f3ac671e737f28c826c2fd5f24a0db68db0c56e343a2795f86", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "dossier-pythagoras", "seal": "087aba944ad620856de6ae34e555cf0768eead078115321b09e1997dc0cea542", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

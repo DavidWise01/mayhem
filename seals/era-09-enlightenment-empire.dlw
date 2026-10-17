@@ -1,0 +1,1 @@
+{"slug": "era-09-enlightenment-empire", "seal": "cd3db09b25a586eb50da1de8d443d42d7a43a2ecd2dd7d66cd978ed865c6dd52", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "dossier-malala-yousafzai", "seal": "b98755e3b72d837874d9999f38212524a57542204a37d3587cad5e87932c1084", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

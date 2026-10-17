@@ -1,0 +1,1 @@
+{"slug": "dossier-mao-zedong", "seal": "ffdb416a2884b25af1b484e497b525bdbe56789275d7fbdfdb4092c7b9d15811", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

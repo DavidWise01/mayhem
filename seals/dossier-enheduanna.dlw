@@ -1,0 +1,1 @@
+{"slug": "dossier-enheduanna", "seal": "9496c03d235baaae855473ba6ec5c4e756e27497aa7e8f5ef9d78e0d34929b3f", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

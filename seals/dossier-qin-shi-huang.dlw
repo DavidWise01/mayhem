@@ -1,0 +1,1 @@
+{"slug": "dossier-qin-shi-huang", "seal": "29186370714234d93cf5801f01d7e52d2c4bfcb28452d57dabdc94a49dcd5fb4", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

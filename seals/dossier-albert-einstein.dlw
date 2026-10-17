@@ -1,0 +1,1 @@
+{"slug": "dossier-albert-einstein", "seal": "42d349146be7315b2dbb783ad5b424420e5c1e6003fa4ee78fd83ac52c50aa07", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

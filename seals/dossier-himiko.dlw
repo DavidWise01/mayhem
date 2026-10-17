@@ -1,0 +1,1 @@
+{"slug": "dossier-himiko", "seal": "61d4248a7e35c9b24b1ec7f0c6d78bb54e4f1d913816a7032bd9b6e3a389d808", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

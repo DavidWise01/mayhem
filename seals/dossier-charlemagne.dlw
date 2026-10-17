@@ -1,0 +1,1 @@
+{"slug": "dossier-charlemagne", "seal": "b48ff2567a11d18ef708c01812755e28512be70affcf2e99c6de8d8db92f53f7", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

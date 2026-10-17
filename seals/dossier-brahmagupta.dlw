@@ -1,0 +1,1 @@
+{"slug": "dossier-brahmagupta", "seal": "90b12e00181bf7b7bc3d38e4647c391ba067923f64574863f6497225680fc672", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

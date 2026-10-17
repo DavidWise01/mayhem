@@ -1,0 +1,1 @@
+{"slug": "dossier-shen-kuo", "seal": "513f48b70336975ee68cb676827291a6a8cc82569a73aaec29108246e4ff2ec8", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

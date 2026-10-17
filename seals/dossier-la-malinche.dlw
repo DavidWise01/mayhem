@@ -1,0 +1,1 @@
+{"slug": "dossier-la-malinche", "seal": "8bfe817bdbb658cd806ce24762e5686c0da5073668635cdad645daf822de0dbc", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

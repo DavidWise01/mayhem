@@ -1,0 +1,1 @@
+{"slug": "dossier-narmer", "seal": "c89ad66cddf638b14cfb3aa9ee5f4bbf850b4ef31fc71130a23a0666a0e3a60d", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

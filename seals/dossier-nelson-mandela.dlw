@@ -1,0 +1,1 @@
+{"slug": "dossier-nelson-mandela", "seal": "034d4400ad7be5716d7fb8b2f670febb5dfcdb42f29b12e5c9d896c08b2020d1", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

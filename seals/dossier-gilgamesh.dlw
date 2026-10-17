@@ -1,0 +1,1 @@
+{"slug": "dossier-gilgamesh", "seal": "f8a15c2d74a4f60e536fd6a70fc7fb4d5cf47be3d754b6b7f9dc0aef04d3d9f3", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

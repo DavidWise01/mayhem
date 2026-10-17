@@ -1,0 +1,1 @@
+{"slug": "dossier-trung-trac-trung-sisters", "seal": "ce3150980ff3b7a6fdb4793c7b53d7c5cc26d8754f85d5743a8393070e0a2a3f", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

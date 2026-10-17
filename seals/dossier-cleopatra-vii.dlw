@@ -1,0 +1,1 @@
+{"slug": "dossier-cleopatra-vii", "seal": "ad5e19ca3f90a4f28304633258ca714b83524b14d34909481318724f2c0399cf", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

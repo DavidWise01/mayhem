@@ -1,0 +1,1 @@
+{"slug": "dossier-peseshet", "seal": "35c217aa691464eb444a95eaac3febbb9434c0628d3da01223ac09d9e1d5d7fb", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

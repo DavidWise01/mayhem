@@ -1,0 +1,1 @@
+{"slug": "sapphon-dossiers-index", "seal": "b50d1cb5b8466fe420b53e59e2c83f4b38c43ed26edcabf32d211751dfd158e8", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

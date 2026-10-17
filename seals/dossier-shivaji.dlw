@@ -1,0 +1,1 @@
+{"slug": "dossier-shivaji", "seal": "ca17c421c6741016db1a2fa8a37a551ad70f0d58445550170c7ed94327a67c14", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

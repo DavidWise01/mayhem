@@ -1,0 +1,1 @@
+{"slug": "dossier-leonardo-da-vinci", "seal": "3c713d9c42a486e14e7aa5b54a34f6286023e0705415c75fa17e92ec341c62dc", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

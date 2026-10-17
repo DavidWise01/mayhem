@@ -1,0 +1,1 @@
+{"slug": "dossier-pachacuti", "seal": "97d438eb42e2ae59a5220b776a9e1db2049d1ad8076a960b6b50e5984cb76a04", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

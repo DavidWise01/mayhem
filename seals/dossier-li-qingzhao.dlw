@@ -1,0 +1,1 @@
+{"slug": "dossier-li-qingzhao", "seal": "bc05ace32175ccf2c55b629caa443d7afff7c7d0a3343653e6cc18f681d18e45", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

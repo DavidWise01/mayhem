@@ -1,0 +1,1 @@
+{"slug": "dossier-ibn-battuta", "seal": "7f856843d2751ca694bd8ad6dc8f6de17ade94459ff64feece45c3f37ec705fa", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

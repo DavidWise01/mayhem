@@ -1,0 +1,1 @@
+{"slug": "dossier-muhammad-yunus", "seal": "d5320efaa2b38bee1b7fbbbbebab0d1c307584b9f77e02a2323720eb859e4f89", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

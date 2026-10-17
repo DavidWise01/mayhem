@@ -1,0 +1,1 @@
+{"slug": "dossier-muhammad", "seal": "2606d6d829f7efaaab9ca5a5fa98f245a6d3c9800c9de258994fffd7f43916af", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "dossier-jesus-of-nazareth", "seal": "2912fa4055a2e840ec098c696899b07de29e1ede1d407404cf7c25805710e68b", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

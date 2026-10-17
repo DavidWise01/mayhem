@@ -1,0 +1,1 @@
+{"slug": "dossier-tupaia", "seal": "a7d70c05bfbfec33a21a9aa0b277a081e8029fb2bd1db63b39c348241ba0bd98", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

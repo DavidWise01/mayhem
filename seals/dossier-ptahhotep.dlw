@@ -1,0 +1,1 @@
+{"slug": "dossier-ptahhotep", "seal": "1ad007068d1007213c0726f042aaabce854449a04a9be4c933cde0d4eda607b2", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

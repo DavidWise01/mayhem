@@ -1,0 +1,1 @@
+{"slug": "dossier-prince-shotoku", "seal": "28186f64a0a3757a3f20efc059ae820b5fc536dc229a7be96555dda6b2a5ad49", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

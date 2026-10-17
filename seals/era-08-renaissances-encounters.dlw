@@ -1,0 +1,1 @@
+{"slug": "era-08-renaissances-encounters", "seal": "b35f04dec454ce44b0eaea997f210ea88b6ce4e8d41d23ec2e3cc7d7ae8b7ff8", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

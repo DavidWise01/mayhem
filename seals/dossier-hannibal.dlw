@@ -1,0 +1,1 @@
+{"slug": "dossier-hannibal", "seal": "c9e1370f6f73085d7aef923b28054170a0ba33655a54e80d6ee70188fb29d1ed", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

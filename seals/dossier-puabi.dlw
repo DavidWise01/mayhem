@@ -1,0 +1,1 @@
+{"slug": "dossier-puabi", "seal": "87c43a33eabb41398efe7d842c77baf18664f4ee60b0cfdf20388442e358b84e", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

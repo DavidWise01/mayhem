@@ -1,0 +1,1 @@
+{"slug": "dossier-murasaki-shikibu", "seal": "3ec9b373b295d42dd295ddb183d3677a26114b557d4acc5e1a7dc4410f18d151", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

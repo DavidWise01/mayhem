@@ -1,0 +1,1 @@
+{"slug": "dossier-akhenaten", "seal": "2cbf79ea02014588a3e390e615aa1ae37be1072de8944b0352802808816507de", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

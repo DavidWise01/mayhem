@@ -1,0 +1,1 @@
+{"slug": "dossier-meritneith", "seal": "0880fff72e84d307325340a66453bc92a1c7de74d892c3f40c1430631b17964f", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

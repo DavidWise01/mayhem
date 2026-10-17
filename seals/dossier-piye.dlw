@@ -1,0 +1,1 @@
+{"slug": "dossier-piye", "seal": "2767c5bce2b8af18d64933e07816195be15b952dfb8e465d007322c93cb876aa", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

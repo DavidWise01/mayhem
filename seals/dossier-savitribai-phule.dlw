@@ -1,0 +1,1 @@
+{"slug": "dossier-savitribai-phule", "seal": "ab2d5ac03ef807cf9e7d85f5a27c0942f200db274411c7566713552978873531", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "dossier-askia-muhammad-i", "seal": "ecf30249f1be6ef0730e564317bfba2683d26d00c3228ee745f475b3a763f154", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

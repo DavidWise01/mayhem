@@ -1,0 +1,1 @@
+{"slug": "dossier-fu-hao", "seal": "124bfd489caba0663d6bee8760bc96388fa3c13a7c57e3ac8974af6c2a3d2fa2", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

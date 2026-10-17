@@ -1,0 +1,1 @@
+{"slug": "dossier-zenobia", "seal": "d9b04bdfc30fee0588f8fe46c4d541161c766faf065b30e25aafeb2b15d3919f", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

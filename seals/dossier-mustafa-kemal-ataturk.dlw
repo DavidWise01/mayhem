@@ -1,0 +1,1 @@
+{"slug": "dossier-mustafa-kemal-ataturk", "seal": "c9672cf28292ffdc07b4e1343837da6c1a4ddeff1c73dfef6ab13bf8e5e3a5fd", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

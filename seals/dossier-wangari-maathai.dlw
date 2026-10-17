@@ -1,0 +1,1 @@
+{"slug": "dossier-wangari-maathai", "seal": "857b42a701f71b9668a24eeb0e8b62562878ad7e0b2086811e664a547c4717a0", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

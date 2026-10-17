@@ -1,0 +1,1 @@
+{"slug": "dossier-nzinga-of-ndongo-and-matamba", "seal": "ea11c9215e94ba134d6164811870e9962fbfdd9bfddf831bd2f0c1c4ec3f92a9", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "dossier-confucius", "seal": "40d2039bbd20439ca79a7663679f2076b12658d42a7ea19b9778eeb161d88252", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

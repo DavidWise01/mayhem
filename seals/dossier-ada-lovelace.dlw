@@ -1,0 +1,1 @@
+{"slug": "dossier-ada-lovelace", "seal": "1b4abd75d3114a48fd67588507d9cc109e3587e8a7245cc4934187294463cdb9", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

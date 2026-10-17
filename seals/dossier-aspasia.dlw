@@ -1,0 +1,1 @@
+{"slug": "dossier-aspasia", "seal": "de655511a2c1c60f784c1d3a84491f5e842f213eb76d3aa3becc561c95f997d0", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

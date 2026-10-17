@@ -1,0 +1,1 @@
+{"slug": "dossier-marie-curie", "seal": "f9c510df6d26e89491140496c48421133dc7fb34cbac688df1a06deb257d7004", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

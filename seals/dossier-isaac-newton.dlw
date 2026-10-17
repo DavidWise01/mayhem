@@ -1,0 +1,1 @@
+{"slug": "dossier-isaac-newton", "seal": "a07a661a35d0be2f307cf22d0a833acf48e285f0591bab4ad7c1bb18cbf80ac3", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

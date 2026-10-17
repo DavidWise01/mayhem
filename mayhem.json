@@ -4010,5 +4010,1150 @@
     "cat": "Index"
    }
   ]
+ },
+ "batch_sapphon_dossiers": {
+  "said": [
+   "Dave t254: those are cool. can you make sapphons out of all the influential people from around 3600 bce to 2026 today please both male and female all over the world and give them a dossier based off of what we built for patricia. so liek a score card"
+  ],
+  "folder": "spheres/sapphon-dossiers",
+  "count": 158,
+  "main_index_cards": 14,
+  "data": "spheres/sapphon-dossiers/sapphon-dossiers.json",
+  "roster": {
+   "people": 144,
+   "eras": 12,
+   "per_era": 12,
+   "female": 72,
+   "male": 72,
+   "regions": {
+    "Africa": 32,
+    "Middle East": 21,
+    "East Asia": 21,
+    "Central Asia": 6,
+    "Europe": 25,
+    "South Asia": 15,
+    "Southeast Asia": 4,
+    "Americas": 15,
+    "Oceania": 5
+   },
+   "living": 4,
+   "amber": 15
+  },
+  "agents": "ARTIST + CRITIC per page (sculpture params vs dossier rubric); localStorage mayhem-sapphon-dossiers-board (MODEL)",
+  "engine": {
+   "name": "I-13 direct WASM v0.3 (Dave's, verbatim)",
+   "path": "spheres/protein-folding/engine/ (referenced, not copied)",
+   "sha256": "5295b80d8f87007ca898d526c09fc2bfb4d586b53966b984f99845a9d8fa4b7d",
+   "note": "every page rebuilds its sapphon (depths, layers, streams, tempo, radials, index) on the VM and compares with JS and the JSON; era pages average on the VM; the index sums all 144 in chained programs; CRITIC score re-computed on the VM on new bests"
+  },
+  "scores": "interpretive MODEL: documented influence and style, never character",
+  "pages": [
+   {
+    "name": "Narmer",
+    "slug": "dossier-narmer",
+    "blurb": "Narmer (c. 3100 BCE (reign)) · rule · Africa. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "c89ad66cddf638b14cfb3aa9ee5f4bbf850b4ef31fc71130a23a0666a0e3a60d",
+    "crumb": "ERA 1 · DAWN OF WRITING · DOSSIER"
+   },
+   {
+    "name": "Meritneith",
+    "slug": "dossier-meritneith",
+    "blurb": "Meritneith (c. 2950 BCE (regency)) · rule · Africa. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "0880fff72e84d307325340a66453bc92a1c7de74d892c3f40c1430631b17964f",
+    "crumb": "ERA 1 · DAWN OF WRITING · DOSSIER"
+   },
+   {
+    "name": "Gilgamesh",
+    "slug": "dossier-gilgamesh",
+    "blurb": "Gilgamesh (c. 2700 BCE (if historical)) · rule · Middle East. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "f8a15c2d74a4f60e536fd6a70fc7fb4d5cf47be3d754b6b7f9dc0aef04d3d9f3",
+    "crumb": "ERA 1 · DAWN OF WRITING · DOSSIER"
+   },
+   {
+    "name": "Imhotep",
+    "slug": "dossier-imhotep",
+    "blurb": "Imhotep (fl. c. 2650 BCE) · architecture & medicine · Africa. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "03d65427dc0353de7e5c9ada8cf11bb7afa2ec896d18bc232ec903a71d6822c5",
+    "crumb": "ERA 1 · DAWN OF WRITING · DOSSIER"
+   },
+   {
+    "name": "Puabi",
+    "slug": "dossier-puabi",
+    "blurb": "Puabi (c. 2600 BCE) · rule & religion · Middle East. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "87c43a33eabb41398efe7d842c77baf18664f4ee60b0cfdf20388442e358b84e",
+    "crumb": "ERA 1 · DAWN OF WRITING · DOSSIER"
+   },
+   {
+    "name": "Hetepheres I",
+    "slug": "dossier-hetepheres-i",
+    "blurb": "Hetepheres I (c. 2600 BCE) · rule · Africa. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "383f8d3236a64d587cca74845d351c0e647966f819e353e72560d7239dc1427e",
+    "crumb": "ERA 1 · DAWN OF WRITING · DOSSIER"
+   },
+   {
+    "name": "Khufu",
+    "slug": "dossier-khufu",
+    "blurb": "Khufu (r. c. 2589–2566 BCE) · rule · Africa. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "a741798f583c95b865a09cfbba08e260bd8752cab2030eb0522cc2372d243e56",
+    "crumb": "ERA 1 · DAWN OF WRITING · DOSSIER"
+   },
+   {
+    "name": "Hemiunu",
+    "slug": "dossier-hemiunu",
+    "blurb": "Hemiunu (fl. c. 2570 BCE) · architecture · Africa. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "5a254d688db7336cfed54aa9bc5dc077b1e6dfeadc8109d0a486de63895f11fa",
+    "crumb": "ERA 1 · DAWN OF WRITING · DOSSIER"
+   },
+   {
+    "name": "Peseshet",
+    "slug": "dossier-peseshet",
+    "blurb": "Peseshet (fl. c. 2500 BCE) · medicine · Africa. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "35c217aa691464eb444a95eaac3febbb9434c0628d3da01223ac09d9e1d5d7fb",
+    "crumb": "ERA 1 · DAWN OF WRITING · DOSSIER"
+   },
+   {
+    "name": "Khentkaus I",
+    "slug": "dossier-khentkaus-i",
+    "blurb": "Khentkaus I (fl. c. 2500 BCE) · rule · Africa. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "a80577377256642a9caddd564276530ba8185ae2ffc51b28f4b06d78ab1f3915",
+    "crumb": "ERA 1 · DAWN OF WRITING · DOSSIER"
+   },
+   {
+    "name": "Kubaba",
+    "slug": "dossier-kubaba",
+    "blurb": "Kubaba (c. 2500–2330 BCE (King List)) · rule · Middle East. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "2ddbaf78562520a47bf4e7a691506ae3371575a1b5bb48bd3263de1ccf87824d",
+    "crumb": "ERA 1 · DAWN OF WRITING · DOSSIER"
+   },
+   {
+    "name": "Ptahhotep",
+    "slug": "dossier-ptahhotep",
+    "blurb": "Ptahhotep (fl. c. 2400 BCE (attributed)) · philosophy & literature · Africa. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "1ad007068d1007213c0726f042aaabce854449a04a9be4c933cde0d4eda607b2",
+    "crumb": "ERA 1 · DAWN OF WRITING · DOSSIER"
+   },
+   {
+    "name": "Sargon of Akkad",
+    "slug": "dossier-sargon-of-akkad",
+    "blurb": "Sargon of Akkad (r. c. 2334–2279 BCE) · rule · Middle East. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "f917ca55bcd2b70a8fd937cf73015dc4396e9c8e5636a0036fd8185fa50a570a",
+    "crumb": "ERA 2 · BRONZE AGE COURTS · DOSSIER"
+   },
+   {
+    "name": "Enheduanna",
+    "slug": "dossier-enheduanna",
+    "blurb": "Enheduanna (fl. c. 2285–2250 BCE) · religion & literature · Middle East. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "9496c03d235baaae855473ba6ec5c4e756e27497aa7e8f5ef9d78e0d34929b3f",
+    "crumb": "ERA 2 · BRONZE AGE COURTS · DOSSIER"
+   },
+   {
+    "name": "Gudea",
+    "slug": "dossier-gudea",
+    "blurb": "Gudea (r. c. 2144–2124 BCE) · rule & architecture · Middle East. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "fee4e9e07707db25a3dac83f8d78935a343bc9fca39b3c767c89738a2b3c6e8e",
+    "crumb": "ERA 2 · BRONZE AGE COURTS · DOSSIER"
+   },
+   {
+    "name": "Hammurabi",
+    "slug": "dossier-hammurabi",
+    "blurb": "Hammurabi (r. c. 1792–1750 BCE) · law & rule · Middle East. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "3a73f6eb50a253e9c0b3c8a59c75180e5312a3759cb15c2ef518f2d48bf33920",
+    "crumb": "ERA 2 · BRONZE AGE COURTS · DOSSIER"
+   },
+   {
+    "name": "Hatshepsut",
+    "slug": "dossier-hatshepsut",
+    "blurb": "Hatshepsut (r. c. 1479–1458 BCE) · rule · Africa. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "ccb2d3fcd1c4ee3dbccb207091b9c960333148222d90b02a76b934ca4731886e",
+    "crumb": "ERA 2 · BRONZE AGE COURTS · DOSSIER"
+   },
+   {
+    "name": "Akhenaten",
+    "slug": "dossier-akhenaten",
+    "blurb": "Akhenaten (r. c. 1353–1336 BCE) · religion & rule · Africa. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "2cbf79ea02014588a3e390e615aa1ae37be1072de8944b0352802808816507de",
+    "crumb": "ERA 2 · BRONZE AGE COURTS · DOSSIER"
+   },
+   {
+    "name": "Nefertiti",
+    "slug": "dossier-nefertiti",
+    "blurb": "Nefertiti (c. 1370–1330 BCE) · rule & religion · Africa. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "71148070521eca20db1dbd6d5317b48751025e8e359c681bfbca4bb45f971b89",
+    "crumb": "ERA 2 · BRONZE AGE COURTS · DOSSIER"
+   },
+   {
+    "name": "Ramesses II",
+    "slug": "dossier-ramesses-ii",
+    "blurb": "Ramesses II (r. 1279–1213 BCE) · rule · Africa. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "6d96f7f5995e96b3cdf65c658fb61c18b8a805de0d14436ce6b6a7fd4ea25a57",
+    "crumb": "ERA 2 · BRONZE AGE COURTS · DOSSIER"
+   },
+   {
+    "name": "Puduhepa",
+    "slug": "dossier-puduhepa",
+    "blurb": "Puduhepa (c. 1290–1210 BCE) · diplomacy & religion · Middle East. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "ac47ee8dd7500eb3dbd3b87f0340e7dfbb3e654129ede1844d8da5a3bfbc0c57",
+    "crumb": "ERA 2 · BRONZE AGE COURTS · DOSSIER"
+   },
+   {
+    "name": "Wu Ding",
+    "slug": "dossier-wu-ding",
+    "blurb": "Wu Ding (r. c. 1250–1192 BCE) · rule · East Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "007b67b218d51439b07fbd24e84be7744a0570fe45317b2e7d2f6e1da8e14b96",
+    "crumb": "ERA 2 · BRONZE AGE COURTS · DOSSIER"
+   },
+   {
+    "name": "Fu Hao",
+    "slug": "dossier-fu-hao",
+    "blurb": "Fu Hao (d. c. 1200 BCE) · military & religion · East Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "124bfd489caba0663d6bee8760bc96388fa3c13a7c57e3ac8974af6c2a3d2fa2",
+    "crumb": "ERA 2 · BRONZE AGE COURTS · DOSSIER"
+   },
+   {
+    "name": "Tapputi",
+    "slug": "dossier-tapputi",
+    "blurb": "Tapputi (fl. c. 1200 BCE) · chemistry · Middle East. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "0838b591d07dfe64d9ebeee81eaeaeafed87596d22039150242e657e255b5584",
+    "crumb": "ERA 2 · BRONZE AGE COURTS · DOSSIER"
+   },
+   {
+    "name": "Zoroaster",
+    "slug": "dossier-zoroaster",
+    "blurb": "Zoroaster (dates uncertain (c. 1500–500 BCE)) · religion · Central Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "c2e36808f817c5b910803920a695895aa960ecbc12785f52c4a125b062d53b2d",
+    "crumb": "ERA 3 · IRON & EARLY AXIAL · DOSSIER"
+   },
+   {
+    "name": "Shammuramat",
+    "slug": "dossier-shammuramat",
+    "blurb": "Shammuramat (regent c. 811–806 BCE) · rule · Middle East. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "f28da2aac1600dee29e492886dbb9024ad59b0b6efe7c49c9f11402dd37a9e91",
+    "crumb": "ERA 3 · IRON & EARLY AXIAL · DOSSIER"
+   },
+   {
+    "name": "Homer",
+    "slug": "dossier-homer",
+    "blurb": "Homer (c. 8th century BCE (traditional)) · literature · Europe. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "934afaf53d6c7d328590cfae48fe85f868cbed0c2c112ffb369c2d8c684dd600",
+    "crumb": "ERA 3 · IRON & EARLY AXIAL · DOSSIER"
+   },
+   {
+    "name": "Piye",
+    "slug": "dossier-piye",
+    "blurb": "Piye (r. c. 744–714 BCE) · rule · Africa. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "2767c5bce2b8af18d64933e07816195be15b952dfb8e465d007322c93cb876aa",
+    "crumb": "ERA 3 · IRON & EARLY AXIAL · DOSSIER"
+   },
+   {
+    "name": "Gargi Vachaknavi",
+    "slug": "dossier-gargi-vachaknavi",
+    "blurb": "Gargi Vachaknavi (c. 7th century BCE (traditional)) · philosophy · South Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "f0e9dc11cc9a15689d717644e036f4d056377c0edb12960f01f42a00190e86fc",
+    "crumb": "ERA 3 · IRON & EARLY AXIAL · DOSSIER"
+   },
+   {
+    "name": "Xu Mu",
+    "slug": "dossier-xu-mu",
+    "blurb": "Xu Mu (fl. c. 660 BCE) · literature · East Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "4dea0aa82c70f048c066fbba2f8c0aeb451cd459a457b6b8671c06c5911b4646",
+    "crumb": "ERA 3 · IRON & EARLY AXIAL · DOSSIER"
+   },
+   {
+    "name": "Sappho",
+    "slug": "dossier-sappho",
+    "blurb": "Sappho (c. 630–570 BCE) · literature · Europe. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "8fdc84a082f15b4f9f8dc52cf900fb36218399804f590c4c5087a33fed4a25ee",
+    "crumb": "ERA 3 · IRON & EARLY AXIAL · DOSSIER"
+   },
+   {
+    "name": "Laozi",
+    "slug": "dossier-laozi",
+    "blurb": "Laozi (6th century BCE (traditional)) · philosophy · East Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "1fbb8c58532977ef0fa6c8c58a0c3c4efe06bc6e25832bcd3654fbc79ed6a280",
+    "crumb": "ERA 3 · IRON & EARLY AXIAL · DOSSIER"
+   },
+   {
+    "name": "Cyrus the Great",
+    "slug": "dossier-cyrus-the-great",
+    "blurb": "Cyrus the Great (c. 600–530 BCE) · rule · Middle East. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "c4d3e285810df947c6c8b920347bb6dc601e0901ac1df6dbabd8ef8dd8884340",
+    "crumb": "ERA 3 · IRON & EARLY AXIAL · DOSSIER"
+   },
+   {
+    "name": "Pythagoras",
+    "slug": "dossier-pythagoras",
+    "blurb": "Pythagoras (c. 570–495 BCE) · mathematics & philosophy · Europe. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "087aba944ad620856de6ae34e555cf0768eead078115321b09e1997dc0cea542",
+    "crumb": "ERA 3 · IRON & EARLY AXIAL · DOSSIER"
+   },
+   {
+    "name": "Tomyris",
+    "slug": "dossier-tomyris",
+    "blurb": "Tomyris (fl. c. 530 BCE) · rule & military · Central Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "09753b1f3608e57113b5104f6a3b4429c00317f40a712438f5cf9d6561e27e71",
+    "crumb": "ERA 3 · IRON & EARLY AXIAL · DOSSIER"
+   },
+   {
+    "name": "Theano",
+    "slug": "dossier-theano",
+    "blurb": "Theano (fl. 6th century BCE) · philosophy · Europe. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "47916de775b90bef65c773b554d67d4714532e3a171fb22dd42c44180cff629b",
+    "crumb": "ERA 3 · IRON & EARLY AXIAL · DOSSIER"
+   },
+   {
+    "name": "Confucius",
+    "slug": "dossier-confucius",
+    "blurb": "Confucius (551–479 BCE) · philosophy · East Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "40d2039bbd20439ca79a7663679f2076b12658d42a7ea19b9778eeb161d88252",
+    "crumb": "ERA 4 · AXIAL & CLASSICAL · DOSSIER"
+   },
+   {
+    "name": "Siddhartha Gautama (the Buddha)",
+    "slug": "dossier-siddhartha-gautama-the-buddha",
+    "blurb": "Siddhartha Gautama (the Buddha) (c. 5th century BCE) · religion & philosophy · South Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "ef17cab5c9005df7c2e9dd5b1c0ec0858ce4942177608b8c5f83fcab0a20c381",
+    "crumb": "ERA 4 · AXIAL & CLASSICAL · DOSSIER"
+   },
+   {
+    "name": "Artemisia I of Caria",
+    "slug": "dossier-artemisia-i-of-caria",
+    "blurb": "Artemisia I of Caria (fl. 480 BCE) · rule & military · Middle East. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "c4317098092cb5212d04f1b3e9a33afc4ff5f64849d8eda0529eddd35af1d9ab",
+    "crumb": "ERA 4 · AXIAL & CLASSICAL · DOSSIER"
+   },
+   {
+    "name": "Aspasia",
+    "slug": "dossier-aspasia",
+    "blurb": "Aspasia (c. 470–400 BCE) · philosophy & rhetoric · Europe. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "de655511a2c1c60f784c1d3a84491f5e842f213eb76d3aa3becc561c95f997d0",
+    "crumb": "ERA 4 · AXIAL & CLASSICAL · DOSSIER"
+   },
+   {
+    "name": "Aristotle",
+    "slug": "dossier-aristotle",
+    "blurb": "Aristotle (384–322 BCE) · philosophy & science · Europe. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "c8ad79d74bd21932070ec0565c547e718fee6b5237b40808ace8637d4ccb6a5a",
+    "crumb": "ERA 4 · AXIAL & CLASSICAL · DOSSIER"
+   },
+   {
+    "name": "Hipparchia of Maroneia",
+    "slug": "dossier-hipparchia-of-maroneia",
+    "blurb": "Hipparchia of Maroneia (fl. c. 325 BCE) · philosophy · Europe. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "ed20f9b8f35d03f16893aa37de1ab0f604a237da7e36fa1db4ca574ce3c5b31f",
+    "crumb": "ERA 4 · AXIAL & CLASSICAL · DOSSIER"
+   },
+   {
+    "name": "Ashoka",
+    "slug": "dossier-ashoka",
+    "blurb": "Ashoka (r. c. 268–232 BCE) · rule & religion · South Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "fc6f8fec88fbb854d4acf04bcfa8392bf54530180b185048229b2c599fc85cca",
+    "crumb": "ERA 4 · AXIAL & CLASSICAL · DOSSIER"
+   },
+   {
+    "name": "Sanghamitta",
+    "slug": "dossier-sanghamitta",
+    "blurb": "Sanghamitta (3rd century BCE) · religion · South Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "a19da12077c8d1ca0936b7ae056728482ccab92367c4c8a348df08da2a5fb54f",
+    "crumb": "ERA 4 · AXIAL & CLASSICAL · DOSSIER"
+   },
+   {
+    "name": "Qin Shi Huang",
+    "slug": "dossier-qin-shi-huang",
+    "blurb": "Qin Shi Huang (259–210 BCE) · rule · East Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "29186370714234d93cf5801f01d7e52d2c4bfcb28452d57dabdc94a49dcd5fb4",
+    "crumb": "ERA 4 · AXIAL & CLASSICAL · DOSSIER"
+   },
+   {
+    "name": "Hannibal",
+    "slug": "dossier-hannibal",
+    "blurb": "Hannibal (247–c. 183 BCE) · military · Africa. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "c9e1370f6f73085d7aef923b28054170a0ba33655a54e80d6ee70188fb29d1ed",
+    "crumb": "ERA 4 · AXIAL & CLASSICAL · DOSSIER"
+   },
+   {
+    "name": "Cleopatra VII",
+    "slug": "dossier-cleopatra-vii",
+    "blurb": "Cleopatra VII (69–30 BCE) · rule · Africa. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "ad5e19ca3f90a4f28304633258ca714b83524b14d34909481318724f2c0399cf",
+    "crumb": "ERA 4 · AXIAL & CLASSICAL · DOSSIER"
+   },
+   {
+    "name": "Amanirenas",
+    "slug": "dossier-amanirenas",
+    "blurb": "Amanirenas (r. c. 40–10 BCE) · rule & military · Africa. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "622000d1065e332ec12775ce922933f2806bedc475503f28c27d9c642089a9ea",
+    "crumb": "ERA 4 · AXIAL & CLASSICAL · DOSSIER"
+   },
+   {
+    "name": "Jesus of Nazareth",
+    "slug": "dossier-jesus-of-nazareth",
+    "blurb": "Jesus of Nazareth (c. 4 BCE – c. 30/33 CE) · religion · Middle East. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "2912fa4055a2e840ec098c696899b07de29e1ede1d407404cf7c25805710e68b",
+    "crumb": "ERA 5 · ROADS & FAITHS · DOSSIER"
+   },
+   {
+    "name": "Trưng Trắc (Trưng Sisters)",
+    "slug": "dossier-trung-trac-trung-sisters",
+    "blurb": "Trưng Trắc (Trưng Sisters) (d. 43 CE) · rule & military · Southeast Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "ce3150980ff3b7a6fdb4793c7b53d7c5cc26d8754f85d5743a8393070e0a2a3f",
+    "crumb": "ERA 5 · ROADS & FAITHS · DOSSIER"
+   },
+   {
+    "name": "Boudica",
+    "slug": "dossier-boudica",
+    "blurb": "Boudica (d. c. 60/61 CE) · military · Europe. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "ee131b942b15297ffc608906fc1fb057cf208234228aaff938795fe0156b0d54",
+    "crumb": "ERA 5 · ROADS & FAITHS · DOSSIER"
+   },
+   {
+    "name": "Ban Zhao",
+    "slug": "dossier-ban-zhao",
+    "blurb": "Ban Zhao (c. 45–117 CE) · history & literature · East Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "1df9481dbe5c8497840348a97033755f7f18cd08a41a5a4c04b7a2c1d5d25942",
+    "crumb": "ERA 5 · ROADS & FAITHS · DOSSIER"
+   },
+   {
+    "name": "Zhang Heng",
+    "slug": "dossier-zhang-heng",
+    "blurb": "Zhang Heng (78–139 CE) · science & invention · East Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "6a8fdfee52ac1ad098b49a52ab9a2cd3f8b34b43440b85bf9c4c6c8931feea32",
+    "crumb": "ERA 5 · ROADS & FAITHS · DOSSIER"
+   },
+   {
+    "name": "Himiko",
+    "slug": "dossier-himiko",
+    "blurb": "Himiko (c. 170–248 CE) · rule & religion · East Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "61d4248a7e35c9b24b1ec7f0c6d78bb54e4f1d913816a7032bd9b6e3a389d808",
+    "crumb": "ERA 5 · ROADS & FAITHS · DOSSIER"
+   },
+   {
+    "name": "Zenobia",
+    "slug": "dossier-zenobia",
+    "blurb": "Zenobia (c. 240–after 274 CE) · rule · Middle East. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "d9b04bdfc30fee0588f8fe46c4d541161c766faf065b30e25aafeb2b15d3919f",
+    "crumb": "ERA 5 · ROADS & FAITHS · DOSSIER"
+   },
+   {
+    "name": "Ezana of Axum",
+    "slug": "dossier-ezana-of-axum",
+    "blurb": "Ezana of Axum (r. c. 330–360s CE) · rule & religion · Africa. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "ce204974be06217c599cce8fa9177b02a4252a1a3f4542f2aa1086cbb11d6365",
+    "crumb": "ERA 5 · ROADS & FAITHS · DOSSIER"
+   },
+   {
+    "name": "Augustine of Hippo",
+    "slug": "dossier-augustine-of-hippo",
+    "blurb": "Augustine of Hippo (354–430 CE) · religion & philosophy · Africa. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "77ac12bdb9005b507ef78315fb614cc532c441284aef9f416c8061738202059f",
+    "crumb": "ERA 5 · ROADS & FAITHS · DOSSIER"
+   },
+   {
+    "name": "Hypatia",
+    "slug": "dossier-hypatia",
+    "blurb": "Hypatia (c. 360–415 CE) · mathematics & philosophy · Africa. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "5551d2f9727514b9a7b91778704f08b1cddc55cbdfbeff76382fa039182be57d",
+    "crumb": "ERA 5 · ROADS & FAITHS · DOSSIER"
+   },
+   {
+    "name": "K'inich Yax K'uk' Mo'",
+    "slug": "dossier-k-inich-yax-k-uk-mo",
+    "blurb": "K'inich Yax K'uk' Mo' (r. 426–437 CE) · rule · Americas. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "2461f86319093f28a9103bca94fa667264a2906afbd891590bbc49177396401f",
+    "crumb": "ERA 5 · ROADS & FAITHS · DOSSIER"
+   },
+   {
+    "name": "Aryabhata",
+    "slug": "dossier-aryabhata",
+    "blurb": "Aryabhata (476–550 CE) · mathematics & astronomy · South Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "899a9985bde800ca46b8d69d9b413f4a43881b2629d27129dcbecb7230c2758d",
+    "crumb": "ERA 5 · ROADS & FAITHS · DOSSIER"
+   },
+   {
+    "name": "Theodora",
+    "slug": "dossier-theodora",
+    "blurb": "Theodora (c. 497–548) · rule & reform · Europe. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "db6e78ec7fe1625be1fa3f1891d234362cfa6fe1294be8d2a9fb812ccd170e4e",
+    "crumb": "ERA 6 · CALIPHS, COURTS & CODICES · DOSSIER"
+   },
+   {
+    "name": "Khadija bint Khuwaylid",
+    "slug": "dossier-khadija-bint-khuwaylid",
+    "blurb": "Khadija bint Khuwaylid (c. 554–619) · commerce & religion · Middle East. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "2493a4c742981b6581caacae15d2020c7559a911dd5388e0d23ee1bce400df14",
+    "crumb": "ERA 6 · CALIPHS, COURTS & CODICES · DOSSIER"
+   },
+   {
+    "name": "Prince Shōtoku",
+    "slug": "dossier-prince-shotoku",
+    "blurb": "Prince Shōtoku (574–622) · rule & religion · East Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "28186f64a0a3757a3f20efc059ae820b5fc536dc229a7be96555dda6b2a5ad49",
+    "crumb": "ERA 6 · CALIPHS, COURTS & CODICES · DOSSIER"
+   },
+   {
+    "name": "Muhammad",
+    "slug": "dossier-muhammad",
+    "blurb": "Muhammad (c. 570–632) · religion & rule · Middle East. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "2606d6d829f7efaaab9ca5a5fa98f245a6d3c9800c9de258994fffd7f43916af",
+    "crumb": "ERA 6 · CALIPHS, COURTS & CODICES · DOSSIER"
+   },
+   {
+    "name": "Brahmagupta",
+    "slug": "dossier-brahmagupta",
+    "blurb": "Brahmagupta (c. 598–668) · mathematics & astronomy · South Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "90b12e00181bf7b7bc3d38e4647c391ba067923f64574863f6497225680fc672",
+    "crumb": "ERA 6 · CALIPHS, COURTS & CODICES · DOSSIER"
+   },
+   {
+    "name": "K'inich Janaab' Pakal",
+    "slug": "dossier-k-inich-janaab-pakal",
+    "blurb": "K'inich Janaab' Pakal (603–683) · rule · Americas. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "16d0ed4141fc2ca06cdfcd650970772357dd895156d306d61b23809599645758",
+    "crumb": "ERA 6 · CALIPHS, COURTS & CODICES · DOSSIER"
+   },
+   {
+    "name": "Wu Zetian",
+    "slug": "dossier-wu-zetian",
+    "blurb": "Wu Zetian (624–705) · rule · East Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "e43b3c301449ac755f91c4bfa0d91b93cb4a784fb0616e88cd62a1a7bd872937",
+    "crumb": "ERA 6 · CALIPHS, COURTS & CODICES · DOSSIER"
+   },
+   {
+    "name": "Lady Six Sky",
+    "slug": "dossier-lady-six-sky",
+    "blurb": "Lady Six Sky (d. 741) · rule · Americas. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "d4083b03518b84ae45a9e84b5889172b928adb836b885a7f5644d5371b5a904e",
+    "crumb": "ERA 6 · CALIPHS, COURTS & CODICES · DOSSIER"
+   },
+   {
+    "name": "Rabia al-Adawiyya",
+    "slug": "dossier-rabia-al-adawiyya",
+    "blurb": "Rabia al-Adawiyya (c. 714–801) · religion & poetry · Middle East. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "c0fda050dfa9c146068e2a12e555a7753fd3559584b04b3f8ff571763354a927",
+    "crumb": "ERA 6 · CALIPHS, COURTS & CODICES · DOSSIER"
+   },
+   {
+    "name": "Charlemagne",
+    "slug": "dossier-charlemagne",
+    "blurb": "Charlemagne (748–814) · rule · Europe. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "b48ff2567a11d18ef708c01812755e28512be70affcf2e99c6de8d8db92f53f7",
+    "crumb": "ERA 6 · CALIPHS, COURTS & CODICES · DOSSIER"
+   },
+   {
+    "name": "Al-Khwarizmi",
+    "slug": "dossier-al-khwarizmi",
+    "blurb": "Al-Khwarizmi (c. 780–850) · mathematics & astronomy · Central Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "9697b459e3938043d9d14f2792adb060765e7230d95315c1c8d760eea35dc0e1",
+    "crumb": "ERA 6 · CALIPHS, COURTS & CODICES · DOSSIER"
+   },
+   {
+    "name": "Fatima al-Fihri",
+    "slug": "dossier-fatima-al-fihri",
+    "blurb": "Fatima al-Fihri (c. 800–880) · education & philanthropy · Africa. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "4728a3a278b35d8227d581ced1fbd17394abc0bc994d19cee102b42d538392be",
+    "crumb": "ERA 6 · CALIPHS, COURTS & CODICES · DOSSIER"
+   },
+   {
+    "name": "Murasaki Shikibu",
+    "slug": "dossier-murasaki-shikibu",
+    "blurb": "Murasaki Shikibu (c. 973–c. 1014/1025) · literature · East Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "3ec9b373b295d42dd295ddb183d3677a26114b557d4acc5e1a7dc4410f18d151",
+    "crumb": "ERA 7 · SILK ROADS & STEPPE · DOSSIER"
+   },
+   {
+    "name": "Ibn Sina (Avicenna)",
+    "slug": "dossier-ibn-sina-avicenna",
+    "blurb": "Ibn Sina (Avicenna) (980–1037) · medicine & philosophy · Central Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "5018e0012cf446c3262e6a8c8bc1ce6e5b9bd243b18854393ee5ce68ed6c93d5",
+    "crumb": "ERA 7 · SILK ROADS & STEPPE · DOSSIER"
+   },
+   {
+    "name": "Shen Kuo",
+    "slug": "dossier-shen-kuo",
+    "blurb": "Shen Kuo (1031–1095) · science · East Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "513f48b70336975ee68cb676827291a6a8cc82569a73aaec29108246e4ff2ec8",
+    "crumb": "ERA 7 · SILK ROADS & STEPPE · DOSSIER"
+   },
+   {
+    "name": "Li Qingzhao",
+    "slug": "dossier-li-qingzhao",
+    "blurb": "Li Qingzhao (1084–c. 1155) · literature · East Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "bc05ace32175ccf2c55b629caa443d7afff7c7d0a3343653e6cc18f681d18e45",
+    "crumb": "ERA 7 · SILK ROADS & STEPPE · DOSSIER"
+   },
+   {
+    "name": "Hildegard of Bingen",
+    "slug": "dossier-hildegard-of-bingen",
+    "blurb": "Hildegard of Bingen (1098–1179) · religion, music & science · Europe. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "446c566af90b0009a0787c1138102e74964c3ab5c832e47c7ce68048ad8abb2a",
+    "crumb": "ERA 7 · SILK ROADS & STEPPE · DOSSIER"
+   },
+   {
+    "name": "Tamar of Georgia",
+    "slug": "dossier-tamar-of-georgia",
+    "blurb": "Tamar of Georgia (r. 1184–1213) · rule · Middle East. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "9e8cac4a7b2f109d433c02db46ff54307b52a08c9d540cc17a0c2f527e00f9fd",
+    "crumb": "ERA 7 · SILK ROADS & STEPPE · DOSSIER"
+   },
+   {
+    "name": "Jayavarman VII",
+    "slug": "dossier-jayavarman-vii",
+    "blurb": "Jayavarman VII (c. 1122–1218) · rule & architecture · Southeast Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "2ccb0c71540e9aa85c5740608f53b460f66fd66be08a23d4a38c16507ec9c412",
+    "crumb": "ERA 7 · SILK ROADS & STEPPE · DOSSIER"
+   },
+   {
+    "name": "Genghis Khan",
+    "slug": "dossier-genghis-khan",
+    "blurb": "Genghis Khan (c. 1162–1227) · rule & military · Central Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "be9bcb5cff5f87531fdf8ab7c5435256fb0cf78b184bc79eca131059c6bc870f",
+    "crumb": "ERA 7 · SILK ROADS & STEPPE · DOSSIER"
+   },
+   {
+    "name": "Razia Sultana",
+    "slug": "dossier-razia-sultana",
+    "blurb": "Razia Sultana (r. 1236–1240) · rule · South Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "afd76861f7816dffcebd4d8ad1f3c09f986fb17dc8de77d36a15152d9277dd71",
+    "crumb": "ERA 7 · SILK ROADS & STEPPE · DOSSIER"
+   },
+   {
+    "name": "Sorghaghtani Beki",
+    "slug": "dossier-sorghaghtani-beki",
+    "blurb": "Sorghaghtani Beki (c. 1190–1252) · rule & administration · Central Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "5b09dee0531b5e8faa5692fd4936c493c5ddbd9fbf3855c57af006e968a273fb",
+    "crumb": "ERA 7 · SILK ROADS & STEPPE · DOSSIER"
+   },
+   {
+    "name": "Mansa Musa",
+    "slug": "dossier-mansa-musa",
+    "blurb": "Mansa Musa (r. c. 1312–1337) · rule & commerce · Africa. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "dab71b83934c516a122f9563339a36f9a2d3a22374a03959effb639abf820d34",
+    "crumb": "ERA 7 · SILK ROADS & STEPPE · DOSSIER"
+   },
+   {
+    "name": "Ibn Battuta",
+    "slug": "dossier-ibn-battuta",
+    "blurb": "Ibn Battuta (1304–1368/69) · exploration · Africa. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "7f856843d2751ca694bd8ad6dc8f6de17ade94459ff64feece45c3f37ec705fa",
+    "crumb": "ERA 7 · SILK ROADS & STEPPE · DOSSIER"
+   },
+   {
+    "name": "Joan of Arc",
+    "slug": "dossier-joan-of-arc",
+    "blurb": "Joan of Arc (c. 1412–1431) · military & religion · Europe. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "164b929fe73c16675427c7be10a5b05709282d7fc1a1c37a3aed19ca452619e9",
+    "crumb": "ERA 8 · RENAISSANCES & ENCOUNTERS · DOSSIER"
+   },
+   {
+    "name": "Sejong the Great",
+    "slug": "dossier-sejong-the-great",
+    "blurb": "Sejong the Great (1397–1450) · rule & science · East Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "a1d590d561a5b3d5e54b866b08f7b50849cd952d577ec75a21179e81aba3ae19",
+    "crumb": "ERA 8 · RENAISSANCES & ENCOUNTERS · DOSSIER"
+   },
+   {
+    "name": "Pachacuti",
+    "slug": "dossier-pachacuti",
+    "blurb": "Pachacuti (r. 1438–c. 1471) · rule · Americas. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "97d438eb42e2ae59a5220b776a9e1db2049d1ad8076a960b6b50e5984cb76a04",
+    "crumb": "ERA 8 · RENAISSANCES & ENCOUNTERS · DOSSIER"
+   },
+   {
+    "name": "Askia Muhammad I",
+    "slug": "dossier-askia-muhammad-i",
+    "blurb": "Askia Muhammad I (c. 1443–1538) · rule · Africa. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "ecf30249f1be6ef0730e564317bfba2683d26d00c3228ee745f475b3a763f154",
+    "crumb": "ERA 8 · RENAISSANCES & ENCOUNTERS · DOSSIER"
+   },
+   {
+    "name": "Leonardo da Vinci",
+    "slug": "dossier-leonardo-da-vinci",
+    "blurb": "Leonardo da Vinci (1452–1519) · arts & science · Europe. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "3c713d9c42a486e14e7aa5b54a34f6286023e0705415c75fa17e92ec341c62dc",
+    "crumb": "ERA 8 · RENAISSANCES & ENCOUNTERS · DOSSIER"
+   },
+   {
+    "name": "Guru Nanak",
+    "slug": "dossier-guru-nanak",
+    "blurb": "Guru Nanak (1469–1539) · religion · South Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "0aca5fdb16fe7bea1a2016b87957b428f3b943323f4eaaacfedd0e9a9ab133af",
+    "crumb": "ERA 8 · RENAISSANCES & ENCOUNTERS · DOSSIER"
+   },
+   {
+    "name": "Martin Luther",
+    "slug": "dossier-martin-luther",
+    "blurb": "Martin Luther (1483–1546) · religion & reform · Europe. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "bb1ea8645ddca8af1f3135c8eea35c43b6c5d356efd949b52ec15683d52852c0",
+    "crumb": "ERA 8 · RENAISSANCES & ENCOUNTERS · DOSSIER"
+   },
+   {
+    "name": "La Malinche",
+    "slug": "dossier-la-malinche",
+    "blurb": "La Malinche (c. 1500–c. 1529) · language & diplomacy · Americas. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "8bfe817bdbb658cd806ce24762e5686c0da5073668635cdad645daf822de0dbc",
+    "crumb": "ERA 8 · RENAISSANCES & ENCOUNTERS · DOSSIER"
+   },
+   {
+    "name": "Mirabai",
+    "slug": "dossier-mirabai",
+    "blurb": "Mirabai (c. 1499–1546) · religion & poetry · South Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "22f20f903fcaf6d3cc2259460851da9453f75ca225b45b09343bf298d9c83d24",
+    "crumb": "ERA 8 · RENAISSANCES & ENCOUNTERS · DOSSIER"
+   },
+   {
+    "name": "Hürrem Sultan",
+    "slug": "dossier-hurrem-sultan",
+    "blurb": "Hürrem Sultan (c. 1504–1558) · rule & philanthropy · Middle East. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "be5611dc82ead7356977f43bed6e80edd876cdd8dc571afc1780ba58244fca9c",
+    "crumb": "ERA 8 · RENAISSANCES & ENCOUNTERS · DOSSIER"
+   },
+   {
+    "name": "Amina of Zazzau",
+    "slug": "dossier-amina-of-zazzau",
+    "blurb": "Amina of Zazzau (16th century (dates debated)) · rule & military · Africa. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "4a1aca190be7945a230bf7ec176b208f2f38cdaf1ebbcaa93c59829bcb593af0",
+    "crumb": "ERA 8 · RENAISSANCES & ENCOUNTERS · DOSSIER"
+   },
+   {
+    "name": "Elizabeth I",
+    "slug": "dossier-elizabeth-i",
+    "blurb": "Elizabeth I (1533–1603) · rule · Europe. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "b05adf12c4f60747b0da874142f0b6e6cf7b96370c297069ffd6eb975c4e1962",
+    "crumb": "ERA 8 · RENAISSANCES & ENCOUNTERS · DOSSIER"
+   },
+   {
+    "name": "Nur Jahan",
+    "slug": "dossier-nur-jahan",
+    "blurb": "Nur Jahan (1577–1645) · rule & arts · South Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "0d148fbf18a4e8d7c16051491d220034b429169f1c8588f8f6bc15cc8ac28604",
+    "crumb": "ERA 9 · ENLIGHTENMENT & EMPIRE · DOSSIER"
+   },
+   {
+    "name": "Nzinga of Ndongo and Matamba",
+    "slug": "dossier-nzinga-of-ndongo-and-matamba",
+    "blurb": "Nzinga of Ndongo and Matamba (c. 1583–1663) · rule & diplomacy · Africa. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "ea11c9215e94ba134d6164811870e9962fbfdd9bfddf831bd2f0c1c4ec3f92a9",
+    "crumb": "ERA 9 · ENLIGHTENMENT & EMPIRE · DOSSIER"
+   },
+   {
+    "name": "Shivaji",
+    "slug": "dossier-shivaji",
+    "blurb": "Shivaji (1630–1680) · rule & military · South Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "ca17c421c6741016db1a2fa8a37a551ad70f0d58445550170c7ed94327a67c14",
+    "crumb": "ERA 9 · ENLIGHTENMENT & EMPIRE · DOSSIER"
+   },
+   {
+    "name": "Isaac Newton",
+    "slug": "dossier-isaac-newton",
+    "blurb": "Isaac Newton (1642–1727 (Julian calendar)) · science & mathematics · Europe. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "a07a661a35d0be2f307cf22d0a833acf48e285f0591bab4ad7c1bb18cbf80ac3",
+    "crumb": "ERA 9 · ENLIGHTENMENT & EMPIRE · DOSSIER"
+   },
+   {
+    "name": "Matsuo Bashō",
+    "slug": "dossier-matsuo-basho",
+    "blurb": "Matsuo Bashō (1644–1694) · literature · East Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "78f8901f3f45d15584c346fa5b4f75cd24982c648bfbd334818a8e5902cc2d5d",
+    "crumb": "ERA 9 · ENLIGHTENMENT & EMPIRE · DOSSIER"
+   },
+   {
+    "name": "Sor Juana Inés de la Cruz",
+    "slug": "dossier-sor-juana-ines-de-la-cruz",
+    "blurb": "Sor Juana Inés de la Cruz (1648–1695) · literature & scholarship · Americas. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "2cbbd2d0f75fd7d243e6e05ebd4e647e68c9495a9f33a1b4d1e8804ef9a36e9e",
+    "crumb": "ERA 9 · ENLIGHTENMENT & EMPIRE · DOSSIER"
+   },
+   {
+    "name": "Tupaia",
+    "slug": "dossier-tupaia",
+    "blurb": "Tupaia (c. 1725–1770) · navigation & exploration · Oceania. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "a7d70c05bfbfec33a21a9aa0b277a081e8029fb2bd1db63b39c348241ba0bd98",
+    "crumb": "ERA 9 · ENLIGHTENMENT & EMPIRE · DOSSIER"
+   },
+   {
+    "name": "Catherine the Great",
+    "slug": "dossier-catherine-the-great",
+    "blurb": "Catherine the Great (1729–1796) · rule · Europe. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "2bab92fe52a6c2f3ac671e737f28c826c2fd5f24a0db68db0c56e343a2795f86",
+    "crumb": "ERA 9 · ENLIGHTENMENT & EMPIRE · DOSSIER"
+   },
+   {
+    "name": "Olaudah Equiano",
+    "slug": "dossier-olaudah-equiano",
+    "blurb": "Olaudah Equiano (c. 1745–1797) · writing & abolition · Africa. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "75c5907f9485970c111813ad58c7e600245005ceb4b462db32cc1a4d4a2a3552",
+    "crumb": "ERA 9 · ENLIGHTENMENT & EMPIRE · DOSSIER"
+   },
+   {
+    "name": "Wang Zhenyi",
+    "slug": "dossier-wang-zhenyi",
+    "blurb": "Wang Zhenyi (1768–1797) · astronomy & mathematics · East Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "b4e04a142441dbf6849c07f0d5c02ad8c3812386c4a8bd08f804bc3ec9956c17",
+    "crumb": "ERA 9 · ENLIGHTENMENT & EMPIRE · DOSSIER"
+   },
+   {
+    "name": "Mary Wollstonecraft",
+    "slug": "dossier-mary-wollstonecraft",
+    "blurb": "Mary Wollstonecraft (1759–1797) · philosophy & rights · Europe. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "9208017323c2a37bbcc6f6a9b9b262e6e31778c47039df7525c7a43dce7261b1",
+    "crumb": "ERA 9 · ENLIGHTENMENT & EMPIRE · DOSSIER"
+   },
+   {
+    "name": "Toussaint Louverture",
+    "slug": "dossier-toussaint-louverture",
+    "blurb": "Toussaint Louverture (1744–1803) · rule & revolution · Americas. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "e3e34f06896710e75518680bf7767e6548944c8bbf122e0578db9a956861af47",
+    "crumb": "ERA 9 · ENLIGHTENMENT & EMPIRE · DOSSIER"
+   },
+   {
+    "name": "Kamehameha I",
+    "slug": "dossier-kamehameha-i",
+    "blurb": "Kamehameha I (c. 1758–1819) · rule · Oceania. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "7df246cb02ba99cae49a6910d0b7b3b96d78eab9014e25b63d34ec50c1471683",
+    "crumb": "ERA 10 · REVOLUTIONS & REFORM · DOSSIER"
+   },
+   {
+    "name": "Simón Bolívar",
+    "slug": "dossier-simon-bolivar",
+    "blurb": "Simón Bolívar (1783–1830) · rule & revolution · Americas. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "cac323f7f80501cd561b850b8e16802f81fb69b641114cf4a653977208c8b1b2",
+    "crumb": "ERA 10 · REVOLUTIONS & REFORM · DOSSIER"
+   },
+   {
+    "name": "Shaka",
+    "slug": "dossier-shaka",
+    "blurb": "Shaka (c. 1787–1828) · rule & military · Africa. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "f23044e8a415d1ed530b067cefc0a1a7258104214f0770f2add6e561fa9c6ce6",
+    "crumb": "ERA 10 · REVOLUTIONS & REFORM · DOSSIER"
+   },
+   {
+    "name": "Ada Lovelace",
+    "slug": "dossier-ada-lovelace",
+    "blurb": "Ada Lovelace (1815–1852) · mathematics & computing · Europe. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "1b4abd75d3114a48fd67588507d9cc109e3587e8a7245cc4934187294463cdb9",
+    "crumb": "ERA 10 · REVOLUTIONS & REFORM · DOSSIER"
+   },
+   {
+    "name": "Savitribai Phule",
+    "slug": "dossier-savitribai-phule",
+    "blurb": "Savitribai Phule (1831–1897) · education & reform · South Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "ab2d5ac03ef807cf9e7d85f5a27c0942f200db274411c7566713552978873531",
+    "crumb": "ERA 10 · REVOLUTIONS & REFORM · DOSSIER"
+   },
+   {
+    "name": "Harriet Tubman",
+    "slug": "dossier-harriet-tubman",
+    "blurb": "Harriet Tubman (c. 1822–1913) · rights & abolition · Americas. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "c0c25d167c54ae4638d311daac85f51f4c180fe1fa00e86eb1ea2a8f8a6b7972",
+    "crumb": "ERA 10 · REVOLUTIONS & REFORM · DOSSIER"
+   },
+   {
+    "name": "Frederick Douglass",
+    "slug": "dossier-frederick-douglass",
+    "blurb": "Frederick Douglass (1818–1895) · rights & abolition · Americas. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "fa79706b37abac7b4b0c35d05ef932b5d8d9a6b9332fa4fa75127cf61e236880",
+    "crumb": "ERA 10 · REVOLUTIONS & REFORM · DOSSIER"
+   },
+   {
+    "name": "Florence Nightingale",
+    "slug": "dossier-florence-nightingale",
+    "blurb": "Florence Nightingale (1820–1910) · medicine & statistics · Europe. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "06f5792823be88cc285f4da7fe618bfe594373237b3d1ea48ee5103c1eada3bb",
+    "crumb": "ERA 10 · REVOLUTIONS & REFORM · DOSSIER"
+   },
+   {
+    "name": "Charles Darwin",
+    "slug": "dossier-charles-darwin",
+    "blurb": "Charles Darwin (1809–1882) · science · Europe. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "84d3dba9d63d23b95393f9756e41ab95731e1b1a8d05531cedfe123522b578e2",
+    "crumb": "ERA 10 · REVOLUTIONS & REFORM · DOSSIER"
+   },
+   {
+    "name": "Karl Marx",
+    "slug": "dossier-karl-marx",
+    "blurb": "Karl Marx (1818–1883) · philosophy & economics · Europe. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "1e99a78a1e8b01e4451518ce1d8cfdb2b0c8d4a7e0994a1d28fa5ef882adccf8",
+    "crumb": "ERA 10 · REVOLUTIONS & REFORM · DOSSIER"
+   },
+   {
+    "name": "Empress Dowager Cixi",
+    "slug": "dossier-empress-dowager-cixi",
+    "blurb": "Empress Dowager Cixi (1835–1908) · rule · East Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "4e8d07f6c2ce714b51807a36431fb562c8fd6ff078a8cd707343b06041d55ec3",
+    "crumb": "ERA 10 · REVOLUTIONS & REFORM · DOSSIER"
+   },
+   {
+    "name": "Kate Sheppard",
+    "slug": "dossier-kate-sheppard",
+    "blurb": "Kate Sheppard (1848–1934) · rights & reform · Oceania. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "97caafaf5d2d93d33d3c2130d1983965fcb0fc6f0edbfc9bb30d987cef625de4",
+    "crumb": "ERA 10 · REVOLUTIONS & REFORM · DOSSIER"
+   },
+   {
+    "name": "Yaa Asantewaa",
+    "slug": "dossier-yaa-asantewaa",
+    "blurb": "Yaa Asantewaa (c. 1840–1921) · rule & resistance · Africa. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "e060cd8a74c3d474cfd5bd3cfc0c468a3828d54574ae046f5644b036ef14e307",
+    "crumb": "ERA 11 · MODERN UPHEAVAL · DOSSIER"
+   },
+   {
+    "name": "Kartini",
+    "slug": "dossier-kartini",
+    "blurb": "Kartini (1879–1904) · education & rights · Southeast Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "f78a5ccebd5af1f9f21d948cc3e208fa811e7a133872cbd9f4b16c123ba1ddd1",
+    "crumb": "ERA 11 · MODERN UPHEAVAL · DOSSIER"
+   },
+   {
+    "name": "Qiu Jin",
+    "slug": "dossier-qiu-jin",
+    "blurb": "Qiu Jin (1875–1907) · rights & revolution · East Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "927c01372aaf8a024eab339f6d4c3dcb625fed6ac7d8d5ff8d3779afc1fe7b2a",
+    "crumb": "ERA 11 · MODERN UPHEAVAL · DOSSIER"
+   },
+   {
+    "name": "Marie Curie",
+    "slug": "dossier-marie-curie",
+    "blurb": "Marie Curie (1867–1934) · science · Europe. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "f9c510df6d26e89491140496c48421133dc7fb34cbac688df1a06deb257d7004",
+    "crumb": "ERA 11 · MODERN UPHEAVAL · DOSSIER"
+   },
+   {
+    "name": "Albert Einstein",
+    "slug": "dossier-albert-einstein",
+    "blurb": "Albert Einstein (1879–1955) · science · Europe. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "42d349146be7315b2dbb783ad5b424420e5c1e6003fa4ee78fd83ac52c50aa07",
+    "crumb": "ERA 11 · MODERN UPHEAVAL · DOSSIER"
+   },
+   {
+    "name": "Mustafa Kemal Atatürk",
+    "slug": "dossier-mustafa-kemal-ataturk",
+    "blurb": "Mustafa Kemal Atatürk (1881–1938) · rule & reform · Middle East. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "c9672cf28292ffdc07b4e1343837da6c1a4ddeff1c73dfef6ab13bf8e5e3a5fd",
+    "crumb": "ERA 11 · MODERN UPHEAVAL · DOSSIER"
+   },
+   {
+    "name": "Mahatma Gandhi",
+    "slug": "dossier-mahatma-gandhi",
+    "blurb": "Mahatma Gandhi (1869–1948) · rights & independence · South Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "ef3187e43c51118eb69435a0dc39a05de1daad29b774d5c4a42017abbb890ad2",
+    "crumb": "ERA 11 · MODERN UPHEAVAL · DOSSIER"
+   },
+   {
+    "name": "Frida Kahlo",
+    "slug": "dossier-frida-kahlo",
+    "blurb": "Frida Kahlo (1907–1954) · arts · Americas. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "3e4a17afbbcceeae9fce69d8f15900adea9863c003b3b21e3f50f8085388f0ab",
+    "crumb": "ERA 11 · MODERN UPHEAVAL · DOSSIER"
+   },
+   {
+    "name": "Franklin D. Roosevelt",
+    "slug": "dossier-franklin-d-roosevelt",
+    "blurb": "Franklin D. Roosevelt (1882–1945) · rule · Americas. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "57968be018fa5f3f93af1a83cbe84f79d7a8691461c4788edde8fc0096c0509e",
+    "crumb": "ERA 11 · MODERN UPHEAVAL · DOSSIER"
+   },
+   {
+    "name": "Eleanor Roosevelt",
+    "slug": "dossier-eleanor-roosevelt",
+    "blurb": "Eleanor Roosevelt (1884–1962) · rights & diplomacy · Americas. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "243cb180c1fd61a34170203d620419fd59de8ced195264a092debeccceeb6c73",
+    "crumb": "ERA 11 · MODERN UPHEAVAL · DOSSIER"
+   },
+   {
+    "name": "Mao Zedong",
+    "slug": "dossier-mao-zedong",
+    "blurb": "Mao Zedong (1893–1976) · rule & revolution · East Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "ffdb416a2884b25af1b484e497b525bdbe56789275d7fbdfdb4092c7b9d15811",
+    "crumb": "ERA 11 · MODERN UPHEAVAL · DOSSIER"
+   },
+   {
+    "name": "Kwame Nkrumah",
+    "slug": "dossier-kwame-nkrumah",
+    "blurb": "Kwame Nkrumah (1909–1972) · rule & independence · Africa. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "956db53a3cc37fa8973613ca5640b0feca3cdb1578d52eea58ed5bb8530308c9",
+    "crumb": "ERA 11 · MODERN UPHEAVAL · DOSSIER"
+   },
+   {
+    "name": "Martin Luther King Jr.",
+    "slug": "dossier-martin-luther-king-jr",
+    "blurb": "Martin Luther King Jr. (1929–1968) · rights · Americas. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "984a06d1bc46645c3b7bac9653efa7d5f1e9637db24528bd8e26b76933a782c6",
+    "crumb": "ERA 12 · NETWORKED WORLD · DOSSIER"
+   },
+   {
+    "name": "Lee Kuan Yew",
+    "slug": "dossier-lee-kuan-yew",
+    "blurb": "Lee Kuan Yew (1923–2015) · rule · Southeast Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "a6f1092ca153f2667feed95b603e3819cb313b8d656541eeab0daa2dfb8e43f8",
+    "crumb": "ERA 12 · NETWORKED WORLD · DOSSIER"
+   },
+   {
+    "name": "Tu Youyou",
+    "slug": "dossier-tu-youyou",
+    "blurb": "Tu Youyou (b. 1930) · medicine & science · East Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "b9588f493ea70e2d66cc7fa44c557d523547e8e9e82877e61997d3377f30cf1e",
+    "crumb": "ERA 12 · NETWORKED WORLD · DOSSIER"
+   },
+   {
+    "name": "Whina Cooper",
+    "slug": "dossier-whina-cooper",
+    "blurb": "Whina Cooper (1895–1994) · rights · Oceania. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "ffc9bf91297ad2c5e63992d274d34ad2b989fb54e1b6cb1caf6d8bcfc2bc8799",
+    "crumb": "ERA 12 · NETWORKED WORLD · DOSSIER"
+   },
+   {
+    "name": "Wangari Maathai",
+    "slug": "dossier-wangari-maathai",
+    "blurb": "Wangari Maathai (1940–2011) · environment & rights · Africa. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "857b42a701f71b9668a24eeb0e8b62562878ad7e0b2086811e664a547c4717a0",
+    "crumb": "ERA 12 · NETWORKED WORLD · DOSSIER"
+   },
+   {
+    "name": "Muhammad Yunus",
+    "slug": "dossier-muhammad-yunus",
+    "blurb": "Muhammad Yunus (b. 1940) · economics & development · South Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "d5320efaa2b38bee1b7fbbbbebab0d1c307584b9f77e02a2323720eb859e4f89",
+    "crumb": "ERA 12 · NETWORKED WORLD · DOSSIER"
+   },
+   {
+    "name": "Toni Morrison",
+    "slug": "dossier-toni-morrison",
+    "blurb": "Toni Morrison (1931–2019) · literature · Americas. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "bdd618815337bfbcedc962126c6d591cd6c23e88f2559728d210b8dd81b3fa74",
+    "crumb": "ERA 12 · NETWORKED WORLD · DOSSIER"
+   },
+   {
+    "name": "Tim Berners-Lee",
+    "slug": "dossier-tim-berners-lee",
+    "blurb": "Tim Berners-Lee (b. 1955) · technology · Europe. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "0dec5d8a3e9043c86d7307b45879f5aff8114972111a853c451d7324c9aac3c6",
+    "crumb": "ERA 12 · NETWORKED WORLD · DOSSIER"
+   },
+   {
+    "name": "Eddie Mabo",
+    "slug": "dossier-eddie-mabo",
+    "blurb": "Eddie Mabo (1936–1992) · rights · Oceania. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "847b9ca7b05e05dadc79d538f457caba5f4ab4e08eb427637a7feb636e45d7a5",
+    "crumb": "ERA 12 · NETWORKED WORLD · DOSSIER"
+   },
+   {
+    "name": "Nelson Mandela",
+    "slug": "dossier-nelson-mandela",
+    "blurb": "Nelson Mandela (1918–2013) · rights & rule · Africa. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "034d4400ad7be5716d7fb8b2f670febb5dfcdb42f29b12e5c9d896c08b2020d1",
+    "crumb": "ERA 12 · NETWORKED WORLD · DOSSIER"
+   },
+   {
+    "name": "Zaha Hadid",
+    "slug": "dossier-zaha-hadid",
+    "blurb": "Zaha Hadid (1950–2016) · architecture · Middle East. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "df2722e7f331312232d0adddbb05a3f7b4cf9db355cc728e0640599826a7abf2",
+    "crumb": "ERA 12 · NETWORKED WORLD · DOSSIER"
+   },
+   {
+    "name": "Malala Yousafzai",
+    "slug": "dossier-malala-yousafzai",
+    "blurb": "Malala Yousafzai (b. 1997) · education & rights · South Asia. A sapphon dossier and score card (MODEL) on Dave's PATRICIA layers, with a sourced LIT bio.",
+    "seal": "b98755e3b72d837874d9999f38212524a57542204a37d3587cad5e87932c1084",
+    "crumb": "ERA 12 · NETWORKED WORLD · DOSSIER"
+   },
+   {
+    "name": "Era 1 · Dawn of Writing",
+    "slug": "era-01-dawn-of-writing",
+    "blurb": "Era 1 of 12, 3600–2350 BCE: twelve sapphon dossiers (6 women, 6 men) from Africa, Middle East, in the clay style.",
+    "seal": "2be715c435ae3e0ebfbb2cd216190f7bf4b8295ede4c8d4d2b0ff5ae73bf4b8c",
+    "crumb": "ERA 1 · 3600–2350 BCE"
+   },
+   {
+    "name": "Era 2 · Bronze Age Courts",
+    "slug": "era-02-bronze-age-courts",
+    "blurb": "Era 2 of 12, 2350–1200 BCE: twelve sapphon dossiers (6 women, 6 men) from Africa, East Asia, Middle East, in the papyrus style.",
+    "seal": "bfca5249d4a472173e4cea8d3fb104b8321f5bc82aa5ec137c2acd172f64dd55",
+    "crumb": "ERA 2 · 2350–1200 BCE"
+   },
+   {
+    "name": "Era 3 · Iron & Early Axial",
+    "slug": "era-03-iron-early-axial",
+    "blurb": "Era 3 of 12, 1200–500 BCE: twelve sapphon dossiers (6 women, 6 men) from Africa, Central Asia, East Asia, Europe, Middle East, South Asia, in the bronze style.",
+    "seal": "bca272c4c5ecf3780e04324a2ac064525dd553a032cf0765fd785ae049fc700f",
+    "crumb": "ERA 3 · 1200–500 BCE"
+   },
+   {
+    "name": "Era 4 · Axial & Classical",
+    "slug": "era-04-axial-classical",
+    "blurb": "Era 4 of 12, 500 BCE–1 CE: twelve sapphon dossiers (6 women, 6 men) from Africa, East Asia, Europe, Middle East, South Asia, in the marble style.",
+    "seal": "61af9a4d1f289d031c8786a9b169561a7915b872e38dd07fede735a4080e3614",
+    "crumb": "ERA 4 · 500 BCE–1 CE"
+   },
+   {
+    "name": "Era 5 · Roads & Faiths",
+    "slug": "era-05-roads-faiths",
+    "blurb": "Era 5 of 12, 1–500 CE: twelve sapphon dossiers (6 women, 6 men) from Africa, Americas, East Asia, Europe, Middle East, South Asia, Southeast Asia, in the mosaic style.",
+    "seal": "d63e07b8f4b419523abee7de17a525259df26604c412228feb2c57ab76b64c96",
+    "crumb": "ERA 5 · 1–500 CE"
+   },
+   {
+    "name": "Era 6 · Caliphs, Courts & Codices",
+    "slug": "era-06-caliphs-courts-codices",
+    "blurb": "Era 6 of 12, 500–1000: twelve sapphon dossiers (6 women, 6 men) from Africa, Americas, Central Asia, East Asia, Europe, Middle East, South Asia, in the illum style.",
+    "seal": "3ad79b6450ab51599d7ecd5d654d88f36f92e52f55f69c2f35177ca0cdb6d191",
+    "crumb": "ERA 6 · 500–1000"
+   },
+   {
+    "name": "Era 7 · Silk Roads & Steppe",
+    "slug": "era-07-silk-roads-steppe",
+    "blurb": "Era 7 of 12, 1000–1400: twelve sapphon dossiers (6 women, 6 men) from Africa, Central Asia, East Asia, Europe, Middle East, South Asia, Southeast Asia, in the ink style.",
+    "seal": "10e43d99c16575815222ff3f9b2f71ef33952ce4a3fed03e2a3ddd0ee4691c14",
+    "crumb": "ERA 7 · 1000–1400"
+   },
+   {
+    "name": "Era 8 · Renaissances & Encounters",
+    "slug": "era-08-renaissances-encounters",
+    "blurb": "Era 8 of 12, 1400–1600: twelve sapphon dossiers (6 women, 6 men) from Africa, Americas, East Asia, Europe, Middle East, South Asia, in the sfumato style.",
+    "seal": "b35f04dec454ce44b0eaea997f210ea88b6ce4e8d41d23ec2e3cc7d7ae8b7ff8",
+    "crumb": "ERA 8 · 1400–1600"
+   },
+   {
+    "name": "Era 9 · Enlightenment & Empire",
+    "slug": "era-09-enlightenment-empire",
+    "blurb": "Era 9 of 12, 1600–1800: twelve sapphon dossiers (6 women, 6 men) from Africa, Americas, East Asia, Europe, Oceania, South Asia, in the baroque style.",
+    "seal": "cd3db09b25a586eb50da1de8d443d42d7a43a2ecd2dd7d66cd978ed865c6dd52",
+    "crumb": "ERA 9 · 1600–1800"
+   },
+   {
+    "name": "Era 10 · Revolutions & Reform",
+    "slug": "era-10-revolutions-reform",
+    "blurb": "Era 10 of 12, 1800–1900: twelve sapphon dossiers (6 women, 6 men) from Africa, Americas, East Asia, Europe, Oceania, South Asia, in the engraving style.",
+    "seal": "07fff75148226b5c11e58b2d842ee8884ed53c40742cd82db69db50d8a5b59ef",
+    "crumb": "ERA 10 · 1800–1900"
+   },
+   {
+    "name": "Era 11 · Modern Upheaval",
+    "slug": "era-11-modern-upheaval",
+    "blurb": "Era 11 of 12, 1900–1960: twelve sapphon dossiers (6 women, 6 men) from Africa, Americas, East Asia, Europe, Middle East, South Asia, Southeast Asia, in the deco style.",
+    "seal": "318f85cdb46cfbb4dd0578fa919ea095e33e1959e766a59262792dd07f002831",
+    "crumb": "ERA 11 · 1900–1960"
+   },
+   {
+    "name": "Era 12 · Networked World",
+    "slug": "era-12-networked-world",
+    "blurb": "Era 12 of 12, 1960–2026: twelve sapphon dossiers (6 women, 6 men) from Africa, Americas, East Asia, Europe, Middle East, Oceania, South Asia, Southeast Asia, in the neon style.",
+    "seal": "ae497605c56a2209f53b1b7b834393516ebb7afbea24cec90a48ba08680ce546",
+    "crumb": "ERA 12 · 1960–2026"
+   },
+   {
+    "name": "Sapphon Dossiers · Method",
+    "slug": "sapphon-dossiers-method",
+    "blurb": "How the 144 sapphon dossiers are scored: Dave’s 12 layers with 3 depths, RED/BLUE/GREEN lanes, the three streams, the rose triad as tempo, and the {i}/{id}/{sid} radials. All MODEL, computed on the I-13 VM.",
+    "seal": "25e5945b3c3449de4facd0f9f603de0f56df41f8d5f83f9ef746633a99e32e43",
+    "crumb": "METHOD"
+   },
+   {
+    "name": "Sapphon Dossiers · Index",
+    "slug": "sapphon-dossiers-index",
+    "blurb": "Sapphon dossiers for 144 influential people from about 3600 BCE to 2026: 72 women and 72 men across 12 eras and 9 world regions. Each has a sourced bio and a PATRICIA-style score card (MODEL) computed on Dave’s I-13 engine.",
+    "seal": "b50d1cb5b8466fe420b53e59e2c83f4b38c43ed26edcabf32d211751dfd158e8",
+    "crumb": "INDEX"
+   }
+  ]
  }
 }
