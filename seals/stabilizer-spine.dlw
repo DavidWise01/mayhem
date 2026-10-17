@@ -1,0 +1,1 @@
+{"slug": "stabilizer-spine", "seal": "1b663748281bcb8c36ab0d8efb10d9588a2ae78095519c924aea561b7aef37f1", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -3354,14 +3354,15 @@
  },
  "batch_spiral_366": {
   "said": [
-   "Dave t239u: i love that, incorpatate all of this together please 0-122 is oragantuang or what ever hydronge 123-244 is oxygen , green and 245 - 366 is nitrogen blue or 366/3 120 degrees per color downward spiral at 1degree per cycle"
+   "Dave t239u: i love that, incorpatate all of this together please 0-122 is oragantuang or what ever hydronge 123-244 is oxygen , green and 245 - 366 is nitrogen blue or 366/3 120 degrees per color downward spiral at 1degree per cycle",
+   "Dave t240u: sorry its element 118 the orgen and this should be in a double helix with a stablizer and then your codons 4^3"
   ],
   "mapping_verbatim": {
    "0-122": "oragantuang or what ever hydronge",
    "123-244": "oxygen , green",
-   "245-366": "nitrogen blue"
+   "245-366": "nitrogen blue",
+   "0-122_t240": "sorry its element 118 the orgen"
   },
-  "hydrogen_colour": "red (MODEL; cites Omnibus CH-1 '122 TYPES // R ONLY'; orange is an alternative)",
   "geometry": "1 degree per step (cycle): 366 steps sweep 366 deg, 122 deg per band vs Dave's 120; alt 3-turn layout toggle (MODEL)",
   "arithmetic": {
    "366/3": 122,
@@ -3387,18 +3388,39 @@
   "agents": "BUILDER + WEAVER + CRITIC; localStorage mayhem-spiral-board (MODEL)",
   "pages": [
    {
-    "name": "The Spiral 366 World",
-    "slug": "spiral-366-world",
-    "blurb": "One downward spiral of 366 steps in three bands (0–122 hydrogen, 123–244 oxygen green, 245–366 nitrogen blue), with all 180 recent spheres as clickable nodes, a purple beam, and the toroid of three star types at its root.",
-    "seal": "527d9761f87468c4deedc74afe3ec69009525c4cca378a613e4730ec3c8dd36d",
+    "name": "The Helix 366 World",
+    "slug": "helix-366-world",
+    "blurb": "A double helix of two antiparallel 366-step strands descending 1° per step (0–122 oganesson red, 123–244 oxygen green, 245–366 nitrogen blue), held by a central spine, with 64 codon rungs and all 180 recent spheres as clickable nodes.",
+    "seal": "1a3825fc3743cdb89bed972736501521985c78b26fb1ee91770bb1d3c31ababa",
     "crumb": "CENTERPIECE"
    },
    {
-    "name": "Band I · 0–122 · Hydrogen",
-    "slug": "band-hydrogen",
-    "blurb": "Steps 0–122 of the spiral: hydrogen, Dave's \"oragantuang or what ever\", drawn red (MODEL). These are the first 123 steps, including step 0.",
-    "seal": "86bd3ee11add21ce083bfe2ca1742bdc5f29ec32d36f4f8a338e94e16fd547b9",
+    "name": "Band I · 0–122 · Oganesson (Og, Z = 118)",
+    "slug": "band-oganesson",
+    "blurb": "Steps 0–122 of the helix: element 118, oganesson. Dave (t240): \"sorry its element 118 the orgen\". It is drawn red (MODEL). Z = 118 falls inside its own band.",
+    "seal": "4575880b01cdfeb55ecf41b57048b30fbd1bca7f34127e02e8b9c84ec23a8322",
     "crumb": "BAND I"
+   },
+   {
+    "name": "Oganesson · Element 118",
+    "slug": "oganesson-element",
+    "blurb": "Oganesson, Og, Z = 118: made at JINR Dubna in 2002 from californium-249 and calcium-48. Only about 5 atoms have ever been seen, and Og-294 lives about 0.7 ms.",
+    "seal": "7221536c872725a391cedccf4d46c71606ceaff8c2600f8b9499d1c98558b2d1",
+    "crumb": "ELEMENT 118"
+   },
+   {
+    "name": "Codons · 4³ = 64",
+    "slug": "codons-4-cubed",
+    "blurb": "Dave (t240): \"your codons 4^3\". All 64 codons of the real standard genetic code: 61 code for 20 amino acids, 3 are stops (UAA, UAG, UGA), and AUG is the start.",
+    "seal": "03caad6cb162aa6eaea1a99aa0faae089809d33f8defc5e6194d18b14a47ddb1",
+    "crumb": "CODONS"
+   },
+   {
+    "name": "The Stabilizer · Central Spine",
+    "slug": "stabilizer-spine",
+    "blurb": "Dave (t240): \"this should be in a double helix with a stablizer\". It is drawn as two antiparallel strands held by a central axis spine (MODEL), with the codons as rungs.",
+    "seal": "1b663748281bcb8c36ab0d8efb10d9588a2ae78095519c924aea561b7aef37f1",
+    "crumb": "DOUBLE HELIX"
    },
    {
     "name": "Band II · 123–244 · Oxygen Green",
@@ -3506,12 +3528,33 @@
     "crumb": "SYNTHESIS"
    },
    {
-    "name": "Spiral 366 · Everything Together",
-    "slug": "spiral-index",
-    "blurb": "Dave's downward spiral of 366 in 18 3D pages: 0–122 hydrogen, 123–244 oxygen green, 245–366 nitrogen blue, weaving together the Omnibus, Stokes, N·H·O Stars, Stars, Torus Stars, Lineage and V4.7 Royal Purple.",
-    "seal": "c7900872db3f6640edf354a1c4498147c251a1c2d0cc5ecec935ffed6edd0cb7",
+    "name": "Helix 366 · Everything Together",
+    "slug": "helix-index",
+    "blurb": "Dave's double helix of 366 in 21 3D pages: 0–122 oganesson (element 118), 123–244 oxygen green, 245–366 nitrogen blue, with a stabilizer spine and 4³ = 64 codons. It weaves together the Omnibus, Stokes, N·H·O Stars, Stars, Torus Stars, Lineage and V4.7 Royal Purple.",
+    "seal": "59edd9252381b21b56b9980974f2be14783737648f96ef3e9a8f97eba825f9ac",
     "crumb": "INDEX"
    }
-  ]
+  ],
+  "correction_t240": "0-122 = element 118 oganesson (Og), not hydrogen; t239 text kept verbatim",
+  "band_I_colour": "red (MODEL; Omnibus CH-1 'R ONLY'; the V4.7 file names no colour)",
+  "double_helix": "two antiparallel strands (B step j sits at A position 366-j), 1 degree per step, 3-band colours; alt 3-turn toggle (MODEL)",
+  "stabilizer": "central axis spine with 64 collars (MODEL; Dave verbatim 'stablizer')",
+  "codons": {
+   "count": "4^3 = 64",
+   "sense": 61,
+   "stops": [
+    "UAA",
+    "UAG",
+    "UGA"
+   ],
+   "start": "AUG",
+   "table": "standard (NCBI 1)",
+   "placement": "rung i at round((i+0.5)*366/64), UCAG order (MODEL)"
+  },
+  "redirects": {
+   "band-hydrogen": "band-oganesson",
+   "spiral-366-world": "helix-366-world",
+   "spiral-index": "helix-index"
+  }
  }
 }

@@ -1,0 +1,1 @@
+{"slug": "codons-4-cubed", "seal": "03caad6cb162aa6eaea1a99aa0faae089809d33f8defc5e6194d18b14a47ddb1", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

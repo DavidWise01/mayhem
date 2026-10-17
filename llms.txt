@@ -457,11 +457,15 @@ Dave: "well there is three types of stars aroudn the torroid ant that antimatter
 - [Dave's Toroid Sources · Verbatim](./spheres/torus-stars/dave-toroid-sources.html): Torus Stars 3D. seal df8a45763ff3afeb96eb462a402c422298cf008dbf076968a6ffd75fee4f2837
 - [Torus Stars · Antimatter, Matter, Gravity](./spheres/torus-stars/torus-index.html): Torus Stars 3D. seal 383abbe498b94a7ce51363165a5e1a841759744e79f1b13ce540759ad501d1cf
 
-## Spiral 366 3D (t239)
+## Spiral 366 3D · Helix (t239 + t240)
 Dave t239 verbatim: "i love that, incorpatate all of this together please 0-122 is oragantuang or what ever hydronge 123-244 is oxygen , green and 245 - 366 is nitrogen blue or 366/3 120 degrees per color downward spiral at 1degree per cycle"
-Mapping (verbatim): 0-122 hydrogen ("oragantuang or what ever"; drawn red = MODEL), 123-244 oxygen green, 245-366 nitrogen blue. 366/3 = 122 and 360/3 = 120 shown side by side, not reconciled. Supersedes t233 colours (N red, H green, O blue) for this batch only; old pages unedited. Includes V4.7 ROYAL PURPLE / NITROGEN ICE IX / BIFROST // DIATOM HOUSE file content.
-- [The Spiral 366 World](./spheres/spiral-366/spiral-366-world.html): Spiral 366 3D. seal 527d9761f87468c4deedc74afe3ec69009525c4cca378a613e4730ec3c8dd36d
-- [Band I · 0–122 · Hydrogen](./spheres/spiral-366/band-hydrogen.html): Spiral 366 3D. seal 86bd3ee11add21ce083bfe2ca1742bdc5f29ec32d36f4f8a338e94e16fd547b9
+Dave t240 verbatim: "sorry its element 118 the orgen and this should be in a double helix with a stablizer and then your codons 4^3"
+Correction: band 0-122 is element 118, oganesson (Og), not hydrogen (my t239 misreading of "oragantuang or what ever hydronge"). Mapping: 0-122 oganesson (red = MODEL), 123-244 oxygen green, 245-366 nitrogen blue. 366/3 = 122 and 360/3 = 120 shown side by side. Centerpiece: a double helix of two antiparallel 366-step strands at 1 degree per step, held by a central spine stabilizer (MODEL), with the 64 codons (4^3, real standard genetic code: 61 sense, stops UAA UAG UGA, start AUG) as rungs (MODEL placement). Old slugs band-hydrogen, spiral-366-world and spiral-index now redirect to the new pages.
+- [The Helix 366 World](./spheres/spiral-366/helix-366-world.html): Spiral 366 3D. seal 1a3825fc3743cdb89bed972736501521985c78b26fb1ee91770bb1d3c31ababa
+- [Band I · 0–122 · Oganesson (Og, Z = 118)](./spheres/spiral-366/band-oganesson.html): Spiral 366 3D. seal 4575880b01cdfeb55ecf41b57048b30fbd1bca7f34127e02e8b9c84ec23a8322
+- [Oganesson · Element 118](./spheres/spiral-366/oganesson-element.html): Spiral 366 3D. seal 7221536c872725a391cedccf4d46c71606ceaff8c2600f8b9499d1c98558b2d1
+- [Codons · 4³ = 64](./spheres/spiral-366/codons-4-cubed.html): Spiral 366 3D. seal 03caad6cb162aa6eaea1a99aa0faae089809d33f8defc5e6194d18b14a47ddb1
+- [The Stabilizer · Central Spine](./spheres/spiral-366/stabilizer-spine.html): Spiral 366 3D. seal 1b663748281bcb8c36ab0d8efb10d9588a2ae78095519c924aea561b7aef37f1
 - [Band II · 123–244 · Oxygen Green](./spheres/spiral-366/band-oxygen.html): Spiral 366 3D. seal c3248f7ecb633bb4c922ef1f74893a056482b77a5b126fc8c7b21f63974a3692
 - [Band III · 245–366 · Nitrogen Blue](./spheres/spiral-366/band-nitrogen.html): Spiral 366 3D. seal a183eb52fe0af55e054ca0935940454d5fe01469449628d489f5cdb7280a7265
 - [Spiral Math · 366 Steps](./spheres/spiral-366/spiral-math.html): Spiral 366 3D. seal 1bb09887f07e18563eaa2cf224641fcc28bcfa50671529c2a4eb0c2add917266
@@ -477,4 +481,4 @@ Mapping (verbatim): 0-122 hydrogen ("oragantuang or what ever"; drawn red = MODE
 - [245–366 · She Calculates Purple](./spheres/spiral-366/gestation-245-366.html): Spiral 366 3D. seal 2459b509f2f8fab2cadafc9b1f23ccfbbe543bf335f3573ecd67b31e4d24bdc9
 - [The Toroid at the Spiral's Root](./spheres/spiral-366/torus-on-spiral.html): Spiral 366 3D. seal 596dbe6497d7938f65c8fef2f64ced0492d90114ac5ac4cb911451438945c301
 - [Spiral Atlas · Every Batch](./spheres/spiral-366/spiral-atlas.html): Spiral 366 3D. seal 723db4eb262006c2e0ca81890b0dbdfdabd1fe4b393db8fd6af433500e5c24f2
-- [Spiral 366 · Everything Together](./spheres/spiral-366/spiral-index.html): Spiral 366 3D. seal c7900872db3f6640edf354a1c4498147c251a1c2d0cc5ecec935ffed6edd0cb7
+- [Helix 366 · Everything Together](./spheres/spiral-366/helix-index.html): Spiral 366 3D. seal 59edd9252381b21b56b9980974f2be14783737648f96ef3e9a8f97eba825f9ac

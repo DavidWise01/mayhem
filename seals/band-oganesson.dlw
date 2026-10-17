@@ -1,0 +1,1 @@
+{"slug": "band-oganesson", "seal": "4575880b01cdfeb55ecf41b57048b30fbd1bca7f34127e02e8b9c84ec23a8322", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
