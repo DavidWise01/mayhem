@@ -1,0 +1,1 @@
+{"slug": "band-oxygen", "seal": "c3248f7ecb633bb4c922ef1f74893a056482b77a5b126fc8c7b21f63974a3692", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

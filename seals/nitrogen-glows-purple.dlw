@@ -1,0 +1,1 @@
+{"slug": "nitrogen-glows-purple", "seal": "5c2a301bdb46440385afe3cca4d0396380189c8dec4439431629f3ca402faa3c", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

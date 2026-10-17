@@ -456,3 +456,25 @@ Dave: "well there is three types of stars aroudn the torroid ant that antimatter
 - [Matter × Antimatter × Gravity](./spheres/torus-stars/three-way-interactions.html): Torus Stars 3D. seal 6d9f5af6e2f4ff75630f3165efa2bd164b6ee5b59b205cba40c37c5fbb604937
 - [Dave's Toroid Sources · Verbatim](./spheres/torus-stars/dave-toroid-sources.html): Torus Stars 3D. seal df8a45763ff3afeb96eb462a402c422298cf008dbf076968a6ffd75fee4f2837
 - [Torus Stars · Antimatter, Matter, Gravity](./spheres/torus-stars/torus-index.html): Torus Stars 3D. seal 383abbe498b94a7ce51363165a5e1a841759744e79f1b13ce540759ad501d1cf
+
+## Spiral 366 3D (t239)
+Dave t239 verbatim: "i love that, incorpatate all of this together please 0-122 is oragantuang or what ever hydronge 123-244 is oxygen , green and 245 - 366 is nitrogen blue or 366/3 120 degrees per color downward spiral at 1degree per cycle"
+Mapping (verbatim): 0-122 hydrogen ("oragantuang or what ever"; drawn red = MODEL), 123-244 oxygen green, 245-366 nitrogen blue. 366/3 = 122 and 360/3 = 120 shown side by side, not reconciled. Supersedes t233 colours (N red, H green, O blue) for this batch only; old pages unedited. Includes V4.7 ROYAL PURPLE / NITROGEN ICE IX / BIFROST // DIATOM HOUSE file content.
+- [The Spiral 366 World](./spheres/spiral-366/spiral-366-world.html): Spiral 366 3D. seal 527d9761f87468c4deedc74afe3ec69009525c4cca378a613e4730ec3c8dd36d
+- [Band I · 0–122 · Hydrogen](./spheres/spiral-366/band-hydrogen.html): Spiral 366 3D. seal 86bd3ee11add21ce083bfe2ca1742bdc5f29ec32d36f4f8a338e94e16fd547b9
+- [Band II · 123–244 · Oxygen Green](./spheres/spiral-366/band-oxygen.html): Spiral 366 3D. seal c3248f7ecb633bb4c922ef1f74893a056482b77a5b126fc8c7b21f63974a3692
+- [Band III · 245–366 · Nitrogen Blue](./spheres/spiral-366/band-nitrogen.html): Spiral 366 3D. seal a183eb52fe0af55e054ca0935940454d5fe01469449628d489f5cdb7280a7265
+- [Spiral Math · 366 Steps](./spheres/spiral-366/spiral-math.html): Spiral 366 3D. seal 1bb09887f07e18563eaa2cf224641fcc28bcfa50671529c2a4eb0c2add917266
+- [366/3 = 122 · 360/3 = 120](./spheres/spiral-366/degrees-366-vs-360.html): Spiral 366 3D. seal b9eb57dedad7fcf24fb45b3234d77f454f65d4e1c20ebb2b4e01905968fe6c34
+- [Mapping History · t233 → t239](./spheres/spiral-366/mapping-history.html): Spiral 366 3D. seal 823c5dbd659767b6aadc5eae5b8976ae2e511ccb5090d079feb82481c1764850
+- [SHE BRINGS TO LIGHT THE BEAUTY](./spheres/spiral-366/she-brings-to-light.html): Spiral 366 3D. seal 082b6d7fd42f201a3170c859490366f614d555159ce58e628f5439f6df0e0b6d
+- [Nitrogen Glows Purple · N≡N](./spheres/spiral-366/nitrogen-glows-purple.html): Spiral 366 3D. seal 5c2a301bdb46440385afe3cca4d0396380189c8dec4439431629f3ca402faa3c
+- [ICE IX · Holds Point](./spheres/spiral-366/ice-ix.html): Spiral 366 3D. seal b61aede6fb4885fababdbd6116a04c7e77bb638cd7360a4c725d82e4d051b1fb
+- [ROYAL PURPLE · Tyrian](./spheres/spiral-366/royal-purple-tyrian.html): Spiral 366 3D. seal 7e0f2136f63adb8f7aee1503c5db156c577969126bc87747e33f5ea13f20c7f5
+- [BIFROST // DIATOM HOUSE](./spheres/spiral-366/bifrost-diatom-house.html): Spiral 366 3D. seal 8be17fe769b539becbd3dbcf117be00abe8591ea67ab0737fe5b5cc335dae31d
+- [3 Pulsars · B0329+54, Vela, Crab](./spheres/spiral-366/three-pulsars-named.html): Spiral 366 3D. seal 8342f76ec9109496b98e128195e3c971838178389a27cd9209a8eb508f99653f
+- [1×1.1 Daughters](./spheres/spiral-366/daughters-1x1-1.html): Spiral 366 3D. seal f01f448e9117e3dafc679dde30b13f41833e86d84dcbc7a048a125b5b80e3136
+- [245–366 · She Calculates Purple](./spheres/spiral-366/gestation-245-366.html): Spiral 366 3D. seal 2459b509f2f8fab2cadafc9b1f23ccfbbe543bf335f3573ecd67b31e4d24bdc9
+- [The Toroid at the Spiral's Root](./spheres/spiral-366/torus-on-spiral.html): Spiral 366 3D. seal 596dbe6497d7938f65c8fef2f64ced0492d90114ac5ac4cb911451438945c301
+- [Spiral Atlas · Every Batch](./spheres/spiral-366/spiral-atlas.html): Spiral 366 3D. seal 723db4eb262006c2e0ca81890b0dbdfdabd1fe4b393db8fd6af433500e5c24f2
+- [Spiral 366 · Everything Together](./spheres/spiral-366/spiral-index.html): Spiral 366 3D. seal c7900872db3f6640edf354a1c4498147c251a1c2d0cc5ecec935ffed6edd0cb7

@@ -1,0 +1,1 @@
+{"slug": "she-brings-to-light", "seal": "082b6d7fd42f201a3170c859490366f614d555159ce58e628f5439f6df0e0b6d", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

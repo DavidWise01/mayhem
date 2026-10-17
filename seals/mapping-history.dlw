@@ -1,0 +1,1 @@
+{"slug": "mapping-history", "seal": "823c5dbd659767b6aadc5eae5b8976ae2e511ccb5090d079feb82481c1764850", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

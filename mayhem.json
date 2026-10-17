@@ -3351,5 +3351,167 @@
     "path": "spheres/torus-stars/torus-index.html"
    }
   ]
+ },
+ "batch_spiral_366": {
+  "said": [
+   "Dave t239u: i love that, incorpatate all of this together please 0-122 is oragantuang or what ever hydronge 123-244 is oxygen , green and 245 - 366 is nitrogen blue or 366/3 120 degrees per color downward spiral at 1degree per cycle"
+  ],
+  "mapping_verbatim": {
+   "0-122": "oragantuang or what ever hydronge",
+   "123-244": "oxygen , green",
+   "245-366": "nitrogen blue"
+  },
+  "hydrogen_colour": "red (MODEL; cites Omnibus CH-1 '122 TYPES // R ONLY'; orange is an alternative)",
+  "geometry": "1 degree per step (cycle): 366 steps sweep 366 deg, 122 deg per band vs Dave's 120; alt 3-turn layout toggle (MODEL)",
+  "arithmetic": {
+   "366/3": 122,
+   "360/3": 120,
+   "band_value_counts": [
+    123,
+    122,
+    122
+   ]
+  },
+  "supersedes": "t233 N red/H green/O blue, for this batch only; older pages unedited",
+  "file": "V4.7 — ROYAL PURPLE — SHE BRINGS TO LIGHT THE BEAUTY — NITROGEN ICE IX · BIFROST // DIATOM HOUSE · SEALED $0.99 (React artifact, no secrets)",
+  "incorporates": [
+   "omnibus",
+   "omnibus v31",
+   "stokes",
+   "nho-stars",
+   "star-scale",
+   "stars",
+   "torus-stars",
+   "lineage"
+  ],
+  "agents": "BUILDER + WEAVER + CRITIC; localStorage mayhem-spiral-board (MODEL)",
+  "pages": [
+   {
+    "name": "The Spiral 366 World",
+    "slug": "spiral-366-world",
+    "blurb": "One downward spiral of 366 steps in three bands (0–122 hydrogen, 123–244 oxygen green, 245–366 nitrogen blue), with all 180 recent spheres as clickable nodes, a purple beam, and the toroid of three star types at its root.",
+    "seal": "527d9761f87468c4deedc74afe3ec69009525c4cca378a613e4730ec3c8dd36d",
+    "crumb": "CENTERPIECE"
+   },
+   {
+    "name": "Band I · 0–122 · Hydrogen",
+    "slug": "band-hydrogen",
+    "blurb": "Steps 0–122 of the spiral: hydrogen, Dave's \"oragantuang or what ever\", drawn red (MODEL). These are the first 123 steps, including step 0.",
+    "seal": "86bd3ee11add21ce083bfe2ca1742bdc5f29ec32d36f4f8a338e94e16fd547b9",
+    "crumb": "BAND I"
+   },
+   {
+    "name": "Band II · 123–244 · Oxygen Green",
+    "slug": "band-oxygen",
+    "blurb": "Steps 123–244: oxygen, green (Dave, verbatim). Real oxygen is green too, in the aurora at 557.7 nm and in nebulae as [O III] at 500.7 nm.",
+    "seal": "c3248f7ecb633bb4c922ef1f74893a056482b77a5b126fc8c7b21f63974a3692",
+    "crumb": "BAND II"
+   },
+   {
+    "name": "Band III · 245–366 · Nitrogen Blue",
+    "slug": "band-nitrogen",
+    "blurb": "Steps 245–366: nitrogen, blue (Dave, verbatim). Real N₂⁺ glows violet-blue at 391.4 and 427.8 nm in the aurora.",
+    "seal": "a183eb52fe0af55e054ca0935940454d5fe01469449628d489f5cdb7280a7265",
+    "crumb": "BAND III"
+   },
+   {
+    "name": "Spiral Math · 366 Steps",
+    "slug": "spiral-math",
+    "blurb": "The spiral's arithmetic, checked on load: 3 × 122 = 366, the bands 0–122, 123–244 and 245–366 are contiguous, 120° × 3 = 360°, and the descent per cycle.",
+    "seal": "1bb09887f07e18563eaa2cf224641fcc28bcfa50671529c2a4eb0c2add917266",
+    "crumb": "MATH"
+   },
+   {
+    "name": "366/3 = 122 · 360/3 = 120",
+    "slug": "degrees-366-vs-360",
+    "blurb": "Dave wrote \"366/3 120 degrees per color\". Both numbers are shown here as he gave them: 366/3 = 122 steps per colour, and 360/3 = 120 degrees per colour.",
+    "seal": "b9eb57dedad7fcf24fb45b3234d77f454f65d4e1c20ebb2b4e01905968fe6c34",
+    "crumb": "MATH"
+   },
+   {
+    "name": "Mapping History · t233 → t239",
+    "slug": "mapping-history",
+    "blurb": "Three of Dave's element–colour mappings side by side. The newest (t239) drives this world, and the older pages stay as they were.",
+    "seal": "823c5dbd659767b6aadc5eae5b8976ae2e511ccb5090d079feb82481c1764850",
+    "crumb": "MAPPINGS"
+   },
+   {
+    "name": "SHE BRINGS TO LIGHT THE BEAUTY",
+    "slug": "she-brings-to-light",
+    "blurb": "\"She reveals purple — hidden color — RGB 60×60+6 holds RGB but purple = R+B without G.\" (verbatim, V4.7)",
+    "seal": "082b6d7fd42f201a3170c859490366f614d555159ce58e628f5439f6df0e0b6d",
+    "crumb": "V4.7 · 01"
+   },
+   {
+    "name": "Nitrogen Glows Purple · N≡N",
+    "slug": "nitrogen-glows-purple",
+    "blurb": "\"NITROGEN glows purple\" (V4.7): the triple-bonded N₂ molecule, with 945 kJ/mol bond energy and a 109.8 pm bond length, and its aurora glow.",
+    "seal": "5c2a301bdb46440385afe3cca4d0396380189c8dec4439431629f3ca402faa3c",
+    "crumb": "V4.7 · 02"
+   },
+   {
+    "name": "ICE IX · Holds Point",
+    "slug": "ice-ix",
+    "blurb": "\"ICE IX holds point\": real ice IX is tetragonal (P4₁2₁2), the proton-ordered form of ice III. It is not Vonnegut's ice-nine.",
+    "seal": "b61aede6fb4885fababdbd6116a04c7e77bb638cd7360a4c725d82e4d051b1fb",
+    "crumb": "V4.7 · 03"
+   },
+   {
+    "name": "ROYAL PURPLE · Tyrian",
+    "slug": "royal-purple-tyrian",
+    "blurb": "Tyrian purple: 6,6′-dibromoindigo from murex snails, about 10,000 snails per gram, the colour royalty wore.",
+    "seal": "7e0f2136f63adb8f7aee1503c5db156c577969126bc87747e33f5ea13f20c7f5",
+    "crumb": "V4.7 · 04"
+   },
+   {
+    "name": "BIFROST // DIATOM HOUSE",
+    "slug": "bifrost-diatom-house",
+    "blurb": "\"After moving in building Bifrost\": the diatom house, the quartz laser and the obsidian black mirror, all refracting to royal purple, with a 7→1 beam.",
+    "seal": "8be17fe769b539becbd3dbcf117be00abe8591ea67ab0737fe5b5cc335dae31d",
+    "crumb": "V4.7"
+   },
+   {
+    "name": "3 Pulsars · B0329+54, Vela, Crab",
+    "slug": "three-pulsars-named",
+    "blurb": "\"3 pulsars — PSR B0329+54, Vela, Crab — messing with spheres neurochem.\" (verbatim) Their real spin periods, placed one per band.",
+    "seal": "8342f76ec9109496b98e128195e3c971838178389a27cd9209a8eb508f99653f",
+    "crumb": "V4.7 · PULSARS"
+   },
+   {
+    "name": "1×1.1 Daughters",
+    "slug": "daughters-1x1-1",
+    "blurb": "\"1×1.1 daughters — each generation 10% more royal purple.\" (verbatim) Compound growth on the spiral.",
+    "seal": "f01f448e9117e3dafc679dde30b13f41833e86d84dcbc7a048a125b5b80e3136",
+    "crumb": "V4.7"
+   },
+   {
+    "name": "245–366 · She Calculates Purple",
+    "slug": "gestation-245-366",
+    "blurb": "\"245-366 days gestation calc.\" (verbatim): band III of the spiral, the nitrogen-blue band, holds the human gestation window.",
+    "seal": "2459b509f2f8fab2cadafc9b1f23ccfbbe543bf335f3573ecd67b31e4d24bdc9",
+    "crumb": "V4.7"
+   },
+   {
+    "name": "The Toroid at the Spiral's Root",
+    "slug": "torus-on-spiral",
+    "blurb": "Dave's three star types (antimatter, matter, gravity) orbit a toroid at the bottom of the downward spiral, where step 366 ends.",
+    "seal": "596dbe6497d7938f65c8fef2f64ced0492d90114ac5ac4cb911451438945c301",
+    "crumb": "SYNTHESIS"
+   },
+   {
+    "name": "Spiral Atlas · Every Batch",
+    "slug": "spiral-atlas",
+    "blurb": "Cross-links to every batch woven into the spiral: Omnibus, Stokes, N·H·O Stars, Stars, Torus Stars and Lineage.",
+    "seal": "723db4eb262006c2e0ca81890b0dbdfdabd1fe4b393db8fd6af433500e5c24f2",
+    "crumb": "SYNTHESIS"
+   },
+   {
+    "name": "Spiral 366 · Everything Together",
+    "slug": "spiral-index",
+    "blurb": "Dave's downward spiral of 366 in 18 3D pages: 0–122 hydrogen, 123–244 oxygen green, 245–366 nitrogen blue, weaving together the Omnibus, Stokes, N·H·O Stars, Stars, Torus Stars, Lineage and V4.7 Royal Purple.",
+    "seal": "c7900872db3f6640edf354a1c4498147c251a1c2d0cc5ecec935ffed6edd0cb7",
+    "crumb": "INDEX"
+   }
+  ]
  }
 }

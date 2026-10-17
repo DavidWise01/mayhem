@@ -1,0 +1,1 @@
+{"slug": "three-pulsars-named", "seal": "8342f76ec9109496b98e128195e3c971838178389a27cd9209a8eb508f99653f", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

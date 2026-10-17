@@ -1,0 +1,1 @@
+{"slug": "royal-purple-tyrian", "seal": "7e0f2136f63adb8f7aee1503c5db156c577969126bc87747e33f5ea13f20c7f5", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

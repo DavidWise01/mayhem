@@ -1,0 +1,1 @@
+{"slug": "degrees-366-vs-360", "seal": "b9eb57dedad7fcf24fb45b3234d77f454f65d4e1c20ebb2b4e01905968fe6c34", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

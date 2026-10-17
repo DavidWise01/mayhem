@@ -1,0 +1,1 @@
+{"slug": "bifrost-diatom-house", "seal": "8be17fe769b539becbd3dbcf117be00abe8591ea67ab0737fe5b5cc335dae31d", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

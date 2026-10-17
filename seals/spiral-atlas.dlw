@@ -1,0 +1,1 @@
+{"slug": "spiral-atlas", "seal": "723db4eb262006c2e0ca81890b0dbdfdabd1fe4b393db8fd6af433500e5c24f2", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
