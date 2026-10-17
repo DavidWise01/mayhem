@@ -1,0 +1,1 @@
+{"slug": "curl-flow-field", "seal": "98cfee8db3e9876a534697106329e10fc77c8fe1290afcbf879fc3f197c823dd", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "desi-dark-energy", "seal": "3be9492413d0328a0c30bfd9f8655f5ac528e7953d47ee82b5d8e70204373800", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

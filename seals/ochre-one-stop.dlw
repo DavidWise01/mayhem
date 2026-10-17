@@ -1,0 +1,1 @@
+{"slug": "ochre-one-stop", "seal": "d5681ec04862d9008c559a76547da4b7736a54f7ac8cf00352b206d5cb11ceb0", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

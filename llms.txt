@@ -482,3 +482,33 @@ Correction: band 0-122 is element 118, oganesson (Og), not hydrogen (my t239 mis
 - [The Toroid at the Spiral's Root](./spheres/spiral-366/torus-on-spiral.html): Spiral 366 3D. seal 596dbe6497d7938f65c8fef2f64ced0492d90114ac5ac4cb911451438945c301
 - [Spiral Atlas · Every Batch](./spheres/spiral-366/spiral-atlas.html): Spiral 366 3D. seal 723db4eb262006c2e0ca81890b0dbdfdabd1fe4b393db8fd6af433500e5c24f2
 - [Helix 366 · Everything Together](./spheres/spiral-366/helix-index.html): Spiral 366 3D. seal 59edd9252381b21b56b9980974f2be14783737648f96ef3e9a8f97eba825f9ac
+
+## Frontier 3D (t242)
+Dave t242 verbatim: "perfect, continue on building out pages please, anything you want browse the internet for guidance"
+Creative-freedom batch: 2025-2026 JWST (MoM-z14, PAN-z14-1, Abell2744-QSO1, RBH-1, FRB 20240304B, SAPPHIRES z=8.47, The Step), physics (DESI DR2, chiral superconductor, p-wave magnetism, magnonic superradiance), math (Kakeya 3D, Noperthedron, Hilbert's sixth), biology (Ochre, Syn57, mirror-life warning), elements (Lv via Ti-50), generative art (Gray-Scott torus, curl flow field, SDF raymarch, phyllotaxis 366, Lorenz RGB, Hopf fibration). Sources cited on each page. Board key mayhem-frontier-board.
+- [The Frontier World](./spheres/frontier/frontier-world.html): Frontier 3D. seal f92b1eaa9fe865062bcf7f4dfea7fec7e72b6b3a1ea9809bcee874a6dba118ae
+- [MoM-z14 · z = 14.44](./spheres/frontier/mom-z14.html): Frontier 3D. seal eb3d3d8eb2480457aef7d40c1b2590bddd69cb946df345c75fe9da3e13634d42
+- [The Redshift Ladder · z 13.5 → 14.4](./spheres/frontier/redshift-ladder.html): Frontier 3D. seal 51e01c1117d4c7f9a28a3185bff3caae4461db52d31878e27c78a50e158a81bc
+- [Little Red Dot · Abell2744-QSO1](./spheres/frontier/little-red-dot-qso1.html): Frontier 3D. seal 7448ecccad513284834f9c73a0ad15da3ea30370fc5acfb6a86ccc53b57629ec
+- [RBH-1 · The Runaway Black Hole](./spheres/frontier/runaway-black-hole.html): Frontier 3D. seal 9754a34b0bbe3145fa16f5960532bd5320141e218635c08b25e65d5064484900
+- [FRB 20240304B · Farthest Fast Radio Burst](./spheres/frontier/frb-20240304b.html): Frontier 3D. seal 2122bdd4b3817b37307fbbc9c6ebd30dd0ca1effb439623c3621d85da543d29f
+- [SAPPHIRES · Protocluster at z = 8.47](./spheres/frontier/sapphires-z8.html): Frontier 3D. seal b940a0212f4b228c2b513dd90d34445a0b057722c015c978dc105e6efc868c2a
+- ["The Step" · Protocluster at z = 3](./spheres/frontier/the-step-protocluster.html): Frontier 3D. seal 799d697810487f122a3e7a6f6c5f55168d9085aee9ac02e13bb9ec99b7ac941c
+- [DESI · Is Dark Energy Weakening?](./spheres/frontier/desi-dark-energy.html): Frontier 3D. seal 3be9492413d0328a0c30bfd9f8655f5ac528e7953d47ee82b5d8e70204373800
+- [Chiral Superconductor in Graphite](./spheres/frontier/chiral-superconductor.html): Frontier 3D. seal 3e79537cb26a8a0b439ca6a86b44d8f3eb6ab3b8a69516e74d63b1d0abd0273a
+- [p-Wave Magnetism · NiI₂](./spheres/frontier/p-wave-magnetism.html): Frontier 3D. seal b35176880c16e90e348d8711166eee66f78f3dedf33c59e97314ff0c095b9f1e
+- [Magnonic Superradiant Phase Transition](./spheres/frontier/magnonic-superradiance.html): Frontier 3D. seal 732baf38072b47db4de8831d3da4d3f00cd0ee08cc6b515757a5100095220d61
+- [The Kakeya Conjecture in 3D](./spheres/frontier/kakeya-3d.html): Frontier 3D. seal 0fc030eeb993ae0e59b26ef008e888b880051f2cdf059d945a8409c2a8e2bd26
+- [The Noperthedron · Not Rupert](./spheres/frontier/noperthedron.html): Frontier 3D. seal f268f2a0392ca54793aa64ab10e425500cb93f06d29b9e0e8311231f849ddd62
+- [Hilbert's Sixth · Particles → Fluid](./spheres/frontier/hilbert-sixth.html): Frontier 3D. seal 76ee9e2ffeb1f1c385c8aee3b08df0efb75729b387caa765cebe1805e27670d7
+- [Ochre · One Stop Codon](./spheres/frontier/ochre-one-stop.html): Frontier 3D. seal d5681ec04862d9008c559a76547da4b7736a54f7ac8cf00352b206d5cb11ceb0
+- [Syn57 · Life on 57 Codons](./spheres/frontier/syn57.html): Frontier 3D. seal 205840d7f3ab76f810fe8f9a0441d2c91b1e075c94a96db33a71de07baba97f5
+- [Mirror Life · A Warning](./spheres/frontier/mirror-life.html): Frontier 3D. seal 44d03f32b2312a1992d1066b6192768981c6180d344baf8addf9b4e27ae26253
+- [Element 116 via Titanium-50 · The Road to 120](./spheres/frontier/livermorium-ti50.html): Frontier 3D. seal 47d4a7932535845e9472256a147308caf98a7d530b08e716ad77325e9d632330
+- [Gray–Scott on a Torus](./spheres/frontier/gray-scott-torus.html): Frontier 3D. seal 0429f86eafd2e16a6de9b93102ce6727f85f6138d1a84656b76e001e97910a88
+- [Curl Flow Field · Divergence-Free](./spheres/frontier/curl-flow-field.html): Frontier 3D. seal 98cfee8db3e9876a534697106329e10fc77c8fe1290afcbf879fc3f197c823dd
+- [SDF Raymarch · Og, O, N Melt Together](./spheres/frontier/sdf-raymarch-og-o-n.html): Frontier 3D. seal e0f45e9c608fdb7b956bbf7893d84af9837449fbfc99db686fe9211abc847de6
+- [Phyllotaxis · 366 Seeds at 137.5°](./spheres/frontier/phyllotaxis-366.html): Frontier 3D. seal 1de95a607fb3088a8748fbfed7392d3d3a8290672cabe8936402af79b2cb1ed6
+- [Lorenz Attractor · R, G, B Trails](./spheres/frontier/lorenz-rgb.html): Frontier 3D. seal 1d738e7b6d53ea62b3aa4a140b836f67c277764539517befabfdcf333ced8ea1
+- [Hopf Fibration · Tori of Circles](./spheres/frontier/hopf-fibration.html): Frontier 3D. seal 280ee51270e5a1e0c7550a30715c4d240174fa3f366356b8702f45fe8e4ad2d9
+- [Frontier 2026 · Index](./spheres/frontier/frontier-index.html): Frontier 3D. seal fe860e8fd6d1337c6d0e3afd8097e9b39c88541a8c98f25514f3840a69f946e8

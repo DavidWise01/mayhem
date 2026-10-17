@@ -1,0 +1,1 @@
+{"slug": "sapphires-z8", "seal": "b940a0212f4b228c2b513dd90d34445a0b057722c015c978dc105e6efc868c2a", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

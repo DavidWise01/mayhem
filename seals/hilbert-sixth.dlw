@@ -1,0 +1,1 @@
+{"slug": "hilbert-sixth", "seal": "76ee9e2ffeb1f1c385c8aee3b08df0efb75729b387caa765cebe1805e27670d7", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

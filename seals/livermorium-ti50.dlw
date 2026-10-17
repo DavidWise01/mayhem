@@ -1,0 +1,1 @@
+{"slug": "livermorium-ti50", "seal": "47d4a7932535845e9472256a147308caf98a7d530b08e716ad77325e9d632330", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

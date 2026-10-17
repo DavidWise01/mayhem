@@ -1,0 +1,1 @@
+{"slug": "redshift-ladder", "seal": "51e01c1117d4c7f9a28a3185bff3caae4461db52d31878e27c78a50e158a81bc", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

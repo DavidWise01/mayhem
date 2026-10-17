@@ -1,0 +1,1 @@
+{"slug": "gray-scott-torus", "seal": "0429f86eafd2e16a6de9b93102ce6727f85f6138d1a84656b76e001e97910a88", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

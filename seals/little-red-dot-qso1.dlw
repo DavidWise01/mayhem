@@ -1,0 +1,1 @@
+{"slug": "little-red-dot-qso1", "seal": "7448ecccad513284834f9c73a0ad15da3ea30370fc5acfb6a86ccc53b57629ec", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

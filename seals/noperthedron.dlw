@@ -1,0 +1,1 @@
+{"slug": "noperthedron", "seal": "f268f2a0392ca54793aa64ab10e425500cb93f06d29b9e0e8311231f849ddd62", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

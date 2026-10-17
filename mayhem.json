@@ -3556,5 +3556,206 @@
    "spiral-366-world": "helix-366-world",
    "spiral-index": "helix-index"
   }
+ },
+ "batch_frontier": {
+  "said": [
+   "Dave t242u: perfect, continue on building out pages please, anything you want browse the internet for guidance"
+  ],
+  "folder": "spheres/frontier",
+  "count": 26,
+  "agents": "BUILDER + WEAVER + CRITIC; localStorage mayhem-frontier-board (MODEL)",
+  "themes": [
+   "JWST 2025-2026",
+   "physics 2025",
+   "math 2025",
+   "synthetic biology 2025",
+   "superheavy elements",
+   "generative art techniques"
+  ],
+  "sources_note": "each page lists browsed sources (Oct 2026)",
+  "pages": [
+   {
+    "name": "The Frontier World",
+    "slug": "frontier-world",
+    "blurb": "All 24 Frontier pages and the 7 earlier batch indexes as clickable nodes on one Fibonacci sphere, ringed by 367 seeds in Dave's three bands, around a small double helix and above the toroid. BUILDER and WEAVER tour it from both ends.",
+    "seal": "f92b1eaa9fe865062bcf7f4dfea7fec7e72b6b3a1ea9809bcee874a6dba118ae",
+    "crumb": "CENTERPIECE"
+   },
+   {
+    "name": "MoM-z14 · z = 14.44",
+    "slug": "mom-z14",
+    "blurb": "The farthest spectroscopically confirmed galaxy: MoM-z14 at z = 14.44, seen about 280 million years after the Big Bang. Its ultraviolet light arrives stretched 15.44× into the infrared.",
+    "seal": "eb3d3d8eb2480457aef7d40c1b2590bddd69cb946df345c75fe9da3e13634d42",
+    "crumb": "JWST · COSMIC DAWN"
+   },
+   {
+    "name": "The Redshift Ladder · z 13.5 → 14.4",
+    "slug": "redshift-ladder",
+    "blurb": "Three of the most distant galaxies confirmed by JWST spectra, drawn as bars: PAN-z14-1 (13.53), JADES-GS-z14-0 (14.18 as cited) and MoM-z14 (14.44), each with its Lyman-α break stretched into the infrared.",
+    "seal": "51e01c1117d4c7f9a28a3185bff3caae4461db52d31878e27c78a50e158a81bc",
+    "crumb": "JWST · DAWN LADDER"
+   },
+   {
+    "name": "Little Red Dot · Abell2744-QSO1",
+    "slug": "little-red-dot-qso1",
+    "blurb": "A \"little red dot\" at z = 7.04 whose black hole, about 50 million suns, was weighed directly from orbiting gas, with almost no galaxy around it.",
+    "seal": "7448ecccad513284834f9c73a0ad15da3ea30370fc5acfb6a86ccc53b57629ec",
+    "crumb": "JWST · NAKED BLACK HOLE"
+   },
+   {
+    "name": "RBH-1 · The Runaway Black Hole",
+    "slug": "runaway-black-hole",
+    "blurb": "JWST confirmed a supermassive black hole fleeing its galaxy: a supersonic bow shock at the tip of a 62 kiloparsec wake of new stars, at z = 0.96.",
+    "seal": "9754a34b0bbe3145fa16f5960532bd5320141e218635c08b25e65d5064484900",
+    "crumb": "JWST · BOW SHOCK"
+   },
+   {
+    "name": "FRB 20240304B · Farthest Fast Radio Burst",
+    "slug": "frb-20240304b",
+    "blurb": "The most distant fast radio burst yet, at z = 2.148 (about 3 billion years after the Big Bang). Its host is a tiny young dwarf, which points to young magnetars rather than neutron-star mergers.",
+    "seal": "2122bdd4b3817b37307fbbc9c6ebd30dd0ca1effb439623c3621d85da543d29f",
+    "crumb": "JWST · MAGNETAR"
+   },
+   {
+    "name": "SAPPHIRES · Protocluster at z = 8.47",
+    "slug": "sapphires-z8",
+    "blurb": "Nine galaxies confirmed by their green [O III] 5008 Å line at z = 8.47, about 550 Myr after the Big Bang. It is the most distant spectroscopically confirmed galaxy overdensity known, 6–8× denser than average.",
+    "seal": "b940a0212f4b228c2b513dd90d34445a0b057722c015c978dc105e6efc868c2a",
+    "crumb": "JWST · OXYGEN GREEN"
+   },
+   {
+    "name": "\"The Step\" · Protocluster at z = 3",
+    "slug": "the-step-protocluster",
+    "blurb": "A dense protocluster around a red quasar at z = 3, with at least 18 members arranged in a step-like position-velocity pattern. It may be two halos merging into a future Coma-like cluster.",
+    "seal": "799d697810487f122a3e7a6f6c5f55168d9085aee9ac02e13bb9ec99b7ac941c",
+    "crumb": "JWST · NIRISS"
+   },
+   {
+    "name": "DESI · Is Dark Energy Weakening?",
+    "slug": "desi-dark-energy",
+    "blurb": "DESI's second data release (March 2025) favours dark energy that evolves, w(a) = w₀ + wₐ(1 − a), over a constant Λ at 2.8–4.2σ depending on the supernova sample. That is a hint, not a 5σ discovery.",
+    "seal": "3be9492413d0328a0c30bfd9f8655f5ac528e7953d47ee82b5d8e70204373800",
+    "crumb": "COSMOLOGY 2025"
+   },
+   {
+    "name": "Chiral Superconductor in Graphite",
+    "slug": "chiral-superconductor",
+    "blurb": "MIT found a superconductor that is also a magnet: rhombohedral graphene flakes from ordinary graphite turn superconducting at 300 mK and switch between two chiral states like a magnet.",
+    "seal": "3e79537cb26a8a0b439ca6a86b44d8f3eb6ab3b8a69516e74d63b1d0abd0273a",
+    "crumb": "PHYSICS 2025"
+   },
+   {
+    "name": "p-Wave Magnetism · NiI₂",
+    "slug": "p-wave-magnetism",
+    "blurb": "A new kind of magnetism: in nickel iodide, spins form left- and right-handed spirals that are mirror images, and a small electric field flips one into the other.",
+    "seal": "b35176880c16e90e348d8711166eee66f78f3dedf33c59e97314ff0c095b9f1e",
+    "crumb": "PHYSICS 2025"
+   },
+   {
+    "name": "Magnonic Superradiant Phase Transition",
+    "slug": "magnonic-superradiance",
+    "blurb": "Rice University saw a superradiant phase transition predicted half a century ago, in a magnetic crystal of erbium, iron and oxygen: two spin systems lock into collective motion with no trigger.",
+    "seal": "732baf38072b47db4de8831d3da4d3f00cd0ee08cc6b515757a5100095220d61",
+    "crumb": "PHYSICS 2025"
+   },
+   {
+    "name": "The Kakeya Conjecture in 3D",
+    "slug": "kakeya-3d",
+    "blurb": "Hong Wang and Joshua Zahl proved that any set containing a unit needle pointing in every direction must be fully three-dimensional (dimension 3), even though its volume can be zero.",
+    "seal": "0fc030eeb993ae0e59b26ef008e888b880051f2cdf059d945a8409c2a8e2bd26",
+    "crumb": "MATH 2025"
+   },
+   {
+    "name": "The Noperthedron · Not Rupert",
+    "slug": "noperthedron",
+    "blurb": "The first convex polyhedron proved not to have Rupert's property: no copy can pass through a straight tunnel in another copy. It has 90 vertices, 240 edges and 152 faces, rebuilt here from the authors' coordinates.",
+    "seal": "f268f2a0392ca54793aa64ab10e425500cb93f06d29b9e0e8311231f849ddd62",
+    "crumb": "MATH 2025"
+   },
+   {
+    "name": "Hilbert's Sixth · Particles → Fluid",
+    "slug": "hilbert-sixth",
+    "blurb": "Deng, Hani and Ma derived the fluid equations from Newton's laws for hard-sphere particles, by way of Boltzmann's equation. It is a major case of Hilbert's 1900 sixth problem.",
+    "seal": "76ee9e2ffeb1f1c385c8aee3b08df0efb75729b387caa765cebe1805e27670d7",
+    "crumb": "MATH 2025"
+   },
+   {
+    "name": "Ochre · One Stop Codon",
+    "slug": "ochre-one-stop",
+    "blurb": "Yale's \"Ochre\" E. coli runs on a single stop codon, UAA. UAG and UGA are freed to encode two non-standard amino acids with over 99% accuracy.",
+    "seal": "d5681ec04862d9008c559a76547da4b7736a54f7ac8cf00352b206d5cb11ceb0",
+    "crumb": "BIOLOGY 2025"
+   },
+   {
+    "name": "Syn57 · Life on 57 Codons",
+    "slug": "syn57",
+    "blurb": "The MRC LMB built E. coli with a 4-megabase synthetic genome that uses only 57 codons. 4 of 6 serine codons, 2 of 4 alanine codons and 1 stop were removed, with over 101,000 codons recoded.",
+    "seal": "205840d7f3ab76f810fe8f9a0441d2c91b1e075c94a96db33a71de07baba97f5",
+    "crumb": "BIOLOGY 2025"
+   },
+   {
+    "name": "Mirror Life · A Warning",
+    "slug": "mirror-life",
+    "blurb": "Mirror bacteria, built from right-handed proteins and left-handed DNA, do not exist. In December 2024, 38 scientists warned in Science that they could be made within 10–30 years and could evade immune systems, and called for them not to be built.",
+    "seal": "44d03f32b2312a1992d1066b6192768981c6180d344baf8addf9b4e27ae26253",
+    "crumb": "BIOLOGY · CAUTION"
+   },
+   {
+    "name": "Element 116 via Titanium-50 · The Road to 120",
+    "slug": "livermorium-ti50",
+    "blurb": "Berkeley Lab made livermorium (Z = 116) with a titanium-50 beam on plutonium-244: two atoms in 22 days. It is the first new beam since calcium-48, opening the road to element 120 (Ti-50 + Cf-249).",
+    "seal": "47d4a7932535845e9472256a147308caf98a7d530b08e716ad77325e9d632330",
+    "crumb": "ELEMENTS 2024"
+   },
+   {
+    "name": "Gray–Scott on a Torus",
+    "slug": "gray-scott-torus",
+    "blurb": "Reaction–diffusion, run live on a grid whose edges wrap around, which makes it a torus, then wrapped onto a 3D torus. Two chemicals feed and kill each other until coral-like Turing patterns grow.",
+    "seal": "0429f86eafd2e16a6de9b93102ce6727f85f6138d1a84656b76e001e97910a88",
+    "crumb": "GENERATIVE · REACTION–DIFFUSION"
+   },
+   {
+    "name": "Curl Flow Field · Divergence-Free",
+    "slug": "curl-flow-field",
+    "blurb": "Flow fields after Tyler Hobbs, lifted into 3D: 900 particles ride the curl of a smooth vector potential, a field with no sources or sinks that behaves like incompressible fluid, coloured by the three bands.",
+    "seal": "98cfee8db3e9876a534697106329e10fc77c8fe1290afcbf879fc3f197c823dd",
+    "crumb": "GENERATIVE · FLOW FIELD"
+   },
+   {
+    "name": "SDF Raymarch · Og, O, N Melt Together",
+    "slug": "sdf-raymarch-og-o-n",
+    "blurb": "A fragment-shader raymarcher after Inigo Quilez: three signed-distance spheres (red Og, green O, blue N) and a torus, blended with a polynomial smooth-min so they melt into one form.",
+    "seal": "e0f45e9c608fdb7b956bbf7893d84af9837449fbfc99db686fe9211abc847de6",
+    "crumb": "GENERATIVE · SDF"
+   },
+   {
+    "name": "Phyllotaxis · 366 Seeds at 137.5°",
+    "slug": "phyllotaxis-366",
+    "blurb": "Vogel's sunflower model with 366 seeds: seed n sits at angle n × 137.508° and radius ∝ √n. The three bands of Dave's 366 (0–122, 123–244, 245–366) become rings of red, green and blue seeds on a dome.",
+    "seal": "1de95a607fb3088a8748fbfed7392d3d3a8290672cabe8936402af79b2cb1ed6",
+    "crumb": "GENERATIVE · GOLDEN ANGLE"
+   },
+   {
+    "name": "Lorenz Attractor · R, G, B Trails",
+    "slug": "lorenz-rgb",
+    "blurb": "Three Lorenz trajectories, red, green and blue, start 10⁻⁶ apart and are integrated with RK4. Within seconds they diverge, the butterfly effect, but they never leave the same strange attractor.",
+    "seal": "1d738e7b6d53ea62b3aa4a140b836f67c277764539517befabfdcf333ced8ea1",
+    "crumb": "GENERATIVE · CHAOS"
+   },
+   {
+    "name": "Hopf Fibration · Tori of Circles",
+    "slug": "hopf-fibration",
+    "blurb": "The 3-sphere is filled with circles, one for each point of the ordinary 2-sphere, and any two of them are linked. Under stereographic projection, the circles over one latitude form a torus.",
+    "seal": "280ee51270e5a1e0c7550a30715c4d240174fa3f366356b8702f45fe8e4ad2d9",
+    "crumb": "GENERATIVE · TOPOLOGY"
+   },
+   {
+    "name": "Frontier 2026 · Index",
+    "slug": "frontier-index",
+    "blurb": "Dave said \"continue on building out pages please, anything you want browse the internet for guidance\". 26 3D pages from the 2025–2026 frontier (JWST, physics, math, synthetic biology) and generative art techniques, all tied back to his stars, elements, codons, torus and 366 spiral.",
+    "seal": "fe860e8fd6d1337c6d0e3afd8097e9b39c88541a8c98f25514f3840a69f946e8",
+    "crumb": "INDEX"
+   }
+  ]
  }
 }

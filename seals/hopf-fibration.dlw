@@ -1,0 +1,1 @@
+{"slug": "hopf-fibration", "seal": "280ee51270e5a1e0c7550a30715c4d240174fa3f366356b8702f45fe8e4ad2d9", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

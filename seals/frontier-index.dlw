@@ -1,0 +1,1 @@
+{"slug": "frontier-index", "seal": "fe860e8fd6d1337c6d0e3afd8097e9b39c88541a8c98f25514f3840a69f946e8", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

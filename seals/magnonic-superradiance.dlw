@@ -1,0 +1,1 @@
+{"slug": "magnonic-superradiance", "seal": "732baf38072b47db4de8831d3da4d3f00cd0ee08cc6b515757a5100095220d61", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

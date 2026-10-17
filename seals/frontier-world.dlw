@@ -1,0 +1,1 @@
+{"slug": "frontier-world", "seal": "f92b1eaa9fe865062bcf7f4dfea7fec7e72b6b3a1ea9809bcee874a6dba118ae", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

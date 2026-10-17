@@ -1,0 +1,1 @@
+{"slug": "mirror-life", "seal": "44d03f32b2312a1992d1066b6192768981c6180d344baf8addf9b4e27ae26253", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

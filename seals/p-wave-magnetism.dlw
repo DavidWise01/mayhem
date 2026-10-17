@@ -1,0 +1,1 @@
+{"slug": "p-wave-magnetism", "seal": "b35176880c16e90e348d8711166eee66f78f3dedf33c59e97314ff0c095b9f1e", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
