@@ -1,0 +1,1 @@
+{"slug": "father-time-mother-nature", "seal": "b9b44daf5ad816d5b4f17adcd51f0ccbe589a678b5430c000417bdc0aabadde6", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

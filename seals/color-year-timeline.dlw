@@ -1,0 +1,1 @@
+{"slug": "color-year-timeline", "seal": "05ebf188ea397f04aa4d3494bf86b53ccb7a643baf51bbdbc30c85b7751c6a1c", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

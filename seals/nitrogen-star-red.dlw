@@ -1,0 +1,1 @@
+{"slug": "nitrogen-star-red", "seal": "8bab4df4a44978a3261c7f9de775836963c070314f8915dd909dce2cb5488a9e", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

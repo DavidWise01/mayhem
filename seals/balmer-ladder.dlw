@@ -1,0 +1,1 @@
+{"slug": "balmer-ladder", "seal": "7dab57dd825e7ae24018bfab183901422b71f2abdc1f7389a11bf6b981cc3686", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

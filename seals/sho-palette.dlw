@@ -1,0 +1,1 @@
+{"slug": "sho-palette", "seal": "2ee83c005dc1b81ee528b13a69a0630a6fe3e72c4896b05e751d7086ee26c0c4", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

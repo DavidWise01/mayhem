@@ -1,0 +1,1 @@
+{"slug": "3606-force-lines", "seal": "a99e5f83c16c0e3dac99bf6c24fb97edb6f1b970e9c5e36dc71d59defe430e90", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

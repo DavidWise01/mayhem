@@ -1,0 +1,1 @@
+{"slug": "24-shades-per-primary", "seal": "c319dc5ee56dc3af77ee456e17c896a5e7e0497604570b2ef72ca0fae365d4c4", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

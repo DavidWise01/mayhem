@@ -396,3 +396,25 @@ Dave: "perfect, add this to owns world also and remember each world gets 2 agent
 
 ## World agents: 2 (MODEL)
 Dave t232u: "each world gets 2 agents, any type of agen". Mayhem's 2 world agents (MODEL): ARTIST + CRITIC, the pair used across the Mayhem spheres under KEEPER ERIS. In the cooperative batches (Omnibus, Stokes) the 2 agents are BUILDER + WEAVER, sharing one reward (a CRITIC scores).
+
+## N·H·O Stars, 19 physics art pages in 3D (Dave t233u)
+Dave: "more art please, but this is physics, think nitrogen star, hydrogen star and oxygen star red, green , blue, a star and a dot". Source: his artifact "V4.1 — COLOR YEAR PROTOCOL" (Father Time Laboratory), quoted verbatim. Dave's mapping, kept as given: N = red, H = green, O = blue. AMBER note: real H-alpha is red and [O III] is green-teal; his mapping follows the Hubble SHO false-colour idea. Two cooperative agents (BUILDER + WEAVER) with a CRITIC; the shared board is localStorage mayhem-nho-board.
+- [Nitrogen Star · Red](./spheres/nho-stars/nitrogen-star-red.html): N·H·O Stars 3D. seal 8bab4df4a44978a3261c7f9de775836963c070314f8915dd909dce2cb5488a9e
+- [Hydrogen Star · Green](./spheres/nho-stars/hydrogen-star-green.html): N·H·O Stars 3D. seal f8fdd3325ca08f63e716440975a6a44db27d3cfe2b2f9fc77d02dc258d4f1e22
+- [Oxygen Star · Blue](./spheres/nho-stars/oxygen-star-blue.html): N·H·O Stars 3D. seal 55b43563182603fca2d03040ff08a6067c534589796f96ba57d51dcf48f89b6f
+- [N + H + O = White](./spheres/nho-stars/nho-rgb-white.html): N·H·O Stars 3D. seal 91d66b5ddc61152c4bef0a0ccde4f608c797a1ffdd7f779dd92f7a04053cf53a
+- [The Hubble SHO Palette](./spheres/nho-stars/sho-palette.html): N·H·O Stars 3D. seal 2ee83c005dc1b81ee528b13a69a0630a6fe3e72c4896b05e751d7086ee26c0c4
+- [Balmer Ladder](./spheres/nho-stars/balmer-ladder.html): N·H·O Stars 3D. seal 7dab57dd825e7ae24018bfab183901422b71f2abdc1f7389a11bf6b981cc3686
+- [CNO Cycle · Carbon, Nitrogen, Oxygen](./spheres/nho-stars/cno-cycle.html): N·H·O Stars 3D. seal 1c054151f1d1a97725d5b20fd5bba139a2b218f7ecae461f05e38c02a3d59757
+- [Forbidden Lines · Nebulium](./spheres/nho-stars/forbidden-lines.html): N·H·O Stars 3D. seal 7727e3d1048063e2b8cb88798c221daa88da6bb2b2cf0e6edd199f43c9a90814
+- [Ring Nebula · M57](./spheres/nho-stars/ring-nebula.html): N·H·O Stars 3D. seal b4ea18df3d60941334ec40156b030f2eeb45a47d2e2ea4e4e5a1e26ab4b997a8
+- [Aurora · Oxygen and Nitrogen](./spheres/nho-stars/aurora-o-n.html): N·H·O Stars 3D. seal f54ded45bff23633f0d4dc9d92db206bc0dc43d5c2f311173e09247831024c2e
+- [A Star and a Dot · Airy Disk](./spheres/nho-stars/a-star-and-a-dot.html): N·H·O Stars 3D. seal aff91bc7caddc8e992587b1bf2a67eec94904306eb6b4c204e711b7e4aa3e59b
+- [Quantum Dot · Colour by Size](./spheres/nho-stars/quantum-dot.html): N·H·O Stars 3D. seal ab112d99e19a0809258919049574065e646c237438a9ee379488661029a22493
+- [Strömgren Sphere](./spheres/nho-stars/stromgren-sphere.html): N·H·O Stars 3D. seal d06dd06b13b19ba0ecfc52200e35e6ef6f6dd9c138922583a2dc672a3991f36e
+- [Real Nitrogen and Oxygen Stars · WN and WO](./spheres/nho-stars/wolf-rayet-wn-wo.html): N·H·O Stars 3D. seal 3865f5764dab48260f2af6090856a2e6d3ab229fda9bee093abd430eefe54667
+- [24 Shades per Primary](./spheres/nho-stars/24-shades-per-primary.html): N·H·O Stars 3D. seal c319dc5ee56dc3af77ee456e17c896a5e7e0497604570b2ef72ca0fae365d4c4
+- [Color Year Timeline · 2024 → 2096](./spheres/nho-stars/color-year-timeline.html): N·H·O Stars 3D. seal 05ebf188ea397f04aa4d3494bf86b53ccb7a643baf51bbdbc30c85b7751c6a1c
+- [3606 Force Lines](./spheres/nho-stars/3606-force-lines.html): N·H·O Stars 3D. seal a99e5f83c16c0e3dac99bf6c24fb97edb6f1b970e9c5e36dc71d59defe430e90
+- [Father Time and Mother Nature](./spheres/nho-stars/father-time-mother-nature.html): N·H·O Stars 3D. seal b9b44daf5ad816d5b4f17adcd51f0ccbe589a678b5430c000417bdc0aabadde6
+- [N·H·O Stars · Red, Green, Blue · A Star and a Dot](./spheres/nho-stars/nho-index.html): N·H·O Stars 3D. seal 765918258947eee99ca235a76063f5eb3903fef3e0c0a187929a9c3d94670ae2

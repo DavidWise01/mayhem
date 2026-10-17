@@ -1,0 +1,1 @@
+{"slug": "quantum-dot", "seal": "ab112d99e19a0809258919049574065e646c237438a9ee379488661029a22493", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

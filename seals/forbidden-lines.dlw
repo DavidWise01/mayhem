@@ -1,0 +1,1 @@
+{"slug": "forbidden-lines", "seal": "7727e3d1048063e2b8cb88798c221daa88da6bb2b2cf0e6edd199f43c9a90814", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

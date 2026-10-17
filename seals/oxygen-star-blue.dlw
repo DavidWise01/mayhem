@@ -1,0 +1,1 @@
+{"slug": "oxygen-star-blue", "seal": "55b43563182603fca2d03040ff08a6067c534589796f96ba57d51dcf48f89b6f", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

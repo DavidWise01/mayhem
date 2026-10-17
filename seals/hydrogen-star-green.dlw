@@ -1,0 +1,1 @@
+{"slug": "hydrogen-star-green", "seal": "f8fdd3325ca08f63e716440975a6a44db27d3cfe2b2f9fc77d02dc258d4f1e22", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

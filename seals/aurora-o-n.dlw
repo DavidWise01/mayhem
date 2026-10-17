@@ -1,0 +1,1 @@
+{"slug": "aurora-o-n", "seal": "f54ded45bff23633f0d4dc9d92db206bc0dc43d5c2f311173e09247831024c2e", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
