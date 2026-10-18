@@ -1,0 +1,1 @@
+{"slug": "hacf-28-netscape", "seal": "57f20213c43daef7987391a234b55bd2edadb968d9d029021988a5baac05cf6a", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

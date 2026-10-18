@@ -1,0 +1,1 @@
+{"slug": "hacf-01-bios-listing", "seal": "0480a7f0f5db181ff64c0bd2edd48de6cf3b3e52faea07a1816bfbd73ff4f87f", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

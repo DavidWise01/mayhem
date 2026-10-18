@@ -1,0 +1,1200 @@
+{
+ "said": [
+  "Dave t269: perfect, can you build your next 32 pages in mayhem, think halt and catch fire in code monkeys grafx"
+ ],
+ "folder": "spheres/hacf",
+ "count": 33,
+ "main_index_cards": 33,
+ "index": {
+  "slug": "hacf-index",
+  "name": "Halt and Catch Fire in pixels · 32 pages",
+  "seal": "d9a636994e086e0d24d58b6d8264df2f24054784cc79db766a5dba3f1e63bc96"
+ },
+ "look": "original voxel/pixel art, Code-Monkeys-inspired (MODEL); Three.js r160 local copy, DPR capped at 2; low-res render target + CRT/scanline/palette shader",
+ "agents": "ARTIST+CRITIC (24 pages) or BUILDER+WEAVER+CRITIC (8 pages); CRITIC scores 128×96 renders from pixels",
+ "copyright": "no show art, logos, likenesses or dialogue; show and character names as text references only; original cast",
+ "cast": [
+  {
+   "id": "roxy",
+   "name": "ROXY ROM",
+   "role": "the punk coder",
+   "hair": "spike"
+  },
+  {
+   "id": "dex",
+   "name": "DEX DEALER",
+   "role": "the slick salesman",
+   "hair": "slick"
+  },
+  {
+   "id": "wrench",
+   "name": "WRENCH",
+   "role": "the hardware engineer",
+   "hair": "bald"
+  },
+  {
+   "id": "madge",
+   "name": "MADGE MODEM",
+   "role": "the operations lead",
+   "hair": "bob"
+  },
+  {
+   "id": "boss",
+   "name": "BOSS BEIGE",
+   "role": "the boss upstairs",
+   "hair": "part"
+  },
+  {
+   "id": "kid",
+   "name": "KID CRAWLER",
+   "role": "the teenage web builder",
+   "hair": "cap"
+  }
+ ],
+ "arcs": {
+  "clone": {
+   "n": "I",
+   "name": "The Clone",
+   "span": [
+    1974,
+    1984
+   ],
+   "era": "1981–84",
+   "phos": "P3 amber",
+   "pc": "#ffb000",
+   "pal": "cga",
+   "show": "Season one of Halt and Catch Fire (AMC, 2014–2017) is set in 1983 Dallas: a salesman (Joe MacMillan), an engineer (Gordon Clark) and a young coder (Cameron Howe) at the fictional Cardiff Electric reverse-engineer a PC BIOS and build a portable they call the Giant."
+  },
+  "mutiny": {
+   "n": "II",
+   "name": "Mutiny",
+   "span": [
+    1978,
+    1990
+   ],
+   "era": "1985–86",
+   "phos": "P1 green",
+   "pc": "#33ff66",
+   "pal": "c64",
+   "show": "Season two (1985–86): Cameron Howe and Donna Clark run Mutiny, a fictional online-games company working out of a Dallas house, on dial-up lines and rented mainframe time."
+  },
+  "valley": {
+   "n": "III",
+   "name": "The Valley",
+   "span": [
+    1980,
+    1995
+   ],
+   "era": "1986–90",
+   "phos": "P4 white",
+   "pc": "#e8f0ff",
+   "pal": "valley",
+   "show": "Season three moves Mutiny to California (1986), with an IPO, an antivirus product built by Joe MacMillan and the NSFNET on the horizon; the season ends with a jump to 1990."
+  },
+  "web": {
+   "n": "IV",
+   "name": "The Web",
+   "span": [
+    1989,
+    1995
+   ],
+   "era": "1990–95",
+   "phos": "P7 blue",
+   "pc": "#5ad1ff",
+   "pal": "websafe",
+   "show": "Season four (1990–94): the web arrives. A hand-built directory and a crawler-based search engine compete (the show calls them Comet and Rover), until the story closes around 1994."
+  }
+ },
+ "pages": [
+  {
+   "n": 1,
+   "slug": "hacf-01-bios-listing",
+   "name": "The BIOS Listing · Halt and Catch Fire in pixels",
+   "title": "The BIOS Listing",
+   "arc": "clone",
+   "year": 1981,
+   "widget": "post",
+   "mode": null,
+   "agents": "ARTIST+CRITIC",
+   "seal": "0480a7f0f5db181ff64c0bd2edd48de6cf3b3e52faea07a1816bfbd73ff4f87f",
+   "facts": [
+    [
+     "LIT",
+     1981,
+     "The IBM Personal Computer (model 5150) was announced on August 12, 1981.",
+     "IBM PC 5150 history"
+    ],
+    [
+     "LIT",
+     1981,
+     "IBM published its Technical Reference manual for the PC with the full BIOS source listing printed in it.",
+     "IBM PC Technical Reference (1981)"
+    ],
+    [
+     "LIT",
+     1981,
+     "Power-on self test (POST): the original PC checks memory and devices at start-up and gives one short beep when all is well.",
+     "IBM PC POST"
+    ],
+    [
+     "LIT",
+     1981,
+     "The 5150 shipped with an Intel 8088 at 4.77 MHz.",
+     "IBM PC 5150 spec"
+    ]
+   ]
+  },
+  {
+   "n": 2,
+   "slug": "hacf-02-rom-checksum",
+   "name": "55 AA · The ROM Checksum · Halt and Catch Fire in pixels",
+   "title": "55 AA · The ROM Checksum",
+   "arc": "clone",
+   "year": 1981,
+   "widget": "hexdump",
+   "mode": null,
+   "agents": "ARTIST+CRITIC",
+   "seal": "21e20fd472ea0c5ddd47cbe57cf5e50868d3438f8f0cc41d098311b244af6b9c",
+   "facts": [
+    [
+     "LIT",
+     1982,
+     "IBM PC option ROMs start with the signature bytes 55h AAh, then a length byte counted in 512-byte blocks.",
+     "IBM PC option ROM format"
+    ],
+    [
+     "LIT",
+     1982,
+     "The BIOS only accepts an option ROM if all its bytes sum to 0 modulo 256, so builders patch one checksum byte to make the total come out right.",
+     "IBM PC option ROM checksum"
+    ],
+    [
+     "AMBER",
+     1982,
+     "Later PC and XT BIOS revisions scan roughly C8000h–F4000h in 2 KB steps for option ROMs (the very first 1981 PC BIOS did not scan for them).",
+     "IBM PC / XT BIOS ROM scan"
+    ]
+   ]
+  },
+  {
+   "n": 3,
+   "slug": "hacf-03-clean-room",
+   "name": "The Clean Room · Halt and Catch Fire in pixels",
+   "title": "The Clean Room",
+   "arc": "clone",
+   "year": 1982,
+   "widget": "cleanroom",
+   "mode": "spec",
+   "agents": "BUILDER+WEAVER+CRITIC",
+   "seal": "2a64029831c6f2214dc1278e61559cc1a88f19dfceb87fac42e03e3c15638ff9",
+   "facts": [
+    [
+     "LIT",
+     1982,
+     "Compaq was founded in February 1982 by Rod Canion, Jim Harris and Bill Murto.",
+     "Compaq history"
+    ],
+    [
+     "LIT",
+     1983,
+     "Compaq got around IBM's BIOS copyright with a clean-room workalike that did every documented BIOS function but was written from scratch.",
+     "Compaq Portable history"
+    ],
+    [
+     "LIT",
+     1981,
+     "BIOS services are reached through software interrupts: INT 10h video, INT 13h disk, INT 14h serial, INT 16h keyboard, INT 17h printer, INT 1Ah time of day.",
+     "IBM PC BIOS interrupt map"
+    ],
+    [
+     "AMBER",
+     1983,
+     "The cost of Compaq's clean-room BIOS effort is often put at about $1 million.",
+     "commonly cited figure"
+    ]
+   ]
+  },
+  {
+   "n": 4,
+   "slug": "hacf-04-first-clones",
+   "name": "The First Clones · Halt and Catch Fire in pixels",
+   "title": "The First Clones",
+   "arc": "clone",
+   "year": 1983,
+   "widget": "cleanroom",
+   "mode": "compat",
+   "agents": "ARTIST+CRITIC",
+   "seal": "e3cd9569595a78308a0bd3e326c160eb19f7fec25ebd3ed19ac1c9204cc2d6af",
+   "facts": [
+    [
+     "LIT",
+     1982,
+     "Columbia Data Products' MPC 1600, released in June 1982, is counted as the first IBM PC compatible.",
+     "Compaq Portable history"
+    ],
+    [
+     "LIT",
+     1983,
+     "Eagle Computer and Corona were threatened by IBM over BIOS copyright and settled, agreeing to re-implement their BIOS.",
+     "Compaq Portable history"
+    ],
+    [
+     "LIT",
+     1984,
+     "Phoenix Technologies began licensing a clean-room PC BIOS to other makers in 1984, which opened the clone market.",
+     "Phoenix BIOS history"
+    ],
+    [
+     "LIT",
+     1983,
+     "Many early clones reached only partial compatibility (often quoted as about 95%) until Phoenix and others sold reverse-engineered BIOSes.",
+     "Compaq Portable history"
+    ]
+   ]
+  },
+  {
+   "n": 5,
+   "slug": "hacf-05-luggable",
+   "name": "Luggables · Halt and Catch Fire in pixels",
+   "title": "Luggables",
+   "arc": "clone",
+   "year": 1983,
+   "widget": "specs",
+   "mode": "luggable",
+   "agents": "ARTIST+CRITIC",
+   "seal": "c144dbff06ed504ab6633c8ac881d0b1ed6488c456dfb02b059bc5ad7b9c149a",
+   "facts": [
+    [
+     "LIT",
+     1981,
+     "The Osborne 1 (April 1981) weighed 24.5 lb, had a 5-inch screen and cost $1,795.",
+     "Osborne 1 history"
+    ],
+    [
+     "LIT",
+     1982,
+     "The Compaq Portable was announced in November 1982 and shipped in March 1983 at $2,995.",
+     "Compaq Portable history"
+    ],
+    [
+     "LIT",
+     1983,
+     "The Compaq Portable weighed 28 lb (13 kg), had a built-in 9-inch green screen and ran on AC power only.",
+     "Compaq Portable history"
+    ],
+    [
+     "LIT",
+     1983,
+     "Compaq sold 53,000 units in its first year, for $111 million in revenue, then a US business record.",
+     "Compaq Portable history"
+    ]
+   ]
+  },
+  {
+   "n": 6,
+   "slug": "hacf-06-comdex",
+   "name": "COMDEX Floor · Halt and Catch Fire in pixels",
+   "title": "COMDEX Floor",
+   "arc": "clone",
+   "year": 1983,
+   "widget": "breakout",
+   "mode": null,
+   "agents": "ARTIST+CRITIC",
+   "seal": "6eeac6c1ff49763fc7a8cccb323a4ef0d999bbd627dec9a24fe889d126e14db2",
+   "facts": [
+    [
+     "LIT",
+     1979,
+     "COMDEX, the computer dealers' trade show, was first held in Las Vegas in 1979.",
+     "COMDEX history"
+    ],
+    [
+     "LIT",
+     1983,
+     "Every November COMDEX was where new PCs and clones were shown to dealers.",
+     "COMDEX history"
+    ],
+    [
+     "MODEL",
+     1983,
+     "In the show's first season the Giant portable is unveiled at COMDEX in Las Vegas.",
+     "Halt and Catch Fire S1 (reference)"
+    ]
+   ]
+  },
+  {
+   "n": 7,
+   "slug": "hacf-07-macintosh-1984",
+   "name": "1984 · The Mac · Halt and Catch Fire in pixels",
+   "title": "1984 · The Mac",
+   "arc": "clone",
+   "year": 1984,
+   "widget": "specs",
+   "mode": "mac",
+   "agents": "ARTIST+CRITIC",
+   "seal": "35fcd739484bbe78e4091e879f8aa88e3b574ee71b1a839562e7ba7e800fd000",
+   "facts": [
+    [
+     "LIT",
+     1984,
+     "The Apple Macintosh was introduced on January 24, 1984, at $2,495.",
+     "Macintosh 128K history"
+    ],
+    [
+     "LIT",
+     1984,
+     "Its \"1984\" TV ad, directed by Ridley Scott, aired during Super Bowl XVIII on January 22, 1984.",
+     "Macintosh history"
+    ],
+    [
+     "LIT",
+     1984,
+     "The Macintosh 128K had a Motorola 68000 at about 8 MHz, 128 KB of RAM and a 9-inch 512×342 black-and-white screen.",
+     "Macintosh 128K spec"
+    ]
+   ]
+  },
+  {
+   "n": 8,
+   "slug": "hacf-08-halt-and-catch-fire",
+   "name": "HCF · Halt and Catch Fire · Halt and Catch Fire in pixels",
+   "title": "HCF · Halt and Catch Fire",
+   "arc": "clone",
+   "year": 1977,
+   "widget": "hcf",
+   "mode": null,
+   "agents": "ARTIST+CRITIC",
+   "seal": "0913646c29f3dde9fd164d488a3a67a34da3d5cebe4451497a39ade6c54fb921",
+   "facts": [
+    [
+     "LIT",
+     1974,
+     "The Motorola 6800 was introduced in 1974; its incomplete opcode decoding left undocumented opcodes 9D and DD that lock the CPU until reset.",
+     "HCF (computing)"
+    ],
+    [
+     "LIT",
+     1977,
+     "Gerry Wheeler gave them the unofficial mnemonic HCF in \"Undocumented M6800 Instructions\", BYTE, December 1977: the address bus turns into a 16-bit counter.",
+     "BYTE Dec 1977"
+    ],
+    [
+     "LIT",
+     1977,
+     "Motorola kept the behaviour in the 6802 as a quick self-test for its 128 bytes of on-chip RAM.",
+     "HCF (computing)"
+    ],
+    [
+     "LIT",
+     1980,
+     "HCF began as a joke mnemonic; a list of \"Overextended Mnemonics\" with HCF ran in Creative Computing in April 1980.",
+     "Creative Computing Apr 1980"
+    ]
+   ]
+  },
+  {
+   "n": 9,
+   "slug": "hacf-09-mutiny-house",
+   "name": "The Mutiny House · Halt and Catch Fire in pixels",
+   "title": "The Mutiny House",
+   "arc": "mutiny",
+   "year": 1985,
+   "widget": "chat",
+   "mode": null,
+   "agents": "ARTIST+CRITIC",
+   "seal": "d9f49b09af4024d36c0caa11cbccd03ee1b50a11c9ca0ebf96011ef0ed342604",
+   "facts": [
+    [
+     "LIT",
+     1980,
+     "CompuServe's CB Simulator (1980) was one of the first online chat services for the public.",
+     "CompuServe history"
+    ],
+    [
+     "LIT",
+     1985,
+     "Online time was billed by the hour; CompuServe charged $6 an hour at 300 baud and $12 at 1200 baud for games such as Island of Kesmai.",
+     "Island of Kesmai history"
+    ],
+    [
+     "MODEL",
+     1985,
+     "In the show, Mutiny runs its games and chat from a house in Dallas.",
+     "Halt and Catch Fire S2 (reference)"
+    ]
+   ]
+  },
+  {
+   "n": 10,
+   "slug": "hacf-10-cbbs-1978",
+   "name": "CBBS · Chicago 1978 · Halt and Catch Fire in pixels",
+   "title": "CBBS · Chicago 1978",
+   "arc": "mutiny",
+   "year": 1978,
+   "widget": "bbs",
+   "mode": null,
+   "agents": "ARTIST+CRITIC",
+   "seal": "aff76485347e3f279c5bc5d0ede6a40b4c60017c95c475a69c579db246974881",
+   "facts": [
+    [
+     "LIT",
+     1978,
+     "CBBS, the first dial-up bulletin board system, went online in Chicago on February 16, 1978, built by Ward Christensen and Randy Suess.",
+     "CBBS history"
+    ],
+    [
+     "LIT",
+     1978,
+     "Early boards took one caller at a time on one phone line.",
+     "CBBS history"
+    ],
+    [
+     "LIT",
+     1977,
+     "Ward Christensen also wrote the XMODEM file-transfer protocol (1977).",
+     "XMODEM history"
+    ]
+   ]
+  },
+  {
+   "n": 11,
+   "slug": "hacf-11-modem-handshake",
+   "name": "The Handshake · Halt and Catch Fire in pixels",
+   "title": "The Handshake",
+   "arc": "mutiny",
+   "year": 1981,
+   "widget": "modem",
+   "mode": null,
+   "agents": "ARTIST+CRITIC",
+   "seal": "378d9e8e8110fa8ffdf1413d170a4a9a07e15cbb0ed70988f51b7129bca9fda1",
+   "facts": [
+    [
+     "LIT",
+     1981,
+     "The Hayes Smartmodem (1981) ran at 300 bit/s and introduced the AT command set (ATDT to dial with tones).",
+     "Hayes Smartmodem history"
+    ],
+    [
+     "LIT",
+     1962,
+     "Bell 103 modems use frequency-shift keying: the originating side sends 1070/1270 Hz (space/mark) and the answering side 2025/2225 Hz.",
+     "Bell 103 standard"
+    ],
+    [
+     "LIT",
+     1963,
+     "Touch-tone (DTMF) digits are two tones together, one from 697/770/852/941 Hz and one from 1209/1336/1477 Hz.",
+     "DTMF standard"
+    ],
+    [
+     "LIT",
+     1994,
+     "By 1994 V.34 modems ran at 28.8 kbit/s.",
+     "ITU-T V.34"
+    ]
+   ]
+  },
+  {
+   "n": 12,
+   "slug": "hacf-12-fidonet",
+   "name": "Fidonet · Store and Forward · Halt and Catch Fire in pixels",
+   "title": "Fidonet · Store and Forward",
+   "arc": "mutiny",
+   "year": 1984,
+   "widget": "fidonet",
+   "mode": null,
+   "agents": "BUILDER+WEAVER+CRITIC",
+   "seal": "7c157ba7e09e4660e01045d7ac5073978df37710bc9e072893528f6d2339c2e7",
+   "facts": [
+    [
+     "LIT",
+     1984,
+     "Fidonet was started in 1984 by Tom Jennings in San Francisco to pass messages between bulletin boards.",
+     "Fidonet history"
+    ],
+    [
+     "LIT",
+     1984,
+     "Fidonet addresses take the form zone:net/node, for example 1:102/851 (zones were added later in the 1980s).",
+     "Fidonet addressing"
+    ],
+    [
+     "LIT",
+     1984,
+     "Mail moved store-and-forward during a nightly \"national mail hour\", when long-distance rates were lower.",
+     "Fidonet history"
+    ]
+   ]
+  },
+  {
+   "n": 13,
+   "slug": "hacf-13-ansi-art",
+   "name": "ANSI Art · Halt and Catch Fire in pixels",
+   "title": "ANSI Art",
+   "arc": "mutiny",
+   "year": 1990,
+   "widget": "ansi",
+   "mode": null,
+   "agents": "ARTIST+CRITIC",
+   "seal": "89df6d492ec67562819f318dee86457b3a6daddd0be4fdde1f78a90cb778ed9c",
+   "facts": [
+    [
+     "LIT",
+     1983,
+     "MS-DOS 2.0 (1983) added the ANSI.SYS driver, which turns ESC[ escape codes into colour and cursor moves.",
+     "ANSI.SYS history"
+    ],
+    [
+     "LIT",
+     1990,
+     "ACiD Productions, one of the best-known ANSI art groups, was founded in 1990.",
+     "ACiD history"
+    ],
+    [
+     "LIT",
+     1981,
+     "The 16 text colours come from the IBM PC's CGA palette.",
+     "IBM CGA"
+    ]
+   ]
+  },
+  {
+   "n": 14,
+   "slug": "hacf-14-mud-and-kesmai",
+   "name": "MUDs and Kesmai · Halt and Catch Fire in pixels",
+   "title": "MUDs and Kesmai",
+   "arc": "mutiny",
+   "year": 1985,
+   "widget": "mud",
+   "mode": null,
+   "agents": "ARTIST+CRITIC",
+   "seal": "ebf9fb9173dd4fb461d9491b10148b15940088bfe1c63d747698393a5fbef25c",
+   "facts": [
+    [
+     "LIT",
+     1978,
+     "MUD1 was written at the University of Essex in 1978 by Roy Trubshaw and Richard Bartle.",
+     "MUD1 history"
+    ],
+    [
+     "LIT",
+     1985,
+     "Island of Kesmai launched on CompuServe in 1985 (Kelton Flinn recalls December 15) as a multiplayer game with roguelike graphics.",
+     "Island of Kesmai history"
+    ],
+    [
+     "LIT",
+     1985,
+     "Kesmai processed one command every 10 seconds; at $6 an hour that is 1⅔ cents per command.",
+     "Island of Kesmai history"
+    ]
+   ]
+  },
+  {
+   "n": 15,
+   "slug": "hacf-15-qlink-tanks",
+   "name": "Q-Link Tanks · Halt and Catch Fire in pixels",
+   "title": "Q-Link Tanks",
+   "arc": "mutiny",
+   "year": 1985,
+   "widget": "tanks",
+   "mode": null,
+   "agents": "ARTIST+CRITIC",
+   "seal": "a37628f3bb364da16023573ff0a9559e8c1f35aafecac75d999ed9ff74867f10",
+   "facts": [
+    [
+     "LIT",
+     1985,
+     "Quantum Link (Q-Link), an online service for the Commodore 64 and 128, began on November 5, 1985.",
+     "Quantum Link history"
+    ],
+    [
+     "LIT",
+     1989,
+     "Q-Link was renamed America Online in October 1989.",
+     "Quantum Link history"
+    ],
+    [
+     "AMBER",
+     1986,
+     "Lucasfilm's Habitat ran on Q-Link as a test from 1986–87, with avatars in a shared graphical world, and was relaunched as Club Caribe in 1988.",
+     "Habitat history"
+    ]
+   ]
+  },
+  {
+   "n": 16,
+   "slug": "hacf-16-packet-switched",
+   "name": "Packet-Switched Nights · Halt and Catch Fire in pixels",
+   "title": "Packet-Switched Nights",
+   "arc": "mutiny",
+   "year": 1986,
+   "widget": "dialup",
+   "mode": "pool",
+   "agents": "BUILDER+WEAVER+CRITIC",
+   "seal": "f461df4b15a74595d1d93106e843cbac8186873555b9d10390b54834e86ad0a4",
+   "facts": [
+    [
+     "LIT",
+     1975,
+     "Telenet (1975) and Tymnet (1971) carried dial-up users to online services over packet-switched networks.",
+     "Telenet / Tymnet history"
+    ],
+    [
+     "LIT",
+     1917,
+     "The Erlang B formula (A. K. Erlang, 1917) gives the chance a caller hears busy, given the number of lines and the traffic.",
+     "Erlang B"
+    ],
+    [
+     "MODEL",
+     1985,
+     "In the show, Mutiny struggles with line capacity and rented computer time.",
+     "Halt and Catch Fire S2 (reference)"
+    ]
+   ]
+  },
+  {
+   "n": 17,
+   "slug": "hacf-17-west-coast",
+   "name": "Westbound · NSFNET · Halt and Catch Fire in pixels",
+   "title": "Westbound · NSFNET",
+   "arc": "valley",
+   "year": 1986,
+   "widget": "specs",
+   "mode": "nsfnet",
+   "agents": "ARTIST+CRITIC",
+   "seal": "f87c413adc8ea011f0221b87834ae3053158e0571f76e60cfecb0ee4659c09ae",
+   "facts": [
+    [
+     "LIT",
+     1986,
+     "The NSFNET backbone went live in 1986 at 56 kbit/s.",
+     "NSFNET history"
+    ],
+    [
+     "LIT",
+     1988,
+     "It was upgraded to T1 (1.544 Mbit/s) in 1988.",
+     "NSFNET history"
+    ],
+    [
+     "LIT",
+     1991,
+     "It was upgraded to T3 (45 Mbit/s) in 1991.",
+     "NSFNET history"
+    ],
+    [
+     "MODEL",
+     1986,
+     "In the show, Mutiny moves to California in season three.",
+     "Halt and Catch Fire S3 (reference)"
+    ]
+   ]
+  },
+  {
+   "n": 18,
+   "slug": "hacf-18-brain-1986",
+   "name": "Brain · The Boot Sector · Halt and Catch Fire in pixels",
+   "title": "Brain · The Boot Sector",
+   "arc": "valley",
+   "year": 1986,
+   "widget": "worm",
+   "mode": "brain",
+   "agents": "ARTIST+CRITIC",
+   "seal": "be025319c9c272ef44c7bef7bbda8de39914547188e9f74ee9881b87ed3f8401",
+   "facts": [
+    [
+     "LIT",
+     1986,
+     "Brain (January 1986), written by the brothers Basit and Amjad Farooq Alvi in Lahore, Pakistan, is counted as the first IBM PC virus.",
+     "Brain (computer virus)"
+    ],
+    [
+     "LIT",
+     1986,
+     "Brain infects the boot sector of 360 KB floppy disks and spreads when an infected disk boots a machine.",
+     "Brain (computer virus)"
+    ],
+    [
+     "LIT",
+     1987,
+     "Early antivirus products followed in 1987, including McAfee VirusScan.",
+     "antivirus history"
+    ]
+   ]
+  },
+  {
+   "n": 19,
+   "slug": "hacf-19-morris-worm",
+   "name": "The Morris Worm · Halt and Catch Fire in pixels",
+   "title": "The Morris Worm",
+   "arc": "valley",
+   "year": 1988,
+   "widget": "worm",
+   "mode": "morris",
+   "agents": "ARTIST+CRITIC",
+   "seal": "762f7622201fcf57482d40c44d95b411af514ea37dab0c35f67ce11672128717",
+   "facts": [
+    [
+     "LIT",
+     1988,
+     "The Morris worm was released on November 2, 1988, by Robert Tappan Morris.",
+     "Morris worm"
+    ],
+    [
+     "LIT",
+     1988,
+     "Even when a host said it was already infected, the worm reinfected it 1 time in 7, which is why it overloaded machines.",
+     "Morris worm"
+    ],
+    [
+     "AMBER",
+     1988,
+     "About 6,000 of the roughly 60,000 hosts then on the internet are often said to have been hit (an estimate).",
+     "Morris worm"
+    ],
+    [
+     "LIT",
+     1990,
+     "Morris was the first person convicted under the 1986 Computer Fraud and Abuse Act (1990).",
+     "Morris worm"
+    ]
+   ]
+  },
+  {
+   "n": 20,
+   "slug": "hacf-20-black-monday",
+   "name": "Black Monday · Halt and Catch Fire in pixels",
+   "title": "Black Monday",
+   "arc": "valley",
+   "year": 1987,
+   "widget": "ticker",
+   "mode": "crash",
+   "agents": "ARTIST+CRITIC",
+   "seal": "f97bb7d054ce522851e4ac1bbe57f257eddee61c45239743cb19b3d71abf9ff0",
+   "facts": [
+    [
+     "LIT",
+     1987,
+     "On Monday, October 19, 1987, the Dow Jones Industrial Average fell 508 points, from 2,246.74 to 1,738.74.",
+     "Black Monday 1987"
+    ],
+    [
+     "LIT",
+     1987,
+     "That is a 22.6% drop, the largest one-day percentage fall in its history.",
+     "Black Monday 1987"
+    ],
+    [
+     "MODEL",
+     1987,
+     "Tech IPOs and money worries run through the show's third season.",
+     "Halt and Catch Fire S3 (reference)"
+    ]
+   ]
+  },
+  {
+   "n": 21,
+   "slug": "hacf-21-ipo-bell",
+   "name": "The IPO Bell · Halt and Catch Fire in pixels",
+   "title": "The IPO Bell",
+   "arc": "valley",
+   "year": 1986,
+   "widget": "ticker",
+   "mode": "ipo",
+   "agents": "BUILDER+WEAVER+CRITIC",
+   "seal": "b04662887a83a046514dd591f7884c1b26059150c709e95df963c96dd09999d2",
+   "facts": [
+    [
+     "LIT",
+     1980,
+     "Apple went public on December 12, 1980, at $22 a share.",
+     "Apple IPO"
+    ],
+    [
+     "LIT",
+     1986,
+     "Microsoft went public on March 13, 1986, at $21 a share.",
+     "Microsoft IPO"
+    ],
+    [
+     "AMBER",
+     1986,
+     "Microsoft closed its first day at about $27.75.",
+     "commonly cited figure"
+    ],
+    [
+     "MODEL",
+     1986,
+     "In the show, Mutiny's money and its IPO become the story in season three.",
+     "Halt and Catch Fire S3 (reference)"
+    ]
+   ]
+  },
+  {
+   "n": 22,
+   "slug": "hacf-22-hypercard",
+   "name": "HyperCard Stacks · Halt and Catch Fire in pixels",
+   "title": "HyperCard Stacks",
+   "arc": "valley",
+   "year": 1987,
+   "widget": "hyper",
+   "mode": "stack",
+   "agents": "ARTIST+CRITIC",
+   "seal": "8dec41532440440b56b9f5e52c3c6f194387bd648cde9951132015b10f02c26b",
+   "facts": [
+    [
+     "LIT",
+     1987,
+     "HyperCard, created by Bill Atkinson, was released by Apple in August 1987.",
+     "HyperCard history"
+    ],
+    [
+     "LIT",
+     1987,
+     "It came bundled free with new Macintosh computers.",
+     "HyperCard history"
+    ],
+    [
+     "LIT",
+     1987,
+     "Stacks of cards with buttons that link to other cards are an early, popular form of hypertext.",
+     "HyperCard history"
+    ]
+   ]
+  },
+  {
+   "n": 23,
+   "slug": "hacf-23-swap-meet",
+   "name": "The Swap Meet · Halt and Catch Fire in pixels",
+   "title": "The Swap Meet",
+   "arc": "valley",
+   "year": 1995,
+   "widget": "auction",
+   "mode": null,
+   "agents": "ARTIST+CRITIC",
+   "seal": "e295d3b75c45c98330dc6173235a39025310ce88a4696114ba6d79a43b9b2e29",
+   "facts": [
+    [
+     "LIT",
+     1995,
+     "eBay began as AuctionWeb, launched by Pierre Omidyar on September 3, 1995.",
+     "eBay history"
+    ],
+    [
+     "LIT",
+     1961,
+     "In a second-price (Vickrey) auction the highest bidder wins and pays the second-highest bid, so bidding your true value is the best plan (William Vickrey, 1961).",
+     "Vickrey auction"
+    ],
+    [
+     "MODEL",
+     1986,
+     "In the show, an online swap meet is one of Mutiny's big ideas, years before real online auction sites.",
+     "Halt and Catch Fire S3 (reference)"
+    ]
+   ]
+  },
+  {
+   "n": 24,
+   "slug": "hacf-24-www-proposal",
+   "name": "Information Management: A Proposal · Halt and Catch Fire in pixels",
+   "title": "Information Management: A Proposal",
+   "arc": "valley",
+   "year": 1989,
+   "widget": "hyper",
+   "mode": "www",
+   "agents": "BUILDER+WEAVER+CRITIC",
+   "seal": "c335b57a4d0a29808542255ab06cfcacdabf06e90eea0c676586a4a9294a9799",
+   "facts": [
+    [
+     "LIT",
+     1989,
+     "Tim Berners-Lee wrote \"Information Management: A Proposal\" at CERN in March 1989.",
+     "WWW history"
+    ],
+    [
+     "LIT",
+     1990,
+     "The first web server and browser ran on a NeXT computer at CERN by the end of 1990.",
+     "WWW history"
+    ],
+    [
+     "LIT",
+     1991,
+     "The World Wide Web project was announced publicly on August 6, 1991.",
+     "WWW history"
+    ],
+    [
+     "LIT",
+     1993,
+     "CERN put the web software into the public domain on April 30, 1993.",
+     "WWW history"
+    ]
+   ]
+  },
+  {
+   "n": 25,
+   "slug": "hacf-25-gopher",
+   "name": "Gopher Holes · Halt and Catch Fire in pixels",
+   "title": "Gopher Holes",
+   "arc": "web",
+   "year": 1991,
+   "widget": "gopher",
+   "mode": null,
+   "agents": "ARTIST+CRITIC",
+   "seal": "74045b950487c35018cafda289b68505516773641e8e6cd9aa0ebd23e52b4c60",
+   "facts": [
+    [
+     "LIT",
+     1991,
+     "Gopher was released at the University of Minnesota in 1991.",
+     "Gopher history"
+    ],
+    [
+     "LIT",
+     1993,
+     "RFC 1436 (1993) describes the protocol: each menu line is a type character, a display string, a selector, a host and a port, separated by tabs.",
+     "RFC 1436"
+    ],
+    [
+     "LIT",
+     1993,
+     "Item types include 0 (text file), 1 (menu), 7 (search) and 9 (binary).",
+     "RFC 1436"
+    ]
+   ]
+  },
+  {
+   "n": 26,
+   "slug": "hacf-26-archie",
+   "name": "Archie · Search Before the Web · Halt and Catch Fire in pixels",
+   "title": "Archie · Search Before the Web",
+   "arc": "web",
+   "year": 1990,
+   "widget": "search",
+   "mode": "archie",
+   "agents": "BUILDER+WEAVER+CRITIC",
+   "seal": "2d1fa4b93177cae2b807e44b61b482601ba4fcc739d3fbd4ac1ed2976cfab9b9",
+   "facts": [
+    [
+     "LIT",
+     1990,
+     "Archie, made in 1990 at McGill University by Alan Emtage with Bill Heelan and Peter Deutsch, indexed the file lists of public FTP sites.",
+     "Archie history"
+    ],
+    [
+     "LIT",
+     1990,
+     "Archie searched file names, not the contents of files.",
+     "Archie history"
+    ]
+   ]
+  },
+  {
+   "n": 27,
+   "slug": "hacf-27-mosaic",
+   "name": "Mosaic · Pictures in the Page · Halt and Catch Fire in pixels",
+   "title": "Mosaic · Pictures in the Page",
+   "arc": "web",
+   "year": 1993,
+   "widget": "html",
+   "mode": null,
+   "agents": "ARTIST+CRITIC",
+   "seal": "39e51cd714d289b599a8cb68a872a7a5d799d105e6ead9392f7aae8400228a2f",
+   "facts": [
+    [
+     "LIT",
+     1993,
+     "NCSA Mosaic's first public release (0.5) was announced by Marc Andreessen on January 23, 1993; version 1.0 followed on April 21, 1993.",
+     "NCSA Mosaic history"
+    ],
+    [
+     "LIT",
+     1993,
+     "Mosaic 0.10 (March 1993) added the <img> tag for inline images.",
+     "NCSA Mosaic history"
+    ],
+    [
+     "LIT",
+     1993,
+     "Andreessen and Eric Bina built it at NCSA, University of Illinois; ports to Windows and the Mac came in September 1993.",
+     "NCSA Mosaic history"
+    ]
+   ]
+  },
+  {
+   "n": 28,
+   "slug": "hacf-28-netscape",
+   "name": "Navigator · 28.8 · Halt and Catch Fire in pixels",
+   "title": "Navigator · 28.8",
+   "arc": "web",
+   "year": 1994,
+   "widget": "download",
+   "mode": null,
+   "agents": "ARTIST+CRITIC",
+   "seal": "57f20213c43daef7987391a234b55bd2edadb968d9d029021988a5baac05cf6a",
+   "facts": [
+    [
+     "LIT",
+     1994,
+     "Mosaic Communications Corporation was founded on April 4, 1994, by Jim Clark and Marc Andreessen, and renamed Netscape later that year.",
+     "Netscape history"
+    ],
+    [
+     "LIT",
+     1994,
+     "Netscape Navigator's first beta came out on October 13, 1994, and version 1.0 on December 15, 1994.",
+     "Netscape history"
+    ],
+    [
+     "LIT",
+     1995,
+     "Netscape went public on August 9, 1995.",
+     "Netscape history"
+    ],
+    [
+     "LIT",
+     1994,
+     "Over a serial link each byte costs 10 bits (8 data bits plus start and stop bits), so a 28.8 kbit/s modem moves about 2.9 KB a second.",
+     "8N1 framing"
+    ]
+   ]
+  },
+  {
+   "n": 29,
+   "slug": "hacf-29-directory-vs-crawler",
+   "name": "Directory vs Crawler · Halt and Catch Fire in pixels",
+   "title": "Directory vs Crawler",
+   "arc": "web",
+   "year": 1994,
+   "widget": "search",
+   "mode": "web",
+   "agents": "BUILDER+WEAVER+CRITIC",
+   "seal": "51ced420efb8e01707933bb19391ad2c715d8ee972dbcecba7bc12698d09fcad",
+   "facts": [
+    [
+     "LIT",
+     1994,
+     "Jerry Yang and David Filo started \"Jerry and David's Guide to the World Wide Web\" at Stanford in January 1994; it was renamed Yahoo! a few months later.",
+     "Yahoo history"
+    ],
+    [
+     "LIT",
+     1994,
+     "WebCrawler, by Brian Pinkerton at the University of Washington, launched in April 1994 as the first engine to search the full text of pages.",
+     "WebCrawler history"
+    ],
+    [
+     "LIT",
+     1994,
+     "Lycos went online at Carnegie Mellon in July 1994.",
+     "Lycos history"
+    ],
+    [
+     "MODEL",
+     1994,
+     "In the show's last season, a directory (Comet) and a search engine (Rover) compete.",
+     "Halt and Catch Fire S4 (reference)"
+    ]
+   ]
+  },
+  {
+   "n": 30,
+   "slug": "hacf-30-eternal-september",
+   "name": "Eternal September · Halt and Catch Fire in pixels",
+   "title": "Eternal September",
+   "arc": "web",
+   "year": 1993,
+   "widget": "usenet",
+   "mode": null,
+   "agents": "ARTIST+CRITIC",
+   "seal": "3e8283218dc5e8d6ad71e68d259d3134f0131ced1bdf396576c6fbf01056b66b",
+   "facts": [
+    [
+     "LIT",
+     1979,
+     "Usenet started in 1979 (Tom Truscott and Jim Ellis, Duke University).",
+     "Usenet history"
+    ],
+    [
+     "AMBER",
+     1993,
+     "\"Eternal September\" names the time from September 1993, when AOL opened Usenet to its members and the new arrivals kept coming.",
+     "Eternal September"
+    ]
+   ]
+  },
+  {
+   "n": 31,
+   "slug": "hacf-31-nsfnet-sunset",
+   "name": "NSFNET Sunset · Halt and Catch Fire in pixels",
+   "title": "NSFNET Sunset",
+   "arc": "web",
+   "year": 1995,
+   "widget": "dialup",
+   "mode": "isp",
+   "agents": "BUILDER+WEAVER+CRITIC",
+   "seal": "574e93a626b5524ffeb2a979de1a93b2e28e0bb06106a642dc8f448663cdc4c2",
+   "facts": [
+    [
+     "LIT",
+     1995,
+     "The NSFNET backbone was decommissioned on April 30, 1995, after traffic moved to commercial networks.",
+     "NSFNET history"
+    ],
+    [
+     "LIT",
+     1991,
+     "The commercial-traffic limits on the internet were relaxed in the early 1990s, and dial-up ISPs grew around them.",
+     "NSFNET history"
+    ],
+    [
+     "LIT",
+     1917,
+     "The Erlang B formula gives the busy-signal rate for a modem pool.",
+     "Erlang B"
+    ]
+   ]
+  },
+  {
+   "n": 32,
+   "slug": "hacf-32-the-next-thing",
+   "name": "The Next Thing · Halt and Catch Fire in pixels",
+   "title": "The Next Thing",
+   "arc": "web",
+   "year": 1995,
+   "widget": "breakout",
+   "mode": null,
+   "agents": "ARTIST+CRITIC",
+   "seal": "1e4bbc7f2ff2882d4ef868bd9f8acaffc196e618588e4adec2532820040fd392",
+   "facts": [
+    [
+     "LIT",
+     1990,
+     "Windows 3.0 was released on May 22, 1990.",
+     "Windows 3.0 history"
+    ],
+    [
+     "LIT",
+     1991,
+     "Linus Torvalds announced Linux on August 25, 1991.",
+     "Linux history"
+    ],
+    [
+     "LIT",
+     1995,
+     "AltaVista launched in December 1995.",
+     "AltaVista history"
+    ],
+    [
+     "MODEL",
+     1994,
+     "Halt and Catch Fire ends its story around 1994 (series finale aired October 2017).",
+     "Halt and Catch Fire S4 (reference)"
+    ]
+   ]
+  }
+ ]
+}

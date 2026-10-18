@@ -1,0 +1,1 @@
+{"slug": "hacf-27-mosaic", "seal": "39e51cd714d289b599a8cb68a872a7a5d799d105e6ead9392f7aae8400228a2f", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

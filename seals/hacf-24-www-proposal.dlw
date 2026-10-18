@@ -1,0 +1,1 @@
+{"slug": "hacf-24-www-proposal", "seal": "c335b57a4d0a29808542255ab06cfcacdabf06e90eea0c676586a4a9294a9799", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

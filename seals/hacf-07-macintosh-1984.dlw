@@ -1,0 +1,1 @@
+{"slug": "hacf-07-macintosh-1984", "seal": "35fcd739484bbe78e4091e879f8aa88e3b574ee71b1a839562e7ba7e800fd000", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

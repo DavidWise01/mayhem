@@ -1,0 +1,1 @@
+{"slug": "hacf-32-the-next-thing", "seal": "1e4bbc7f2ff2882d4ef868bd9f8acaffc196e618588e4adec2532820040fd392", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

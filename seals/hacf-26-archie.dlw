@@ -1,0 +1,1 @@
+{"slug": "hacf-26-archie", "seal": "2d1fa4b93177cae2b807e44b61b482601ba4fcc739d3fbd4ac1ed2976cfab9b9", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "hacf-19-morris-worm", "seal": "762f7622201fcf57482d40c44d95b411af514ea37dab0c35f67ce11672128717", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

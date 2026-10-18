@@ -1,0 +1,1 @@
+{"slug": "hacf-18-brain-1986", "seal": "be025319c9c272ef44c7bef7bbda8de39914547188e9f74ee9881b87ed3f8401", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

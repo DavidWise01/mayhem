@@ -1,0 +1,1 @@
+{"slug": "hacf-09-mutiny-house", "seal": "d9f49b09af4024d36c0caa11cbccd03ee1b50a11c9ca0ebf96011ef0ed342604", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

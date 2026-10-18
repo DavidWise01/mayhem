@@ -1,0 +1,1 @@
+{"slug": "hacf-12-fidonet", "seal": "7c157ba7e09e4660e01045d7ac5073978df37710bc9e072893528f6d2339c2e7", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

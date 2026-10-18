@@ -1,0 +1,1 @@
+{"slug": "hacf-23-swap-meet", "seal": "e295d3b75c45c98330dc6173235a39025310ce88a4696114ba6d79a43b9b2e29", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

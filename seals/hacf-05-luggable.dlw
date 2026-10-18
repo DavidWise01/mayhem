@@ -1,0 +1,1 @@
+{"slug": "hacf-05-luggable", "seal": "c144dbff06ed504ab6633c8ac881d0b1ed6488c456dfb02b059bc5ad7b9c149a", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "hacf-03-clean-room", "seal": "2a64029831c6f2214dc1278e61559cc1a88f19dfceb87fac42e03e3c15638ff9", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

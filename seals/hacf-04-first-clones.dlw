@@ -1,0 +1,1 @@
+{"slug": "hacf-04-first-clones", "seal": "e3cd9569595a78308a0bd3e326c160eb19f7fec25ebd3ed19ac1c9204cc2d6af", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

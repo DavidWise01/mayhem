@@ -1,0 +1,1 @@
+{"slug": "hacf-20-black-monday", "seal": "f97bb7d054ce522851e4ac1bbe57f257eddee61c45239743cb19b3d71abf9ff0", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

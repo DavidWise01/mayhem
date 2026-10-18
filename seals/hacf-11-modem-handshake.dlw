@@ -1,0 +1,1 @@
+{"slug": "hacf-11-modem-handshake", "seal": "378d9e8e8110fa8ffdf1413d170a4a9a07e15cbb0ed70988f51b7129bca9fda1", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

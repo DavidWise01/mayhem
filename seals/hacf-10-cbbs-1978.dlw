@@ -1,0 +1,1 @@
+{"slug": "hacf-10-cbbs-1978", "seal": "aff76485347e3f279c5bc5d0ede6a40b4c60017c95c475a69c579db246974881", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

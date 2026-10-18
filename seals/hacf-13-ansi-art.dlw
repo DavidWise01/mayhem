@@ -1,0 +1,1 @@
+{"slug": "hacf-13-ansi-art", "seal": "89df6d492ec67562819f318dee86457b3a6daddd0be4fdde1f78a90cb778ed9c", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

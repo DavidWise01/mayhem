@@ -1,0 +1,1 @@
+{"slug": "hacf-15-qlink-tanks", "seal": "a37628f3bb364da16023573ff0a9559e8c1f35aafecac75d999ed9ff74867f10", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

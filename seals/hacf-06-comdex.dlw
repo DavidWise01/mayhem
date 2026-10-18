@@ -1,0 +1,1 @@
+{"slug": "hacf-06-comdex", "seal": "6eeac6c1ff49763fc7a8cccb323a4ef0d999bbd627dec9a24fe889d126e14db2", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

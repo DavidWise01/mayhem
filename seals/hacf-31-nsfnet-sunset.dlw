@@ -1,0 +1,1 @@
+{"slug": "hacf-31-nsfnet-sunset", "seal": "574e93a626b5524ffeb2a979de1a93b2e28e0bb06106a642dc8f448663cdc4c2", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

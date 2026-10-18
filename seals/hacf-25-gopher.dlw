@@ -1,0 +1,1 @@
+{"slug": "hacf-25-gopher", "seal": "74045b950487c35018cafda289b68505516773641e8e6cd9aa0ebd23e52b4c60", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
