@@ -806,3 +806,8 @@ Dave t269 verbatim: "perfect, can you build your next 32 pages in mayhem, think 
 - [30 · Eternal September](./spheres/hacf/hacf-30-eternal-september.html): arc IV The Web, 1993, usenet, ARTIST+CRITIC, seal 3e8283218dc5e8d6ad71e68d259d3134f0131ced1bdf396576c6fbf01056b66b
 - [31 · NSFNET Sunset](./spheres/hacf/hacf-31-nsfnet-sunset.html): arc IV The Web, 1995, dialup, BUILDER+WEAVER+CRITIC, seal 574e93a626b5524ffeb2a979de1a93b2e28e0bb06106a642dc8f448663cdc4c2
 - [32 · The Next Thing](./spheres/hacf/hacf-32-the-next-thing.html): arc IV The Web, 1995, breakout, ARTIST+CRITIC, seal 1e4bbc7f2ff2882d4ef868bd9f8acaffc196e618588e4adec2532820040fd392
+
+## Following Cameron · HACF spotlight (t270)
+Dave t270 verbatim: "perfect , take this and center on camaron but have it move and follow her from say 1983 ish, have it be axes of gray/white/black"
+One page in spheres/hacf centred on Cameron Howe (Halt and Catch Fire). A follow camera rides her path from 1983 to about 1995 through seven eras (Cardiff/the Giant 1983, Mutiny in Texas 1985, the move to California 1986, the Atari years in Japan 1990, Pilgrim and the browser 1992, Rover/Comet 1994, the next thing 1995) with a scrubber, autoplay and era stops. Axes of gray/white/black (MODEL reading): white = x = time, gray = y = what she builds, black = z = what it costs her. All-grayscale scene and CRT pass, checked pixel by pixel. Original voxel figure, no likeness or show art. FOLLOWER tunes the camera, CRITIC scores test renders; exports JSON, SVG and OBJ (her path + the 3 axes). Real history LIT with sources; show events MODEL.
+- [33 · Following Cameron, 1983 → 1995](./spheres/hacf/hacf-cameron.html): spotlight, FOLLOWER+CRITIC, seal 0f96e34029bbc2ab26020a9d34f996fa38b4cc4ec941aed5988c211aa620978b

@@ -5704,8 +5704,8 @@
    "Dave t269: perfect, can you build your next 32 pages in mayhem, think halt and catch fire in code monkeys grafx"
   ],
   "folder": "spheres/hacf",
-  "count": 33,
-  "main_index_cards": 33,
+  "count": 34,
+  "main_index_cards": 34,
   "index": {
    "slug": "hacf-index",
    "name": "Halt and Catch Fire in pixels · 32 pages",
@@ -6100,5 +6100,74 @@
    }
   ],
   "label": "MODEL art, show references and cast; LIT history with sources and live computed checks; AMBER approximate figures; WALL no network, no ROM code, no show art"
+ },
+ "batch_hacf_cameron": {
+  "said": [
+   "Dave t270: perfect , take this and center on camaron but have it move and follow her from say 1983 ish, have it be axes of gray/white/black"
+  ],
+  "folder": "spheres/hacf",
+  "page": "spheres/hacf/hacf-cameron.html",
+  "slug": "hacf-cameron",
+  "name": "Following Cameron · 1983 → 1995 · axes of gray/white/black",
+  "seal": "0f96e34029bbc2ab26020a9d34f996fa38b4cc4ec941aed5988c211aa620978b",
+  "axes": {
+   "white": "x = time",
+   "gray": "y = what she builds (MODEL)",
+   "black": "z = what it costs her (MODEL)"
+  },
+  "stops": [
+   {
+    "y": 1983.4,
+    "key": "cardiff",
+    "title": "Cardiff Electric · the Giant",
+    "build": 0.45,
+    "cost": 0.55
+   },
+   {
+    "y": 1985.5,
+    "key": "mutiny",
+    "title": "Mutiny · Texas",
+    "build": 0.62,
+    "cost": 0.4
+   },
+   {
+    "y": 1986.6,
+    "key": "valley",
+    "title": "Westbound · California",
+    "build": 0.76,
+    "cost": 0.7
+   },
+   {
+    "y": 1990.3,
+    "key": "atari",
+    "title": "Atari years · Japan",
+    "build": 0.66,
+    "cost": 0.45
+   },
+   {
+    "y": 1992.5,
+    "key": "pilgrim",
+    "title": "Pilgrim & the browser",
+    "build": 0.82,
+    "cost": 0.82
+   },
+   {
+    "y": 1994.0,
+    "key": "rover",
+    "title": "Rover · Comet",
+    "build": 0.72,
+    "cost": 0.88
+   },
+   {
+    "y": 1994.9,
+    "key": "next",
+    "title": "The next thing",
+    "build": 0.55,
+    "cost": 0.3
+   }
+  ],
+  "agents": "FOLLOWER+CRITIC",
+  "main_index_cards": 1,
+  "label": "MODEL axis mapping, show references and figure; LIT history with sources and live checks (axis colours, grayscale pixels, path follows time); WALL no show art or likeness"
  }
 }
