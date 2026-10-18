@@ -5267,5 +5267,42 @@
     "style": "index"
    }
   ]
+ },
+ "batch_biodome": {
+  "said": [
+   "Dave t263: those aer so cool, can you uopdate the boring ass biodome page now tied to patricia and patty cake and have a spot where you can add an agent.md file to add a challenger, like online play right, that would be cool."
+  ],
+  "folder": "spheres/biodome",
+  "count": 1,
+  "main_index_cards": 1,
+  "page": {
+   "slug": "biodome",
+   "name": "{{B.I.O {{D.O.M.E }}}} · home",
+   "seal": "d1d1d8d7f066792417cc6d8cb5f0a13987872fbf17bf3f717fdfe05412ba72d3"
+  },
+  "agents": [
+   "Patricia (amethyst, MODEL of NES app v49)",
+   "Pattycakes (citrine, MODEL)",
+   "challenger from agent.md"
+  ],
+  "modes": [
+   "1p",
+   "1ps",
+   "pvc",
+   "cwp",
+   "pwc",
+   "xvp",
+   "xvc",
+   "xg",
+   "xw"
+  ],
+  "agent_md": {
+   "format": "biodome-duel/1",
+   "doc": "spheres/biodome/agent-md.html",
+   "sample": "spheres/biodome/sample-agent.md",
+   "executes_code": false
+  },
+  "online": "async: #agent= share links, replay-verified result files, self-posted GitHub issues; realtime needs a server (not built)",
+  "local_original": "A:\\home\\{{B.I.O {{D.O.M.E }}}}\\index.html on Dave's machine (not published; census boards stay local)"
  }
 }

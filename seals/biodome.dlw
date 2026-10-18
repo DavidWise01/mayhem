@@ -1,0 +1,1 @@
+{"slug": "biodome", "seal": "d1d1d8d7f066792417cc6d8cb5f0a13987872fbf17bf3f717fdfe05412ba72d3", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

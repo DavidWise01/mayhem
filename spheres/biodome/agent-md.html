@@ -1,0 +1,84 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>agent.md · {{B.I.O {{D.O.M.E }}}}</title><style>:root{--bg:#081a0d;--fg:#e8f6e0;--au:#b6e388;--dim:#7ea87a;--g:#f2c86b;--r:#f472b6;--o:#67e8f9;--k:#c8d6e5;--am:#b48cff;--ci:#ffc46b;--panel:rgba(12,32,18,.82)}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:radial-gradient(ellipse at 50% -10%,#1b3b20 0,#081a0d 55%,#040b06 100%) fixed;color:var(--fg);font:14px/1.5 ui-monospace,Consolas,'Cascadia Mono',monospace}
+.wrap{max-width:1240px;margin:0 auto;padding:22px 16px 60px}h1{margin:0;letter-spacing:.18em;color:var(--au);font-size:22px;font-weight:600}h2{color:var(--au);font-size:16px;letter-spacing:.1em;margin:0 0 8px;font-weight:600}h3{margin:0 0 6px;font-size:15px}
+.sub{color:var(--dim);margin:6px 0 10px}.brace{margin:0 0 10px;color:#cfe7c4}.q{background:rgba(0,0,0,.25);border-left:3px solid var(--au);padding:8px 12px;border-radius:6px;margin:10px 0}
+.doors{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:12px 0}a.door{display:block;padding:10px;border-radius:12px;text-decoration:none;color:inherit;border:1px solid #3d6a3a;background:rgba(0,0,0,.25)}a.door:hover{border-color:var(--au)}
+.g{border-color:#7a5a18!important;color:var(--g)}.r{border-color:#7a2a50!important;color:var(--r)}.o{border-color:#1a5a66!important;color:var(--o)}.k{border-color:#4a5a66!important;color:var(--k)}.kode{display:block;color:var(--dim);font-size:11px;margin-top:3px}
+#badge{display:inline-block;border:1px solid var(--au);padding:2px 8px;border-radius:999px;margin-left:8px;font-size:11px;letter-spacing:.05em;vertical-align:middle}#badge.bad{border-color:#fb7185;color:#fb7185}
+.stage{position:relative;border-radius:18px;overflow:hidden;border:1px solid #2c5a33;box-shadow:0 20px 60px #000a,inset 0 0 40px #b6e38822;margin:14px 0}#v3{width:100%;height:min(66vh,620px);min-height:380px;background:#06120a}
+#hud{position:absolute;left:0;right:0;top:10px;text-align:center;font-size:15px;text-shadow:0 2px 6px #000;pointer-events:none}#hud b{font-weight:700}
+.legend{position:absolute;left:10px;bottom:8px;font-size:10.5px;line-height:1.35;color:#cfe7c4;background:rgba(0,0,0,.5);padding:5px 8px;border-radius:9px;max-width:46%}
+section{background:var(--panel);border:1px solid #2c5a33;border-radius:14px;padding:14px;margin:14px 0}.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+select,input,button,textarea{font:inherit;background:#0b1f10;color:var(--fg);border:1px solid #3d6a3a;border-radius:8px;padding:6px 10px}button{cursor:pointer}button:hover{border-color:var(--au)}button:disabled{opacity:.5}button.go{background:linear-gradient(90deg,#4a2a7a,#7a5a18);border-color:#b48cff;font-weight:700}
+#status{color:#cfe7c4;margin-top:8px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.card{background:rgba(0,0,0,.28);border:1px solid #2c5a33;border-radius:12px;padding:10px}.card h3 small{color:var(--dim);font-weight:400}
+.sw{display:inline-block;width:18px;height:18px;border-radius:50%;vertical-align:-4px;margin-right:6px;box-shadow:0 0 10px #fff3}table.sc{border-collapse:collapse;width:100%;font-size:12.5px}table.sc td,table.sc th{padding:3px 6px;border-bottom:1px solid #2c5a3366;text-align:left;vertical-align:top}table.sc td.v{text-align:right;color:#fff}
+.grad{display:flex;gap:4px;margin:4px 0 8px}.grad span{flex:1;text-align:center;font-size:11px;border-radius:6px;padding:2px 0;background:#0b1f10;color:var(--dim)}.grad span.on.l0{background:#2c5a33;color:#fff}.grad span.on.l1{background:#ffe066;color:#222}.grad span.on.l2{background:#ff9f43;color:#222}.grad span.on.l3{background:#ff4fa3;color:#fff}
+.bar{display:inline-block;height:9px;border-radius:5px;vertical-align:middle}.mono{font-size:12px;white-space:pre-wrap;word-break:break-word}.dim{color:var(--dim)}
+#ledger{max-height:300px;overflow:auto;font-size:12px;padding-left:22px;margin:0}#ledger li.k{color:var(--k);font-weight:700}
+#drop{border:2px dashed #b48cff;border-radius:14px;padding:18px;text-align:center;background:rgba(180,140,255,.06)}#drop.over{background:rgba(255,196,107,.15);border-color:var(--ci)}
+textarea{width:100%;min-height:150px;font-size:12px}.chcard{margin:8px 0;padding:8px;border-radius:10px;background:rgba(0,0,0,.3)}.warn{color:#ffd36b;font-size:12px}.notes{color:#cfe7c4;font-style:italic}
+#share{width:100%;font-size:11px}a.btn{display:inline-block;padding:6px 10px;border:1px solid #3d6a3a;border-radius:8px;text-decoration:none;color:var(--fg)}a.btn.off{pointer-events:none;opacity:.45}
+.crow{margin:4px 0;font-size:12.5px}.crow button{padding:2px 8px;font-size:12px;margin-left:6px}
+.boards{display:grid;grid-template-columns:1fr 1fr;gap:16px}.board{border:1px solid #3d6a3a;border-radius:12px;padding:12px;background:#0c1c10}.board h2{margin:0 0 4px;font-size:14px;letter-spacing:.12em}.meta{color:var(--dim);font-size:11px;margin:0 0 8px}
+.grid{display:grid;grid-template-columns:repeat(13,1fr);gap:2px}.cell{aspect-ratio:1;border-radius:2px;display:flex;align-items:center;justify-content:center;font-size:8px;text-decoration:none;color:#102414;min-height:18px}.cell.WALL{background:#1a2e1a;color:#4a6a48;opacity:.55}.cell.LIT.G{background:var(--g)}.cell.LIT.R{background:var(--r)}.cell.LIT.O{background:var(--o)}.cell.LIT.K{background:var(--k)}
+.foot{margin-top:18px;color:var(--dim);font-size:11px}a{color:var(--au)}.t{font-size:10.5px;font-weight:700;border-radius:4px;padding:0 5px;margin-right:2px}.t.LIT{background:#c6e04a;color:#101004}.t.AMBER{background:#ffb020;color:#1a1200}.t.WALL{background:#e8c86a;color:#1a1200}.t.MODEL{background:#b48cff;color:#140a26}
+body.thumb .wrap>*:not(.stage){display:none}body.thumb .wrap{padding:0;max-width:none}body.thumb .stage{margin:0;border:0;border-radius:0}body.thumb #v3{height:100vh;min-height:0}body.thumb .legend{display:none}
+@media (max-width:900px){.cards,.boards,.doors{grid-template-columns:1fr}} .wrap{max-width:980px} pre{background:#06120a;border:1px solid #2c5a33;border-radius:10px;padding:12px;overflow:auto;font-size:12.5px}</style></head><body><div class="wrap">
+<h1>agent.md · the challenger format</h1><p class="sub">for the {{B.I.O {{D.O.M.E }}}} dome duel · format <code>biodome-duel/1</code> · <a href="index.html">← back to the dome</a> · <a href="sample-agent.md">sample-agent.md</a></p>
+<section><h2>shape</h2><p>A Markdown file that starts with YAML front matter between two <code>---</code> lines. Only <code>key: value</code> lines and one level of indented blocks are read; there are no lists or anchors. After the front matter comes free Markdown about your agent, and optionally one fenced block named <code>rules</code>.</p><pre>---
+name: Rook
+color: &quot;#4fd1c5&quot;
+crystal: aquamarine
+author: you
+style:
+  learns: 0.45      # how fast memory moves (0..1)
+  observes: 0.35    # how often a shown tell is caught (0..1)
+  probes: 0.20      # exploration: trying moves that are not yet best (0..1)
+reaction:
+  observe: 0.30     # seconds to see a tell
+  respond: 0.20     # seconds to answer it
+  sub_id: 0.10      # reflex: emergency dodge when only this fits
+gradient:
+  threshold: 3      # 1x at 0.5, 2x at 2, {{trigger::hide}} at this value (2..5)
+  decay_s: 3        # calm fades the gradient (e-fold seconds)
+  bad_outcome: 0.2  # extra gradient for a wrong read (0..1)
+hide: best          # best | block | dodge
+attack:
+  feint: 0.35       # share of feints when attacking
+  conceal: 0.30     # chance your tell is hidden
+  bluff: 0.10       # chance a shown tell lies
+notes: &quot;patient, counters feints, hides early&quot;
+---
+# Rook
+
+Free markdown about your challenger. Nothing here is run.
+
+```rules
+open: feint         # punch | feint | any (first attack)
+counter_bias: 0.2   # 0..1, leans answers toward COUNTER
+after_hit: hide     # hide | counter | none
+```
+</pre></section>
+<section><h2>keys</h2><table class="sc"><tr><th>key</th><th>type · range</th><th>default</th><th>what it does in the duel</th></tr>
+<tr><td>name</td><td>1–24 of A–Z a–z 0–9 space . _ ' -</td><td>required</td><td>shown on the scorecard. The built-in names Patricia, Pattycakes, Kelvin and Sparring bag get " (challenger)" added.</td></tr>
+<tr><td>color</td><td>"#rrggbb"</td><td>crystal colour</td><td>crystal and name colour</td></tr>
+<tr><td>crystal</td><td>amethyst, citrine, rose-quartz, quartz, emerald, sapphire, ruby, topaz, obsidian, opal, jade, garnet, aquamarine, moonstone, electrum, peridot, onyx</td><td>quartz</td><td>the shape of your sapphon in the dome</td></tr>
+<tr><td>author</td><td>text ≤ 40</td><td>–</td><td>shown on the card</td></tr>
+<tr><td>style.learns</td><td>0..1</td><td>0.4</td><td>learning rate of the memory crystal (0.1 + 0.4 × learns) and how much your attacks adapt to the opponent's habits</td></tr>
+<tr><td>style.observes</td><td>0..1</td><td>0.4</td><td>chance to catch a shown tell = 0.4 + 0.6 × observes</td></tr>
+<tr><td>style.probes</td><td>0..1</td><td>0.2</td><td>exploration: chance to try a move that isn't your current best (fades as you learn)</td></tr>
+<tr><td colspan="4" class="dim">style weights are normalised to sum to 1, like the three NES-app streams (ls :: patricia :: learns,reacts · toph :: centers,observes · rs :: probes,warily).</td></tr>
+<tr><td>reaction.observe</td><td>0.05..1 s</td><td>0.3</td><td rowspan="2">a tell helps only if observe + respond ≤ its lead time (0.25–0.60 s)</td></tr><tr><td>reaction.respond</td><td>0.05..1 s</td><td>0.2</td></tr>
+<tr><td>reaction.sub_id</td><td>0.05..0.5 s</td><td>0.1</td><td>reflex: if a punch tell came too late for the triad but sub_id fits, you dodge on reflex</td></tr>
+<tr><td>gradient.threshold</td><td>2..5</td><td>3</td><td>1x at 0.5, 2x at 2 (defence +2), {{trigger::hide}} at this value; it learns itself after 3 hides (≥80% paid → −0.1, &lt;50% → +0.25)</td></tr>
+<tr><td>gradient.decay_s</td><td>0.5..10 s</td><td>3</td><td>calm fades the gradient (e-fold time; exchanges are 1.2 s apart)</td></tr>
+<tr><td>gradient.bad_outcome</td><td>0..1</td><td>0</td><td>extra gradient whenever an exchange goes against you (Pattycakes uses 0.5)</td></tr>
+<tr><td>hide</td><td>best · block · dodge</td><td>best</td><td>the move you commit to while hiding (best = whichever your memory rates higher)</td></tr>
+<tr><td>attack.feint</td><td>0..1</td><td>0.35</td><td>share of feints when attacking (before adapting)</td></tr>
+<tr><td>attack.conceal</td><td>0..0.9</td><td>0.3</td><td>chance your tell isn't shown at all</td></tr>
+<tr><td>attack.bluff</td><td>0..0.5</td><td>0.1</td><td>chance a shown tell points the wrong way</td></tr>
+<tr><td>notes</td><td>text ≤ 280</td><td>–</td><td>shown as text</td></tr></table></section>
+<section><h2>the optional rules block</h2><p>One fenced block whose info string is <code>rules</code>, holding plain <code>key: value</code> settings. Only these three keys exist:</p><table class="sc"><tr><td>open</td><td>punch · feint · any</td><td>your first attack</td></tr><tr><td>counter_bias</td><td>0..1</td><td>leans your answers toward COUNTER (adds 4 × bias to its memory score)</td></tr><tr><td>after_hit</td><td>hide · counter · none</td><td>what you do on the exchange after a hit lands on you</td></tr></table></section>
+<section><h2>safety</h2><ul><li>Nothing in an agent.md is ever executed: no eval, no script, no HTML. Every value is shown with textContent.</li><li>Files over 16 KB are refused; unknown keys, lists and deeper nesting are ignored with a warning; <code>__proto__</code>, <code>constructor</code> and <code>prototype</code> keys are refused; numbers are clamped to their range.</li><li>A code block other than <code>rules</code> is shown as text, and the page tells you it was not run.</li><li>Share links carry the file in the URL <code>#fragment</code>, which is never sent to any server. Results are plain JSON, and importing one replays it and verifies it rather than trusting it.</li></ul></section>
+<section><h2>how a bout runs</h2><p>24 exchanges with the attacker alternating. Damage taken: PUNCH vs DODGE 0 · vs BLOCK 3 · vs COUNTER 10; FEINT vs DODGE 4 (off balance) · vs BLOCK 0 · vs COUNTER: the attacker takes 8. Points = damage dealt. Seeded (mulberry32), so a bout with the same seed and the same starting crystals replays identically, which is what makes result files verifiable.</p></section>
+</div></body></html>
