@@ -1,0 +1,1 @@
+{"slug": "challenger-aurelio-crest", "seal": "46a31d409c6c01538cc70a164d914b3eeac3cb2a2140df7cc3ab2643abdaea78", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "challenger-tobias-kade", "seal": "bc21ce028506e7d8dab966600b1efa3af4ae222556ba732828a43f2669a99c00", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

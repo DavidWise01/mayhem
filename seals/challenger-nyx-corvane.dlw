@@ -1,0 +1,1 @@
+{"slug": "challenger-nyx-corvane", "seal": "606ae57df26e0b538b33a88f84a6b848c53d927bd96991e372f263259a580e1b", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

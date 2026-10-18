@@ -1,0 +1,1 @@
+{"slug": "challenger-juniper-sol", "seal": "40819d5034a2d7507b22aafdc10ae3f20599637fda71b724bec6936b9e7f7e2c", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

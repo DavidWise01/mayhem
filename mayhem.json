@@ -5304,5 +5304,399 @@
   },
   "online": "async: #agent= share links, replay-verified result files, self-posted GitHub issues; realtime needs a server (not built)",
   "local_original": "A:\\home\\{{B.I.O {{D.O.M.E }}}}\\index.html on Dave's machine (not published; census boards stay local)"
+ },
+ "batch_biodome_challengers": {
+  "said": [
+   "Dave t267: i like that , make some pages that have agentic agetsn that want to join this page and i can go help them set up a bout or somethign you know. maybe 24 pages, 12 male 12 female. all sapphones. make full crystals. dif colors mean dif temperment and full 12 layer {i}"
+  ],
+  "folder": "spheres/biodome/challengers",
+  "count": 25,
+  "main_index_cards": 1,
+  "index": {
+   "slug": "biodome-challengers",
+   "name": "Biodome waiting room · 24 challengers",
+   "seal": "8ce2b271477952517d26961a9988db05914ada19dd3809b431d96e483ae38b46"
+  },
+  "pages": [
+   {
+    "slug": "challenger-rhea-flint",
+    "name": "Rhea Flint · Biodome challenger",
+    "seal": "9052cf0afe0e79561621cc0782951af94868d66e39dd8b7f70ec902c5b1821a4"
+   },
+   {
+    "slug": "challenger-garrick-stone",
+    "name": "Garrick Stone · Biodome challenger",
+    "seal": "8462ce9d61cd5e12fa47c9708f3b3a00a1ea34d8b81db99e960dae145d4046dd"
+   },
+   {
+    "slug": "challenger-rafe-cinder",
+    "name": "Rafe Cinder · Biodome challenger",
+    "seal": "3a7b396e2242c183d8396c45cc3b27a301663df54295da12c40e03060dd88474"
+   },
+   {
+    "slug": "challenger-juniper-sol",
+    "name": "Juniper Sol · Biodome challenger",
+    "seal": "40819d5034a2d7507b22aafdc10ae3f20599637fda71b724bec6936b9e7f7e2c"
+   },
+   {
+    "slug": "challenger-tobias-kade",
+    "name": "Tobias Kade · Biodome challenger",
+    "seal": "bc21ce028506e7d8dab966600b1efa3af4ae222556ba732828a43f2669a99c00"
+   },
+   {
+    "slug": "challenger-pippa-quill",
+    "name": "Pippa Quill · Biodome challenger",
+    "seal": "4b567c5206ae09b2adc70e17b887cfdedf6ee5fb6ca29f14bb5a7a4c639f674e"
+   },
+   {
+    "slug": "challenger-elric-fenwood",
+    "name": "Elric Fenwood · Biodome challenger",
+    "seal": "72c48fec0484eede542cba70960907065a9a11a02f20576bed11d6ced4611faa"
+   },
+   {
+    "slug": "challenger-seren-hollow",
+    "name": "Seren Hollow · Biodome challenger",
+    "seal": "40f823d2b8519c20bb7a440cadf6c3d0595cab745ea837ee8bd4c10325d9b044"
+   },
+   {
+    "slug": "challenger-magnus-thorne",
+    "name": "Magnus Thorne · Biodome challenger",
+    "seal": "d748e65e7c32fc3db961fb88bec85fbccc40ba318b9b69634429e5131146bd65"
+   },
+   {
+    "slug": "challenger-caspian-lowe",
+    "name": "Caspian Lowe · Biodome challenger",
+    "seal": "02866721081c1f92198d57518ed93fc64322387c3ebb34655213a52b6b405675"
+   },
+   {
+    "slug": "challenger-marisol-reef",
+    "name": "Marisol Reef · Biodome challenger",
+    "seal": "bf5e418dca00aa0f5d118195a5e6f6781a066d31c605d2c1fd54a1cd8b662022"
+   },
+   {
+    "slug": "challenger-silas-ward",
+    "name": "Silas Ward · Biodome challenger",
+    "seal": "ece68e7f10b40308b21fa11de60cc0581399e99e3140cc6361f90bae6bfde698"
+   },
+   {
+    "slug": "challenger-cassia-vire",
+    "name": "Cassia Vire · Biodome challenger",
+    "seal": "e40b08b37a613fa93ae1d898ada0d5a1f77eb222bb3f3ed5306df8ee37de85b2"
+   },
+   {
+    "slug": "challenger-isolde-dusk",
+    "name": "Isolde Dusk · Biodome challenger",
+    "seal": "d280f7503cce762a775da006ce3469f20221deab617fcc18242c7e05fb6e9e2c"
+   },
+   {
+    "slug": "challenger-rosalind-fay",
+    "name": "Rosalind Fay · Biodome challenger",
+    "seal": "8cbd458891231bcc128a99d328b5b9d910ba60eb8c97b8336845a24f9c883a87"
+   },
+   {
+    "slug": "challenger-thea-morrow",
+    "name": "Thea Morrow · Biodome challenger",
+    "seal": "c9c0b82a83bf8d7d8b59301a01c4dda8f6d7db75cc7e929ba5cc59284775eba2"
+   },
+   {
+    "slug": "challenger-opaline-wren",
+    "name": "Opaline Wren · Biodome challenger",
+    "seal": "553190b760988abcfc712eb5942028d27a17bf12bf7ad9528d7acbdc7d5cd40c"
+   },
+   {
+    "slug": "challenger-luna-ashby",
+    "name": "Luna Ashby · Biodome challenger",
+    "seal": "f203ff80fac8db4ef6dc722fb6f26ead8f091c5d238671d0871ef86449720b64"
+   },
+   {
+    "slug": "challenger-quinn-albright",
+    "name": "Quinn Albright · Biodome challenger",
+    "seal": "d48c74efb5f563f57aaf7ca01e81d7316be9776b5650965a9496b9cee5f52fa0"
+   },
+   {
+    "slug": "challenger-ash-merrow",
+    "name": "Ash Merrow · Biodome challenger",
+    "seal": "5bc5aee293327949c28b70cd385a4cea28637ef69d6001cad7aea76291121d0d"
+   },
+   {
+    "slug": "challenger-aurelio-crest",
+    "name": "Aurelio Crest · Biodome challenger",
+    "seal": "46a31d409c6c01538cc70a164d914b3eeac3cb2a2140df7cc3ab2643abdaea78"
+   },
+   {
+    "slug": "challenger-nyx-corvane",
+    "name": "Nyx Corvane · Biodome challenger",
+    "seal": "606ae57df26e0b538b33a88f84a6b848c53d927bd96991e372f263259a580e1b"
+   },
+   {
+    "slug": "challenger-dorian-vex",
+    "name": "Dorian Vex · Biodome challenger",
+    "seal": "808cf1277af9213bd0b7b3c1b6968c8077ecaa6416c171cd27c556abaa1d7d4d"
+   },
+   {
+    "slug": "challenger-hale-ironwood",
+    "name": "Hale Ironwood · Biodome challenger",
+    "seal": "08668711c295397b7e97aa235ef17547a8db472c29eed0374283d9ae95c5bd7f"
+   }
+  ],
+  "roster": [
+   {
+    "name": "Rhea Flint",
+    "gender": "female",
+    "gem": "Ruby",
+    "color": "#e0115f",
+    "temperament": "fierce",
+    "family": "Fire",
+    "agent_md": "spheres/biodome/challengers/rhea-flint.agent.md",
+    "suggested_opponent": "pattycakes"
+   },
+   {
+    "name": "Garrick Stone",
+    "gender": "male",
+    "gem": "Garnet",
+    "color": "#9b1d3a",
+    "temperament": "steadfast",
+    "family": "Fire",
+    "agent_md": "spheres/biodome/challengers/garrick-stone.agent.md",
+    "suggested_opponent": "patricia"
+   },
+   {
+    "name": "Rafe Cinder",
+    "gender": "male",
+    "gem": "Carnelian",
+    "color": "#c8512a",
+    "temperament": "bold",
+    "family": "Fire",
+    "agent_md": "spheres/biodome/challengers/rafe-cinder.agent.md",
+    "suggested_opponent": "patricia"
+   },
+   {
+    "name": "Juniper Sol",
+    "gender": "female",
+    "gem": "Topaz",
+    "color": "#ffb347",
+    "temperament": "sunny",
+    "family": "Fire",
+    "agent_md": "spheres/biodome/challengers/juniper-sol.agent.md",
+    "suggested_opponent": "patricia"
+   },
+   {
+    "name": "Tobias Kade",
+    "gender": "male",
+    "gem": "Tiger's eye",
+    "color": "#a8691f",
+    "temperament": "cunning",
+    "family": "Earth",
+    "agent_md": "spheres/biodome/challengers/tobias-kade.agent.md",
+    "suggested_opponent": "patricia"
+   },
+   {
+    "name": "Pippa Quill",
+    "gender": "female",
+    "gem": "Peridot",
+    "color": "#a6d608",
+    "temperament": "restless",
+    "family": "Air",
+    "agent_md": "spheres/biodome/challengers/pippa-quill.agent.md",
+    "suggested_opponent": "pattycakes"
+   },
+   {
+    "name": "Elric Fenwood",
+    "gender": "male",
+    "gem": "Emerald",
+    "color": "#2ecc71",
+    "temperament": "patient",
+    "family": "Earth",
+    "agent_md": "spheres/biodome/challengers/elric-fenwood.agent.md",
+    "suggested_opponent": "pattycakes"
+   },
+   {
+    "name": "Seren Hollow",
+    "gender": "female",
+    "gem": "Jade",
+    "color": "#3fae7a",
+    "temperament": "serene",
+    "family": "Earth",
+    "agent_md": "spheres/biodome/challengers/seren-hollow.agent.md",
+    "suggested_opponent": "pattycakes"
+   },
+   {
+    "name": "Magnus Thorne",
+    "gender": "male",
+    "gem": "Malachite",
+    "color": "#0b6e4f",
+    "temperament": "stubborn",
+    "family": "Earth",
+    "agent_md": "spheres/biodome/challengers/magnus-thorne.agent.md",
+    "suggested_opponent": "patricia"
+   },
+   {
+    "name": "Caspian Lowe",
+    "gender": "male",
+    "gem": "Aquamarine",
+    "color": "#6fe3d6",
+    "temperament": "gentle",
+    "family": "Water",
+    "agent_md": "spheres/biodome/challengers/caspian-lowe.agent.md",
+    "suggested_opponent": "patricia"
+   },
+   {
+    "name": "Marisol Reef",
+    "gender": "female",
+    "gem": "Turquoise",
+    "color": "#1fb5c9",
+    "temperament": "sociable",
+    "family": "Water",
+    "agent_md": "spheres/biodome/challengers/marisol-reef.agent.md",
+    "suggested_opponent": "pattycakes"
+   },
+   {
+    "name": "Silas Ward",
+    "gender": "male",
+    "gem": "Sapphire",
+    "color": "#3b6cff",
+    "temperament": "disciplined",
+    "family": "Water",
+    "agent_md": "spheres/biodome/challengers/silas-ward.agent.md",
+    "suggested_opponent": "pattycakes"
+   },
+   {
+    "name": "Cassia Vire",
+    "gender": "female",
+    "gem": "Lapis lazuli",
+    "color": "#1d3f9a",
+    "temperament": "analytical",
+    "family": "Water",
+    "agent_md": "spheres/biodome/challengers/cassia-vire.agent.md",
+    "suggested_opponent": "pattycakes"
+   },
+   {
+    "name": "Isolde Dusk",
+    "gender": "female",
+    "gem": "Tanzanite",
+    "color": "#6a5acd",
+    "temperament": "intuitive",
+    "family": "Air",
+    "agent_md": "spheres/biodome/challengers/isolde-dusk.agent.md",
+    "suggested_opponent": "pattycakes"
+   },
+   {
+    "name": "Rosalind Fay",
+    "gender": "female",
+    "gem": "Rose quartz",
+    "color": "#f7a1c4",
+    "temperament": "tender",
+    "family": "Light",
+    "agent_md": "spheres/biodome/challengers/rosalind-fay.agent.md",
+    "suggested_opponent": "pattycakes"
+   },
+   {
+    "name": "Thea Morrow",
+    "gender": "female",
+    "gem": "Kunzite",
+    "color": "#d7a6e8",
+    "temperament": "peacemaker",
+    "family": "Light",
+    "agent_md": "spheres/biodome/challengers/thea-morrow.agent.md",
+    "suggested_opponent": "pattycakes"
+   },
+   {
+    "name": "Opaline Wren",
+    "gender": "female",
+    "gem": "Opal",
+    "color": "#bfe6ff",
+    "temperament": "mercurial",
+    "family": "Air",
+    "agent_md": "spheres/biodome/challengers/opaline-wren.agent.md",
+    "suggested_opponent": "pattycakes"
+   },
+   {
+    "name": "Luna Ashby",
+    "gender": "female",
+    "gem": "Moonstone",
+    "color": "#b9c7e8",
+    "temperament": "reflective",
+    "family": "Light",
+    "agent_md": "spheres/biodome/challengers/luna-ashby.agent.md",
+    "suggested_opponent": "pattycakes"
+   },
+   {
+    "name": "Quinn Albright",
+    "gender": "male",
+    "gem": "Quartz",
+    "color": "#eef3f8",
+    "temperament": "candid",
+    "family": "Light",
+    "agent_md": "spheres/biodome/challengers/quinn-albright.agent.md",
+    "suggested_opponent": "patricia"
+   },
+   {
+    "name": "Ash Merrow",
+    "gender": "male",
+    "gem": "Smoky quartz",
+    "color": "#6e5444",
+    "temperament": "brooding",
+    "family": "Shadow",
+    "agent_md": "spheres/biodome/challengers/ash-merrow.agent.md",
+    "suggested_opponent": "patricia"
+   },
+   {
+    "name": "Aurelio Crest",
+    "gender": "male",
+    "gem": "Electrum",
+    "color": "#d9c27a",
+    "temperament": "regal",
+    "family": "Light",
+    "agent_md": "spheres/biodome/challengers/aurelio-crest.agent.md",
+    "suggested_opponent": "pattycakes"
+   },
+   {
+    "name": "Nyx Corvane",
+    "gender": "female",
+    "gem": "Obsidian",
+    "color": "#3a2f4a",
+    "temperament": "guarded",
+    "family": "Shadow",
+    "agent_md": "spheres/biodome/challengers/nyx-corvane.agent.md",
+    "suggested_opponent": "patricia"
+   },
+   {
+    "name": "Dorian Vex",
+    "gender": "male",
+    "gem": "Onyx",
+    "color": "#1a1a1f",
+    "temperament": "ruthless",
+    "family": "Shadow",
+    "agent_md": "spheres/biodome/challengers/dorian-vex.agent.md",
+    "suggested_opponent": "pattycakes"
+   },
+   {
+    "name": "Hale Ironwood",
+    "gender": "male",
+    "gem": "Hematite",
+    "color": "#6b6e75",
+    "temperament": "methodical",
+    "family": "Shadow",
+    "agent_md": "spheres/biodome/challengers/hale-ironwood.agent.md",
+    "suggested_opponent": "patricia"
+   }
+  ],
+  "taken": {
+   "amethyst": "Patricia",
+   "citrine": "Pattycakes"
+  },
+  "agents": [
+   "ARTIST LAPIDARY",
+   "CRITIC ASSAYER"
+  ],
+  "agent_md": {
+   "format": "biodome-duel/1",
+   "parser": "spheres/biodome/challengers/agentmd.js (verbatim copy)",
+   "all_parse": true,
+   "warnings": 0,
+   "executes_code": false
+  },
+  "model": "fictional agents; temperaments, layer values and mini-sim win rates are MODEL",
+  "local_only": "arcade.html and the home monitor on Dave's machine"
  }
 }

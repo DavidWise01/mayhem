@@ -1,0 +1,1 @@
+{"slug": "biodome-challengers", "seal": "8ce2b271477952517d26961a9988db05914ada19dd3809b431d96e483ae38b46", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

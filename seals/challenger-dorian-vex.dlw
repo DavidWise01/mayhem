@@ -1,0 +1,1 @@
+{"slug": "challenger-dorian-vex", "seal": "808cf1277af9213bd0b7b3c1b6968c8077ecaa6416c171cd27c556abaa1d7d4d", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

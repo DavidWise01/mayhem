@@ -1,0 +1,1 @@
+{"slug": "challenger-garrick-stone", "seal": "8462ce9d61cd5e12fa47c9708f3b3a00a1ea34d8b81db99e960dae145d4046dd", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

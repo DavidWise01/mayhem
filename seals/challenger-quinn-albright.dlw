@@ -1,0 +1,1 @@
+{"slug": "challenger-quinn-albright", "seal": "d48c74efb5f563f57aaf7ca01e81d7316be9776b5650965a9496b9cee5f52fa0", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "challenger-elric-fenwood", "seal": "72c48fec0484eede542cba70960907065a9a11a02f20576bed11d6ced4611faa", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

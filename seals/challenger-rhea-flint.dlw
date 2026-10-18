@@ -1,0 +1,1 @@
+{"slug": "challenger-rhea-flint", "seal": "9052cf0afe0e79561621cc0782951af94868d66e39dd8b7f70ec902c5b1821a4", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,3885 @@
+{
+ "format": "biodome-waiting-room/1",
+ "model": "24 fictional sapphon challengers (MODEL), not real people",
+ "notation_verbatim": "{{ {i} = 11 :: 1 = {i} , [ 5 = ethics , 4= logic , 3 = pathos , 2 = mythos , 1 = {i} ][ -6 = touch{balance,cordination} , -5 = hearing{balance,ground} , -4 = taste{life,death} , -3 = sound{act/react} , -2 = hearing{pause,choice} , -1 = inner dimension{self,confidence,reality} +1 = super id { connection}}",
+ "taken": [
+  [
+   "amethyst",
+   "#9b5de5",
+   "Patricia",
+   "her own (the dome's first sapphon)"
+  ],
+  [
+   "citrine",
+   "#ffc46b",
+   "Pattycakes",
+   "her own (Patricia's sibling)"
+  ]
+ ],
+ "agents": [
+  {
+   "name": "Rhea Flint",
+   "slug": "rhea-flint",
+   "gender": "female",
+   "gem": "Ruby",
+   "crystal": "ruby",
+   "hex": "#e0115f",
+   "family": "Fire",
+   "temperament": "fierce",
+   "meaning": "strikes first and burns hot",
+   "cut": "brilliant",
+   "page": "rhea-flint.html",
+   "md_file": "rhea-flint.agent.md",
+   "suggested": "pattycakes",
+   "vector": {
+    "aggression": 0.9,
+    "patience": 0.2,
+    "warmth": 0.5,
+    "cunning": 0.3,
+    "steadiness": 0.4,
+    "curiosity": 0.5
+   },
+   "params": {
+    "style": {
+     "learns": 0.42,
+     "observes": 0.3,
+     "probes": 0.28
+    },
+    "reaction": {
+     "observe": 0.33,
+     "respond": 0.13,
+     "sub_id": 0.2
+    },
+    "gradient": {
+     "threshold": 3.2,
+     "decay_s": 3.6,
+     "bad_outcome": 0.32
+    },
+    "hide": "dodge",
+    "attack": {
+     "feint": 0.37,
+     "conceal": 0.29,
+     "bluff": 0.09
+    },
+    "rules": {
+     "open": "punch",
+     "counter_bias": 0.41,
+     "after_hit": "counter"
+    }
+   },
+   "layers": [
+    {
+     "n": "+1",
+     "label": "super id { connection}",
+     "depths": [
+      0.59,
+      0.53,
+      0.52
+     ]
+    },
+    {
+     "n": "5",
+     "label": "ethics",
+     "depths": [
+      0.61,
+      0.55,
+      0.54
+     ]
+    },
+    {
+     "n": "4",
+     "label": "logic",
+     "depths": [
+      0.35,
+      0.29,
+      0.27
+     ]
+    },
+    {
+     "n": "3",
+     "label": "pathos",
+     "depths": [
+      0.66,
+      0.6,
+      0.59
+     ]
+    },
+    {
+     "n": "2",
+     "label": "mythos",
+     "depths": [
+      0.58,
+      0.52,
+      0.51
+     ]
+    },
+    {
+     "n": "1",
+     "label": "{i}",
+     "depths": [
+      0.56,
+      0.5,
+      0.49
+     ]
+    },
+    {
+     "n": "-1",
+     "label": "inner dimension{self,confidence,reality}",
+     "depths": [
+      0.56,
+      0.5,
+      0.49
+     ]
+    },
+    {
+     "n": "-2",
+     "label": "hearing{pause,choice}",
+     "depths": [
+      0.3,
+      0.24,
+      0.22
+     ]
+    },
+    {
+     "n": "-3",
+     "label": "sound{act/react}",
+     "depths": [
+      0.87,
+      0.81,
+      0.8
+     ]
+    },
+    {
+     "n": "-4",
+     "label": "taste{life,death}",
+     "depths": [
+      0.67,
+      0.61,
+      0.6
+     ]
+    },
+    {
+     "n": "-5",
+     "label": "hearing{balance,ground}",
+     "depths": [
+      0.37,
+      0.31,
+      0.29
+     ]
+    },
+    {
+     "n": "-6",
+     "label": "touch{balance,cordination}",
+     "depths": [
+      0.62,
+      0.56,
+      0.55
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Garrick Stone",
+   "slug": "garrick-stone",
+   "gender": "male",
+   "gem": "Garnet",
+   "crystal": "garnet",
+   "hex": "#9b1d3a",
+   "family": "Fire",
+   "temperament": "steadfast",
+   "meaning": "loyal, slow-burning, never quits",
+   "cut": "dodeca",
+   "page": "garrick-stone.html",
+   "md_file": "garrick-stone.agent.md",
+   "suggested": "patricia",
+   "vector": {
+    "aggression": 0.6,
+    "patience": 0.6,
+    "warmth": 0.7,
+    "cunning": 0.2,
+    "steadiness": 0.9,
+    "curiosity": 0.3
+   },
+   "params": {
+    "style": {
+     "learns": 0.34,
+     "observes": 0.54,
+     "probes": 0.12
+    },
+    "reaction": {
+     "observe": 0.3,
+     "respond": 0.22,
+     "sub_id": 0.08
+    },
+    "gradient": {
+     "threshold": 4.7,
+     "decay_s": 7,
+     "bad_outcome": 0.06
+    },
+    "hide": "block",
+    "attack": {
+     "feint": 0.31,
+     "conceal": 0.27,
+     "bluff": 0.05
+    },
+    "rules": {
+     "open": "any",
+     "counter_bias": 0.23,
+     "after_hit": "none"
+    }
+   },
+   "layers": [
+    {
+     "n": "+1",
+     "label": "super id { connection}",
+     "depths": [
+      0.61,
+      0.6,
+      0.66
+     ]
+    },
+    {
+     "n": "5",
+     "label": "ethics",
+     "depths": [
+      0.79,
+      0.78,
+      0.84
+     ]
+    },
+    {
+     "n": "4",
+     "label": "logic",
+     "depths": [
+      0.55,
+      0.54,
+      0.6
+     ]
+    },
+    {
+     "n": "3",
+     "label": "pathos",
+     "depths": [
+      0.63,
+      0.62,
+      0.68
+     ]
+    },
+    {
+     "n": "2",
+     "label": "mythos",
+     "depths": [
+      0.38,
+      0.36,
+      0.42
+     ]
+    },
+    {
+     "n": "1",
+     "label": "{i}",
+     "depths": [
+      0.61,
+      0.6,
+      0.66
+     ]
+    },
+    {
+     "n": "-1",
+     "label": "inner dimension{self,confidence,reality}",
+     "depths": [
+      0.75,
+      0.74,
+      0.8
+     ]
+    },
+    {
+     "n": "-2",
+     "label": "hearing{pause,choice}",
+     "depths": [
+      0.66,
+      0.65,
+      0.71
+     ]
+    },
+    {
+     "n": "-3",
+     "label": "sound{act/react}",
+     "depths": [
+      0.51,
+      0.5,
+      0.56
+     ]
+    },
+    {
+     "n": "-4",
+     "label": "taste{life,death}",
+     "depths": [
+      0.42,
+      0.4,
+      0.46
+     ]
+    },
+    {
+     "n": "-5",
+     "label": "hearing{balance,ground}",
+     "depths": [
+      0.77,
+      0.75,
+      0.81
+     ]
+    },
+    {
+     "n": "-6",
+     "label": "touch{balance,cordination}",
+     "depths": [
+      0.63,
+      0.62,
+      0.68
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Rafe Cinder",
+   "slug": "rafe-cinder",
+   "gender": "male",
+   "gem": "Carnelian",
+   "crystal": "garnet",
+   "hex": "#c8512a",
+   "family": "Fire",
+   "temperament": "bold",
+   "meaning": "impulsive courage, loud about it",
+   "cut": "cab",
+   "page": "rafe-cinder.html",
+   "md_file": "rafe-cinder.agent.md",
+   "suggested": "patricia",
+   "vector": {
+    "aggression": 0.85,
+    "patience": 0.15,
+    "warmth": 0.6,
+    "cunning": 0.2,
+    "steadiness": 0.3,
+    "curiosity": 0.7
+   },
+   "params": {
+    "style": {
+     "learns": 0.48,
+     "observes": 0.26,
+     "probes": 0.26
+    },
+    "reaction": {
+     "observe": 0.31,
+     "respond": 0.15,
+     "sub_id": 0.23
+    },
+    "gradient": {
+     "threshold": 2.9,
+     "decay_s": 2.9,
+     "bad_outcome": 0.39
+    },
+    "hide": "dodge",
+    "attack": {
+     "feint": 0.31,
+     "conceal": 0.23,
+     "bluff": 0.06
+    },
+    "rules": {
+     "open": "punch",
+     "counter_bias": 0.36,
+     "after_hit": "counter"
+    }
+   },
+   "layers": [
+    {
+     "n": "+1",
+     "label": "super id { connection}",
+     "depths": [
+      0.71,
+      0.66,
+      0.63
+     ]
+    },
+    {
+     "n": "5",
+     "label": "ethics",
+     "depths": [
+      0.66,
+      0.61,
+      0.58
+     ]
+    },
+    {
+     "n": "4",
+     "label": "logic",
+     "depths": [
+      0.26,
+      0.21,
+      0.18
+     ]
+    },
+    {
+     "n": "3",
+     "label": "pathos",
+     "depths": [
+      0.73,
+      0.68,
+      0.65
+     ]
+    },
+    {
+     "n": "2",
+     "label": "mythos",
+     "depths": [
+      0.73,
+      0.68,
+      0.65
+     ]
+    },
+    {
+     "n": "1",
+     "label": "{i}",
+     "depths": [
+      0.57,
+      0.51,
+      0.48
+     ]
+    },
+    {
+     "n": "-1",
+     "label": "inner dimension{self,confidence,reality}",
+     "depths": [
+      0.48,
+      0.43,
+      0.4
+     ]
+    },
+    {
+     "n": "-2",
+     "label": "hearing{pause,choice}",
+     "depths": [
+      0.24,
+      0.19,
+      0.16
+     ]
+    },
+    {
+     "n": "-3",
+     "label": "sound{act/react}",
+     "depths": [
+      0.88,
+      0.83,
+      0.8
+     ]
+    },
+    {
+     "n": "-4",
+     "label": "taste{life,death}",
+     "depths": [
+      0.59,
+      0.53,
+      0.5
+     ]
+    },
+    {
+     "n": "-5",
+     "label": "hearing{balance,ground}",
+     "depths": [
+      0.29,
+      0.24,
+      0.21
+     ]
+    },
+    {
+     "n": "-6",
+     "label": "touch{balance,cordination}",
+     "depths": [
+      0.63,
+      0.58,
+      0.55
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Juniper Sol",
+   "slug": "juniper-sol",
+   "gender": "female",
+   "gem": "Topaz",
+   "crystal": "topaz",
+   "hex": "#ffb347",
+   "family": "Fire",
+   "temperament": "sunny",
+   "meaning": "an optimist who takes risks with a grin",
+   "cut": "step",
+   "page": "juniper-sol.html",
+   "md_file": "juniper-sol.agent.md",
+   "suggested": "patricia",
+   "vector": {
+    "aggression": 0.5,
+    "patience": 0.4,
+    "warmth": 0.85,
+    "cunning": 0.3,
+    "steadiness": 0.5,
+    "curiosity": 0.75
+   },
+   "params": {
+    "style": {
+     "learns": 0.45,
+     "observes": 0.35,
+     "probes": 0.2
+    },
+    "reaction": {
+     "observe": 0.26,
+     "respond": 0.25,
+     "sub_id": 0.18
+    },
+    "gradient": {
+     "threshold": 3.5,
+     "decay_s": 4.4,
+     "bad_outcome": 0.32
+    },
+    "hide": "best",
+    "attack": {
+     "feint": 0.37,
+     "conceal": 0.31,
+     "bluff": 0.04
+    },
+    "rules": {
+     "open": "any",
+     "counter_bias": 0.17,
+     "after_hit": "none"
+    }
+   },
+   "layers": [
+    {
+     "n": "+1",
+     "label": "super id { connection}",
+     "depths": [
+      0.8,
+      0.8,
+      0.8
+     ]
+    },
+    {
+     "n": "5",
+     "label": "ethics",
+     "depths": [
+      0.73,
+      0.73,
+      0.73
+     ]
+    },
+    {
+     "n": "4",
+     "label": "logic",
+     "depths": [
+      0.39,
+      0.39,
+      0.39
+     ]
+    },
+    {
+     "n": "3",
+     "label": "pathos",
+     "depths": [
+      0.75,
+      0.75,
+      0.75
+     ]
+    },
+    {
+     "n": "2",
+     "label": "mythos",
+     "depths": [
+      0.73,
+      0.73,
+      0.73
+     ]
+    },
+    {
+     "n": "1",
+     "label": "{i}",
+     "depths": [
+      0.57,
+      0.57,
+      0.57
+     ]
+    },
+    {
+     "n": "-1",
+     "label": "inner dimension{self,confidence,reality}",
+     "depths": [
+      0.48,
+      0.48,
+      0.48
+     ]
+    },
+    {
+     "n": "-2",
+     "label": "hearing{pause,choice}",
+     "depths": [
+      0.44,
+      0.44,
+      0.44
+     ]
+    },
+    {
+     "n": "-3",
+     "label": "sound{act/react}",
+     "depths": [
+      0.57,
+      0.57,
+      0.57
+     ]
+    },
+    {
+     "n": "-4",
+     "label": "taste{life,death}",
+     "depths": [
+      0.36,
+      0.36,
+      0.36
+     ]
+    },
+    {
+     "n": "-5",
+     "label": "hearing{balance,ground}",
+     "depths": [
+      0.48,
+      0.48,
+      0.48
+     ]
+    },
+    {
+     "n": "-6",
+     "label": "touch{balance,cordination}",
+     "depths": [
+      0.59,
+      0.59,
+      0.59
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Tobias Kade",
+   "slug": "tobias-kade",
+   "gender": "male",
+   "gem": "Tiger's eye",
+   "crystal": "topaz",
+   "hex": "#a8691f",
+   "family": "Earth",
+   "temperament": "cunning",
+   "meaning": "a patient hunter who reads the room",
+   "cut": "cab",
+   "page": "tobias-kade.html",
+   "md_file": "tobias-kade.agent.md",
+   "suggested": "patricia",
+   "vector": {
+    "aggression": 0.6,
+    "patience": 0.7,
+    "warmth": 0.3,
+    "cunning": 0.85,
+    "steadiness": 0.6,
+    "curiosity": 0.4
+   },
+   "params": {
+    "style": {
+     "learns": 0.3,
+     "observes": 0.46,
+     "probes": 0.24
+    },
+    "reaction": {
+     "observe": 0.27,
+     "respond": 0.22,
+     "sub_id": 0.15
+    },
+    "gradient": {
+     "threshold": 3.8,
+     "decay_s": 5.3,
+     "bad_outcome": 0.18
+    },
+    "hide": "best",
+    "attack": {
+     "feint": 0.67,
+     "conceal": 0.65,
+     "bluff": 0.29
+    },
+    "rules": {
+     "open": "feint",
+     "counter_bias": 0.31,
+     "after_hit": "none"
+    }
+   },
+   "layers": [
+    {
+     "n": "+1",
+     "label": "super id { connection}",
+     "depths": [
+      0.32,
+      0.31,
+      0.32
+     ]
+    },
+    {
+     "n": "5",
+     "label": "ethics",
+     "depths": [
+      0.32,
+      0.31,
+      0.32
+     ]
+    },
+    {
+     "n": "4",
+     "label": "logic",
+     "depths": [
+      0.74,
+      0.73,
+      0.74
+     ]
+    },
+    {
+     "n": "3",
+     "label": "pathos",
+     "depths": [
+      0.41,
+      0.39,
+      0.41
+     ]
+    },
+    {
+     "n": "2",
+     "label": "mythos",
+     "depths": [
+      0.39,
+      0.38,
+      0.39
+     ]
+    },
+    {
+     "n": "1",
+     "label": "{i}",
+     "depths": [
+      0.53,
+      0.52,
+      0.53
+     ]
+    },
+    {
+     "n": "-1",
+     "label": "inner dimension{self,confidence,reality}",
+     "depths": [
+      0.64,
+      0.63,
+      0.64
+     ]
+    },
+    {
+     "n": "-2",
+     "label": "hearing{pause,choice}",
+     "depths": [
+      0.65,
+      0.63,
+      0.65
+     ]
+    },
+    {
+     "n": "-3",
+     "label": "sound{act/react}",
+     "depths": [
+      0.5,
+      0.48,
+      0.5
+     ]
+    },
+    {
+     "n": "-4",
+     "label": "taste{life,death}",
+     "depths": [
+      0.72,
+      0.71,
+      0.72
+     ]
+    },
+    {
+     "n": "-5",
+     "label": "hearing{balance,ground}",
+     "depths": [
+      0.61,
+      0.6,
+      0.61
+     ]
+    },
+    {
+     "n": "-6",
+     "label": "touch{balance,cordination}",
+     "depths": [
+      0.55,
+      0.53,
+      0.55
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Pippa Quill",
+   "slug": "pippa-quill",
+   "gender": "female",
+   "gem": "Peridot",
+   "crystal": "peridot",
+   "hex": "#a6d608",
+   "family": "Air",
+   "temperament": "restless",
+   "meaning": "playful, quick, easily bored",
+   "cut": "brilliant",
+   "page": "pippa-quill.html",
+   "md_file": "pippa-quill.agent.md",
+   "suggested": "pattycakes",
+   "vector": {
+    "aggression": 0.5,
+    "patience": 0.15,
+    "warmth": 0.7,
+    "cunning": 0.4,
+    "steadiness": 0.25,
+    "curiosity": 0.9
+   },
+   "params": {
+    "style": {
+     "learns": 0.5,
+     "observes": 0.22,
+     "probes": 0.28
+    },
+    "reaction": {
+     "observe": 0.28,
+     "respond": 0.25,
+     "sub_id": 0.24
+    },
+    "gradient": {
+     "threshold": 2.8,
+     "decay_s": 2.6,
+     "bad_outcome": 0.45
+    },
+    "hide": "best",
+    "attack": {
+     "feint": 0.42,
+     "conceal": 0.34,
+     "bluff": 0.07
+    },
+    "rules": {
+     "open": "any",
+     "counter_bias": 0.2,
+     "after_hit": "none"
+    }
+   },
+   "layers": [
+    {
+     "n": "+1",
+     "label": "super id { connection}",
+     "depths": [
+      0.75,
+      0.75,
+      0.71
+     ]
+    },
+    {
+     "n": "5",
+     "label": "ethics",
+     "depths": [
+      0.58,
+      0.58,
+      0.54
+     ]
+    },
+    {
+     "n": "4",
+     "label": "logic",
+     "depths": [
+      0.26,
+      0.26,
+      0.23
+     ]
+    },
+    {
+     "n": "3",
+     "label": "pathos",
+     "depths": [
+      0.68,
+      0.68,
+      0.64
+     ]
+    },
+    {
+     "n": "2",
+     "label": "mythos",
+     "depths": [
+      0.82,
+      0.82,
+      0.78
+     ]
+    },
+    {
+     "n": "1",
+     "label": "{i}",
+     "depths": [
+      0.5,
+      0.5,
+      0.46
+     ]
+    },
+    {
+     "n": "-1",
+     "label": "inner dimension{self,confidence,reality}",
+     "depths": [
+      0.3,
+      0.3,
+      0.26
+     ]
+    },
+    {
+     "n": "-2",
+     "label": "hearing{pause,choice}",
+     "depths": [
+      0.23,
+      0.23,
+      0.19
+     ]
+    },
+    {
+     "n": "-3",
+     "label": "sound{act/react}",
+     "depths": [
+      0.67,
+      0.67,
+      0.63
+     ]
+    },
+    {
+     "n": "-4",
+     "label": "taste{life,death}",
+     "depths": [
+      0.43,
+      0.43,
+      0.39
+     ]
+    },
+    {
+     "n": "-5",
+     "label": "hearing{balance,ground}",
+     "depths": [
+      0.26,
+      0.26,
+      0.23
+     ]
+    },
+    {
+     "n": "-6",
+     "label": "touch{balance,cordination}",
+     "depths": [
+      0.54,
+      0.54,
+      0.5
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Elric Fenwood",
+   "slug": "elric-fenwood",
+   "gender": "male",
+   "gem": "Emerald",
+   "crystal": "emerald",
+   "hex": "#2ecc71",
+   "family": "Earth",
+   "temperament": "patient",
+   "meaning": "grows slowly and wins late",
+   "cut": "step",
+   "page": "elric-fenwood.html",
+   "md_file": "elric-fenwood.agent.md",
+   "suggested": "pattycakes",
+   "vector": {
+    "aggression": 0.3,
+    "patience": 0.85,
+    "warmth": 0.6,
+    "cunning": 0.4,
+    "steadiness": 0.75,
+    "curiosity": 0.6
+   },
+   "params": {
+    "style": {
+     "learns": 0.36,
+     "observes": 0.51,
+     "probes": 0.13
+    },
+    "reaction": {
+     "observe": 0.21,
+     "respond": 0.31,
+     "sub_id": 0.11
+    },
+    "gradient": {
+     "threshold": 4.2,
+     "decay_s": 6.3,
+     "bad_outcome": 0.14
+    },
+    "hide": "best",
+    "attack": {
+     "feint": 0.42,
+     "conceal": 0.41,
+     "bluff": 0.09
+    },
+    "rules": {
+     "open": "any",
+     "counter_bias": 0.13,
+     "after_hit": "hide"
+    }
+   },
+   "layers": [
+    {
+     "n": "+1",
+     "label": "super id { connection}",
+     "depths": [
+      0.57,
+      0.6,
+      0.64
+     ]
+    },
+    {
+     "n": "5",
+     "label": "ethics",
+     "depths": [
+      0.6,
+      0.63,
+      0.67
+     ]
+    },
+    {
+     "n": "4",
+     "label": "logic",
+     "depths": [
+      0.64,
+      0.67,
+      0.71
+     ]
+    },
+    {
+     "n": "3",
+     "label": "pathos",
+     "depths": [
+      0.5,
+      0.53,
+      0.56
+     ]
+    },
+    {
+     "n": "2",
+     "label": "mythos",
+     "depths": [
+      0.5,
+      0.53,
+      0.57
+     ]
+    },
+    {
+     "n": "1",
+     "label": "{i}",
+     "depths": [
+      0.55,
+      0.58,
+      0.62
+     ]
+    },
+    {
+     "n": "-1",
+     "label": "inner dimension{self,confidence,reality}",
+     "depths": [
+      0.61,
+      0.64,
+      0.68
+     ]
+    },
+    {
+     "n": "-2",
+     "label": "hearing{pause,choice}",
+     "depths": [
+      0.77,
+      0.8,
+      0.84
+     ]
+    },
+    {
+     "n": "-3",
+     "label": "sound{act/react}",
+     "depths": [
+      0.27,
+      0.3,
+      0.34
+     ]
+    },
+    {
+     "n": "-4",
+     "label": "taste{life,death}",
+     "depths": [
+      0.33,
+      0.36,
+      0.39
+     ]
+    },
+    {
+     "n": "-5",
+     "label": "hearing{balance,ground}",
+     "depths": [
+      0.74,
+      0.77,
+      0.81
+     ]
+    },
+    {
+     "n": "-6",
+     "label": "touch{balance,cordination}",
+     "depths": [
+      0.56,
+      0.59,
+      0.62
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Seren Hollow",
+   "slug": "seren-hollow",
+   "gender": "female",
+   "gem": "Jade",
+   "crystal": "jade",
+   "hex": "#3fae7a",
+   "family": "Earth",
+   "temperament": "serene",
+   "meaning": "calm under pressure, never hurried",
+   "cut": "cab",
+   "page": "seren-hollow.html",
+   "md_file": "seren-hollow.agent.md",
+   "suggested": "pattycakes",
+   "vector": {
+    "aggression": 0.15,
+    "patience": 0.9,
+    "warmth": 0.65,
+    "cunning": 0.3,
+    "steadiness": 0.9,
+    "curiosity": 0.4
+   },
+   "params": {
+    "style": {
+     "learns": 0.31,
+     "observes": 0.58,
+     "probes": 0.11
+    },
+    "reaction": {
+     "observe": 0.24,
+     "respond": 0.36,
+     "sub_id": 0.08
+    },
+    "gradient": {
+     "threshold": 4.7,
+     "decay_s": 7.3,
+     "bad_outcome": 0.06
+    },
+    "hide": "block",
+    "attack": {
+     "feint": 0.37,
+     "conceal": 0.36,
+     "bluff": 0.07
+    },
+    "rules": {
+     "open": "any",
+     "counter_bias": 0.06,
+     "after_hit": "hide"
+    }
+   },
+   "layers": [
+    {
+     "n": "+1",
+     "label": "super id { connection}",
+     "depths": [
+      0.53,
+      0.58,
+      0.64
+     ]
+    },
+    {
+     "n": "5",
+     "label": "ethics",
+     "depths": [
+      0.67,
+      0.72,
+      0.78
+     ]
+    },
+    {
+     "n": "4",
+     "label": "logic",
+     "depths": [
+      0.64,
+      0.69,
+      0.75
+     ]
+    },
+    {
+     "n": "3",
+     "label": "pathos",
+     "depths": [
+      0.44,
+      0.49,
+      0.55
+     ]
+    },
+    {
+     "n": "2",
+     "label": "mythos",
+     "depths": [
+      0.35,
+      0.4,
+      0.46
+     ]
+    },
+    {
+     "n": "1",
+     "label": "{i}",
+     "depths": [
+      0.52,
+      0.57,
+      0.63
+     ]
+    },
+    {
+     "n": "-1",
+     "label": "inner dimension{self,confidence,reality}",
+     "depths": [
+      0.62,
+      0.68,
+      0.74
+     ]
+    },
+    {
+     "n": "-2",
+     "label": "hearing{pause,choice}",
+     "depths": [
+      0.84,
+      0.89,
+      0.95
+     ]
+    },
+    {
+     "n": "-3",
+     "label": "sound{act/react}",
+     "depths": [
+      0.12,
+      0.17,
+      0.23
+     ]
+    },
+    {
+     "n": "-4",
+     "label": "taste{life,death}",
+     "depths": [
+      0.19,
+      0.24,
+      0.3
+     ]
+    },
+    {
+     "n": "-5",
+     "label": "hearing{balance,ground}",
+     "depths": [
+      0.84,
+      0.89,
+      0.95
+     ]
+    },
+    {
+     "n": "-6",
+     "label": "touch{balance,cordination}",
+     "depths": [
+      0.49,
+      0.54,
+      0.6
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Magnus Thorne",
+   "slug": "magnus-thorne",
+   "gender": "male",
+   "gem": "Malachite",
+   "crystal": "jade",
+   "hex": "#0b6e4f",
+   "family": "Earth",
+   "temperament": "stubborn",
+   "meaning": "changes slowly, then all at once",
+   "cut": "dodeca",
+   "page": "magnus-thorne.html",
+   "md_file": "magnus-thorne.agent.md",
+   "suggested": "patricia",
+   "vector": {
+    "aggression": 0.55,
+    "patience": 0.6,
+    "warmth": 0.35,
+    "cunning": 0.45,
+    "steadiness": 0.85,
+    "curiosity": 0.3
+   },
+   "params": {
+    "style": {
+     "learns": 0.33,
+     "observes": 0.52,
+     "probes": 0.15
+    },
+    "reaction": {
+     "observe": 0.3,
+     "respond": 0.24,
+     "sub_id": 0.09
+    },
+    "gradient": {
+     "threshold": 4.5,
+     "decay_s": 6.7,
+     "bad_outcome": 0.07
+    },
+    "hide": "block",
+    "attack": {
+     "feint": 0.45,
+     "conceal": 0.41,
+     "bluff": 0.15
+    },
+    "rules": {
+     "open": "any",
+     "counter_bias": 0.27,
+     "after_hit": "none"
+    }
+   },
+   "layers": [
+    {
+     "n": "+1",
+     "label": "super id { connection}",
+     "depths": [
+      0.37,
+      0.37,
+      0.42
+     ]
+    },
+    {
+     "n": "5",
+     "label": "ethics",
+     "depths": [
+      0.53,
+      0.52,
+      0.57
+     ]
+    },
+    {
+     "n": "4",
+     "label": "logic",
+     "depths": [
+      0.62,
+      0.61,
+      0.66
+     ]
+    },
+    {
+     "n": "3",
+     "label": "pathos",
+     "depths": [
+      0.4,
+      0.39,
+      0.45
+     ]
+    },
+    {
+     "n": "2",
+     "label": "mythos",
+     "depths": [
+      0.29,
+      0.28,
+      0.34
+     ]
+    },
+    {
+     "n": "1",
+     "label": "{i}",
+     "depths": [
+      0.54,
+      0.53,
+      0.58
+     ]
+    },
+    {
+     "n": "-1",
+     "label": "inner dimension{self,confidence,reality}",
+     "depths": [
+      0.71,
+      0.7,
+      0.75
+     ]
+    },
+    {
+     "n": "-2",
+     "label": "hearing{pause,choice}",
+     "depths": [
+      0.65,
+      0.64,
+      0.69
+     ]
+    },
+    {
+     "n": "-3",
+     "label": "sound{act/react}",
+     "depths": [
+      0.48,
+      0.47,
+      0.52
+     ]
+    },
+    {
+     "n": "-4",
+     "label": "taste{life,death}",
+     "depths": [
+      0.54,
+      0.54,
+      0.59
+     ]
+    },
+    {
+     "n": "-5",
+     "label": "hearing{balance,ground}",
+     "depths": [
+      0.74,
+      0.73,
+      0.78
+     ]
+    },
+    {
+     "n": "-6",
+     "label": "touch{balance,cordination}",
+     "depths": [
+      0.59,
+      0.58,
+      0.64
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Caspian Lowe",
+   "slug": "caspian-lowe",
+   "gender": "male",
+   "gem": "Aquamarine",
+   "crystal": "aquamarine",
+   "hex": "#6fe3d6",
+   "family": "Water",
+   "temperament": "gentle",
+   "meaning": "soothing; defends more than attacks",
+   "cut": "prism",
+   "page": "caspian-lowe.html",
+   "md_file": "caspian-lowe.agent.md",
+   "suggested": "patricia",
+   "vector": {
+    "aggression": 0.15,
+    "patience": 0.7,
+    "warmth": 0.85,
+    "cunning": 0.25,
+    "steadiness": 0.65,
+    "curiosity": 0.55
+   },
+   "params": {
+    "style": {
+     "learns": 0.37,
+     "observes": 0.48,
+     "probes": 0.15
+    },
+    "reaction": {
+     "observe": 0.24,
+     "respond": 0.36,
+     "sub_id": 0.14
+    },
+    "gradient": {
+     "threshold": 4,
+     "decay_s": 5.6,
+     "bad_outcome": 0.23
+    },
+    "hide": "best",
+    "attack": {
+     "feint": 0.34,
+     "conceal": 0.31,
+     "bluff": 0.04
+    },
+    "rules": {
+     "open": "any",
+     "counter_bias": 0.05,
+     "after_hit": "none"
+    }
+   },
+   "layers": [
+    {
+     "n": "+1",
+     "label": "super id { connection}",
+     "depths": [
+      0.69,
+      0.75,
+      0.77
+     ]
+    },
+    {
+     "n": "5",
+     "label": "ethics",
+     "depths": [
+      0.72,
+      0.78,
+      0.8
+     ]
+    },
+    {
+     "n": "4",
+     "label": "logic",
+     "depths": [
+      0.48,
+      0.53,
+      0.55
+     ]
+    },
+    {
+     "n": "3",
+     "label": "pathos",
+     "depths": [
+      0.58,
+      0.63,
+      0.65
+     ]
+    },
+    {
+     "n": "2",
+     "label": "mythos",
+     "depths": [
+      0.53,
+      0.59,
+      0.61
+     ]
+    },
+    {
+     "n": "1",
+     "label": "{i}",
+     "depths": [
+      0.5,
+      0.56,
+      0.58
+     ]
+    },
+    {
+     "n": "-1",
+     "label": "inner dimension{self,confidence,reality}",
+     "depths": [
+      0.46,
+      0.51,
+      0.54
+     ]
+    },
+    {
+     "n": "-2",
+     "label": "hearing{pause,choice}",
+     "depths": [
+      0.66,
+      0.71,
+      0.73
+     ]
+    },
+    {
+     "n": "-3",
+     "label": "sound{act/react}",
+     "depths": [
+      0.2,
+      0.26,
+      0.28
+     ]
+    },
+    {
+     "n": "-4",
+     "label": "taste{life,death}",
+     "depths": [
+      0.13,
+      0.19,
+      0.21
+     ]
+    },
+    {
+     "n": "-5",
+     "label": "hearing{balance,ground}",
+     "depths": [
+      0.64,
+      0.69,
+      0.72
+     ]
+    },
+    {
+     "n": "-6",
+     "label": "touch{balance,cordination}",
+     "depths": [
+      0.44,
+      0.49,
+      0.51
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Marisol Reef",
+   "slug": "marisol-reef",
+   "gender": "female",
+   "gem": "Turquoise",
+   "crystal": "aquamarine",
+   "hex": "#1fb5c9",
+   "family": "Water",
+   "temperament": "sociable",
+   "meaning": "talkative; trades tells for friendship",
+   "cut": "cab",
+   "page": "marisol-reef.html",
+   "md_file": "marisol-reef.agent.md",
+   "suggested": "pattycakes",
+   "vector": {
+    "aggression": 0.35,
+    "patience": 0.4,
+    "warmth": 0.9,
+    "cunning": 0.4,
+    "steadiness": 0.5,
+    "curiosity": 0.8
+   },
+   "params": {
+    "style": {
+     "learns": 0.45,
+     "observes": 0.33,
+     "probes": 0.22
+    },
+    "reaction": {
+     "observe": 0.25,
+     "respond": 0.3,
+     "sub_id": 0.18
+    },
+    "gradient": {
+     "threshold": 3.5,
+     "decay_s": 4.4,
+     "bad_outcome": 0.33
+    },
+    "hide": "best",
+    "attack": {
+     "feint": 0.42,
+     "conceal": 0.36,
+     "bluff": 0.04
+    },
+    "rules": {
+     "open": "any",
+     "counter_bias": 0.12,
+     "after_hit": "none"
+    }
+   },
+   "layers": [
+    {
+     "n": "+1",
+     "label": "super id { connection}",
+     "depths": [
+      0.8,
+      0.83,
+      0.83
+     ]
+    },
+    {
+     "n": "5",
+     "label": "ethics",
+     "depths": [
+      0.69,
+      0.72,
+      0.72
+     ]
+    },
+    {
+     "n": "4",
+     "label": "logic",
+     "depths": [
+      0.4,
+      0.43,
+      0.43
+     ]
+    },
+    {
+     "n": "3",
+     "label": "pathos",
+     "depths": [
+      0.73,
+      0.75,
+      0.75
+     ]
+    },
+    {
+     "n": "2",
+     "label": "mythos",
+     "depths": [
+      0.74,
+      0.77,
+      0.77
+     ]
+    },
+    {
+     "n": "1",
+     "label": "{i}",
+     "depths": [
+      0.55,
+      0.57,
+      0.57
+     ]
+    },
+    {
+     "n": "-1",
+     "label": "inner dimension{self,confidence,reality}",
+     "depths": [
+      0.41,
+      0.43,
+      0.43
+     ]
+    },
+    {
+     "n": "-2",
+     "label": "hearing{pause,choice}",
+     "depths": [
+      0.44,
+      0.46,
+      0.46
+     ]
+    },
+    {
+     "n": "-3",
+     "label": "sound{act/react}",
+     "depths": [
+      0.47,
+      0.49,
+      0.49
+     ]
+    },
+    {
+     "n": "-4",
+     "label": "taste{life,death}",
+     "depths": [
+      0.3,
+      0.32,
+      0.32
+     ]
+    },
+    {
+     "n": "-5",
+     "label": "hearing{balance,ground}",
+     "depths": [
+      0.48,
+      0.5,
+      0.5
+     ]
+    },
+    {
+     "n": "-6",
+     "label": "touch{balance,cordination}",
+     "depths": [
+      0.55,
+      0.57,
+      0.57
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Silas Ward",
+   "slug": "silas-ward",
+   "gender": "male",
+   "gem": "Sapphire",
+   "crystal": "sapphire",
+   "hex": "#3b6cff",
+   "family": "Water",
+   "temperament": "disciplined",
+   "meaning": "precise, keeps the rules, quietly wise",
+   "cut": "brilliant",
+   "page": "silas-ward.html",
+   "md_file": "silas-ward.agent.md",
+   "suggested": "pattycakes",
+   "vector": {
+    "aggression": 0.45,
+    "patience": 0.75,
+    "warmth": 0.45,
+    "cunning": 0.55,
+    "steadiness": 0.9,
+    "curiosity": 0.5
+   },
+   "params": {
+    "style": {
+     "learns": 0.36,
+     "observes": 0.52,
+     "probes": 0.12
+    },
+    "reaction": {
+     "observe": 0.24,
+     "respond": 0.27,
+     "sub_id": 0.08
+    },
+    "gradient": {
+     "threshold": 4.7,
+     "decay_s": 7.2,
+     "bad_outcome": 0.05
+    },
+    "hide": "block",
+    "attack": {
+     "feint": 0.5,
+     "conceal": 0.48,
+     "bluff": 0.16
+    },
+    "rules": {
+     "open": "any",
+     "counter_bias": 0.21,
+     "after_hit": "none"
+    }
+   },
+   "layers": [
+    {
+     "n": "+1",
+     "label": "super id { connection}",
+     "depths": [
+      0.46,
+      0.47,
+      0.53
+     ]
+    },
+    {
+     "n": "5",
+     "label": "ethics",
+     "depths": [
+      0.53,
+      0.54,
+      0.6
+     ]
+    },
+    {
+     "n": "4",
+     "label": "logic",
+     "depths": [
+      0.71,
+      0.72,
+      0.78
+     ]
+    },
+    {
+     "n": "3",
+     "label": "pathos",
+     "depths": [
+      0.45,
+      0.46,
+      0.52
+     ]
+    },
+    {
+     "n": "2",
+     "label": "mythos",
+     "depths": [
+      0.4,
+      0.41,
+      0.47
+     ]
+    },
+    {
+     "n": "1",
+     "label": "{i}",
+     "depths": [
+      0.58,
+      0.59,
+      0.65
+     ]
+    },
+    {
+     "n": "-1",
+     "label": "inner dimension{self,confidence,reality}",
+     "depths": [
+      0.72,
+      0.73,
+      0.79
+     ]
+    },
+    {
+     "n": "-2",
+     "label": "hearing{pause,choice}",
+     "depths": [
+      0.75,
+      0.76,
+      0.82
+     ]
+    },
+    {
+     "n": "-3",
+     "label": "sound{act/react}",
+     "depths": [
+      0.39,
+      0.4,
+      0.46
+     ]
+    },
+    {
+     "n": "-4",
+     "label": "taste{life,death}",
+     "depths": [
+      0.5,
+      0.51,
+      0.57
+     ]
+    },
+    {
+     "n": "-5",
+     "label": "hearing{balance,ground}",
+     "depths": [
+      0.8,
+      0.81,
+      0.87
+     ]
+    },
+    {
+     "n": "-6",
+     "label": "touch{balance,cordination}",
+     "depths": [
+      0.64,
+      0.65,
+      0.71
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Cassia Vire",
+   "slug": "cassia-vire",
+   "gender": "female",
+   "gem": "Lapis lazuli",
+   "crystal": "sapphire",
+   "hex": "#1d3f9a",
+   "family": "Water",
+   "temperament": "analytical",
+   "meaning": "a truth-seeker who keeps notes on everyone",
+   "cut": "octa",
+   "page": "cassia-vire.html",
+   "md_file": "cassia-vire.agent.md",
+   "suggested": "pattycakes",
+   "vector": {
+    "aggression": 0.3,
+    "patience": 0.8,
+    "warmth": 0.35,
+    "cunning": 0.7,
+    "steadiness": 0.7,
+    "curiosity": 0.85
+   },
+   "params": {
+    "style": {
+     "learns": 0.4,
+     "observes": 0.44,
+     "probes": 0.16
+    },
+    "reaction": {
+     "observe": 0.18,
+     "respond": 0.31,
+     "sub_id": 0.13
+    },
+    "gradient": {
+     "threshold": 4.1,
+     "decay_s": 6,
+     "bad_outcome": 0.14
+    },
+    "hide": "best",
+    "attack": {
+     "feint": 0.59,
+     "conceal": 0.57,
+     "bluff": 0.22
+    },
+    "rules": {
+     "open": "any",
+     "counter_bias": 0.15,
+     "after_hit": "hide"
+    }
+   },
+   "layers": [
+    {
+     "n": "+1",
+     "label": "super id { connection}",
+     "depths": [
+      0.46,
+      0.49,
+      0.52
+     ]
+    },
+    {
+     "n": "5",
+     "label": "ethics",
+     "depths": [
+      0.37,
+      0.4,
+      0.43
+     ]
+    },
+    {
+     "n": "4",
+     "label": "logic",
+     "depths": [
+      0.71,
+      0.74,
+      0.77
+     ]
+    },
+    {
+     "n": "3",
+     "label": "pathos",
+     "depths": [
+      0.38,
+      0.41,
+      0.44
+     ]
+    },
+    {
+     "n": "2",
+     "label": "mythos",
+     "depths": [
+      0.59,
+      0.62,
+      0.65
+     ]
+    },
+    {
+     "n": "1",
+     "label": "{i}",
+     "depths": [
+      0.54,
+      0.57,
+      0.6
+     ]
+    },
+    {
+     "n": "-1",
+     "label": "inner dimension{self,confidence,reality}",
+     "depths": [
+      0.58,
+      0.61,
+      0.64
+     ]
+    },
+    {
+     "n": "-2",
+     "label": "hearing{pause,choice}",
+     "depths": [
+      0.73,
+      0.76,
+      0.79
+     ]
+    },
+    {
+     "n": "-3",
+     "label": "sound{act/react}",
+     "depths": [
+      0.32,
+      0.35,
+      0.38
+     ]
+    },
+    {
+     "n": "-4",
+     "label": "taste{life,death}",
+     "depths": [
+      0.48,
+      0.51,
+      0.54
+     ]
+    },
+    {
+     "n": "-5",
+     "label": "hearing{balance,ground}",
+     "depths": [
+      0.7,
+      0.73,
+      0.76
+     ]
+    },
+    {
+     "n": "-6",
+     "label": "touch{balance,cordination}",
+     "depths": [
+      0.62,
+      0.65,
+      0.68
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Isolde Dusk",
+   "slug": "isolde-dusk",
+   "gender": "female",
+   "gem": "Tanzanite",
+   "crystal": "sapphire",
+   "hex": "#6a5acd",
+   "family": "Air",
+   "temperament": "intuitive",
+   "meaning": "dreamy; acts on hunches",
+   "cut": "brilliant",
+   "page": "isolde-dusk.html",
+   "md_file": "isolde-dusk.agent.md",
+   "suggested": "pattycakes",
+   "vector": {
+    "aggression": 0.35,
+    "patience": 0.45,
+    "warmth": 0.6,
+    "cunning": 0.6,
+    "steadiness": 0.3,
+    "curiosity": 0.9
+   },
+   "params": {
+    "style": {
+     "learns": 0.43,
+     "observes": 0.31,
+     "probes": 0.26
+    },
+    "reaction": {
+     "observe": 0.23,
+     "respond": 0.3,
+     "sub_id": 0.23
+    },
+    "gradient": {
+     "threshold": 2.9,
+     "decay_s": 3.2,
+     "bad_outcome": 0.39
+    },
+    "hide": "best",
+    "attack": {
+     "feint": 0.53,
+     "conceal": 0.48,
+     "bluff": 0.13
+    },
+    "rules": {
+     "open": "any",
+     "counter_bias": 0.15,
+     "after_hit": "none"
+    }
+   },
+   "layers": [
+    {
+     "n": "+1",
+     "label": "super id { connection}",
+     "depths": [
+      0.64,
+      0.66,
+      0.63
+     ]
+    },
+    {
+     "n": "5",
+     "label": "ethics",
+     "depths": [
+      0.45,
+      0.47,
+      0.44
+     ]
+    },
+    {
+     "n": "4",
+     "label": "logic",
+     "depths": [
+      0.44,
+      0.47,
+      0.44
+     ]
+    },
+    {
+     "n": "3",
+     "label": "pathos",
+     "depths": [
+      0.56,
+      0.58,
+      0.55
+     ]
+    },
+    {
+     "n": "2",
+     "label": "mythos",
+     "depths": [
+      0.76,
+      0.79,
+      0.76
+     ]
+    },
+    {
+     "n": "1",
+     "label": "{i}",
+     "depths": [
+      0.49,
+      0.51,
+      0.48
+     ]
+    },
+    {
+     "n": "-1",
+     "label": "inner dimension{self,confidence,reality}",
+     "depths": [
+      0.33,
+      0.35,
+      0.32
+     ]
+    },
+    {
+     "n": "-2",
+     "label": "hearing{pause,choice}",
+     "depths": [
+      0.42,
+      0.44,
+      0.41
+     ]
+    },
+    {
+     "n": "-3",
+     "label": "sound{act/react}",
+     "depths": [
+      0.47,
+      0.49,
+      0.46
+     ]
+    },
+    {
+     "n": "-4",
+     "label": "taste{life,death}",
+     "depths": [
+      0.43,
+      0.45,
+      0.42
+     ]
+    },
+    {
+     "n": "-5",
+     "label": "hearing{balance,ground}",
+     "depths": [
+      0.37,
+      0.39,
+      0.36
+     ]
+    },
+    {
+     "n": "-6",
+     "label": "touch{balance,cordination}",
+     "depths": [
+      0.5,
+      0.52,
+      0.49
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Rosalind Fay",
+   "slug": "rosalind-fay",
+   "gender": "female",
+   "gem": "Rose quartz",
+   "crystal": "rose-quartz",
+   "hex": "#f7a1c4",
+   "family": "Light",
+   "temperament": "tender",
+   "meaning": "empathetic and quick to forgive",
+   "cut": "prism",
+   "page": "rosalind-fay.html",
+   "md_file": "rosalind-fay.agent.md",
+   "suggested": "pattycakes",
+   "vector": {
+    "aggression": 0.1,
+    "patience": 0.65,
+    "warmth": 0.95,
+    "cunning": 0.15,
+    "steadiness": 0.55,
+    "curiosity": 0.6
+   },
+   "params": {
+    "style": {
+     "learns": 0.38,
+     "observes": 0.45,
+     "probes": 0.17
+    },
+    "reaction": {
+     "observe": 0.24,
+     "respond": 0.37,
+     "sub_id": 0.16
+    },
+    "gradient": {
+     "threshold": 3.7,
+     "decay_s": 5,
+     "bad_outcome": 0.31
+    },
+    "hide": "best",
+    "attack": {
+     "feint": 0.28,
+     "conceal": 0.25,
+     "bluff": 0.02
+    },
+    "rules": {
+     "open": "any",
+     "counter_bias": 0.03,
+     "after_hit": "none"
+    }
+   },
+   "layers": [
+    {
+     "n": "+1",
+     "label": "super id { connection}",
+     "depths": [
+      0.77,
+      0.83,
+      0.84
+     ]
+    },
+    {
+     "n": "5",
+     "label": "ethics",
+     "depths": [
+      0.78,
+      0.84,
+      0.84
+     ]
+    },
+    {
+     "n": "4",
+     "label": "logic",
+     "depths": [
+      0.39,
+      0.45,
+      0.46
+     ]
+    },
+    {
+     "n": "3",
+     "label": "pathos",
+     "depths": [
+      0.63,
+      0.69,
+      0.69
+     ]
+    },
+    {
+     "n": "2",
+     "label": "mythos",
+     "depths": [
+      0.6,
+      0.66,
+      0.67
+     ]
+    },
+    {
+     "n": "1",
+     "label": "{i}",
+     "depths": [
+      0.49,
+      0.55,
+      0.55
+     ]
+    },
+    {
+     "n": "-1",
+     "label": "inner dimension{self,confidence,reality}",
+     "depths": [
+      0.38,
+      0.44,
+      0.45
+     ]
+    },
+    {
+     "n": "-2",
+     "label": "hearing{pause,choice}",
+     "depths": [
+      0.6,
+      0.66,
+      0.67
+     ]
+    },
+    {
+     "n": "-3",
+     "label": "sound{act/react}",
+     "depths": [
+      0.19,
+      0.25,
+      0.26
+     ]
+    },
+    {
+     "n": "-4",
+     "label": "taste{life,death}",
+     "depths": [
+      0.05,
+      0.11,
+      0.12
+     ]
+    },
+    {
+     "n": "-5",
+     "label": "hearing{balance,ground}",
+     "depths": [
+      0.57,
+      0.63,
+      0.64
+     ]
+    },
+    {
+     "n": "-6",
+     "label": "touch{balance,cordination}",
+     "depths": [
+      0.4,
+      0.46,
+      0.46
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Thea Morrow",
+   "slug": "thea-morrow",
+   "gender": "female",
+   "gem": "Kunzite",
+   "crystal": "rose-quartz",
+   "hex": "#d7a6e8",
+   "family": "Light",
+   "temperament": "peacemaker",
+   "meaning": "open-hearted; talks a fight down",
+   "cut": "step",
+   "page": "thea-morrow.html",
+   "md_file": "thea-morrow.agent.md",
+   "suggested": "pattycakes",
+   "vector": {
+    "aggression": 0.15,
+    "patience": 0.75,
+    "warmth": 0.85,
+    "cunning": 0.35,
+    "steadiness": 0.6,
+    "curiosity": 0.55
+   },
+   "params": {
+    "style": {
+     "learns": 0.35,
+     "observes": 0.48,
+     "probes": 0.17
+    },
+    "reaction": {
+     "observe": 0.24,
+     "respond": 0.36,
+     "sub_id": 0.15
+    },
+    "gradient": {
+     "threshold": 3.8,
+     "decay_s": 5.3,
+     "bad_outcome": 0.26
+    },
+    "hide": "best",
+    "attack": {
+     "feint": 0.39,
+     "conceal": 0.37,
+     "bluff": 0.04
+    },
+    "rules": {
+     "open": "any",
+     "counter_bias": 0.05,
+     "after_hit": "hide"
+    }
+   },
+   "layers": [
+    {
+     "n": "+1",
+     "label": "super id { connection}",
+     "depths": [
+      0.68,
+      0.73,
+      0.75
+     ]
+    },
+    {
+     "n": "5",
+     "label": "ethics",
+     "depths": [
+      0.68,
+      0.73,
+      0.75
+     ]
+    },
+    {
+     "n": "4",
+     "label": "logic",
+     "depths": [
+      0.52,
+      0.57,
+      0.59
+     ]
+    },
+    {
+     "n": "3",
+     "label": "pathos",
+     "depths": [
+      0.58,
+      0.63,
+      0.65
+     ]
+    },
+    {
+     "n": "2",
+     "label": "mythos",
+     "depths": [
+      0.54,
+      0.6,
+      0.61
+     ]
+    },
+    {
+     "n": "1",
+     "label": "{i}",
+     "depths": [
+      0.5,
+      0.55,
+      0.57
+     ]
+    },
+    {
+     "n": "-1",
+     "label": "inner dimension{self,confidence,reality}",
+     "depths": [
+      0.45,
+      0.5,
+      0.52
+     ]
+    },
+    {
+     "n": "-2",
+     "label": "hearing{pause,choice}",
+     "depths": [
+      0.68,
+      0.73,
+      0.74
+     ]
+    },
+    {
+     "n": "-3",
+     "label": "sound{act/react}",
+     "depths": [
+      0.19,
+      0.24,
+      0.26
+     ]
+    },
+    {
+     "n": "-4",
+     "label": "taste{life,death}",
+     "depths": [
+      0.17,
+      0.22,
+      0.24
+     ]
+    },
+    {
+     "n": "-5",
+     "label": "hearing{balance,ground}",
+     "depths": [
+      0.62,
+      0.68,
+      0.69
+     ]
+    },
+    {
+     "n": "-6",
+     "label": "touch{balance,cordination}",
+     "depths": [
+      0.42,
+      0.47,
+      0.49
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Opaline Wren",
+   "slug": "opaline-wren",
+   "gender": "female",
+   "gem": "Opal",
+   "crystal": "opal",
+   "hex": "#bfe6ff",
+   "family": "Air",
+   "temperament": "mercurial",
+   "meaning": "shifting moods, flashes of brilliance",
+   "cut": "cab",
+   "page": "opaline-wren.html",
+   "md_file": "opaline-wren.agent.md",
+   "suggested": "pattycakes",
+   "vector": {
+    "aggression": 0.5,
+    "patience": 0.3,
+    "warmth": 0.6,
+    "cunning": 0.65,
+    "steadiness": 0.15,
+    "curiosity": 0.85
+   },
+   "params": {
+    "style": {
+     "learns": 0.42,
+     "observes": 0.25,
+     "probes": 0.33
+    },
+    "reaction": {
+     "observe": 0.26,
+     "respond": 0.25,
+     "sub_id": 0.26
+    },
+    "gradient": {
+     "threshold": 2.5,
+     "decay_s": 2.2,
+     "bad_outcome": 0.48
+    },
+    "hide": "best",
+    "attack": {
+     "feint": 0.56,
+     "conceal": 0.49,
+     "bluff": 0.14
+    },
+    "rules": {
+     "open": "any",
+     "counter_bias": 0.21,
+     "after_hit": "none"
+    }
+   },
+   "layers": [
+    {
+     "n": "+1",
+     "label": "super id { connection}",
+     "depths": [
+      0.64,
+      0.64,
+      0.59
+     ]
+    },
+    {
+     "n": "5",
+     "label": "ethics",
+     "depths": [
+      0.42,
+      0.42,
+      0.37
+     ]
+    },
+    {
+     "n": "4",
+     "label": "logic",
+     "depths": [
+      0.39,
+      0.39,
+      0.33
+     ]
+    },
+    {
+     "n": "3",
+     "label": "pathos",
+     "depths": [
+      0.61,
+      0.61,
+      0.56
+     ]
+    },
+    {
+     "n": "2",
+     "label": "mythos",
+     "depths": [
+      0.79,
+      0.79,
+      0.74
+     ]
+    },
+    {
+     "n": "1",
+     "label": "{i}",
+     "depths": [
+      0.48,
+      0.48,
+      0.43
+     ]
+    },
+    {
+     "n": "-1",
+     "label": "inner dimension{self,confidence,reality}",
+     "depths": [
+      0.29,
+      0.29,
+      0.24
+     ]
+    },
+    {
+     "n": "-2",
+     "label": "hearing{pause,choice}",
+     "depths": [
+      0.29,
+      0.29,
+      0.24
+     ]
+    },
+    {
+     "n": "-3",
+     "label": "sound{act/react}",
+     "depths": [
+      0.61,
+      0.61,
+      0.56
+     ]
+    },
+    {
+     "n": "-4",
+     "label": "taste{life,death}",
+     "depths": [
+      0.53,
+      0.53,
+      0.48
+     ]
+    },
+    {
+     "n": "-5",
+     "label": "hearing{balance,ground}",
+     "depths": [
+      0.24,
+      0.24,
+      0.19
+     ]
+    },
+    {
+     "n": "-6",
+     "label": "touch{balance,cordination}",
+     "depths": [
+      0.48,
+      0.48,
+      0.43
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Luna Ashby",
+   "slug": "luna-ashby",
+   "gender": "female",
+   "gem": "Moonstone",
+   "crystal": "moonstone",
+   "hex": "#b9c7e8",
+   "family": "Light",
+   "temperament": "reflective",
+   "meaning": "shy; watches before speaking",
+   "cut": "cab",
+   "page": "luna-ashby.html",
+   "md_file": "luna-ashby.agent.md",
+   "suggested": "pattycakes",
+   "vector": {
+    "aggression": 0.15,
+    "patience": 0.85,
+    "warmth": 0.55,
+    "cunning": 0.4,
+    "steadiness": 0.6,
+    "curiosity": 0.7
+   },
+   "params": {
+    "style": {
+     "learns": 0.37,
+     "observes": 0.47,
+     "probes": 0.16
+    },
+    "reaction": {
+     "observe": 0.19,
+     "respond": 0.36,
+     "sub_id": 0.15
+    },
+    "gradient": {
+     "threshold": 3.8,
+     "decay_s": 5.4,
+     "bad_outcome": 0.22
+    },
+    "hide": "best",
+    "attack": {
+     "feint": 0.42,
+     "conceal": 0.41,
+     "bluff": 0.1
+    },
+    "rules": {
+     "open": "any",
+     "counter_bias": 0.07,
+     "after_hit": "hide"
+    }
+   },
+   "layers": [
+    {
+     "n": "+1",
+     "label": "super id { connection}",
+     "depths": [
+      0.55,
+      0.6,
+      0.62
+     ]
+    },
+    {
+     "n": "5",
+     "label": "ethics",
+     "depths": [
+      0.53,
+      0.58,
+      0.59
+     ]
+    },
+    {
+     "n": "4",
+     "label": "logic",
+     "depths": [
+      0.58,
+      0.63,
+      0.65
+     ]
+    },
+    {
+     "n": "3",
+     "label": "pathos",
+     "depths": [
+      0.42,
+      0.47,
+      0.49
+     ]
+    },
+    {
+     "n": "2",
+     "label": "mythos",
+     "depths": [
+      0.55,
+      0.6,
+      0.62
+     ]
+    },
+    {
+     "n": "1",
+     "label": "{i}",
+     "depths": [
+      0.49,
+      0.54,
+      0.56
+     ]
+    },
+    {
+     "n": "-1",
+     "label": "inner dimension{self,confidence,reality}",
+     "depths": [
+      0.48,
+      0.53,
+      0.54
+     ]
+    },
+    {
+     "n": "-2",
+     "label": "hearing{pause,choice}",
+     "depths": [
+      0.74,
+      0.79,
+      0.8
+     ]
+    },
+    {
+     "n": "-3",
+     "label": "sound{act/react}",
+     "depths": [
+      0.18,
+      0.23,
+      0.25
+     ]
+    },
+    {
+     "n": "-4",
+     "label": "taste{life,death}",
+     "depths": [
+      0.25,
+      0.3,
+      0.31
+     ]
+    },
+    {
+     "n": "-5",
+     "label": "hearing{balance,ground}",
+     "depths": [
+      0.65,
+      0.7,
+      0.72
+     ]
+    },
+    {
+     "n": "-6",
+     "label": "touch{balance,cordination}",
+     "depths": [
+      0.47,
+      0.52,
+      0.54
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Quinn Albright",
+   "slug": "quinn-albright",
+   "gender": "male",
+   "gem": "Quartz",
+   "crystal": "quartz",
+   "hex": "#eef3f8",
+   "family": "Light",
+   "temperament": "candid",
+   "meaning": "clear and honest; never bluffs",
+   "cut": "prism",
+   "page": "quinn-albright.html",
+   "md_file": "quinn-albright.agent.md",
+   "suggested": "patricia",
+   "vector": {
+    "aggression": 0.4,
+    "patience": 0.55,
+    "warmth": 0.6,
+    "cunning": 0.05,
+    "steadiness": 0.7,
+    "curiosity": 0.6
+   },
+   "params": {
+    "style": {
+     "learns": 0.42,
+     "observes": 0.44,
+     "probes": 0.14
+    },
+    "reaction": {
+     "observe": 0.26,
+     "respond": 0.28,
+     "sub_id": 0.13
+    },
+    "gradient": {
+     "threshold": 4.1,
+     "decay_s": 5.7,
+     "bad_outcome": 0.17
+    },
+    "hide": "best",
+    "attack": {
+     "feint": 0.23,
+     "conceal": 0.18,
+     "bluff": 0.03
+    },
+    "rules": {
+     "open": "any",
+     "counter_bias": 0.17,
+     "after_hit": "none"
+    }
+   },
+   "layers": [
+    {
+     "n": "+1",
+     "label": "super id { connection}",
+     "depths": [
+      0.64,
+      0.65,
+      0.68
+     ]
+    },
+    {
+     "n": "5",
+     "label": "ethics",
+     "depths": [
+      0.73,
+      0.74,
+      0.77
+     ]
+    },
+    {
+     "n": "4",
+     "label": "logic",
+     "depths": [
+      0.4,
+      0.41,
+      0.44
+     ]
+    },
+    {
+     "n": "3",
+     "label": "pathos",
+     "depths": [
+      0.54,
+      0.55,
+      0.58
+     ]
+    },
+    {
+     "n": "2",
+     "label": "mythos",
+     "depths": [
+      0.53,
+      0.54,
+      0.57
+     ]
+    },
+    {
+     "n": "1",
+     "label": "{i}",
+     "depths": [
+      0.53,
+      0.55,
+      0.58
+     ]
+    },
+    {
+     "n": "-1",
+     "label": "inner dimension{self,confidence,reality}",
+     "depths": [
+      0.56,
+      0.57,
+      0.6
+     ]
+    },
+    {
+     "n": "-2",
+     "label": "hearing{pause,choice}",
+     "depths": [
+      0.58,
+      0.6,
+      0.63
+     ]
+    },
+    {
+     "n": "-3",
+     "label": "sound{act/react}",
+     "depths": [
+      0.43,
+      0.45,
+      0.48
+     ]
+    },
+    {
+     "n": "-4",
+     "label": "taste{life,death}",
+     "depths": [
+      0.26,
+      0.28,
+      0.31
+     ]
+    },
+    {
+     "n": "-5",
+     "label": "hearing{balance,ground}",
+     "depths": [
+      0.63,
+      0.65,
+      0.68
+     ]
+    },
+    {
+     "n": "-6",
+     "label": "touch{balance,cordination}",
+     "depths": [
+      0.58,
+      0.59,
+      0.62
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Ash Merrow",
+   "slug": "ash-merrow",
+   "gender": "male",
+   "gem": "Smoky quartz",
+   "crystal": "quartz",
+   "hex": "#6e5444",
+   "family": "Shadow",
+   "temperament": "brooding",
+   "meaning": "melancholy, grounded, slow to trust",
+   "cut": "prism",
+   "page": "ash-merrow.html",
+   "md_file": "ash-merrow.agent.md",
+   "suggested": "patricia",
+   "vector": {
+    "aggression": 0.4,
+    "patience": 0.7,
+    "warmth": 0.3,
+    "cunning": 0.5,
+    "steadiness": 0.75,
+    "curiosity": 0.35
+   },
+   "params": {
+    "style": {
+     "learns": 0.31,
+     "observes": 0.52,
+     "probes": 0.17
+    },
+    "reaction": {
+     "observe": 0.28,
+     "respond": 0.28,
+     "sub_id": 0.11
+    },
+    "gradient": {
+     "threshold": 4.2,
+     "decay_s": 6.2,
+     "bad_outcome": 0.11
+    },
+    "hide": "best",
+    "attack": {
+     "feint": 0.48,
+     "conceal": 0.45,
+     "bluff": 0.18
+    },
+    "rules": {
+     "open": "any",
+     "counter_bias": 0.2,
+     "after_hit": "none"
+    }
+   },
+   "layers": [
+    {
+     "n": "+1",
+     "label": "super id { connection}",
+     "depths": [
+      0.33,
+      0.35,
+      0.38
+     ]
+    },
+    {
+     "n": "5",
+     "label": "ethics",
+     "depths": [
+      0.45,
+      0.46,
+      0.5
+     ]
+    },
+    {
+     "n": "4",
+     "label": "logic",
+     "depths": [
+      0.63,
+      0.64,
+      0.68
+     ]
+    },
+    {
+     "n": "3",
+     "label": "pathos",
+     "depths": [
+      0.32,
+      0.33,
+      0.37
+     ]
+    },
+    {
+     "n": "2",
+     "label": "mythos",
+     "depths": [
+      0.3,
+      0.32,
+      0.36
+     ]
+    },
+    {
+     "n": "1",
+     "label": "{i}",
+     "depths": [
+      0.49,
+      0.5,
+      0.54
+     ]
+    },
+    {
+     "n": "-1",
+     "label": "inner dimension{self,confidence,reality}",
+     "depths": [
+      0.62,
+      0.63,
+      0.67
+     ]
+    },
+    {
+     "n": "-2",
+     "label": "hearing{pause,choice}",
+     "depths": [
+      0.68,
+      0.7,
+      0.74
+     ]
+    },
+    {
+     "n": "-3",
+     "label": "sound{act/react}",
+     "depths": [
+      0.35,
+      0.36,
+      0.4
+     ]
+    },
+    {
+     "n": "-4",
+     "label": "taste{life,death}",
+     "depths": [
+      0.48,
+      0.5,
+      0.53
+     ]
+    },
+    {
+     "n": "-5",
+     "label": "hearing{balance,ground}",
+     "depths": [
+      0.7,
+      0.72,
+      0.75
+     ]
+    },
+    {
+     "n": "-6",
+     "label": "touch{balance,cordination}",
+     "depths": [
+      0.51,
+      0.52,
+      0.56
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Aurelio Crest",
+   "slug": "aurelio-crest",
+   "gender": "male",
+   "gem": "Electrum",
+   "crystal": "electrum",
+   "hex": "#d9c27a",
+   "family": "Light",
+   "temperament": "regal",
+   "meaning": "proud and generous; wants the crown",
+   "cut": "octa",
+   "page": "aurelio-crest.html",
+   "md_file": "aurelio-crest.agent.md",
+   "suggested": "pattycakes",
+   "vector": {
+    "aggression": 0.65,
+    "patience": 0.5,
+    "warmth": 0.6,
+    "cunning": 0.5,
+    "steadiness": 0.7,
+    "curiosity": 0.45
+   },
+   "params": {
+    "style": {
+     "learns": 0.37,
+     "observes": 0.44,
+     "probes": 0.19
+    },
+    "reaction": {
+     "observe": 0.29,
+     "respond": 0.21,
+     "sub_id": 0.13
+    },
+    "gradient": {
+     "threshold": 4.1,
+     "decay_s": 5.7,
+     "bad_outcome": 0.17
+    },
+    "hide": "best",
+    "attack": {
+     "feint": 0.48,
+     "conceal": 0.43,
+     "bluff": 0.11
+    },
+    "rules": {
+     "open": "any",
+     "counter_bias": 0.27,
+     "after_hit": "none"
+    }
+   },
+   "layers": [
+    {
+     "n": "+1",
+     "label": "super id { connection}",
+     "depths": [
+      0.56,
+      0.54,
+      0.57
+     ]
+    },
+    {
+     "n": "5",
+     "label": "ethics",
+     "depths": [
+      0.61,
+      0.59,
+      0.62
+     ]
+    },
+    {
+     "n": "4",
+     "label": "logic",
+     "depths": [
+      0.57,
+      0.55,
+      0.58
+     ]
+    },
+    {
+     "n": "3",
+     "label": "pathos",
+     "depths": [
+      0.61,
+      0.59,
+      0.62
+     ]
+    },
+    {
+     "n": "2",
+     "label": "mythos",
+     "depths": [
+      0.48,
+      0.46,
+      0.49
+     ]
+    },
+    {
+     "n": "1",
+     "label": "{i}",
+     "depths": [
+      0.59,
+      0.57,
+      0.6
+     ]
+    },
+    {
+     "n": "-1",
+     "label": "inner dimension{self,confidence,reality}",
+     "depths": [
+      0.66,
+      0.64,
+      0.67
+     ]
+    },
+    {
+     "n": "-2",
+     "label": "hearing{pause,choice}",
+     "depths": [
+      0.55,
+      0.53,
+      0.56
+     ]
+    },
+    {
+     "n": "-3",
+     "label": "sound{act/react}",
+     "depths": [
+      0.6,
+      0.58,
+      0.61
+     ]
+    },
+    {
+     "n": "-4",
+     "label": "taste{life,death}",
+     "depths": [
+      0.57,
+      0.55,
+      0.58
+     ]
+    },
+    {
+     "n": "-5",
+     "label": "hearing{balance,ground}",
+     "depths": [
+      0.62,
+      0.6,
+      0.63
+     ]
+    },
+    {
+     "n": "-6",
+     "label": "touch{balance,cordination}",
+     "depths": [
+      0.62,
+      0.6,
+      0.63
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Nyx Corvane",
+   "slug": "nyx-corvane",
+   "gender": "female",
+   "gem": "Obsidian",
+   "crystal": "obsidian",
+   "hex": "#3a2f4a",
+   "family": "Shadow",
+   "temperament": "guarded",
+   "meaning": "walls up, sharp edges, protective",
+   "cut": "octa",
+   "page": "nyx-corvane.html",
+   "md_file": "nyx-corvane.agent.md",
+   "suggested": "patricia",
+   "vector": {
+    "aggression": 0.45,
+    "patience": 0.65,
+    "warmth": 0.3,
+    "cunning": 0.6,
+    "steadiness": 0.8,
+    "curiosity": 0.25
+   },
+   "params": {
+    "style": {
+     "learns": 0.29,
+     "observes": 0.53,
+     "probes": 0.18
+    },
+    "reaction": {
+     "observe": 0.3,
+     "respond": 0.27,
+     "sub_id": 0.1
+    },
+    "gradient": {
+     "threshold": 4.4,
+     "decay_s": 6.5,
+     "bad_outcome": 0.09
+    },
+    "hide": "block",
+    "attack": {
+     "feint": 0.53,
+     "conceal": 0.5,
+     "bluff": 0.21
+    },
+    "rules": {
+     "open": "any",
+     "counter_bias": 0.23,
+     "after_hit": "none"
+    }
+   },
+   "layers": [
+    {
+     "n": "+1",
+     "label": "super id { connection}",
+     "depths": [
+      0.29,
+      0.3,
+      0.35
+     ]
+    },
+    {
+     "n": "5",
+     "label": "ethics",
+     "depths": [
+      0.43,
+      0.44,
+      0.48
+     ]
+    },
+    {
+     "n": "4",
+     "label": "logic",
+     "depths": [
+      0.66,
+      0.67,
+      0.72
+     ]
+    },
+    {
+     "n": "3",
+     "label": "pathos",
+     "depths": [
+      0.32,
+      0.33,
+      0.38
+     ]
+    },
+    {
+     "n": "2",
+     "label": "mythos",
+     "depths": [
+      0.25,
+      0.25,
+      0.3
+     ]
+    },
+    {
+     "n": "1",
+     "label": "{i}",
+     "depths": [
+      0.49,
+      0.5,
+      0.55
+     ]
+    },
+    {
+     "n": "-1",
+     "label": "inner dimension{self,confidence,reality}",
+     "depths": [
+      0.65,
+      0.66,
+      0.7
+     ]
+    },
+    {
+     "n": "-2",
+     "label": "hearing{pause,choice}",
+     "depths": [
+      0.67,
+      0.67,
+      0.72
+     ]
+    },
+    {
+     "n": "-3",
+     "label": "sound{act/react}",
+     "depths": [
+      0.38,
+      0.39,
+      0.44
+     ]
+    },
+    {
+     "n": "-4",
+     "label": "taste{life,death}",
+     "depths": [
+      0.55,
+      0.55,
+      0.6
+     ]
+    },
+    {
+     "n": "-5",
+     "label": "hearing{balance,ground}",
+     "depths": [
+      0.72,
+      0.73,
+      0.77
+     ]
+    },
+    {
+     "n": "-6",
+     "label": "touch{balance,cordination}",
+     "depths": [
+      0.51,
+      0.52,
+      0.57
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Dorian Vex",
+   "slug": "dorian-vex",
+   "gender": "male",
+   "gem": "Onyx",
+   "crystal": "onyx",
+   "hex": "#1a1a1f",
+   "family": "Shadow",
+   "temperament": "ruthless",
+   "meaning": "a cold strategist who plays to win",
+   "cut": "step",
+   "page": "dorian-vex.html",
+   "md_file": "dorian-vex.agent.md",
+   "suggested": "pattycakes",
+   "vector": {
+    "aggression": 0.75,
+    "patience": 0.6,
+    "warmth": 0.1,
+    "cunning": 0.9,
+    "steadiness": 0.75,
+    "curiosity": 0.3
+   },
+   "params": {
+    "style": {
+     "learns": 0.3,
+     "observes": 0.49,
+     "probes": 0.21
+    },
+    "reaction": {
+     "observe": 0.3,
+     "respond": 0.18,
+     "sub_id": 0.11
+    },
+    "gradient": {
+     "threshold": 4.2,
+     "decay_s": 6.1,
+     "bad_outcome": 0.1
+    },
+    "hide": "dodge",
+    "attack": {
+     "feint": 0.7,
+     "conceal": 0.66,
+     "bluff": 0.38
+    },
+    "rules": {
+     "open": "punch",
+     "counter_bias": 0.43,
+     "after_hit": "counter"
+    }
+   },
+   "layers": [
+    {
+     "n": "+1",
+     "label": "super id { connection}",
+     "depths": [
+      0.2,
+      0.16,
+      0.2
+     ]
+    },
+    {
+     "n": "5",
+     "label": "ethics",
+     "depths": [
+      0.27,
+      0.23,
+      0.27
+     ]
+    },
+    {
+     "n": "4",
+     "label": "logic",
+     "depths": [
+      0.78,
+      0.74,
+      0.78
+     ]
+    },
+    {
+     "n": "3",
+     "label": "pathos",
+     "depths": [
+      0.33,
+      0.29,
+      0.33
+     ]
+    },
+    {
+     "n": "2",
+     "label": "mythos",
+     "depths": [
+      0.28,
+      0.24,
+      0.28
+     ]
+    },
+    {
+     "n": "1",
+     "label": "{i}",
+     "depths": [
+      0.55,
+      0.51,
+      0.55
+     ]
+    },
+    {
+     "n": "-1",
+     "label": "inner dimension{self,confidence,reality}",
+     "depths": [
+      0.75,
+      0.71,
+      0.75
+     ]
+    },
+    {
+     "n": "-2",
+     "label": "hearing{pause,choice}",
+     "depths": [
+      0.62,
+      0.59,
+      0.62
+     ]
+    },
+    {
+     "n": "-3",
+     "label": "sound{act/react}",
+     "depths": [
+      0.62,
+      0.58,
+      0.62
+     ]
+    },
+    {
+     "n": "-4",
+     "label": "taste{life,death}",
+     "depths": [
+      0.87,
+      0.83,
+      0.87
+     ]
+    },
+    {
+     "n": "-5",
+     "label": "hearing{balance,ground}",
+     "depths": [
+      0.68,
+      0.64,
+      0.68
+     ]
+    },
+    {
+     "n": "-6",
+     "label": "touch{balance,cordination}",
+     "depths": [
+      0.63,
+      0.59,
+      0.63
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Hale Ironwood",
+   "slug": "hale-ironwood",
+   "gender": "male",
+   "gem": "Hematite",
+   "crystal": "onyx",
+   "hex": "#6b6e75",
+   "family": "Shadow",
+   "temperament": "methodical",
+   "meaning": "steel-grey routine; never flinches",
+   "cut": "cube",
+   "page": "hale-ironwood.html",
+   "md_file": "hale-ironwood.agent.md",
+   "suggested": "patricia",
+   "vector": {
+    "aggression": 0.5,
+    "patience": 0.7,
+    "warmth": 0.25,
+    "cunning": 0.4,
+    "steadiness": 0.95,
+    "curiosity": 0.2
+   },
+   "params": {
+    "style": {
+     "learns": 0.29,
+     "observes": 0.6,
+     "probes": 0.11
+    },
+    "reaction": {
+     "observe": 0.3,
+     "respond": 0.25,
+     "sub_id": 0.06
+    },
+    "gradient": {
+     "threshold": 4.8,
+     "decay_s": 7.4,
+     "bad_outcome": 0.02
+    },
+    "hide": "block",
+    "attack": {
+     "feint": 0.42,
+     "conceal": 0.39,
+     "bluff": 0.16
+    },
+    "rules": {
+     "open": "any",
+     "counter_bias": 0.26,
+     "after_hit": "none"
+    }
+   },
+   "layers": [
+    {
+     "n": "+1",
+     "label": "super id { connection}",
+     "depths": [
+      0.29,
+      0.29,
+      0.36
+     ]
+    },
+    {
+     "n": "5",
+     "label": "ethics",
+     "depths": [
+      0.51,
+      0.51,
+      0.58
+     ]
+    },
+    {
+     "n": "4",
+     "label": "logic",
+     "depths": [
+      0.66,
+      0.66,
+      0.73
+     ]
+    },
+    {
+     "n": "3",
+     "label": "pathos",
+     "depths": [
+      0.31,
+      0.31,
+      0.37
+     ]
+    },
+    {
+     "n": "2",
+     "label": "mythos",
+     "depths": [
+      0.18,
+      0.18,
+      0.25
+     ]
+    },
+    {
+     "n": "1",
+     "label": "{i}",
+     "depths": [
+      0.52,
+      0.52,
+      0.59
+     ]
+    },
+    {
+     "n": "-1",
+     "label": "inner dimension{self,confidence,reality}",
+     "depths": [
+      0.75,
+      0.75,
+      0.82
+     ]
+    },
+    {
+     "n": "-2",
+     "label": "hearing{pause,choice}",
+     "depths": [
+      0.73,
+      0.73,
+      0.8
+     ]
+    },
+    {
+     "n": "-3",
+     "label": "sound{act/react}",
+     "depths": [
+      0.4,
+      0.4,
+      0.46
+     ]
+    },
+    {
+     "n": "-4",
+     "label": "taste{life,death}",
+     "depths": [
+      0.52,
+      0.52,
+      0.58
+     ]
+    },
+    {
+     "n": "-5",
+     "label": "hearing{balance,ground}",
+     "depths": [
+      0.82,
+      0.82,
+      0.89
+     ]
+    },
+    {
+     "n": "-6",
+     "label": "touch{balance,cordination}",
+     "depths": [
+      0.58,
+      0.58,
+      0.64
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1 @@
+{"slug": "challenger-cassia-vire", "seal": "e40b08b37a613fa93ae1d898ada0d5a1f77eb222bb3f3ed5306df8ee37de85b2", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

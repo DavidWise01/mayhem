@@ -1,0 +1,1 @@
+{"slug": "challenger-ash-merrow", "seal": "5bc5aee293327949c28b70cd385a4cea28637ef69d6001cad7aea76291121d0d", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

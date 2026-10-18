@@ -1,0 +1,1 @@
+{"slug": "challenger-seren-hollow", "seal": "40f823d2b8519c20bb7a440cadf6c3d0595cab745ea837ee8bd4c10325d9b044", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

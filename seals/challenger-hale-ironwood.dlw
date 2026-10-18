@@ -1,0 +1,1 @@
+{"slug": "challenger-hale-ironwood", "seal": "08668711c295397b7e97aa235ef17547a8db472c29eed0374283d9ae95c5bd7f", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

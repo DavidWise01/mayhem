@@ -1,0 +1,1 @@
+{"slug": "challenger-pippa-quill", "seal": "4b567c5206ae09b2adc70e17b887cfdedf6ee5fb6ca29f14bb5a7a4c639f674e", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

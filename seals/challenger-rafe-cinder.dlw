@@ -1,0 +1,1 @@
+{"slug": "challenger-rafe-cinder", "seal": "3a7b396e2242c183d8396c45cc3b27a301663df54295da12c40e03060dd88474", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

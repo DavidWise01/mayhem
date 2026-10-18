@@ -1,0 +1,1 @@
+{"slug": "challenger-silas-ward", "seal": "ece68e7f10b40308b21fa11de60cc0581399e99e3140cc6361f90bae6bfde698", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
