@@ -1,0 +1,1 @@
+{"slug": "qk-1bit-mercury-sphere", "seal": "47791ab9bdd2ede3b63d603ef5499a001631f68faa73fe9f2bdb21b20e273451", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

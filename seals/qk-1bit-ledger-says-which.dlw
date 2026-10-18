@@ -1,0 +1,1 @@
+{"slug": "qk-1bit-ledger-says-which", "seal": "074aa4c0a10ddad1b418f6f40ceb11bf25754daf1f227b1ebb3faf0f2e7cb87f", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

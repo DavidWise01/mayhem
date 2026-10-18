@@ -1,0 +1,1 @@
+{"slug": "qk-end-braces-droplets", "seal": "67158a5b8d4133abb36bc98b8513617786d67df39c1468482ff32bf2d75775bb", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

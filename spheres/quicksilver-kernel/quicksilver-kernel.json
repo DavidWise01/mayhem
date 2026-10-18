@@ -1,0 +1,156 @@
+{
+ "pages": [
+  {
+   "slug": "qk-1bit-mercury-sphere",
+   "name": "1 bit in, 1px out · I · the mercury sphere",
+   "crumb": "1 BIT IN, 1PX OUT · I",
+   "blurb": "A liquid-mercury sphere girdled by the 52-bubble packed line. The arc carries the bit along the line, the bubbles only attest, and the 1px lights at the end.",
+   "seal": "47791ab9bdd2ede3b63d603ef5499a001631f68faa73fe9f2bdb21b20e273451",
+   "style": "mercury",
+   "src": "a",
+   "agents": "ARTIST+CRITIC"
+  },
+  {
+   "slug": "qk-1bit-ledger-says-which",
+   "name": "1 bit in, 1px out · II · the ledger says which",
+   "crumb": "1 BIT IN, 1PX OUT · II",
+   "blurb": "All four runs his buttons offer, in turn: moniker 1 and 0, with and without the drop. A dark pixel is a delivered 0 or a loss, and the receipt beside the ledger says which.",
+   "seal": "074aa4c0a10ddad1b418f6f40ceb11bf25754daf1f227b1ebb3faf0f2e7cb87f",
+   "style": "hg-glass",
+   "src": "a",
+   "agents": "BUILDER+WEAVER+CRITIC"
+  },
+  {
+   "slug": "qk-1bit-quicksilver-thread",
+   "name": "1 bit in, 1px out · III · quicksilver thread",
+   "crumb": "1 BIT IN, 1PX OUT · III",
+   "blurb": "The watermark thread runs under the line: the bit rides it, 1 bit at ~1.1502e-36 m, under the 1% cross-talk floor.",
+   "seal": "a51d5900acdc2235578fe4e22b93c386298756f6523d652b9cb7e599313e20d6",
+   "style": "liquid-noir",
+   "src": "a",
+   "agents": "ARTIST+CRITIC"
+  },
+  {
+   "slug": "qk-11-across-twin-threads",
+   "name": "11 across, 2px out · I · twin threads",
+   "crumb": "11 ACROSS, 2PX OUT · I",
+   "blurb": "Two threads ride under the line, one for each bit of the pair. Pair 11 in, 2px out.",
+   "seal": "39ea6f69d8fc1b799639eeeb348652c2b45759cd93c2c0abbe8f95dd4c02f194",
+   "style": "twin-chrome",
+   "src": "b",
+   "agents": "ARTIST+CRITIC"
+  },
+  {
+   "slug": "qk-11-across-sixteen-runs",
+   "name": "11 across, 2px out · II · sixteen runs",
+   "crumb": "11 ACROSS, 2PX OUT · II",
+   "blurb": "Sixteen quicksilver beads, one for each run his buttons offer: 4 pairs × 4 drops (off, A, B, both), all running at once.",
+   "seal": "a63c829f56c381b2dc997012f8d49ebd84084a1af790624328012a9342216aad",
+   "style": "mercury-pool",
+   "src": "b",
+   "agents": "BUILDER+WEAVER+CRITIC"
+  },
+  {
+   "slug": "qk-11-across-pair-orbit",
+   "name": "11 across, 2px out · III · pair orbit",
+   "crumb": "11 ACROSS, 2PX OUT · III",
+   "blurb": "The pair orbits a neon-lit quicksilver sphere, going through every pair and drop in turn.",
+   "seal": "ce07c5a826d3fbc91728442f156c950b6df8732922a8e4dd1d4192af60bd38ca",
+   "style": "quick-neon",
+   "src": "b",
+   "agents": "ARTIST+CRITIC"
+  },
+  {
+   "slug": "qk-dog-on-a-leash-sphere",
+   "name": "dog on a leash, cubits in tow · I · leash → end{}",
+   "crumb": "DOG ON A LEASH, CUBITS IN TOW · I",
+   "blurb": "The dog runs the line on its leash to end{}; both 1/2 cubits come in tow behind it, and the 2px light when the tow arrives.",
+   "seal": "2e2627ed060e8d510fd3059700662187fb94103799287930d624f2af4fb1978d",
+   "style": "chrome-gold",
+   "src": "c",
+   "agents": "ARTIST+CRITIC"
+  },
+  {
+   "slug": "qk-cubits-in-tow-lag",
+   "name": "dog on a leash, cubits in tow · II · tow −4 bubbles",
+   "crumb": "DOG ON A LEASH, CUBITS IN TOW · II",
+   "blurb": "The tow starts 4 bubbles behind the dog and chases where the dog was 12 frames earlier. The I-13 VM works out the steady lag.",
+   "seal": "65418db8ea660672061dfe41cec75268ccba1a696c5be07000a0b35170e3cd93",
+   "style": "wire-metal",
+   "src": "c",
+   "agents": "BUILDER+WEAVER+CRITIC"
+  },
+  {
+   "slug": "qk-end-braces-droplets",
+   "name": "dog on a leash, cubits in tow · III · end{} droplets",
+   "crumb": "DOG ON A LEASH, CUBITS IN TOW · III",
+   "blurb": "end{} as a gold ring among mercury droplets: the leash holds the dog there while the cubits catch up.",
+   "seal": "67158a5b8d4133abb36bc98b8513617786d67df39c1468482ff32bf2d75775bb",
+   "style": "droplets",
+   "src": "c",
+   "agents": "ARTIST+CRITIC"
+  },
+  {
+   "slug": "qk-kernel-dreams-sphere",
+   "name": "The Living Kernel Dreams · I · the dreaming kernel",
+   "crumb": "THE LIVING KERNEL DREAMS · I",
+   "blurb": "A dreaming organic kernel sphere. Its 18 foam stars, moon, rune stones, embers and still lake all come from his kernel seed, re-dreamed every 14 s.",
+   "seal": "640f2c9f46cbd0f91af070b18f94ae8224ece88c5be252c541b9989bc3dfa4f4",
+   "style": "dream",
+   "src": "d",
+   "agents": "ARTIST+CRITIC"
+  },
+  {
+   "slug": "qk-kernel-foam-ledger",
+   "name": "The Living Kernel Dreams · II · foam, pops & wave",
+   "crumb": "THE LIVING KERNEL DREAMS · II",
+   "blurb": "A bioluminescent kernel. The foam cells, pops, wave and verdicts in his seed are checked against each other as his own system.",
+   "seal": "bd8cd0a66ed47302a3176620b3c5a0bec89fb65ef083c53430b2bea5080720a6",
+   "style": "biolum",
+   "src": "d",
+   "agents": "BUILDER+WEAVER+CRITIC"
+  },
+  {
+   "slug": "qk-kernel-stillpoint-lake",
+   "name": "The Living Kernel Dreams · III · the still lake",
+   "crumb": "THE LIVING KERNEL DREAMS · III",
+   "blurb": "A pearl-nacre kernel above the still lake: the held stillpoint ring of 18, the zero that doesn't move.",
+   "seal": "4af9786b13b9fdd96b5ec649eb99e10c69492405b15dc1caf41b9563b8ef0821",
+   "style": "nacre",
+   "src": "d",
+   "agents": "ARTIST+CRITIC"
+  },
+  {
+   "slug": "quicksilver-kernel-index",
+   "name": "Quicksilver & Kernel · Index",
+   "crumb": "INDEX",
+   "blurb": "Dave’s four quicksilver arc and Living Kernel pages, carried into 12 agentic, artistic sphere worlds. His originals are kept byte-identical and his mechanics are checked and run on Dave’s I-13 engine.",
+   "seal": "2b203ccd98eb5c6097812b0b844fbcf5e92ffac560c759da3f436d47db62f1f1",
+   "style": "index",
+   "src": "all",
+   "agents": "ARTIST+CRITIC"
+  }
+ ],
+ "said": {
+  "t260": "can you build these into spheres, agentic , artistic please",
+  "t262": "thats for the standard model not theoretical math magic"
+ },
+ "originals": {
+  "a": {
+   "sha256": "4379542dfe99fc9020fba0b60126687f6e0f4d9a8e959dd236340b981296ce35",
+   "title": "quicksilver arc — 1 bit in, 1px out"
+  },
+  "b": {
+   "sha256": "20e47cdf5bb83c4f2ea9626ade63827238173cda0335eed065188cd261ddf86d",
+   "title": "quicksilver arc — 11 across, 2px out"
+  },
+  "c": {
+   "sha256": "76e87993366781af7fedb058f116d90ed561b756baf4a49ae54f087326d5cc10",
+   "title": "quicksilver arc — dog on a leash, cubits in tow"
+  },
+  "d": {
+   "sha256": "124d4216dd267e8aeb9b7a46f8c7f0c95c605f9d2dae24055f0cbb3528ca1bd4",
+   "title": "The Living Kernel Dreams"
+  }
+ }
+}

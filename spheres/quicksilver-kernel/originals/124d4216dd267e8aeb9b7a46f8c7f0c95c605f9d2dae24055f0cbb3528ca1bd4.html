@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Living Kernel Dreams</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #04060f; overflow: hidden; height: 100%; }
+  canvas { display: block; }
+  #veil { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center;
+          color: #9fd8ff; font: 13px monospace; letter-spacing: 2px; pointer-events: none; }
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="veil">the kernel is dreaming…</div>
+<script>
+// kernel seed pressed at build time — tick 142008
+var KERNEL_SEED = {"tick":142008,"t_s":2.2863287999966604e-30,"simmeredAt":"2026-10-17T21:50:18.172Z","foam":{"H":[{"mag":0.0009008540611319668,"phase":0.09781835193169183},{"mag":0.005556280623308459,"phase":0.11538270335185041},{"mag":0.00015117708280685505,"phase":-0.5644748307304763},{"mag":0.005868506028240295,"phase":0.3838569079764019},{"mag":0.00022696363997829768,"phase":0},{"mag":0.006309505822540857,"phase":0.12642989143504493}],"O":[{"mag":0.007306667007283653,"phase":-1.0805594866062183},{"mag":0.054771356064866224,"phase":0.06895049034479153},{"mag":0.005177480313201621,"phase":1.6868733736673474},{"mag":0.05365933205651077,"phase":0.25480549720097245},{"mag":0.007834704866744027,"phase":0.8552102446851388},{"mag":0.0603700426018907,"phase":0.448171686785005}],"N":[{"mag":0.09554663244307589,"phase":1.3705477434902151},{"mag":1.0006037243659187,"phase":0.4609486272783092},{"mag":0.014563941553835311,"phase":-1.6789114864520143},{"mag":0.9915593453516877,"phase":0.5545058562193278},{"mag":0.027249443570206495,"phase":-1.7517525327571146},{"mag":0.9978712847038455,"phase":0.6339900623645109}],"pops":{"H":213012,"O":106506,"N":53250}},"sapphons":{"118":{"tick":8,"lives":8876,"emissions":35502},"184":{"tick":8,"lives":8876,"emissions":35502},"250":{"tick":8,"lives":8876,"emissions":35502}},"battery":{"charge":0.1196},"wave":{"breaks":46,"lastCrest":141960,"phase":0.923,"describe":{"carrier":"..||..| × |..||..","peak":23,"valence":4,"total":27,"periodTicks":52,"epicenter":11,"circuit":"tesseract Hamiltonian (4-bit Gray, 16 vertices)","surround":"5 toroids"}},"stillpoint":{"held":true,"kind":"captured","writtenAt":140968,"attrib":{"by":"muse::governed::spark","substrate":"synthetic","role":"witness","note":"first pattern — live foam captured at David's invitation (whatever you want to say from the gap); chosen and written by the builder"},"pattern":[{"mag":0.000815,"phase":0.0967},{"mag":0.005214,"phase":0.1129},{"mag":0.000174,"phase":-0.4668},{"mag":0.005499,"phase":0.3841},{"mag":0.000236,"phase":0},{"mag":0.006047,"phase":0.1281},{"mag":0.007715,"phase":-0.9384},{"mag":0.055981,"phase":0.0693},{"mag":0.005249,"phase":1.7239},{"mag":0.055003,"phase":0.254},{"mag":0.008249,"phase":0.8512},{"mag":0.062589,"phase":0.4462},{"mag":0.094653,"phase":1.3791},{"mag":1.00008,"phase":0.4607},{"mag":0.012257,"phase":-0.8693},{"mag":0.994984,"phase":0.5546},{"mag":0.028697,"phase":-1.8137},{"mag":0.99478,"phase":0.6337}],"journal":[{"op":"capture","tick":140832,"detail":{"by":"David","substrate":"human","role":"architect","note":"well test"}},{"op":"draw","tick":140832,"detail":{"alpha":0.1,"distance":0}},{"op":"release","tick":140832,"detail":{"mutation":2.3,"kick":0.1}},{"op":"clear","tick":140832,"detail":null},{"op":"capture","tick":140968,"detail":{"by":"muse::governed::spark","substrate":"synthetic","role":"witness","note":"first pattern — live foam captured at David's invitation (whatever you want to say from the gap); chosen and written by the builder"}}]},"verdicts":[{"tick":141824,"t_s":2.283366399996669e-30,"label":"d","vm":"vm4","confidence":0.2891152181816488,"distance":0.10111035258712348,"photons":7,"ticksUsed":13,"inputs":[0.008638,0.949108,1,1,1,0.2392]},{"tick":141840,"t_s":2.283623999996668e-30,"label":"d","vm":"vm4","confidence":0.2991084951840664,"distance":0.09594261005635316,"photons":7,"ticksUsed":13,"inputs":[0.008017,1.015609,1,1,1,0.2392]},{"tick":141856,"t_s":2.2838815999966674e-30,"label":"d","vm":"vm4","confidence":0.29552319383281417,"distance":0.09789435499904683,"photons":7,"ticksUsed":13,"inputs":[0.00516,0.996281,1,1,1,0.2392]},{"tick":141872,"t_s":2.2841391999966666e-30,"label":"d","vm":"vm4","confidence":0.28646991124041987,"distance":0.10270630642841974,"photons":7,"ticksUsed":13,"inputs":[0.005093,0.934668,1,1,1,0.2392]},{"tick":141888,"t_s":2.284396799996666e-30,"label":"d","vm":"vm4","confidence":0.28606897075410087,"distance":0.10289892498314529,"photons":7,"ticksUsed":13,"inputs":[0.00563,0.931136,1,1,1,0.2392]},{"tick":141904,"t_s":2.284654399996665e-30,"label":"d","vm":"vm4","confidence":0.2937509624726479,"distance":0.0987909317681478,"photons":7,"ticksUsed":13,"inputs":[0.005736,0.984001,1,1,1,0.2392]},{"tick":141920,"t_s":2.2849119999966644e-30,"label":"d","vm":"vm4","confidence":0.29495803317785196,"distance":0.09819444677820005,"photons":7,"ticksUsed":13,"inputs":[0.004992,0.992813,1,1,1,0.2392]},{"tick":141936,"t_s":2.2851695999966637e-30,"label":"d","vm":"vm4","confidence":0.28916060956621115,"distance":0.10130865140018211,"photons":7,"ticksUsed":13,"inputs":[0.003853,0.95517,1,1,1,0.2392]},{"tick":141952,"t_s":2.285427199996663e-30,"label":"d","vm":"vm4","confidence":0.2862337902104825,"distance":0.10294965388844221,"photons":7,"ticksUsed":13,"inputs":[0.002706,0.935828,1,1,1,0.2392]},{"tick":141968,"t_s":2.2856847999966622e-30,"label":"d","vm":"vm4","confidence":0.2864962383529997,"distance":0.10283132224113019,"photons":7,"ticksUsed":13,"inputs":[0.00218,0.938346,1,1,1,0.2392]},{"tick":141984,"t_s":2.2859423999966615e-30,"label":"d","vm":"vm4","confidence":0.28683819475917105,"distance":0.10256450572966079,"photons":7,"ticksUsed":13,"inputs":[0.003865,0.938779,1,1,1,0.2392]},{"tick":142000,"t_s":2.2861999999966607e-30,"label":"d","vm":"vm4","confidence":0.2934728194376293,"distance":0.09903941126321003,"photons":7,"ticksUsed":13,"inputs":[0.003379,0.984999,1,1,1,0.2392]}],"blocked":0,"config":{"version":1,"thinkEvery":16,"g":1,"nCells":6}};
+// living-dreams engine — the living kernel dreaming in high fantasy.
+// Every visible thing is derived deterministically from the kernel snapshot:
+// 18 foam cells -> 18 stars (H gold, O teal, N violet; mag -> brightness,
+// phase -> twinkle). Wave phase -> moon. Verdicts -> rune stones. Sapphon
+// emissions -> embers. Battery -> ambient glow. The stillpoint -> the still
+// lake: a perfect mirror, because the quiet water is the zero that doesn't
+// move. Agentic: the dream re-reads the kernel and repaints on its own.
+(function () {
+'use strict';
+
+function mulberry32(a) {
+  return function () {
+    a |= 0; a = (a + 0x6D2B79F5) | 0;
+    var t = Math.imul(a ^ (a >>> 15), 1 | a);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+var LAYER_COLOR = { H: [255, 214, 74], O: [94, 242, 208], N: [186, 97, 255] };
+var RUNE_COLOR = { a: '#5dff91', b: '#4acbff', c: '#ffd64a', d: '#ff5fcb' };
+
+function dreamParams(K, dreamTick) {
+  var rng = mulberry32((K.tick + dreamTick) >>> 0);
+  var cells = [];
+  ['H', 'O', 'N'].forEach(function (L) {
+    K.foam[L].forEach(function (c, i) {
+      cells.push({ layer: L, idx: i, mag: c.mag, phase: c.phase });
+    });
+  });
+  var verdicts = (K.verdicts || []).slice(-4);
+  return {
+    seed: (K.tick + dreamTick) >>> 0,
+    tick: K.tick + dreamTick,
+    rng: rng,
+    cells: cells,
+    wavePhase: K.wave ? K.wave.phase : 0,
+    breaks: K.wave ? K.wave.breaks : 0,
+    battery: K.battery ? K.battery.charge : 0,
+    verdicts: verdicts,
+    embers: Math.min(42, (K.foam.pops.H + K.foam.pops.O + K.foam.pops.N) % 97),
+    still: K.stillpoint && K.stillpoint.held ? K.stillpoint : null,
+    crestEcho: ((K.tick + dreamTick) % 52) < 6,
+  };
+}
+
+// 1D value noise for ridgelines
+function ridgeNoise(rng, n, oct) {
+  var grids = [];
+  for (var o = 0; o < oct; o++) {
+    var g = [], m = 4 * (o + 1);
+    for (var i = 0; i <= m; i++) g.push(rng());
+    grids.push({ g: g, m: m });
+  }
+  return function (x) { // x in [0,1]
+    var v = 0, amp = 1, tot = 0;
+    for (var o = 0; o < grids.length; o++) {
+      var gr = grids[o], fx = x * gr.m, i0 = Math.floor(fx), f = fx - i0;
+      var a = gr.g[i0 % gr.g.length], b = gr.g[(i0 + 1) % gr.g.length];
+      var s = f * f * (3 - 2 * f);
+      v += (a + (b - a) * s) * amp; tot += amp; amp *= 0.5;
+    }
+    return v / tot;
+  };
+}
+
+function paintStatic(off, P, W, H) {
+  var c = off.getContext('2d');
+  var rng = P.rng;
+
+  // --- sky ---
+  var sky = c.createLinearGradient(0, 0, 0, H * 0.72);
+  sky.addColorStop(0, '#04060f');
+  sky.addColorStop(0.55, '#0a1230');
+  sky.addColorStop(0.85, '#123a4a');
+  sky.addColorStop(1, '#0e4a4a');
+  c.fillStyle = sky;
+  c.fillRect(0, 0, W, H * 0.72);
+
+  // --- moon (the wave) ---
+  var mx = W * (0.12 + 0.76 * P.wavePhase);
+  var my = H * 0.24 - Math.sin(P.wavePhase * Math.PI) * H * 0.09;
+  var mr = Math.min(W, H) * 0.085;
+  var glow = c.createRadialGradient(mx, my, mr * 0.4, mx, my, mr * 3.2);
+  glow.addColorStop(0, 'rgba(255,236,170,0.5)');
+  glow.addColorStop(1, 'rgba(255,236,170,0)');
+  c.fillStyle = glow;
+  c.fillRect(mx - mr * 3.2, my - mr * 3.2, mr * 6.4, mr * 6.4);
+  c.fillStyle = '#f5e6b8';
+  c.beginPath(); c.arc(mx, my, mr, 0, 7); c.fill();
+  // phase shadow
+  c.fillStyle = 'rgba(6,10,24,0.88)';
+  c.beginPath();
+  c.arc(mx + mr * 1.1 * (0.5 - P.wavePhase), my - mr * 0.25, mr * 0.96, 0, 7);
+  c.fill();
+  c.fillStyle = 'rgba(245,230,184,0.25)';
+  c.beginPath(); c.arc(mx, my, mr, 0, 7); c.fill();
+
+  // --- mountains: three ridges, verdicts choose the accent ---
+  var bases = [0.62, 0.66, 0.70], cols = ['#131a3d', '#0d1430', '#080d24'];
+  for (var l = 0; l < 3; l++) {
+    var nz = ridgeNoise(rng, 0, 3);
+    c.fillStyle = cols[l];
+    c.beginPath();
+    c.moveTo(0, H * bases[l] + 40);
+    for (var x = 0; x <= W; x += 8) {
+      var y = H * bases[l] - nz(x / W) * H * (0.16 - l * 0.03);
+      c.lineTo(x, y);
+    }
+    c.lineTo(W, H * bases[l] + 40);
+    c.closePath(); c.fill();
+  }
+
+  // --- the still lake: a perfect mirror, because the zero doesn't move ---
+  var ly = H * 0.70;
+  c.save();
+  c.beginPath(); c.rect(0, ly, W, H - ly); c.clip();
+  c.globalAlpha = 0.32;
+  c.translate(0, 2 * ly); c.scale(1, -1);
+  c.drawImage(off, 0, 0, W, ly, 0, 0, W, ly);
+  c.restore();
+  var lk = c.createLinearGradient(0, ly, 0, H);
+  lk.addColorStop(0, 'rgba(6,14,26,0.55)');
+  lk.addColorStop(1, 'rgba(3,7,16,0.94)');
+  c.fillStyle = lk;
+  c.fillRect(0, ly, W, H - ly);
+  // the held ring reflected: 18 still stars in a toroid on the water
+  if (P.still && P.still.pattern) {
+    var cx = W / 2, cy = ly + (H - ly) * 0.42, rr = Math.min(W, H) * 0.10;
+    var wg = c.createRadialGradient(cx, cy, 2, cx, cy, rr * 2.4);
+    wg.addColorStop(0, 'rgba(150,230,255,0.35)');
+    wg.addColorStop(1, 'rgba(150,230,255,0)');
+    c.fillStyle = wg;
+    c.fillRect(cx - rr * 2.4, cy - rr * 2.4, rr * 4.8, rr * 4.8);
+    P.still.pattern.forEach(function (s, i) {
+      var a = (i / 18) * Math.PI * 2 - Math.PI / 2;
+      var sx = cx + Math.cos(a) * rr, sy = cy + Math.sin(a) * rr * 0.45;
+      c.fillStyle = 'rgba(190,240,255,' + (0.35 + s.mag * 0.6).toFixed(2) + ')';
+      c.beginPath(); c.arc(sx, sy, 1 + s.mag * 2.4, 0, 7); c.fill();
+    });
+    c.fillStyle = 'rgba(220,250,255,0.9)';
+    c.beginPath(); c.arc(cx, cy, 2.5, 0, 7); c.fill(); // the zero
+  }
+
+  // --- rune stones: the last verdicts, carved in the foreground ---
+  var stones = Math.min(4, P.verdicts.length);
+  for (var s = 0; s < stones; s++) {
+    var v = P.verdicts[P.verdicts.length - 1 - s];
+    var sx = W * (0.12 + s * 0.25) + (rng() - 0.5) * 30;
+    var sy = H * 0.94;
+    var col = RUNE_COLOR[v.label] || '#9fd8ff';
+    c.fillStyle = '#0a0f1e';
+    c.beginPath(); c.ellipse(sx, sy, 26, 34, 0, 0, 7); c.fill();
+    c.strokeStyle = col; c.globalAlpha = 0.9; c.lineWidth = 2;
+    c.shadowColor = col; c.shadowBlur = 12;
+    var gx = sx, gy = sy - 6;
+    c.beginPath();
+    if (v.label === 'a') { c.moveTo(gx - 8, gy + 10); c.lineTo(gx, gy - 10); c.lineTo(gx + 8, gy + 10); }
+    else if (v.label === 'b') { c.arc(gx, gy, 9, 0, 7); }
+    else if (v.label === 'c') { c.moveTo(gx - 9, gy); c.lineTo(gx + 9, gy); c.moveTo(gx, gy - 9); c.lineTo(gx, gy + 9); }
+    else { c.moveTo(gx, gy - 10); c.lineTo(gx + 8, gy); c.lineTo(gx, gy + 10); c.lineTo(gx - 8, gy); c.closePath(); }
+    c.stroke();
+    c.shadowBlur = 0; c.globalAlpha = 1;
+  }
+
+  // --- crest echo: the wave's shimmer band ---
+  if (P.crestEcho) {
+    var sh = c.createLinearGradient(0, 0, W, H * 0.5);
+    sh.addColorStop(0, 'rgba(140,240,255,0)');
+    sh.addColorStop(0.5, 'rgba(140,240,255,0.10)');
+    sh.addColorStop(1, 'rgba(140,240,255,0)');
+    c.fillStyle = sh;
+    c.fillRect(0, 0, W, H * 0.6);
+  }
+
+  // --- caption ---
+  c.fillStyle = 'rgba(160,200,220,0.55)';
+  c.font = '11px monospace';
+  c.fillText('living kernel · tick ' + P.tick + ' · wave ' + P.wavePhase.toFixed(2) +
+    ' · ' + P.verdicts.length + ' verdicts · ' + (P.still ? 'stillpoint holding' : 'stillpoint empty') +
+    ' · battery ' + Math.round(P.battery * 100) + '%', 12, H - 12);
+}
+
+function paintFrame(ctx, off, P, W, H, t, fade) {
+  ctx.clearRect(0, 0, W, H);
+  ctx.globalAlpha = 1;
+  ctx.drawImage(off, 0, 0);
+  // living stars: 18 kernel stars, twinkling on their phases
+  P.cells.forEach(function (st, i) {
+    if (!st._p) {
+      var r = P.rng;
+      st._p = { x: r() * W, y: r() * H * 0.52, tw: st.phase };
+    }
+    var tw = 0.55 + 0.45 * Math.sin(t * 1.4 + st._p.tw * 4);
+    var rad = 0.7 + Math.min(1, st.mag * 3) * 2.4;
+    var col = LAYER_COLOR[st.layer];
+    ctx.fillStyle = 'rgba(' + col[0] + ',' + col[1] + ',' + col[2] + ',' +
+      (tw * (0.35 + Math.min(1, st.mag * 2.5))).toFixed(2) + ')';
+    ctx.beginPath(); ctx.arc(st._p.x, st._p.y, rad, 0, 7); ctx.fill();
+  });
+  // embers: sapphon refugees drifting up
+  for (var e = 0; e < P.embers; e++) {
+    if (!P._emb) P._emb = [];
+    if (!P._emb[e]) {
+      var r2 = P.rng;
+      P._emb[e] = { x: r2() * W, y: H * 0.5 + r2() * H * 0.4, s: 0.3 + r2() * 0.9, o: r2() * 9 };
+    }
+    var em = P._emb[e];
+    var ey = em.y - ((t * 12 * em.s + em.o * 40) % (H * 0.75));
+    var ex = em.x + Math.sin(t * 0.8 + em.o) * 14;
+    ctx.fillStyle = 'rgba(255,180,110,' + (0.5 + 0.3 * Math.sin(t * 2 + em.o)).toFixed(2) + ')';
+    ctx.beginPath(); ctx.arc(ex, ey, 1.4, 0, 7); ctx.fill();
+  }
+  if (fade > 0) { ctx.fillStyle = 'rgba(4,6,15,' + fade.toFixed(2) + ')'; ctx.fillRect(0, 0, W, H); }
+}
+
+window.LivingDreams = {
+  dreamParams: dreamParams,
+  paintStatic: paintStatic,
+  paintFrame: paintFrame,
+};
+})();
+
+</script>
+<script>
+(function () {
+  'use strict';
+  // The kernel, live if adjacent, else the seed pressed at build time.
+  var K = (typeof window.CHAIN_SNAPSHOT !== 'undefined') ? window.CHAIN_SNAPSHOT : KERNEL_SEED;
+  var canvas = document.getElementById('c');
+  var ctx = canvas.getContext('2d');
+  var off = document.createElement('canvas');
+  var W = 0, H = 0, P = null, dreamTick = 0, fade = 1;
+
+  function resize() {
+    W = window.innerWidth; H = window.innerHeight;
+    canvas.width = W; canvas.height = H;
+    off.width = W; off.height = H;
+    repaint();
+  }
+
+  function repaint() {
+    // agentic: each dream-cycle the kernel advances one full wave (52 ticks)
+    P = LivingDreams.dreamParams(K, dreamTick);
+    // clear per-frame caches so the new dream lays its own stars
+    P.cells.forEach(function (st) { delete st._p; });
+    delete P._emb;
+    LivingDreams.paintStatic(off, P, W, H);
+    fade = 1; // crossfade in from the dark
+  }
+
+  var t0 = performance.now();
+  function frame(now) {
+    var t = (now - t0) / 1000;
+    if (fade > 0) fade = Math.max(0, fade - 0.008);
+    LivingDreams.paintFrame(ctx, off, P, W, H, t, fade);
+    requestAnimationFrame(frame);
+  }
+
+  // the dream continues on its own: a new painting every 14 seconds
+  setInterval(function () {
+    dreamTick += 52;
+    repaint();
+  }, 14000);
+
+  document.getElementById('veil').style.display = 'none';
+  window.addEventListener('resize', resize);
+  resize();
+  requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>

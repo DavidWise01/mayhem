@@ -1,0 +1,1 @@
+{"slug": "quicksilver-kernel-index", "seal": "2b203ccd98eb5c6097812b0b844fbcf5e92ffac560c759da3f436d47db62f1f1", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

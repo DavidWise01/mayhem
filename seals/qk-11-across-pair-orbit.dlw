@@ -1,0 +1,1 @@
+{"slug": "qk-11-across-pair-orbit", "seal": "ce07c5a826d3fbc91728442f156c950b6df8732922a8e4dd1d4192af60bd38ca", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

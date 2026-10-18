@@ -1,0 +1,1 @@
+{"slug": "qk-1bit-quicksilver-thread", "seal": "a51d5900acdc2235578fe4e22b93c386298756f6523d652b9cb7e599313e20d6", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

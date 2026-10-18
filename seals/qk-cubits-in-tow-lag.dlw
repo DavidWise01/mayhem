@@ -1,0 +1,1 @@
+{"slug": "qk-cubits-in-tow-lag", "seal": "65418db8ea660672061dfe41cec75268ccba1a696c5be07000a0b35170e3cd93", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

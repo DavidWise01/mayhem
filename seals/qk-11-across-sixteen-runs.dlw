@@ -1,0 +1,1 @@
+{"slug": "qk-11-across-sixteen-runs", "seal": "a63c829f56c381b2dc997012f8d49ebd84084a1af790624328012a9342216aad", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "qk-kernel-dreams-sphere", "seal": "640f2c9f46cbd0f91af070b18f94ae8224ece88c5be252c541b9989bc3dfa4f4", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "qk-dog-on-a-leash-sphere", "seal": "2e2627ed060e8d510fd3059700662187fb94103799287930d624f2af4fb1978d", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
