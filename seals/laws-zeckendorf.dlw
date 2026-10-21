@@ -1,0 +1,1 @@
+{"slug": "laws-zeckendorf", "seal": "99318c830d049f2d1de8a4a0bcacb8ee865c7c426a43106e1006d6ba74102d4b", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

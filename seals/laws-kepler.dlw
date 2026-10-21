@@ -1,0 +1,1 @@
+{"slug": "laws-kepler", "seal": "1d31b5eb605cdd76f39fba9b6583b52440ca8cb339d5095a7b3f77cfd00d90a6", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

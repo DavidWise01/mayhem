@@ -1,0 +1,1 @@
+{"slug": "laws-index", "seal": "a8fabde9ba5c9be7d8623ba2d242d1b0586b959f648621e39d1f36a38cc84af8", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

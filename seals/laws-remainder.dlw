@@ -1,0 +1,1 @@
+{"slug": "laws-remainder", "seal": "0fce8dbd67295ddf676fc1a77bf09257e4fd8782b8f2d91013c71d6c577c9543", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

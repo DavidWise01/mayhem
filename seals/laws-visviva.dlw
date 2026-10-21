@@ -1,0 +1,1 @@
+{"slug": "laws-visviva", "seal": "7698748a2d74e32d35e552d0e0dab28d7f21d1509ecf10f25b311fdcef643208", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

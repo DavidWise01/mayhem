@@ -1,0 +1,1 @@
+{"slug": "laws-hamilton", "seal": "d8e60f64c9e35e87834bbfe7f3f315dee403fc3c1a286d4d236b4bba679e0ecc", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

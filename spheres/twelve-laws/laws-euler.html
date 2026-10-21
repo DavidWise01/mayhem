@@ -1,0 +1,126 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Euler's Count · Twelve Laws · Mayhem</title>
+<style>
+body{margin:0;font:17px/1.55 Georgia,serif;color:#1a0a3a;background:#ece7ff}
+#art{position:fixed;inset:0;width:100vw;height:100vh;z-index:-1}
+main{max-width:940px;margin:4vh auto;padding:20px 26px;background:rgba(255,255,255,.9);border-radius:18px;box-shadow:0 0 0 3px #3a2a8a}
+h1{color:#3a2a8a;letter-spacing:.02em;margin:.2em 0}
+.t{display:inline-block;padding:1px 8px;border-radius:8px;font-weight:700;font-size:13px;color:#111}
+.LIT{background:#3ee07a}.AMBER{background:#ffb020}.WALL{background:#ff5a5a;color:#fff}.MODEL{background:#b48cff}
+a{color:#3a2a8a}code{word-break:break-all;font-size:12px}
+#v3{width:100%;height:560px;border-radius:16px;overflow:hidden;box-shadow:0 0 0 3px #7a5cff;background:#221848}
+#chart{width:100%;height:120px;border-radius:10px;background:#fff}
+#gal img{border-radius:8px;margin:3px;box-shadow:0 0 0 2px #7a5cff}
+section{background:#fffdf8;border:2px dashed #7a5cff;border-radius:14px;padding:10px 14px;margin:10px 0}
+button{background:#fff;color:#1a0a3a;border:2px solid #3a2a8a;border-radius:8px;padding:4px 10px;cursor:pointer}
+#board{font-family:ui-monospace,Consolas,monospace;font-size:13px;max-height:200px;overflow:auto;background:#fff;border-radius:10px;padding:8px 8px 8px 34px}
+.q{border-left:4px solid #7a5cff;padding:4px 12px;font-style:italic}
+.nd{display:inline-block;width:150px;font-size:12px;text-decoration:none;margin:4px;vertical-align:top;color:#1a0a3a}
+.th{width:150px;height:110px;overflow:hidden;border-radius:10px;position:relative;background:#ece7ff}
+.th iframe{width:600px;height:440px;transform:scale(.25);transform-origin:0 0;border:0;pointer-events:none;position:absolute}
+body.thumb section,body.thumb #chart,body.thumb #gal,body.thumb #board,body.thumb .essay,body.thumb .tools{display:none}
+body.thumb main{margin:0;padding:8px;max-width:none;background:#ece7ff;box-shadow:none}
+body.thumb #v3{height:78vh}
+@media (prefers-reduced-motion:reduce){#art{display:none}}
+</style></head><body><canvas id="art"></canvas><main>
+<p><span class="t MODEL">MODEL</span> TWELVE LAWS · under KEEPER ERIS</p>
+<h1>Euler's Count</h1>
+<p>Vertices minus edges plus faces is two for the tetrahedron, the cube and the icosahedron.</p>
+<div id="v3"></div>
+<p class="tools"><button id="pp">Pause</button> <button id="rs">Reseed</button> <button id="ej">Export training + workspace log (.json)</button> <button id="es">Export drawing (.svg)</button> <button id="eo">Export geometry (.obj)</button></p>
+<div class="essay">
+<p><span class="t LIT">LIT</span> Tetrahedron 4 − 6 + 4 = 2. Cube 8 − 12 + 6 = 2. Icosahedron 12 − 30 + 20 = 2. The page adds those integers. It does not ask the graphics library how many vertices it welded.</p>
+<p><span class="t AMBER">AMBER</span> Euler's formula for convex polyhedra, V − E + F = 2, dates to 1758. It fails for a torus (that characteristic is 0). These three solids are convex.</p>
+<p><span class="t MODEL">MODEL</span> An icosahedron, a cube and a tetrahedron share the room. The spin is only so the faces can be seen.</p>
+<section><h3>Sources <span class="t AMBER">AMBER</span></h3><ol><li><a href="https://en.wikipedia.org/wiki/Euler_characteristic" rel="noopener">Euler characteristic (reference)</a></li></ol></section>
+<p><span class="t LIT">LIT</span> on load: the identity is recomputed (it throws on mismatch), the training target scores 1, 200 rounds improve the shared sketch, the workspace loop logs 5 entries, and the OBJ and SVG exports match the sketch.</p>
+<canvas id="chart"></canvas>
+<p>Gallery of kept sketches:</p><div id="gal"></div>
+<section><h3>Workspace improvement loop <span class="t MODEL">MODEL</span></h3><ol>
+<li><b>Measure:</b> every 40 rounds, record the acceptance rate, the current score and how many rounds since the last improvement.</li>
+<li><b>Try next:</b> if the score has been flat for 40 rounds, widen the mutation step. If acceptance is under 15%, shrink it; over 45%, widen it. Otherwise keep it.</li>
+<li><b>Log back:</b> append {entry, round, measured, tried, step} to the workspace log (it is in the export JSON and the list below).</li>
+<li><b>Repeat:</b> re-check the identity before claiming it. The seal stays write-if-missing.</li>
+</ol><p>Live workspace log:</p><ol id="wslog" style="font-family:ui-monospace,Consolas,monospace;font-size:12px"></ol></section>
+<section><h3>Shared board <span class="t MODEL">MODEL</span></h3><p>localStorage key <code>mayhem-twelve-laws-board</code>. Each page writes its best shared reward.</p><ol id="coopb" style="font-family:ui-monospace,Consolas,monospace;font-size:12px"></ol><p id="team" style="font-family:ui-monospace,Consolas,monospace"></p></section>
+<script>function coop(v){try{const K='mayhem-twelve-laws-board',b=JSON.parse(localStorage.getItem(K)||'{}');if(!(b[SLUG]>=v)){b[SLUG]=+v.toFixed(4);localStorage.setItem(K,JSON.stringify(b))}showc()}catch(e){}}function showc(){try{const b=JSON.parse(localStorage.getItem('mayhem-twelve-laws-board')||'{}'),o=document.getElementById('coopb');if(!o)return;o.innerHTML='';const ks=Object.keys(b).sort((x,y)=>b[y]-b[x]);ks.forEach(k=>{const li=document.createElement('li');li.textContent=k+' · '+b[k];o.appendChild(li)});const team=document.getElementById('team');if(team)team.textContent='TEAM shared reward: '+ks.reduce((t,k)=>t+b[k],0).toFixed(3)+' across '+ks.length+' pages'}catch(e){}}addEventListener('storage',showc);addEventListener('load',showc)</script>
+<h3>Attempt board <span class="t MODEL">MODEL</span></h3><ol id="board"></ol>
+<p><a href="laws-kepler.html">← Kepler's Cubes</a> · <a href="index.html">Twelve Laws</a> · <a href="laws-fourier.html">One Fourier Bin →</a> · <a href="../../index.html">ERIS</a></p>
+<p>Background wash: <span class="t AMBER">AMBER</span> <span class="t MODEL">MODEL</span> a field seeded from this page's seal. The viewport is a deep colour, not black, over a vivid page.</p>
+<p id="proof">proving…</p>
+<p>Seal sha256(name|slug|blurb): <code id="seal">8310cd947c49c33ab48e79441cd1b386da2210a6f655d45a684ceae391a957d5</code></p>
+</div>
+</main>
+<script>
+const NAME="Euler's Count",SLUG="laws-euler",BLURB="Vertices minus edges plus faces is two for the tetrahedron, the cube and the icosahedron.",SEAL="8310cd947c49c33ab48e79441cd1b386da2210a6f655d45a684ceae391a957d5";
+function gcd(a,b){while(b){const t=b;b=a%b;a=t}return a}
+async function sha(t){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(t));return[...new Uint8Array(b)].map(v=>v.toString(16).padStart(2,'0')).join('')}
+let PROOF_FAIL=null;
+function paintProof(html,failed){const p=document.getElementById('proof');if(!p)return;if(failed)PROOF_FAIL=html;p.innerHTML=PROOF_FAIL||html}
+function post(s){const b=document.getElementById('board');if(!b)return;const li=document.createElement('li');li.textContent=s;b.appendChild(li);if(b.children.length>60)b.removeChild(b.firstChild);b.scrollTop=1e9}
+function art(seal,cv){const d=Math.min(devicePixelRatio||1,2),W=cv.clientWidth,H=cv.clientHeight;cv.width=W*d;cv.height=H*d;const x=cv.getContext('2d');x.scale(d,d);let s=parseInt(seal.slice(0,8),16)>>>0;const R=()=>(s=(s*1664525+1013904223)>>>0)/4294967296;const h0=252;const gr=x.createLinearGradient(0,0,W,H);gr.addColorStop(0,`hsl(${h0},85%,78%)`);gr.addColorStop(1,`hsl(${(h0+40)%360},90%,70%)`);x.fillStyle=gr;x.fillRect(0,0,W,H);for(let n=0;n<280;n++){let px=R()*W,py=R()*H;x.strokeStyle=`hsla(${h0},70%,40%,.28)`;x.lineWidth=.6+R()*1.4;x.beginPath();x.moveTo(px,py);for(let j=0;j<18;j++){const a=Math.sin(px/W*5)*Math.cos(py/H*4)*6.283;px+=Math.cos(a)*4;py+=Math.sin(a)*4;x.lineTo(px,py)}x.stroke()}}
+const TGT=[[1.25, 0.35, 0.0], [1.0113, 0.4927, 0.7347], [0.3863, 0.4382, 1.1888], [-0.3863, 0.2618, 1.1888], [-1.0113, 0.2073, 0.7347], [-1.25, 0.35, 0.0], [-1.0113, 0.4927, -0.7347], [-0.3863, 0.4382, -1.1888], [0.3863, 0.2618, -1.1888], [1.0113, 0.2073, -0.7347]];
+const KNOWN=TGT.flatMap(q=>q.map(v=>(v+2)/4));
+const N=10;
+const SP={P:30,names:Array.from({length:30},(_,i)=>'point '+(1+(i/3|0))+' '+'xyz'[i%3]),
+target:NAME+' sketch',known:KNOWN,
+pos:t=>Array.from({length:N},(_,i)=>[t[3*i]*4-2,t[3*i+1]*4-2,t[3*i+2]*4-2]),
+score(t){const p=this.pos(t);let e=0;p.forEach((q,i)=>e+=Math.hypot(q[0]-TGT[i][0],q[1]-TGT[i][1],q[2]-TGT[i][2]));e/=N;return{total:1/(1+2*e),parts:{e}}},
+crit:s=>'mean distance to the target '+s.parts.e.toFixed(3),
+geom(t){const p=this.pos(t).map(q=>q.map(v=>v*1.6));const balls=p.map((q,i)=>({p:q,r:0.16,c:i%3}));const links=[[0, 1], [1, 2], [2, 3], [3, 4], [4, 5], [5, 6], [6, 7], [7, 8], [8, 9], [9, 0]];return{balls,links}},
+fact(){const P={tetra:[4,6,4],cube:[8,12,6],icosa:[12,30,20]};const bits=[];for(const k in P){const [v,e,f]=P[k];const chi=v-e+f;if(chi!==2)throw Error(k+' '+chi);bits.push(k+' '+v+'-'+e+'+'+f+'=2')}return bits.join('; ')}
+};
+function rnd2(s){s=s>>>0;return()=>(s=(s*1664525+1013904223)>>>0)/4294967296}
+function mkLoop(seed){const R=rnd2(seed);let t=Array.from({length:SP.P},()=>R()),b=SP.score(t),step=.3,acc=0,tries=0,since=0,ws=[],h=[b.total],log=[],round=0;return{get t(){return t},get b(){return b},h,log,ws,get step(){return step},one(){round++;tries++;const m=t.slice(),ag=round%2,k=ag*15+((R()*15)|0);m[k]=Math.min(1,Math.max(0,m[k]+(R()-.5)*step));if(R()<.3){const j=(R()*SP.P)|0;m[j]=Math.min(1,Math.max(0,m[j]+(R()-.5)*step*.5))}const s=SP.score(m),ok=s.total>=b.total,imp=s.total>b.total+1e-9;log.push({agent:ag?'CRITIC':'ARTIST',round,param:SP.names[k],score:+s.total.toFixed(4),accepted:ok});if(ok){acc++;t=m;b=s}since=imp?0:since+1;h.push(b.total);if(h.length>600)h.shift();let w=null;if(round%40==0){const rate=acc/tries,old=step;let tr;if(since>=40){step=Math.min(.6,step*1.6);tr='plateau '+since+' rounds, widen mutation step'}else if(rate<.15){step=Math.max(.02,step*.6);tr='acceptance '+(rate*100).toFixed(0)+'% low, shrink step'}else if(rate>.45){step=Math.min(.6,step*1.3);tr='acceptance '+(rate*100).toFixed(0)+'% high, widen step'}else tr='acceptance '+(rate*100).toFixed(0)+'% , keep step';w={entry:ws.length+1,round,measured:{acceptance:+rate.toFixed(3),score:+b.total.toFixed(4),plateau:since},tried:tr,step:[+old.toFixed(3),+step.toFixed(3)]};ws.push(w);acc=0;tries=0}return{k,ag,s,ok,imp,w,m}}}}
+function toOBJ(G){let o='# '+SLUG+' Twelve Laws\n';G.balls.forEach(b=>o+=`v ${b.p.map(v=>v.toFixed(4)).join(' ')}\n`);G.links.forEach(([a,b])=>o+=`l ${a+1} ${b+1}\n`);return o}
+function toSVG(G){const P=b=>[200+b.p[0]*38,200-b.p[1]*38];let s='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><rect width="400" height="400" fill="#ece7ff"/>';G.links.forEach(([a,b])=>{const A=P(G.balls[a]),B=P(G.balls[b]);s+=`<line x1="${A[0].toFixed(1)}" y1="${A[1].toFixed(1)}" x2="${B[0].toFixed(1)}" y2="${B[1].toFixed(1)}" stroke="#3a2a8a" stroke-width="2"/>`});G.balls.forEach(b=>{const A=P(b);s+=`<circle cx="${A[0].toFixed(1)}" cy="${A[1].toFixed(1)}" r="6" fill="#7a5cff"/>`});return s+'</svg>'}
+function check(){const f=SP.fact();const g=SP.score(SP.known).total;if(g<.99)throw Error('known '+g);if(!(SP.score(SP.known.map(v=>1-v)).total<g))throw Error('order');const L=mkLoop(parseInt(SEAL.slice(0,8),16)),h0=L.b.total;for(let i=0;i<200;i++)L.one();if(!(L.b.total>h0))throw Error('no improvement');if(L.ws.length!==5)throw Error('ws '+L.ws.length);if(!['ARTIST','CRITIC'].every(a=>L.log.some(e=>e.agent===a&&e.accepted)))throw Error('agents');const G=SP.geom(L.t),o=toOBJ(G),nv=(o.match(/^v /gm)||[]).length,nl=(o.match(/^l /gm)||[]).length;if(nv!==G.balls.length||nl!==G.links.length)throw Error('obj');if(G.links.some(([a,b])=>a>=nv||b>=nv))throw Error('link');const sv=toSVG(G);if((sv.match(/<circle/g)||[]).length!==nv||(sv.match(/<line/g)||[]).length!==nl)throw Error('svg');return f+'; target scores 1; 200 rounds '+h0.toFixed(3)+' → '+L.b.total.toFixed(3)+'; workspace logged 5; ARTIST and CRITIC both accepted a move; OBJ+SVG '+nv+' points, '+nl+' links'}
+if(typeof module!=='undefined'){module.exports={check,SP,NAME,SLUG,BLURB,SEAL}}else(async()=>{if(/[?&]thumb=1/.test(location.search))document.body.classList.add('thumb');try{const h=await sha(NAME+'|'+SLUG+'|'+BLURB);if(h!==SEAL)throw Error('seal mismatch');const r=check();paintProof('<span class="t LIT">LIT</span> self-check passed: seal recomputed; '+r,false)}catch(e){paintProof('<span class="t WALL">FAIL</span> '+e.message,true);throw e}art(SEAL,document.getElementById('art'))})();
+</script>
+<script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}</script>
+<script type="module">
+import * as THREE from 'three';
+import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const box=document.getElementById('v3');
+const W=box.clientWidth||800,H=box.clientHeight||560;
+const R=new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true});
+R.setPixelRatio(Math.min(devicePixelRatio||1,2));
+R.setSize(W,H);
+box.appendChild(R.domElement);
+const S=new THREE.Scene();
+S.background=new THREE.Color(0x221848);
+S.fog=new THREE.FogExp2(0x221848,.045);
+const C=new THREE.PerspectiveCamera(50,W/Math.max(H,1),.1,80);
+C.position.set(6.2,4.4,7.2);
+C.lookAt(0,.3,0);
+const O=new OrbitControls(C,R.domElement);
+O.enableDamping=true;O.target.set(0,.3,0);O.autoRotate=!reduce;O.autoRotateSpeed=.35;
+S.add(new THREE.AmbientLight(0xffffff,.55));
+[[0x3a2a8a,5,3,4],[0x7a5cff,-5,2,-3]].forEach(([c,x,y,z])=>{const l=new THREE.PointLight(c,40,30);l.position.set(x,y,z);S.add(l)});
+function hero(THREE,S){const g=new THREE.Group();S.add(g);function wire(geo,color,x){const m=new THREE.Mesh(geo,new THREE.MeshStandardMaterial({color,emissive:color,emissiveIntensity:.25,roughness:.45,metalness:.1,flatShading:true}));const e=new THREE.LineSegments(new THREE.EdgesGeometry(geo),new THREE.LineBasicMaterial({color:0x1a0a3a}));m.add(e);m.position.x=x;g.add(m);return m}wire(new THREE.TetrahedronGeometry(.7,0),0xff8ad8,-2.3);wire(new THREE.BoxGeometry(1.15,1.15,1.15),0x7a5cff,0);wire(new THREE.IcosahedronGeometry(1.05,0),0xffe29a,2.3);g.userData.tick=(t,reduce)=>{g.rotation.y=reduce?0.4:t*0.25};return g}
+let HERO=null;
+try{HERO=hero(THREE,S)}catch(e){if(typeof paintProof==='function')paintProof('<span class="t WALL">FAIL</span> '+e.message,true);throw e}
+const ghost=new THREE.Group();
+TGT.forEach(q=>{const m=new THREE.Mesh(new THREE.SphereGeometry(.06,10,8),new THREE.MeshBasicMaterial({color:0xffffff,transparent:true,opacity:.35}));m.position.set(q[0],q[1]-2.15,q[2]);ghost.add(m)});
+S.add(ghost);
+const COL=[0x3a2a8a,0x7a5cff,0xffe29a];
+let grp=null;
+function build(t){if(grp)S.remove(grp);grp=new THREE.Group();grp.position.y=-2.15;const G=SP.geom(t);G.balls.forEach(b=>{const m=new THREE.Mesh(new THREE.SphereGeometry(1,18,12),new THREE.MeshStandardMaterial({color:COL[b.c%3],emissive:COL[b.c%3],emissiveIntensity:.35,roughness:.4}));m.position.set(b.p[0],b.p[1],b.p[2]);m.scale.setScalar(b.r);grp.add(m)});G.links.forEach(([a,b])=>{const A=new THREE.Vector3(...G.balls[a].p),B=new THREE.Vector3(...G.balls[b].p),Ln=A.distanceTo(B);const cy=new THREE.Mesh(new THREE.CylinderGeometry(.03,.03,Math.max(Ln,.001),8),new THREE.MeshStandardMaterial({color:0xffffff,emissive:0x3a2a8a,emissiveIntensity:.4}));cy.position.copy(A).add(B).multiplyScalar(.5);cy.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),B.clone().sub(A).normalize());grp.add(cy)});S.add(grp)}
+let seed=(Date.now()>>>0)||1,LP=mkLoop(seed),fr=0,play=!reduce;build(LP.t);post('CRITIC: target is the '+SP.target);
+const ch=document.getElementById('chart'),cx=ch.getContext('2d');ch.width=(ch.clientWidth||600)*2;ch.height=240;
+const pp=document.getElementById('pp');if(pp)pp.onclick=e=>{play=!play;e.target.textContent=play?'Pause':'Play'};
+const rs=document.getElementById('rs');if(rs)rs.onclick=()=>{seed=(Math.random()*4e9)>>>0;LP=mkLoop(seed);build(LP.t);post('ARTIST: fresh sketch.')};
+const dl=(n,s,ty)=>{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([s],{type:ty}));a.download=n;a.click()};
+document.getElementById('ej').onclick=()=>dl(SLUG+'-training.json',JSON.stringify({sphere:SLUG,seed,attempts:LP.log,workspace_log:LP.ws,best:LP.t},null,1),'application/json');
+document.getElementById('es').onclick=()=>dl(SLUG+'.svg',toSVG(SP.geom(LP.t)),'image/svg+xml');
+document.getElementById('eo').onclick=()=>dl(SLUG+'.obj',toOBJ(SP.geom(LP.t)),'text/plain');
+const gal=document.getElementById('gal');let lastG=0;
+function tick(){requestAnimationFrame(tick);
+if(play&&fr++%2==0){const r=LP.one();if(r.imp){build(LP.t);if(r.s.total>lastG+.02){lastG=r.s.total;post((r.ag?'CRITIC':'ARTIST')+': moved '+SP.names[r.k]+' , shared reward '+r.s.total.toFixed(3));if(window.coop)window.coop(r.s.total);post('CRITIC: '+SP.crit(r.s));R.render(S,C);const im=new Image();im.src=R.domElement.toDataURL('image/png');im.width=120;if(gal){gal.prepend(im);while(gal.children.length>6)gal.lastChild.remove()}}}if(r.w){post('WORKSPACE #'+r.w.entry+': '+r.w.tried);const li=document.createElement('li');li.textContent='#'+r.w.entry+' round '+r.w.round+': '+r.w.tried;const wl=document.getElementById('wslog');if(wl)wl.prepend(li)}}
+if(HERO&&HERO.userData.tick)HERO.userData.tick(performance.now()/1000,reduce);
+O.update();R.render(S,C);
+if(cx){cx.fillStyle='#fffdf8';cx.fillRect(0,0,ch.width,ch.height);cx.strokeStyle="#3a2a8a";cx.lineWidth=3;cx.beginPath();LP.h.forEach((v,i)=>{const X=i/Math.max(1,LP.h.length-1)*ch.width,Y=ch.height-10-v*(ch.height-20);i?cx.lineTo(X,Y):cx.moveTo(X,Y)});cx.stroke();cx.fillStyle='#1a0a3a';cx.font='22px Georgia';cx.fillText('score '+LP.b.total.toFixed(3)+'  step '+LP.step.toFixed(2),12,30)}}
+tick();
+</script>
+
+</body></html>

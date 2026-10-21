@@ -6169,5 +6169,121 @@
   "agents": "FOLLOWER+CRITIC",
   "main_index_cards": 1,
   "label": "MODEL axis mapping, show references and figure; LIT history with sources and live checks (axis colours, grayscale pixels, path follows time); WALL no show art or likeness"
+ },
+ "batch_twelve_laws": {
+  "said": [
+   "Dave: \"can you go to 0root.ai world mayhem and continue building spheres\""
+  ],
+  "folder": "spheres/twelve-laws",
+  "agents": "ARTIST+CRITIC",
+  "board": "mayhem-twelve-laws-board",
+  "main_index_cards": 13,
+  "label": "LIT identities recomputed on load (they throw); AMBER historical citations; MODEL sculptures. Vivid page grounds, deep-colour viewports. Three.js r160 from the pinned unpkg import map.",
+  "pages": [
+   {
+    "name": "Twelve Laws",
+    "slug": "laws-index",
+    "path": "spheres/twelve-laws/index.html",
+    "blurb": "Twelve 3D instruments under ERIS, each proving one classical identity on load: fifths, the twelfth root of two, Kepler, Euler, one Fourier bin, a quaternion turn, a slerp, Pick's area, Zeckendorf, a remainder bell, vis-viva, and the icosahedron's golden vertices.",
+    "seal": "a8fabde9ba5c9be7d8623ba2d242d1b0586b959f648621e39d1f36a38cc84af8",
+    "claim": "LIT identity · AMBER citation · MODEL sculpture"
+   },
+   {
+    "name": "The Fifths Ring",
+    "slug": "laws-fifths",
+    "path": "spheres/twelve-laws/laws-fifths.html",
+    "blurb": "Twelve pitches sit on a ring, and a step of seven semitones visits every pitch once before it returns.",
+    "seal": "3f0eb65eae44ebf340c058cf82adc4764ddb2207077d3d7cfa58241acffc4ba0",
+    "claim": "LIT identity · AMBER citation · MODEL sculpture"
+   },
+   {
+    "name": "The Twelfth Root",
+    "slug": "laws-twelfth",
+    "path": "spheres/twelve-laws/laws-twelfth.html",
+    "blurb": "Twelve equal semitones multiply to one octave, because the twelfth root of two, taken twelve times, is two.",
+    "seal": "c6a0b12ab7623dc56b1e79f0d6abd0ab34c9b1d66ee6f3243556cc0ff504290e",
+    "claim": "LIT identity · AMBER citation · MODEL sculpture"
+   },
+   {
+    "name": "Kepler's Cubes",
+    "slug": "laws-kepler",
+    "path": "spheres/twelve-laws/laws-kepler.html",
+    "blurb": "Under one sun, the square of a planet's period divided by the cube of its orbit matches the other planet's.",
+    "seal": "1d31b5eb605cdd76f39fba9b6583b52440ca8cb339d5095a7b3f77cfd00d90a6",
+    "claim": "LIT identity · AMBER citation · MODEL sculpture"
+   },
+   {
+    "name": "Euler's Count",
+    "slug": "laws-euler",
+    "path": "spheres/twelve-laws/laws-euler.html",
+    "blurb": "Vertices minus edges plus faces is two for the tetrahedron, the cube and the icosahedron.",
+    "seal": "8310cd947c49c33ab48e79441cd1b386da2210a6f655d45a684ceae391a957d5",
+    "claim": "LIT identity · AMBER citation · MODEL sculpture"
+   },
+   {
+    "name": "One Fourier Bin",
+    "slug": "laws-fourier",
+    "path": "spheres/twelve-laws/laws-fourier.html",
+    "blurb": "A pure 3-cycle wave on 32 samples puts its Fourier energy in bin 3 and bin 29, and nowhere else.",
+    "seal": "b0d13cbc7f66b6b104069207ffdd152196759d9a9abb064534600d68d0b73d1b",
+    "claim": "LIT identity · AMBER citation · MODEL sculpture"
+   },
+   {
+    "name": "Hamilton's Quarter Turn",
+    "slug": "laws-hamilton",
+    "path": "spheres/twelve-laws/laws-hamilton.html",
+    "blurb": "A unit quaternion turns a vector without changing its length, and a quarter turn about Y sends +X to -Z.",
+    "seal": "d8e60f64c9e35e87834bbfe7f3f315dee403fc3c1a286d4d236b4bba679e0ecc",
+    "claim": "LIT identity · AMBER citation · MODEL sculpture"
+   },
+   {
+    "name": "The Halfway Turn",
+    "slug": "laws-slerp",
+    "path": "spheres/twelve-laws/laws-slerp.html",
+    "blurb": "Halfway along the sphere from no turn to a half turn about X is a quarter turn about X, still of length one.",
+    "seal": "9c261d0b8f0110b4d3a9b22b0db339fe56db6e4d71baf944afbf79fad76768f2",
+    "claim": "LIT identity · AMBER citation · MODEL sculpture"
+   },
+   {
+    "name": "Pick's Lattice",
+    "slug": "laws-pick",
+    "path": "spheres/twelve-laws/laws-pick.html",
+    "blurb": "A 4 by 2 lattice rectangle has area 8, equal to its interior points plus half its boundary points, minus one.",
+    "seal": "987a4d3b90c24dc1366372187faac70b8ea99c0d87af0d054e100cc7ee3205c2",
+    "claim": "LIT identity · AMBER citation · MODEL sculpture"
+   },
+   {
+    "name": "Zeckendorf's Ladder",
+    "slug": "laws-zeckendorf",
+    "path": "spheres/twelve-laws/laws-zeckendorf.html",
+    "blurb": "Each integer from 1 to 40 is a sum of non-consecutive Fibonacci numbers in exactly one way.",
+    "seal": "99318c830d049f2d1de8a4a0bcacb8ee865c7c426a43106e1006d6ba74102d4b",
+    "claim": "LIT identity · AMBER citation · MODEL sculpture"
+   },
+   {
+    "name": "The Remainder Bell",
+    "slug": "laws-remainder",
+    "path": "spheres/twelve-laws/laws-remainder.html",
+    "blurb": "The only count below 105 that is 2 mod 3, 3 mod 5 and 2 mod 7 is 23, and those three moduli separate every count below 105.",
+    "seal": "0fce8dbd67295ddf676fc1a77bf09257e4fd8782b8f2d91013c71d6c577c9543",
+    "claim": "LIT identity · AMBER citation · MODEL sculpture"
+   },
+   {
+    "name": "Vis-Viva",
+    "slug": "laws-visviva",
+    "path": "spheres/twelve-laws/laws-visviva.html",
+    "blurb": "On an ellipse with a at 2 and e at 1/2, the speed law v squared equals GM times (2/r minus 1/a), and the energy matches minus GM over 2a.",
+    "seal": "7698748a2d74e32d35e552d0e0dab28d7f21d1509ecf10f25b311fdcef643208",
+    "claim": "LIT identity · AMBER citation · MODEL sculpture"
+   },
+   {
+    "name": "Golden Icosahedron",
+    "slug": "laws-icosa",
+    "path": "spheres/twelve-laws/laws-icosa.html",
+    "blurb": "Twelve vertices at the cyclic copies of (0, plus or minus 1, plus or minus phi) share one radius, meet in thirty edges, and phi squared equals phi plus one.",
+    "seal": "690bcc49df6403f9f2166b2909f8ca3b2c5bd9e0d33297c9d79371c54dcf6522",
+    "claim": "LIT identity · AMBER citation · MODEL sculpture"
+   }
+  ]
  }
 }

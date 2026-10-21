@@ -1,0 +1,1 @@
+{"slug": "laws-euler", "seal": "8310cd947c49c33ab48e79441cd1b386da2210a6f655d45a684ceae391a957d5", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

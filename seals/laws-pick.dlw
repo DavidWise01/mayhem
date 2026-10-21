@@ -1,0 +1,1 @@
+{"slug": "laws-pick", "seal": "987a4d3b90c24dc1366372187faac70b8ea99c0d87af0d054e100cc7ee3205c2", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

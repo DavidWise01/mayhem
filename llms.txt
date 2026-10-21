@@ -811,3 +811,20 @@ Dave t269 verbatim: "perfect, can you build your next 32 pages in mayhem, think 
 Dave t270 verbatim: "perfect , take this and center on camaron but have it move and follow her from say 1983 ish, have it be axes of gray/white/black"
 One page in spheres/hacf centred on Cameron Howe (Halt and Catch Fire). A follow camera rides her path from 1983 to about 1995 through seven eras (Cardiff/the Giant 1983, Mutiny in Texas 1985, the move to California 1986, the Atari years in Japan 1990, Pilgrim and the browser 1992, Rover/Comet 1994, the next thing 1995) with a scrubber, autoplay and era stops. Axes of gray/white/black (MODEL reading): white = x = time, gray = y = what she builds, black = z = what it costs her. All-grayscale scene and CRT pass, checked pixel by pixel. Original voxel figure, no likeness or show art. FOLLOWER tunes the camera, CRITIC scores test renders; exports JSON, SVG and OBJ (her path + the 3 axes). Real history LIT with sources; show events MODEL.
 - [33 · Following Cameron, 1983 → 1995](./spheres/hacf/hacf-cameron.html): spotlight, FOLLOWER+CRITIC, seal 0f96e34029bbc2ab26020a9d34f996fa38b4cc4ec941aed5988c211aa620978b
+
+## Twelve Laws (t271)
+Dave: "can you go to 0root.ai world mayhem and continue building spheres".
+Twelve instruments plus an index. Each page is a 3D art page (Three.js r160, DPR capped at 2, orbit controls) with ARTIST + CRITIC sharing one reward, the workspace loop, and JSON/SVG/OBJ export. The identity is LIT: it is recomputed on load and throws if it disagrees. Historical notes are AMBER citations. Sculptures are MODEL. Page grounds are vivid; the viewport is a deep colour rather than plain black. The sculpture sits above the essay so the keeper preview shows the instrument. Board key mayhem-twelve-laws-board. Seals are sha256(name|slug|blurb), write-if-missing.
+- [Twelve Laws](./spheres/twelve-laws/index.html): Twelve Laws. seal a8fabde9ba5c9be7d8623ba2d242d1b0586b959f648621e39d1f36a38cc84af8
+- [The Fifths Ring](./spheres/twelve-laws/laws-fifths.html): Twelve Laws. seal 3f0eb65eae44ebf340c058cf82adc4764ddb2207077d3d7cfa58241acffc4ba0
+- [The Twelfth Root](./spheres/twelve-laws/laws-twelfth.html): Twelve Laws. seal c6a0b12ab7623dc56b1e79f0d6abd0ab34c9b1d66ee6f3243556cc0ff504290e
+- [Kepler's Cubes](./spheres/twelve-laws/laws-kepler.html): Twelve Laws. seal 1d31b5eb605cdd76f39fba9b6583b52440ca8cb339d5095a7b3f77cfd00d90a6
+- [Euler's Count](./spheres/twelve-laws/laws-euler.html): Twelve Laws. seal 8310cd947c49c33ab48e79441cd1b386da2210a6f655d45a684ceae391a957d5
+- [One Fourier Bin](./spheres/twelve-laws/laws-fourier.html): Twelve Laws. seal b0d13cbc7f66b6b104069207ffdd152196759d9a9abb064534600d68d0b73d1b
+- [Hamilton's Quarter Turn](./spheres/twelve-laws/laws-hamilton.html): Twelve Laws. seal d8e60f64c9e35e87834bbfe7f3f315dee403fc3c1a286d4d236b4bba679e0ecc
+- [The Halfway Turn](./spheres/twelve-laws/laws-slerp.html): Twelve Laws. seal 9c261d0b8f0110b4d3a9b22b0db339fe56db6e4d71baf944afbf79fad76768f2
+- [Pick's Lattice](./spheres/twelve-laws/laws-pick.html): Twelve Laws. seal 987a4d3b90c24dc1366372187faac70b8ea99c0d87af0d054e100cc7ee3205c2
+- [Zeckendorf's Ladder](./spheres/twelve-laws/laws-zeckendorf.html): Twelve Laws. seal 99318c830d049f2d1de8a4a0bcacb8ee865c7c426a43106e1006d6ba74102d4b
+- [The Remainder Bell](./spheres/twelve-laws/laws-remainder.html): Twelve Laws. seal 0fce8dbd67295ddf676fc1a77bf09257e4fd8782b8f2d91013c71d6c577c9543
+- [Vis-Viva](./spheres/twelve-laws/laws-visviva.html): Twelve Laws. seal 7698748a2d74e32d35e552d0e0dab28d7f21d1509ecf10f25b311fdcef643208
+- [Golden Icosahedron](./spheres/twelve-laws/laws-icosa.html): Twelve Laws. seal 690bcc49df6403f9f2166b2909f8ca3b2c5bd9e0d33297c9d79371c54dcf6522

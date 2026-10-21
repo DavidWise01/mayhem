@@ -1,0 +1,1 @@
+{"slug": "laws-icosa", "seal": "690bcc49df6403f9f2166b2909f8ca3b2c5bd9e0d33297c9d79371c54dcf6522", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
