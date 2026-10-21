@@ -1,0 +1,1 @@
+{"slug": "sand-pendulum", "seal": "cb8dc2272eba1da022d0d18e109fd97e29c90851dfa081663a9bfa4e1d3c454a", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

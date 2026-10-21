@@ -836,3 +836,11 @@ Every Mayhem HTML page wears that shell. Twelve Laws use the two panels: analyti
 ## Cubit register
 Dave: "yes but each page needs to be {{ geomettric, constructive , agentic , generative }} use the cubis to biuld a register".
 Each page is `{{ geometric, constructive, agentic, generative }}`. The four cubits are pushed, in that order, into one register. Geometric counts canvases, svgs and the measured box. Constructive counts the nodes and buttons already built. Agentic names the roles on the page (or REGISTER) and accepts the write. Generative folds those three into one code. The register is the four texts joined. Rebuilding generative from the same three cubits must match, or the page throws. A row is kept in this browser under mayhem-cubit-register (AMBER: that count is local). Thumbnail views skip it. Seals were not rewritten.
+
+## Elsewhere
+Dave: "nice, now make anything you want in the mayhem world, each page should be dif art and topic then the last though".
+Four places. Each picture and each subject is different from the Twelve Laws instruments and from the page before it. The Kelvin Wake is night water and foam. The Wax Comb is honey cells. The Sand Pendulum is a stone hall. The Paper Alley is paper lanterns. Identities are LIT and recomputed on load. Citations are AMBER. Sculptures are MODEL. Each page still builds the cubit register. Thumbnail views skip the register. Seals were not rewritten. Board key mayhem-elsewhere-board.
+- [The Kelvin Wake](./spheres/elsewhere/kelvin-wake.html): Elsewhere. seal 833db86d6f7f6abc0aaa55648e5f5001f613e9c0c92d0d0d2db576117ec9df8a
+- [The Wax Comb](./spheres/elsewhere/wax-comb.html): Elsewhere. seal 2b5d2480119eb4e374e41eeeea3931fb4f177ea6d5e665a6a2b45c28d4999cf5
+- [The Sand Pendulum](./spheres/elsewhere/sand-pendulum.html): Elsewhere. seal cb8dc2272eba1da022d0d18e109fd97e29c90851dfa081663a9bfa4e1d3c454a
+- [The Paper Alley](./spheres/elsewhere/paper-alley.html): Elsewhere. seal d89cfecb0fccac1b9c99da94b84cb5fb66e0465fab0cc5664090dce0e407cc34

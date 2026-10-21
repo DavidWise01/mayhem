@@ -1,0 +1,1 @@
+{"slug": "kelvin-wake", "seal": "833db86d6f7f6abc0aaa55648e5f5001f613e9c0c92d0d0d2db576117ec9df8a", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

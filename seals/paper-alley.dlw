@@ -1,0 +1,1 @@
+{"slug": "paper-alley", "seal": "d89cfecb0fccac1b9c99da94b84cb5fb66e0465fab0cc5664090dce0e407cc34", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "wax-comb", "seal": "2b5d2480119eb4e374e41eeeea3931fb4f177ea6d5e665a6a2b45c28d4999cf5", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
