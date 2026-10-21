@@ -73,4 +73,102 @@ function finish(a,post){a.rec.push(a.sc);post&&post(`${a.n} (${lvl(a.sc)}): ${a.
 function check(){const sq=rast(T1.square);if(iou(sq,sq)!==1)throw Error('iou same');const L=rast((x,y)=>x<.3),Rr=rast((x,y)=>x>.7);if(iou(L,Rr)!==0)throw Error('iou disjoint');const a=agent('test',rnd(parseInt(SEAL.slice(0,8),16)));const seq=[];a.ti=0;for(const k of['square','hexagon','square']){a.ti=Object.keys(T1).indexOf(k);setT(a);improve(a,2500);if(a.stage!==1)throw Error('early unlock');seq.push(a.sc);finish(a)}if(seq.some(s=>s<TH1))throw Error('stage1 '+seq.map(v=>v.toFixed(2)));if(a.stage!==2)throw Error('no unlock');improve(a,1500);if(!a.ps.every(p=>p.k=='circ'))throw Error('non-circle in stage 2');return 'IoU same=1, disjoint=0; stage-1 IoUs '+seq.map(v=>v.toFixed(3)).join(', ')+' ≥ 0.80 → unlock; stage 2 '+a.tk+' with '+a.ps.length+' circles only, IoU '+a.sc.toFixed(3)}
 function sim(x,w,h){const R=rnd(Date.now()),A=['Kid','Rookie','Regular','Ace'].map((n,i)=>{const a=agent(n,rnd((R()*4e9)>>>0));a.ti=i;setT(a);return a}),C=['#ff3d7f','#2a7bff','#16c47f','#ff9f1c'];return()=>{for(const a of A){improve(a,6);if(a.it>=1800)finish(a,post)}bg(x,w,h,'#fff3c7','#e0ecff');const pw=w/4,s=Math.min(pw-12,h-60);A.forEach((a,i)=>{const ox=i*pw+6,oy=30;x.fillStyle='#fff';x.fillRect(ox,oy,s,s);for(let j=0;j<G*G;j++)if(a.tm[j]){x.fillStyle='rgba(122,44,255,.18)';x.fillRect(ox+(j%G)*s/G,oy+(j/G|0)*s/G,s/G,s/G)}x.globalAlpha=.55;a.ps.forEach((p,k)=>{x.fillStyle=`hsl(${(i*90+k*35)%360},90%,55%)`;x.beginPath();if(p.k=='tri'){p.v.forEach((v,q)=>q?x.lineTo(ox+v[0]*s,oy+v[1]*s):x.moveTo(ox+v[0]*s,oy+v[1]*s));x.closePath()}else x.arc(ox+p.c[0]*s,oy+p.c[1]*s,p.r*s,0,7);x.fill()});x.globalAlpha=1;x.fillStyle=C[i];x.font='bold 13px sans-serif';x.fillText(`${a.n} · ${lvl(a.sc)} · stage ${a.stage}`,ox,18);x.fillStyle='#1a0a3a';x.font='12px sans-serif';x.fillText(`${a.tk}: IoU ${a.sc.toFixed(2)} (${a.stage==1?'triangles':'circles'})`,ox,oy+s+16)})}}
 (async()=>{const p=document.getElementById('proof');try{const h=await sha(NAME+'|'+SLUG+'|'+BLURB);if(h!==SEAL)throw Error('seal mismatch');const r=(typeof check==='function')?check():'';p.innerHTML='<span class="t LIT">LIT</span> self-check passed: seal recomputed'+(r?'; '+r:'');}catch(e){p.innerHTML='<span class="t WALL">FAIL</span> '+e.message;throw e}
-art(SEAL,document.getElementById('art'));const c=document.getElementById('sim');if(c&&typeof sim==='function'){const d=devicePixelRatio||1;c.width=c.clientWidth*d;c.height=c.clientHeight*d;const x=c.getContext('2d');x.scale(d,d);const f=sim(x,c.clientWidth,c.clientHeight);(function L(){f();requestAnimationFrame(L)})()}})();</script></body></html>
+art(SEAL,document.getElementById('art'));const c=document.getElementById('sim');if(c&&typeof sim==='function'){const d=devicePixelRatio||1;c.width=c.clientWidth*d;c.height=c.clientHeight*d;const x=c.getContext('2d');x.scale(d,d);const f=sim(x,c.clientWidth,c.clientHeight);(function L(){f();requestAnimationFrame(L)})()}})();</script><script id="cubit-register-boot">
+(function(){
+  if(/[?&]thumb=1/.test(location.search)) return;
+  if(document.getElementById('cubit-register')) return;
+  const ORDER=['geometric','constructive','agentic','generative'];
+  const ROLES=['ARTIST','CRITIC','BUILDER','WEAVER','FOLLOWER','KEEPER'];
+  const KEY='mayhem-cubit-register';
+  function slug(){
+    for(const sc of document.scripts){
+      const m=/const SLUG="([^"]+)"/.exec(sc.textContent||'');
+      if(m) return m[1];
+    }
+    return (location.pathname.replace(/^\//,'').replace(/\.html$/i,''))||'index';
+  }
+  function geometric(){
+    let canvases=0, svgs=0, w=0, h=0;
+    document.querySelectorAll('canvas').forEach(el=>{ canvases++; w=Math.max(w, el.clientWidth|0); h=Math.max(h, el.clientHeight|0); });
+    document.querySelectorAll('svg').forEach(el=>{ svgs++; w=Math.max(w, el.clientWidth|0); h=Math.max(h, el.clientHeight|0); });
+    const v3=document.getElementById('v3');
+    if(v3){ w=Math.max(w, v3.clientWidth|0); h=Math.max(h, v3.clientHeight|0); }
+    if(!w){ w=document.documentElement.clientWidth|0; h=document.documentElement.clientHeight|0; }
+    return {name:'geometric', text:canvases+'c+'+svgs+'s·'+w+'x'+h, canvases, svgs, w, h};
+  }
+  function constructive(host){
+    const nodes=host.querySelectorAll('*').length, buttons=host.querySelectorAll('button').length;
+    return {name:'constructive', text:nodes+'n·'+buttons+'b', nodes, buttons};
+  }
+  function agentic(host, c){
+    const text=host.innerText||'';
+    const found=ROLES.filter(r=>text.indexOf(r)!==-1);
+    const agents=found.length?found:['REGISTER'];
+    return {name:'agentic', text:agents.join('+'), agents, accepted:c.nodes>0};
+  }
+  function generative(g,c,a){
+    const s=g.text+'|'+c.text+'|'+a.text;
+    let x=2166136261;
+    for(let i=0;i<s.length;i++) x=Math.imul(x^s.charCodeAt(i), 16777619);
+    const code=(x>>>0).toString(16).padStart(8,'0');
+    return {name:'generative', text:code, code};
+  }
+  function build(host){
+    const register=[];
+    const g=geometric(); register.push(g);
+    const c=constructive(host); register.push(c);
+    const a=agentic(host,c); register.push(a);
+    register.push(generative(g,c,a));
+    return register;
+  }
+  function assertReg(register){
+    if(register.length!==4) throw Error('register length '+register.length);
+    if(register.map(x=>x.name).join(',')!==ORDER.join(',')) throw Error('cubit order');
+    if(register.some(x=>!x.text)) throw Error('empty cubit');
+    if(!register[2].accepted) throw Error('agent refused the register');
+    const again=generative(register[0], register[1], register[2]);
+    if(again.code!==register[3].code) throw Error('register drift');
+    return register.map(x=>x.text).join(' | ');
+  }
+  function remember(id, word){
+    let book={};
+    try{ book=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){ book={}; }
+    book[id]={word};
+    try{ localStorage.setItem(KEY, JSON.stringify(book)); }catch(e){}
+    return Object.keys(book).length;
+  }
+  function mount(register, err, rows){
+    let el=document.getElementById('cubit-register');
+    if(!el){
+      const style=document.createElement('style');
+      style.textContent='#cubit-register{margin:18px 0;padding:14px 12px 12px;border:1px solid rgba(0,240,255,.28);border-radius:14px;background:rgba(5,8,16,.78);box-shadow:0 0 28px rgba(0,240,255,.08);color:#d7e3f5;text-align:left;font-family:ui-monospace,Menlo,monospace}#cubit-register .cr-formula{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#eaf6ff;text-shadow:0 0 8px #00f0ff;margin:0 0 10px}#cubit-register .cr-row{display:flex;gap:8px;flex-wrap:wrap}#cubit-register .cr-cubit{flex:1 1 140px;border:1px solid rgba(0,240,255,.25);border-radius:10px;padding:8px;background:rgba(0,0,0,.35)}#cubit-register .cr-cubit b{display:block;font-weight:400;font-size:10px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:4px}#cubit-register .cr-cubit[data-cubit=geometric] b{color:#00f0ff}#cubit-register .cr-cubit[data-cubit=constructive] b{color:#ffb300}#cubit-register .cr-cubit[data-cubit=agentic] b{color:#ff2bd6}#cubit-register .cr-cubit[data-cubit=generative] b{color:#eaf6ff}#cubit-register .cr-cubit i{font-style:normal;font-size:13px;color:#eaf6ff}#cubit-register .cr-word{margin-top:10px;font-size:12px;color:#ffb3ec;word-break:break-all}#cubit-register .cr-status{margin-top:8px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#8fa3c7}body.thumb #cubit-register{display:none}';
+      document.head.appendChild(style);
+      el=document.createElement('section');
+      el.id='cubit-register';
+      el.setAttribute('aria-label','cubit register');
+      const host=document.getElementById('wrap')||document.querySelector('main')||document.body;
+      const h=host.querySelector('h1');
+      if(h) h.insertAdjacentElement('afterend', el);
+      else host.insertBefore(el, host.firstChild);
+    }
+    const cells=(register||ORDER.map(name=>({name,text:'—'}))).map(x=>'<div class="cr-cubit" data-cubit="'+x.name+'"><b>'+x.name+'</b><i>'+x.text+'</i></div>').join('');
+    const word=err?'':register.map(x=>x.text).join(' | ');
+    el.innerHTML='<div class="cr-formula">{{ geometric, constructive, agentic, generative }}</div><div class="cr-row">'+cells+'</div><div class="cr-word">'+(err?'':'REGISTER '+word)+'</div><div class="cr-status">'+(err?'FAIL '+err.message:'LIT four cubits wrote the register · AMBER this browser holds '+rows+' rows')+'</div>';
+  }
+  function run(){
+    const host=document.getElementById('wrap')||document.querySelector('main')||document.body;
+    try{
+      const register=build(host);
+      const word=assertReg(register);
+      const rows=remember(slug(), word);
+      mount(register, null, rows);
+    }catch(e){
+      mount(null, e, 0);
+      throw e;
+    }
+  }
+  requestAnimationFrame(run);
+})();
+
+</script>
+</body></html>

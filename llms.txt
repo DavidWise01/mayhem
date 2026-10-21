@@ -832,3 +832,7 @@ Twelve instruments plus an index. Each page is a 3D art page (Three.js r160, DPR
 ## Cubit neon shell
 Dave: "build all pages like this", with the cubit analytical · neon page (dark stage, cyan and pink, two panels).
 Every Mayhem HTML page wears that shell. Twelve Laws use the two panels: analytical holds the proof, neon holds the sculpture (`{{ act || react || change }}`). Seals were not rewritten. The sample page's cartridge was not copied onto the spheres. Gray, white and black instruments (the Cameron axes, the screening-room snippet) stay in their canvases.
+
+## Cubit register
+Dave: "yes but each page needs to be {{ geomettric, constructive , agentic , generative }} use the cubis to biuld a register".
+Each page is `{{ geometric, constructive, agentic, generative }}`. The four cubits are pushed, in that order, into one register. Geometric counts canvases, svgs and the measured box. Constructive counts the nodes and buttons already built. Agentic names the roles on the page (or REGISTER) and accepts the write. Generative folds those three into one code. The register is the four texts joined. Rebuilding generative from the same three cubits must match, or the page throws. A row is kept in this browser under mayhem-cubit-register (AMBER: that count is local). Thumbnail views skip it. Seals were not rewritten.

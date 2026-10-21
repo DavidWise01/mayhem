@@ -52,4 +52,102 @@ function grow(R,n,N,cb){const S=n,G=new Uint8Array(S*S),c=S>>1,P=[[c,c]];G[c*S+c
 function check(){const R=rnd(parseInt(SEAL.slice(0,8),16)),{G,P,c}=grow(R,301,1200),S=301,seen=new Set([c*S+c]);for(const[x,y]of P.slice(1)){const k=y*S+x;if(![k+1,k-1,k+S,k-S].some(j=>seen.has(j)))throw Error('disconnected');seen.add(k)}const rs=[4,8,16,32],ms=rs.map(r=>P.filter(([x,y])=>Math.hypot(x-c,y-c)<=r).length);const lx=rs.map(Math.log),ly=ms.map(Math.log),mx=lx.reduce((a,b)=>a+b)/4,my=ly.reduce((a,b)=>a+b)/4;let num=0,den=0;for(let i=0;i<4;i++){num+=(lx[i]-mx)*(ly[i]-my);den+=(lx[i]-mx)**2}const D=num/den;if(!(D>1.4&&D<2))throw Error('D '+D);return '1200 particles connected; mass–radius D = '+D.toFixed(2)}
 function sim(x,w,h){let R=rnd(Date.now()),S=301,c=150,G=new Uint8Array(S*S),cnt=1,rmax=1,t=0;G[c*S+c]=1;const W=Array.from({length:60},()=>null);const launch=()=>{const a=R()*6.283,r0=rmax+5;return[Math.round(c+r0*Math.cos(a)),Math.round(c+r0*Math.sin(a))]};bg(x,w,h,'#d6f5ff','#ffe2f0');const cs=Math.min(w,h)/S,o=(w-cs*S)/2;return()=>{t++;for(let k=0;k<400;k++)for(let i=0;i<W.length;i++){let p=W[i]||(W[i]=launch());const d=[[1,0],[-1,0],[0,1],[0,-1]][(R()*4)|0];p[0]+=d[0];p[1]+=d[1];const rr=Math.hypot(p[0]-c,p[1]-c);if(rr>rmax+20||p[0]<1||p[1]<1||p[0]>S-2||p[1]>S-2){W[i]=null;continue}const q=p[1]*S+p[0];if(G[q+1]||G[q-1]||G[q+S]||G[q-S]){G[q]=1;cnt++;rmax=Math.max(rmax,rr);x.fillStyle=`hsl(${(cnt/12)%360},90%,50%)`;x.fillRect(o+p[0]*cs,p[1]*cs,cs+.6,cs+.6);W[i]=null;if(cnt%400==0)post(`colonist #${cnt} stuck at radius ${rr.toFixed(0)}`)}}if(rmax>S/2-25){G.fill(0);G[c*S+c]=1;cnt=1;rmax=1;bg(x,w,h,'#d6f5ff','#ffe2f0');post('--- new reef ---')}}}
 (async()=>{const p=document.getElementById('proof');try{const h=await sha(NAME+'|'+SLUG+'|'+BLURB);if(h!==SEAL)throw Error('seal mismatch');const r=(typeof check==='function')?check():'';p.innerHTML='<span class="t LIT">LIT</span> self-check passed: seal recomputed'+(r?'; '+r:'');}catch(e){p.innerHTML='<span class="t WALL">FAIL</span> '+e.message;throw e}
-art(SEAL,document.getElementById('art'));const c=document.getElementById('sim');if(c&&typeof sim==='function'){const d=devicePixelRatio||1;c.width=c.clientWidth*d;c.height=c.clientHeight*d;const x=c.getContext('2d');x.scale(d,d);const f=sim(x,c.clientWidth,c.clientHeight);(function L(){f();requestAnimationFrame(L)})()}})();</script></body></html>
+art(SEAL,document.getElementById('art'));const c=document.getElementById('sim');if(c&&typeof sim==='function'){const d=devicePixelRatio||1;c.width=c.clientWidth*d;c.height=c.clientHeight*d;const x=c.getContext('2d');x.scale(d,d);const f=sim(x,c.clientWidth,c.clientHeight);(function L(){f();requestAnimationFrame(L)})()}})();</script><script id="cubit-register-boot">
+(function(){
+  if(/[?&]thumb=1/.test(location.search)) return;
+  if(document.getElementById('cubit-register')) return;
+  const ORDER=['geometric','constructive','agentic','generative'];
+  const ROLES=['ARTIST','CRITIC','BUILDER','WEAVER','FOLLOWER','KEEPER'];
+  const KEY='mayhem-cubit-register';
+  function slug(){
+    for(const sc of document.scripts){
+      const m=/const SLUG="([^"]+)"/.exec(sc.textContent||'');
+      if(m) return m[1];
+    }
+    return (location.pathname.replace(/^\//,'').replace(/\.html$/i,''))||'index';
+  }
+  function geometric(){
+    let canvases=0, svgs=0, w=0, h=0;
+    document.querySelectorAll('canvas').forEach(el=>{ canvases++; w=Math.max(w, el.clientWidth|0); h=Math.max(h, el.clientHeight|0); });
+    document.querySelectorAll('svg').forEach(el=>{ svgs++; w=Math.max(w, el.clientWidth|0); h=Math.max(h, el.clientHeight|0); });
+    const v3=document.getElementById('v3');
+    if(v3){ w=Math.max(w, v3.clientWidth|0); h=Math.max(h, v3.clientHeight|0); }
+    if(!w){ w=document.documentElement.clientWidth|0; h=document.documentElement.clientHeight|0; }
+    return {name:'geometric', text:canvases+'c+'+svgs+'s·'+w+'x'+h, canvases, svgs, w, h};
+  }
+  function constructive(host){
+    const nodes=host.querySelectorAll('*').length, buttons=host.querySelectorAll('button').length;
+    return {name:'constructive', text:nodes+'n·'+buttons+'b', nodes, buttons};
+  }
+  function agentic(host, c){
+    const text=host.innerText||'';
+    const found=ROLES.filter(r=>text.indexOf(r)!==-1);
+    const agents=found.length?found:['REGISTER'];
+    return {name:'agentic', text:agents.join('+'), agents, accepted:c.nodes>0};
+  }
+  function generative(g,c,a){
+    const s=g.text+'|'+c.text+'|'+a.text;
+    let x=2166136261;
+    for(let i=0;i<s.length;i++) x=Math.imul(x^s.charCodeAt(i), 16777619);
+    const code=(x>>>0).toString(16).padStart(8,'0');
+    return {name:'generative', text:code, code};
+  }
+  function build(host){
+    const register=[];
+    const g=geometric(); register.push(g);
+    const c=constructive(host); register.push(c);
+    const a=agentic(host,c); register.push(a);
+    register.push(generative(g,c,a));
+    return register;
+  }
+  function assertReg(register){
+    if(register.length!==4) throw Error('register length '+register.length);
+    if(register.map(x=>x.name).join(',')!==ORDER.join(',')) throw Error('cubit order');
+    if(register.some(x=>!x.text)) throw Error('empty cubit');
+    if(!register[2].accepted) throw Error('agent refused the register');
+    const again=generative(register[0], register[1], register[2]);
+    if(again.code!==register[3].code) throw Error('register drift');
+    return register.map(x=>x.text).join(' | ');
+  }
+  function remember(id, word){
+    let book={};
+    try{ book=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){ book={}; }
+    book[id]={word};
+    try{ localStorage.setItem(KEY, JSON.stringify(book)); }catch(e){}
+    return Object.keys(book).length;
+  }
+  function mount(register, err, rows){
+    let el=document.getElementById('cubit-register');
+    if(!el){
+      const style=document.createElement('style');
+      style.textContent='#cubit-register{margin:18px 0;padding:14px 12px 12px;border:1px solid rgba(0,240,255,.28);border-radius:14px;background:rgba(5,8,16,.78);box-shadow:0 0 28px rgba(0,240,255,.08);color:#d7e3f5;text-align:left;font-family:ui-monospace,Menlo,monospace}#cubit-register .cr-formula{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#eaf6ff;text-shadow:0 0 8px #00f0ff;margin:0 0 10px}#cubit-register .cr-row{display:flex;gap:8px;flex-wrap:wrap}#cubit-register .cr-cubit{flex:1 1 140px;border:1px solid rgba(0,240,255,.25);border-radius:10px;padding:8px;background:rgba(0,0,0,.35)}#cubit-register .cr-cubit b{display:block;font-weight:400;font-size:10px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:4px}#cubit-register .cr-cubit[data-cubit=geometric] b{color:#00f0ff}#cubit-register .cr-cubit[data-cubit=constructive] b{color:#ffb300}#cubit-register .cr-cubit[data-cubit=agentic] b{color:#ff2bd6}#cubit-register .cr-cubit[data-cubit=generative] b{color:#eaf6ff}#cubit-register .cr-cubit i{font-style:normal;font-size:13px;color:#eaf6ff}#cubit-register .cr-word{margin-top:10px;font-size:12px;color:#ffb3ec;word-break:break-all}#cubit-register .cr-status{margin-top:8px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#8fa3c7}body.thumb #cubit-register{display:none}';
+      document.head.appendChild(style);
+      el=document.createElement('section');
+      el.id='cubit-register';
+      el.setAttribute('aria-label','cubit register');
+      const host=document.getElementById('wrap')||document.querySelector('main')||document.body;
+      const h=host.querySelector('h1');
+      if(h) h.insertAdjacentElement('afterend', el);
+      else host.insertBefore(el, host.firstChild);
+    }
+    const cells=(register||ORDER.map(name=>({name,text:'—'}))).map(x=>'<div class="cr-cubit" data-cubit="'+x.name+'"><b>'+x.name+'</b><i>'+x.text+'</i></div>').join('');
+    const word=err?'':register.map(x=>x.text).join(' | ');
+    el.innerHTML='<div class="cr-formula">{{ geometric, constructive, agentic, generative }}</div><div class="cr-row">'+cells+'</div><div class="cr-word">'+(err?'':'REGISTER '+word)+'</div><div class="cr-status">'+(err?'FAIL '+err.message:'LIT four cubits wrote the register · AMBER this browser holds '+rows+' rows')+'</div>';
+  }
+  function run(){
+    const host=document.getElementById('wrap')||document.querySelector('main')||document.body;
+    try{
+      const register=build(host);
+      const word=assertReg(register);
+      const rows=remember(slug(), word);
+      mount(register, null, rows);
+    }catch(e){
+      mount(null, e, 0);
+      throw e;
+    }
+  }
+  requestAnimationFrame(run);
+})();
+
+</script>
+</body></html>
