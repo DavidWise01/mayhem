@@ -1,5 +1,47 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Punch-Out Tells · The Rose Triad as a Signaling Game · Game Theory & Sapphons · Mayhem</title>
-<style>body{margin:0;font:16px/1.6 'Arial Black','Helvetica Neue',sans-serif;color:#ffe9f2;background:#1a0010}#art{position:fixed;inset:0;width:100vw;height:100vh;z-index:-1}main{max-width:960px;margin:4vh auto;padding:20px 28px;background:rgba(36,0,22,.9);border-radius:18px;box-shadow:0 0 0 2px #ff7fb0,0 0 44px #7fe8ff66}h1{color:#ff7fb0;margin:.2em 0}.t{display:inline-block;padding:1px 8px;border-radius:8px;font-weight:700;font-size:12px;color:#111;font-family:system-ui,sans-serif;font-style:normal}.LIT{background:#3ee07a}.AMBER{background:#ffb020}.WALL{background:#ff5a5a;color:#fff}.MODEL{background:#b48cff}a{color:#7fe8ff}code{word-break:break-all;font-size:12px}#v3{width:100%;height:540px;border-radius:16px;overflow:hidden;box-shadow:0 0 0 2px #ff7fb0}#chart{width:100%;height:120px;border-radius:10px}#gal img{border-radius:8px;margin:3px;box-shadow:0 0 8px #ff7fb0}section{background:rgba(127,127,127,.12);border:2px dashed #7fe8ff;border-radius:14px;padding:10px 14px;margin:12px 0}section.lab{border-style:solid;border-color:#ff7fb0}section.eng{border-style:dotted}button,select,input[type=text],input:not([type]){background:rgba(0,0,0,.35);color:inherit;border:1px solid #ff7fb0;border-radius:8px;padding:4px 10px;cursor:pointer;font:inherit;font-size:14px}#board{font-family:monospace;font-size:12.5px;max-height:220px;overflow:auto;background:rgba(0,0,0,.45);color:#eee;border-radius:10px;padding:8px 8px 8px 34px}.q{border-left:4px solid #ff7fb0;padding:4px 12px;font-style:italic}.lede{font-size:18px}canvas{max-width:100%}h1{text-shadow:3px 3px 0 #7fe8ff;font-size:34px}</style></head><body><canvas id="art"></canvas><main>
+<style>body{margin:0;font:16px/1.6 'Arial Black','Helvetica Neue',sans-serif;color:#ffe9f2;background:#1a0010}#art{position:fixed;inset:0;width:100vw;height:100vh;z-index:-1}main{max-width:960px;margin:4vh auto;padding:20px 28px;background:rgba(36,0,22,.9);border-radius:18px;box-shadow:0 0 0 2px #ff7fb0,0 0 44px #7fe8ff66}h1{color:#ff7fb0;margin:.2em 0}.t{display:inline-block;padding:1px 8px;border-radius:8px;font-weight:700;font-size:12px;color:#111;font-family:system-ui,sans-serif;font-style:normal}.LIT{background:#3ee07a}.AMBER{background:#ffb020}.WALL{background:#ff5a5a;color:#fff}.MODEL{background:#b48cff}a{color:#7fe8ff}code{word-break:break-all;font-size:12px}#v3{width:100%;height:540px;border-radius:16px;overflow:hidden;box-shadow:0 0 0 2px #ff7fb0}#chart{width:100%;height:120px;border-radius:10px}#gal img{border-radius:8px;margin:3px;box-shadow:0 0 8px #ff7fb0}section{background:rgba(127,127,127,.12);border:2px dashed #7fe8ff;border-radius:14px;padding:10px 14px;margin:12px 0}section.lab{border-style:solid;border-color:#ff7fb0}section.eng{border-style:dotted}button,select,input[type=text],input:not([type]){background:rgba(0,0,0,.35);color:inherit;border:1px solid #ff7fb0;border-radius:8px;padding:4px 10px;cursor:pointer;font:inherit;font-size:14px}#board{font-family:monospace;font-size:12.5px;max-height:220px;overflow:auto;background:rgba(0,0,0,.45);color:#eee;border-radius:10px;padding:8px 8px 8px 34px}.q{border-left:4px solid #ff7fb0;padding:4px 12px;font-style:italic}.lede{font-size:18px}canvas{max-width:100%}h1{text-shadow:3px 3px 0 #7fe8ff;font-size:34px}</style><style id="cubit-neon">
+:root{--neon-cyan:#00f0ff;--neon-pink:#ff2bd6;--neon-amber:#ffb300}
+html,body{background:#030308;color:#d7e3f5;font-family:ui-monospace,Menlo,monospace}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(600px 400px at 20% 10%, rgba(0,240,255,.06), transparent 70%),
+  radial-gradient(700px 500px at 80% 90%, rgba(255,43,214,.05), transparent 70%)}
+main,#wrap{position:relative;z-index:1;background:rgba(5,8,16,.78);color:#d7e3f5;
+  border:1px solid rgba(0,240,255,.18);border-radius:14px;
+  box-shadow:0 0 34px rgba(0,240,255,.07), inset 0 0 60px rgba(0,0,0,.45)}
+#wrap{max-width:1340px;margin:0 auto;padding:34px 18px 50px;text-align:center}
+h1{font-size:26px;font-weight:400;letter-spacing:.22em;text-transform:uppercase;color:#eaf6ff;
+  text-shadow:0 0 8px var(--neon-cyan), 0 0 28px rgba(0,240,255,.7);animation:cubitflicker 7s infinite}
+#sub{font-size:11px;letter-spacing:.3em;color:#5f7396;text-transform:uppercase;margin-bottom:26px}
+#sub b{color:var(--neon-pink);font-weight:400;text-shadow:0 0 10px var(--neon-pink)}
+#stage{display:flex;gap:26px;justify-content:center;align-items:flex-start;flex-wrap:wrap}
+.panel{border:1px solid rgba(0,240,255,.18);border-radius:14px;padding:18px 14px 14px;
+  background:rgba(5,8,16,.72);box-shadow:0 0 34px rgba(0,240,255,.07), inset 0 0 60px rgba(0,0,0,.5);
+  flex:1 1 420px;max-width:640px;text-align:left}
+.panel.neon{border-color:rgba(255,43,214,.25);box-shadow:0 0 34px rgba(255,43,214,.08), inset 0 0 60px rgba(0,0,0,.5)}
+.panel h2{font-size:12px;font-weight:400;letter-spacing:.4em;text-transform:uppercase;margin:0 0 2px;color:#a5e8eb}
+.panel.neon h2{color:#ffb3ec;text-shadow:0 0 12px var(--neon-pink)}
+.panel .tag{font-size:10px;letter-spacing:.12em;color:#5f7396;text-transform:uppercase;margin-bottom:12px}
+#v3{background:#05070d;border-radius:14px;box-shadow:0 0 0 3px var(--neon-pink), 0 0 28px rgba(255,43,214,.25)}
+button{font-family:inherit;letter-spacing:.12em;text-transform:uppercase;background:transparent;color:#a5e8eb;
+  border:1px solid rgba(0,240,255,.4);border-radius:18px;box-shadow:0 0 12px rgba(0,240,255,.15)}
+button:hover{background:rgba(0,240,255,.1)}
+#controls{margin-top:26px;display:flex;gap:10px;justify-content:center;align-items:center;flex-wrap:wrap}
+a{color:var(--neon-cyan)}
+code{color:#ffb3ec}
+section{background:rgba(5,8,16,.55);border:1px solid rgba(255,43,214,.25);color:#d7e3f5}
+.card{background:rgba(5,8,16,.78);color:#d7e3f5;border:1px solid rgba(0,240,255,.18)}
+.th{background:#030308}
+#board,#chart{background:rgba(5,8,16,.85);color:#d7e3f5}
+main p,main li,#wrap p,#wrap li{color:#d7e3f5}
+h2,h3{color:#a5e8eb}
+.q{border-left-color:var(--neon-pink)}
+body.thumb main,body.thumb #wrap{background:#030308;box-shadow:none;border:0}
+body.thumb .panel:not(.neon),body.thumb #sub,body.thumb #controls,body.thumb .essay{display:none}
+body.thumb #stage{display:block}
+body.thumb #v3{height:78vh}
+@keyframes cubitflicker{0%,100%{opacity:1}92%{opacity:1}93%{opacity:.6}94%{opacity:1}97%{opacity:.85}98%{opacity:1}}
+@media (prefers-reduced-motion:reduce){h1{animation:none}}
+</style></head><body><canvas id="art"></canvas><main>
 <p><span class="t MODEL">MODEL</span> GAME THEORY & SAPPHONS · SAPPHON · REACTION TIME · under KEEPER ERIS</p><h1>Punch-Out Tells · The Rose Triad as a Signaling Game</h1><p class="lede">Punch-Out opponents telegraph their attacks: a flash, a wind-up, a sound. Reading a tell is a signaling game, because the opponent can also feint. Here Dave’s rose triad (OBSERVE 0.3 s through the {{-2,0,3}} filter, RESPOND 0.2 s, SUB ID 0.1 s always watching .3.2) runs on the I-13 VM, frame by frame.</p>
 <p class="q">Dave (t252): "i love that set up can you build some pages looking into game theory and those sappons you just built, see if you can build some folded stars and stuff"</p>
 <section class="eng"><h3>Dave’s I-13 engine on this page</h3><p id="engine">booting I-13 v0.3…</p><p><span class="t LIT">LIT</span> What the VM computes here: For each of the 360 frames, the VM evaluates both {{-2,0,3}} filters from the raw signal values: OBSERVE with taps at t − 12, t − 6, t, and SUB ID with taps at t − 4, t − 2, t. That is about 700 filter outputs chained through runChain. The VM also computes the signaling equilibrium P* and the opponent’s feint rate, and the frame conversions at 60.0988 fps. JS draws the noisy opponent signal and counts dodges from the VM’s filter outputs.</p><p id="stats" style="font-family:monospace;font-size:12px"></p></section>

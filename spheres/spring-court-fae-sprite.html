@@ -1,5 +1,47 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Spring Court Fae · noir sprite · Mayhem</title>
-<style>body{margin:0;font:16px/1.5 system-ui,sans-serif;color:#1a0a3a;background:#ffe9f6}#art{position:fixed;inset:0;width:100vw;height:100vh;z-index:-1}main{max-width:900px;margin:4vh auto;padding:20px 26px;background:rgba(255,255,255,.82);border-radius:18px}canvas#sim{width:100%;height:560px;background:#fff8e0;border-radius:12px}.t{display:inline-block;padding:1px 8px;border-radius:8px;font-weight:700;font-size:13px}.LIT{background:#3ee07a}.AMBER{background:#ffb020}.WALL{background:#ff5a5a;color:#fff}.MODEL{background:#b48cff}a{color:#6a00d8}code{word-break:break-all;font-size:12px}</style></head><body><canvas id="art"></canvas><main>
+<style>body{margin:0;font:16px/1.5 system-ui,sans-serif;color:#1a0a3a;background:#ffe9f6}#art{position:fixed;inset:0;width:100vw;height:100vh;z-index:-1}main{max-width:900px;margin:4vh auto;padding:20px 26px;background:rgba(255,255,255,.82);border-radius:18px}canvas#sim{width:100%;height:560px;background:#fff8e0;border-radius:12px}.t{display:inline-block;padding:1px 8px;border-radius:8px;font-weight:700;font-size:13px}.LIT{background:#3ee07a}.AMBER{background:#ffb020}.WALL{background:#ff5a5a;color:#fff}.MODEL{background:#b48cff}a{color:#6a00d8}code{word-break:break-all;font-size:12px}</style><style id="cubit-neon">
+:root{--neon-cyan:#00f0ff;--neon-pink:#ff2bd6;--neon-amber:#ffb300}
+html,body{background:#030308;color:#d7e3f5;font-family:ui-monospace,Menlo,monospace}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(600px 400px at 20% 10%, rgba(0,240,255,.06), transparent 70%),
+  radial-gradient(700px 500px at 80% 90%, rgba(255,43,214,.05), transparent 70%)}
+main,#wrap{position:relative;z-index:1;background:rgba(5,8,16,.78);color:#d7e3f5;
+  border:1px solid rgba(0,240,255,.18);border-radius:14px;
+  box-shadow:0 0 34px rgba(0,240,255,.07), inset 0 0 60px rgba(0,0,0,.45)}
+#wrap{max-width:1340px;margin:0 auto;padding:34px 18px 50px;text-align:center}
+h1{font-size:26px;font-weight:400;letter-spacing:.22em;text-transform:uppercase;color:#eaf6ff;
+  text-shadow:0 0 8px var(--neon-cyan), 0 0 28px rgba(0,240,255,.7);animation:cubitflicker 7s infinite}
+#sub{font-size:11px;letter-spacing:.3em;color:#5f7396;text-transform:uppercase;margin-bottom:26px}
+#sub b{color:var(--neon-pink);font-weight:400;text-shadow:0 0 10px var(--neon-pink)}
+#stage{display:flex;gap:26px;justify-content:center;align-items:flex-start;flex-wrap:wrap}
+.panel{border:1px solid rgba(0,240,255,.18);border-radius:14px;padding:18px 14px 14px;
+  background:rgba(5,8,16,.72);box-shadow:0 0 34px rgba(0,240,255,.07), inset 0 0 60px rgba(0,0,0,.5);
+  flex:1 1 420px;max-width:640px;text-align:left}
+.panel.neon{border-color:rgba(255,43,214,.25);box-shadow:0 0 34px rgba(255,43,214,.08), inset 0 0 60px rgba(0,0,0,.5)}
+.panel h2{font-size:12px;font-weight:400;letter-spacing:.4em;text-transform:uppercase;margin:0 0 2px;color:#a5e8eb}
+.panel.neon h2{color:#ffb3ec;text-shadow:0 0 12px var(--neon-pink)}
+.panel .tag{font-size:10px;letter-spacing:.12em;color:#5f7396;text-transform:uppercase;margin-bottom:12px}
+#v3{background:#05070d;border-radius:14px;box-shadow:0 0 0 3px var(--neon-pink), 0 0 28px rgba(255,43,214,.25)}
+button{font-family:inherit;letter-spacing:.12em;text-transform:uppercase;background:transparent;color:#a5e8eb;
+  border:1px solid rgba(0,240,255,.4);border-radius:18px;box-shadow:0 0 12px rgba(0,240,255,.15)}
+button:hover{background:rgba(0,240,255,.1)}
+#controls{margin-top:26px;display:flex;gap:10px;justify-content:center;align-items:center;flex-wrap:wrap}
+a{color:var(--neon-cyan)}
+code{color:#ffb3ec}
+section{background:rgba(5,8,16,.55);border:1px solid rgba(255,43,214,.25);color:#d7e3f5}
+.card{background:rgba(5,8,16,.78);color:#d7e3f5;border:1px solid rgba(0,240,255,.18)}
+.th{background:#030308}
+#board,#chart{background:rgba(5,8,16,.85);color:#d7e3f5}
+main p,main li,#wrap p,#wrap li{color:#d7e3f5}
+h2,h3{color:#a5e8eb}
+.q{border-left-color:var(--neon-pink)}
+body.thumb main,body.thumb #wrap{background:#030308;box-shadow:none;border:0}
+body.thumb .panel:not(.neon),body.thumb #sub,body.thumb #controls,body.thumb .essay{display:none}
+body.thumb #stage{display:block}
+body.thumb #v3{height:78vh}
+@keyframes cubitflicker{0%,100%{opacity:1}92%{opacity:1}93%{opacity:.6}94%{opacity:1}97%{opacity:.85}98%{opacity:1}}
+@media (prefers-reduced-motion:reduce){h1{animation:none}}
+</style></head><body><canvas id="art"></canvas><main>
 <p><span class="t MODEL">MODEL</span> STEWARD II · MAY'S MAP under KEEPER ERIS</p><h1>Spring Court Fae · noir sprite</h1><p>An agent pixel artist builds a 32×32 Spring Court Fae game sprite in noir style, then animates idle, walk, attack and wings/cast cycles from its sheet.</p><p><span class="t AMBER">AMBER</span> Inspired by Sarah J. Maas's <i>A Court of Thorns and Roses</i> / <i>Throne of Glass</i> worlds. This is an original archetype with original art; no text or cover art is used.</p><p><span class="t MODEL">MODEL</span> v2, at Dave's word (t211u, verbatim): "make these more involved, 2 agents per sphere agentic and generative please, think canvas svg training". Two agents share the board:</p><ul><li><b>ARTIST</b> generates a figure from 13 parameters (head, shoulders, hips, stance, arms, wing span, wing height, wing tips, ears, cloak, crown, lean) and hill-climbs on them.</li><li><b>CRITIC/TEACHER</b> scores every attempt: IoU against this sphere's seal-derived target silhouette (45%), proportion vs 7.5 heads (25%), symmetry (20%), wing-line smoothness (10%), times palette adherence. It keeps only attempts that don't score worse.</li></ul><p>The best attempt is rendered on canvas as a pixel sprite and as a live SVG, the training output. You can download the SVG or export the training set (attempts, parameters, scores) as JSON. Style: <b>noir</b>. The dark sprite stage is the requested style; the page stays vivid.</p><p><span class="t LIT">LIT</span> on load: the scorer is correct on known cases (IoU 1/0, exact symmetry, 7.5 heads), a seeded 150-round run improves its score, the SVG parses with ≥6 paths, and every SVG fill comes from the palette.</p><p id="ctl"></p><h3>Sprite sheet &amp; animation <span class="t MODEL">MODEL</span>: built live from the trained best figure (idle, walk, attack, wings/cast; 4 frames each; nearest-neighbour)</h3><canvas id="anim" style="width:100%;height:360px;image-rendering:pixelated;border-radius:12px"></canvas><canvas id="sim"></canvas><h3>Shared board <span class="t MODEL">MODEL</span></h3><ol id="board" style="font-family:monospace;font-size:13px;max-height:200px;overflow:auto;background:#fff3c4;border-radius:10px;padding:8px 8px 8px 34px"></ol>
 <p>Background art: <span class="t AMBER">AMBER</span> <span class="t MODEL">MODEL</span> generative flow field seeded from this page's seal, drawn at devicePixelRatio.</p>
 <p id="proof">proving…</p><p>Seal sha256(name|slug|blurb): <code id="seal">9b768533244edbc110d0dc8f8beb30bcae7fee9c419b36685e7017d287b76554</code></p><p><a href="../index.html">← ERIS, keeper of Mayhem</a></p></main>

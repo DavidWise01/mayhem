@@ -21,12 +21,54 @@ body.thumb section,body.thumb #chart,body.thumb #gal,body.thumb #board,body.thum
 body.thumb main{margin:0;padding:8px;max-width:none;background:#fff8d4;box-shadow:none}
 body.thumb #v3{height:78vh}
 @media (prefers-reduced-motion:reduce){#art{display:none}}
-</style></head><body><canvas id="art"></canvas><main>
-<p><span class="t MODEL">MODEL</span> TWELVE LAWS · under KEEPER ERIS</p>
+</style><style id="cubit-neon">
+:root{--neon-cyan:#00f0ff;--neon-pink:#ff2bd6;--neon-amber:#ffb300}
+html,body{background:#030308;color:#d7e3f5;font-family:ui-monospace,Menlo,monospace}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(600px 400px at 20% 10%, rgba(0,240,255,.06), transparent 70%),
+  radial-gradient(700px 500px at 80% 90%, rgba(255,43,214,.05), transparent 70%)}
+main,#wrap{position:relative;z-index:1;background:rgba(5,8,16,.78);color:#d7e3f5;
+  border:1px solid rgba(0,240,255,.18);border-radius:14px;
+  box-shadow:0 0 34px rgba(0,240,255,.07), inset 0 0 60px rgba(0,0,0,.45)}
+#wrap{max-width:1340px;margin:0 auto;padding:34px 18px 50px;text-align:center}
+h1{font-size:26px;font-weight:400;letter-spacing:.22em;text-transform:uppercase;color:#eaf6ff;
+  text-shadow:0 0 8px var(--neon-cyan), 0 0 28px rgba(0,240,255,.7);animation:cubitflicker 7s infinite}
+#sub{font-size:11px;letter-spacing:.3em;color:#5f7396;text-transform:uppercase;margin-bottom:26px}
+#sub b{color:var(--neon-pink);font-weight:400;text-shadow:0 0 10px var(--neon-pink)}
+#stage{display:flex;gap:26px;justify-content:center;align-items:flex-start;flex-wrap:wrap}
+.panel{border:1px solid rgba(0,240,255,.18);border-radius:14px;padding:18px 14px 14px;
+  background:rgba(5,8,16,.72);box-shadow:0 0 34px rgba(0,240,255,.07), inset 0 0 60px rgba(0,0,0,.5);
+  flex:1 1 420px;max-width:640px;text-align:left}
+.panel.neon{border-color:rgba(255,43,214,.25);box-shadow:0 0 34px rgba(255,43,214,.08), inset 0 0 60px rgba(0,0,0,.5)}
+.panel h2{font-size:12px;font-weight:400;letter-spacing:.4em;text-transform:uppercase;margin:0 0 2px;color:#a5e8eb}
+.panel.neon h2{color:#ffb3ec;text-shadow:0 0 12px var(--neon-pink)}
+.panel .tag{font-size:10px;letter-spacing:.12em;color:#5f7396;text-transform:uppercase;margin-bottom:12px}
+#v3{background:#05070d;border-radius:14px;box-shadow:0 0 0 3px var(--neon-pink), 0 0 28px rgba(255,43,214,.25)}
+button{font-family:inherit;letter-spacing:.12em;text-transform:uppercase;background:transparent;color:#a5e8eb;
+  border:1px solid rgba(0,240,255,.4);border-radius:18px;box-shadow:0 0 12px rgba(0,240,255,.15)}
+button:hover{background:rgba(0,240,255,.1)}
+#controls{margin-top:26px;display:flex;gap:10px;justify-content:center;align-items:center;flex-wrap:wrap}
+a{color:var(--neon-cyan)}
+code{color:#ffb3ec}
+section{background:rgba(5,8,16,.55);border:1px solid rgba(255,43,214,.25);color:#d7e3f5}
+.card{background:rgba(5,8,16,.78);color:#d7e3f5;border:1px solid rgba(0,240,255,.18)}
+.th{background:#030308}
+#board,#chart{background:rgba(5,8,16,.85);color:#d7e3f5}
+main p,main li,#wrap p,#wrap li{color:#d7e3f5}
+h2,h3{color:#a5e8eb}
+.q{border-left-color:var(--neon-pink)}
+body.thumb main,body.thumb #wrap{background:#030308;box-shadow:none;border:0}
+body.thumb .panel:not(.neon),body.thumb #sub,body.thumb #controls,body.thumb .essay{display:none}
+body.thumb #stage{display:block}
+body.thumb #v3{height:78vh}
+@keyframes cubitflicker{0%,100%{opacity:1}92%{opacity:1}93%{opacity:.6}94%{opacity:1}97%{opacity:.85}98%{opacity:1}}
+@media (prefers-reduced-motion:reduce){h1{animation:none}}
+</style></head><body><canvas id="art"></canvas><div id="wrap">
 <h1>Pick's Lattice</h1>
-<p>A 4 by 2 lattice rectangle has area 8, equal to its interior points plus half its boundary points, minus one.</p>
-<div id="v3"></div>
-<p class="tools"><button id="pp">Pause</button> <button id="rs">Reseed</button> <button id="ej">Export training + workspace log (.json)</button> <button id="es">Export drawing (.svg)</button> <button id="eo">Export geometry (.obj)</button></p>
+<div id="sub">analytical · <b>neon</b> · twelve laws · under keeper eris</div>
+<div id="stage">
+<div class="panel neon"><h2>neon</h2><div class="tag">{{ act || react || change }} · the sculpture</div><div id="v3"></div></div>
+<div class="panel"><h2>analytical</h2><div class="tag">A 4 by 2 lattice rectangle has area 8, equal to its interior points plus half its boundary points, minus one.</div>
 <div class="essay">
 <p><span class="t LIT">LIT</span> The rectangle with corners (0,0) and (4,2) has area 8. The page counts lattice points: 3 strictly inside, 12 on the boundary. Pick's formula i + b/2 − 1 returns 8.</p>
 <p><span class="t AMBER">AMBER</span> Georg Pick, 1899. The formula is for a simple lattice polygon. This page checks one rectangle by counting, which is the whole identity for this shape, not a sample of a larger claim.</p>
@@ -48,8 +90,10 @@ body.thumb #v3{height:78vh}
 <p>Background wash: <span class="t AMBER">AMBER</span> <span class="t MODEL">MODEL</span> a field seeded from this page's seal. The viewport is a deep colour, not black, over a vivid page.</p>
 <p id="proof">proving…</p>
 <p>Seal sha256(name|slug|blurb): <code id="seal">987a4d3b90c24dc1366372187faac70b8ea99c0d87af0d054e100cc7ee3205c2</code></p>
+</div></div></div>
+<div id="controls" class="tools"><button id="pp">Pause</button> <button id="rs">Reseed</button> <button id="ej">Export training + workspace log (.json)</button> <button id="es">Export drawing (.svg)</button> <button id="eo">Export geometry (.obj)</button></div>
 </div>
-</main>
+
 <script>
 const NAME="Pick's Lattice",SLUG="laws-pick",BLURB="A 4 by 2 lattice rectangle has area 8, equal to its interior points plus half its boundary points, minus one.",SEAL="987a4d3b90c24dc1366372187faac70b8ea99c0d87af0d054e100cc7ee3205c2";
 function gcd(a,b){while(b){const t=b;b=a%b;a=t}return a}

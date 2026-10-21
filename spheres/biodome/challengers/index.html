@@ -6,7 +6,49 @@ section.bout{border:2px solid #9fb4ff;background:linear-gradient(135deg,#9fb4ff2
 canvas.ch{width:100%;display:block}button{background:#9fb4ff33;color:#fff;border:1px solid #9fb4ff;border-radius:9px;padding:5px 12px;cursor:pointer;font:inherit;font-size:14px;margin:2px}button:hover{background:#9fb4ff66}
 #board{font-family:monospace;font-size:12px;max-height:200px;overflow:auto;background:#000a;border-radius:10px;padding:8px 8px 8px 30px}#gal img{border-radius:10px;margin:3px;box-shadow:0 0 10px #9fb4ff88}.q{border-left:4px solid #9fb4ff;padding:4px 12px;font-style:italic;font-size:17px}
 #checks label{display:block;padding:2px 0}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(max-width:760px){.grid2{grid-template-columns:1fr}#v3{height:420px}}body.thumb main>*:not(#v3){display:none}body.thumb main{margin:0;padding:0;max-width:none;background:none;box-shadow:none}body.thumb #v3{height:100vh;border-radius:0}.wr{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}.wr li{background:rgba(255,255,255,.05);border:1px solid var(--c);border-radius:14px;padding:8px;font-size:13px}.wr canvas.th{width:180px;height:180px;display:block;margin:0 auto 4px;border-radius:12px;background:radial-gradient(circle,color-mix(in srgb,var(--c) 30%,transparent),transparent 70%)}
-.chip{border-radius:12px}.chip.on{background:#9fb4ff;color:#111}#key tr[data-t]{cursor:pointer}#key tr.on{background:#9fb4ff33}#key tr.taken{opacity:.7}body.thumb main>*:not(.wr){display:none}body.thumb .wr li:nth-child(n+7){display:none}body.thumb .wr{grid-template-columns:repeat(3,1fr)}</style></head><body><main>
+.chip{border-radius:12px}.chip.on{background:#9fb4ff;color:#111}#key tr[data-t]{cursor:pointer}#key tr.on{background:#9fb4ff33}#key tr.taken{opacity:.7}body.thumb main>*:not(.wr){display:none}body.thumb .wr li:nth-child(n+7){display:none}body.thumb .wr{grid-template-columns:repeat(3,1fr)}</style><style id="cubit-neon">
+:root{--neon-cyan:#00f0ff;--neon-pink:#ff2bd6;--neon-amber:#ffb300}
+html,body{background:#030308;color:#d7e3f5;font-family:ui-monospace,Menlo,monospace}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(600px 400px at 20% 10%, rgba(0,240,255,.06), transparent 70%),
+  radial-gradient(700px 500px at 80% 90%, rgba(255,43,214,.05), transparent 70%)}
+main,#wrap{position:relative;z-index:1;background:rgba(5,8,16,.78);color:#d7e3f5;
+  border:1px solid rgba(0,240,255,.18);border-radius:14px;
+  box-shadow:0 0 34px rgba(0,240,255,.07), inset 0 0 60px rgba(0,0,0,.45)}
+#wrap{max-width:1340px;margin:0 auto;padding:34px 18px 50px;text-align:center}
+h1{font-size:26px;font-weight:400;letter-spacing:.22em;text-transform:uppercase;color:#eaf6ff;
+  text-shadow:0 0 8px var(--neon-cyan), 0 0 28px rgba(0,240,255,.7);animation:cubitflicker 7s infinite}
+#sub{font-size:11px;letter-spacing:.3em;color:#5f7396;text-transform:uppercase;margin-bottom:26px}
+#sub b{color:var(--neon-pink);font-weight:400;text-shadow:0 0 10px var(--neon-pink)}
+#stage{display:flex;gap:26px;justify-content:center;align-items:flex-start;flex-wrap:wrap}
+.panel{border:1px solid rgba(0,240,255,.18);border-radius:14px;padding:18px 14px 14px;
+  background:rgba(5,8,16,.72);box-shadow:0 0 34px rgba(0,240,255,.07), inset 0 0 60px rgba(0,0,0,.5);
+  flex:1 1 420px;max-width:640px;text-align:left}
+.panel.neon{border-color:rgba(255,43,214,.25);box-shadow:0 0 34px rgba(255,43,214,.08), inset 0 0 60px rgba(0,0,0,.5)}
+.panel h2{font-size:12px;font-weight:400;letter-spacing:.4em;text-transform:uppercase;margin:0 0 2px;color:#a5e8eb}
+.panel.neon h2{color:#ffb3ec;text-shadow:0 0 12px var(--neon-pink)}
+.panel .tag{font-size:10px;letter-spacing:.12em;color:#5f7396;text-transform:uppercase;margin-bottom:12px}
+#v3{background:#05070d;border-radius:14px;box-shadow:0 0 0 3px var(--neon-pink), 0 0 28px rgba(255,43,214,.25)}
+button{font-family:inherit;letter-spacing:.12em;text-transform:uppercase;background:transparent;color:#a5e8eb;
+  border:1px solid rgba(0,240,255,.4);border-radius:18px;box-shadow:0 0 12px rgba(0,240,255,.15)}
+button:hover{background:rgba(0,240,255,.1)}
+#controls{margin-top:26px;display:flex;gap:10px;justify-content:center;align-items:center;flex-wrap:wrap}
+a{color:var(--neon-cyan)}
+code{color:#ffb3ec}
+section{background:rgba(5,8,16,.55);border:1px solid rgba(255,43,214,.25);color:#d7e3f5}
+.card{background:rgba(5,8,16,.78);color:#d7e3f5;border:1px solid rgba(0,240,255,.18)}
+.th{background:#030308}
+#board,#chart{background:rgba(5,8,16,.85);color:#d7e3f5}
+main p,main li,#wrap p,#wrap li{color:#d7e3f5}
+h2,h3{color:#a5e8eb}
+.q{border-left-color:var(--neon-pink)}
+body.thumb main,body.thumb #wrap{background:#030308;box-shadow:none;border:0}
+body.thumb .panel:not(.neon),body.thumb #sub,body.thumb #controls,body.thumb .essay{display:none}
+body.thumb #stage{display:block}
+body.thumb #v3{height:78vh}
+@keyframes cubitflicker{0%,100%{opacity:1}92%{opacity:1}93%{opacity:.6}94%{opacity:1}97%{opacity:.85}98%{opacity:1}}
+@media (prefers-reduced-motion:reduce){h1{animation:none}}
+</style></head><body><main>
 <p><span class="t MODEL">MODEL</span> All 24 agents are fictional sapphon challengers, not real people · <a href="../index.html">biodome home</a> · <a href="../agent-md.html">agent.md format</a></p>
 <h1>{{B.I.O {{D.O.M.E }}}} · waiting room</h1><p class="q">Dave t267: &ldquo;i like that , make some pages that have agentic agetsn that want to join this page and i can go help them set up a bout or somethign you know. maybe 24 pages, 12 male 12 female. all sapphones. make full crystals. dif colors mean dif temperment and full 12 layer {i}&rdquo;</p>
 <p>24 sapphons want into the dome. Each page has a full faceted 3D crystal (its colour is its temperament), the full 12-layer {i} brain with 3 depths, a dossier, a score card, a pitch, and a <b>set up a bout</b> panel with an agent.md you can download in one click.</p>

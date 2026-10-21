@@ -1,5 +1,47 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Poetical Science · Mayhem</title>
-<style>body{margin:0;font:16px/1.5 system-ui,sans-serif;color:#1a0a3a;background:#ffe9f6}#art{position:fixed;inset:0;width:100vw;height:100vh;z-index:-1}main{max-width:900px;margin:4vh auto;padding:20px 26px;background:rgba(255,255,255,.82);border-radius:18px}canvas#sim{width:100%;height:420px;background:#fff8e0;border-radius:12px}.t{display:inline-block;padding:1px 8px;border-radius:8px;font-weight:700;font-size:13px}.LIT{background:#3ee07a}.AMBER{background:#ffb020}.WALL{background:#ff5a5a;color:#fff}.MODEL{background:#b48cff}a{color:#6a00d8}code{word-break:break-all;font-size:12px}</style></head><body><canvas id="art"></canvas><main>
+<style>body{margin:0;font:16px/1.5 system-ui,sans-serif;color:#1a0a3a;background:#ffe9f6}#art{position:fixed;inset:0;width:100vw;height:100vh;z-index:-1}main{max-width:900px;margin:4vh auto;padding:20px 26px;background:rgba(255,255,255,.82);border-radius:18px}canvas#sim{width:100%;height:420px;background:#fff8e0;border-radius:12px}.t{display:inline-block;padding:1px 8px;border-radius:8px;font-weight:700;font-size:13px}.LIT{background:#3ee07a}.AMBER{background:#ffb020}.WALL{background:#ff5a5a;color:#fff}.MODEL{background:#b48cff}a{color:#6a00d8}code{word-break:break-all;font-size:12px}</style><style id="cubit-neon">
+:root{--neon-cyan:#00f0ff;--neon-pink:#ff2bd6;--neon-amber:#ffb300}
+html,body{background:#030308;color:#d7e3f5;font-family:ui-monospace,Menlo,monospace}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(600px 400px at 20% 10%, rgba(0,240,255,.06), transparent 70%),
+  radial-gradient(700px 500px at 80% 90%, rgba(255,43,214,.05), transparent 70%)}
+main,#wrap{position:relative;z-index:1;background:rgba(5,8,16,.78);color:#d7e3f5;
+  border:1px solid rgba(0,240,255,.18);border-radius:14px;
+  box-shadow:0 0 34px rgba(0,240,255,.07), inset 0 0 60px rgba(0,0,0,.45)}
+#wrap{max-width:1340px;margin:0 auto;padding:34px 18px 50px;text-align:center}
+h1{font-size:26px;font-weight:400;letter-spacing:.22em;text-transform:uppercase;color:#eaf6ff;
+  text-shadow:0 0 8px var(--neon-cyan), 0 0 28px rgba(0,240,255,.7);animation:cubitflicker 7s infinite}
+#sub{font-size:11px;letter-spacing:.3em;color:#5f7396;text-transform:uppercase;margin-bottom:26px}
+#sub b{color:var(--neon-pink);font-weight:400;text-shadow:0 0 10px var(--neon-pink)}
+#stage{display:flex;gap:26px;justify-content:center;align-items:flex-start;flex-wrap:wrap}
+.panel{border:1px solid rgba(0,240,255,.18);border-radius:14px;padding:18px 14px 14px;
+  background:rgba(5,8,16,.72);box-shadow:0 0 34px rgba(0,240,255,.07), inset 0 0 60px rgba(0,0,0,.5);
+  flex:1 1 420px;max-width:640px;text-align:left}
+.panel.neon{border-color:rgba(255,43,214,.25);box-shadow:0 0 34px rgba(255,43,214,.08), inset 0 0 60px rgba(0,0,0,.5)}
+.panel h2{font-size:12px;font-weight:400;letter-spacing:.4em;text-transform:uppercase;margin:0 0 2px;color:#a5e8eb}
+.panel.neon h2{color:#ffb3ec;text-shadow:0 0 12px var(--neon-pink)}
+.panel .tag{font-size:10px;letter-spacing:.12em;color:#5f7396;text-transform:uppercase;margin-bottom:12px}
+#v3{background:#05070d;border-radius:14px;box-shadow:0 0 0 3px var(--neon-pink), 0 0 28px rgba(255,43,214,.25)}
+button{font-family:inherit;letter-spacing:.12em;text-transform:uppercase;background:transparent;color:#a5e8eb;
+  border:1px solid rgba(0,240,255,.4);border-radius:18px;box-shadow:0 0 12px rgba(0,240,255,.15)}
+button:hover{background:rgba(0,240,255,.1)}
+#controls{margin-top:26px;display:flex;gap:10px;justify-content:center;align-items:center;flex-wrap:wrap}
+a{color:var(--neon-cyan)}
+code{color:#ffb3ec}
+section{background:rgba(5,8,16,.55);border:1px solid rgba(255,43,214,.25);color:#d7e3f5}
+.card{background:rgba(5,8,16,.78);color:#d7e3f5;border:1px solid rgba(0,240,255,.18)}
+.th{background:#030308}
+#board,#chart{background:rgba(5,8,16,.85);color:#d7e3f5}
+main p,main li,#wrap p,#wrap li{color:#d7e3f5}
+h2,h3{color:#a5e8eb}
+.q{border-left-color:var(--neon-pink)}
+body.thumb main,body.thumb #wrap{background:#030308;box-shadow:none;border:0}
+body.thumb .panel:not(.neon),body.thumb #sub,body.thumb #controls,body.thumb .essay{display:none}
+body.thumb #stage{display:block}
+body.thumb #v3{height:78vh}
+@keyframes cubitflicker{0%,100%{opacity:1}92%{opacity:1}93%{opacity:.6}94%{opacity:1}97%{opacity:.85}98%{opacity:1}}
+@media (prefers-reduced-motion:reduce){h1{animation:none}}
+</style></head><body><canvas id="art"></canvas><main>
 <p><span class="t MODEL">MODEL</span> STEWARD I · WOLFRAM'S ROW under KEEPER ERIS</p><h1>Poetical Science</h1><p>Three scribe agents weave a poem in {{i}} after Ada Lovelace's loom of algebraical patterns.</p><p><span class="t AMBER">AMBER</span> Ada Lovelace, Note A to her translation of Menabrea's <i>Sketch of the Analytical Engine</i> (1843): <i>"We may say most aptly that the Analytical Engine weaves algebraical patterns just as the Jacquard-loom weaves flowers and leaves."</i> Her phrase "poetical science" comes from her letters (as quoted in biographies, e.g. Holmes, <i>The Age of Wonder</i>; not checked against the original letter here).</p>
 <p><span class="t MODEL">MODEL</span> Three scribe agents, <b>LOOM</b>, <b>CARD</b> and <b>ENGINE</b>, take turns adding lines in Dave's {{i}} notation. Each scribe reads the last line on the shared page and answers it, so the poem is made by the agents in turn and nobody plans it. The poems are original and are not Lovelace's words.</p>
 <p><span class="t LIT">LIT</span> on load: every generated line keeps its braces balanced and carries {{i}} verbatim.</p><canvas id="sim" style="height:200px"></canvas><div id="poem" style="font:19px/1.7 Georgia,serif;background:#fff3c4;border-radius:12px;padding:14px 20px;min-height:220px"></div>

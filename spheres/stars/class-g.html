@@ -1,5 +1,47 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Class G · Yellow Stars · Stars · Mayhem</title>
-<style>body{margin:0;font:16px/1.55 Verdana,sans-serif;color:#f4f0ff;background:radial-gradient(circle at 30% 20%,#ffefe155,#0c0c0c 60%)}#art{position:fixed;inset:0;width:100vw;height:100vh;z-index:-1}main{max-width:940px;margin:4vh auto;padding:20px 26px;background:rgba(10,6,20,.84);border-radius:18px;box-shadow:0 0 0 2px #ffefe1,0 0 40px #9ebeff88}h1{color:#ffefe1;text-shadow:0 0 14px #9ebeff;letter-spacing:.03em}.t{display:inline-block;padding:1px 8px;border-radius:8px;font-weight:700;font-size:13px;color:#111}.LIT{background:#3ee07a}.AMBER{background:#ffb020}.WALL{background:#ff5a5a;color:#fff}.MODEL{background:#b48cff}a{color:#9ebeff}code{word-break:break-all;font-size:12px;color:#ffd166}#v3{width:100%;height:560px;border-radius:16px;overflow:hidden;box-shadow:0 0 0 2px #ffefe1}#chart{width:100%;height:120px;border-radius:10px}#gal img{border-radius:8px;margin:3px;box-shadow:0 0 8px #ffefe1}section{background:rgba(30,16,50,.85);border:2px dashed #9ebeff;border-radius:14px;padding:10px 14px;margin:10px 0}button{background:#1d1030;color:#fff;border:1px solid #ffefe1;border-radius:8px;padding:4px 10px;cursor:pointer}#board{font-family:monospace;font-size:13px;max-height:200px;overflow:auto;background:rgba(0,0,0,.45);border-radius:10px;padding:8px 8px 8px 34px}.q{border-left:4px solid #ffefe1;padding:4px 12px;font-style:italic}</style></head><body><canvas id="art"></canvas><main>
+<style>body{margin:0;font:16px/1.55 Verdana,sans-serif;color:#f4f0ff;background:radial-gradient(circle at 30% 20%,#ffefe155,#0c0c0c 60%)}#art{position:fixed;inset:0;width:100vw;height:100vh;z-index:-1}main{max-width:940px;margin:4vh auto;padding:20px 26px;background:rgba(10,6,20,.84);border-radius:18px;box-shadow:0 0 0 2px #ffefe1,0 0 40px #9ebeff88}h1{color:#ffefe1;text-shadow:0 0 14px #9ebeff;letter-spacing:.03em}.t{display:inline-block;padding:1px 8px;border-radius:8px;font-weight:700;font-size:13px;color:#111}.LIT{background:#3ee07a}.AMBER{background:#ffb020}.WALL{background:#ff5a5a;color:#fff}.MODEL{background:#b48cff}a{color:#9ebeff}code{word-break:break-all;font-size:12px;color:#ffd166}#v3{width:100%;height:560px;border-radius:16px;overflow:hidden;box-shadow:0 0 0 2px #ffefe1}#chart{width:100%;height:120px;border-radius:10px}#gal img{border-radius:8px;margin:3px;box-shadow:0 0 8px #ffefe1}section{background:rgba(30,16,50,.85);border:2px dashed #9ebeff;border-radius:14px;padding:10px 14px;margin:10px 0}button{background:#1d1030;color:#fff;border:1px solid #ffefe1;border-radius:8px;padding:4px 10px;cursor:pointer}#board{font-family:monospace;font-size:13px;max-height:200px;overflow:auto;background:rgba(0,0,0,.45);border-radius:10px;padding:8px 8px 8px 34px}.q{border-left:4px solid #ffefe1;padding:4px 12px;font-style:italic}</style><style id="cubit-neon">
+:root{--neon-cyan:#00f0ff;--neon-pink:#ff2bd6;--neon-amber:#ffb300}
+html,body{background:#030308;color:#d7e3f5;font-family:ui-monospace,Menlo,monospace}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(600px 400px at 20% 10%, rgba(0,240,255,.06), transparent 70%),
+  radial-gradient(700px 500px at 80% 90%, rgba(255,43,214,.05), transparent 70%)}
+main,#wrap{position:relative;z-index:1;background:rgba(5,8,16,.78);color:#d7e3f5;
+  border:1px solid rgba(0,240,255,.18);border-radius:14px;
+  box-shadow:0 0 34px rgba(0,240,255,.07), inset 0 0 60px rgba(0,0,0,.45)}
+#wrap{max-width:1340px;margin:0 auto;padding:34px 18px 50px;text-align:center}
+h1{font-size:26px;font-weight:400;letter-spacing:.22em;text-transform:uppercase;color:#eaf6ff;
+  text-shadow:0 0 8px var(--neon-cyan), 0 0 28px rgba(0,240,255,.7);animation:cubitflicker 7s infinite}
+#sub{font-size:11px;letter-spacing:.3em;color:#5f7396;text-transform:uppercase;margin-bottom:26px}
+#sub b{color:var(--neon-pink);font-weight:400;text-shadow:0 0 10px var(--neon-pink)}
+#stage{display:flex;gap:26px;justify-content:center;align-items:flex-start;flex-wrap:wrap}
+.panel{border:1px solid rgba(0,240,255,.18);border-radius:14px;padding:18px 14px 14px;
+  background:rgba(5,8,16,.72);box-shadow:0 0 34px rgba(0,240,255,.07), inset 0 0 60px rgba(0,0,0,.5);
+  flex:1 1 420px;max-width:640px;text-align:left}
+.panel.neon{border-color:rgba(255,43,214,.25);box-shadow:0 0 34px rgba(255,43,214,.08), inset 0 0 60px rgba(0,0,0,.5)}
+.panel h2{font-size:12px;font-weight:400;letter-spacing:.4em;text-transform:uppercase;margin:0 0 2px;color:#a5e8eb}
+.panel.neon h2{color:#ffb3ec;text-shadow:0 0 12px var(--neon-pink)}
+.panel .tag{font-size:10px;letter-spacing:.12em;color:#5f7396;text-transform:uppercase;margin-bottom:12px}
+#v3{background:#05070d;border-radius:14px;box-shadow:0 0 0 3px var(--neon-pink), 0 0 28px rgba(255,43,214,.25)}
+button{font-family:inherit;letter-spacing:.12em;text-transform:uppercase;background:transparent;color:#a5e8eb;
+  border:1px solid rgba(0,240,255,.4);border-radius:18px;box-shadow:0 0 12px rgba(0,240,255,.15)}
+button:hover{background:rgba(0,240,255,.1)}
+#controls{margin-top:26px;display:flex;gap:10px;justify-content:center;align-items:center;flex-wrap:wrap}
+a{color:var(--neon-cyan)}
+code{color:#ffb3ec}
+section{background:rgba(5,8,16,.55);border:1px solid rgba(255,43,214,.25);color:#d7e3f5}
+.card{background:rgba(5,8,16,.78);color:#d7e3f5;border:1px solid rgba(0,240,255,.18)}
+.th{background:#030308}
+#board,#chart{background:rgba(5,8,16,.85);color:#d7e3f5}
+main p,main li,#wrap p,#wrap li{color:#d7e3f5}
+h2,h3{color:#a5e8eb}
+.q{border-left-color:var(--neon-pink)}
+body.thumb main,body.thumb #wrap{background:#030308;box-shadow:none;border:0}
+body.thumb .panel:not(.neon),body.thumb #sub,body.thumb #controls,body.thumb .essay{display:none}
+body.thumb #stage{display:block}
+body.thumb #v3{height:78vh}
+@keyframes cubitflicker{0%,100%{opacity:1}92%{opacity:1}93%{opacity:.6}94%{opacity:1}97%{opacity:.85}98%{opacity:1}}
+@media (prefers-reduced-motion:reduce){h1{animation:none}}
+</style></head><body><canvas id="art"></canvas><main>
 <p><span class="t MODEL">MODEL</span> STARS · SPECTRAL CLASS G · under KEEPER ERIS</p><h1>Class G · Yellow Stars</h1><p>Spectral class G (5,200–6,000 K): yellow (white to the eye in space). Spectral signature: Ca II H&amp;amp. Rendered as a 3D star with an ARTIST and a CRITIC.</p>
 <p class="q">Dave (t224u): "keep it going please, build out all the stars you know about and their types right dwarfs giants, red blue purple"</p><p><span class="t LIT">LIT</span> Harvard/MK class G: effective temperature 5,200–6,000 K, colour yellow (white to the eye in space). Spectrum: Ca II H&amp;K and metal lines; ~7.6% (AMBER). e.g. the Sun, Alpha Centauri A.</p><p><span class="t LIT">LIT</span> Wien's law at a representative 5,600 K: peak λ = 2.898×10⁶ nm·K / T ≈ 518 nm.</p><p><span class="t MODEL">MODEL</span> The representative temperature and the scene are my choices.</p>
 <p><span class="t MODEL">MODEL</span> Two agents: the <b>ARTIST</b> places the 3D form, one coordinate at a time. The <b>CRITIC</b> scores each attempt against the target form (shown as faint ghost points) and keeps it or throws it out. Rendered with Three.js r160 from a pinned CDN, devicePixelRatio capped at 2, antialiased. Drag to orbit, scroll to zoom.</p>

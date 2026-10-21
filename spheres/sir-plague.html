@@ -1,5 +1,47 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SIR Plague · Masque · Mayhem</title>
-<style>body{margin:0;font:16px/1.5 system-ui,sans-serif;color:#1a0a3a;background:#ffe9f6}#art{position:fixed;inset:0;width:100vw;height:100vh;z-index:-1}main{max-width:900px;margin:4vh auto;padding:20px 26px;background:rgba(255,255,255,.82);border-radius:18px}canvas#sim{width:100%;height:520px;background:#fff8e0;border-radius:12px}.t{display:inline-block;padding:1px 8px;border-radius:8px;font-weight:700;font-size:13px}.LIT{background:#3ee07a}.AMBER{background:#ffb020}.WALL{background:#ff5a5a;color:#fff}.MODEL{background:#b48cff}a{color:#6a00d8}code{word-break:break-all;font-size:12px}</style></head><body><canvas id="art"></canvas><style>main{background:rgba(16,6,28,.9)!important;color:#efe6ff!important;box-shadow:0 0 0 2px #ff2fd1,0 0 40px #00f0ff88;border-radius:18px}main h1{color:#ff5ce1;text-shadow:0 0 12px #ff2fd1,0 0 30px #9d4dff;font-family:'UnifrakturCook','Cinzel',Georgia,serif;letter-spacing:.04em}main a{color:#5ef2ff}main code{color:#b6ff00}#board{background:#1c0c30!important;color:#d6fff6}main section{background:rgba(40,12,64,.85)!important;border-color:#00f0ff!important}main button{background:#2a0f45;color:#fff;border:1px solid #ff2fd1;border-radius:8px}.noirtag{color:#b6ff00}</style><main>
+<style>body{margin:0;font:16px/1.5 system-ui,sans-serif;color:#1a0a3a;background:#ffe9f6}#art{position:fixed;inset:0;width:100vw;height:100vh;z-index:-1}main{max-width:900px;margin:4vh auto;padding:20px 26px;background:rgba(255,255,255,.82);border-radius:18px}canvas#sim{width:100%;height:520px;background:#fff8e0;border-radius:12px}.t{display:inline-block;padding:1px 8px;border-radius:8px;font-weight:700;font-size:13px}.LIT{background:#3ee07a}.AMBER{background:#ffb020}.WALL{background:#ff5a5a;color:#fff}.MODEL{background:#b48cff}a{color:#6a00d8}code{word-break:break-all;font-size:12px}</style><style id="cubit-neon">
+:root{--neon-cyan:#00f0ff;--neon-pink:#ff2bd6;--neon-amber:#ffb300}
+html,body{background:#030308;color:#d7e3f5;font-family:ui-monospace,Menlo,monospace}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(600px 400px at 20% 10%, rgba(0,240,255,.06), transparent 70%),
+  radial-gradient(700px 500px at 80% 90%, rgba(255,43,214,.05), transparent 70%)}
+main,#wrap{position:relative;z-index:1;background:rgba(5,8,16,.78);color:#d7e3f5;
+  border:1px solid rgba(0,240,255,.18);border-radius:14px;
+  box-shadow:0 0 34px rgba(0,240,255,.07), inset 0 0 60px rgba(0,0,0,.45)}
+#wrap{max-width:1340px;margin:0 auto;padding:34px 18px 50px;text-align:center}
+h1{font-size:26px;font-weight:400;letter-spacing:.22em;text-transform:uppercase;color:#eaf6ff;
+  text-shadow:0 0 8px var(--neon-cyan), 0 0 28px rgba(0,240,255,.7);animation:cubitflicker 7s infinite}
+#sub{font-size:11px;letter-spacing:.3em;color:#5f7396;text-transform:uppercase;margin-bottom:26px}
+#sub b{color:var(--neon-pink);font-weight:400;text-shadow:0 0 10px var(--neon-pink)}
+#stage{display:flex;gap:26px;justify-content:center;align-items:flex-start;flex-wrap:wrap}
+.panel{border:1px solid rgba(0,240,255,.18);border-radius:14px;padding:18px 14px 14px;
+  background:rgba(5,8,16,.72);box-shadow:0 0 34px rgba(0,240,255,.07), inset 0 0 60px rgba(0,0,0,.5);
+  flex:1 1 420px;max-width:640px;text-align:left}
+.panel.neon{border-color:rgba(255,43,214,.25);box-shadow:0 0 34px rgba(255,43,214,.08), inset 0 0 60px rgba(0,0,0,.5)}
+.panel h2{font-size:12px;font-weight:400;letter-spacing:.4em;text-transform:uppercase;margin:0 0 2px;color:#a5e8eb}
+.panel.neon h2{color:#ffb3ec;text-shadow:0 0 12px var(--neon-pink)}
+.panel .tag{font-size:10px;letter-spacing:.12em;color:#5f7396;text-transform:uppercase;margin-bottom:12px}
+#v3{background:#05070d;border-radius:14px;box-shadow:0 0 0 3px var(--neon-pink), 0 0 28px rgba(255,43,214,.25)}
+button{font-family:inherit;letter-spacing:.12em;text-transform:uppercase;background:transparent;color:#a5e8eb;
+  border:1px solid rgba(0,240,255,.4);border-radius:18px;box-shadow:0 0 12px rgba(0,240,255,.15)}
+button:hover{background:rgba(0,240,255,.1)}
+#controls{margin-top:26px;display:flex;gap:10px;justify-content:center;align-items:center;flex-wrap:wrap}
+a{color:var(--neon-cyan)}
+code{color:#ffb3ec}
+section{background:rgba(5,8,16,.55);border:1px solid rgba(255,43,214,.25);color:#d7e3f5}
+.card{background:rgba(5,8,16,.78);color:#d7e3f5;border:1px solid rgba(0,240,255,.18)}
+.th{background:#030308}
+#board,#chart{background:rgba(5,8,16,.85);color:#d7e3f5}
+main p,main li,#wrap p,#wrap li{color:#d7e3f5}
+h2,h3{color:#a5e8eb}
+.q{border-left-color:var(--neon-pink)}
+body.thumb main,body.thumb #wrap{background:#030308;box-shadow:none;border:0}
+body.thumb .panel:not(.neon),body.thumb #sub,body.thumb #controls,body.thumb .essay{display:none}
+body.thumb #stage{display:block}
+body.thumb #v3{height:78vh}
+@keyframes cubitflicker{0%,100%{opacity:1}92%{opacity:1}93%{opacity:.6}94%{opacity:1}97%{opacity:.85}98%{opacity:1}}
+@media (prefers-reduced-motion:reduce){h1{animation:none}}
+</style></head><body><canvas id="art"></canvas><style>main{background:rgba(16,6,28,.9)!important;color:#efe6ff!important;box-shadow:0 0 0 2px #ff2fd1,0 0 40px #00f0ff88;border-radius:18px}main h1{color:#ff5ce1;text-shadow:0 0 12px #ff2fd1,0 0 30px #9d4dff;font-family:'UnifrakturCook','Cinzel',Georgia,serif;letter-spacing:.04em}main a{color:#5ef2ff}main code{color:#b6ff00}#board{background:#1c0c30!important;color:#d6fff6}main section{background:rgba(40,12,64,.85)!important;border-color:#00f0ff!important}main button{background:#2a0f45;color:#fff;border:1px solid #ff2fd1;border-radius:8px}.noirtag{color:#b6ff00}</style><main>
 <p><span class="t MODEL">MODEL</span> STEWARD IV · BOUTON'S TABLE under KEEPER ERIS</p><h1>SIR Plague · Masque</h1><p>Gothic noir neon: an ARTIST agent draws SIR Plague as a curve in chalk on slate, and a CRITIC scores every attempt against a real computation.</p><p><span class="t MODEL">MODEL</span> Dave (t220u): "i like that, switch to a gothic noir neon themes and do whatever you want, do 100 and mix up the topics". Topic: <b>Biology</b>. The theme, subject and art are my choice (MODEL); Dave asked for a dark stage, so it uses one, with neon chrome.</p><p><span class="t AMBER">AMBER</span> SIR model with R₀ = 3; final size s∞ solves ln s∞ = R₀(s∞ − 1).</p><p><span class="t MODEL">MODEL</span> Two agents: the <b>ARTIST</b> redraws the curve and the <b>CRITIC</b> scores each attempt against the target values computed on load, keeping it or throwing it out. Hand-drawn look: seeded wobble, hatching and film grain, under a gothic arch in the rain.</p><p><span class="t LIT">LIT</span> on load: a real computation is checked (it throws on mismatch), the target scores 1 and its inverse scores lower, 200 rounds improve, the workspace loop logs 5 entries, the SVG parses, and only palette colours are used.</p><section style="background:rgba(255,255,255,.75);border:2px dashed #7b2ff7;border-radius:14px;padding:10px 14px;margin:10px 0"><h3>Workspace improvement loop: instructions for agents <span class="t MODEL">MODEL</span></h3><ol><li><b>Measure:</b> every 40 rounds, record the acceptance rate, the current score and how many rounds since the last improvement.</li><li><b>Try next:</b> if the score has been flat for 40 rounds, widen the mutation step. If acceptance is under 15%, shrink it; over 45%, widen it. Otherwise keep it.</li><li><b>Log back:</b> append {entry, round, measured, tried, step} to the workspace log; it's in the export JSON and the list below. Propose one change to the Mayhem workspace on the shared board.</li><li><b>Repeat, forever:</b> never stop improving. Re-check against the real data before you claim anything.</li></ol><p>Live workspace log (this page runs the loop continuously):</p><ol id="wslog" style="font-family:monospace;font-size:12px"></ol></section><p id="ctl"></p><canvas id="sim"></canvas><h3>Shared board <span class="t MODEL">MODEL</span></h3><ol id="board" style="font-family:monospace;font-size:13px;max-height:200px;overflow:auto;background:#fff3c4;border-radius:10px;padding:8px 8px 8px 34px"></ol>
 <p>Background art: <span class="t AMBER">AMBER</span> <span class="t MODEL">MODEL</span> generative flow field seeded from this page's seal, drawn at devicePixelRatio.</p>
 <p id="proof">proving…</p><p>Seal sha256(name|slug|blurb): <code id="seal">2cb391038ce47b37b61c411a1cdf6917644e8b7f722b3b77a5ad3bc6f0d135bc</code></p><p><a href="../index.html">← ERIS, keeper of Mayhem</a></p></main>

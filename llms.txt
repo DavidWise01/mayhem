@@ -828,3 +828,7 @@ Twelve instruments plus an index. Each page is a 3D art page (Three.js r160, DPR
 - [The Remainder Bell](./spheres/twelve-laws/laws-remainder.html): Twelve Laws. seal 0fce8dbd67295ddf676fc1a77bf09257e4fd8782b8f2d91013c71d6c577c9543
 - [Vis-Viva](./spheres/twelve-laws/laws-visviva.html): Twelve Laws. seal 7698748a2d74e32d35e552d0e0dab28d7f21d1509ecf10f25b311fdcef643208
 - [Golden Icosahedron](./spheres/twelve-laws/laws-icosa.html): Twelve Laws. seal 690bcc49df6403f9f2166b2909f8ca3b2c5bd9e0d33297c9d79371c54dcf6522
+
+## Cubit neon shell
+Dave: "build all pages like this", with the cubit analytical · neon page (dark stage, cyan and pink, two panels).
+Every Mayhem HTML page wears that shell. Twelve Laws use the two panels: analytical holds the proof, neon holds the sculpture (`{{ act || react || change }}`). Seals were not rewritten. The sample page's cartridge was not copied onto the spheres. Gray, white and black instruments (the Cameron axes, the screening-room snippet) stay in their canvases.
