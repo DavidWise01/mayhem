@@ -1,0 +1,1 @@
+{"slug": "brewster-pane", "seal": "e6a6cd34a6905520ab48ae3fd1d51bdefddff21ce877c269076ea07c749853e7", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

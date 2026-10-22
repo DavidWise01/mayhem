@@ -844,3 +844,11 @@ Four places. Each picture and each subject is different from the Twelve Laws ins
 - [The Wax Comb](./spheres/elsewhere/wax-comb.html): Elsewhere. seal 2b5d2480119eb4e374e41eeeea3931fb4f177ea6d5e665a6a2b45c28d4999cf5
 - [The Sand Pendulum](./spheres/elsewhere/sand-pendulum.html): Elsewhere. seal cb8dc2272eba1da022d0d18e109fd97e29c90851dfa081663a9bfa4e1d3c454a
 - [The Paper Alley](./spheres/elsewhere/paper-alley.html): Elsewhere. seal d89cfecb0fccac1b9c99da94b84cb5fb66e0465fab0cc5664090dce0e407cc34
+
+## Measures
+Dave: keep updating world mayhem. Each page a different art and a different topic from the last.
+Four measures. The Brewster Pane is smoked glass and a brass lamp. The Mach Needle is a shock over pale sand. The Nephroid Cup is a caustic seen from above. The Tractrix Leash is a watch pulled across a table. Identities are LIT and recomputed on load. Citations are AMBER. Sculptures are MODEL. Each page still builds the cubit register. Thumbnail views skip the register. Seals were not rewritten. Board key mayhem-measures-board.
+- [The Brewster Pane](./spheres/measures/brewster-pane.html): Measures. seal e6a6cd34a6905520ab48ae3fd1d51bdefddff21ce877c269076ea07c749853e7
+- [The Mach Needle](./spheres/measures/mach-needle.html): Measures. seal 0dda4b513a661b0eb2b72b352141044c29d53e12958d0d34a06bfecb9c84abc1
+- [The Nephroid Cup](./spheres/measures/nephroid-cup.html): Measures. seal ddc5bd0828f7cae46a180edc1e1defea2b12d1239b329bf5421563b765d619ee
+- [The Tractrix Leash](./spheres/measures/tractrix-leash.html): Measures. seal e29165b1822dc317038e76cfc24cac797582e54c9f305a4c13d9fc8d46799417
