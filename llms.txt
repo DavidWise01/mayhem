@@ -860,6 +860,14 @@ Dave: the flat studio was not a graphics upgrade, so add spheres to World Mayhem
 - [The Hemisphere](./spheres/orbs/hemisphere-cap.html): Orbs. seal 36e1211fcbd58b517a8b6bea568b52e71a275e9e61bff081191eff0eea3c53f5
 - [The Matched Disks](./spheres/orbs/matched-disks.html): Orbs. seal 41e4bdfd7c21db673ab7495086e91db6b09dc9304edbf774fba447cb7aae0cb0
 
+## Notaries
+Dave: continue next, five pages, same instructions. Posted on Mayhem. The cube of 7 kept its next turn for a cited article.
+Five notaries. Each page has one pupil, a law, a stage, and a desk. The pupil writes the structure. A second run must match. A step is kept only when it is a true improvement, and the decoys are dropped. The page throws otherwise. No NES cartridge is on these pages. Each page still builds the cubit register. Thumbnail views skip the register. Seals were written once. The keeper seal was not rewritten. The 0root hallway was not published.
+- [The Zeckendorf Purse](./spheres/notaries/zeckendorf-purse.html): Notaries. seal bfaf7c30966c6b45f7a4c7d9ab5161049894447b64083a59f8671de0e36113a8
+- [The Jug Pair](./spheres/notaries/jug-pair.html): Notaries. seal a05c3abb77b1a61f061e2bb196b70b2d3f470a32ff05ad1e1518f5c910f4003a
+- [The Dyck Word](./spheres/notaries/dyck-word.html): Notaries. seal 18ddf7c0eefc71ce64355caf30871946a5e5bb75636731a7b49a88167665dd01
+- [The Peasant Product](./spheres/notaries/peasant-product.html): Notaries. seal b79db9c84442939de51084ac4755dc47c71339c3235647466808570ade280f4a
+- [The Pell Ladder](./spheres/notaries/pell-ladder.html): Notaries. seal ab4e603ad94593438e960a370d037344be29d2dcc454bc76e44a146f2ace34fc
 ## Tellers
 Dave: continue next, five pages, same instructions. Posted on Mayhem. The cube of 7 kept its next turn for a cited article.
 Five tellers. Each page has one pupil, a law, a stage, and a desk. The pupil writes the structure. A second run must match. A step is kept only when it is a true improvement, and the decoys are dropped. The page throws otherwise. No NES cartridge is on these pages. Each page still builds the cubit register. Thumbnail views skip the register. Seals were written once. The keeper seal was not rewritten. The 0root hallway was not published.

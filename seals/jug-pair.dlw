@@ -1,0 +1,1 @@
+{"slug":"jug-pair","seal":"a05c3abb77b1a61f061e2bb196b70b2d3f470a32ff05ad1e1518f5c910f4003a","rule":"sha256(name|slug|blurb)","write":"if-missing"}

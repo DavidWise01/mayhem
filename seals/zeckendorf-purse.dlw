@@ -1,0 +1,1 @@
+{"slug":"zeckendorf-purse","seal":"bfaf7c30966c6b45f7a4c7d9ab5161049894447b64083a59f8671de0e36113a8","rule":"sha256(name|slug|blurb)","write":"if-missing"}
