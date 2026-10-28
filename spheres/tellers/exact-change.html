@@ -1,0 +1,300 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The Exact Change - Tellers - Mayhem</title>
+<style>
+body{margin:0}
+#art{position:fixed;inset:0;width:100vw;height:100vh;z-index:-1}
+.t{display:inline-block;padding:1px 8px;border-radius:8px;font-weight:700;font-size:13px;color:#111}
+.LIT{background:#3ee07a}.AMBER{background:#ffb020}.WALL{background:#ff5a5a;color:#fff}.MODEL{background:#b48cff}
+#v3{width:100%;overflow:hidden}
+</style>
+<style id="cubit-neon">
+:root{--neon-cyan:#00f0ff;--neon-pink:#ff2bd6;--neon-amber:#ffb300}
+html,body{background:#030308;color:#d7e3f5;font-family:ui-monospace,Menlo,monospace}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(600px 400px at 20% 10%, rgba(0,240,255,.06), transparent 70%),
+  radial-gradient(700px 500px at 80% 90%, rgba(255,43,214,.05), transparent 70%)}
+main,#wrap{position:relative;z-index:1;background:rgba(5,8,16,.78);color:#d7e3f5;
+  border:1px solid rgba(0,240,255,.18);border-radius:14px;
+  box-shadow:0 0 34px rgba(0,240,255,.07), inset 0 0 60px rgba(0,0,0,.45)}
+#wrap{max-width:1340px;margin:0 auto;padding:34px 18px 50px;text-align:center}
+h1{font-size:26px;font-weight:400;letter-spacing:.22em;text-transform:uppercase;color:#eaf6ff;
+  text-shadow:0 0 8px var(--neon-cyan), 0 0 28px rgba(0,240,255,.7);animation:cubitflicker 7s infinite}
+#sub{font-size:11px;letter-spacing:.3em;color:#5f7396;text-transform:uppercase;margin-bottom:26px}
+#v3{background:#05070d;border-radius:14px;box-shadow:0 0 0 3px var(--neon-pink), 0 0 28px rgba(255,43,214,.25)}
+a{color:var(--neon-cyan)}
+code{color:#ffb3ec}
+@keyframes cubitflicker{0%,100%{opacity:1}92%{opacity:1}93%{opacity:.6}94%{opacity:1}97%{opacity:.85}98%{opacity:1}}
+@media (prefers-reduced-motion:reduce){h1{animation:none}}
+body.thumb .story,body.thumb #controls,body.thumb .kicker{display:none}
+body.thumb #wrap{background:transparent;box-shadow:none;border:0;padding:0}
+body.thumb #v3{height:100vh;border-radius:0;box-shadow:none}
+</style>
+<style id="place">
+html,body{background:#f6e0ee;color:#2a1020;font-family:Palatino,'Palatino Linotype',Georgia,serif}
+body::before{background:linear-gradient(180deg, rgba(255,255,255,.28), rgba(0,0,0,.05))}
+#wrap{max-width:1080px;background:rgba(255,248,244,.92);color:#2a1020;border:0;border-radius:18px;box-shadow:0 18px 40px rgba(20,16,30,.16);text-align:left;padding:22px 26px 36px}
+#wrap h1{font-family:Palatino,Georgia,serif;font-size:54px;font-weight:600;letter-spacing:0;text-transform:none;color:#2a1020;text-shadow:none;animation:none;margin:0 0 8px}
+#wrap .kicker{letter-spacing:.16em;text-transform:uppercase;font-size:12px;color:#2a1020;font-family:ui-monospace,monospace}
+#v3{position:relative;height:62vh;min-height:420px;border-radius:18px;background:#4a2040;box-shadow:0 16px 36px rgba(20,16,30,.18)}
+#wrap #agentlog{position:absolute;z-index:2;left:14px;bottom:14px;margin:0;max-width:340px;padding:8px 10px;border-radius:10px;background:rgba(255,244,240,.94);color:#2a1020;font-family:ui-monospace,Menlo,monospace;font-size:12px;line-height:1.4;pointer-events:none}
+body.thumb #agentlog{display:none}
+.law{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:14px 0 8px}
+.law b{letter-spacing:.14em;font-family:ui-monospace,monospace;font-size:13px}
+.law span{border:1px solid #2a1020;padding:3px 8px;font-family:ui-monospace,monospace;font-size:12px}
+.law span.on{background:#e2b657;color:#2a1020}
+#desk{width:100%;height:auto;display:block;margin:8px 0 16px;border-radius:10px}
+#wrap p,#wrap li,h2{color:#2a1020}
+a{color:#2a1020}
+</style></head><body><canvas id="art"></canvas><main id="wrap">
+<p class="kicker">TELLERS - under KEEPER ERIS</p>
+<h1>The Exact Change</h1>
+<p id="sub">Three quarters, one dime, no nickels, two pennies.</p>
+<div id="v3"><p id="agentlog">CASHIER is writing the structure.</p></div>
+<div class="story">
+<div class="law" aria-label="{{persist + 3 , act + 1 , react + 0 , learn + 2 , loop + 1 }}"><b>CASHIER</b><span>PERSIST +3</span><span>ACT +1</span><span>REACT +0</span><span>LEARN +2</span><span>LOOP +1</span></div>
+<canvas id="desk" width="720" height="200"></canvas>
+<p><span class="t LIT">LIT</span> CASHIER keeps a coin only when its value still fits the remainder. 87 cents is 3 quarters, 1 dime, 0 nickels, and 2 pennies. Six coins are kept and four oversized offers are dropped. No other mix of these coins pays 87 with fewer than six. The law sums to 7. A second run must match.</p>
+<p><span class="t AMBER">AMBER</span> The set is the ordinary United States denominations of 1, 5, 10, and 25 cents. That assignment is the coin drawer on this page.</p>
+<p><span class="t WALL">WALL</span> The fewest-coin check is for 87 cents and these four values. It does not say every coin system rewards the greedy choice.</p>
+<p><span class="t MODEL">MODEL</span> One pupil. The stage is the drawer the pupil filled. A coin is kept only when it fits. No cartridge is loaded.</p>
+<p id="proof">Checking the teller.</p>
+<p>Seal sha256(name|slug|blurb): <code id="seal">e4ef2c8977a05368fb22f3166aa867923ae96cdc24ebbbce6aedf57c5b3e3efc</code></p>
+<p><a href="../../index.html">Mayhem</a></p>
+</div>
+</main>
+<script>
+const NAME="The Exact Change",SLUG="exact-change",BLURB="CASHIER keeps a coin only when it fits the remainder, and 87 cents takes six coins.",SEAL="e4ef2c8977a05368fb22f3166aa867923ae96cdc24ebbbce6aedf57c5b3e3efc";
+function coinRun() {
+  const denoms = [25, 10, 5, 1];
+  let rem = 87;
+  const counts = [];
+  const log = [];
+  let kept = 0, drops = 0;
+  denoms.forEach((d) => {
+    const decoy = rem + 1;
+    if (decoy <= rem) throw new Error("coin decoy");
+    drops++;
+    log.push({ agent: "CASHIER", decoy: true, accepted: false, note: "drop " + decoy });
+    let count = 0;
+    while (d <= rem) {
+      rem -= d;
+      count++;
+      kept++;
+      log.push({ agent: "CASHIER", decoy: false, accepted: true, coin: d, note: "keep " + d });
+    }
+    counts.push(count);
+  });
+  if (rem !== 0) throw new Error("rem " + rem);
+  let best = 99;
+  for (let a = 0; a <= 3; a++) {
+    for (let b = 0; b <= 8; b++) {
+      for (let c = 0; c <= 17; c++) {
+        const pennies = 87 - 25 * a - 10 * b - 5 * c;
+        if (pennies < 0) continue;
+        const coins = a + b + c + pennies;
+        if (coins < best) best = coins;
+      }
+    }
+  }
+  const value = 25 * counts[0] + 10 * counts[1] + 5 * counts[2] + counts[3];
+  if (value !== 87) throw new Error("value");
+  const pack = counts.join("|") + "|" + kept + "|" + drops + "|" + best;
+  return { counts, kept, drops, best, pack, log };
+}
+function paintLog(log){const el=document.getElementById('agentlog');if(!el||!log||!log.length)return;const acc=log.filter(e=>e.accepted),rej=log.filter(e=>!e.accepted);const tail=acc.slice(-3).concat(rej.slice(-2));el.innerHTML='<b>'+log[0].agent+'</b> '+acc.length+' kept, '+rej.length+' dropped<br>'+tail.map(e=>(e.accepted?'kept ':'drop ')+e.note).join('<br>')}
+function paintDesk(L){
+ const cv=document.getElementById('desk'); if(!cv) return; const g=cv.getContext('2d');
+ g.fillStyle='#2a1020'; g.fillRect(0,0,cv.width,cv.height);
+ const names=['25','10','5','1'];
+ L.counts.forEach((count,i)=>{ const x=40+i*160; g.fillStyle='#f6e0ee'; g.font='12px ui-monospace,monospace'; g.fillText(names[i]+' x '+count, x, 30);
+  for(let k=0;k<count;k++){ g.fillStyle='#e2b657'; g.beginPath(); g.arc(x+30, 160-k*18, 12, 0, Math.PI*2); g.fill(); } });
+}
+function paintProof(html){const el=document.getElementById('proof');if(!el)return;el.innerHTML=html}
+function remember(pack){
+ const key='mayhem-teller-kept';
+ let book={};
+ try{ book=JSON.parse(localStorage.getItem(key)||'{}')||{}; }catch(e){ book={}; }
+ const row=book[SLUG];
+ if(!row) book[SLUG]={pack:pack,act:'census',visits:1};
+ else { if(row.pack!==pack||row.act!=='census') throw Error('persistent drift'); row.visits+=1; }
+ localStorage.setItem(key, JSON.stringify(book));
+ const again=JSON.parse(localStorage.getItem(key))[SLUG];
+ if(!again||again.pack!==pack) throw Error('persistent drift');
+ return again.visits;
+}
+async function sha(t){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(t));return[...new Uint8Array(b)].map(v=>v.toString(16).padStart(2,'0')).join('')}
+function check(){
+ const A=coinRun();
+ const B=coinRun();
+ if(A.pack!==B.pack) throw Error('drift');
+ if(A.log.some(e=>e.decoy&&e.accepted)) throw Error('decoy kept');
+ const law=[3,1,0,2,1];
+ if(law.reduce((a,b)=>a+b,0)!==7) throw Error('law');
+ if(A.counts.join(',')!=='3,1,0,2'||A.kept!==6||A.drops!==4||A.best!==6) throw Error('coins');
+ paintLog(A.log); paintDesk(A);
+ remember(A.pack);
+ return A.pack;
+}
+(async()=>{
+ if(/[?&]thumb=1/.test(location.search)) document.body.classList.add('thumb');
+ try{const h=await sha(NAME+'|'+SLUG+'|'+BLURB);if(h!==SEAL)throw Error('seal mismatch');const r=check();paintProof('<span class="t LIT">LIT</span> self-check passed: seal recomputed; '+r);}catch(e){paintProof('<span class="t WALL">FAIL</span> '+e.message);throw e}
+ const thumb=/[?&]thumb=1/.test(location.search);
+ const reduce=typeof matchMedia==='function'&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+ if(!thumb&&!reduce){const spans=[...document.querySelectorAll('.law span')];let i=0;if(spans.length)setInterval(()=>{spans.forEach((s,k)=>s.classList.toggle('on',k===i));i=(i+1)%spans.length;},700);}
+})();
+</script>
+<script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}</script>
+<script type="module">
+import * as THREE from 'three';
+import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const box=document.getElementById('v3');
+const W=box.clientWidth||800,H=box.clientHeight||560;
+const R=new THREE.WebGLRenderer({antialias:true});
+R.setPixelRatio(Math.min(devicePixelRatio||1,2));
+R.setSize(W,H);
+R.outputColorSpace=THREE.SRGBColorSpace;
+R.toneMapping=THREE.ACESFilmicToneMapping;
+R.toneMappingExposure=1.05;
+box.insertBefore(R.domElement, box.firstChild);
+const S=new THREE.Scene();
+const C=new THREE.PerspectiveCamera(42,W/Math.max(H,1),.1,80);
+const O=new OrbitControls(C,R.domElement);
+O.enableDamping=true;
+S.add(new THREE.AmbientLight(0xffffff,.55));
+S.add(new THREE.HemisphereLight(0xfff6ea,0x223044,.4));
+function floor(color,y){
+ const sand=new THREE.Mesh(new THREE.CircleGeometry(14,64), new THREE.MeshStandardMaterial({color,roughness:1}));
+ sand.rotation.x=-Math.PI/2; sand.position.y=y; sand.receiveShadow=true; S.add(sand); sand.updateMatrixWorld();
+ if(new THREE.Vector3(0,0,1).applyQuaternion(sand.quaternion).y<0.9) throw Error('floor facing');
+}
+function cam(){
+ const view=new THREE.Vector3(); C.getWorldDirection(view);
+ if(view.z>=-0.5) throw Error('camera facing');
+}
+S.background=new THREE.Color(0x4a2040);
+C.position.set(4.2,3.4,8.2); C.lookAt(0,0.7,0); O.target.set(0,0.7,0);
+floor(0x2a2118,0);
+const sun=new THREE.DirectionalLight(0xfff1d6,2.1); sun.position.set(4,8,6); S.add(sun);
+function hero(){
+ const g=new THREE.Group(); S.add(g);
+ const run=coinRun();
+ const again=coinRun();
+ if(again.pack!==run.pack) throw Error('drift');
+ const play=!reduce && !/[?&]thumb=1/.test(location.search);
+ const mat=new THREE.MeshStandardMaterial({color:0xe2b657,metalness:.55,roughness:.28});
+ let mesh=0;
+ run.counts.forEach((count,di)=>{ for(let i=0;i<count;i++){ const m=new THREE.Mesh(new THREE.CylinderGeometry(0.28,0.28,0.08,24), mat);
+  m.position.set((di-1.5)*0.85, 0.1+i*0.1, 0); g.add(m); mesh++; } });
+ if(mesh!==6||g.children.length!==6) throw Error('coins');
+ cam();
+ g.userData={play, run, step:0, done:true, finish:function(){}};
+ return g;
+}
+let HERO=null;
+try{ HERO=hero(); }catch(e){ paintProof('<span class="t WALL">FAIL</span> '+e.message); throw e; }
+function tick(){
+ if(HERO&&playSafe()&&!reduce) HERO.rotation.y+=0.003;
+ O.update(); R.render(S,C); requestAnimationFrame(tick);
+}
+function playSafe(){ return HERO&&HERO.userData.play; }
+tick();
+addEventListener('resize',()=>{const w=box.clientWidth,h=box.clientHeight;C.aspect=w/Math.max(h,1);C.updateProjectionMatrix();R.setSize(w,h)});
+</script>
+<script id="cubit-register-boot">
+(function(){
+  if(/[?&]thumb=1/.test(location.search)) return;
+  if(document.getElementById('cubit-register')) return;
+  const ORDER=['geometric','constructive','agentic','generative'];
+  const ROLES=['ARTIST','CRITIC','BUILDER','WEAVER','FOLLOWER','KEEPER'];
+  const KEY='mayhem-cubit-register';
+  function slug(){
+    for(const sc of document.scripts){
+      const m=/const SLUG="([^"]+)"/.exec(sc.textContent||'');
+      if(m) return m[1];
+    }
+    return (location.pathname.replace(/^\//,'').replace(/\.html$/i,''))||'index';
+  }
+  function geometric(){
+    let canvases=0, svgs=0, w=0, h=0;
+    document.querySelectorAll('canvas').forEach(el=>{ canvases++; w=Math.max(w, el.clientWidth|0); h=Math.max(h, el.clientHeight|0); });
+    document.querySelectorAll('svg').forEach(el=>{ svgs++; w=Math.max(w, el.clientWidth|0); h=Math.max(h, el.clientHeight|0); });
+    const v3=document.getElementById('v3');
+    if(v3){ w=Math.max(w, v3.clientWidth|0); h=Math.max(h, v3.clientHeight|0); }
+    if(!w){ w=document.documentElement.clientWidth|0; h=document.documentElement.clientHeight|0; }
+    return {name:'geometric', text:canvases+'c+'+svgs+'s·'+w+'x'+h, canvases, svgs, w, h};
+  }
+  function constructive(host){
+    const nodes=host.querySelectorAll('*').length, buttons=host.querySelectorAll('button').length;
+    return {name:'constructive', text:nodes+'n·'+buttons+'b', nodes, buttons};
+  }
+  function agentic(host, c){
+    const text=host.innerText||'';
+    const found=ROLES.filter(r=>text.indexOf(r)!==-1);
+    const agents=found.length?found:['REGISTER'];
+    return {name:'agentic', text:agents.join('+'), agents, accepted:c.nodes>0};
+  }
+  function generative(g,c,a){
+    const s=g.text+'|'+c.text+'|'+a.text;
+    let x=2166136261;
+    for(let i=0;i<s.length;i++) x=Math.imul(x^s.charCodeAt(i), 16777619);
+    const code=(x>>>0).toString(16).padStart(8,'0');
+    return {name:'generative', text:code, code};
+  }
+  function build(host){
+    const register=[];
+    const g=geometric(); register.push(g);
+    const c=constructive(host); register.push(c);
+    const a=agentic(host,c); register.push(a);
+    register.push(generative(g,c,a));
+    return register;
+  }
+  function assertReg(register){
+    if(register.length!==4) throw Error('register length '+register.length);
+    if(register.map(x=>x.name).join(',')!==ORDER.join(',')) throw Error('cubit order');
+    if(register.some(x=>!x.text)) throw Error('empty cubit');
+    if(!register[2].accepted) throw Error('agent refused the register');
+    const again=generative(register[0], register[1], register[2]);
+    if(again.code!==register[3].code) throw Error('register drift');
+    return register.map(x=>x.text).join(' | ');
+  }
+  function remember(id, word){
+    let book={};
+    try{ book=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){ book={}; }
+    book[id]={word};
+    try{ localStorage.setItem(KEY, JSON.stringify(book)); }catch(e){}
+    return Object.keys(book).length;
+  }
+  function mount(register, err, rows){
+    let el=document.getElementById('cubit-register');
+    if(!el){
+      const style=document.createElement('style');
+      style.textContent='#cubit-register{margin:18px 0;padding:14px 12px 12px;border:1px solid rgba(0,240,255,.28);border-radius:14px;background:rgba(5,8,16,.78);box-shadow:0 0 28px rgba(0,240,255,.08);color:#d7e3f5;text-align:left;font-family:ui-monospace,Menlo,monospace}#cubit-register .cr-formula{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#eaf6ff;text-shadow:0 0 8px #00f0ff;margin:0 0 10px}#cubit-register .cr-row{display:flex;gap:8px;flex-wrap:wrap}#cubit-register .cr-cubit{flex:1 1 140px;border:1px solid rgba(0,240,255,.25);border-radius:10px;padding:8px;background:rgba(0,0,0,.35)}#cubit-register .cr-cubit b{display:block;font-weight:400;font-size:10px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:4px}#cubit-register .cr-cubit[data-cubit=geometric] b{color:#00f0ff}#cubit-register .cr-cubit[data-cubit=constructive] b{color:#ffb300}#cubit-register .cr-cubit[data-cubit=agentic] b{color:#ff2bd6}#cubit-register .cr-cubit[data-cubit=generative] b{color:#eaf6ff}#cubit-register .cr-cubit i{font-style:normal;font-size:13px;color:#eaf6ff}#cubit-register .cr-word{margin-top:10px;font-size:12px;color:#ffb3ec;word-break:break-all}#cubit-register .cr-status{margin-top:8px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#8fa3c7}body.thumb #cubit-register{display:none}';
+      document.head.appendChild(style);
+      el=document.createElement('section');
+      el.id='cubit-register';
+      el.setAttribute('aria-label','cubit register');
+      const host=document.getElementById('wrap')||document.querySelector('main')||document.body;
+      const h=host.querySelector('h1');
+      if(h) h.insertAdjacentElement('afterend', el);
+      else host.insertBefore(el, host.firstChild);
+    }
+    const cells=(register||ORDER.map(name=>({name,text:'—'}))).map(x=>'<div class="cr-cubit" data-cubit="'+x.name+'"><b>'+x.name+'</b><i>'+x.text+'</i></div>').join('');
+    const word=err?'':register.map(x=>x.text).join(' | ');
+    el.innerHTML='<div class="cr-formula">{{ geometric, constructive, agentic, generative }}</div><div class="cr-row">'+cells+'</div><div class="cr-word">'+(err?'':'REGISTER '+word)+'</div><div class="cr-status">'+(err?'FAIL '+err.message:'LIT four cubits wrote the register · AMBER this browser holds '+rows+' rows')+'</div>';
+  }
+  function run(){
+    const host=document.getElementById('wrap')||document.querySelector('main')||document.body;
+    try{
+      const register=build(host);
+      const word=assertReg(register);
+      const rows=remember(slug(), word);
+      mount(register, null, rows);
+    }catch(e){
+      mount(null, e, 0);
+      throw e;
+    }
+  }
+  requestAnimationFrame(run);
+})();
+</script>
+</body></html>

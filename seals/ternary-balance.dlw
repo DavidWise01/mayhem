@@ -1,0 +1,1 @@
+{"slug":"ternary-balance","seal":"73ca0f1ffff6fa0f6ee896f91e3f953635adafc00c5dd011fa9d0700b439b1cc","rule":"sha256(name|slug|blurb)","write":"if-missing"}

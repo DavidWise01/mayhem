@@ -1,0 +1,1 @@
+{"slug":"josephus-ring","seal":"5032d0cff412fefe3f505211267bf2e258e0bcdf270e5a195d251ecdd56e9e48","rule":"sha256(name|slug|blurb)","write":"if-missing"}

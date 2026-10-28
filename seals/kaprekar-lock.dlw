@@ -1,0 +1,1 @@
+{"slug":"kaprekar-lock","seal":"8cae74178e960cdff0ef82c24c318f45874f3bb5a452adf7fef6c2fc71b60385","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"exact-change","seal":"e4ef2c8977a05368fb22f3166aa867923ae96cdc24ebbbce6aedf57c5b3e3efc","rule":"sha256(name|slug|blurb)","write":"if-missing"}

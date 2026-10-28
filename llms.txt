@@ -860,6 +860,14 @@ Dave: the flat studio was not a graphics upgrade, so add spheres to World Mayhem
 - [The Hemisphere](./spheres/orbs/hemisphere-cap.html): Orbs. seal 36e1211fcbd58b517a8b6bea568b52e71a275e9e61bff081191eff0eea3c53f5
 - [The Matched Disks](./spheres/orbs/matched-disks.html): Orbs. seal 41e4bdfd7c21db673ab7495086e91db6b09dc9304edbf774fba447cb7aae0cb0
 
+## Tellers
+Dave: continue next, five pages, same instructions. Posted on Mayhem. The cube of 7 kept its next turn for a cited article.
+Five tellers. Each page has one pupil, a law, a stage, and a desk. The pupil writes the structure. A second run must match. A step is kept only when it is a true improvement, and the decoys are dropped. The page throws otherwise. No NES cartridge is on these pages. Each page still builds the cubit register. Thumbnail views skip the register. Seals were written once. The keeper seal was not rewritten. The 0root hallway was not published.
+- [The Kaprekar Lock](./spheres/tellers/kaprekar-lock.html): Tellers. seal 8cae74178e960cdff0ef82c24c318f45874f3bb5a452adf7fef6c2fc71b60385
+- [The Josephus Ring](./spheres/tellers/josephus-ring.html): Tellers. seal 5032d0cff412fefe3f505211267bf2e258e0bcdf270e5a195d251ecdd56e9e48
+- [The Lo Shu](./spheres/tellers/lo-shu.html): Tellers. seal 35e810cc37c1180d470dd34a529c3f4e0f4bc977e0e3eda96bc4d1ec706147f1
+- [The Exact Change](./spheres/tellers/exact-change.html): Tellers. seal e4ef2c8977a05368fb22f3166aa867923ae96cdc24ebbbce6aedf57c5b3e3efc
+- [The Ternary Balance](./spheres/tellers/ternary-balance.html): Tellers. seal 73ca0f1ffff6fa0f6ee896f91e3f953635adafc00c5dd011fa9d0700b439b1cc
 ## Clerks
 Dave: continue next, five pages at a time, agentic, generative, and deterministic. Posted on Mayhem. The cube of 7 kept its next turn for a cited article.
 Five clerks. Each page has one pupil, a law, a stage, and a desk. The pupil writes the structure. A second run must match. A step is kept only when it is a true improvement, and the decoys are dropped. The page throws otherwise. No NES cartridge is on these pages. Each page still builds the cubit register. Thumbnail views skip the register. Seals were written once. The keeper seal was not rewritten. The 0root hallway was not published.

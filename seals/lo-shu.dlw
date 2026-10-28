@@ -1,0 +1,1 @@
+{"slug":"lo-shu","seal":"35e810cc37c1180d470dd34a529c3f4e0f4bc977e0e3eda96bc4d1ec706147f1","rule":"sha256(name|slug|blurb)","write":"if-missing"}
