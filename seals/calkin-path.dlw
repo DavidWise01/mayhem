@@ -1,0 +1,1 @@
+{"slug":"calkin-path","seal":"846e58ff1c906087f7b2f0df4ffa7dc0931ebe68e83e1764859935ecb56fd200","rule":"sha256(name|slug|blurb)","write":"if-missing"}

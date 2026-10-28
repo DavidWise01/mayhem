@@ -1,0 +1,1 @@
+{"slug":"happy-seven","seal":"b1162de4bcbccd73ad4698ba480ff2426bdfe153c8c15a5e894f4c12477bcdf8","rule":"sha256(name|slug|blurb)","write":"if-missing"}

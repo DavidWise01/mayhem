@@ -860,6 +860,14 @@ Dave: the flat studio was not a graphics upgrade, so add spheres to World Mayhem
 - [The Hemisphere](./spheres/orbs/hemisphere-cap.html): Orbs. seal 36e1211fcbd58b517a8b6bea568b52e71a275e9e61bff081191eff0eea3c53f5
 - [The Matched Disks](./spheres/orbs/matched-disks.html): Orbs. seal 41e4bdfd7c21db673ab7495086e91db6b09dc9304edbf774fba447cb7aae0cb0
 
+## Heralds
+Dave: continue next, five pages, same instructions. Posted on Mayhem. The cube of 7 kept its next turn for a cited article.
+Five heralds. Each page has one pupil, a law, a stage, and a desk. The pupil writes the structure. A second run must match. A step is kept only when it is a true improvement, and the decoys are dropped. The page throws otherwise. No NES cartridge is on these pages. Each page still builds the cubit register. Thumbnail views skip the register. Seals were written once. The keeper seal was not rewritten. The 0root hallway was not published.
+- [The Hailstone](./spheres/heralds/hailstone.html): Heralds. seal 1bccbd5303523aafcb1496146b3f64270848c5b66462f709e4dfd2661e36c6c1
+- [The Wythoff Row](./spheres/heralds/wythoff-row.html): Heralds. seal 31fa7b7dfc08c142fac0c86abf2ccba244efcb6f3a175ff7fcd9f9eb2bd64304
+- [The Look and Say](./spheres/heralds/look-and-say.html): Heralds. seal 128632cd36578ea06a2a7468ab13d027bea5751b42d73af10a582b09e4fa0a2b
+- [The Calkin Path](./spheres/heralds/calkin-path.html): Heralds. seal 846e58ff1c906087f7b2f0df4ffa7dc0931ebe68e83e1764859935ecb56fd200
+- [The Happy Seven](./spheres/heralds/happy-seven.html): Heralds. seal b1162de4bcbccd73ad4698ba480ff2426bdfe153c8c15a5e894f4c12477bcdf8
 ## Notaries
 Dave: continue next, five pages, same instructions. Posted on Mayhem. The cube of 7 kept its next turn for a cited article.
 Five notaries. Each page has one pupil, a law, a stage, and a desk. The pupil writes the structure. A second run must match. A step is kept only when it is a true improvement, and the decoys are dropped. The page throws otherwise. No NES cartridge is on these pages. Each page still builds the cubit register. Thumbnail views skip the register. Seals were written once. The keeper seal was not rewritten. The 0root hallway was not published.
