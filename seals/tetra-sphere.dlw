@@ -1,0 +1,6 @@
+{
+ "slug": "tetra-sphere",
+ "seal": "306143dc36454d775cf220221155629d98e51d84d20703ee82a8e106ef98084b",
+ "rule": "sha256(name|slug|blurb)",
+ "write": "if-missing"
+}

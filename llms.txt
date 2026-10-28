@@ -852,3 +852,10 @@ Four measures. The Brewster Pane is smoked glass and a brass lamp. The Mach Need
 - [The Mach Needle](./spheres/measures/mach-needle.html): Measures. seal 0dda4b513a661b0eb2b72b352141044c29d53e12958d0d34a06bfecb9c84abc1
 - [The Nephroid Cup](./spheres/measures/nephroid-cup.html): Measures. seal ddc5bd0828f7cae46a180edc1e1defea2b12d1239b329bf5421563b765d619ee
 - [The Tractrix Leash](./spheres/measures/tractrix-leash.html): Measures. seal e29165b1822dc317038e76cfc24cac797582e54c9f305a4c13d9fc8d46799417
+
+## Orbs
+Dave: the flat studio was not a graphics upgrade, so add spheres to World Mayhem. Four orbs. The Inscribed Ball is cobalt inside glass. The Tetra Sphere is four balls on one wire sphere. The Hemisphere is a cut ball. The Matched Disks are a far gold sphere and a near silver sphere of equal angular size. Identities are LIT and recomputed on load. Citations are AMBER. Sculptures are MODEL. Each page still builds the cubit register. Thumbnail views skip the register. Seals were written once. The keeper seal was not rewritten.
+- [The Inscribed Ball](./spheres/orbs/inscribed-ball.html): Orbs. seal 6644dc051641705db5c2c94c2edb1db9be787253fb3059652c475d3bf3731afe
+- [The Tetra Sphere](./spheres/orbs/tetra-sphere.html): Orbs. seal 306143dc36454d775cf220221155629d98e51d84d20703ee82a8e106ef98084b
+- [The Hemisphere](./spheres/orbs/hemisphere-cap.html): Orbs. seal 36e1211fcbd58b517a8b6bea568b52e71a275e9e61bff081191eff0eea3c53f5
+- [The Matched Disks](./spheres/orbs/matched-disks.html): Orbs. seal 41e4bdfd7c21db673ab7495086e91db6b09dc9304edbf774fba447cb7aae0cb0

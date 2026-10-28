@@ -1,0 +1,6 @@
+{
+ "slug": "matched-disks",
+ "seal": "41e4bdfd7c21db673ab7495086e91db6b09dc9304edbf774fba447cb7aae0cb0",
+ "rule": "sha256(name|slug|blurb)",
+ "write": "if-missing"
+}

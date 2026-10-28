@@ -1,0 +1,6 @@
+{
+ "slug": "inscribed-ball",
+ "seal": "6644dc051641705db5c2c94c2edb1db9be787253fb3059652c475d3bf3731afe",
+ "rule": "sha256(name|slug|blurb)",
+ "write": "if-missing"
+}
