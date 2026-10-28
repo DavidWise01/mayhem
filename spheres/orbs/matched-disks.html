@@ -34,18 +34,21 @@ body::before{background:linear-gradient(180deg, rgba(255,255,255,.28), rgba(0,0,
 #wrap{max-width:1080px;background:rgba(255,252,247,.84);color:#0c2a44;border:0;border-radius:18px;box-shadow:0 18px 40px rgba(20,16,30,.16);text-align:left;padding:22px 26px 36px}
 #wrap h1{font-family:Palatino,Georgia,serif;font-size:54px;font-weight:600;letter-spacing:0;text-transform:none;color:#0c2a44;text-shadow:none;animation:none;margin:0 0 8px}
 #wrap .kicker{letter-spacing:.16em;text-transform:uppercase;font-size:12px;color:#0c2a44;font-family:ui-monospace,monospace}
-#v3{height:62vh;min-height:420px;border-radius:18px;background:#8fd4ff;box-shadow:0 16px 36px rgba(20,16,30,.18)}
+#v3{position:relative;height:62vh;min-height:420px;border-radius:18px;background:#8fd4ff;box-shadow:0 16px 36px rgba(20,16,30,.18)}
+#wrap #agentlog{position:absolute;z-index:2;left:14px;bottom:14px;margin:0;max-width:320px;padding:8px 10px;border-radius:10px;background:rgba(255,255,255,.92);color:#16324a;font-family:ui-monospace,Menlo,monospace;font-size:12px;line-height:1.4;pointer-events:none}
+body.thumb #agentlog{display:none}
 #wrap p,#wrap li,h2{color:#0c2a44}
 a{color:#0c2a44}
 </style></head><body><canvas id="art"></canvas><main id="wrap">
 <p class="kicker">ORBS · under KEEPER ERIS</p>
 <h1>The Matched Disks</h1>
 <p id="sub">A gold sun and a silver moon, the same size from this seat.</p>
-<div id="v3"></div>
+<div id="v3"><p id="agentlog">MATCHER is gauging the near sphere.</p></div>
 <div class="story">
 <p><span class="t LIT">LIT</span> Angular radius is arcsin(r/d). These two balls are built so r/d is the same number, so the angles match. The check uses the camera position as the eye.</p>
 <p><span class="t AMBER">AMBER</span> Equal angular size is why a nearer smaller body can match a farther larger one. The sun and the moon are the famous case. This page does not use their measured radii.</p>
 <p><span class="t MODEL">MODEL</span> Gold is far and large. Silver is near and small. From this seat they match.</p>
+<p>MATCHER starts the near sphere at the wrong radius and tries others. The gauger keeps a try only when the angular-size error drops. Gold stays put. The page throws if MATCHER does not improve.</p>
 <p id="proof">Checking the sphere.</p>
 <p>Seal sha256(name|slug|blurb): <code id="seal">41e4bdfd7c21db673ab7495086e91db6b09dc9304edbf774fba447cb7aae0cb0</code></p>
 <p><a href="../../index.html">Mayhem</a></p>
@@ -65,8 +68,32 @@ function fact(){
  return 'matched disks, arcsin(r/d) equal from the camera';
 }
 function paintProof(html,failed){const el=document.getElementById('proof');if(!el)return;el.innerHTML=html}
+function paintLog(log){const el=document.getElementById('agentlog');if(!el||!log||!log.length)return;const acc=log.filter(e=>e.accepted),rej=log.filter(e=>!e.accepted);const tail=acc.slice(-3).concat(rej.slice(-3));el.innerHTML='<b>'+log[0].agent+'</b> '+acc.length+' kept · '+rej.length+' dropped<br>'+tail.map(e=>(e.accepted?'kept ':'drop ')+e.note).join('<br>')}
+function matchRun(){
+ const eye=[0,1.6,9], ratio=0.15, farC=[-2.4,1.6,-1], nearC=[1.7,1.6,5.2];
+ const dist=c=>Math.hypot(c[0]-eye[0],c[1]-eye[1],c[2]-eye[2]);
+ const dS=dist(nearC), rRight=ratio*dS, rG=ratio*dist(farC);
+ const err=rr=>Math.abs(Math.asin(rr/dS)-Math.asin(rG/dist(farC)));
+ let r=+(rRight*0.42).toFixed(4); const start=r, e0=err(r), log=[]; let step=rRight*0.18;
+ for(let i=0;i<28;i++){
+  const dir=(i%4===3)?-1:1;
+  const mag=dir<0?step*0.6:Math.min(step, Math.abs(rRight-r)||step);
+  const prop=Math.max(0.05, r+dir*mag);
+  const e1=err(prop);
+  const ok=e1<err(r)-1e-15;
+  log.push({agent:'MATCHER', round:i+1, radius:prop, note:'r '+prop.toFixed(3)+' err '+e1.toFixed(4), accepted:ok});
+  if(ok){ r=prop; step=Math.max(rRight*0.04, step*0.82); }
+ }
+ return {start, r, rRight, e0, e:err(r), log, eye, farC, nearC, ratio};
+}
 async function sha(t){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(t));return[...new Uint8Array(b)].map(v=>v.toString(16).padStart(2,'0')).join('')}
-function check(){return fact()}
+function check(){
+ const f=fact(); const L=matchRun(); paintLog(L.log);
+ if(!(L.e<L.e0)) throw Error('no improvement');
+ if(!L.log.some(e=>e.agent==='MATCHER'&&e.accepted)) throw Error('agents');
+ if(Math.abs(L.r-L.rRight)>1e-9) throw Error('unmatched');
+ return f+'; MATCHER err '+L.e0.toFixed(3)+' → '+L.e.toFixed(3)+'; '+L.log.filter(e=>e.accepted).length+' kept';
+}
 if(/[?&]thumb=1/.test(location.search))document.body.classList.add('thumb');
 (async()=>{try{const h=await sha(NAME+'|'+SLUG+'|'+BLURB);if(h!==SEAL)throw Error('seal mismatch');const r=check();paintProof('<span class="t LIT">LIT</span> self-check passed: seal recomputed; '+r,false)}catch(e){paintProof('<span class="t WALL">FAIL</span> '+e.message,true);throw e}})();
 </script>
@@ -111,23 +138,38 @@ function hero(THREE,S,C){
  S.fog=new THREE.FogExp2(0x8fd4ff,0.02);
  floor(THREE,g,0xf4f7fb,0);
  const sun=new THREE.DirectionalLight(0xfff6e0,2.5); sun.position.set(8,12,2); sun.castShadow=true; g.add(sun);
- const eye=[0,1.6,9], ratio=0.15;
- const farC=[-2.4,1.6,-1], nearC=[1.7,1.6,5.2];
+ const run=matchRun();
+ const play=!reduce && !/[?&]thumb=1/.test(location.search);
+ const eye=run.eye, farC=run.farC, nearC=run.nearC;
  const dist=(c)=>Math.hypot(c[0]-eye[0],c[1]-eye[1],c[2]-eye[2]);
- const gold=sphere(THREE,ratio*dist(farC),0xffb000); gold.position.set(farC[0],farC[1],farC[2]); g.add(gold);
- const silver=sphere(THREE,ratio*dist(nearC),0xd5dde8); silver.position.set(nearC[0],nearC[1],nearC[2]); g.add(silver);
+ const gold=sphere(THREE,run.ratio*dist(farC),0xffb000); gold.position.set(farC[0],farC[1],farC[2]); g.add(gold);
+ const silver=sphere(THREE, play?run.start:run.r, 0xd5dde8); silver.position.set(nearC[0],nearC[1],nearC[2]); g.add(silver);
  silver.material.metalness=0.72; silver.material.roughness=0.18;
  gold.material.metalness=0.35; gold.material.roughness=0.22;
  C.position.set(eye[0],eye[1],eye[2]); C.lookAt(0,1.6,0); O.target.set(0,1.6,0);
  const view=new THREE.Vector3(); C.getWorldDirection(view);
  if(view.z>=-0.5) throw Error('camera facing');
- const a=(mesh,c)=>{const d=mesh.position.distanceTo(new THREE.Vector3(c[0],c[1],c[2])); return Math.asin(mesh.geometry.parameters.radius/d);};
- if(Math.abs(a(gold,eye)-a(silver,eye))>1e-9) throw Error('seen size');
+ const seen=(mesh)=>Math.asin(mesh.geometry.parameters.radius/mesh.position.distanceTo(C.position));
+ if(!play && Math.abs(seen(gold)-seen(silver))>1e-9) throw Error('seen size');
+ g.userData.gold=gold; g.userData.silver=silver; g.userData.run=run; g.userData.play=play; g.userData.step=0; g.userData.done=!play; g.userData.seen=seen;
  return g;
 }
+function setRadius(mesh,r){const old=mesh.geometry; mesh.geometry=new THREE.SphereGeometry(r,64,48); old.dispose();}
 let HERO=null;
 try{ HERO=hero(THREE,S,C); }catch(e){ paintProof('<span class="t WALL">FAIL</span> '+e.message,true); throw e; }
-function tick(){ if(HERO&&!reduce) HERO.rotation.y+=0.004; O.update(); R.render(S,C); requestAnimationFrame(tick); }
+function tick(){
+ if(HERO&&HERO.userData.play&&!HERO.userData.done){
+  const run=HERO.userData.run, e=run.log[HERO.userData.step++];
+  if(e&&e.accepted) setRadius(HERO.userData.silver, e.radius);
+  if(HERO.userData.step>=run.log.length){
+   setRadius(HERO.userData.silver, run.r); HERO.userData.done=true;
+   const eye=new THREE.Vector3(run.eye[0],run.eye[1],run.eye[2]);
+   const ang=mesh=>Math.asin(mesh.geometry.parameters.radius/mesh.position.distanceTo(eye));
+   if(Math.abs(ang(HERO.userData.gold)-ang(HERO.userData.silver))>1e-9){ const err=Error('seen size'); paintProof('<span class="t WALL">FAIL</span> '+err.message,true); throw err; }
+  }
+ }
+ if(HERO&&!reduce) HERO.rotation.y+=0.004; O.update(); R.render(S,C); requestAnimationFrame(tick);
+}
 tick();
 addEventListener('resize',()=>{const w=box.clientWidth,h=box.clientHeight;C.aspect=w/Math.max(h,1);C.updateProjectionMatrix();R.setSize(w,h)});
 </script>

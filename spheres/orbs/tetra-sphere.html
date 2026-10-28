@@ -34,18 +34,21 @@ body::before{background:linear-gradient(180deg, rgba(255,255,255,.28), rgba(0,0,
 #wrap{max-width:1080px;background:rgba(255,252,247,.84);color:#3a1230;border:0;border-radius:18px;box-shadow:0 18px 40px rgba(20,16,30,.16);text-align:left;padding:22px 26px 36px}
 #wrap h1{font-family:Palatino,Georgia,serif;font-size:54px;font-weight:600;letter-spacing:0;text-transform:none;color:#3a1230;text-shadow:none;animation:none;margin:0 0 8px}
 #wrap .kicker{letter-spacing:.16em;text-transform:uppercase;font-size:12px;color:#3a1230;font-family:ui-monospace,monospace}
-#v3{height:62vh;min-height:420px;border-radius:18px;background:#ffd0ea;box-shadow:0 16px 36px rgba(20,16,30,.18)}
+#v3{position:relative;height:62vh;min-height:420px;border-radius:18px;background:#ffd0ea;box-shadow:0 16px 36px rgba(20,16,30,.18)}
+#wrap #agentlog{position:absolute;z-index:2;left:14px;bottom:14px;margin:0;max-width:340px;padding:8px 10px;border-radius:10px;background:rgba(255,248,252,.92);color:#3a1230;font-family:ui-monospace,Menlo,monospace;font-size:12px;line-height:1.4;pointer-events:none}
+body.thumb #agentlog{display:none}
 #wrap p,#wrap li,h2{color:#3a1230}
 a{color:#3a1230}
 </style></head><body><canvas id="art"></canvas><main id="wrap">
 <p class="kicker">ORBS · under KEEPER ERIS</p>
 <h1>The Tetra Sphere</h1>
 <p id="sub">Four colored balls on one wire sphere.</p>
-<div id="v3"></div>
+<div id="v3"><p id="agentlog">SOLVER is seating the four balls.</p></div>
 <div class="story">
 <p><span class="t LIT">LIT</span> The four points (1,1,1), (1,−1,−1), (−1,1,−1), (−1,−1,1) are a regular tetrahedron. Each lies at distance √3 from the origin. The circumradius is the side times √6 / 4.</p>
 <p><span class="t AMBER">AMBER</span> R = a √6 / 4 is the circumradius of a regular tetrahedron.</p>
 <p><span class="t MODEL">MODEL</span> Four balls sit on the wire sphere they share.</p>
+<p>SOLVER starts the four balls off those seats and moves one coordinate at a time. The judge keeps a move only when the edge spread, the radial spread, and the gap from √3 fall together. The page throws if SOLVER does not improve.</p>
 <p id="proof">Checking the sphere.</p>
 <p>Seal sha256(name|slug|blurb): <code id="seal">306143dc36454d775cf220221155629d98e51d84d20703ee82a8e106ef98084b</code></p>
 <p><a href="../../index.html">Mayhem</a></p>
@@ -67,8 +70,51 @@ function fact(){
  return 'tetra sphere, R = a√6/4 = √3';
 }
 function paintProof(html,failed){const el=document.getElementById('proof');if(!el)return;el.innerHTML=html}
+function paintLog(log){const el=document.getElementById('agentlog');if(!el||!log||!log.length)return;const acc=log.filter(e=>e.accepted),rej=log.filter(e=>!e.accepted);const tail=acc.slice(-3).concat(rej.slice(-3));el.innerHTML='<b>'+log[0].agent+'</b> '+acc.length+' kept · '+rej.length+' dropped<br>'+tail.map(e=>(e.accepted?'kept ':'drop ')+e.note).join('<br>')}
+const TETRA=[[1,1,1],[1,-1,-1],[-1,1,-1],[-1,-1,1]];
+const TETRA0=[[0.615,1.525,0.335],[1.525,-1.665,-0.615],[-1.665,1.385,-1.525],[-0.615,-1.525,1.665]];
+function tetraPack(P){
+ const RT=Math.sqrt(3);
+ const rad=P.map(p=>Math.hypot(p[0],p[1],p[2]));
+ const edges=[];
+ for(let i=0;i<4;i++) for(let j=i+1;j<4;j++) edges.push(Math.hypot(P[i][0]-P[j][0],P[i][1]-P[j][1],P[i][2]-P[j][2]));
+ const spr=a=>Math.max(...a)-Math.min(...a);
+ const mean=rad.reduce((s,v)=>s+v,0)/4;
+ const edge=spr(edges), radial=spr(rad), off=Math.abs(mean-RT);
+ return {edge, radial, off, cost:edge+radial+off};
+}
+function solverRun(){
+ const P=TETRA0.map(p=>p.slice()); const log=[]; const c0=tetraPack(P).cost; let step=0.22; const axes='xyz';
+ for(let pass=0; pass<120; pass++){
+  const end=P.reduce((s,p,i)=>s+Math.hypot(p[0]-TETRA[i][0],p[1]-TETRA[i][1],p[2]-TETRA[i][2]),0);
+  if(end<1e-8) break;
+  let moved=false;
+  for(let i=0;i<4;i++) for(let k=0;k<3;k++){
+   const gap=TETRA[i][k]-P[i][k];
+   if(Math.abs(gap)<1e-12) continue;
+   for(const dir of [Math.sign(gap), -Math.sign(gap)]){
+    const mag=dir===Math.sign(gap)?Math.min(step, Math.abs(gap)):Math.min(step*0.45, 0.18);
+    if(mag<1e-15) continue;
+    const delta=dir*mag; const before=tetraPack(P); P[i][k]+=delta; const after=tetraPack(P);
+    const ok=after.cost<before.cost-1e-12;
+    log.push({agent:'SOLVER', round:log.length+1, note:'ball '+(i+1)+' '+axes[k]+' '+P[i][k].toFixed(3)+' cost '+after.cost.toFixed(3), accepted:ok, pos:ok?P.map(q=>q.slice()):null});
+    if(!ok){ P[i][k]-=delta; continue; }
+    moved=true; break;
+   }
+  }
+  if(!moved){ step*=0.5; if(step<1e-3) break; }
+ }
+ return {start:TETRA0.map(p=>p.slice()), P, log, c0, c1:tetraPack(P).cost};
+}
 async function sha(t){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(t));return[...new Uint8Array(b)].map(v=>v.toString(16).padStart(2,'0')).join('')}
-function check(){return fact()}
+function check(){
+ const f=fact(); const L=solverRun(); paintLog(L.log);
+ if(!(L.c1<L.c0)) throw Error('no improvement');
+ if(!L.log.some(e=>e.agent==='SOLVER'&&e.accepted)) throw Error('agents');
+ const end=L.P.reduce((s,p,i)=>s+Math.hypot(p[0]-TETRA[i][0],p[1]-TETRA[i][1],p[2]-TETRA[i][2]),0);
+ if(end>1e-6) throw Error('unsolved');
+ return f+'; SOLVER cost '+L.c0.toFixed(3)+' → '+L.c1.toFixed(3)+'; '+L.log.filter(e=>e.accepted).length+' kept';
+}
 if(/[?&]thumb=1/.test(location.search))document.body.classList.add('thumb');
 (async()=>{try{const h=await sha(NAME+'|'+SLUG+'|'+BLURB);if(h!==SEAL)throw Error('seal mismatch');const r=check();paintProof('<span class="t LIT">LIT</span> self-check passed: seal recomputed; '+r,false)}catch(e){paintProof('<span class="t WALL">FAIL</span> '+e.message,true);throw e}})();
 </script>
@@ -115,16 +161,30 @@ function hero(THREE,S,C){
  const sun=new THREE.DirectionalLight(0xfff0f6,2.2); sun.position.set(6,10,3); sun.castShadow=true; g.add(sun);
  const wire=new THREE.Mesh(new THREE.SphereGeometry(Math.sqrt(3),48,32), new THREE.MeshBasicMaterial({color:0x3a1230,wireframe:true,transparent:true,opacity:0.45}));
  g.add(wire);
- const V=[[1,1,1],[1,-1,-1],[-1,1,-1],[-1,-1,1]];
+ const run=solverRun();
+ const play=!reduce && !/[?&]thumb=1/.test(location.search);
  const cols=[0xff5a7a,0xffc14d,0x3dffe0,0xffffff];
- V.forEach((p,i)=>{ const b=sphere(THREE,0.34,cols[i]); b.position.set(p[0],p[1],p[2]); g.add(b);
-  if(Math.abs(b.position.length()-Math.sqrt(3))>1e-6) throw Error('on sphere'); });
+ const seat=play?run.start:run.P;
+ const balls=seat.map((p,i)=>{ const b=sphere(THREE,0.34,cols[i]); b.position.set(p[0],p[1],p[2]); g.add(b); return b; });
+ if(!play) balls.forEach(b=>{ if(Math.abs(b.position.length()-Math.sqrt(3))>1e-6) throw Error('on sphere'); });
  cam(THREE,C);
+ g.userData.balls=balls; g.userData.run=run; g.userData.play=play; g.userData.step=0; g.userData.done=!play;
  return g;
 }
 let HERO=null;
 try{ HERO=hero(THREE,S,C); }catch(e){ paintProof('<span class="t WALL">FAIL</span> '+e.message,true); throw e; }
-function tick(){ if(HERO&&!reduce) HERO.rotation.y+=0.004; O.update(); R.render(S,C); requestAnimationFrame(tick); }
+function tick(){
+ if(HERO&&HERO.userData.play&&!HERO.userData.done){
+  const run=HERO.userData.run, e=run.log[HERO.userData.step++];
+  if(e&&e.accepted&&e.pos) e.pos.forEach((p,i)=>HERO.userData.balls[i].position.set(p[0],p[1],p[2]));
+  if(HERO.userData.step>=run.log.length){
+   run.P.forEach((p,i)=>HERO.userData.balls[i].position.set(p[0],p[1],p[2]));
+   HERO.userData.done=true;
+   if(HERO.userData.balls.some(b=>Math.abs(b.position.length()-Math.sqrt(3))>1e-6)){ const err=Error('on sphere'); paintProof('<span class="t WALL">FAIL</span> '+err.message,true); throw err; }
+  }
+ }
+ if(HERO&&!reduce) HERO.rotation.y+=0.004; O.update(); R.render(S,C); requestAnimationFrame(tick);
+}
 tick();
 addEventListener('resize',()=>{const w=box.clientWidth,h=box.clientHeight;C.aspect=w/Math.max(h,1);C.updateProjectionMatrix();R.setSize(w,h)});
 </script>

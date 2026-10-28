@@ -34,18 +34,21 @@ body::before{background:linear-gradient(180deg, rgba(255,255,255,.28), rgba(0,0,
 #wrap{max-width:1080px;background:rgba(255,252,247,.84);color:#3a2414;border:0;border-radius:18px;box-shadow:0 18px 40px rgba(20,16,30,.16);text-align:left;padding:22px 26px 36px}
 #wrap h1{font-family:Palatino,Georgia,serif;font-size:54px;font-weight:600;letter-spacing:0;text-transform:none;color:#3a2414;text-shadow:none;animation:none;margin:0 0 8px}
 #wrap .kicker{letter-spacing:.16em;text-transform:uppercase;font-size:12px;color:#3a2414;font-family:ui-monospace,monospace}
-#v3{height:62vh;min-height:420px;border-radius:18px;background:#ffd7a8;box-shadow:0 16px 36px rgba(20,16,30,.18)}
+#v3{position:relative;height:62vh;min-height:420px;border-radius:18px;background:#ffd7a8;box-shadow:0 16px 36px rgba(20,16,30,.18)}
+#wrap #agentlog{position:absolute;z-index:2;left:14px;bottom:14px;margin:0;max-width:320px;padding:8px 10px;border-radius:10px;background:rgba(255,252,247,.92);color:#3a2414;font-family:ui-monospace,Menlo,monospace;font-size:12px;line-height:1.4;pointer-events:none}
+body.thumb #agentlog{display:none}
 #wrap p,#wrap li,h2{color:#3a2414}
 a{color:#3a2414}
 </style></head><body><canvas id="art"></canvas><main id="wrap">
 <p class="kicker">ORBS · under KEEPER ERIS</p>
 <h1>The Inscribed Ball</h1>
 <p id="sub">A cobalt ball inside a glass cube. It touches all six faces.</p>
-<div id="v3"></div>
+<div id="v3"><p id="agentlog">FIXER is measuring the ball.</p></div>
 <div class="story">
 <p><span class="t LIT">LIT</span> A cube of side 2 has an inscribed ball of radius 1. The ball meets the center of each face. Its volume is π/6 of the cube. This page recomputes that ratio and throws if a face is missed.</p>
 <p><span class="t AMBER">AMBER</span> The ratio π/6 is the volume of the inscribed ball over the cube.</p>
 <p><span class="t MODEL">MODEL</span> The glass cube and the cobalt ball are a picture of that fit.</p>
+<p>FIXER starts the ball too small and proposes a new radius. The move is kept only when the gap to radius 1 shrinks. The page throws if FIXER does not improve.</p>
 <p id="proof">Checking the sphere.</p>
 <p>Seal sha256(name|slug|blurb): <code id="seal">6644dc051641705db5c2c94c2edb1db9be787253fb3059652c475d3bf3731afe</code></p>
 <p><a href="../../index.html">Mayhem</a></p>
@@ -62,8 +65,27 @@ function fact(){
  return 'inscribed ball, volume ratio π/6, six faces touched';
 }
 function paintProof(html,failed){const el=document.getElementById('proof');if(!el)return;el.innerHTML=html}
+function paintLog(log){const el=document.getElementById('agentlog');if(!el||!log||!log.length)return;const acc=log.filter(e=>e.accepted),rej=log.filter(e=>!e.accepted);const tail=acc.slice(-3).concat(rej.slice(-3));el.innerHTML='<b>'+log[0].agent+'</b> '+acc.length+' kept · '+rej.length+' dropped<br>'+tail.map(e=>(e.accepted?'kept ':'drop ')+e.note).join('<br>')}
+function fixerRun(){
+ const start=0.42; let r=start; const log=[]; const gap=x=>Math.abs(x-1); const g0=gap(r); let step=0.28;
+ for(let i=0;i<24;i++){
+  const dir=(i%5===4)?-1:1;
+  const mag=dir<0?step:Math.min(step, gap(r)||step);
+  const prop=r+dir*mag;
+  const ok=gap(prop)<gap(r)-1e-15;
+  log.push({agent:'FIXER', round:i+1, radius:prop, note:'r '+prop.toFixed(3)+' gap '+gap(prop).toFixed(3), accepted:ok});
+  if(ok){ r=prop; step=Math.max(0.02, step*0.85); }
+ }
+ return {start, r, log, g0, g:gap(r)};
+}
 async function sha(t){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(t));return[...new Uint8Array(b)].map(v=>v.toString(16).padStart(2,'0')).join('')}
-function check(){return fact()}
+function check(){
+ const f=fact(); const L=fixerRun(); paintLog(L.log);
+ if(!(L.g<L.g0)) throw Error('no improvement');
+ if(!L.log.some(e=>e.agent==='FIXER'&&e.accepted)) throw Error('agents');
+ if(Math.abs(L.r-1)>1e-9) throw Error('unfixed');
+ return f+'; FIXER gap '+L.g0.toFixed(3)+' → '+L.g.toFixed(3)+'; '+L.log.filter(e=>e.accepted).length+' kept';
+}
 if(/[?&]thumb=1/.test(location.search))document.body.classList.add('thumb');
 (async()=>{try{const h=await sha(NAME+'|'+SLUG+'|'+BLURB);if(h!==SEAL)throw Error('seal mismatch');const r=check();paintProof('<span class="t LIT">LIT</span> self-check passed: seal recomputed; '+r,false)}catch(e){paintProof('<span class="t WALL">FAIL</span> '+e.message,true);throw e}})();
 </script>
@@ -113,14 +135,28 @@ function hero(THREE,S,C){
  glass.castShadow=false; glass.receiveShadow=true; g.add(glass);
  const edges=new THREE.LineSegments(new THREE.EdgesGeometry(new THREE.BoxGeometry(2,2,2)), new THREE.LineBasicMaterial({color:0x3a2414}));
  g.add(edges);
- const ball=sphere(THREE,1,0x2f6bff); g.add(ball);
- if(Math.abs(ball.geometry.parameters.radius-1)>1e-12) throw Error('ball radius');
+ const run=fixerRun();
+ const play=!reduce && !/[?&]thumb=1/.test(location.search);
+ const ball=sphere(THREE, play?run.start:run.r, 0x2f6bff); g.add(ball);
+ if(!play && Math.abs(ball.geometry.parameters.radius-1)>1e-9) throw Error('ball radius');
  cam(THREE,C);
+ g.userData.ball=ball; g.userData.run=run; g.userData.play=play; g.userData.step=0; g.userData.done=!play;
  return g;
 }
+function setRadius(mesh,r){const old=mesh.geometry; mesh.geometry=new THREE.SphereGeometry(r,64,48); old.dispose();}
 let HERO=null;
 try{ HERO=hero(THREE,S,C); }catch(e){ paintProof('<span class="t WALL">FAIL</span> '+e.message,true); throw e; }
-function tick(){ if(HERO&&!reduce) HERO.rotation.y+=0.004; O.update(); R.render(S,C); requestAnimationFrame(tick); }
+function tick(){
+ if(HERO&&HERO.userData.play&&!HERO.userData.done){
+  const run=HERO.userData.run, e=run.log[HERO.userData.step++];
+  if(e&&e.accepted) setRadius(HERO.userData.ball, e.radius);
+  if(HERO.userData.step>=run.log.length){
+   setRadius(HERO.userData.ball, run.r); HERO.userData.done=true;
+   if(Math.abs(HERO.userData.ball.geometry.parameters.radius-1)>1e-9){ const err=Error('ball radius'); paintProof('<span class="t WALL">FAIL</span> '+err.message,true); throw err; }
+  }
+ }
+ if(HERO&&!reduce) HERO.rotation.y+=0.004; O.update(); R.render(S,C); requestAnimationFrame(tick);
+}
 tick();
 addEventListener('resize',()=>{const w=box.clientWidth,h=box.clientHeight;C.aspect=w/Math.max(h,1);C.updateProjectionMatrix();R.setSize(w,h)});
 </script>
