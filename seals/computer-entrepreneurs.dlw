@@ -1,0 +1,1 @@
+{"slug":"computer-entrepreneurs","seal":"d37c43214a7b78f71516fdd778e2055b36803a2bab5f66c0df9c70628ac6ee41","rule":"sha256(name|slug|blurb)","write":"if-missing"}

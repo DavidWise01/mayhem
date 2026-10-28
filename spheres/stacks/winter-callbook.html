@@ -1,0 +1,302 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The Winter Callbook - Stacks - Mayhem</title>
+<style>
+body{margin:0}
+#art{position:fixed;inset:0;width:100vw;height:100vh;z-index:-1}
+.t{display:inline-block;padding:1px 8px;border-radius:8px;font-weight:700;font-size:13px;color:#111}
+.LIT{background:#3ee07a}.AMBER{background:#ffb020}.WALL{background:#ff5a5a;color:#fff}.MODEL{background:#b48cff}
+#v3{width:100%;overflow:hidden}
+table{width:100%;border-collapse:collapse;table-layout:fixed;font-family:ui-monospace,monospace;font-size:12px}
+th,td{border-bottom:1px solid rgba(0,0,0,.15);padding:4px 6px;text-align:left;overflow-wrap:anywhere;vertical-align:top}
+#proof{overflow-wrap:anywhere}
+</style>
+<style id="cubit-neon">
+:root{--neon-cyan:#00f0ff;--neon-pink:#ff2bd6;--neon-amber:#ffb300}
+html,body{background:#030308;color:#d7e3f5;font-family:ui-monospace,Menlo,monospace}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(600px 400px at 20% 10%, rgba(0,240,255,.06), transparent 70%),
+  radial-gradient(700px 500px at 80% 90%, rgba(255,43,214,.05), transparent 70%)}
+main,#wrap{position:relative;z-index:1;background:rgba(5,8,16,.78);color:#d7e3f5;
+  border:1px solid rgba(0,240,255,.18);border-radius:14px;
+  box-shadow:0 0 34px rgba(0,240,255,.07), inset 0 0 60px rgba(0,0,0,.45)}
+#wrap{max-width:1340px;margin:0 auto;padding:34px 18px 50px;text-align:center}
+h1{font-size:26px;font-weight:400;letter-spacing:.22em;text-transform:uppercase;color:#eaf6ff;
+  text-shadow:0 0 8px var(--neon-cyan), 0 0 28px rgba(0,240,255,.7);animation:cubitflicker 7s infinite}
+#sub{font-size:11px;letter-spacing:.3em;color:#5f7396;text-transform:uppercase;margin-bottom:26px}
+#v3{background:#05070d;border-radius:14px;box-shadow:0 0 0 3px var(--neon-pink), 0 0 28px rgba(255,43,214,.25)}
+a{color:var(--neon-cyan)}
+code{color:#ffb3ec}
+@keyframes cubitflicker{0%,100%{opacity:1}92%{opacity:1}93%{opacity:.6}94%{opacity:1}97%{opacity:.85}98%{opacity:1}}
+@media (prefers-reduced-motion:reduce){h1{animation:none}}
+body.thumb .story,body.thumb #controls,body.thumb .kicker{display:none}
+body.thumb #wrap{background:transparent;box-shadow:none;border:0;padding:0}
+body.thumb #v3{height:100vh;border-radius:0;box-shadow:none}
+</style>
+<style id="place">
+html,body{background:#d6ecdc;color:#102818;font-family:Palatino,'Palatino Linotype',Georgia,serif}
+body::before{background:linear-gradient(180deg, rgba(255,255,255,.28), rgba(0,0,0,.05))}
+#wrap{max-width:1080px;background:rgba(255,248,244,.92);color:#102818;border:0;border-radius:18px;box-shadow:0 18px 40px rgba(20,16,30,.16);text-align:left;padding:22px 26px 36px}
+#wrap h1{font-family:Palatino,Georgia,serif;font-size:54px;font-weight:600;letter-spacing:0;text-transform:none;color:#102818;text-shadow:none;animation:none;margin:0 0 8px}
+#wrap .kicker{letter-spacing:.16em;text-transform:uppercase;font-size:12px;color:#102818;font-family:ui-monospace,monospace}
+#v3{position:relative;height:62vh;min-height:420px;border-radius:18px;background:#143828;box-shadow:0 16px 36px rgba(20,16,30,.18)}
+#wrap #agentlog{position:absolute;z-index:2;left:14px;bottom:14px;margin:0;max-width:340px;padding:8px 10px;border-radius:10px;background:rgba(255,244,240,.94);color:#102818;font-family:ui-monospace,Menlo,monospace;font-size:12px;line-height:1.4;pointer-events:none}
+body.thumb #agentlog{display:none}
+.law{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:14px 0 8px}
+.law b{letter-spacing:.14em;font-family:ui-monospace,monospace;font-size:13px}
+.law span{border:1px solid #102818;padding:3px 8px;font-family:ui-monospace,monospace;font-size:12px}
+.law span.on{background:#8fd0a4;color:#102818}
+#desk{width:100%;height:auto;display:block;margin:8px 0 16px;border-radius:10px}
+#wrap p,#wrap li,h2,#wrap td,#wrap th{color:#102818}
+a{color:#102818}
+.idline{overflow-wrap:anywhere}
+</style></head><body><canvas id="art"></canvas><main id="wrap">
+<p class="kicker">STACKS - under KEEPER ERIS</p>
+<h1>The Winter Callbook</h1>
+<p id="sub">Eleven PDFs. District 4 is the largest.</p>
+<div id="v3"><p id="agentlog">SORTER is reading the archive record.</p></div>
+<div class="story">
+<div class="law" aria-label="{{persist + 11 , act + 136 , react + 147 , learn + 492453040 , loop + 4 }}"><b>SORTER</b><span>PERSIST +11</span><span>ACT +136</span><span>REACT +147</span><span>LEARN +492453040</span><span>LOOP +4</span></div>
+<canvas id="desk" width="720" height="160"></canvas>
+<div id="counted"></div>
+<p><span class="t LIT">LIT</span> The item is titled Winter 1984 Radio Amateur Callbook and dated 1984. Its description says it is the United States listings, with a front and areas 1 through 9 and area 0. The catalog holds 147 files. Eleven of them are Text PDFs: Front and District 0 through District 9. Their sizes sum to 492,453,040 bytes. District 4 is the largest PDF, 79,403,146 bytes. SORTER keeps those eleven and drops 136 derivatives, including the page-image zips. The district 4 zip is the heaviest file in the whole item, above a billion bytes, and it is still dropped.</p>
+<p><span class="t AMBER">AMBER</span> A callbook lists amateur-radio licensees. This page did not read a call sign, a name, or an address out of any PDF.</p>
+<p><span class="t WALL">WALL</span> No listing is copied. The census stops at these eleven files. It is not a count of licensees.</p>
+<p><span class="t MODEL">MODEL</span> Eleven spines. District 4 is the tall rust-colored one. Front matter stands at the left. No cartridge is loaded.</p>
+<p id="proof">Checking the stack.</p>
+<p class="idline">Record: <a href="https://archive.org/details/Winter_1984_Radio_Amateur_Callbook">Winter_1984_Radio_Amateur_Callbook</a></p>
+<p>Seal sha256(name|slug|blurb): <code id="seal">9e5d1996b72af62161ec0bcc5d7682b2d7af66be4d3c7d6541ee06ee34428c6a</code></p>
+<p><a href="../../index.html">Mayhem</a></p>
+</div>
+</main>
+<script>
+const NAME="The Winter Callbook",SLUG="winter-callbook",BLURB="SORTER keeps a PDF only when it is the front matter or one call district.",SEAL="9e5d1996b72af62161ec0bcc5d7682b2d7af66be4d3c7d6541ee06ee34428c6a";
+const DATA={"title":"Winter 1984 Radio Amateur Callbook","date":"1984","creator":"","mediatype":"texts","files":[{"name":"__ia_thumb.jpg","size":22726,"format":"Item Tile","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_archive.torrent","size":87527,"format":"Archive BitTorrent","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_0_abbyy.gz","size":37880767,"format":"Abbyy GZ","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_0_chocr.html.gz","size":33419965,"format":"chOCR","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_0_cloth_detection.log","size":526,"format":"Cloth Cover Detection Log","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_0_djvu.txt","size":2883859,"format":"DjVuTXT","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_0_djvu.xml","size":39500554,"format":"Djvu XML","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_0_hocr_pageindex.json.gz","size":1477,"format":"OCR Page Index","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_0_hocr_searchtext.txt.gz","size":1097444,"format":"OCR Search Text","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_0_hocr.html","size":93377946,"format":"hOCR","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_0_jp2.zip","size":585106989,"format":"Single Page Processed JP2 ZIP","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_0_page_numbers.json","size":19000,"format":"Page Numbers JSON","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_0_scandata.xml","size":36860,"format":"Scandata","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_0.gif","size":365938,"format":"Animated GIF","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_0.pdf","size":42120935,"format":"Text PDF","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_1_abbyy.gz","size":26460385,"format":"Abbyy GZ","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_1_chocr.html.gz","size":23214859,"format":"chOCR","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_1_cloth_detection.log","size":526,"format":"Cloth Cover Detection Log","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_1_djvu.txt","size":2015014,"format":"DjVuTXT","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_1_djvu.xml","size":27116128,"format":"Djvu XML","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_1_hocr_pageindex.json.gz","size":1035,"format":"OCR Page Index","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_1_hocr_searchtext.txt.gz","size":752178,"format":"OCR Search Text","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_1_hocr.html","size":63106469,"format":"hOCR","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_1_jp2.zip","size":408040240,"format":"Single Page Processed JP2 ZIP","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_1_page_numbers.json","size":12956,"format":"Page Numbers JSON","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_1_scandata.xml","size":25474,"format":"Scandata","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_1.gif","size":355478,"format":"Animated GIF","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_1.pdf","size":29144430,"format":"Text PDF","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_2_abbyy.gz","size":43520281,"format":"Abbyy GZ","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_2_chocr.html.gz","size":38211288,"format":"chOCR","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_2_cloth_detection.log","size":526,"format":"Cloth Cover Detection Log","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_2_djvu.txt","size":3326276,"format":"DjVuTXT","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_2_djvu.xml","size":44551125,"format":"Djvu XML","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_2_hocr_pageindex.json.gz","size":1674,"format":"OCR Page Index","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_2_hocr_searchtext.txt.gz","size":1267658,"format":"OCR Search Text","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_2_hocr.html","size":103521872,"format":"hOCR","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_2_jp2.zip","size":664521402,"format":"Single Page Processed JP2 ZIP","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_2_page_numbers.json","size":21187,"format":"Page Numbers JSON","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_2_scandata.xml","size":41660,"format":"Scandata","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_2.gif","size":355732,"format":"Animated GIF","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_2.pdf","size":47708074,"format":"Text PDF","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_3_abbyy.gz","size":28740124,"format":"Abbyy GZ","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_3_chocr.html.gz","size":25202372,"format":"chOCR","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_3_cloth_detection.log","size":526,"format":"Cloth Cover Detection Log","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_3_djvu.txt","size":2181719,"format":"DjVuTXT","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_3_djvu.xml","size":29058133,"format":"Djvu XML","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_3_hocr_pageindex.json.gz","size":1080,"format":"OCR Page Index","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_3_hocr_searchtext.txt.gz","size":820356,"format":"OCR Search Text","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_3_hocr.html","size":67661327,"format":"hOCR","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_3_jp2.zip","size":441199194,"format":"Single Page Processed JP2 ZIP","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_3_page_numbers.json","size":13885,"format":"Page Numbers JSON","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_3_scandata.xml","size":27331,"format":"Scandata","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_3.gif","size":355928,"format":"Animated GIF","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_3.pdf","size":31847639,"format":"Text PDF","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_4_abbyy.gz","size":72537065,"format":"Abbyy GZ","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_4_chocr.html.gz","size":63983692,"format":"chOCR","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_4_cloth_detection.log","size":526,"format":"Cloth Cover Detection Log","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_4_djvu.txt","size":5560556,"format":"DjVuTXT","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_4_djvu.xml","size":75320855,"format":"Djvu XML","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_4_hocr_pageindex.json.gz","size":2872,"format":"OCR Page Index","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_4_hocr_searchtext.txt.gz","size":2126080,"format":"OCR Search Text","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_4_hocr.html","size":175627675,"format":"hOCR","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_4_jp2.zip","size":1100785459,"format":"Single Page Processed JP2 ZIP","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_4_page_numbers.json","size":35529,"format":"Page Numbers JSON","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_4_scandata.xml","size":69823,"format":"Scandata","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_4.gif","size":356043,"format":"Animated GIF","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_4.pdf","size":79403146,"format":"Text PDF","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_5_abbyy.gz","size":41222395,"format":"Abbyy GZ","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_5_chocr.html.gz","size":36444269,"format":"chOCR","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_5_cloth_detection.log","size":526,"format":"Cloth Cover Detection Log","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_5_djvu.txt","size":3148361,"format":"DjVuTXT","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_5_djvu.xml","size":42906270,"format":"Djvu XML","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_5_hocr_pageindex.json.gz","size":1591,"format":"OCR Page Index","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_5_hocr_searchtext.txt.gz","size":1195225,"format":"OCR Search Text","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_5_hocr.html","size":101007430,"format":"hOCR","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_5_jp2.zip","size":622887013,"format":"Single Page Processed JP2 ZIP","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_5_page_numbers.json","size":20178,"format":"Page Numbers JSON","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_5_scandata.xml","size":39673,"format":"Scandata","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_5.gif","size":338986,"format":"Animated GIF","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_5.pdf","size":44646881,"format":"Text PDF","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_6_abbyy.gz","size":61007215,"format":"Abbyy GZ","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_6_chocr.html.gz","size":53675923,"format":"chOCR","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_6_cloth_detection.log","size":526,"format":"Cloth Cover Detection Log","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_6_djvu.txt","size":4645794,"format":"DjVuTXT","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_6_djvu.xml","size":62359983,"format":"Djvu XML","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_6_hocr_pageindex.json.gz","size":2393,"format":"OCR Page Index","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_6_hocr_searchtext.txt.gz","size":1768919,"format":"OCR Search Text","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_6_hocr.html","size":144933142,"format":"hOCR","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_6_jp2.zip","size":932968739,"format":"Single Page Processed JP2 ZIP","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_6_page_numbers.json","size":29727,"format":"Page Numbers JSON","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_6_scandata.xml","size":58433,"format":"Scandata","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_6.gif","size":341590,"format":"Animated GIF","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_6.pdf","size":67304821,"format":"Text PDF","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_7_abbyy.gz","size":36666997,"format":"Abbyy GZ","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_7_chocr.html.gz","size":32499863,"format":"chOCR","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_7_cloth_detection.log","size":526,"format":"Cloth Cover Detection Log","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_7_djvu.txt","size":2814822,"format":"DjVuTXT","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_7_djvu.xml","size":38779730,"format":"Djvu XML","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_7_hocr_pageindex.json.gz","size":1431,"format":"OCR Page Index","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_7_hocr_searchtext.txt.gz","size":1066221,"format":"OCR Search Text","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_7_hocr.html","size":90982999,"format":"hOCR","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_7_jp2.zip","size":566450343,"format":"Single Page Processed JP2 ZIP","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_7_page_numbers.json","size":18123,"format":"Page Numbers JSON","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_7_scandata.xml","size":35653,"format":"Scandata","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_7.gif","size":342726,"format":"Animated GIF","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_7.pdf","size":40454332,"format":"Text PDF","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_8_abbyy.gz","size":41405449,"format":"Abbyy GZ","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_8_chocr.html.gz","size":36482160,"format":"chOCR","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_8_cloth_detection.log","size":526,"format":"Cloth Cover Detection Log","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_8_djvu.txt","size":3168022,"format":"DjVuTXT","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_8_djvu.xml","size":42193450,"format":"Djvu XML","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_8_hocr_pageindex.json.gz","size":1601,"format":"OCR Page Index","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_8_hocr_searchtext.txt.gz","size":1211125,"format":"OCR Search Text","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_8_hocr.html","size":98345004,"format":"hOCR","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_8_jp2.zip","size":637171672,"format":"Single Page Processed JP2 ZIP","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_8_page_numbers.json","size":20668,"format":"Page Numbers JSON","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_8_scandata.xml","size":39907,"format":"Scandata","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_8.gif","size":349430,"format":"Animated GIF","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_8.pdf","size":45502478,"format":"Text PDF","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_9_abbyy.gz","size":35211155,"format":"Abbyy GZ","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_9_chocr.html.gz","size":31215399,"format":"chOCR","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_9_cloth_detection.log","size":526,"format":"Cloth Cover Detection Log","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_9_djvu.txt","size":2826837,"format":"DjVuTXT","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_9_djvu.xml","size":38757351,"format":"Djvu XML","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_9_hocr_pageindex.json.gz","size":1426,"format":"OCR Page Index","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_9_hocr_searchtext.txt.gz","size":1072869,"format":"OCR Search Text","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_9_hocr.html","size":92414829,"format":"hOCR","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_9_jp2.zip","size":559767115,"format":"Single Page Processed JP2 ZIP","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_9_page_numbers.json","size":18082,"format":"Page Numbers JSON","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_9_scandata.xml","size":35383,"format":"Scandata","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_9.gif","size":357171,"format":"Animated GIF","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_District_9.pdf","size":40490831,"format":"Text PDF","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_files.xml","size":0,"format":"Metadata","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_Front_abbyy.gz","size":2154552,"format":"Abbyy GZ","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_Front_chocr.html.gz","size":1901313,"format":"chOCR","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_Front_cloth_detection.log","size":511,"format":"Cloth Cover Detection Log","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_Front_djvu.txt","size":172430,"format":"DjVuTXT","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_Front_djvu.xml","size":2428906,"format":"Djvu XML","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_Front_hocr_pageindex.json.gz","size":424,"format":"OCR Page Index","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_Front_hocr_searchtext.txt.gz","size":65499,"format":"OCR Search Text","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_Front_hocr.html","size":5991415,"format":"hOCR","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_Front_jp2.zip","size":24180025,"format":"Single Page Processed JP2 ZIP","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_Front_page_numbers.json","size":5871,"format":"Page Numbers JSON","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_Front_scandata.xml","size":11489,"format":"Scandata","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_Front.gif","size":228993,"format":"Animated GIF","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_Front.pdf","size":23829473,"format":"Text PDF","centi":0},{"name":"Winter_1984_Radio_Amateur_Callbook_meta.xml","size":3243,"format":"Metadata","centi":0}]};
+function callRun(DATA) {
+  function keep(f) { return f.format === "Text PDF"; }
+  if (keep({ name: "x_jp2.zip", size: 1, format: "Single Page Processed JP2 ZIP", centi: 0 })) throw new Error("decoy");
+  if (DATA.title !== "Winter 1984 Radio Amateur Callbook" || DATA.date !== "1984") throw new Error("head");
+  if (DATA.files.length !== 147) throw new Error("files");
+  const kept = [];
+  const log = [];
+  let drops = 0;
+  for (const f of DATA.files) {
+    if (!keep(f)) { drops++; log.push({ agent: "SORTER", decoy: true, accepted: false, note: "drop " + f.format }); continue; }
+    kept.push(f);
+    log.push({ agent: "SORTER", decoy: false, accepted: true, note: "keep " + f.name });
+  }
+  if (kept.length !== 11 || drops !== 136) throw new Error("split");
+  const rows = kept.map((f) => {
+    const m = f.name.match(/_(Front|District_\d+)\.pdf$/);
+    if (!m) throw new Error("name");
+    const label = m[1] === "Front" ? "Front" : m[1].replace("District_", "district ");
+    return { a: label, b: String(f.size), c: f.name, n: m[1] === "Front" ? -1 : Number(m[1].slice(9)) };
+  }).sort((a, b) => a.n - b.n);
+  if (rows.map((r) => r.a).join(",") !== "Front,district 0,district 1,district 2,district 3,district 4,district 5,district 6,district 7,district 8,district 9") throw new Error("order");
+  const sum = rows.reduce((a, r) => a + Number(r.b), 0);
+  if (sum !== 492453040) throw new Error("sum");
+  let max = rows[0];
+  for (const r of rows) if (Number(r.b) > Number(max.b)) max = r;
+  if (max.a !== "district 4" || Number(max.b) !== 79403146) throw new Error("max");
+  const law = [11, 136, 147, 492453040, 4];
+  if (law.reduce((a, b) => a + b, 0) !== 492453338) throw new Error("law");
+  return { pack: "11|136|147|492453040|4", rows: rows.map((r) => ({ a: r.a, b: r.b, c: r.c })), kept: 11, drops, law, log, max: Number(max.b), desk: ["11 PDFs, Front plus districts 0-9", "492453040 bytes in the PDFs", "district 4 is the largest PDF"] };
+}
+function esc(s){return String(s).replace(/[&<>]/g,function(ch){return ch==='&'?'&amp;':ch==='<'?'&lt;':'&gt;';});}
+function paintRows(rows){const el=document.getElementById('counted');if(!el)return;el.innerHTML='<table><thead><tr><th>kept</th><th>mark</th><th>note</th></tr></thead><tbody>'+rows.map(function(r){return '<tr><td>'+esc(r.a)+'</td><td>'+esc(r.b)+'</td><td>'+esc(r.c)+'</td></tr>';}).join('')+'</tbody></table>';}
+function paintLog(log){const el=document.getElementById('agentlog');if(!el||!log||!log.length)return;const acc=log.filter(e=>e.accepted),rej=log.filter(e=>!e.accepted);const tail=acc.slice(-3).concat(rej.slice(-2));el.innerHTML='<b>'+log[0].agent+'</b> '+acc.length+' kept, '+rej.length+' dropped<br>'+tail.map(e=>(e.accepted?'kept ':'drop ')+e.note).join('<br>');}
+function paintDesk(L){const cv=document.getElementById('desk');if(!cv)return;const g=cv.getContext('2d');g.fillStyle="#102818";g.fillRect(0,0,cv.width,cv.height);g.fillStyle="#d6ecdc";g.font='16px ui-monospace,monospace';L.desk.forEach(function(line,i){g.fillText(line,24,42+i*36);});}
+function paintProof(html){const el=document.getElementById('proof');if(!el)return;el.innerHTML=html}
+function remember(pack){
+ const key='mayhem-stack-kept';
+ let book={};
+ try{ book=JSON.parse(localStorage.getItem(key)||'{}')||{}; }catch(e){ book={}; }
+ const row=book[SLUG];
+ if(!row) book[SLUG]={pack:pack,act:'census',visits:1};
+ else { if(row.pack!==pack||row.act!=='census') throw Error('persistent drift'); row.visits+=1; }
+ localStorage.setItem(key, JSON.stringify(book));
+ const again=JSON.parse(localStorage.getItem(key))[SLUG];
+ if(!again||again.pack!==pack) throw Error('persistent drift');
+ return again.visits;
+}
+async function sha(t){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(t));return[...new Uint8Array(b)].map(v=>v.toString(16).padStart(2,'0')).join('')}
+function check(){
+ const A=callRun(DATA);
+ const B=callRun(DATA);
+ if(A.pack!==B.pack) throw Error('drift');
+ if(A.log.some(e=>e.decoy&&e.accepted)) throw Error('decoy kept');
+ const law=A.law;
+ if(law.reduce((a,b)=>a+b,0)!==492453338) throw Error('law');
+ if(A.pack!=="11|136|147|492453040|4") throw Error('pack');
+ paintLog(A.log); paintDesk(A); paintRows(A.rows);
+ remember(A.pack);
+ return A.pack;
+}
+(async()=>{
+ if(/[?&]thumb=1/.test(location.search)) document.body.classList.add('thumb');
+ try{const h=await sha(NAME+'|'+SLUG+'|'+BLURB);if(h!==SEAL)throw Error('seal mismatch');const r=check();paintProof('<span class="t LIT">LIT</span> self-check passed: seal recomputed; '+r);}catch(e){paintProof('<span class="t WALL">FAIL</span> '+e.message);throw e}
+ const thumb=/[?&]thumb=1/.test(location.search);
+ const reduce=typeof matchMedia==='function'&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+ if(!thumb&&!reduce){const spans=[...document.querySelectorAll('.law span')];let i=0;if(spans.length)setInterval(()=>{spans.forEach((s,k)=>s.classList.toggle('on',k===i));i=(i+1)%spans.length;},700);}
+})();
+</script>
+<script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}</script>
+<script type="module">
+import * as THREE from 'three';
+import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+function buildScene(run) {
+  const g = new THREE.Group();
+  const plain = new THREE.MeshStandardMaterial({ color: 0x2f6f4a, roughness: 0.5, metalness: 0.1 });
+  const hot = new THREE.MeshStandardMaterial({ color: 0xc45a2a, roughness: 0.45, metalness: 0.15 });
+  run.rows.forEach((r, i) => {
+    const sz = Number(r.b);
+    const h = 0.3 + sz / 79403146 * 1.9;
+    const m = new THREE.Mesh(new THREE.BoxGeometry(0.34, h, 0.5), r.a === "district 4" ? hot : plain);
+    m.position.set((i - 5) * 0.52, h / 2, 0);
+    if (m.position.y - h / 2 < -0.001) throw Error("district bottom");
+    g.add(m);
+  });
+  if (g.children.length !== 11 || run.max !== 79403146) throw Error("districts");
+  return g;
+}
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const box=document.getElementById('v3');
+const W=box.clientWidth||800,H=box.clientHeight||560;
+const R=new THREE.WebGLRenderer({antialias:true});
+R.setPixelRatio(Math.min(devicePixelRatio||1,2));
+R.setSize(W,H);
+R.outputColorSpace=THREE.SRGBColorSpace;
+R.toneMapping=THREE.ACESFilmicToneMapping;
+R.toneMappingExposure=1.05;
+box.insertBefore(R.domElement, box.firstChild);
+const S=new THREE.Scene();
+const C=new THREE.PerspectiveCamera(42,W/Math.max(H,1),.1,80);
+const O=new OrbitControls(C,R.domElement);
+O.enableDamping=true;
+S.add(new THREE.AmbientLight(0xffffff,.55));
+S.add(new THREE.HemisphereLight(0xfff6ea,0x223044,.4));
+function floor(color,y){
+ const sand=new THREE.Mesh(new THREE.CircleGeometry(14,64), new THREE.MeshStandardMaterial({color,roughness:1}));
+ sand.rotation.x=-Math.PI/2; sand.position.y=y; sand.receiveShadow=true; S.add(sand); sand.updateMatrixWorld();
+ if(new THREE.Vector3(0,0,1).applyQuaternion(sand.quaternion).y<0.9) throw Error('floor facing');
+}
+function cam(){
+ const view=new THREE.Vector3(); C.getWorldDirection(view);
+ if(view.z>=-0.5) throw Error('camera facing');
+}
+S.background=new THREE.Color(0x143828);
+C.position.set(4.2,3.4,8.2); C.lookAt(0,0.7,0); O.target.set(0,0.7,0);
+floor(0x2a2118,0);
+const sun=new THREE.DirectionalLight(0xfff1d6,2.1); sun.position.set(4,8,6); S.add(sun);
+let HERO=null;
+try{
+ const run=callRun(DATA);
+ const again=callRun(DATA);
+ if(again.pack!==run.pack) throw Error('drift');
+ HERO=buildScene(run);
+ S.add(HERO);
+ cam();
+ HERO.userData.play=!reduce && !/[?&]thumb=1/.test(location.search);
+}catch(e){ paintProof('<span class="t WALL">FAIL</span> '+e.message); throw e; }
+function tick(){
+ if(HERO&&HERO.userData.play&&!reduce) HERO.rotation.y+=0.003;
+ O.update(); R.render(S,C); requestAnimationFrame(tick);
+}
+tick();
+addEventListener('resize',()=>{const w=box.clientWidth,h=box.clientHeight;C.aspect=w/Math.max(h,1);C.updateProjectionMatrix();R.setSize(w,h)});
+</script>
+<script id="cubit-register-boot">
+(function(){
+  if(/[?&]thumb=1/.test(location.search)) return;
+  if(document.getElementById('cubit-register')) return;
+  const ORDER=['geometric','constructive','agentic','generative'];
+  const ROLES=['ARTIST','CRITIC','BUILDER','WEAVER','FOLLOWER','KEEPER'];
+  const KEY='mayhem-cubit-register';
+  function slug(){
+    for(const sc of document.scripts){
+      const m=/const SLUG="([^"]+)"/.exec(sc.textContent||'');
+      if(m) return m[1];
+    }
+    return (location.pathname.replace(/^\//,'').replace(/\.html$/i,''))||'index';
+  }
+  function geometric(){
+    let canvases=0, svgs=0, w=0, h=0;
+    document.querySelectorAll('canvas').forEach(el=>{ canvases++; w=Math.max(w, el.clientWidth|0); h=Math.max(h, el.clientHeight|0); });
+    document.querySelectorAll('svg').forEach(el=>{ svgs++; w=Math.max(w, el.clientWidth|0); h=Math.max(h, el.clientHeight|0); });
+    const v3=document.getElementById('v3');
+    if(v3){ w=Math.max(w, v3.clientWidth|0); h=Math.max(h, v3.clientHeight|0); }
+    if(!w){ w=document.documentElement.clientWidth|0; h=document.documentElement.clientHeight|0; }
+    return {name:'geometric', text:canvases+'c+'+svgs+'s·'+w+'x'+h, canvases, svgs, w, h};
+  }
+  function constructive(host){
+    const nodes=host.querySelectorAll('*').length, buttons=host.querySelectorAll('button').length;
+    return {name:'constructive', text:nodes+'n·'+buttons+'b', nodes, buttons};
+  }
+  function agentic(host, c){
+    const text=host.innerText||'';
+    const found=ROLES.filter(r=>text.indexOf(r)!==-1);
+    const agents=found.length?found:['REGISTER'];
+    return {name:'agentic', text:agents.join('+'), agents, accepted:c.nodes>0};
+  }
+  function generative(g,c,a){
+    const s=g.text+'|'+c.text+'|'+a.text;
+    let x=2166136261;
+    for(let i=0;i<s.length;i++) x=Math.imul(x^s.charCodeAt(i), 16777619);
+    const code=(x>>>0).toString(16).padStart(8,'0');
+    return {name:'generative', text:code, code};
+  }
+  function build(host){
+    const register=[];
+    const g=geometric(); register.push(g);
+    const c=constructive(host); register.push(c);
+    const a=agentic(host,c); register.push(a);
+    register.push(generative(g,c,a));
+    return register;
+  }
+  function assertReg(register){
+    if(register.length!==4) throw Error('register length '+register.length);
+    if(register.map(x=>x.name).join(',')!==ORDER.join(',')) throw Error('cubit order');
+    if(register.some(x=>!x.text)) throw Error('empty cubit');
+    if(!register[2].accepted) throw Error('agent refused the register');
+    const again=generative(register[0], register[1], register[2]);
+    if(again.code!==register[3].code) throw Error('register drift');
+    return register.map(x=>x.text).join(' | ');
+  }
+  function remember(id, word){
+    let book={};
+    try{ book=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){ book={}; }
+    book[id]={word};
+    try{ localStorage.setItem(KEY, JSON.stringify(book)); }catch(e){}
+    return Object.keys(book).length;
+  }
+  function mount(register, err, rows){
+    let el=document.getElementById('cubit-register');
+    if(!el){
+      const style=document.createElement('style');
+      style.textContent='#cubit-register{margin:18px 0;padding:14px 12px 12px;border:1px solid rgba(0,240,255,.28);border-radius:14px;background:rgba(5,8,16,.78);box-shadow:0 0 28px rgba(0,240,255,.08);color:#d7e3f5;text-align:left;font-family:ui-monospace,Menlo,monospace}#cubit-register .cr-formula{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#eaf6ff;text-shadow:0 0 8px #00f0ff;margin:0 0 10px}#cubit-register .cr-row{display:flex;gap:8px;flex-wrap:wrap}#cubit-register .cr-cubit{flex:1 1 140px;border:1px solid rgba(0,240,255,.25);border-radius:10px;padding:8px;background:rgba(0,0,0,.35)}#cubit-register .cr-cubit b{display:block;font-weight:400;font-size:10px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:4px}#cubit-register .cr-cubit[data-cubit=geometric] b{color:#00f0ff}#cubit-register .cr-cubit[data-cubit=constructive] b{color:#ffb300}#cubit-register .cr-cubit[data-cubit=agentic] b{color:#ff2bd6}#cubit-register .cr-cubit[data-cubit=generative] b{color:#eaf6ff}#cubit-register .cr-cubit i{font-style:normal;font-size:13px;color:#eaf6ff}#cubit-register .cr-word{margin-top:10px;font-size:12px;color:#ffb3ec;word-break:break-all}#cubit-register .cr-status{margin-top:8px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#8fa3c7}body.thumb #cubit-register{display:none}';
+      document.head.appendChild(style);
+      el=document.createElement('section');
+      el.id='cubit-register';
+      el.setAttribute('aria-label','cubit register');
+      const host=document.getElementById('wrap')||document.querySelector('main')||document.body;
+      const h=host.querySelector('h1');
+      if(h) h.insertAdjacentElement('afterend', el);
+      else host.insertBefore(el, host.firstChild);
+    }
+    const cells=(register||ORDER.map(name=>({name,text:'—'}))).map(x=>'<div class="cr-cubit" data-cubit="'+x.name+'"><b>'+x.name+'</b><i>'+x.text+'</i></div>').join('');
+    const word=err?'':register.map(x=>x.text).join(' | ');
+    el.innerHTML='<div class="cr-formula">{{ geometric, constructive, agentic, generative }}</div><div class="cr-row">'+cells+'</div><div class="cr-word">'+(err?'':'REGISTER '+word)+'</div><div class="cr-status">'+(err?'FAIL '+err.message:'LIT four cubits wrote the register · AMBER this browser holds '+rows+' rows')+'</div>';
+  }
+  function run(){
+    const host=document.getElementById('wrap')||document.querySelector('main')||document.body;
+    try{
+      const register=build(host);
+      const word=assertReg(register);
+      const rows=remember(slug(), word);
+      mount(register, null, rows);
+    }catch(e){
+      mount(null, e, 0);
+      throw e;
+    }
+  }
+  requestAnimationFrame(run);
+})();
+</script>

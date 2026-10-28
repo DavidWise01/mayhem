@@ -860,6 +860,19 @@ Dave: the flat studio was not a graphics upgrade, so add spheres to World Mayhem
 - [The Hemisphere](./spheres/orbs/hemisphere-cap.html): Orbs. seal 36e1211fcbd58b517a8b6bea568b52e71a275e9e61bff081191eff0eea3c53f5
 - [The Matched Disks](./spheres/orbs/matched-disks.html): Orbs. seal 41e4bdfd7c21db673ab7495086e91db6b09dc9304edbf774fba447cb7aae0cb0
 
+## Stacks
+Dave asked for more depth, ten pages, from 1984 holdings on the Internet Archive. Posted on Mayhem. The cube of 7 kept its next turn for a cited article.
+Ten stacks. Each page reads one archive catalog, keeps a file only when that record supports it, and drops the rest. A second run must match. The scans, the articles, and the tapes are not copied. No NES cartridge is on these pages. Each page still builds the cubit register. Thumbnail views skip the register. Seals were written once. The keeper seal was not rewritten. The 0root hallway was not published.
+- [The Byte Year](./spheres/stacks/byte-year.html): Stacks. seal 2abd88b2e1edfe9a3abdc1f53587bb16937b7df7274102d717f7e49a384a8606
+- [The Macintosh Manual](./spheres/stacks/macintosh-manual.html): Stacks. seal 07c81d1196c4694444f5323c2d8c1f386d44ea2818722cedd9e7ae9530fbef39
+- [The Premier Issue](./spheres/stacks/macworld-premier.html): Stacks. seal 9a1ffbe7efa11f21d60099ecf0259cfdcb73af81336fea9995f1a3745c53c42d
+- [Inside Macintosh One](./spheres/stacks/inside-macintosh-one.html): Stacks. seal b8076603f765388c266032957c86efd603e018ef106f8d8e6ab6cd00ceecb988
+- [Inside Macintosh Two](./spheres/stacks/inside-macintosh-two.html): Stacks. seal 8e1cced49c350e0f0c1fb7efbb9d5b174af835cdd8b2d1a327637acc38a0cf78
+- [The Shareholders Tape](./spheres/stacks/shareholders-tape.html): Stacks. seal 44e140d522164e597f640257db219f85a17a2d4db8535612488e27f49f29a1f1
+- [The Winter Callbook](./spheres/stacks/winter-callbook.html): Stacks. seal 9e5d1996b72af62161ec0bcc5d7682b2d7af66be4d3c7d6541ee06ee34428c6a
+- [Olympic Tape One](./spheres/stacks/olympic-tape.html): Stacks. seal dd2761e531f49518299b909cef88d6e7420db2b39d6020552dd5c3e64e3ca083
+- [Computer Entrepreneurs](./spheres/stacks/computer-entrepreneurs.html): Stacks. seal d37c43214a7b78f71516fdd778e2055b36803a2bab5f66c0df9c70628ac6ee41
+- [The Helens Reel](./spheres/stacks/helens-reel.html): Stacks. seal 9889558da808bcaf58153420c2ed633f16ecff94859a3ea06d9df173eb31160d
 ## Heralds
 Dave: continue next, five pages, same instructions. Posted on Mayhem. The cube of 7 kept its next turn for a cited article.
 Five heralds. Each page has one pupil, a law, a stage, and a desk. The pupil writes the structure. A second run must match. A step is kept only when it is a true improvement, and the decoys are dropped. The page throws otherwise. No NES cartridge is on these pages. Each page still builds the cubit register. Thumbnail views skip the register. Seals were written once. The keeper seal was not rewritten. The 0root hallway was not published.

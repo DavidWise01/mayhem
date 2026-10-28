@@ -1,0 +1,1 @@
+{"slug":"macworld-premier","seal":"9a1ffbe7efa11f21d60099ecf0259cfdcb73af81336fea9995f1a3745c53c42d","rule":"sha256(name|slug|blurb)","write":"if-missing"}

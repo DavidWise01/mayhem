@@ -1,0 +1,1 @@
+{"slug":"byte-year","seal":"2abd88b2e1edfe9a3abdc1f53587bb16937b7df7274102d717f7e49a384a8606","rule":"sha256(name|slug|blurb)","write":"if-missing"}

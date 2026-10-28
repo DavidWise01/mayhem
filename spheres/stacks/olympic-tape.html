@@ -1,0 +1,306 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Olympic Tape One - Stacks - Mayhem</title>
+<style>
+body{margin:0}
+#art{position:fixed;inset:0;width:100vw;height:100vh;z-index:-1}
+.t{display:inline-block;padding:1px 8px;border-radius:8px;font-weight:700;font-size:13px;color:#111}
+.LIT{background:#3ee07a}.AMBER{background:#ffb020}.WALL{background:#ff5a5a;color:#fff}.MODEL{background:#b48cff}
+#v3{width:100%;overflow:hidden}
+table{width:100%;border-collapse:collapse;table-layout:fixed;font-family:ui-monospace,monospace;font-size:12px}
+th,td{border-bottom:1px solid rgba(0,0,0,.15);padding:4px 6px;text-align:left;overflow-wrap:anywhere;vertical-align:top}
+#proof{overflow-wrap:anywhere}
+</style>
+<style id="cubit-neon">
+:root{--neon-cyan:#00f0ff;--neon-pink:#ff2bd6;--neon-amber:#ffb300}
+html,body{background:#030308;color:#d7e3f5;font-family:ui-monospace,Menlo,monospace}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(600px 400px at 20% 10%, rgba(0,240,255,.06), transparent 70%),
+  radial-gradient(700px 500px at 80% 90%, rgba(255,43,214,.05), transparent 70%)}
+main,#wrap{position:relative;z-index:1;background:rgba(5,8,16,.78);color:#d7e3f5;
+  border:1px solid rgba(0,240,255,.18);border-radius:14px;
+  box-shadow:0 0 34px rgba(0,240,255,.07), inset 0 0 60px rgba(0,0,0,.45)}
+#wrap{max-width:1340px;margin:0 auto;padding:34px 18px 50px;text-align:center}
+h1{font-size:26px;font-weight:400;letter-spacing:.22em;text-transform:uppercase;color:#eaf6ff;
+  text-shadow:0 0 8px var(--neon-cyan), 0 0 28px rgba(0,240,255,.7);animation:cubitflicker 7s infinite}
+#sub{font-size:11px;letter-spacing:.3em;color:#5f7396;text-transform:uppercase;margin-bottom:26px}
+#v3{background:#05070d;border-radius:14px;box-shadow:0 0 0 3px var(--neon-pink), 0 0 28px rgba(255,43,214,.25)}
+a{color:var(--neon-cyan)}
+code{color:#ffb3ec}
+@keyframes cubitflicker{0%,100%{opacity:1}92%{opacity:1}93%{opacity:.6}94%{opacity:1}97%{opacity:.85}98%{opacity:1}}
+@media (prefers-reduced-motion:reduce){h1{animation:none}}
+body.thumb .story,body.thumb #controls,body.thumb .kicker{display:none}
+body.thumb #wrap{background:transparent;box-shadow:none;border:0;padding:0}
+body.thumb #v3{height:100vh;border-radius:0;box-shadow:none}
+</style>
+<style id="place">
+html,body{background:#d6e4f5;color:#142040;font-family:Palatino,'Palatino Linotype',Georgia,serif}
+body::before{background:linear-gradient(180deg, rgba(255,255,255,.28), rgba(0,0,0,.05))}
+#wrap{max-width:1080px;background:rgba(255,248,244,.92);color:#142040;border:0;border-radius:18px;box-shadow:0 18px 40px rgba(20,16,30,.16);text-align:left;padding:22px 26px 36px}
+#wrap h1{font-family:Palatino,Georgia,serif;font-size:54px;font-weight:600;letter-spacing:0;text-transform:none;color:#142040;text-shadow:none;animation:none;margin:0 0 8px}
+#wrap .kicker{letter-spacing:.16em;text-transform:uppercase;font-size:12px;color:#142040;font-family:ui-monospace,monospace}
+#v3{position:relative;height:62vh;min-height:420px;border-radius:18px;background:#1a2850;box-shadow:0 16px 36px rgba(20,16,30,.18)}
+#wrap #agentlog{position:absolute;z-index:2;left:14px;bottom:14px;margin:0;max-width:340px;padding:8px 10px;border-radius:10px;background:rgba(255,244,240,.94);color:#142040;font-family:ui-monospace,Menlo,monospace;font-size:12px;line-height:1.4;pointer-events:none}
+body.thumb #agentlog{display:none}
+.law{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:14px 0 8px}
+.law b{letter-spacing:.14em;font-family:ui-monospace,monospace;font-size:13px}
+.law span{border:1px solid #142040;padding:3px 8px;font-family:ui-monospace,monospace;font-size:12px}
+.law span.on{background:#e2b33c;color:#142040}
+#desk{width:100%;height:auto;display:block;margin:8px 0 16px;border-radius:10px}
+#wrap p,#wrap li,h2,#wrap td,#wrap th{color:#142040}
+a{color:#142040}
+.idline{overflow-wrap:anywhere}
+</style></head><body><canvas id="art"></canvas><main id="wrap">
+<p class="kicker">STACKS - under KEEPER ERIS</p>
+<h1>Olympic Tape One</h1>
+<p id="sub">Six hours, 12 minutes, 57.09 seconds. Tape 1 of 7.</p>
+<div id="v3"><p id="agentlog">TIMER is reading the archive record.</p></div>
+<div class="story">
+<div class="law" aria-label="{{persist + 6 , act + 12 , react + 57 , learn + 1 , loop + 7 }}"><b>TIMER</b><span>PERSIST +6</span><span>ACT +12</span><span>REACT +57</span><span>LEARN +1</span><span>LOOP +7</span></div>
+<canvas id="desk" width="720" height="160"></canvas>
+<div id="counted"></div>
+<p><span class="t LIT">LIT</span> The item is dated 1984-07-27. The title is The Games of the 23rd Summer Olympiad 1984 Los Angeles ABC Tape 1 (of 7). Two hundred fifty-four files are catalogued. One of them is an MPEG4 of 6,934,994,308 bytes running 22,377.09 seconds. That is 6 hours, 12 minutes, and 57.09 seconds. TIMER keeps that file. It drops 253 others, and 248 of those are thumbnails. The subject tags on the item include Summer Olympics, Los Angeles, Jim McKay, Rafer Johnson, Swimming, Cycling, Gymnastics, and Opening Ceremony.</p>
+<p><span class="t AMBER">AMBER</span> The opening of those games is commonly placed on 28 July 1984. This file's date is 27 July. The page does not reconcile the calendar. The gold and red in the picture are stage colors, not a sample from the broadcast.</p>
+<p><span class="t WALL">WALL</span> Tapes 2 through 7 are not in this catalog. No score, no medal table, and no commentary is copied.</p>
+<p><span class="t MODEL">MODEL</span> Six gold blocks are the six hours. A short red block is the 12 minutes and 57.09 seconds left over. No cartridge is loaded.</p>
+<p id="proof">Checking the stack.</p>
+<p class="idline">Record: <a href="https://archive.org/details/1984-olympics-tape-1-new">1984-olympics-tape-1-new</a></p>
+<p>Seal sha256(name|slug|blurb): <code id="seal">dd2761e531f49518299b909cef88d6e7420db2b39d6020552dd5c3e64e3ca083</code></p>
+<p><a href="../../index.html">Mayhem</a></p>
+</div>
+</main>
+<script>
+const NAME="Olympic Tape One",SLUG="olympic-tape",BLURB="TIMER keeps the picture only when it is Olympic tape 1.",SEAL="dd2761e531f49518299b909cef88d6e7420db2b39d6020552dd5c3e64e3ca083";
+const DATA={"title":"The Games of the 23rd Summer Olympiad 1984 Los Angeles ABC Tape 1 (of 7)","date":"1984-07-27","creator":"International Olympic Committee, ABC","mediatype":"movies","files":[{"name":"__ia_thumb.jpg","size":10200,"format":"Item Tile","centi":0},{"name":"1984 Olympics Tape 1 NEW.mp4","size":6934994308,"format":"MPEG4","centi":2237709},{"name":"1984-olympics-tape-1-new_archive.torrent","size":35273,"format":"Archive BitTorrent","centi":0},{"name":"1984-olympics-tape-1-new_files.xml","size":0,"format":"Metadata","centi":0},{"name":"1984-olympics-tape-1-new_meta.sqlite","size":24576,"format":"Metadata","centi":0},{"name":"1984-olympics-tape-1-new_meta.xml","size":3522,"format":"Metadata","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000001.jpg","size":29350,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000002.jpg","size":42550,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000003.jpg","size":17178,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000004.jpg","size":48003,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000005.jpg","size":65823,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000006.jpg","size":32002,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000007.jpg","size":27892,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000008.jpg","size":29998,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000009.jpg","size":29048,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000010.jpg","size":42670,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000011.jpg","size":40730,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000012.jpg","size":39531,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000013.jpg","size":32530,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000014.jpg","size":42576,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000015.jpg","size":36569,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000016.jpg","size":42596,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000017.jpg","size":59059,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000018.jpg","size":57388,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000019.jpg","size":58436,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000020.jpg","size":37737,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000021.jpg","size":64326,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000022.jpg","size":52500,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000023.jpg","size":41038,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000024.jpg","size":56283,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000025.jpg","size":60347,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000026.jpg","size":38332,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000027.jpg","size":30302,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000028.jpg","size":20913,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000029.jpg","size":33724,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000030.jpg","size":63431,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000031.jpg","size":50278,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000032.jpg","size":28950,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000033.jpg","size":43936,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000034.jpg","size":35564,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000035.jpg","size":32111,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000036.jpg","size":36297,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000037.jpg","size":47541,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000038.jpg","size":58141,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000039.jpg","size":34544,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000040.jpg","size":43674,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000041.jpg","size":37223,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000042.jpg","size":46884,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000043.jpg","size":37102,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000044.jpg","size":38749,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000045.jpg","size":50572,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000046.jpg","size":28660,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000047.jpg","size":33863,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000048.jpg","size":41671,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000049.jpg","size":39833,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000050.jpg","size":58541,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000051.jpg","size":24013,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000052.jpg","size":28443,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000053.jpg","size":35554,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000054.jpg","size":45704,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000055.jpg","size":56925,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000056.jpg","size":35009,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000057.jpg","size":41264,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000058.jpg","size":68678,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000059.jpg","size":29982,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000060.jpg","size":29565,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000061.jpg","size":25356,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000062.jpg","size":36430,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000063.jpg","size":31102,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000064.jpg","size":36487,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000065.jpg","size":28093,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000066.jpg","size":45050,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000067.jpg","size":29923,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000068.jpg","size":25824,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000069.jpg","size":45481,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000070.jpg","size":31970,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000071.jpg","size":31281,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000072.jpg","size":27785,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000073.jpg","size":34024,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000074.jpg","size":51204,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000075.jpg","size":47603,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000076.jpg","size":17713,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000077.jpg","size":32581,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000078.jpg","size":42055,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000079.jpg","size":32037,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000080.jpg","size":46446,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000081.jpg","size":57941,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000082.jpg","size":53972,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000083.jpg","size":49050,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000084.jpg","size":70313,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000085.jpg","size":15493,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000086.jpg","size":51371,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000087.jpg","size":28990,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000088.jpg","size":43386,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000089.jpg","size":30641,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000090.jpg","size":59112,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000091.jpg","size":116518,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000092.jpg","size":55081,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000093.jpg","size":65934,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000094.jpg","size":64454,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000095.jpg","size":66200,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000096.jpg","size":71825,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000097.jpg","size":38890,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000098.jpg","size":63420,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000099.jpg","size":43340,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000100.jpg","size":68969,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000101.jpg","size":65651,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000102.jpg","size":61383,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000103.jpg","size":54615,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000104.jpg","size":67542,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000105.jpg","size":60725,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000106.jpg","size":47879,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000107.jpg","size":15287,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000108.jpg","size":71050,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000109.jpg","size":47752,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000110.jpg","size":44643,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000111.jpg","size":43173,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000112.jpg","size":68060,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000113.jpg","size":45692,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000114.jpg","size":41439,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000115.jpg","size":35440,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000116.jpg","size":45642,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000117.jpg","size":61218,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000118.jpg","size":41464,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000119.jpg","size":70780,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000120.jpg","size":76458,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000121.jpg","size":62339,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000122.jpg","size":59895,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000123.jpg","size":37886,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000124.jpg","size":56803,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000125.jpg","size":22429,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000126.jpg","size":58699,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000127.jpg","size":47058,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000128.jpg","size":64834,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000129.jpg","size":47603,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000130.jpg","size":62744,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000131.jpg","size":56580,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000132.jpg","size":26935,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000133.jpg","size":29014,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000134.jpg","size":27783,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000135.jpg","size":66909,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000136.jpg","size":42959,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000137.jpg","size":67793,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000138.jpg","size":89688,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000139.jpg","size":46983,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000140.jpg","size":82201,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000141.jpg","size":28675,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000142.jpg","size":60115,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000143.jpg","size":70417,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000144.jpg","size":59109,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000145.jpg","size":39592,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000146.jpg","size":70868,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000147.jpg","size":72181,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000148.jpg","size":35375,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000149.jpg","size":49467,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000150.jpg","size":74144,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000151.jpg","size":16508,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000152.jpg","size":48508,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000153.jpg","size":42376,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000154.jpg","size":78962,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000155.jpg","size":79723,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000156.jpg","size":75254,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000157.jpg","size":44377,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000158.jpg","size":63659,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000159.jpg","size":43423,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000160.jpg","size":28216,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000161.jpg","size":34204,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000162.jpg","size":26775,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000163.jpg","size":54186,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000164.jpg","size":55783,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000165.jpg","size":26242,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000166.jpg","size":60780,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000167.jpg","size":33710,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000168.jpg","size":66052,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000169.jpg","size":48272,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000170.jpg","size":39923,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000171.jpg","size":75798,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000172.jpg","size":40089,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000173.jpg","size":50626,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000174.jpg","size":54527,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000175.jpg","size":69060,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000176.jpg","size":29876,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000177.jpg","size":54821,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000178.jpg","size":36574,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000179.jpg","size":37593,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000180.jpg","size":56873,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000181.jpg","size":31633,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000182.jpg","size":49045,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000183.jpg","size":52464,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000184.jpg","size":39537,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000185.jpg","size":57371,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000186.jpg","size":54195,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000187.jpg","size":73338,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000188.jpg","size":38853,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000189.jpg","size":24118,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000190.jpg","size":27308,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000191.jpg","size":34492,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000192.jpg","size":60838,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000193.jpg","size":63267,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000194.jpg","size":32054,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000195.jpg","size":71820,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000196.jpg","size":63731,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000197.jpg","size":61214,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000198.jpg","size":57355,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000199.jpg","size":62222,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000200.jpg","size":18775,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000201.jpg","size":52576,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000202.jpg","size":54509,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000203.jpg","size":47429,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000204.jpg","size":58723,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000205.jpg","size":38490,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000206.jpg","size":38012,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000207.jpg","size":31646,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000208.jpg","size":41612,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000209.jpg","size":21652,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000210.jpg","size":42477,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000211.jpg","size":53766,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000212.jpg","size":35339,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000213.jpg","size":40542,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000214.jpg","size":61867,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000215.jpg","size":38675,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000216.jpg","size":77391,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000217.jpg","size":52927,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000218.jpg","size":18345,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000219.jpg","size":51944,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000220.jpg","size":50036,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000221.jpg","size":68640,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000222.jpg","size":53230,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000223.jpg","size":34634,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000224.jpg","size":65167,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000225.jpg","size":39833,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000226.jpg","size":31844,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000227.jpg","size":43569,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000228.jpg","size":48755,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000229.jpg","size":55047,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000230.jpg","size":47537,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000231.jpg","size":30268,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000232.jpg","size":20000,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000233.jpg","size":88736,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000234.jpg","size":58853,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000235.jpg","size":47489,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000236.jpg","size":63927,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000237.jpg","size":71067,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000238.jpg","size":88889,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000239.jpg","size":65744,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000240.jpg","size":50978,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000241.jpg","size":54631,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000242.jpg","size":77675,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000243.jpg","size":89660,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000244.jpg","size":55397,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000245.jpg","size":39902,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000246.jpg","size":48207,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000247.jpg","size":47364,"format":"Thumbnail","centi":0},{"name":"1984-olympics-tape-1-new.thumbs/1984 Olympics Tape 1 NEW_000248.jpg","size":54427,"format":"Thumbnail","centi":0}]};
+function clock(centi) {
+  const hours = Math.floor(centi / 360000);
+  const afterH = centi - hours * 360000;
+  const mins = Math.floor(afterH / 6000);
+  const secCenti = afterH - mins * 6000;
+  return { hours, mins, secCenti };
+}
+function olympicRun(DATA) {
+  function keep(f) { return f.format === "MPEG4" && f.centi === 2237709 && f.size === 6934994308; }
+  if (keep({ name: "thumb.jpg", size: 100, format: "Thumbnail", centi: 2237709 })) throw new Error("decoy");
+  if (DATA.title.indexOf("Tape 1 (of 7)") < 0 || DATA.date !== "1984-07-27") throw new Error("head");
+  if (DATA.files.length !== 254) throw new Error("files");
+  const kept = [];
+  const log = [];
+  let drops = 0;
+  let thumbs = 0;
+  for (const f of DATA.files) {
+    if (f.format === "Thumbnail") thumbs++;
+    if (!keep(f)) { drops++; log.push({ agent: "TIMER", decoy: true, accepted: false, note: "drop " + f.format }); continue; }
+    kept.push(f);
+    log.push({ agent: "TIMER", decoy: false, accepted: true, note: "keep tape 1" });
+  }
+  if (kept.length !== 1 || drops !== 253 || thumbs !== 248) throw new Error("split");
+  const c = clock(kept[0].centi);
+  if (c.hours !== 6 || c.mins !== 12 || c.secCenti !== 5709) throw new Error("clock");
+  const law = [6, 12, 57, 1, 7];
+  if (law.reduce((a, b) => a + b, 0) !== 83) throw new Error("law");
+  return { pack: "1|253|254|2237709|6934994308", rows: [{ a: "MPEG4", b: "6 h 12 m 57.09 s", c: "6934994308 bytes" }], kept: 1, drops, law, log, hours: 6, remCenti: 77709, desk: ["1984-07-27, tape 1 of 7", "6 h 12 m 57.09 s", "248 thumbnails dropped"] };
+}
+function esc(s){return String(s).replace(/[&<>]/g,function(ch){return ch==='&'?'&amp;':ch==='<'?'&lt;':'&gt;';});}
+function paintRows(rows){const el=document.getElementById('counted');if(!el)return;el.innerHTML='<table><thead><tr><th>kept</th><th>mark</th><th>note</th></tr></thead><tbody>'+rows.map(function(r){return '<tr><td>'+esc(r.a)+'</td><td>'+esc(r.b)+'</td><td>'+esc(r.c)+'</td></tr>';}).join('')+'</tbody></table>';}
+function paintLog(log){const el=document.getElementById('agentlog');if(!el||!log||!log.length)return;const acc=log.filter(e=>e.accepted),rej=log.filter(e=>!e.accepted);const tail=acc.slice(-3).concat(rej.slice(-2));el.innerHTML='<b>'+log[0].agent+'</b> '+acc.length+' kept, '+rej.length+' dropped<br>'+tail.map(e=>(e.accepted?'kept ':'drop ')+e.note).join('<br>');}
+function paintDesk(L){const cv=document.getElementById('desk');if(!cv)return;const g=cv.getContext('2d');g.fillStyle="#142040";g.fillRect(0,0,cv.width,cv.height);g.fillStyle="#d6e4f5";g.font='16px ui-monospace,monospace';L.desk.forEach(function(line,i){g.fillText(line,24,42+i*36);});}
+function paintProof(html){const el=document.getElementById('proof');if(!el)return;el.innerHTML=html}
+function remember(pack){
+ const key='mayhem-stack-kept';
+ let book={};
+ try{ book=JSON.parse(localStorage.getItem(key)||'{}')||{}; }catch(e){ book={}; }
+ const row=book[SLUG];
+ if(!row) book[SLUG]={pack:pack,act:'census',visits:1};
+ else { if(row.pack!==pack||row.act!=='census') throw Error('persistent drift'); row.visits+=1; }
+ localStorage.setItem(key, JSON.stringify(book));
+ const again=JSON.parse(localStorage.getItem(key))[SLUG];
+ if(!again||again.pack!==pack) throw Error('persistent drift');
+ return again.visits;
+}
+async function sha(t){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(t));return[...new Uint8Array(b)].map(v=>v.toString(16).padStart(2,'0')).join('')}
+function check(){
+ const A=olympicRun(DATA);
+ const B=olympicRun(DATA);
+ if(A.pack!==B.pack) throw Error('drift');
+ if(A.log.some(e=>e.decoy&&e.accepted)) throw Error('decoy kept');
+ const law=A.law;
+ if(law.reduce((a,b)=>a+b,0)!==83) throw Error('law');
+ if(A.pack!=="1|253|254|2237709|6934994308") throw Error('pack');
+ paintLog(A.log); paintDesk(A); paintRows(A.rows);
+ remember(A.pack);
+ return A.pack;
+}
+(async()=>{
+ if(/[?&]thumb=1/.test(location.search)) document.body.classList.add('thumb');
+ try{const h=await sha(NAME+'|'+SLUG+'|'+BLURB);if(h!==SEAL)throw Error('seal mismatch');const r=check();paintProof('<span class="t LIT">LIT</span> self-check passed: seal recomputed; '+r);}catch(e){paintProof('<span class="t WALL">FAIL</span> '+e.message);throw e}
+ const thumb=/[?&]thumb=1/.test(location.search);
+ const reduce=typeof matchMedia==='function'&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+ if(!thumb&&!reduce){const spans=[...document.querySelectorAll('.law span')];let i=0;if(spans.length)setInterval(()=>{spans.forEach((s,k)=>s.classList.toggle('on',k===i));i=(i+1)%spans.length;},700);}
+})();
+</script>
+<script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}</script>
+<script type="module">
+import * as THREE from 'three';
+import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+function buildScene(run) {
+  const g = new THREE.Group();
+  const gold = new THREE.MeshStandardMaterial({ color: 0xe2b33c, roughness: 0.4, metalness: 0.3 });
+  const red = new THREE.MeshStandardMaterial({ color: 0xb4232a, roughness: 0.4, metalness: 0.2 });
+  if (run.hours !== 6 || run.remCenti !== 77709) throw Error("clock");
+  for (let i = 0; i < run.hours; i++) {
+    const h = 1.15;
+    const m = new THREE.Mesh(new THREE.BoxGeometry(0.36, h, 0.36), gold);
+    m.position.set((i - 3) * 0.52, h / 2, 0);
+    if (m.position.y - h / 2 < -0.001) throw Error("hour bottom");
+    g.add(m);
+  }
+  const rem = run.remCenti / 360000 * 1.15;
+  const tail = new THREE.Mesh(new THREE.BoxGeometry(0.36, rem, 0.36), red);
+  tail.position.set(3 * 0.52, rem / 2, 0);
+  if (tail.position.y - rem / 2 < -0.001) throw Error("rem bottom");
+  g.add(tail);
+  if (g.children.length !== 7) throw Error("blocks");
+  return g;
+}
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const box=document.getElementById('v3');
+const W=box.clientWidth||800,H=box.clientHeight||560;
+const R=new THREE.WebGLRenderer({antialias:true});
+R.setPixelRatio(Math.min(devicePixelRatio||1,2));
+R.setSize(W,H);
+R.outputColorSpace=THREE.SRGBColorSpace;
+R.toneMapping=THREE.ACESFilmicToneMapping;
+R.toneMappingExposure=1.05;
+box.insertBefore(R.domElement, box.firstChild);
+const S=new THREE.Scene();
+const C=new THREE.PerspectiveCamera(42,W/Math.max(H,1),.1,80);
+const O=new OrbitControls(C,R.domElement);
+O.enableDamping=true;
+S.add(new THREE.AmbientLight(0xffffff,.55));
+S.add(new THREE.HemisphereLight(0xfff6ea,0x223044,.4));
+function floor(color,y){
+ const sand=new THREE.Mesh(new THREE.CircleGeometry(14,64), new THREE.MeshStandardMaterial({color,roughness:1}));
+ sand.rotation.x=-Math.PI/2; sand.position.y=y; sand.receiveShadow=true; S.add(sand); sand.updateMatrixWorld();
+ if(new THREE.Vector3(0,0,1).applyQuaternion(sand.quaternion).y<0.9) throw Error('floor facing');
+}
+function cam(){
+ const view=new THREE.Vector3(); C.getWorldDirection(view);
+ if(view.z>=-0.5) throw Error('camera facing');
+}
+S.background=new THREE.Color(0x1a2850);
+C.position.set(4.2,3.4,8.2); C.lookAt(0,0.7,0); O.target.set(0,0.7,0);
+floor(0x2a2118,0);
+const sun=new THREE.DirectionalLight(0xfff1d6,2.1); sun.position.set(4,8,6); S.add(sun);
+let HERO=null;
+try{
+ const run=olympicRun(DATA);
+ const again=olympicRun(DATA);
+ if(again.pack!==run.pack) throw Error('drift');
+ HERO=buildScene(run);
+ S.add(HERO);
+ cam();
+ HERO.userData.play=!reduce && !/[?&]thumb=1/.test(location.search);
+}catch(e){ paintProof('<span class="t WALL">FAIL</span> '+e.message); throw e; }
+function tick(){
+ if(HERO&&HERO.userData.play&&!reduce) HERO.rotation.y+=0.003;
+ O.update(); R.render(S,C); requestAnimationFrame(tick);
+}
+tick();
+addEventListener('resize',()=>{const w=box.clientWidth,h=box.clientHeight;C.aspect=w/Math.max(h,1);C.updateProjectionMatrix();R.setSize(w,h)});
+</script>
+<script id="cubit-register-boot">
+(function(){
+  if(/[?&]thumb=1/.test(location.search)) return;
+  if(document.getElementById('cubit-register')) return;
+  const ORDER=['geometric','constructive','agentic','generative'];
+  const ROLES=['ARTIST','CRITIC','BUILDER','WEAVER','FOLLOWER','KEEPER'];
+  const KEY='mayhem-cubit-register';
+  function slug(){
+    for(const sc of document.scripts){
+      const m=/const SLUG="([^"]+)"/.exec(sc.textContent||'');
+      if(m) return m[1];
+    }
+    return (location.pathname.replace(/^\//,'').replace(/\.html$/i,''))||'index';
+  }
+  function geometric(){
+    let canvases=0, svgs=0, w=0, h=0;
+    document.querySelectorAll('canvas').forEach(el=>{ canvases++; w=Math.max(w, el.clientWidth|0); h=Math.max(h, el.clientHeight|0); });
+    document.querySelectorAll('svg').forEach(el=>{ svgs++; w=Math.max(w, el.clientWidth|0); h=Math.max(h, el.clientHeight|0); });
+    const v3=document.getElementById('v3');
+    if(v3){ w=Math.max(w, v3.clientWidth|0); h=Math.max(h, v3.clientHeight|0); }
+    if(!w){ w=document.documentElement.clientWidth|0; h=document.documentElement.clientHeight|0; }
+    return {name:'geometric', text:canvases+'c+'+svgs+'s·'+w+'x'+h, canvases, svgs, w, h};
+  }
+  function constructive(host){
+    const nodes=host.querySelectorAll('*').length, buttons=host.querySelectorAll('button').length;
+    return {name:'constructive', text:nodes+'n·'+buttons+'b', nodes, buttons};
+  }
+  function agentic(host, c){
+    const text=host.innerText||'';
+    const found=ROLES.filter(r=>text.indexOf(r)!==-1);
+    const agents=found.length?found:['REGISTER'];
+    return {name:'agentic', text:agents.join('+'), agents, accepted:c.nodes>0};
+  }
+  function generative(g,c,a){
+    const s=g.text+'|'+c.text+'|'+a.text;
+    let x=2166136261;
+    for(let i=0;i<s.length;i++) x=Math.imul(x^s.charCodeAt(i), 16777619);
+    const code=(x>>>0).toString(16).padStart(8,'0');
+    return {name:'generative', text:code, code};
+  }
+  function build(host){
+    const register=[];
+    const g=geometric(); register.push(g);
+    const c=constructive(host); register.push(c);
+    const a=agentic(host,c); register.push(a);
+    register.push(generative(g,c,a));
+    return register;
+  }
+  function assertReg(register){
+    if(register.length!==4) throw Error('register length '+register.length);
+    if(register.map(x=>x.name).join(',')!==ORDER.join(',')) throw Error('cubit order');
+    if(register.some(x=>!x.text)) throw Error('empty cubit');
+    if(!register[2].accepted) throw Error('agent refused the register');
+    const again=generative(register[0], register[1], register[2]);
+    if(again.code!==register[3].code) throw Error('register drift');
+    return register.map(x=>x.text).join(' | ');
+  }
+  function remember(id, word){
+    let book={};
+    try{ book=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){ book={}; }
+    book[id]={word};
+    try{ localStorage.setItem(KEY, JSON.stringify(book)); }catch(e){}
+    return Object.keys(book).length;
+  }
+  function mount(register, err, rows){
+    let el=document.getElementById('cubit-register');
+    if(!el){
+      const style=document.createElement('style');
+      style.textContent='#cubit-register{margin:18px 0;padding:14px 12px 12px;border:1px solid rgba(0,240,255,.28);border-radius:14px;background:rgba(5,8,16,.78);box-shadow:0 0 28px rgba(0,240,255,.08);color:#d7e3f5;text-align:left;font-family:ui-monospace,Menlo,monospace}#cubit-register .cr-formula{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#eaf6ff;text-shadow:0 0 8px #00f0ff;margin:0 0 10px}#cubit-register .cr-row{display:flex;gap:8px;flex-wrap:wrap}#cubit-register .cr-cubit{flex:1 1 140px;border:1px solid rgba(0,240,255,.25);border-radius:10px;padding:8px;background:rgba(0,0,0,.35)}#cubit-register .cr-cubit b{display:block;font-weight:400;font-size:10px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:4px}#cubit-register .cr-cubit[data-cubit=geometric] b{color:#00f0ff}#cubit-register .cr-cubit[data-cubit=constructive] b{color:#ffb300}#cubit-register .cr-cubit[data-cubit=agentic] b{color:#ff2bd6}#cubit-register .cr-cubit[data-cubit=generative] b{color:#eaf6ff}#cubit-register .cr-cubit i{font-style:normal;font-size:13px;color:#eaf6ff}#cubit-register .cr-word{margin-top:10px;font-size:12px;color:#ffb3ec;word-break:break-all}#cubit-register .cr-status{margin-top:8px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#8fa3c7}body.thumb #cubit-register{display:none}';
+      document.head.appendChild(style);
+      el=document.createElement('section');
+      el.id='cubit-register';
+      el.setAttribute('aria-label','cubit register');
+      const host=document.getElementById('wrap')||document.querySelector('main')||document.body;
+      const h=host.querySelector('h1');
+      if(h) h.insertAdjacentElement('afterend', el);
+      else host.insertBefore(el, host.firstChild);
+    }
+    const cells=(register||ORDER.map(name=>({name,text:'—'}))).map(x=>'<div class="cr-cubit" data-cubit="'+x.name+'"><b>'+x.name+'</b><i>'+x.text+'</i></div>').join('');
+    const word=err?'':register.map(x=>x.text).join(' | ');
+    el.innerHTML='<div class="cr-formula">{{ geometric, constructive, agentic, generative }}</div><div class="cr-row">'+cells+'</div><div class="cr-word">'+(err?'':'REGISTER '+word)+'</div><div class="cr-status">'+(err?'FAIL '+err.message:'LIT four cubits wrote the register · AMBER this browser holds '+rows+' rows')+'</div>';
+  }
+  function run(){
+    const host=document.getElementById('wrap')||document.querySelector('main')||document.body;
+    try{
+      const register=build(host);
+      const word=assertReg(register);
+      const rows=remember(slug(), word);
+      mount(register, null, rows);
+    }catch(e){
+      mount(null, e, 0);
+      throw e;
+    }
+  }
+  requestAnimationFrame(run);
+})();
+</script>

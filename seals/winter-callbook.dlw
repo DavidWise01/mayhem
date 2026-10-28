@@ -1,0 +1,1 @@
+{"slug":"winter-callbook","seal":"9e5d1996b72af62161ec0bcc5d7682b2d7af66be4d3c7d6541ee06ee34428c6a","rule":"sha256(name|slug|blurb)","write":"if-missing"}

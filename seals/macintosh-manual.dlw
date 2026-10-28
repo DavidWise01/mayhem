@@ -1,0 +1,1 @@
+{"slug":"macintosh-manual","seal":"07c81d1196c4694444f5323c2d8c1f386d44ea2818722cedd9e7ae9530fbef39","rule":"sha256(name|slug|blurb)","write":"if-missing"}
