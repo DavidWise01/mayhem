@@ -1,0 +1,1 @@
+{"slug":"scarf-sprite","seal":"3f982d41e31b75b7867997abbabbde473ee11b652b5b33ba483ff23edca25654","rule":"sha256(name|slug|blurb)","write":"if-missing"}

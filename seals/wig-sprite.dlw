@@ -1,0 +1,1 @@
+{"slug":"wig-sprite","seal":"cc815e5d063b27a91dbad482c6a96cf574ae5ab1bdf9035ab5efd1f4b39b4cfc","rule":"sha256(name|slug|blurb)","write":"if-missing"}

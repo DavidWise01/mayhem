@@ -1,0 +1,1 @@
+{"slug":"glass-sprite","seal":"b2356dabb57c754b46024ea04acec3ad15d18d3cdac7e55047a08f1549bac7c6","rule":"sha256(name|slug|blurb)","write":"if-missing"}

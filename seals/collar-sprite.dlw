@@ -1,0 +1,1 @@
+{"slug":"collar-sprite","seal":"1b3a5d5689c8fdc9e6bf0c98077bc77ffb0c2d3e0d2fea95a56f0f1d6f69fb7e","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"triangle-sprite","seal":"2cc5055ae4907ac802888c8ecd410587dac9ba8709631e8414570a4ba40bc0e2","rule":"sha256(name|slug|blurb)","write":"if-missing"}

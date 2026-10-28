@@ -860,6 +860,14 @@ Dave: the flat studio was not a graphics upgrade, so add spheres to World Mayhem
 - [The Hemisphere](./spheres/orbs/hemisphere-cap.html): Orbs. seal 36e1211fcbd58b517a8b6bea568b52e71a275e9e61bff081191eff0eea3c53f5
 - [The Matched Disks](./spheres/orbs/matched-disks.html): Orbs. seal 41e4bdfd7c21db673ab7495086e91db6b09dc9304edbf774fba447cb7aae0cb0
 
+## Salon
+Dave asked for French philosophers, and for each avatar to be a sprite. Posted on Mayhem. The cube of 7 kept its next turn for a cited article.
+Five salon sprites. Each page keeps a pixel only when it belongs to that sprite, and drops an erase or a fill. A second run must match. The sprite is not a portrait, and no book is quoted. No NES cartridge is on these pages. Each page still builds the cubit register. Thumbnail views skip the register. Seals were written once. The keeper seal was not rewritten. The 0root hallway was not published.
+- [The Collar Sprite](./spheres/salon/collar-sprite.html): Salon. seal 1b3a5d5689c8fdc9e6bf0c98077bc77ffb0c2d3e0d2fea95a56f0f1d6f69fb7e
+- [The Triangle Sprite](./spheres/salon/triangle-sprite.html): Salon. seal 2cc5055ae4907ac802888c8ecd410587dac9ba8709631e8414570a4ba40bc0e2
+- [The Scarf Sprite](./spheres/salon/scarf-sprite.html): Salon. seal 3f982d41e31b75b7867997abbabbde473ee11b652b5b33ba483ff23edca25654
+- [The Glass Sprite](./spheres/salon/glass-sprite.html): Salon. seal b2356dabb57c754b46024ea04acec3ad15d18d3cdac7e55047a08f1549bac7c6
+- [The Wig Sprite](./spheres/salon/wig-sprite.html): Salon. seal cc815e5d063b27a91dbad482c6a96cf574ae5ab1bdf9035ab5efd1f4b39b4cfc
 ## Stacks
 Dave asked for more depth, ten pages, from 1984 holdings on the Internet Archive. Posted on Mayhem. The cube of 7 kept its next turn for a cited article.
 Ten stacks. Each page reads one archive catalog, keeps a file only when that record supports it, and drops the rest. A second run must match. The scans, the articles, and the tapes are not copied. No NES cartridge is on these pages. Each page still builds the cubit register. Thumbnail views skip the register. Seals were written once. The keeper seal was not rewritten. The 0root hallway was not published.
