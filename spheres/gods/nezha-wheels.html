@@ -1,0 +1,280 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The Wind-Fire Wheels · Gods · Mayhem</title>
+<style>
+body{margin:0}
+#art{position:fixed;inset:0;width:100vw;height:100vh;z-index:-1}
+.t{display:inline-block;padding:1px 8px;border-radius:8px;font-weight:700;font-size:13px;color:#111}
+.LIT{background:#3ee07a}.AMBER{background:#ffb020}.WALL{background:#ff5a5a;color:#fff}.MODEL{background:#b48cff}
+#v3{width:100%;overflow:hidden}
+</style>
+<style id="cubit-neon">
+:root{--neon-cyan:#00f0ff;--neon-pink:#ff2bd6;--neon-amber:#ffb300}
+html,body{background:#030308;color:#d7e3f5;font-family:ui-monospace,Menlo,monospace}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(600px 400px at 20% 10%, rgba(0,240,255,.06), transparent 70%),
+  radial-gradient(700px 500px at 80% 90%, rgba(255,43,214,.05), transparent 70%)}
+main,#wrap{position:relative;z-index:1;background:rgba(5,8,16,.78);color:#d7e3f5;
+  border:1px solid rgba(0,240,255,.18);border-radius:14px;
+  box-shadow:0 0 34px rgba(0,240,255,.07), inset 0 0 60px rgba(0,0,0,.45)}
+#wrap{max-width:1340px;margin:0 auto;padding:34px 18px 50px;text-align:center}
+h1{font-size:26px;font-weight:400;letter-spacing:.22em;text-transform:uppercase;color:#eaf6ff;
+  text-shadow:0 0 8px var(--neon-cyan), 0 0 28px rgba(0,240,255,.7);animation:cubitflicker 7s infinite}
+#sub{font-size:11px;letter-spacing:.3em;color:#5f7396;text-transform:uppercase;margin-bottom:26px}
+#v3{background:#05070d;border-radius:14px;box-shadow:0 0 0 3px var(--neon-pink), 0 0 28px rgba(255,43,214,.25)}
+a{color:var(--neon-cyan)}
+code{color:#ffb3ec}
+@keyframes cubitflicker{0%,100%{opacity:1}92%{opacity:1}93%{opacity:.6}94%{opacity:1}97%{opacity:.85}98%{opacity:1}}
+@media (prefers-reduced-motion:reduce){h1{animation:none}}
+body.thumb .story,body.thumb #controls,body.thumb .kicker{display:none}
+body.thumb #wrap{background:transparent;box-shadow:none;border:0;padding:0}
+body.thumb #v3{height:100vh;border-radius:0;box-shadow:none}
+</style>
+<style id="place">
+html,body{background:#f6d2c6;color:#3a120e;font-family:Palatino,'Palatino Linotype',Georgia,serif}
+body::before{background:linear-gradient(180deg, rgba(255,255,255,.28), rgba(0,0,0,.05))}
+#wrap{max-width:1080px;background:rgba(255,248,244,.92);color:#3a120e;border:0;border-radius:18px;box-shadow:0 18px 40px rgba(20,16,30,.16);text-align:left;padding:22px 26px 36px}
+#wrap h1{font-family:Palatino,Georgia,serif;font-size:54px;font-weight:600;letter-spacing:0;text-transform:none;color:#3a120e;text-shadow:none;animation:none;margin:0 0 8px}
+#wrap .kicker{letter-spacing:.16em;text-transform:uppercase;font-size:12px;color:#3a120e;font-family:ui-monospace,monospace}
+#v3{position:relative;height:62vh;min-height:420px;border-radius:18px;background:#5c1820;box-shadow:0 16px 36px rgba(20,16,30,.18)}
+#wrap #agentlog{position:absolute;z-index:2;left:14px;bottom:14px;margin:0;max-width:340px;padding:8px 10px;border-radius:10px;background:rgba(255,244,240,.94);color:#3a120e;font-family:ui-monospace,Menlo,monospace;font-size:12px;line-height:1.4;pointer-events:none}
+body.thumb #agentlog{display:none}
+.law{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:14px 0 8px}
+.law b{letter-spacing:.14em;font-family:ui-monospace,monospace;font-size:13px}
+.law span{border:1px solid #3a120e;padding:3px 8px;font-family:ui-monospace,monospace;font-size:12px}
+.law span.on{background:#e2b657;color:#3a120e}
+#desk{width:100%;height:auto;display:block;margin:8px 0 16px;border-radius:10px}
+#wrap p,#wrap li,h2{color:#3a120e}
+a{color:#3a120e}
+</style></head><body><canvas id="art"></canvas><main id="wrap">
+<p class="kicker">GODS · under KEEPER ERIS</p>
+<h1>The Wind-Fire Wheels</h1>
+<p id="sub">Nezha trains alone. Three heads, six arms, two wheels.</p>
+<div id="v3"><p id="agentlog">WHEELWRIGHT is truing the wheels.</p></div>
+<div class="story">
+<div class="law" aria-label="{{persist + 2 , act + 2 , react + 1 , learn + 6 , loop + 3}}"><b>NEZHA</b><span>PERSIST +2</span><span>ACT +2</span><span>REACT +1</span><span>LEARN +6</span><span>LOOP +3</span></div>
+<canvas id="desk" width="720" height="200"></canvas>
+<p><span class="t LIT">LIT</span> Nezha keeps three heads and six arms. The two wind-fire wheels share one radius. The law {{persist + 2 , act + 2 , react + 1 , learn + 6 , loop + 3}} sums to 14. This page recomputes those counts and throws if a wheel is left untrue.</p>
+<p><span class="t AMBER">AMBER</span> The consecrated form with three heads and six arms, and the wind-fire wheels, are told in the Investiture of the Gods. 哪吒. 三头六臂. 风火轮.</p>
+<p><span class="t MODEL">MODEL</span> One pupil. The stage is the pair of wheels. The desk is six arms by two faces by three heads. A radius is kept only when the gap to 1 shrinks. No cartridge is loaded.</p>
+<p id="proof">Checking the trainer.</p>
+<p>Seal sha256(name|slug|blurb): <code id="seal">ad77423f610d3ccfeeb7f64f642ff4679694dffa5cff928d223f267e3e26f542</code></p>
+<p><a href="../../index.html">Mayhem</a></p>
+</div>
+</main>
+<script>
+const NAME="The Wind-Fire Wheels",SLUG="nezha-wheels",BLURB="Nezha trains alone on two equal wind-fire wheels, with three heads and six arms.",SEAL="ad77423f610d3ccfeeb7f64f642ff4679694dffa5cff928d223f267e3e26f542";
+function wheelRun(){const heads=3,arms=6,wheels=2;const law=[2,2,1,6,3];if(heads*arms!==18)throw Error('body');if(law.reduce((a,b)=>a+b,0)!==14)throw Error('law');const start=0.55;let r=start;const log=[];const gap=x=>Math.abs(x-1);const g0=gap(r);let step=0.28;for(let i=0;i<24;i++){const dir=(i%5===4)?-1:1;const mag=dir<0?step:Math.min(step,gap(r)||step);const prop=r+dir*mag;const ok=gap(prop)<gap(r)-1e-15&&prop>0.2;log.push({agent:'WHEELWRIGHT',radius:prop,note:'r '+prop.toFixed(3)+' gap '+gap(prop).toFixed(3),accepted:ok});if(ok){r=prop;step=Math.max(0.02,step*0.85);}}return{start,r,r2:r,log,g0,g:gap(r),heads,arms,wheels,law};}
+
+function paintLog(log){const el=document.getElementById('agentlog');if(!el||!log||!log.length)return;const acc=log.filter(e=>e.accepted),rej=log.filter(e=>!e.accepted);const tail=acc.slice(-3).concat(rej.slice(-2));el.innerHTML='<b>'+log[0].agent+'</b> '+acc.length+' kept · '+rej.length+' dropped<br>'+tail.map(e=>(e.accepted?'kept ':'drop ')+e.note).join('<br>')}
+function cell(g,x,y,s,k,rgb){const t=Math.max(0,Math.min(1,k));g.fillStyle='rgb('+((12*(1-t)+rgb[0]*t)|0)+','+((14*(1-t)+rgb[1]*t)|0)+','+((18*(1-t)+rgb[2]*t)|0)+')';g.fillRect(x,y,s,s);g.strokeStyle='rgba(255,255,255,.45)';g.strokeRect(x+.5,y+.5,s-1,s-1)}
+
+function paintDesk(L){
+ const cv=document.getElementById('desk'); if(!cv) return; const g=cv.getContext('2d'); const w=cv.width,h=cv.height;
+ g.fillStyle='#1a0a0c'; g.fillRect(0,0,w,h);
+ const names=['SPEAR','RIBBON','RING','SWORD','FIRE','WIND'];
+ const weights=[3,2,4,2,5,3]; const total=weights.reduce((a,b)=>a+b,0);
+ g.font='12px ui-monospace,monospace'; g.textAlign='center'; g.textBaseline='bottom';
+ const s=28, gap=6, x0=86, y0=36;
+ for(let face=0;face<2;face++){
+  for(let mon=0;mon<3;mon++){
+   for(let b=0;b<6;b++){
+    const shown=weights[b]/total;
+    cell(g, x0+face*250+b*(s+gap), y0+mon*(s+gap), s, 0.35+0.65*shown*(0.45+0.55*(L.r||0)), face? [226,80,70] : [242,210,196]);
+   }
+  }
+ }
+ g.fillStyle='#e2b657';
+ names.forEach((n,i)=>{ g.fillText(n, x0+s/2+i*(s+gap), 28); g.fillText(n, x0+250+s/2+i*(s+gap), 28); });
+ g.textAlign='right'; g.fillText('NEZHA', x0-8, y0+s); g.fillText('AO BING', x0+242, y0+s);
+ g.textAlign='left'; g.fillText('{{6 \u00d7 2 \u00d7 3}}', 16, h-14);
+}
+function paintProof(html){const el=document.getElementById('proof');if(!el)return;el.innerHTML=html}
+async function sha(t){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(t));return[...new Uint8Array(b)].map(v=>v.toString(16).padStart(2,'0')).join('')}
+function check(){
+ const L=wheelRun();
+ paintLog(L.log); paintDesk(L);
+ if(!(L.g<L.g0)) throw Error('no improvement');
+ if(Math.abs(L.r-1)>1e-9||L.r2!==L.r||L.heads!==3||L.arms!==6||L.wheels!==2) throw Error('wheels'); if(!L.log.some(e=>e.accepted)) throw Error('agents');
+ return 'wheels '+L.g0.toFixed(3)+' → '+L.g.toFixed(3)+' · '+L.heads+' heads · '+L.arms+' arms · law '+L.law.reduce((a,b)=>a+b,0);
+}
+(async()=>{try{const h=await sha(NAME+'|'+SLUG+'|'+BLURB);if(h!==SEAL)throw Error('seal mismatch');const r=check();paintProof('<span class="t LIT">LIT</span> self-check passed: seal recomputed; '+r);}catch(e){paintProof('<span class="t WALL">FAIL</span> '+e.message);throw e}
+const thumb=/[?&]thumb=1/.test(location.search);
+const reduce=typeof matchMedia==='function'&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(!thumb&&!reduce){const spans=[...document.querySelectorAll('.law span')];let i=0;if(spans.length)setInterval(()=>{spans.forEach((s,k)=>s.classList.toggle('on',k===i));i=(i+1)%spans.length;},700);}
+})();
+</script>
+<script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}</script>
+<script type="module">
+
+import * as THREE from 'three';
+import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const box=document.getElementById('v3');
+const W=box.clientWidth||800,H=box.clientHeight||560;
+const R=new THREE.WebGLRenderer({antialias:true});
+R.setPixelRatio(Math.min(devicePixelRatio||1,2));
+R.setSize(W,H);
+R.outputColorSpace=THREE.SRGBColorSpace;
+R.toneMapping=THREE.ACESFilmicToneMapping;
+R.toneMappingExposure=1.05;
+box.insertBefore(R.domElement, box.firstChild);
+const S=new THREE.Scene();
+const C=new THREE.PerspectiveCamera(42,W/Math.max(H,1),.1,80);
+const O=new OrbitControls(C,R.domElement);
+O.enableDamping=true;
+S.add(new THREE.AmbientLight(0xffffff,.55));
+S.add(new THREE.HemisphereLight(0xfff6ea,0x223044,.4));
+function floor(color,y){
+ const sand=new THREE.Mesh(new THREE.CircleGeometry(22,72), new THREE.MeshStandardMaterial({color,roughness:1}));
+ sand.rotation.x=-Math.PI/2; sand.position.y=y; sand.receiveShadow=true; S.add(sand); sand.updateMatrixWorld();
+ if(new THREE.Vector3(0,0,1).applyQuaternion(sand.quaternion).y<0.9) throw Error('floor facing');
+}
+function cam(){
+ const view=new THREE.Vector3(); C.getWorldDirection(view);
+ if(view.z>=-0.5) throw Error('camera facing');
+}
+S.background=new THREE.Color(0x5c1820);
+
+C.position.set(3.4,2.6,7.4); C.lookAt(0,1.15,0); O.target.set(0,1.15,0);
+floor(0x6e2430,0);
+const sun=new THREE.DirectionalLight(0xffe1a8,2.2); sun.position.set(4,8,5); S.add(sun);
+function hero(){
+ const g=new THREE.Group(); S.add(g);
+ const run=wheelRun();
+ const play=!reduce && !/[?&]thumb=1/.test(location.search);
+ const gold=new THREE.MeshStandardMaterial({color:0xe2b657,metalness:.55,roughness:.28});
+ const lacquer=new THREE.MeshStandardMaterial({color:0xf2d2c4,roughness:.4});
+ const wheels=[];
+ function makeWheel(x,r){
+  const m=new THREE.Mesh(new THREE.TorusGeometry(r,0.07,12,36), gold);
+  m.position.set(x,r,0.85); g.add(m); wheels.push(m); return m;
+ }
+ const r0=play?run.start:run.r;
+ makeWheel(-1.15,r0); makeWheel(1.15,r0);
+ let heads=0, arms=0;
+ for(let i=0;i<3;i++){const h=new THREE.Mesh(new THREE.SphereGeometry(0.16,24,16), lacquer); h.position.set(0,2.15+i*0.34,-0.55); g.add(h); heads++;}
+ for(let i=0;i<6;i++){const a=(i-2.5)*0.42; const arm=new THREE.Mesh(new THREE.BoxGeometry(0.07,0.62,0.07), gold); arm.position.set(Math.sin(a)*0.48,1.7,-0.55); arm.rotation.z=-a; g.add(arm); arms++;}
+ const spear=new THREE.Mesh(new THREE.CylinderGeometry(0.03,0.03,1.5,8), gold); spear.position.set(0.9,1.5,-0.2); spear.rotation.z=0.5; g.add(spear);
+ if(heads!==3||arms!==6||wheels.length!==2) throw Error('body mesh');
+ cam();
+ function setR(r){for(const m of wheels){const old=m.geometry; m.geometry=new THREE.TorusGeometry(r,0.07,12,36); m.position.y=r; old.dispose();}}
+ if(!play && Math.abs(wheels[0].geometry.parameters.radius-1)>1e-9) throw Error('wheel radius');
+ g.userData={play, run, step:0, done:!play, apply:e=>setR(e.radius), finish(){setR(run.r); if(Math.abs(wheels[0].geometry.parameters.radius-1)>1e-9){const err=Error('wheel radius'); paintProof('<span class="t WALL">FAIL</span> '+err.message); throw err;}}};
+ return g;
+}
+
+let HERO=null;
+try{ HERO=hero(); }catch(e){ paintProof('<span class="t WALL">FAIL</span> '+e.message); throw e; }
+function tick(){
+ if(HERO&&HERO.userData.play&&!HERO.userData.done){
+  const run=HERO.userData.run, e=run.log[HERO.userData.step++];
+  if(e&&e.accepted&&HERO.userData.apply) HERO.userData.apply(e);
+  if(HERO.userData.step>=run.log.length){
+   HERO.userData.done=true;
+   if(HERO.userData.finish) HERO.userData.finish();
+  }
+ }
+ if(HERO&&!reduce) HERO.rotation.y+=0.003;
+ O.update(); R.render(S,C); requestAnimationFrame(tick);
+}
+tick();
+addEventListener('resize',()=>{const w=box.clientWidth,h=box.clientHeight;C.aspect=w/Math.max(h,1);C.updateProjectionMatrix();R.setSize(w,h)});
+
+</script>
+<script id="cubit-register-boot">
+(function(){
+  if(/[?&]thumb=1/.test(location.search)) return;
+  if(document.getElementById('cubit-register')) return;
+  const ORDER=['geometric','constructive','agentic','generative'];
+  const ROLES=['ARTIST','CRITIC','BUILDER','WEAVER','FOLLOWER','KEEPER'];
+  const KEY='mayhem-cubit-register';
+  function slug(){
+    for(const sc of document.scripts){
+      const m=/const SLUG="([^"]+)"/.exec(sc.textContent||'');
+      if(m) return m[1];
+    }
+    return (location.pathname.replace(/^\//,'').replace(/\.html$/i,''))||'index';
+  }
+  function geometric(){
+    let canvases=0, svgs=0, w=0, h=0;
+    document.querySelectorAll('canvas').forEach(el=>{ canvases++; w=Math.max(w, el.clientWidth|0); h=Math.max(h, el.clientHeight|0); });
+    document.querySelectorAll('svg').forEach(el=>{ svgs++; w=Math.max(w, el.clientWidth|0); h=Math.max(h, el.clientHeight|0); });
+    const v3=document.getElementById('v3');
+    if(v3){ w=Math.max(w, v3.clientWidth|0); h=Math.max(h, v3.clientHeight|0); }
+    if(!w){ w=document.documentElement.clientWidth|0; h=document.documentElement.clientHeight|0; }
+    return {name:'geometric', text:canvases+'c+'+svgs+'s·'+w+'x'+h, canvases, svgs, w, h};
+  }
+  function constructive(host){
+    const nodes=host.querySelectorAll('*').length, buttons=host.querySelectorAll('button').length;
+    return {name:'constructive', text:nodes+'n·'+buttons+'b', nodes, buttons};
+  }
+  function agentic(host, c){
+    const text=host.innerText||'';
+    const found=ROLES.filter(r=>text.indexOf(r)!==-1);
+    const agents=found.length?found:['REGISTER'];
+    return {name:'agentic', text:agents.join('+'), agents, accepted:c.nodes>0};
+  }
+  function generative(g,c,a){
+    const s=g.text+'|'+c.text+'|'+a.text;
+    let x=2166136261;
+    for(let i=0;i<s.length;i++) x=Math.imul(x^s.charCodeAt(i), 16777619);
+    const code=(x>>>0).toString(16).padStart(8,'0');
+    return {name:'generative', text:code, code};
+  }
+  function build(host){
+    const register=[];
+    const g=geometric(); register.push(g);
+    const c=constructive(host); register.push(c);
+    const a=agentic(host,c); register.push(a);
+    register.push(generative(g,c,a));
+    return register;
+  }
+  function assertReg(register){
+    if(register.length!==4) throw Error('register length '+register.length);
+    if(register.map(x=>x.name).join(',')!==ORDER.join(',')) throw Error('cubit order');
+    if(register.some(x=>!x.text)) throw Error('empty cubit');
+    if(!register[2].accepted) throw Error('agent refused the register');
+    const again=generative(register[0], register[1], register[2]);
+    if(again.code!==register[3].code) throw Error('register drift');
+    return register.map(x=>x.text).join(' | ');
+  }
+  function remember(id, word){
+    let book={};
+    try{ book=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){ book={}; }
+    book[id]={word};
+    try{ localStorage.setItem(KEY, JSON.stringify(book)); }catch(e){}
+    return Object.keys(book).length;
+  }
+  function mount(register, err, rows){
+    let el=document.getElementById('cubit-register');
+    if(!el){
+      const style=document.createElement('style');
+      style.textContent='#cubit-register{margin:18px 0;padding:14px 12px 12px;border:1px solid rgba(0,240,255,.28);border-radius:14px;background:rgba(5,8,16,.78);box-shadow:0 0 28px rgba(0,240,255,.08);color:#d7e3f5;text-align:left;font-family:ui-monospace,Menlo,monospace}#cubit-register .cr-formula{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#eaf6ff;text-shadow:0 0 8px #00f0ff;margin:0 0 10px}#cubit-register .cr-row{display:flex;gap:8px;flex-wrap:wrap}#cubit-register .cr-cubit{flex:1 1 140px;border:1px solid rgba(0,240,255,.25);border-radius:10px;padding:8px;background:rgba(0,0,0,.35)}#cubit-register .cr-cubit b{display:block;font-weight:400;font-size:10px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:4px}#cubit-register .cr-cubit[data-cubit=geometric] b{color:#00f0ff}#cubit-register .cr-cubit[data-cubit=constructive] b{color:#ffb300}#cubit-register .cr-cubit[data-cubit=agentic] b{color:#ff2bd6}#cubit-register .cr-cubit[data-cubit=generative] b{color:#eaf6ff}#cubit-register .cr-cubit i{font-style:normal;font-size:13px;color:#eaf6ff}#cubit-register .cr-word{margin-top:10px;font-size:12px;color:#ffb3ec;word-break:break-all}#cubit-register .cr-status{margin-top:8px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#8fa3c7}body.thumb #cubit-register{display:none}';
+      document.head.appendChild(style);
+      el=document.createElement('section');
+      el.id='cubit-register';
+      el.setAttribute('aria-label','cubit register');
+      const host=document.getElementById('wrap')||document.querySelector('main')||document.body;
+      const h=host.querySelector('h1');
+      if(h) h.insertAdjacentElement('afterend', el);
+      else host.insertBefore(el, host.firstChild);
+    }
+    const cells=(register||ORDER.map(name=>({name,text:'—'}))).map(x=>'<div class="cr-cubit" data-cubit="'+x.name+'"><b>'+x.name+'</b><i>'+x.text+'</i></div>').join('');
+    const word=err?'':register.map(x=>x.text).join(' | ');
+    el.innerHTML='<div class="cr-formula">{{ geometric, constructive, agentic, generative }}</div><div class="cr-row">'+cells+'</div><div class="cr-word">'+(err?'':'REGISTER '+word)+'</div><div class="cr-status">'+(err?'FAIL '+err.message:'LIT four cubits wrote the register · AMBER this browser holds '+rows+' rows')+'</div>';
+  }
+  function run(){
+    const host=document.getElementById('wrap')||document.querySelector('main')||document.body;
+    try{
+      const register=build(host);
+      const word=assertReg(register);
+      const rows=remember(slug(), word);
+      mount(register, null, rows);
+    }catch(e){
+      mount(null, e, 0);
+      throw e;
+    }
+  }
+  requestAnimationFrame(run);
+})();
+</script>
+</body></html>

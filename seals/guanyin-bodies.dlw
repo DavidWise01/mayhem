@@ -1,0 +1,6 @@
+{
+ "slug": "guanyin-bodies",
+ "seal": "c44b8e51eeb21f3d397b05c8cb324c6b4e6a51c81f01ffa96cce226833d5c676",
+ "rule": "sha256(name|slug|blurb)",
+ "write": "if-missing"
+}

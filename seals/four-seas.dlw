@@ -1,0 +1,6 @@
+{
+ "slug": "four-seas",
+ "seal": "3b8ea8881d3b96e2b1d7b665fa89a2769b091d65d78ef0c40007e7bd5d958837",
+ "rule": "sha256(name|slug|blurb)",
+ "write": "if-missing"
+}

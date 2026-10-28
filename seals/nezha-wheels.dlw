@@ -1,0 +1,6 @@
+{
+ "slug": "nezha-wheels",
+ "seal": "ad77423f610d3ccfeeb7f64f642ff4679694dffa5cff928d223f267e3e26f542",
+ "rule": "sha256(name|slug|blurb)",
+ "write": "if-missing"
+}

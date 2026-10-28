@@ -859,3 +859,11 @@ Dave: the flat studio was not a graphics upgrade, so add spheres to World Mayhem
 - [The Tetra Sphere](./spheres/orbs/tetra-sphere.html): Orbs. seal 306143dc36454d775cf220221155629d98e51d84d20703ee82a8e106ef98084b
 - [The Hemisphere](./spheres/orbs/hemisphere-cap.html): Orbs. seal 36e1211fcbd58b517a8b6bea568b52e71a275e9e61bff081191eff0eea3c53f5
 - [The Matched Disks](./spheres/orbs/matched-disks.html): Orbs. seal 41e4bdfd7c21db673ab7495086e91db6b09dc9304edbf774fba447cb7aae0cb0
+
+## Gods
+Dave: continue building web pages for Mayhem, use the NES emu trainer as an example, and do Chinese gods.
+Four trainers. Each page has one pupil, a law, a stage, and a desk. Nezha trues two wind-fire wheels. Guanyin keeps thirty-three bodies. Nüwa sets five colors on four pillars. The four dragon kings each take a cardinal sea. Identities are LIT and recomputed on load. The stories are AMBER. The sculptures and desks are MODEL. An attempt is kept only when it improves, and the page throws otherwise. No NES cartridge is on these pages. Each page still builds the cubit register. Thumbnail views skip the register. Seals were written once. The keeper seal was not rewritten.
+- [The Wind-Fire Wheels](./spheres/gods/nezha-wheels.html): Gods. seal ad77423f610d3ccfeeb7f64f642ff4679694dffa5cff928d223f267e3e26f542
+- [Thirty-Three Bodies](./spheres/gods/guanyin-bodies.html): Gods. seal c44b8e51eeb21f3d397b05c8cb324c6b4e6a51c81f01ffa96cce226833d5c676
+- [The Five-Colored Stones](./spheres/gods/nuwa-stones.html): Gods. seal 791dadeb885a57b2edc260ab730e466a66f920e90e673a61408093885ff19a34
+- [The Four Seas](./spheres/gods/four-seas.html): Gods. seal 3b8ea8881d3b96e2b1d7b665fa89a2769b091d65d78ef0c40007e7bd5d958837
