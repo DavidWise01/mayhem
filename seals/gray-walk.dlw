@@ -1,0 +1,1 @@
+{"slug":"gray-walk","seal":"00ee164586c86fc10bf9dda8d17ce13556ddae8bd66711876d29ecafc62c9419","rule":"sha256(name|slug|blurb)","write":"if-missing"}

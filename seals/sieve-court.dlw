@@ -1,0 +1,1 @@
+{"slug":"sieve-court","seal":"42a9cc79d185ae0f589d866cd10e89785dde2bf59dd6c645e46a209222ef2e61","rule":"sha256(name|slug|blurb)","write":"if-missing"}

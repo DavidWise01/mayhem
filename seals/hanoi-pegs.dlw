@@ -1,0 +1,1 @@
+{"slug":"hanoi-pegs","seal":"45bb9f49768ab009d0f82ec62f98ebb642bebdcff03e5bb294412ac2878c97b9","rule":"sha256(name|slug|blurb)","write":"if-missing"}

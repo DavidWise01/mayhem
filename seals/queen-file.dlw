@@ -1,0 +1,1 @@
+{"slug":"queen-file","seal":"e1fc30b5b0f7928e2d0a8e24168e638a082f91a76b64302bed8640bbf560d1ac","rule":"sha256(name|slug|blurb)","write":"if-missing"}
