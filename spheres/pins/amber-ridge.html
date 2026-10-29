@@ -1,0 +1,281 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The Amber Ridge - Pins - Mayhem</title><style>
+body{margin:0;background:#1b1714;color:#241910}
+#stage{padding:18px 16px 0}
+#stage svg{width:100%;height:auto;display:block}
+.story{max-width:880px;margin:16px auto 28px;padding:16px 20px 36px;background:#f4efe6;color:#241910}
+.story h1{font-family:Georgia,serif;font-weight:600;font-size:42px;margin:0 0 8px}
+.kicker{letter-spacing:.16em;text-transform:uppercase;font-size:12px;font-family:ui-monospace,monospace}
+.law{font-family:ui-monospace,monospace}
+table{width:100%;border-collapse:collapse;font-size:14px;font-family:ui-monospace,Menlo,monospace}
+td,th{padding:4px 6px;text-align:left;border-bottom:1px solid #241910}
+a{color:#241910}
+.t{display:inline-block;padding:1px 7px;border-radius:8px;font-weight:700;font-size:13px;color:#111}
+.LIT{background:#3ee07a}.AMBER{background:#ffb020}.WALL{background:#ff5a5a;color:#fff}.MODEL{background:#b48cff}
+#proof,#seal,code,.law{overflow-wrap:anywhere}
+body.thumb .story{display:none !important}
+body.thumb #stage{min-height:100vh;padding:0}
+#cubit-register,#cubit-register .cr-formula,#cubit-register .cr-cubit,#cubit-register .cr-cubit b,#cubit-register .cr-cubit i,#cubit-register .cr-word,#cubit-register .cr-status{
+  background:transparent !important;color:inherit !important;border-color:transparent !important;
+  box-shadow:none !important;text-shadow:none !important;font-family:inherit !important}
+@media(max-width:560px){.story h1{font-size:32px}}
+</style></head><body data-doc="ridge"><main id="wrap"><div id="stage"><svg id="ridge" viewBox="0 0 88 54" role="img" aria-label="A lynx the size of a ridge, gold at the pinned eye"></svg></div><div class="story"><p class="kicker">PINS - under KEEPER ERIS</p><h1>The Amber Ridge</h1><p class="law" aria-label="{{persist + 1 , act + 2218 , react + 2219 , learn + 65 , loop + 0 }}"><b>STACKER</b> STACKER persist 1 · act 2218 · react 2219 · learn 65 · loop 0</p><p><span class="t LIT">LIT</span> STACKER keeps a cell only when it is the pin on the ridge. The lynx covers 2219 cells. One cell is the eye, at temporal zero. The other 2218 are the ridge, and they are dropped. The farthest cell is 65 steps from the eye. The law sums to 4503. A second run must match.</p><p><span class="t AMBER">AMBER</span> Amber is a role in the 2011 film Sucker Punch. The year is assigned. The ridge is an original lynx.</p><p><span class="t WALL">WALL</span> The film is not quoted. This is not a still and not a performer. The census is this lynx only.</p><p><span class="t MODEL">MODEL</span> A ridge seen in cells. Gold is the pin. Stone is the maybe.</p><table id="rows" data-n="66"><thead><tr><th>band</th><th>cells</th><th>note</th><th>time</th></tr></thead><tbody></tbody></table><p id="proof">Checking the pin.</p><p>Seal sha256(name|slug|blurb): <code id="seal">d875f8bfa5c21217da6e89d19ce21b315ff9eea49f5e17e58f60b892172bf84d</code></p><p><a href="../../index.html">Mayhem</a></p></div></main><script>
+function raster(poly, W, H) {
+  const cells = [];
+  for (let y = 0; y < H; y++) {
+    const y0 = y + 0.5;
+    const xs = [];
+    for (let i = 0; i < poly.length; i++) {
+      const a = poly[i];
+      const b = poly[(i + 1) % poly.length];
+      if ((a[1] <= y0 && b[1] > y0) || (b[1] <= y0 && a[1] > y0)) {
+        const t = (y0 - a[1]) / (b[1] - a[1]);
+        xs.push(a[0] + t * (b[0] - a[0]));
+      }
+    }
+    xs.sort(function (p, q) { return p - q; });
+    if (xs.length % 2) throw new Error("scan " + y + " " + xs.length);
+    const row = [];
+    for (let x = 0; x < W; x++) row.push(0);
+    for (let k = 0; k < xs.length; k += 2) {
+      let x0 = Math.ceil(xs[k] - 1e-9);
+      let x1 = Math.floor(xs[k + 1] - 1e-9);
+      if (x0 < 0) x0 = 0;
+      if (x1 > W - 1) x1 = W - 1;
+      for (let x = x0; x <= x1; x++) row[x] = 1;
+    }
+    cells.push(row);
+  }
+  return cells;
+}
+function censusRidge() {
+  const POLY = [
+    [82, 28], [74, 34], [68, 40], [62, 50], [52, 50], [46, 42],
+    [32, 50], [18, 50], [8, 46], [2, 36], [10, 30], [14, 24],
+    [24, 18], [34, 14], [28, 14], [32, 1], [38, 14], [42, 12],
+    [44, 14], [52, 0], [58, 14], [66, 16], [76, 22]
+  ];
+  const W = 88;
+  const H = 54;
+  const pin = [68, 22];
+  const cells = raster(POLY, W, H);
+  if (!cells[pin[1]][pin[0]]) throw new Error("eye outside");
+  let inside = 0;
+  let maxBand = 0;
+  const bands = [];
+  for (let i = 0; i < 120; i++) bands.push(0);
+  for (let y = 0; y < H; y++) {
+    for (let x = 0; x < W; x++) {
+      if (!cells[y][x]) continue;
+      inside++;
+      const band = Math.max(Math.abs(x - pin[0]), Math.abs(y - pin[1]));
+      if (band > maxBand) maxBand = band;
+      bands[band]++;
+    }
+  }
+  if (bands[0] !== 1) throw new Error("pin cell");
+  const drops = inside - 1;
+  const rows = [];
+  for (let b = 0; b <= maxBand; b++) {
+    if (!bands[b]) continue;
+    rows.push([b, bands[b], b === 0 ? "kept" : "maybe", b === 0 ? 0 : b]);
+  }
+  const law = [1, drops, inside, maxBand, 0];
+  const log = [
+    { decoy: false, accepted: true, note: "pin" },
+    { decoy: true, accepted: false, note: "band 1" }
+  ];
+  if (rows[0][0] !== 0 || rows[0][1] !== 1 || rows[0][2] !== "kept") throw new Error("row");
+  return {
+    pack: law.join("|"),
+    law: law,
+    lawSum: law.reduce(function (a, b) { return a + b; }, 0),
+    rows: rows,
+    cells: cells,
+    poly: POLY,
+    pin: pin,
+    kept: 1,
+    drops: drops,
+    inside: inside,
+    maxBand: maxBand,
+    log: log
+  };
+}
+const NAME="The Amber Ridge",SLUG="amber-ridge",BLURB="STACKER keeps a cell only when it is the pin on the ridge.",SEAL="d875f8bfa5c21217da6e89d19ce21b315ff9eea49f5e17e58f60b892172bf84d",PACK="1|2218|2219|65|0",ROLE="STACKER";
+function spriteRun(){
+  const A=censusRidge();
+  const B=censusRidge();
+  if(A.pack!==B.pack) throw Error("drift");
+  if(A.pack!==PACK) throw Error("pack");
+  if(A.law.join("|")!==PACK) throw Error("law");
+  if(A.law.reduce(function(a,b){return a+b;},0)!==4503) throw Error("law sum");
+  if(A.rows.length!==66) throw Error("rows");
+  if(A.log.some(function(e){return e.decoy&&e.accepted;})) throw Error("decoy kept");
+  if(A.log.some(function(e){return !e.decoy&&!e.accepted;})) throw Error("kept dropped");
+  return A;
+}
+function paintStage(L) {
+  if (L.inside !== 2219 || L.drops !== 2218 || L.maxBand !== 65 || L.pin[0] !== 68 || L.pin[1] !== 22 || L.rows[0][2] !== "kept") throw Error("ridge");
+  function tone(b) {
+    if (b === 0) return "#f3d56a";
+    if (b < 4) return "#f4e6cc";
+    if (b < 10) return "#e0c59a";
+    if (b < 20) return "#c49a62";
+    if (b < 36) return "#8d6240";
+    return "#4a3024";
+  }
+  let body = "<defs><linearGradient id='sky' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='#243044'/><stop offset='1' stop-color='#6a5344'/></linearGradient></defs>";
+  body += "<rect width='88' height='54' fill='url(#sky)'/>";
+  let inside = 0;
+  for (let y = 0; y < L.cells.length; y++) {
+    for (let x = 0; x < L.cells[y].length; x++) {
+      if (!L.cells[y][x]) continue;
+      inside++;
+      const b = Math.max(Math.abs(x - L.pin[0]), Math.abs(y - L.pin[1]));
+      body += "<rect x='" + x + "' y='" + y + "' width='1' height='1' fill='" + tone(b) + "'/>";
+    }
+  }
+  if (inside !== L.inside) throw Error("fill");
+  body += "<circle cx='" + (L.pin[0] + 0.5) + "' cy='" + (L.pin[1] + 0.5) + "' r='1.6' fill='#f3d56a'/>";
+  body += "<text x='4' y='8' font-size='3' font-family='Georgia, serif' fill='#f4e6cc'>THEN</text>";
+  body += "<text x='" + (L.pin[0] - 8) + "' y='" + (L.pin[1] - 2) + "' font-size='2.4' font-family='Georgia, serif' fill='#f3d56a'>NOW</text>";
+  document.getElementById("ridge").innerHTML = body;
+}
+function paintTable(rows){
+  const tb=document.querySelector("#rows tbody");
+  if(!tb) return;
+  tb.innerHTML=rows.map(function(r){return "<tr>"+r.map(function(c){return "<td>"+c+"</td>";}).join("")+"</tr>";}).join("");
+}
+function paintProof(html){const el=document.getElementById("proof"); if(el) el.innerHTML=html;}
+function remember(pack){
+  const key="mayhem-pin-kept";
+  let book={};
+  try{ book=JSON.parse(localStorage.getItem(key)||"{}")||{}; }catch(e){ book={}; }
+  const row=book[SLUG];
+  if(!row) book[SLUG]={pack:pack,act:"census",visits:1};
+  else { if(row.pack!==pack||row.act!=="census") throw Error("persistent drift"); row.visits+=1; }
+  localStorage.setItem(key, JSON.stringify(book));
+  const again=JSON.parse(localStorage.getItem(key))[SLUG];
+  if(!again||again.pack!==pack) throw Error("persistent drift");
+  return again.visits;
+}
+async function sha(t){const b=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(t));return [...new Uint8Array(b)].map(function(v){return v.toString(16).padStart(2,"0");}).join("");}
+function check(){
+  const A=spriteRun();
+  if(document.getElementById("v3")) throw Error("stage");
+  paintStage(A);
+  paintTable(A.rows);
+  remember(A.pack);
+  return A.pack;
+}
+(async function(){
+  if(/[?&]thumb=1/.test(location.search)) document.body.classList.add("thumb");
+  try{
+    const h=await sha(NAME+"|"+SLUG+"|"+BLURB);
+    if(h!==SEAL) throw Error("seal mismatch");
+    const r=check();
+    paintProof('<span class="t LIT">LIT</span> self-check passed: seal recomputed; '+r);
+  }catch(e){
+    paintProof('<span class="t WALL">FAIL</span> '+e.message);
+    throw e;
+  }
+})();
+
+</script>
+<script id="cubit-register-boot">
+(function(){
+  if(/[?&]thumb=1/.test(location.search)) return;
+  if(document.getElementById('cubit-register')) return;
+  const ORDER=['geometric','constructive','agentic','generative'];
+  const ROLES=['ARTIST','CRITIC','BUILDER','WEAVER','FOLLOWER','KEEPER'];
+  const KEY='mayhem-cubit-register';
+  function slug(){
+    for(const sc of document.scripts){
+      const m=/const SLUG="([^"]+)"/.exec(sc.textContent||'');
+      if(m) return m[1];
+    }
+    return (location.pathname.replace(/^\//,'').replace(/\.html$/i,''))||'index';
+  }
+  function geometric(){
+    let canvases=0, svgs=0, w=0, h=0;
+    document.querySelectorAll('canvas').forEach(el=>{ canvases++; w=Math.max(w, el.clientWidth|0); h=Math.max(h, el.clientHeight|0); });
+    document.querySelectorAll('svg').forEach(el=>{ svgs++; w=Math.max(w, el.clientWidth|0); h=Math.max(h, el.clientHeight|0); });
+    const v3=document.getElementById('v3');
+    if(v3){ w=Math.max(w, v3.clientWidth|0); h=Math.max(h, v3.clientHeight|0); }
+    if(!w){ w=document.documentElement.clientWidth|0; h=document.documentElement.clientHeight|0; }
+    return {name:'geometric', text:canvases+'c+'+svgs+'s·'+w+'x'+h, canvases, svgs, w, h};
+  }
+  function constructive(host){
+    const nodes=host.querySelectorAll('*').length, buttons=host.querySelectorAll('button').length;
+    return {name:'constructive', text:nodes+'n·'+buttons+'b', nodes, buttons};
+  }
+  function agentic(host, c){
+    const text=host.innerText||'';
+    const found=ROLES.filter(r=>text.indexOf(r)!==-1);
+    const agents=found.length?found:['REGISTER'];
+    return {name:'agentic', text:agents.join('+'), agents, accepted:c.nodes>0};
+  }
+  function generative(g,c,a){
+    const s=g.text+'|'+c.text+'|'+a.text;
+    let x=2166136261;
+    for(let i=0;i<s.length;i++) x=Math.imul(x^s.charCodeAt(i), 16777619);
+    const code=(x>>>0).toString(16).padStart(8,'0');
+    return {name:'generative', text:code, code};
+  }
+  function build(host){
+    const register=[];
+    const g=geometric(); register.push(g);
+    const c=constructive(host); register.push(c);
+    const a=agentic(host,c); register.push(a);
+    register.push(generative(g,c,a));
+    return register;
+  }
+  function assertReg(register){
+    if(register.length!==4) throw Error('register length '+register.length);
+    if(register.map(x=>x.name).join(',')!==ORDER.join(',')) throw Error('cubit order');
+    if(register.some(x=>!x.text)) throw Error('empty cubit');
+    if(!register[2].accepted) throw Error('agent refused the register');
+    const again=generative(register[0], register[1], register[2]);
+    if(again.code!==register[3].code) throw Error('register drift');
+    return register.map(x=>x.text).join(' | ');
+  }
+  function remember(id, word){
+    let book={};
+    try{ book=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){ book={}; }
+    book[id]={word};
+    try{ localStorage.setItem(KEY, JSON.stringify(book)); }catch(e){}
+    return Object.keys(book).length;
+  }
+  function mount(register, err, rows){
+    let el=document.getElementById('cubit-register');
+    if(!el){
+      const style=document.createElement('style');
+      style.textContent='#cubit-register{margin:18px 0;padding:14px 12px 12px;border:1px solid rgba(0,240,255,.28);border-radius:14px;background:rgba(5,8,16,.78);box-shadow:0 0 28px rgba(0,240,255,.08);color:#d7e3f5;text-align:left;font-family:ui-monospace,Menlo,monospace}#cubit-register .cr-formula{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#eaf6ff;text-shadow:0 0 8px #00f0ff;margin:0 0 10px}#cubit-register .cr-row{display:flex;gap:8px;flex-wrap:wrap}#cubit-register .cr-cubit{flex:1 1 140px;border:1px solid rgba(0,240,255,.25);border-radius:10px;padding:8px;background:rgba(0,0,0,.35)}#cubit-register .cr-cubit b{display:block;font-weight:400;font-size:10px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:4px}#cubit-register .cr-cubit[data-cubit=geometric] b{color:#00f0ff}#cubit-register .cr-cubit[data-cubit=constructive] b{color:#ffb300}#cubit-register .cr-cubit[data-cubit=agentic] b{color:#ff2bd6}#cubit-register .cr-cubit[data-cubit=generative] b{color:#eaf6ff}#cubit-register .cr-cubit i{font-style:normal;font-size:13px;color:#eaf6ff}#cubit-register .cr-word{margin-top:10px;font-size:12px;color:#ffb3ec;word-break:break-all}#cubit-register .cr-status{margin-top:8px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#8fa3c7}body.thumb #cubit-register{display:none}';
+      document.head.appendChild(style);
+      el=document.createElement('section');
+      el.id='cubit-register';
+      el.setAttribute('aria-label','cubit register');
+      const host=document.getElementById('wrap')||document.querySelector('main')||document.body;
+      const h=host.querySelector('h1');
+      if(h) h.insertAdjacentElement('afterend', el);
+      else host.insertBefore(el, host.firstChild);
+    }
+    const cells=(register||ORDER.map(name=>({name,text:'—'}))).map(x=>'<div class="cr-cubit" data-cubit="'+x.name+'"><b>'+x.name+'</b><i>'+x.text+'</i></div>').join('');
+    const word=err?'':register.map(x=>x.text).join(' | ');
+    el.innerHTML='<div class="cr-formula">{{ geometric, constructive, agentic, generative }}</div><div class="cr-row">'+cells+'</div><div class="cr-word">'+(err?'':'REGISTER '+word)+'</div><div class="cr-status">'+(err?'FAIL '+err.message:'LIT four cubits wrote the register · AMBER this browser holds '+rows+' rows')+'</div>';
+  }
+  function run(){
+    const host=document.getElementById('wrap')||document.querySelector('main')||document.body;
+    try{
+      const register=build(host);
+      const word=assertReg(register);
+      const rows=remember(slug(), word);
+      mount(register, null, rows);
+    }catch(e){
+      mount(null, e, 0);
+      throw e;
+    }
+  }
+  requestAnimationFrame(run);
+})();
+</script>
+</body></html>

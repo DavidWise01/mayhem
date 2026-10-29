@@ -1,0 +1,1 @@
+{"slug":"amber-ridge","seal":"d875f8bfa5c21217da6e89d19ce21b315ff9eea49f5e17e58f60b892172bf84d","rule":"sha256(name|slug|blurb)","write":"if-missing"}

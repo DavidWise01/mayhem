@@ -1,0 +1,1 @@
+{"slug":"blondie-fold","seal":"d11c5fdf4800a3927cc1421fb01ea61b8e4253a061e53599479e70a82ca9b9a2","rule":"sha256(name|slug|blurb)","write":"if-missing"}

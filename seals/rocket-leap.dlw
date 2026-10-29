@@ -1,0 +1,1 @@
+{"slug":"rocket-leap","seal":"06901884bb9d28128ec35b26f4080685d149da46e7a9a4a390709bfff2f0c812","rule":"sha256(name|slug|blurb)","write":"if-missing"}

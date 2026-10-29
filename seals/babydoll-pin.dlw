@@ -1,0 +1,1 @@
+{"slug":"babydoll-pin","seal":"9202103e7445c867a0fef7ce8f0094d84f1ed1de850ba8a1621a821759e94ed8","rule":"sha256(name|slug|blurb)","write":"if-missing"}
