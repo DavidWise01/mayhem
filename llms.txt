@@ -860,6 +860,19 @@ Dave: the flat studio was not a graphics upgrade, so add spheres to World Mayhem
 - [The Hemisphere](./spheres/orbs/hemisphere-cap.html): Orbs. seal 36e1211fcbd58b517a8b6bea568b52e71a275e9e61bff081191eff0eea3c53f5
 - [The Matched Disks](./spheres/orbs/matched-disks.html): Orbs. seal 41e4bdfd7c21db673ab7495086e91db6b09dc9304edbf774fba447cb7aae0cb0
 
+## Yards
+Dave asked for the next ten, and to think of crime and punishment in Russia and in suburbia. Posted on Mayhem. The cube of 7 kept its next turn for a cited article.
+Ten yards. Five ledgers sit on a Petersburg counter and five sit on a suburban one: a pledge and a garage sale, a stair and a cul-de-sac, a debt and a fine, a tariff and a citation, a night watch and a sprinkler day. A step is kept only when the ledger allows it. A second run must match. The novel is not quoted. No NES cartridge is on these pages. Each page still builds the cubit register. Thumbnail views skip the register. Seals were written once. The keeper seal was not rewritten. The 0root hallway was not published.
+- [The Pawn Ticket](./spheres/yards/pawn-ticket.html): Yards. seal 5f9453fb9f2104624b4dd6b63d95808e7577ff0d54111aedad1b6f2ea1d07d10
+- [The Garage Sale](./spheres/yards/garage-sale.html): Yards. seal 6c83be43836656355e862defb167449d76fdb6830aa86bf07b4c386318439948
+- [The Staircase](./spheres/yards/staircase.html): Yards. seal 8368f68e3608ccd9e634961d07d26d8170997e9b36f4043f4e9ec30779f56cb5
+- [The Cul-de-Sac](./spheres/yards/cul-de-sac.html): Yards. seal f69e5f696d6ae79f37fe3736cfced5815e48ef9cbeb59801d6e58b4019a4e181
+- [The Debt](./spheres/yards/debt.html): Yards. seal 95359e3ef6059116ae77721d86f5853ce4b7f7f6d988f63b8710c2835f3de110
+- [The Fine](./spheres/yards/fine.html): Yards. seal 6d7cb684ce97189a1c75fa3b6e6602ff3224cd0bdf83aadac312b4de774893ba
+- [The Article](./spheres/yards/article.html): Yards. seal 344a94100ae7e08ee04d8ed182c8573ecbedaf1eeeeb74299786b39fa89b13aa
+- [The Citation](./spheres/yards/citation.html): Yards. seal b52c441efe6791603736d858ee69369b66854a46b5bf30e6f5300eb674abebbc
+- [The Yard Watch](./spheres/yards/yard-watch.html): Yards. seal dd626ac58537e238fd92a8ebfc57ef0417d27be30bf704b035c0baea20036f0f
+- [The Sprinkler Day](./spheres/yards/sprinkler-day.html): Yards. seal 249d6f2fe5caec920d61f20e3998bb06b279d2c409ebf052e81720ab21a6452c
 ## Salon
 Dave asked for French philosophers, and for each avatar to be a sprite. Posted on Mayhem. The cube of 7 kept its next turn for a cited article.
 Five salon sprites. Each page keeps a pixel only when it belongs to that sprite, and drops an erase or a fill. A second run must match. The sprite is not a portrait, and no book is quoted. No NES cartridge is on these pages. Each page still builds the cubit register. Thumbnail views skip the register. Seals were written once. The keeper seal was not rewritten. The 0root hallway was not published.

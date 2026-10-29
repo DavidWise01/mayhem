@@ -1,0 +1,1 @@
+{"slug":"cul-de-sac","seal":"f69e5f696d6ae79f37fe3736cfced5815e48ef9cbeb59801d6e58b4019a4e181","rule":"sha256(name|slug|blurb)","write":"if-missing"}

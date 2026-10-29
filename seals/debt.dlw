@@ -1,0 +1,1 @@
+{"slug":"debt","seal":"95359e3ef6059116ae77721d86f5853ce4b7f7f6d988f63b8710c2835f3de110","rule":"sha256(name|slug|blurb)","write":"if-missing"}

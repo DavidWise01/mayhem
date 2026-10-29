@@ -1,0 +1,1 @@
+{"slug":"yard-watch","seal":"dd626ac58537e238fd92a8ebfc57ef0417d27be30bf704b035c0baea20036f0f","rule":"sha256(name|slug|blurb)","write":"if-missing"}

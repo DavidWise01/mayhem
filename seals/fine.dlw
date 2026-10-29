@@ -1,0 +1,1 @@
+{"slug":"fine","seal":"6d7cb684ce97189a1c75fa3b6e6602ff3224cd0bdf83aadac312b4de774893ba","rule":"sha256(name|slug|blurb)","write":"if-missing"}

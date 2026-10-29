@@ -1,0 +1,1 @@
+{"slug":"citation","seal":"b52c441efe6791603736d858ee69369b66854a46b5bf30e6f5300eb674abebbc","rule":"sha256(name|slug|blurb)","write":"if-missing"}

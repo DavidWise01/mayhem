@@ -1,0 +1,1 @@
+{"slug":"pawn-ticket","seal":"5f9453fb9f2104624b4dd6b63d95808e7577ff0d54111aedad1b6f2ea1d07d10","rule":"sha256(name|slug|blurb)","write":"if-missing"}

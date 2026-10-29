@@ -1,0 +1,1 @@
+{"slug":"article","seal":"344a94100ae7e08ee04d8ed182c8573ecbedaf1eeeeb74299786b39fa89b13aa","rule":"sha256(name|slug|blurb)","write":"if-missing"}
