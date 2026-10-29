@@ -1,72 +1,37 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The Pawn Ticket - Yards - Mayhem</title>
-<style>
-body{margin:0}
-#art{position:fixed;inset:0;width:100vw;height:100vh;z-index:-1}
-.t{display:inline-block;padding:1px 8px;border-radius:8px;font-weight:700;font-size:13px;color:#111}
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The Pawn Ticket - Yards - Mayhem</title><style>
+.t{display:inline-block;padding:1px 7px;border-radius:8px;font-weight:700;font-size:13px;color:#111}
 .LIT{background:#3ee07a}.AMBER{background:#ffb020}.WALL{background:#ff5a5a;color:#fff}.MODEL{background:#b48cff}
-#v3{width:100%;overflow:hidden}
-</style>
-<style id="cubit-neon">
-:root{--neon-cyan:#00f0ff;--neon-pink:#ff2bd6;--neon-amber:#ffb300}
-html,body{background:#030308;color:#d7e3f5;font-family:ui-monospace,Menlo,monospace}
-body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
-  background:radial-gradient(600px 400px at 20% 10%, rgba(0,240,255,.06), transparent 70%),
-  radial-gradient(700px 500px at 80% 90%, rgba(255,43,214,.05), transparent 70%)}
-main,#wrap{position:relative;z-index:1;background:rgba(5,8,16,.78);color:#d7e3f5;
-  border:1px solid rgba(0,240,255,.18);border-radius:14px;
-  box-shadow:0 0 34px rgba(0,240,255,.07), inset 0 0 60px rgba(0,0,0,.45)}
-#wrap{max-width:1340px;margin:0 auto;padding:34px 18px 50px;text-align:center}
-h1{font-size:26px;font-weight:400;letter-spacing:.22em;text-transform:uppercase;color:#eaf6ff;
-  text-shadow:0 0 8px var(--neon-cyan), 0 0 28px rgba(0,240,255,.7);animation:cubitflicker 7s infinite}
-#sub{font-size:11px;letter-spacing:.3em;color:#5f7396;text-transform:uppercase;margin-bottom:26px}
-#v3{background:#05070d;border-radius:14px;box-shadow:0 0 0 3px var(--neon-pink), 0 0 28px rgba(255,43,214,.25)}
-a{color:var(--neon-cyan)}
-code{color:#ffb3ec}
-@keyframes cubitflicker{0%,100%{opacity:1}92%{opacity:1}93%{opacity:.6}94%{opacity:1}97%{opacity:.85}98%{opacity:1}}
-@media (prefers-reduced-motion:reduce){h1{animation:none}}
-body.thumb .story,body.thumb #controls,body.thumb .kicker{display:none}
-body.thumb #wrap{background:transparent;box-shadow:none;border:0;padding:0}
-body.thumb #v3{height:100vh;border-radius:0;box-shadow:none}
-</style>
-<style id="place">
-html,body{background:#f3d2b0;color:#2a2118;font-family:Palatino,'Palatino Linotype',Georgia,serif}
-body::before{background:linear-gradient(180deg, rgba(255,255,255,.28), rgba(0,0,0,.05))}
-#wrap{max-width:1080px;background:rgba(255,252,248,.92);color:#2a2118;border:0;border-radius:18px;box-shadow:0 18px 40px rgba(20,16,30,.16);text-align:left;padding:22px 26px 36px}
-#wrap h1{font-family:Palatino,Georgia,serif;font-size:54px;font-weight:600;letter-spacing:0;text-transform:none;color:#2a2118;text-shadow:none;animation:none;margin:0 0 8px}
-#wrap .kicker{letter-spacing:.16em;text-transform:uppercase;font-size:12px;color:#2a2118;font-family:ui-monospace,monospace}
-#v3{position:relative;height:62vh;min-height:420px;border-radius:18px;background:#3a2820;box-shadow:0 16px 36px rgba(20,16,30,.18)}
-#wrap #agentlog{position:absolute;z-index:2;left:14px;bottom:14px;margin:0;max-width:340px;padding:8px 10px;border-radius:10px;background:rgba(255,252,248,.94);color:#2a2118;font-family:ui-monospace,Menlo,monospace;font-size:12px;line-height:1.4;pointer-events:none}
-body.thumb #agentlog{display:none}
-.law{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:14px 0 8px}
-.law b{letter-spacing:.14em;font-family:ui-monospace,monospace;font-size:13px}
-.law span{border:1px solid #2a2118;padding:3px 8px;font-family:ui-monospace,monospace;font-size:12px}
-.law span.on{background:#e7b48a;color:#2a2118}
-#desk{width:100%;height:auto;display:block;margin:8px 0 16px;border-radius:10px}
-table{width:100%;border-collapse:collapse;font-family:ui-monospace,Menlo,monospace;font-size:12px;margin:0 0 16px}
-caption{caption-side:top;text-align:left;font-size:12px;padding-bottom:6px}
-th,td{border-bottom:1px solid #2a2118;padding:3px 6px;text-align:right;overflow-wrap:anywhere}
-th:first-child,td:first-child{text-align:left}
-#wrap p,#wrap li,h2{color:#2a2118}
-a{color:#2a2118}
-#proof{overflow-wrap:anywhere}</style></head><body><canvas id="art"></canvas><main id="wrap">
-<p class="kicker">YARDS - under KEEPER ERIS</p>
-<h1>The Pawn Ticket</h1>
-<p id="sub">Seven pledges on a Petersburg counter.</p>
-<div id="v3"><p id="agentlog">PLEDGER is writing the yard.</p></div>
-<div class="story">
-<div class="law" aria-label="{{persist + 7 , act + 7 , react + 322 , learn + 150 , loop + 7 }}"><b>PLEDGER</b><span>PERSIST +7</span><span>ACT +7</span><span>REACT +322</span><span>LEARN +150</span><span>LOOP +7</span></div>
-<canvas id="desk" width="720" height="160"></canvas>
-<table id="rows" data-n="7"><caption>The ledger</caption><thead></thead><tbody></tbody></table>
-<p><span class="t LIT">LIT</span> PLEDGER keeps a pledge only when the ticket is the next one and the pledge is positive. 7 pledges are kept and 7 zero pledges are dropped. The pledges sum to 322. The largest is 150. The law sums to 493. A second run must match.</p>
-<p><span class="t AMBER">AMBER</span> The assigned room is a Petersburg pawn counter. Crime and Punishment ran in The Russian Messenger in twelve monthly parts in 1866, and as a book in 1867. That dating is assigned here and is not recomputed. The garage sale is the suburban twin and uses the same rule.</p>
-<p><span class="t WALL">WALL</span> The ledger is this page's list. It quotes no book and describes no method.</p>
-<p><span class="t MODEL">MODEL</span> Seven stacks. The height is the pledge. No cartridge is loaded.</p>
-<p id="proof">Checking the yard.</p>
-<p>Seal sha256(name|slug|blurb): <code id="seal">5f9453fb9f2104624b4dd6b63d95808e7577ff0d54111aedad1b6f2ea1d07d10</code></p>
-<p><a href="../../index.html">Mayhem</a></p>
-</div>
-</main>
-<script>
+body{margin:0}
+#proof,#seal,code,.law{overflow-wrap:anywhere}
+.story{max-width:880px;margin:16px auto;padding:16px 20px 36px}
+.story table{width:100%;border-collapse:collapse;font-size:14px}
+.story td,.story th{padding:4px 6px;text-align:left;border-bottom:1px solid currentColor}
+body.thumb .story{display:none !important}
+body.thumb #stage{min-height:100vh}
+#cubit-register,#cubit-register .cr-formula,#cubit-register .cr-cubit,#cubit-register .cr-cubit b,#cubit-register .cr-cubit i,#cubit-register .cr-word,#cubit-register .cr-status{
+  background:transparent !important;color:inherit !important;border-color:transparent !important;
+  box-shadow:none !important;text-shadow:none !important;font-family:inherit !important}
+svg.mark{position:absolute;width:0;height:0;overflow:hidden}
+
+body{background:#6b4a32;color:#2a2118}
+.counter{padding:28px 16px}
+.ticket{display:grid;grid-template-columns:88px 1fr;background:#f7efe2;min-height:460px;box-shadow:0 22px 40px rgba(0,0,0,.28);font-family:Palatino,Georgia,serif}
+.stub{border-right:2px dashed #8d5b3c;display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:16px 0;background:repeating-linear-gradient(#f7efe2 0 18px,#ead9c4 18px 19px)}
+.stub strong{font-size:42px}
+.face{padding:22px 28px 28px;position:relative}
+.where{letter-spacing:.22em;text-transform:uppercase;font-size:12px;margin:0}
+.kind{font-size:46px;margin:4px 0 12px;font-variant:small-caps;letter-spacing:.04em}
+.face ol{list-style:none;padding:0;margin:0}
+.face li{display:grid;grid-template-columns:2rem 1fr auto;gap:10px;border-bottom:1px dotted #8d5b3c;padding:7px 0;font-size:22px}
+.stamp{width:96px;height:96px;margin:18px 0 0 auto;border:3px solid #8c2f2f;color:#8c2f2f;border-radius:50%;display:flex;align-items:center;justify-content:center;transform:rotate(-14deg);letter-spacing:.14em;font-weight:700}
+.serial{margin:18px 0 0;font-size:14px}
+.story{background:#f7efe2}
+@media(max-width:560px){.ticket{grid-template-columns:1fr}.stub{flex-direction:row;border-right:0;border-bottom:2px dashed #8d5b3c;padding:8px 12px}.kind{font-size:32px}.face li{font-size:18px}}
+</style></head><body data-doc="ticket"><main id="wrap"><div id="stage" class="counter"><article class="ticket" id="face"></article></div><div class="story"><p class="kicker">YARDS - under KEEPER ERIS</p><h1>The Pawn Ticket</h1><p class="law" aria-label="{{persist + 7 , act + 7 , react + 322 , learn + 150 , loop + 7 }}"><b>PLEDGER</b> persist 7 · act 7 · react 322 · learn 150 · loop 7</p>
+<p><span class="t LIT">LIT</span> The counter keeps a pledge when the ticket is the next one and the sum is above zero. Seven lines are written. Seven blank pledges are refused. The ink sums to 322, and the watch is the heavy line at 150.</p>
+<p><span class="t AMBER">AMBER</span> The room is a Petersburg counter. Crime and Punishment ran in The Russian Messenger in twelve monthly parts in 1866, and as a book in 1867. That dating is assigned here and is not recomputed. The driveway across the shelf keeps a tag by this same rule.</p>
+<p><span class="t WALL">WALL</span> The seven lines are this ticket. The page quotes no book and describes no method.</p>
+<p><span class="t MODEL">MODEL</span> A pledge ticket with a perforated stub. The round mark is the clerk, not a coin.</p><table id="rows" data-n="7"><caption>The Pawn Ticket</caption><thead></thead><tbody></tbody></table><p id="proof">Checking the yard.</p><p>Seal sha256(name|slug|blurb): <code id="seal">5f9453fb9f2104624b4dd6b63d95808e7577ff0d54111aedad1b6f2ea1d07d10</code></p><p><a href="../../index.html">Mayhem</a></p></div></main><script>
 const NAME="The Pawn Ticket",SLUG="pawn-ticket",BLURB="PLEDGER keeps a pledge only when the ticket is the next one and the pledge is positive.",SEAL="5f9453fb9f2104624b4dd6b63d95808e7577ff0d54111aedad1b6f2ea1d07d10",PACK="7|7|322|150|7",ROLE="PLEDGER",STAGE="#3a2820";
 const EXPECT={"pack":"7|7|322|150|7","law":"7,7,322,150,7","lawSum":493,"rows":7,"kept":7,"drops":7};
 function censusPawn() {
@@ -117,10 +82,26 @@ function spriteRun(){
  A.stage=STAGE;
  return A;
 }
-function paintLog(log){const el=document.getElementById('agentlog');if(!el||!log||!log.length)return;const acc=log.filter(e=>e.accepted),rej=log.filter(e=>!e.accepted);const tail=acc.slice(-3).concat(rej.slice(-2));el.innerHTML='<b>'+log[0].agent+'</b> '+acc.length+' kept, '+rej.length+' dropped<br>'+tail.map(e=>(e.accepted?'kept ':'drop ')+e.note).join('<br>')}
-function paintDesk(L){const cv=document.getElementById('desk');if(!cv)return;const g=cv.getContext('2d');g.clearRect(0,0,cv.width,cv.height);const n=L.bars.length;const gap=cv.width/n;const maxH=Math.max.apply(null,L.bars.map(b=>b.h));L.bars.forEach((b,i)=>{const bh=b.h/maxH*(cv.height-16);g.fillStyle='#'+b.color.toString(16).padStart(6,'0');g.fillRect(i*gap+1,cv.height-bh,Math.max(gap-2,1),bh)})}
-function paintTable(L){const head=document.querySelector('#rows thead');const tb=document.querySelector('#rows tbody');if(!tb||!head)return;head.innerHTML='<tr>'+L.headers.map(h=>'<th>'+h+'</th>').join('')+'</tr>';tb.innerHTML=L.rows.map(r=>'<tr>'+r.map(c=>'<td>'+c+'</td>').join('')+'</tr>').join('');if(tb.querySelectorAll('tr').length!==EXPECT.rows)throw Error('table')}
-function paintProof(html){const el=document.getElementById('proof');if(!el)return;el.innerHTML=html}
+function paintStage(L) {
+      if (L.rows.length !== 7 || L.sum !== 322 || L.max !== 150) throw Error("ticket");
+      const lines = L.rows.map(function (r) {
+        return "<li><span>" + esc(r[0]) + "</span><b>" + esc(r[1]) + "</b><em>" + esc(r[2]) + "</em></li>";
+      }).join("");
+      document.getElementById("face").innerHTML =
+        "<div class='stub'><small>stub</small><strong>7</strong><em>322</em><svg class='mark' viewBox='0 0 10 10' aria-hidden='true'><circle cx='5' cy='5' r='3.5' fill='none' stroke='#8c2f2f'/></svg></div>" +
+        "<div class='face'><p class='where'>Petersburg counter</p><p class='kind'>Pledge ticket</p><ol>" + lines + "</ol><p class='serial'>PLEDGER · largest " + L.max + "</p><p class='stamp'>KEPT</p></div>";
+    }
+
+function esc(s){return String(s).replace(/[&<>]/g,function(c){return c==="&"?"&amp;":c==="<"?"&lt;":"&gt;";})}
+function paintTable(L){
+  const head=document.querySelector("#rows thead");
+  const tb=document.querySelector("#rows tbody");
+  if(!tb||!head) throw Error("table");
+  head.innerHTML="<tr>"+L.headers.map(function(h){return "<th>"+esc(h)+"</th>";}).join("")+"</tr>";
+  tb.innerHTML=L.rows.map(function(r){return "<tr>"+r.map(function(c){return "<td>"+esc(c)+"</td>";}).join("")+"</tr>";}).join("");
+  if(tb.querySelectorAll("tr").length!==EXPECT.rows) throw Error("table");
+}
+function paintProof(html){const el=document.getElementById("proof"); if(!el) throw Error("proof"); el.innerHTML=html;}
 function remember(pack){
  const key='mayhem-yard-kept';
  let book={};
@@ -133,88 +114,30 @@ function remember(pack){
  if(!again||again.pack!==pack) throw Error('persistent drift');
  return again.visits;
 }
+
 async function sha(t){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(t));return[...new Uint8Array(b)].map(v=>v.toString(16).padStart(2,'0')).join('')}
+
 function check(){
- const A=spriteRun();
- paintLog(A.log); paintDesk(A); paintTable(A);
- remember(A.pack);
- return A.pack;
+  const A=spriteRun();
+  paintStage(A);
+  paintTable(A);
+  remember(A.pack);
+  if(document.getElementById("v3")) throw Error("old stage");
+  return A.pack;
 }
-(async()=>{
- if(/[?&]thumb=1/.test(location.search)) document.body.classList.add('thumb');
- try{const h=await sha(NAME+'|'+SLUG+'|'+BLURB);if(h!==SEAL)throw Error('seal mismatch');const r=check();paintProof('<span class="t LIT">LIT</span> self-check passed: seal recomputed; '+r);}catch(e){paintProof('<span class="t WALL">FAIL</span> '+e.message);throw e}
- const thumb=/[?&]thumb=1/.test(location.search);
- const reduce=typeof matchMedia==='function'&&matchMedia('(prefers-reduced-motion: reduce)').matches;
- if(!thumb&&!reduce){const spans=[...document.querySelectorAll('.law span')];let i=0;if(spans.length)setInterval(()=>{spans.forEach((s,k)=>s.classList.toggle('on',k===i));i=(i+1)%spans.length;},700);}
+(async function(){
+  if(/[?&]thumb=1/.test(location.search)) document.body.classList.add("thumb");
+  try{
+    const h=await sha(NAME+"|"+SLUG+"|"+BLURB);
+    if(h!==SEAL) throw Error("seal mismatch");
+    const r=check();
+    paintProof('<span class="t LIT">LIT</span> self-check passed: seal recomputed; '+r);
+  }catch(e){
+    paintProof('<span class="t WALL">FAIL</span> '+e.message);
+    throw e;
+  }
 })();
-</script>
-<script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}</script>
-<script type="module">
-import * as THREE from 'three';
-import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
-function buildBars(bars){
- const g=new THREE.Group();
- const gap=bars[0].gap;
- const bw=gap*0.72;
- let low=99;
- bars.forEach((bar,i)=>{
-  const h=bar.h;
-  const m=new THREE.Mesh(new THREE.BoxGeometry(bw,h,bw), new THREE.MeshStandardMaterial({color:bar.color,roughness:0.45,metalness:0.08}));
-  m.position.set((i-(bars.length-1)/2)*gap, h/2, 0);
-  const bottom=m.position.y-h/2;
-  if(bottom<-0.001) throw Error('bar bottom');
-  if(bottom<low) low=bottom;
-  g.add(m);
- });
- if(g.children.length!==bars.length) throw Error('bars');
- if(low<-0.001||low>=0.02) throw Error('feet');
- return g;
-}
-const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-const box=document.getElementById('v3');
-const W=box.clientWidth||800,H=box.clientHeight||560;
-const R=new THREE.WebGLRenderer({antialias:true});
-R.setPixelRatio(Math.min(devicePixelRatio||1,2));
-R.setSize(W,H);
-R.outputColorSpace=THREE.SRGBColorSpace;
-R.toneMapping=THREE.ACESFilmicToneMapping;
-R.toneMappingExposure=1.05;
-box.insertBefore(R.domElement, box.firstChild);
-const S=new THREE.Scene();
-const C=new THREE.PerspectiveCamera(42,W/Math.max(H,1),.1,80);
-const O=new OrbitControls(C,R.domElement);
-O.enableDamping=true;
-S.add(new THREE.AmbientLight(0xffffff,.55));
-S.add(new THREE.HemisphereLight(0xfff6ea,0x223044,.4));
-function floor(color,y){
- const sand=new THREE.Mesh(new THREE.CircleGeometry(14,64), new THREE.MeshStandardMaterial({color,roughness:1}));
- sand.rotation.x=-Math.PI/2; sand.position.y=y; sand.receiveShadow=true; S.add(sand); sand.updateMatrixWorld();
- if(new THREE.Vector3(0,0,1).applyQuaternion(sand.quaternion).y<0.9) throw Error('floor facing');
-}
-function cam(){
- const view=new THREE.Vector3(); C.getWorldDirection(view);
- if(view.z>=-0.5) throw Error('camera facing');
-}
-C.position.set(4.2,3.4,8.2); C.lookAt(0,1.1,0); O.target.set(0,1.1,0);
-floor(0x2a2118,0);
-const sun=new THREE.DirectionalLight(0xfff1d6,2.1); sun.position.set(4,8,6); S.add(sun);
-let HERO=null;
-try{
- const run=spriteRun();
- const again=spriteRun();
- if(again.pack!==run.pack) throw Error('drift');
- S.background=new THREE.Color(run.stage);
- HERO=buildBars(run.bars);
- S.add(HERO);
- cam();
- HERO.userData.play=!reduce && !/[?&]thumb=1/.test(location.search);
-}catch(e){ paintProof('<span class="t WALL">FAIL</span> '+e.message); throw e; }
-function tick(){
- if(HERO&&HERO.userData.play&&!reduce) HERO.rotation.y+=0.003;
- O.update(); R.render(S,C); requestAnimationFrame(tick);
-}
-tick();
-addEventListener('resize',()=>{const w=box.clientWidth,h=box.clientHeight;C.aspect=w/Math.max(h,1);C.updateProjectionMatrix();R.setSize(w,h)});
+
 </script>
 <script id="cubit-register-boot">
 (function(){

@@ -1,72 +1,41 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The Garage Sale - Yards - Mayhem</title>
-<style>
-body{margin:0}
-#art{position:fixed;inset:0;width:100vw;height:100vh;z-index:-1}
-.t{display:inline-block;padding:1px 8px;border-radius:8px;font-weight:700;font-size:13px;color:#111}
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The Garage Sale - Yards - Mayhem</title><style>
+.t{display:inline-block;padding:1px 7px;border-radius:8px;font-weight:700;font-size:13px;color:#111}
 .LIT{background:#3ee07a}.AMBER{background:#ffb020}.WALL{background:#ff5a5a;color:#fff}.MODEL{background:#b48cff}
-#v3{width:100%;overflow:hidden}
-</style>
-<style id="cubit-neon">
-:root{--neon-cyan:#00f0ff;--neon-pink:#ff2bd6;--neon-amber:#ffb300}
-html,body{background:#030308;color:#d7e3f5;font-family:ui-monospace,Menlo,monospace}
-body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
-  background:radial-gradient(600px 400px at 20% 10%, rgba(0,240,255,.06), transparent 70%),
-  radial-gradient(700px 500px at 80% 90%, rgba(255,43,214,.05), transparent 70%)}
-main,#wrap{position:relative;z-index:1;background:rgba(5,8,16,.78);color:#d7e3f5;
-  border:1px solid rgba(0,240,255,.18);border-radius:14px;
-  box-shadow:0 0 34px rgba(0,240,255,.07), inset 0 0 60px rgba(0,0,0,.45)}
-#wrap{max-width:1340px;margin:0 auto;padding:34px 18px 50px;text-align:center}
-h1{font-size:26px;font-weight:400;letter-spacing:.22em;text-transform:uppercase;color:#eaf6ff;
-  text-shadow:0 0 8px var(--neon-cyan), 0 0 28px rgba(0,240,255,.7);animation:cubitflicker 7s infinite}
-#sub{font-size:11px;letter-spacing:.3em;color:#5f7396;text-transform:uppercase;margin-bottom:26px}
-#v3{background:#05070d;border-radius:14px;box-shadow:0 0 0 3px var(--neon-pink), 0 0 28px rgba(255,43,214,.25)}
-a{color:var(--neon-cyan)}
-code{color:#ffb3ec}
-@keyframes cubitflicker{0%,100%{opacity:1}92%{opacity:1}93%{opacity:.6}94%{opacity:1}97%{opacity:.85}98%{opacity:1}}
-@media (prefers-reduced-motion:reduce){h1{animation:none}}
-body.thumb .story,body.thumb #controls,body.thumb .kicker{display:none}
-body.thumb #wrap{background:transparent;box-shadow:none;border:0;padding:0}
-body.thumb #v3{height:100vh;border-radius:0;box-shadow:none}
-</style>
-<style id="place">
-html,body{background:#e7f0c8;color:#1a2a14;font-family:Palatino,'Palatino Linotype',Georgia,serif}
-body::before{background:linear-gradient(180deg, rgba(255,255,255,.28), rgba(0,0,0,.05))}
-#wrap{max-width:1080px;background:rgba(255,252,248,.92);color:#1a2a14;border:0;border-radius:18px;box-shadow:0 18px 40px rgba(20,16,30,.16);text-align:left;padding:22px 26px 36px}
-#wrap h1{font-family:Palatino,Georgia,serif;font-size:54px;font-weight:600;letter-spacing:0;text-transform:none;color:#1a2a14;text-shadow:none;animation:none;margin:0 0 8px}
-#wrap .kicker{letter-spacing:.16em;text-transform:uppercase;font-size:12px;color:#1a2a14;font-family:ui-monospace,monospace}
-#v3{position:relative;height:62vh;min-height:420px;border-radius:18px;background:#243018;box-shadow:0 16px 36px rgba(20,16,30,.18)}
-#wrap #agentlog{position:absolute;z-index:2;left:14px;bottom:14px;margin:0;max-width:340px;padding:8px 10px;border-radius:10px;background:rgba(255,252,248,.94);color:#1a2a14;font-family:ui-monospace,Menlo,monospace;font-size:12px;line-height:1.4;pointer-events:none}
-body.thumb #agentlog{display:none}
-.law{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:14px 0 8px}
-.law b{letter-spacing:.14em;font-family:ui-monospace,monospace;font-size:13px}
-.law span{border:1px solid #1a2a14;padding:3px 8px;font-family:ui-monospace,monospace;font-size:12px}
-.law span.on{background:#c5d98a;color:#1a2a14}
-#desk{width:100%;height:auto;display:block;margin:8px 0 16px;border-radius:10px}
-table{width:100%;border-collapse:collapse;font-family:ui-monospace,Menlo,monospace;font-size:12px;margin:0 0 16px}
-caption{caption-side:top;text-align:left;font-size:12px;padding-bottom:6px}
-th,td{border-bottom:1px solid #1a2a14;padding:3px 6px;text-align:right;overflow-wrap:anywhere}
-th:first-child,td:first-child{text-align:left}
-#wrap p,#wrap li,h2{color:#1a2a14}
-a{color:#1a2a14}
-#proof{overflow-wrap:anywhere}</style></head><body><canvas id="art"></canvas><main id="wrap">
-<p class="kicker">YARDS - under KEEPER ERIS</p>
-<h1>The Garage Sale</h1>
-<p id="sub">Seven tags on a suburban driveway.</p>
-<div id="v3"><p id="agentlog">TAGGER is writing the yard.</p></div>
-<div class="story">
-<div class="law" aria-label="{{persist + 7 , act + 7 , react + 53 , learn + 20 , loop + 7 }}"><b>TAGGER</b><span>PERSIST +7</span><span>ACT +7</span><span>REACT +53</span><span>LEARN +20</span><span>LOOP +7</span></div>
-<canvas id="desk" width="720" height="160"></canvas>
-<table id="rows" data-n="7"><caption>The ledger</caption><thead></thead><tbody></tbody></table>
-<p><span class="t LIT">LIT</span> TAGGER keeps a tag only when the ticket is the next one and the price is positive. 7 tags are kept and 7 zero prices are dropped. The prices sum to 53. The largest is 20. The law sums to 94. A second run must match.</p>
-<p><span class="t AMBER">AMBER</span> The assigned room is a driveway. The pawn ticket is the Petersburg twin. The prices are this page's tags.</p>
-<p><span class="t WALL">WALL</span> The tags are this page's list. It quotes no book and describes no method.</p>
-<p><span class="t MODEL">MODEL</span> Seven stacks. The height is the price. No cartridge is loaded.</p>
-<p id="proof">Checking the yard.</p>
-<p>Seal sha256(name|slug|blurb): <code id="seal">6c83be43836656355e862defb167449d76fdb6830aa86bf07b4c386318439948</code></p>
-<p><a href="../../index.html">Mayhem</a></p>
-</div>
-</main>
-<script>
+body{margin:0}
+#proof,#seal,code,.law{overflow-wrap:anywhere}
+.story{max-width:880px;margin:16px auto;padding:16px 20px 36px}
+.story table{width:100%;border-collapse:collapse;font-size:14px}
+.story td,.story th{padding:4px 6px;text-align:left;border-bottom:1px solid currentColor}
+body.thumb .story{display:none !important}
+body.thumb #stage{min-height:100vh}
+#cubit-register,#cubit-register .cr-formula,#cubit-register .cr-cubit,#cubit-register .cr-cubit b,#cubit-register .cr-cubit i,#cubit-register .cr-word,#cubit-register .cr-status{
+  background:transparent !important;color:inherit !important;border-color:transparent !important;
+  box-shadow:none !important;text-shadow:none !important;font-family:inherit !important}
+svg.mark{position:absolute;width:0;height:0;overflow:hidden}
+
+body{background:#87a15f;color:#1c2414}
+.drive{min-height:520px;padding:28px 18px 48px;background:linear-gradient(#87a15f 0 42%, #d5d1c6 42% 100%)}
+.banner{display:inline-block;background:#f6e7b8;border:4px solid #24180f;padding:8px 16px 10px;transform:rotate(-2deg);font-family:"Segoe Print","Comic Sans MS",cursive}
+.banner span{display:block;font-size:42px;line-height:1}
+.banner small{letter-spacing:.08em}
+.tags{display:flex;flex-wrap:wrap;gap:18px 22px;align-items:flex-end;margin-top:28px}
+.tag{position:relative;background:#fffef8;min-width:108px;padding:16px 12px 12px;font-family:"Segoe Print","Comic Sans MS",cursive;box-shadow:0 10px 0 rgba(0,0,0,.06)}
+.tag::before{content:"";position:absolute;top:-9px;left:22px;width:42px;height:14px;background:rgba(170,214,232,.9);transform:rotate(-4deg)}
+.tag b{display:block;font-size:28px}
+.tag.big{background:#fff3a0;min-width:150px;transform:rotate(2deg)}
+.tag.big b{font-size:42px}
+.tag:nth-child(1){transform:rotate(-7deg)}
+.tag:nth-child(2){transform:rotate(4deg)}
+.tag:nth-child(3){transform:rotate(-2deg)}
+.tag:nth-child(4){transform:rotate(6deg)}
+.tag:nth-child(6){transform:rotate(-5deg)}
+.tag:nth-child(7){transform:rotate(3deg)}
+.story{background:#f6f3e6;color:#1c2414}
+</style></head><body data-doc="driveway"><main id="wrap"><div id="stage" class="drive"><div class="banner" id="banner"></div><div class="tags" id="tags"></div><svg class="mark" viewBox="0 0 64 16" aria-hidden="true"><path d="M2 12 H62" stroke="#2a2118" stroke-width="3"/><path d="M8 12 V4 H20 V12" fill="none" stroke="#2a2118" stroke-width="2"/></svg></div><div class="story"><p class="kicker">YARDS - under KEEPER ERIS</p><h1>The Garage Sale</h1><p class="law" aria-label="{{persist + 7 , act + 7 , react + 53 , learn + 20 , loop + 7 }}"><b>TAGGER</b> persist 7 · act 7 · react 53 · learn 20 · loop 7</p>
+<p><span class="t LIT">LIT</span> TAGGER writes a price when the tag is the next one and the price is a real number above zero. Seven tags stay on the table. Seven zeros come off. The prices sum to 53. The bike is 20, and it gets the big card.</p>
+<p><span class="t AMBER">AMBER</span> Saturday, a driveway. The pawn counter is the Petersburg twin and keeps a pledge by this same rule. Nothing here is an ordinance.</p>
+<p><span class="t WALL">WALL</span> Toaster, chairs, tapes, crock, bike, lamp, skates. That is the whole table.</p>
+<p><span class="t MODEL">MODEL</span> Masking tape and marker. The concrete is the lower half of the page.</p><table id="rows" data-n="7"><caption>The Garage Sale</caption><thead></thead><tbody></tbody></table><p id="proof">Checking the yard.</p><p>Seal sha256(name|slug|blurb): <code id="seal">6c83be43836656355e862defb167449d76fdb6830aa86bf07b4c386318439948</code></p><p><a href="../../index.html">Mayhem</a></p></div></main><script>
 const NAME="The Garage Sale",SLUG="garage-sale",BLURB="TAGGER keeps a tag only when the ticket is the next one and the price is positive.",SEAL="6c83be43836656355e862defb167449d76fdb6830aa86bf07b4c386318439948",PACK="7|7|53|20|7",ROLE="TAGGER",STAGE="#243018";
 const EXPECT={"pack":"7|7|53|20|7","law":"7,7,53,20,7","lawSum":94,"rows":7,"kept":7,"drops":7};
 function censusTag() {
@@ -117,10 +86,24 @@ function spriteRun(){
  A.stage=STAGE;
  return A;
 }
-function paintLog(log){const el=document.getElementById('agentlog');if(!el||!log||!log.length)return;const acc=log.filter(e=>e.accepted),rej=log.filter(e=>!e.accepted);const tail=acc.slice(-3).concat(rej.slice(-2));el.innerHTML='<b>'+log[0].agent+'</b> '+acc.length+' kept, '+rej.length+' dropped<br>'+tail.map(e=>(e.accepted?'kept ':'drop ')+e.note).join('<br>')}
-function paintDesk(L){const cv=document.getElementById('desk');if(!cv)return;const g=cv.getContext('2d');g.clearRect(0,0,cv.width,cv.height);const n=L.bars.length;const gap=cv.width/n;const maxH=Math.max.apply(null,L.bars.map(b=>b.h));L.bars.forEach((b,i)=>{const bh=b.h/maxH*(cv.height-16);g.fillStyle='#'+b.color.toString(16).padStart(6,'0');g.fillRect(i*gap+1,cv.height-bh,Math.max(gap-2,1),bh)})}
-function paintTable(L){const head=document.querySelector('#rows thead');const tb=document.querySelector('#rows tbody');if(!tb||!head)return;head.innerHTML='<tr>'+L.headers.map(h=>'<th>'+h+'</th>').join('')+'</tr>';tb.innerHTML=L.rows.map(r=>'<tr>'+r.map(c=>'<td>'+c+'</td>').join('')+'</tr>').join('');if(tb.querySelectorAll('tr').length!==EXPECT.rows)throw Error('table')}
-function paintProof(html){const el=document.getElementById('proof');if(!el)return;el.innerHTML=html}
+function paintStage(L) {
+      if (L.sum !== 53 || L.max !== 20 || L.rows.length !== 7) throw Error("tags");
+      document.getElementById("banner").innerHTML = "<span>GARAGE SALE</span><small>TAGGER · sum " + L.sum + "</small>";
+      document.getElementById("tags").innerHTML = L.rows.map(function (r) {
+        return "<div class='tag" + (r[2] === L.max ? " big" : "") + "'><span>" + esc(r[1]) + "</span><b>" + esc(r[2]) + "</b></div>";
+      }).join("");
+    }
+
+function esc(s){return String(s).replace(/[&<>]/g,function(c){return c==="&"?"&amp;":c==="<"?"&lt;":"&gt;";})}
+function paintTable(L){
+  const head=document.querySelector("#rows thead");
+  const tb=document.querySelector("#rows tbody");
+  if(!tb||!head) throw Error("table");
+  head.innerHTML="<tr>"+L.headers.map(function(h){return "<th>"+esc(h)+"</th>";}).join("")+"</tr>";
+  tb.innerHTML=L.rows.map(function(r){return "<tr>"+r.map(function(c){return "<td>"+esc(c)+"</td>";}).join("")+"</tr>";}).join("");
+  if(tb.querySelectorAll("tr").length!==EXPECT.rows) throw Error("table");
+}
+function paintProof(html){const el=document.getElementById("proof"); if(!el) throw Error("proof"); el.innerHTML=html;}
 function remember(pack){
  const key='mayhem-yard-kept';
  let book={};
@@ -133,88 +116,30 @@ function remember(pack){
  if(!again||again.pack!==pack) throw Error('persistent drift');
  return again.visits;
 }
+
 async function sha(t){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(t));return[...new Uint8Array(b)].map(v=>v.toString(16).padStart(2,'0')).join('')}
+
 function check(){
- const A=spriteRun();
- paintLog(A.log); paintDesk(A); paintTable(A);
- remember(A.pack);
- return A.pack;
+  const A=spriteRun();
+  paintStage(A);
+  paintTable(A);
+  remember(A.pack);
+  if(document.getElementById("v3")) throw Error("old stage");
+  return A.pack;
 }
-(async()=>{
- if(/[?&]thumb=1/.test(location.search)) document.body.classList.add('thumb');
- try{const h=await sha(NAME+'|'+SLUG+'|'+BLURB);if(h!==SEAL)throw Error('seal mismatch');const r=check();paintProof('<span class="t LIT">LIT</span> self-check passed: seal recomputed; '+r);}catch(e){paintProof('<span class="t WALL">FAIL</span> '+e.message);throw e}
- const thumb=/[?&]thumb=1/.test(location.search);
- const reduce=typeof matchMedia==='function'&&matchMedia('(prefers-reduced-motion: reduce)').matches;
- if(!thumb&&!reduce){const spans=[...document.querySelectorAll('.law span')];let i=0;if(spans.length)setInterval(()=>{spans.forEach((s,k)=>s.classList.toggle('on',k===i));i=(i+1)%spans.length;},700);}
+(async function(){
+  if(/[?&]thumb=1/.test(location.search)) document.body.classList.add("thumb");
+  try{
+    const h=await sha(NAME+"|"+SLUG+"|"+BLURB);
+    if(h!==SEAL) throw Error("seal mismatch");
+    const r=check();
+    paintProof('<span class="t LIT">LIT</span> self-check passed: seal recomputed; '+r);
+  }catch(e){
+    paintProof('<span class="t WALL">FAIL</span> '+e.message);
+    throw e;
+  }
 })();
-</script>
-<script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}</script>
-<script type="module">
-import * as THREE from 'three';
-import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
-function buildBars(bars){
- const g=new THREE.Group();
- const gap=bars[0].gap;
- const bw=gap*0.72;
- let low=99;
- bars.forEach((bar,i)=>{
-  const h=bar.h;
-  const m=new THREE.Mesh(new THREE.BoxGeometry(bw,h,bw), new THREE.MeshStandardMaterial({color:bar.color,roughness:0.45,metalness:0.08}));
-  m.position.set((i-(bars.length-1)/2)*gap, h/2, 0);
-  const bottom=m.position.y-h/2;
-  if(bottom<-0.001) throw Error('bar bottom');
-  if(bottom<low) low=bottom;
-  g.add(m);
- });
- if(g.children.length!==bars.length) throw Error('bars');
- if(low<-0.001||low>=0.02) throw Error('feet');
- return g;
-}
-const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-const box=document.getElementById('v3');
-const W=box.clientWidth||800,H=box.clientHeight||560;
-const R=new THREE.WebGLRenderer({antialias:true});
-R.setPixelRatio(Math.min(devicePixelRatio||1,2));
-R.setSize(W,H);
-R.outputColorSpace=THREE.SRGBColorSpace;
-R.toneMapping=THREE.ACESFilmicToneMapping;
-R.toneMappingExposure=1.05;
-box.insertBefore(R.domElement, box.firstChild);
-const S=new THREE.Scene();
-const C=new THREE.PerspectiveCamera(42,W/Math.max(H,1),.1,80);
-const O=new OrbitControls(C,R.domElement);
-O.enableDamping=true;
-S.add(new THREE.AmbientLight(0xffffff,.55));
-S.add(new THREE.HemisphereLight(0xfff6ea,0x223044,.4));
-function floor(color,y){
- const sand=new THREE.Mesh(new THREE.CircleGeometry(14,64), new THREE.MeshStandardMaterial({color,roughness:1}));
- sand.rotation.x=-Math.PI/2; sand.position.y=y; sand.receiveShadow=true; S.add(sand); sand.updateMatrixWorld();
- if(new THREE.Vector3(0,0,1).applyQuaternion(sand.quaternion).y<0.9) throw Error('floor facing');
-}
-function cam(){
- const view=new THREE.Vector3(); C.getWorldDirection(view);
- if(view.z>=-0.5) throw Error('camera facing');
-}
-C.position.set(4.2,3.4,8.2); C.lookAt(0,1.1,0); O.target.set(0,1.1,0);
-floor(0x2a2118,0);
-const sun=new THREE.DirectionalLight(0xfff1d6,2.1); sun.position.set(4,8,6); S.add(sun);
-let HERO=null;
-try{
- const run=spriteRun();
- const again=spriteRun();
- if(again.pack!==run.pack) throw Error('drift');
- S.background=new THREE.Color(run.stage);
- HERO=buildBars(run.bars);
- S.add(HERO);
- cam();
- HERO.userData.play=!reduce && !/[?&]thumb=1/.test(location.search);
-}catch(e){ paintProof('<span class="t WALL">FAIL</span> '+e.message); throw e; }
-function tick(){
- if(HERO&&HERO.userData.play&&!reduce) HERO.rotation.y+=0.003;
- O.update(); R.render(S,C); requestAnimationFrame(tick);
-}
-tick();
-addEventListener('resize',()=>{const w=box.clientWidth,h=box.clientHeight;C.aspect=w/Math.max(h,1);C.updateProjectionMatrix();R.setSize(w,h)});
+
 </script>
 <script id="cubit-register-boot">
 (function(){
