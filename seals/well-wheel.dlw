@@ -1,0 +1,1 @@
+{"slug":"well-wheel","seal":"471cff3b5594b934ff601048c0b375f0f36d2620efe56731246637d8a94596cf","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"loft-stair","seal":"e50b4a9762d787add4c746de2fd70ce0928479fbe765ca9c2160701ab0952ab8","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"reef-tower","seal":"8aa6379c15afd841332f40faf27dca66f4375778ed4f027bf36f9c98494cbd96","rule":"sha256(name|slug|blurb)","write":"if-missing"}

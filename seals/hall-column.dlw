@@ -1,0 +1,1 @@
+{"slug":"hall-column","seal":"6f8b0ed0c55be69dde18f578fccbe3d6877a64f528f8e196486edb2ab47e8466","rule":"sha256(name|slug|blurb)","write":"if-missing"}

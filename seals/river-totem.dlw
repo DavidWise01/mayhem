@@ -1,0 +1,1 @@
+{"slug":"river-totem","seal":"50af505ce799a6cb57cd72cce9e9969f6ee8e6dd8c659994ed22dba1ad68b4c8","rule":"sha256(name|slug|blurb)","write":"if-missing"}

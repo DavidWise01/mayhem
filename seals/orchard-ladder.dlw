@@ -1,0 +1,1 @@
+{"slug":"orchard-ladder","seal":"9cdfff13556d861c14356cc7ad0df01eaf49295a7a7a091bf732462be1ec743e","rule":"sha256(name|slug|blurb)","write":"if-missing"}

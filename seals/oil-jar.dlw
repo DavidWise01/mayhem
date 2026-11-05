@@ -1,0 +1,1 @@
+{"slug":"oil-jar","seal":"43a419bd019ba3fab12b17316a7d7e703e9b51ba720c64c669e87b583a77221c","rule":"sha256(name|slug|blurb)","write":"if-missing"}

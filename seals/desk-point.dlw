@@ -1,0 +1,1 @@
+{"slug":"desk-point","seal":"01f4d8f3487ce31f702366cfcb790c7a5282f96f88160ec525fbdf1448c9e3ff","rule":"sha256(name|slug|blurb)","write":"if-missing"}

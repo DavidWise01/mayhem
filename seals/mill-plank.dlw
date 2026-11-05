@@ -1,0 +1,1 @@
+{"slug":"mill-plank","seal":"764fe58613feee00127e828cded9468ad2a2a239d316a82aca1f01ce216baed0","rule":"sha256(name|slug|blurb)","write":"if-missing"}

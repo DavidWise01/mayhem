@@ -1,0 +1,1 @@
+{"slug":"cliff-tower","seal":"8a1f491c7a8d0206b2dfd55103a5fd7d49d28cb8309d99c9d0ecb9e1119c16be","rule":"sha256(name|slug|blurb)","write":"if-missing"}

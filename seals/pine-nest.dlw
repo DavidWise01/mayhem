@@ -1,0 +1,1 @@
+{"slug":"pine-nest","seal":"717be16fc1b600f95c6a37b7e2e39569cd28f00fb2ac1605e0660e9aedd590b2","rule":"sha256(name|slug|blurb)","write":"if-missing"}

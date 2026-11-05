@@ -1,0 +1,1 @@
+{"slug":"shore-totem","seal":"0354702c03dbf10db22622b494e06ca31f58def51964e7e209aff7baf290f638","rule":"sha256(name|slug|blurb)","write":"if-missing"}

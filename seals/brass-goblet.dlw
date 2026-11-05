@@ -1,0 +1,1 @@
+{"slug":"brass-goblet","seal":"fc5c9dcb9faea0f4dd1147a4c4e366f5d411cefe2963a36c5d774f6546d582cf","rule":"sha256(name|slug|blurb)","write":"if-missing"}

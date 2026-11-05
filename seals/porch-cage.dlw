@@ -1,0 +1,1 @@
+{"slug":"porch-cage","seal":"e7295bdefafcdcc288c00bea2d05ce2b26f899939e618e7eb8baf58280481451","rule":"sha256(name|slug|blurb)","write":"if-missing"}

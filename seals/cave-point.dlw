@@ -1,0 +1,1 @@
+{"slug":"cave-point","seal":"6fed5f0df3ca87f63ea7b43d894441b962a036b455698746154f92f96ec6c3e9","rule":"sha256(name|slug|blurb)","write":"if-missing"}

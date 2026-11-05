@@ -1,0 +1,1 @@
+{"slug":"court-column","seal":"7334ae6850c02a0d7d24cafa2ab68405f68dbca383db309cc9990be90d123367","rule":"sha256(name|slug|blurb)","write":"if-missing"}

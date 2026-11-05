@@ -1,0 +1,1 @@
+{"slug":"niche-urn","seal":"5ff8bfa206db8b0f584e6d0045f8cb0f55a9b336f77c7424df6a49f2825c09d0","rule":"sha256(name|slug|blurb)","write":"if-missing"}

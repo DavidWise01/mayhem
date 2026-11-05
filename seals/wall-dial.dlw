@@ -1,0 +1,1 @@
+{"slug":"wall-dial","seal":"1142e908e3f5b021cd259c3aaf5b9c9aba0c8dad91afe11cb84f2da860d5df41","rule":"sha256(name|slug|blurb)","write":"if-missing"}

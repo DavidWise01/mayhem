@@ -1,0 +1,1 @@
+{"slug":"desk-glass","seal":"6cb6100a331328476b30d39d0b2880282e1413b64cd2947052ae391bbb9db989","rule":"sha256(name|slug|blurb)","write":"if-missing"}

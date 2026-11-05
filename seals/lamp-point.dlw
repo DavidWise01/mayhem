@@ -1,0 +1,1 @@
+{"slug":"lamp-point","seal":"863a3d28d2f9800a80b3ea4fe08ac6af1c80a9572ac8028b25ddc1ca332c7cff","rule":"sha256(name|slug|blurb)","write":"if-missing"}

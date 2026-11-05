@@ -1,0 +1,1 @@
+{"slug":"lawn-dial","seal":"6b1a8ca5f51c4c4e35867e73db7f24e24f0d9410f432989005b56e68fbdc3ea7","rule":"sha256(name|slug|blurb)","write":"if-missing"}

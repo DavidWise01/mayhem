@@ -1,0 +1,1 @@
+{"slug":"hall-harp","seal":"c7b53695cfa3802662c6edbdc6b310ab94fb08c5138b18095a5d12e6b0478ece","rule":"sha256(name|slug|blurb)","write":"if-missing"}

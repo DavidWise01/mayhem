@@ -1,0 +1,418 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The Court Dial · Hi-Def · Mayhem</title>
+<style>
+body{margin:0}
+#art{position:fixed;inset:0;width:100vw;height:100vh;z-index:-1}
+.t{display:inline-block;padding:1px 8px;border-radius:8px;font-weight:700;font-size:13px;color:#111}
+.LIT{background:#3ee07a}.AMBER{background:#ffb020}.WALL{background:#ff5a5a;color:#fff}.MODEL{background:#b48cff}
+#v3{width:100%;overflow:hidden}
+</style>
+<style id="cubit-neon">
+:root{--neon-cyan:#00f0ff;--neon-pink:#ff2bd6;--neon-amber:#ffb300}
+html,body{background:#030308;color:#d7e3f5;font-family:ui-monospace,Menlo,monospace}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(600px 400px at 20% 10%, rgba(0,240,255,.06), transparent 70%),
+  radial-gradient(700px 500px at 80% 90%, rgba(255,43,214,.05), transparent 70%)}
+main,#wrap{position:relative;z-index:1;background:rgba(5,8,16,.78);color:#d7e3f5;
+  border:1px solid rgba(0,240,255,.18);border-radius:14px;
+  box-shadow:0 0 34px rgba(0,240,255,.07), inset 0 0 60px rgba(0,0,0,.45)}
+#wrap{max-width:1340px;margin:0 auto;padding:34px 18px 50px;text-align:center}
+h1{font-size:26px;font-weight:400;letter-spacing:.22em;text-transform:uppercase;color:#eaf6ff;
+  text-shadow:0 0 8px var(--neon-cyan), 0 0 28px rgba(0,240,255,.7);animation:cubitflicker 7s infinite}
+#sub{font-size:11px;letter-spacing:.3em;color:#5f7396;text-transform:uppercase;margin-bottom:26px}
+#v3{background:#05070d;border-radius:14px;box-shadow:0 0 0 3px var(--neon-pink), 0 0 28px rgba(255,43,214,.25)}
+a{color:var(--neon-cyan)}
+code{color:#ffb3ec}
+@keyframes cubitflicker{0%,100%{opacity:1}92%{opacity:1}93%{opacity:.6}94%{opacity:1}97%{opacity:.85}98%{opacity:1}}
+@media (prefers-reduced-motion:reduce){h1{animation:none}}
+body.thumb .story,body.thumb #controls,body.thumb .kicker{display:none}
+body.thumb #wrap{background:transparent;box-shadow:none;border:0;padding:0}
+body.thumb #v3{height:100vh;border-radius:0;box-shadow:none}
+</style>
+<style id="place">
+html,body{background:#e4ead4;color:#22281f;font-family:Palatino Linotype, Palatino, serif}
+body::before{background:linear-gradient(180deg, rgba(255,255,255,.45), rgba(0,0,0,.04))}
+#wrap{max-width:1080px;background:rgba(255,252,247,.9);color:#22281f;border:0;border-radius:18px;box-shadow:0 18px 40px rgba(20,16,30,.16);text-align:left;padding:22px 22px 36px;overflow-wrap:anywhere}
+#wrap h1{font-family:Palatino Linotype, Palatino, serif;font-size:clamp(32px,8vw,54px);font-weight:600;letter-spacing:0;text-transform:none;color:#22281f;text-shadow:none;animation:none;margin:0 0 8px}
+#wrap .kicker{letter-spacing:.16em;text-transform:uppercase;font-size:12px;color:#22281f;font-family:ui-monospace,monospace}
+#v3{position:relative;height:62vh;min-height:420px;border-radius:18px;background:#e4ead4;box-shadow:0 16px 36px rgba(20,16,30,.18)}
+#wrap #agentlog{position:absolute;z-index:2;left:14px;bottom:14px;margin:0;max-width:min(360px,86%);padding:8px 10px;border-radius:10px;background:rgba(255,252,247,.92);color:#22281f;font-family:ui-monospace,Menlo,monospace;font-size:12px;line-height:1.4;pointer-events:none}
+body.thumb #agentlog{display:none}
+#wrap p{color:#22281f}
+a{color:#22281f}
+code{word-break:break-all}
+</style></head><body><canvas id="art"></canvas><main id="wrap">
+<p class="kicker">HI-DEF · under KEEPER ERIS</p>
+<h1>The Court Dial</h1>
+<p id="sub">8 hours and one gnomon</p>
+<div id="v3"><p id="agentlog">HOUR is keeping the picture.</p></div>
+<div class="story">
+<p><span class="t LIT">LIT</span> The hours are 8 and the gnomon is one.</p>
+<p><span class="t AMBER">AMBER</span> The picture is the claim. The name is a label. No text is quoted.</p>
+<p><span class="t WALL">WALL</span> This dial has 8 hours. A neighbor on this shelf has a different count.</p>
+<p><span class="t MODEL">MODEL</span> A garden dial, 8 hours, and a gnomon.</p>
+<p>HOUR keeps a try only when the gap shrinks. The page throws if the try does not arrive.</p>
+<p id="proof">Checking the picture.</p>
+<p>Seal sha256(name|slug|blurb): <code id="seal">3cbcae60591109b663a53568b7dcc6f9a6a8d186400d9b23ce68f212aa08ef6d</code></p>
+<p><a href="../../index.html">Mayhem</a></p>
+</div>
+</main>
+<script>
+window.__hidefScene='pending';
+const SLUG="court-dial",NAME="The Court Dial",BLURB="The Court Dial is a garden dial, 8 hours, and a gnomon. HOUR keeps a hour only when the gap to 8 shrinks.",SEAL="3cbcae60591109b663a53568b7dcc6f9a6a8d186400d9b23ce68f212aa08ef6d";
+function measure(){
+    const n=8;
+    let x=0,y=0;
+    for(let i=0;i<n;i++){ const a=2*Math.PI*i/n; x+=Math.cos(a); y+=Math.sin(a); }
+    if(Math.hypot(x,y)>1e-6) throw Error('sum');
+    const pack="8|1"; const law=9;
+    if(law!==9 || pack!=="8|1") throw Error("law");
+    return {pack:pack, law:law, text:"8 hours and one gnomon"};
+  }
+function climb(agent, start, target, step0){
+  let x=start, step=step0; const log=[]; const gap=v=>Math.abs(v-target); const g0=gap(x);
+  for(let i=0;i<24;i++){
+    const dir=(i%5===4)?-1:1;
+    const mag=dir<0?step:Math.min(step, gap(x)||step);
+    const prop=x+dir*mag;
+    const ok=gap(prop)<gap(x)-1e-15 && prop>0.05;
+    log.push({agent:agent, round:i+1, value:prop, note:agent+' keeps '+prop.toFixed(0)+' '+"hours"+' gap '+gap(prop).toFixed(3), accepted:ok});
+    if(ok){ x=prop; step=Math.max(0.02, step*0.85); }
+  }
+  return {start:start, value:x, target:target, log:log, g0:g0, g:gap(x)};
+}
+function agentRun(){ return climb("HOUR", 1, 8, 8); }
+function paintProof(html,failed){const el=document.getElementById('proof');if(!el)return;el.innerHTML=html}
+function paintLog(log){const el=document.getElementById('agentlog');if(!el||!log||!log.length)return;const acc=log.filter(e=>e.accepted),rej=log.filter(e=>!e.accepted);const tail=acc.slice(-3).concat(rej.slice(-3));el.innerHTML='<b>'+log[0].agent+'</b> '+acc.length+' kept · '+rej.length+' dropped<br>'+tail.map(e=>(e.accepted?'kept ':'drop ')+e.note).join('<br>')}
+function remember(pack){
+ const key="mayhem-hidef-kept";
+ let book={};
+ try{ book=JSON.parse(localStorage.getItem(key)||"{}")||{}; }catch(e){ book={}; }
+ const row=book[SLUG];
+ if(!row) book[SLUG]={pack:pack,act:"hidef",visits:1};
+ else { if(row.pack!==pack||row.act!=="hidef") throw Error("persistent drift"); row.visits+=1; }
+ localStorage.setItem(key, JSON.stringify(book));
+ const again=JSON.parse(localStorage.getItem(key))[SLUG];
+ if(!again||again.pack!==pack) throw Error("persistent drift");
+ return again.visits;
+}
+async function sha(t){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(t));return[...new Uint8Array(b)].map(v=>v.toString(16).padStart(2,'0')).join('')}
+function waitScene(){
+ return new Promise(function(resolve,reject){
+  const t0=performance.now();
+  (function poll(){
+   const s=window.__hidefScene;
+   if(s==='lit') resolve(s);
+   else if(s&&s!=='pending') reject(Error(s));
+   else if(performance.now()-t0>12000) reject(Error('scene'));
+   else requestAnimationFrame(poll);
+  })();
+ });
+}
+function check(){
+ const m=measure();
+ const A=agentRun(), B=agentRun();
+ paintLog(A.log);
+ const who=A.log[0].agent;
+ if(JSON.stringify(A.log)!==JSON.stringify(B.log)) throw Error('replay');
+ if(!(A.g<A.g0)) throw Error('no improvement');
+ if(!A.log.some(e=>e.agent===who&&e.accepted)) throw Error('agents');
+ if(!A.log.some(e=>e.agent===who&&!e.accepted)) throw Error('no attempt');
+ if(Math.abs(A.value-A.target)>1e-9) throw Error('unfixed');
+ if(m.pack!=="8|1") throw Error('pack');
+ if(m.law!==9) throw Error('law');
+ const visits=remember(m.pack);
+ return m.text+'; '+who+' gap '+A.g0.toFixed(3)+' → '+A.g.toFixed(3)+'; '+A.log.filter(e=>e.accepted).length+' kept; pack '+m.pack+'; law '+m.law+'; visit '+visits;
+}
+if(/[?&]thumb=1/.test(location.search))document.body.classList.add('thumb');
+(async()=>{try{const h=await sha(NAME+'|'+SLUG+'|'+BLURB);if(h!==SEAL)throw Error('seal mismatch');const r=check();await waitScene();paintProof('<span class="t LIT">LIT</span> self-check passed: seal recomputed; '+r,false)}catch(e){paintProof('<span class="t WALL">FAIL</span> '+e.message,true);throw e}})();
+</script>
+
+<script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}</script>
+<script type="module">
+import * as THREE from 'three';
+import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';
+const TARGET=8;
+const KIND="dial";
+const EXTRA={"n":8};
+const PAPER="#e4ead4";
+const ACCENT="#4d5c55";
+const INK="#22281f";
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const box=document.getElementById('v3');
+const W=box.clientWidth||800, Hh=box.clientHeight||560;
+const R=new THREE.WebGLRenderer({antialias:true, powerPreference:'high-performance'});
+R.setPixelRatio(3);
+R.setSize(W,Hh);
+R.outputColorSpace=THREE.SRGBColorSpace;
+R.toneMapping=THREE.ACESFilmicToneMapping;
+R.toneMappingExposure=1.12;
+box.appendChild(R.domElement);
+const S=new THREE.Scene();
+const C=new THREE.PerspectiveCamera(42,W/Math.max(Hh,1),.1,80);
+const O=new OrbitControls(C,R.domElement);
+O.enableDamping=true; O.autoRotate=false;
+const yaw=0;
+C.position.set(Math.sin(yaw)*4.55, 1.54, Math.cos(yaw)*4.55);
+C.lookAt(0,0.22,0); O.target.set(0,0.22,0);
+const pmrem=new THREE.PMREMGenerator(R);
+const room=new RoomEnvironment();
+S.environment=pmrem.fromScene(room, 0.04).texture;
+room.dispose(); pmrem.dispose();
+S.add(new THREE.AmbientLight(0xffffff,.22));
+S.add(new THREE.HemisphereLight(0xfff7ef,0x9aa4b2,.5));
+const sun=new THREE.DirectionalLight(0xfff3e4,2.65); sun.position.set(3.6,8.2,4.8); S.add(sun);
+const fill=new THREE.DirectionalLight(0xc9d7ea,.65); fill.position.set(-5.2,2.8,3.2); S.add(fill);
+const rim=new THREE.DirectionalLight(ACCENT,.85); rim.position.set(-4.4,4.1,-3.6); S.add(rim);
+const UP=new THREE.Vector3(0,1,0);
+const GRAIN=(()=>{
+  const c=document.createElement('canvas'); c.width=c.height=256;
+  const x=c.getContext('2d');
+  x.fillStyle='#d5cdc2'; x.fillRect(0,0,256,256);
+  let s=0xA71E15;
+  const rnd=()=>((s=Math.imul(s,1664525)+1013904223>>>0)>>>0)/4294967296;
+  for(let i=0;i<2800;i++){
+    const v=30+rnd()*50|0;
+    x.fillStyle='rgba('+v+','+(v-8)+','+(v-14)+','+(0.12+rnd()*0.4)+')';
+    x.fillRect(rnd()*256, rnd()*256, 1+rnd()*2.2, 1+rnd()*2.2);
+  }
+  const t=new THREE.CanvasTexture(c);
+  t.wrapS=t.wrapT=THREE.RepeatWrapping; t.repeat.set(5,5);
+  t.anisotropy=R.capabilities.getMaxAnisotropy();
+  return t;
+})();
+function skin(opts){
+  const metal=opts.metalness||0;
+  const rough=opts.roughness==null?0.45:opts.roughness;
+  const glass=!!(opts.transparent && opts.opacity!=null && opts.opacity<0.6 && metal<0.2 && rough<0.25);
+  const liquid=!!(opts.transparent && opts.opacity!=null && opts.opacity>=0.6 && opts.opacity<0.95 && metal<0.2 && rough<0.25);
+  const tooth=!glass && !liquid && rough>=0.72;
+  return new THREE.MeshPhysicalMaterial({
+    color:opts.color,
+    roughness:glass?0.04:(liquid?0.06:rough),
+    metalness:(glass||liquid)?0:metal,
+    envMapIntensity:glass?1.5:(liquid?1.25:(metal>0.45?1.35:0.85)),
+    clearcoat:glass?1:(liquid?0.85:(metal>0.4?0.55:(rough<0.5?0.16:0))),
+    clearcoatRoughness:glass||liquid?0.03:0.35,
+    sheen:(!glass && !liquid && metal<0.3 && rough<=0.82)?0.6:0,
+    sheenRoughness:0.48,
+    sheenColor:opts.color,
+    emissive:opts.emissive||0x000000,
+    emissiveIntensity:opts.emissiveIntensity||0,
+    side:opts.side||THREE.FrontSide,
+    transparent:!!(opts.transparent||glass||liquid),
+    opacity:glass?1:(liquid?0.92:(opts.opacity==null?1:opts.opacity)),
+    transmission:glass?0.86:(liquid?0.55:0),
+    thickness:glass?1.1:(liquid?0.35:0),
+    ior:liquid?1.33:1.5,
+    attenuationColor:opts.color,
+    attenuationDistance:liquid?0.45:glass?0.9:Infinity,
+    bumpMap:tooth?GRAIN:null,
+    bumpScale:tooth?(rough>=0.9?0.02:0.045):0
+  });
+}
+function rod(parent, ax, ay, az, bx, by, bz, rad, color){
+  const A=new THREE.Vector3(ax,ay,az), B=new THREE.Vector3(bx,by,bz);
+  const dir=B.clone().sub(A); const len=dir.length();
+  const mesh=new THREE.Mesh(new THREE.CylinderGeometry(rad,rad,Math.max(len,1e-4),24), skin({color:color, roughness:.3, metalness:.82}));
+  mesh.position.copy(A).add(B).multiplyScalar(.5);
+  mesh.quaternion.setFromUnitVectors(UP, dir.multiplyScalar(1/Math.max(len,1e-8)));
+  parent.add(mesh); return mesh;
+}
+function bead(parent, x, y, z, rad, color){
+  const m=new THREE.Mesh(new THREE.SphereGeometry(rad, 64, 40), skin({color:color, roughness:.35, metalness:.15}));
+  m.position.set(x,y,z); parent.add(m); return m;
+}
+function floor(g,color,y){
+  const sand=new THREE.Mesh(new THREE.CircleGeometry(22,128), skin({color:color, roughness:1}));
+  sand.rotation.x=-Math.PI/2; sand.position.y=y; g.add(sand); sand.updateMatrixWorld();
+  if(new THREE.Vector3(0,0,1).applyQuaternion(sand.quaternion).y<0.9) throw Error('floor facing');
+}
+function cam(){
+  const view=new THREE.Vector3(); C.getWorldDirection(view);
+  if(view.z>=-0.5) throw Error('camera facing');
+}
+const state={};
+function build(g){
+  const holder=new THREE.Group(); g.add(holder);
+  const gold=0xf0c14a;
+  function clear(){
+    while(holder.children.length){
+      const c=holder.children.pop();
+      c.traverse((o)=>{ if(o.geometry) o.geometry.dispose(); });
+    }
+  }
+  return { apply(v){
+    clear();
+    const n=Math.max(1, Math.round(v));
+    const count=Math.min(n, EXTRA.n);
+    if(KIND!=="dial") throw Error('kind');
+    
+      const disc=new THREE.Mesh(new THREE.CircleGeometry(0.95, 80), skin({color:PAPER, roughness:.9}));
+      disc.rotation.x=-Math.PI/2; disc.position.y=-0.2; holder.add(disc);
+      let sx=0, sz=0;
+      for(let i=0;i<count;i++){
+        const a=2*Math.PI*i/EXTRA.n;
+        sx+=Math.cos(a); sz+=Math.sin(a);
+        bead(holder, Math.cos(a)*0.78, -0.16, Math.sin(a)*0.78, 0.055, i%2?ACCENT:INK);
+      }
+      const gnomon=new THREE.Mesh(new THREE.ConeGeometry(0.06, 0.7, 28), skin({color:gold, metalness:.4, roughness:.3}));
+      gnomon.position.y=0.16; holder.add(gnomon);
+      state.hours=count; state.sum=Math.hypot(sx,sz); state.gnomon=1;
+    state.value=v;
+  }, finish(){
+    if(Math.abs(state.value-TARGET)>1e-5) throw Error('value');
+    if(state.hours!==EXTRA.n || state.sum>1e-6 || state.gnomon!==1) throw Error('dial');
+  } };
+}
+function hero(){
+  const g=new THREE.Group(); S.add(g);
+  S.background=new THREE.Color(PAPER);
+  S.fog=new THREE.FogExp2(new THREE.Color(PAPER), 0.012);
+  floor(g, new THREE.Color(PAPER).offsetHSL(0,-0.08,-0.18).getHex(), -1.35);
+  const plinth=new THREE.Mesh(new THREE.CylinderGeometry(1.15,1.25,0.16,80), skin({color:INK, roughness:.9}));
+  plinth.position.y=-1.18; g.add(plinth);
+  const shade=document.createElement('canvas'); shade.width=shade.height=256;
+  const sg=shade.getContext('2d');
+  const grd=sg.createRadialGradient(128,128,16,128,128,128);
+  grd.addColorStop(0,'rgba(18,10,8,.58)'); grd.addColorStop(1,'rgba(18,10,8,0)');
+  sg.fillStyle=grd; sg.fillRect(0,0,256,256);
+  const tex=new THREE.CanvasTexture(shade); tex.anisotropy=R.capabilities.getMaxAnisotropy();
+  const contact=new THREE.Mesh(new THREE.CircleGeometry(1.45,64), new THREE.MeshBasicMaterial({map:tex, transparent:true, depthWrite:false}));
+  contact.rotation.x=-Math.PI/2; contact.position.y=-1.092; g.add(contact);
+  const run=agentRun();
+  const play=!reduce && !/[?&]thumb=1/.test(location.search);
+  const api=build(g);
+  api.apply(play?run.start:run.value);
+  cam();
+  g.userData={run:run, play:play, step:0, done:!play, apply:api.apply, finish:api.finish};
+  return g;
+}
+let HERO=null;
+function settle(){
+  try{ HERO.userData.finish(); window.__hidefScene='lit'; }
+  catch(e){ window.__hidefScene=e.message||'scene'; paintProof('<span class="t WALL">FAIL</span> '+e.message,true); throw e; }
+}
+try{
+  HERO=hero();
+  if(!HERO.userData.play) settle();
+}catch(e){
+  if(window.__hidefScene==='pending') window.__hidefScene=e.message||'scene';
+  paintProof('<span class="t WALL">FAIL</span> '+e.message,true);
+  throw e;
+}
+function tick(){
+  if(HERO&&HERO.userData.play&&!HERO.userData.done){
+    const run=HERO.userData.run, e=run.log[HERO.userData.step++];
+    if(e&&e.accepted) HERO.userData.apply(e.value);
+    if(HERO.userData.step>=run.log.length){
+      HERO.userData.apply(run.value);
+      HERO.userData.done=true;
+      settle();
+    }
+  }
+  if(HERO&&HERO.userData.done&&!reduce) HERO.rotation.y+=0.003;
+  O.update(); R.render(S,C); requestAnimationFrame(tick);
+}
+tick();
+addEventListener('resize',()=>{const w=box.clientWidth,h=box.clientHeight;C.aspect=w/Math.max(h,1);C.updateProjectionMatrix();R.setSize(w,h)});
+</script>
+
+<script id="cubit-register-boot">
+(function(){
+  if(/[?&]thumb=1/.test(location.search)) return;
+  if(document.getElementById('cubit-register')) return;
+  const ORDER=['geometric','constructive','agentic','generative'];
+  const ROLES=['ARTIST','CRITIC','BUILDER','WEAVER','FOLLOWER','KEEPER'];
+  const KEY='mayhem-cubit-register';
+  function slug(){
+    for(const sc of document.scripts){
+      const m=/const SLUG="([^"]+)"/.exec(sc.textContent||'');
+      if(m) return m[1];
+    }
+    return (location.pathname.replace(/^\//,'').replace(/\.html$/i,''))||'index';
+  }
+  function geometric(){
+    let canvases=0, svgs=0, w=0, h=0;
+    document.querySelectorAll('canvas').forEach(el=>{ canvases++; w=Math.max(w, el.clientWidth|0); h=Math.max(h, el.clientHeight|0); });
+    document.querySelectorAll('svg').forEach(el=>{ svgs++; w=Math.max(w, el.clientWidth|0); h=Math.max(h, el.clientHeight|0); });
+    const v3=document.getElementById('v3');
+    if(v3){ w=Math.max(w, v3.clientWidth|0); h=Math.max(h, v3.clientHeight|0); }
+    if(!w){ w=document.documentElement.clientWidth|0; h=document.documentElement.clientHeight|0; }
+    return {name:'geometric', text:canvases+'c+'+svgs+'s·'+w+'x'+h, canvases, svgs, w, h};
+  }
+  function constructive(host){
+    const nodes=host.querySelectorAll('*').length, buttons=host.querySelectorAll('button').length;
+    return {name:'constructive', text:nodes+'n·'+buttons+'b', nodes, buttons};
+  }
+  function agentic(host, c){
+    const text=host.innerText||'';
+    const found=ROLES.filter(r=>text.indexOf(r)!==-1);
+    const agents=found.length?found:['REGISTER'];
+    return {name:'agentic', text:agents.join('+'), agents, accepted:c.nodes>0};
+  }
+  function generative(g,c,a){
+    const s=g.text+'|'+c.text+'|'+a.text;
+    let x=2166136261;
+    for(let i=0;i<s.length;i++) x=Math.imul(x^s.charCodeAt(i), 16777619);
+    const code=(x>>>0).toString(16).padStart(8,'0');
+    return {name:'generative', text:code, code};
+  }
+  function build(host){
+    const register=[];
+    const g=geometric(); register.push(g);
+    const c=constructive(host); register.push(c);
+    const a=agentic(host,c); register.push(a);
+    register.push(generative(g,c,a));
+    return register;
+  }
+  function assertReg(register){
+    if(register.length!==4) throw Error('register length '+register.length);
+    if(register.map(x=>x.name).join(',')!==ORDER.join(',')) throw Error('cubit order');
+    if(register.some(x=>!x.text)) throw Error('empty cubit');
+    if(!register[2].accepted) throw Error('agent refused the register');
+    const again=generative(register[0], register[1], register[2]);
+    if(again.code!==register[3].code) throw Error('register drift');
+    return register.map(x=>x.text).join(' | ');
+  }
+  function remember(id, word){
+    let book={};
+    try{ book=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){ book={}; }
+    book[id]={word};
+    try{ localStorage.setItem(KEY, JSON.stringify(book)); }catch(e){}
+    return Object.keys(book).length;
+  }
+  function mount(register, err, rows){
+    let el=document.getElementById('cubit-register');
+    if(!el){
+      const style=document.createElement('style');
+      style.textContent='#cubit-register{margin:18px 0;padding:14px 12px 12px;border:1px solid rgba(0,240,255,.28);border-radius:14px;background:rgba(5,8,16,.78);box-shadow:0 0 28px rgba(0,240,255,.08);color:#d7e3f5;text-align:left;font-family:ui-monospace,Menlo,monospace}#cubit-register .cr-formula{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#eaf6ff;text-shadow:0 0 8px #00f0ff;margin:0 0 10px}#cubit-register .cr-row{display:flex;gap:8px;flex-wrap:wrap}#cubit-register .cr-cubit{flex:1 1 140px;border:1px solid rgba(0,240,255,.25);border-radius:10px;padding:8px;background:rgba(0,0,0,.35)}#cubit-register .cr-cubit b{display:block;font-weight:400;font-size:10px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:4px}#cubit-register .cr-cubit[data-cubit=geometric] b{color:#00f0ff}#cubit-register .cr-cubit[data-cubit=constructive] b{color:#ffb300}#cubit-register .cr-cubit[data-cubit=agentic] b{color:#ff2bd6}#cubit-register .cr-cubit[data-cubit=generative] b{color:#eaf6ff}#cubit-register .cr-cubit i{font-style:normal;font-size:13px;color:#eaf6ff}#cubit-register .cr-word{margin-top:10px;font-size:12px;color:#ffb3ec;word-break:break-all}#cubit-register .cr-status{margin-top:8px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#8fa3c7}body.thumb #cubit-register{display:none}';
+      document.head.appendChild(style);
+      el=document.createElement('section');
+      el.id='cubit-register';
+      el.setAttribute('aria-label','cubit register');
+      const host=document.getElementById('wrap')||document.querySelector('main')||document.body;
+      const h=host.querySelector('h1');
+      if(h) h.insertAdjacentElement('afterend', el);
+      else host.insertBefore(el, host.firstChild);
+    }
+    const cells=(register||ORDER.map(name=>({name,text:'—'}))).map(x=>'<div class="cr-cubit" data-cubit="'+x.name+'"><b>'+x.name+'</b><i>'+x.text+'</i></div>').join('');
+    const word=err?'':register.map(x=>x.text).join(' | ');
+    el.innerHTML='<div class="cr-formula">{{ geometric, constructive, agentic, generative }}</div><div class="cr-row">'+cells+'</div><div class="cr-word">'+(err?'':'REGISTER '+word)+'</div><div class="cr-status">'+(err?'FAIL '+err.message:'LIT four cubits wrote the register · AMBER this browser holds '+rows+' rows')+'</div>';
+  }
+  function run(){
+    const host=document.getElementById('wrap')||document.querySelector('main')||document.body;
+    try{
+      const register=build(host);
+      const word=assertReg(register);
+      const rows=remember(slug(), word);
+      mount(register, null, rows);
+    }catch(e){
+      mount(null, e, 0);
+      throw e;
+    }
+  }
+  requestAnimationFrame(run);
+})();
+</script>
+</body></html>

@@ -1,0 +1,1 @@
+{"slug":"beach-kite","seal":"fd8de22e3d3f952717c1a11e45a63e11904c7adf72ffa3a73afb6275bb6af990","rule":"sha256(name|slug|blurb)","write":"if-missing"}

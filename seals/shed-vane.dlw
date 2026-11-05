@@ -1,0 +1,1 @@
+{"slug":"shed-vane","seal":"0efcaab0468a7cfd6ad21b19d790a886b7031f10c7f353a714abf7f47eed2180","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"iron-key","seal":"b008554ecf6374bfb767f8d5911b0309e4701acaee8681c2ea3709188151a713","rule":"sha256(name|slug|blurb)","write":"if-missing"}

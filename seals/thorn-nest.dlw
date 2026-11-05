@@ -1,0 +1,1 @@
+{"slug":"thorn-nest","seal":"5f9ec19d451a901e278b0f9cfa8aff852bbe604a6880bf56c7c590d8a6c9c106","rule":"sha256(name|slug|blurb)","write":"if-missing"}

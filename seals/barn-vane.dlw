@@ -1,0 +1,1 @@
+{"slug":"barn-vane","seal":"fe45ffcacf146ee71f716463ca70e352eb126b60f3b71db27adf9b0095be9948","rule":"sha256(name|slug|blurb)","write":"if-missing"}

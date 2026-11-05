@@ -1,0 +1,1 @@
+{"slug":"porch-column","seal":"2aa3ff77f012efa0ea169e06cee43ba43f1529b4de78b5765d4cf6c22eb1bd94","rule":"sha256(name|slug|blurb)","write":"if-missing"}

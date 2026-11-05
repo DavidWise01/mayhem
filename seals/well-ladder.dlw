@@ -1,0 +1,1 @@
+{"slug":"well-ladder","seal":"63529791d5c6e7acbd07f4a8abbc91d4d547787ee1b320e1d2892a22bc4f4937","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"short-glass","seal":"5beabcc7972b02d5ba220d4956ae7a2d5f8d383fc61360dbc7c25eeedd540a94","rule":"sha256(name|slug|blurb)","write":"if-missing"}

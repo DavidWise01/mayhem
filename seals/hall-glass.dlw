@@ -1,0 +1,1 @@
+{"slug":"hall-glass","seal":"d0a30e693042b73662baa8e95e585fa257478fb3618500762988da7d5148e554","rule":"sha256(name|slug|blurb)","write":"if-missing"}

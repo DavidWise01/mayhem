@@ -1,0 +1,1 @@
+{"slug":"gate-key","seal":"a301e7cd23bc8150aaf2aa688fa08ab345dd605d59d32c73678eff1186716237","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"water-goblet","seal":"2e34fb2178c6e5c8ab7b9f742e2207fd461fb1d7974d63cbbd5e396163df4759","rule":"sha256(name|slug|blurb)","write":"if-missing"}

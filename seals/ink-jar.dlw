@@ -1,0 +1,1 @@
+{"slug":"ink-jar","seal":"617d95823c3e495c71e238e365214c95bff4febdde8474b0ee519be811a8966e","rule":"sha256(name|slug|blurb)","write":"if-missing"}

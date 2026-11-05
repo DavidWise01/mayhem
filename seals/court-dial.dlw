@@ -1,0 +1,1 @@
+{"slug":"court-dial","seal":"3cbcae60591109b663a53568b7dcc6f9a6a8d186400d9b23ce68f212aa08ef6d","rule":"sha256(name|slug|blurb)","write":"if-missing"}

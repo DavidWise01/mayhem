@@ -1,0 +1,1 @@
+{"slug":"brass-key","seal":"75ae288eaef1027907fa3721338f2dad3fe725f77a58a2c6d0bbfaddbeb5e9c6","rule":"sha256(name|slug|blurb)","write":"if-missing"}

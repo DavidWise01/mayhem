@@ -1,0 +1,1 @@
+{"slug":"garden-plank","seal":"2afa3ffbcef0be926b2449c09f70f061396b846c145befaa4d36aa8ddec89902","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"night-balloon","seal":"6b8e03289d69b4948311369af086cbb22dc74986363bf34aaeeebcb95f745599","rule":"sha256(name|slug|blurb)","write":"if-missing"}

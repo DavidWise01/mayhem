@@ -1,0 +1,1 @@
+{"slug":"porch-stair","seal":"f73821911858bc84cf446284cb7a62c8ff87eccdf556299387847853dec1f5bb","rule":"sha256(name|slug|blurb)","write":"if-missing"}

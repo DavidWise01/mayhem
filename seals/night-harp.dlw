@@ -1,0 +1,1 @@
+{"slug":"night-harp","seal":"6d2200f5f3b132234ef05353d4e33ee85415882e3c599d62dc10a67e94ea262b","rule":"sha256(name|slug|blurb)","write":"if-missing"}

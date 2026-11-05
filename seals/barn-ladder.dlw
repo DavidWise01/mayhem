@@ -1,0 +1,1 @@
+{"slug":"barn-ladder","seal":"358bc5475fb935330df346714485848693e20c46cb718bf5b378623a6c0ac203","rule":"sha256(name|slug|blurb)","write":"if-missing"}

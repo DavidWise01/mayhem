@@ -1,0 +1,1 @@
+{"slug":"ford-plank","seal":"097a1c90ba658e67bb07dd3cdff0d876557d4e5268f35fdda48657d465cecb38","rule":"sha256(name|slug|blurb)","write":"if-missing"}

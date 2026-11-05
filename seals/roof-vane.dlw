@@ -1,0 +1,1 @@
+{"slug":"roof-vane","seal":"0beca0e3ca9e4daefb3e559c0327b9e4e2fe70d48389ed09f908c327509c7f65","rule":"sha256(name|slug|blurb)","write":"if-missing"}

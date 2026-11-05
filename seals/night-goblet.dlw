@@ -1,0 +1,1 @@
+{"slug":"night-goblet","seal":"a832a911da976138dbb48e6f219cf3476a6ccabf0f3cdde4d7d6d02c98c1f1cd","rule":"sha256(name|slug|blurb)","write":"if-missing"}

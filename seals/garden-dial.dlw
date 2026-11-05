@@ -1,0 +1,1 @@
+{"slug":"garden-dial","seal":"d9339aab187632e4074cdddec7aa9fa08b7852b9b0b0f8f003f8be99c3c154dd","rule":"sha256(name|slug|blurb)","write":"if-missing"}

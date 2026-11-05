@@ -1,0 +1,1 @@
+{"slug":"dawn-balloon","seal":"a0f87ed9b173dbc4112da889f99b26d8c60c63296b405702cd31c954abe4f9db","rule":"sha256(name|slug|blurb)","write":"if-missing"}

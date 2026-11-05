@@ -1,0 +1,1 @@
+{"slug":"water-jar","seal":"f822517c712a987ccb85775df212198df8e7e1444d077d736fa2c20c2f019789","rule":"sha256(name|slug|blurb)","write":"if-missing"}

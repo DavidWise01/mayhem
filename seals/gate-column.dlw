@@ -1,0 +1,1 @@
+{"slug":"gate-column","seal":"f67f09d9295521a7374cf397808b8d84a082794b1f799ea8c3ea92d8835efaff","rule":"sha256(name|slug|blurb)","write":"if-missing"}

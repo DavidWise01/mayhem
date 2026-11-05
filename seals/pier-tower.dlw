@@ -1,0 +1,1 @@
+{"slug":"pier-tower","seal":"248c1e15cb0a79ec01a80520968c27f2700522f5a9676944c008532659401a96","rule":"sha256(name|slug|blurb)","write":"if-missing"}

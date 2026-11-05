@@ -1,0 +1,1 @@
+{"slug":"moss-nest","seal":"02cc46b632963172aa2e54103f6e67eb27a055350a88095963ed9f845459b110","rule":"sha256(name|slug|blurb)","write":"if-missing"}

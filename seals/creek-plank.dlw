@@ -1,0 +1,1 @@
+{"slug":"creek-plank","seal":"08060ea4645abc09ea9bfb91d23582bc27127624c59010f840df3f311a51693a","rule":"sha256(name|slug|blurb)","write":"if-missing"}

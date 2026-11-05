@@ -1,0 +1,1 @@
+{"slug":"yard-kite","seal":"4d2b77cb91680651021507ceb0ae7f945546a8a7e9d783fd38f48156ea1e1f44","rule":"sha256(name|slug|blurb)","write":"if-missing"}

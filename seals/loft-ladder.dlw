@@ -1,0 +1,1 @@
+{"slug":"loft-ladder","seal":"074eb9bd021ed45fa03a174246d0c5bda48624b8d5fedb8caed4835f41cefb1f","rule":"sha256(name|slug|blurb)","write":"if-missing"}

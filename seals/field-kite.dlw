@@ -1,0 +1,1 @@
+{"slug":"field-kite","seal":"d7b4f75b6dc5597bf8b336c856c05aaee60c467cff0568c9f16a0aba8c12a797","rule":"sha256(name|slug|blurb)","write":"if-missing"}

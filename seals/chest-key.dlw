@@ -1,0 +1,1 @@
+{"slug":"chest-key","seal":"47de73866544218a7d2c66bf8c96030fc219fb75dd23b2f628dc79ccaa2bd7e0","rule":"sha256(name|slug|blurb)","write":"if-missing"}

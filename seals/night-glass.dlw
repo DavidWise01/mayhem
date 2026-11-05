@@ -1,0 +1,1 @@
+{"slug":"night-glass","seal":"6dccf9d7527d7fb7d0cfbc5496f15f87d0043e8370e3cfa42078054c66c57d07","rule":"sha256(name|slug|blurb)","write":"if-missing"}

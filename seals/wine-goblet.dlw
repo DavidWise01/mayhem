@@ -1,0 +1,1 @@
+{"slug":"wine-goblet","seal":"f2934bc53fae561dabdd2c1bf32fa0192d15c7b86aafc6f62e367901bfaa7c34","rule":"sha256(name|slug|blurb)","write":"if-missing"}

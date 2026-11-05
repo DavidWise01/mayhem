@@ -1,0 +1,1 @@
+{"slug":"eave-nest","seal":"16c78e3f922eb8e5ba96c3c2b097868e9c0d94071e7933b53bf77f9506f7ae63","rule":"sha256(name|slug|blurb)","write":"if-missing"}

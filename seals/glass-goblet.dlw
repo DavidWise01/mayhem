@@ -1,0 +1,1 @@
+{"slug":"glass-goblet","seal":"4fbc202b7ee97bcf9136ec00c845fd53a352a4cfdaca936793566fc75fb0803b","rule":"sha256(name|slug|blurb)","write":"if-missing"}

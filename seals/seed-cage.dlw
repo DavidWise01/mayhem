@@ -1,0 +1,1 @@
+{"slug":"seed-cage","seal":"5d2a03c19544b341903160e535d56257965a14b33fd2a3a9119d3954c4bde4c2","rule":"sha256(name|slug|blurb)","write":"if-missing"}

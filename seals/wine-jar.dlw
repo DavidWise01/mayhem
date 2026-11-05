@@ -1,0 +1,1 @@
+{"slug":"wine-jar","seal":"bc31cfb69a7a49a9d1cf2ff083c34ba782e8c7cf729cadab93a319691bd614c5","rule":"sha256(name|slug|blurb)","write":"if-missing"}

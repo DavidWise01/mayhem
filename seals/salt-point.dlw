@@ -1,0 +1,1 @@
+{"slug":"salt-point","seal":"d048b71116e0e9ea2486c65d637a44bd6c459aa95ac5cf7a96c205dd2cf2147a","rule":"sha256(name|slug|blurb)","write":"if-missing"}

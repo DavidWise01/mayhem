@@ -1,0 +1,1 @@
+{"slug":"honey-jar","seal":"1b96840ebd4bb667c65a8aaa5d565850e855c44616a47460ab841d4129e55a18","rule":"sha256(name|slug|blurb)","write":"if-missing"}

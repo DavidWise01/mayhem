@@ -1,0 +1,1 @@
+{"slug":"stair-urn","seal":"f84c27d0320d408d4631788e62a1cabddab417909cea062f5fa1b022d5054858","rule":"sha256(name|slug|blurb)","write":"if-missing"}

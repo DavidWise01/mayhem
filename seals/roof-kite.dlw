@@ -1,0 +1,1 @@
+{"slug":"roof-kite","seal":"de3ad4e16b2d18cdf1eb7e4c8ed36ce992c82094d37c5cf907464072de250f43","rule":"sha256(name|slug|blurb)","write":"if-missing"}

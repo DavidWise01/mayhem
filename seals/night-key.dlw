@@ -1,0 +1,1 @@
+{"slug":"night-key","seal":"7b4ca97ac94805050efdc44ed2024d2dbaf941e030476803733ff681a0ae086b","rule":"sha256(name|slug|blurb)","write":"if-missing"}

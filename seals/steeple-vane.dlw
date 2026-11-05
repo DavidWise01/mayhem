@@ -1,0 +1,1 @@
+{"slug":"steeple-vane","seal":"decc4a4adbbf8506e8be532350e8073194961692843d1a3215bda445cf2f312b","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"gold-harp","seal":"3dd36ad4b2427a9d38fb7d09cf55028a2ab4008019dd615b56de054ac7d03e7f","rule":"sha256(name|slug|blurb)","write":"if-missing"}

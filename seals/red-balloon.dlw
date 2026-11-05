@@ -1,0 +1,1 @@
+{"slug":"red-balloon","seal":"0399cd083a1454a5e61481f7aca2f39849a3a8499bd9b3f8ddde7bc8850edcc5","rule":"sha256(name|slug|blurb)","write":"if-missing"}

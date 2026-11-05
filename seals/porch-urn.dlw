@@ -1,0 +1,1 @@
+{"slug":"porch-urn","seal":"224ade002452115bdb258bdf1496857de096e40820373f9e56733d7d4ec98926","rule":"sha256(name|slug|blurb)","write":"if-missing"}
