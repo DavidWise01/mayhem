@@ -860,6 +860,12 @@ Dave: the flat studio was not a graphics upgrade, so add spheres to World Mayhem
 - [The Hemisphere](./spheres/orbs/hemisphere-cap.html): Orbs. seal 36e1211fcbd58b517a8b6bea568b52e71a275e9e61bff081191eff0eea3c53f5
 - [The Matched Disks](./spheres/orbs/matched-disks.html): Orbs. seal 41e4bdfd7c21db673ab7495086e91db6b09dc9304edbf774fba447cb7aae0cb0
 
+## Globes
+Dave asked to go back to building spheres on World Mayhem. Four globes. Each picture is a different part of the ball: an open copper cylinder, a magenta lune, a citrus octant, and a coral parallel. A try is kept only when the gap shrinks. A second run must match. The hemisphere page stays the cap of height R. No NES cartridge is on these pages. Each page still builds the cubit register. Thumbnail views skip the register. Seals were written once. The keeper seal was not rewritten. The 0root hallway was not published. Board key mayhem-globe-kept.
+- [The Hatbox](./spheres/globes/hatbox.html): Globes. seal 1aa11a219bc551dd82001b977f180be97adfb409c3d4847539580e1ac578aa74
+- [The Lune](./spheres/globes/lune.html): Globes. seal 29c7e6852bcd78b47db2f3769650ffeaf55b446e0d7b93effd5b84ddb553b158
+- [The Octant](./spheres/globes/octant.html): Globes. seal 185e7f93a011c77d8fcc846a90ac3ed9445fc315bdbafcaf616030dbf2df5722
+- [The Parallel](./spheres/globes/parallel.html): Globes. seal 625c0d861acd772184c2f05def9b51109851bf3e5ad002775d3015bc3c4cd7f1
 ## Pins
 Dave asked for the sprites of the Sucker Punch company, and for pinned temporal zero and time stretching in 4D. Posted on Mayhem. The cube of 7 kept its next turn for a cited article.
 Five pins. Each sprite is an original lynx, and each page is its own document: a specimen card, a stone lintel, a film gate, a folded sheet, and a ridge. A tick or a cell is kept only when it sits on that page's pin. A second run must match. The film is not quoted. No NES cartridge is on these pages. Each page still builds the cubit register. Thumbnail views skip the register. Seals were written once. The keeper seal was not rewritten. The 0root hallway was not published.
