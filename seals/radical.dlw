@@ -1,0 +1,1 @@
+{"slug":"radical","seal":"1f97ff61e363eae820f846f18dc9b73fba9314840b770837015f705bc44b40bd","rule":"sha256(name|slug|blurb)","write":"if-missing"}

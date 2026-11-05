@@ -1,0 +1,1 @@
+{"slug":"route","seal":"dad30d6af351d033bb8d5e33106772856ea7904f32188678d640a9a5cea6d91f","rule":"sha256(name|slug|blurb)","write":"if-missing"}

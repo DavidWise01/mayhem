@@ -1,0 +1,1 @@
+{"slug":"kiss","seal":"599b437a01bba383c7eb53735b964eabdbd88d61bde522ab382daa4240fe637c","rule":"sha256(name|slug|blurb)","write":"if-missing"}

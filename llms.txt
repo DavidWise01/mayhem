@@ -860,6 +860,28 @@ Dave: the flat studio was not a graphics upgrade, so add spheres to World Mayhem
 - [The Hemisphere](./spheres/orbs/hemisphere-cap.html): Orbs. seal 36e1211fcbd58b517a8b6bea568b52e71a275e9e61bff081191eff0eea3c53f5
 - [The Matched Disks](./spheres/orbs/matched-disks.html): Orbs. seal 41e4bdfd7c21db673ab7495086e91db6b09dc9304edbf774fba447cb7aae0cb0
 
+## Rounds
+Dave asked for at least twenty new spheres. Twenty rounds. Each picture is a different cut of the ball: a bead, a shell, a horizon, a wedge, plates, a sector, a kiss, a radical plane, cube corners, an octahedron, an icosahedron, a stereograph, a gnomon, a route, a rhumb, a Viviani curve, a Clairaut circle, curvature, an isoperimetric champion, and a steradian. A try is kept only when the gap shrinks. A second run must match. The hatbox page stays the open wall. The lune stays the right-angle area. The octant stays the spherical triangle. The parallel stays the forty-five degree latitude. No NES cartridge is on these pages. Each page still builds the cubit register. Thumbnail views skip the register. Seals were written once. The keeper seal was not rewritten. The 0root hallway was not published. Board key mayhem-round-kept.
+- [The Bead](./spheres/rounds/bead.html): Rounds. seal d518d88ca9cfbc27f8eb04d84c4351b272546de7b278a5c5070ad8d334d097d8
+- [The Shell](./spheres/rounds/shell.html): Rounds. seal 047eed860bee444620b65d571e78daafe3202cbeaef238aa1d32a4d38d887507
+- [The Horizon](./spheres/rounds/horizon.html): Rounds. seal 2e289b1dcf76442b32e01c711531b550c1470a63aa854456366773a97e2526a5
+- [The Wedge](./spheres/rounds/wedge.html): Rounds. seal 52efe74651a771d474b2dd82dd82e25d0e1fb4054797942fd2cb04a597cd444d
+- [The Plates](./spheres/rounds/plates.html): Rounds. seal b0201045c1e6389147e2772d6ff3ab70d95321ec2004f2b25161a6bef896a9ec
+- [The Sector](./spheres/rounds/sector.html): Rounds. seal 310e172acdf772d6545dc27262555c9c8ba93fe67a646acf0b7ed31bdf4a7733
+- [The Kiss](./spheres/rounds/kiss.html): Rounds. seal 599b437a01bba383c7eb53735b964eabdbd88d61bde522ab382daa4240fe637c
+- [The Radical](./spheres/rounds/radical.html): Rounds. seal 1f97ff61e363eae820f846f18dc9b73fba9314840b770837015f705bc44b40bd
+- [The Corners](./spheres/rounds/corners.html): Rounds. seal 5d7255efeb176fd9ae7edd250995f55feda810e58746fec5c8a346580a147019
+- [The Octahedron](./spheres/rounds/octahedron.html): Rounds. seal 9d7dab884a91f162288e59643357b8e610e102bcdb6c43b1920a9186c0cdfbbb
+- [The Icosahedron](./spheres/rounds/icosahedron.html): Rounds. seal 3609ca4bf09235bb87d3bce3ac8e90b72d7953753c9447513fc5d5a2240dda6e
+- [The Stereograph](./spheres/rounds/stereograph.html): Rounds. seal fa23111c6c9305c68ec4f9de60baf9879a3598f3817ad4a59009d36198974fc2
+- [The Gnomon](./spheres/rounds/gnomon.html): Rounds. seal 6d0be7ccd92cae545dc0a43494babb9bd8333c6ec239d838cd580c413601a823
+- [The Route](./spheres/rounds/route.html): Rounds. seal dad30d6af351d033bb8d5e33106772856ea7904f32188678d640a9a5cea6d91f
+- [The Rhumb](./spheres/rounds/rhumb.html): Rounds. seal 051c5ef1ec4f821d3e17ef5a22f8a68ee71da25e35aa4d0e1110ae3b57ee9ed5
+- [The Viviani](./spheres/rounds/viviani.html): Rounds. seal 952e09def44b2f9e9feeccfc4f9162711851da4dfe809353bc6a9628589c2d7b
+- [The Clairaut](./spheres/rounds/clairaut.html): Rounds. seal cc6592052a31b21f08d0d6badcf25a07e6203006adbdaa071eac98a20bb3e197
+- [The Curvature](./spheres/rounds/curvature.html): Rounds. seal f79f045014a0444cdeac89f9c50f40562d775bea19300eee3724864811660073
+- [The Champion](./spheres/rounds/champion.html): Rounds. seal 9d1efabd2101626a65b65599715f131c027ac00934875f5963d13c9696fde67b
+- [The Steradian](./spheres/rounds/steradian.html): Rounds. seal e7290cc9b5aa0461804688051d568f37b7b38ff96ad2f41bc3fcf3e1e5a3fe13
 ## Globes
 Dave asked to go back to building spheres on World Mayhem. Four globes. Each picture is a different part of the ball: an open copper cylinder, a magenta lune, a citrus octant, and a coral parallel. A try is kept only when the gap shrinks. A second run must match. The hemisphere page stays the cap of height R. No NES cartridge is on these pages. Each page still builds the cubit register. Thumbnail views skip the register. Seals were written once. The keeper seal was not rewritten. The 0root hallway was not published. Board key mayhem-globe-kept.
 - [The Hatbox](./spheres/globes/hatbox.html): Globes. seal 1aa11a219bc551dd82001b977f180be97adfb409c3d4847539580e1ac578aa74

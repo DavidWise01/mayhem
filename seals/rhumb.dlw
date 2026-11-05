@@ -1,0 +1,1 @@
+{"slug":"rhumb","seal":"051c5ef1ec4f821d3e17ef5a22f8a68ee71da25e35aa4d0e1110ae3b57ee9ed5","rule":"sha256(name|slug|blurb)","write":"if-missing"}

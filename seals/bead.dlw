@@ -1,0 +1,1 @@
+{"slug":"bead","seal":"d518d88ca9cfbc27f8eb04d84c4351b272546de7b278a5c5070ad8d334d097d8","rule":"sha256(name|slug|blurb)","write":"if-missing"}

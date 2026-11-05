@@ -1,0 +1,1 @@
+{"slug":"icosahedron","seal":"3609ca4bf09235bb87d3bce3ac8e90b72d7953753c9447513fc5d5a2240dda6e","rule":"sha256(name|slug|blurb)","write":"if-missing"}

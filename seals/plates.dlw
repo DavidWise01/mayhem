@@ -1,0 +1,1 @@
+{"slug":"plates","seal":"b0201045c1e6389147e2772d6ff3ab70d95321ec2004f2b25161a6bef896a9ec","rule":"sha256(name|slug|blurb)","write":"if-missing"}

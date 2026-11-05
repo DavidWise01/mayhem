@@ -1,0 +1,1 @@
+{"slug":"sector","seal":"310e172acdf772d6545dc27262555c9c8ba93fe67a646acf0b7ed31bdf4a7733","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"curvature","seal":"f79f045014a0444cdeac89f9c50f40562d775bea19300eee3724864811660073","rule":"sha256(name|slug|blurb)","write":"if-missing"}

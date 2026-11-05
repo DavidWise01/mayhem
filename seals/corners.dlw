@@ -1,0 +1,1 @@
+{"slug":"corners","seal":"5d7255efeb176fd9ae7edd250995f55feda810e58746fec5c8a346580a147019","rule":"sha256(name|slug|blurb)","write":"if-missing"}
