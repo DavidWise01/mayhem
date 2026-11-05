@@ -132,6 +132,7 @@ if(/[?&]thumb=1/.test(location.search))document.body.classList.add('thumb');
 <script type="module">
 import * as THREE from 'three';
 import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';
 const TARGET=10;
 const KIND="window";
 const EXTRA={"n":10};
@@ -141,39 +142,90 @@ const INK="#372b1b";
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const box=document.getElementById('v3');
 const W=box.clientWidth||800, Hh=box.clientHeight||560;
-const R=new THREE.WebGLRenderer({antialias:true});
-R.setPixelRatio(Math.min(devicePixelRatio||1,2));
+const R=new THREE.WebGLRenderer({antialias:true, powerPreference:'high-performance'});
+R.setPixelRatio(3);
 R.setSize(W,Hh);
 R.outputColorSpace=THREE.SRGBColorSpace;
 R.toneMapping=THREE.ACESFilmicToneMapping;
-R.toneMappingExposure=1.05;
+R.toneMappingExposure=1.12;
 box.appendChild(R.domElement);
 const S=new THREE.Scene();
 const C=new THREE.PerspectiveCamera(42,W/Math.max(Hh,1),.1,80);
 const O=new OrbitControls(C,R.domElement);
 O.enableDamping=true; O.autoRotate=false;
 const yaw=0;
-C.position.set(Math.sin(yaw)*6.6, 2.09, Math.cos(yaw)*6.6);
-C.lookAt(0,0.35,0); O.target.set(0,0.35,0);
-S.add(new THREE.AmbientLight(0xffffff,.55));
-S.add(new THREE.HemisphereLight(0xfff4e4,0x6a7c90,.45));
-const sun=new THREE.DirectionalLight(0xfff6ea,2.1); sun.position.set(4,8,5); S.add(sun);
-const rim=new THREE.DirectionalLight(ACCENT,.55); rim.position.set(-5,3,-2); S.add(rim);
+C.position.set(Math.sin(yaw)*4.55, 2.09, Math.cos(yaw)*4.55);
+C.lookAt(0,0.22,0); O.target.set(0,0.22,0);
+const pmrem=new THREE.PMREMGenerator(R);
+const room=new RoomEnvironment();
+S.environment=pmrem.fromScene(room, 0.04).texture;
+room.dispose(); pmrem.dispose();
+S.add(new THREE.AmbientLight(0xffffff,.22));
+S.add(new THREE.HemisphereLight(0xfff7ef,0x9aa4b2,.5));
+const sun=new THREE.DirectionalLight(0xfff3e4,2.65); sun.position.set(3.6,8.2,4.8); S.add(sun);
+const fill=new THREE.DirectionalLight(0xc9d7ea,.65); fill.position.set(-5.2,2.8,3.2); S.add(fill);
+const rim=new THREE.DirectionalLight(ACCENT,.85); rim.position.set(-4.4,4.1,-3.6); S.add(rim);
 const UP=new THREE.Vector3(0,1,0);
+const GRAIN=(()=>{
+  const c=document.createElement('canvas'); c.width=c.height=256;
+  const x=c.getContext('2d');
+  x.fillStyle='#d5cdc2'; x.fillRect(0,0,256,256);
+  let s=0xA71E15;
+  const rnd=()=>((s=Math.imul(s,1664525)+1013904223>>>0)>>>0)/4294967296;
+  for(let i=0;i<2800;i++){
+    const v=30+rnd()*50|0;
+    x.fillStyle='rgba('+v+','+(v-8)+','+(v-14)+','+(0.12+rnd()*0.4)+')';
+    x.fillRect(rnd()*256, rnd()*256, 1+rnd()*2.2, 1+rnd()*2.2);
+  }
+  const t=new THREE.CanvasTexture(c);
+  t.wrapS=t.wrapT=THREE.RepeatWrapping; t.repeat.set(5,5);
+  t.anisotropy=R.capabilities.getMaxAnisotropy();
+  return t;
+})();
+function skin(opts){
+  const metal=opts.metalness||0;
+  const rough=opts.roughness==null?0.45:opts.roughness;
+  const glass=!!(opts.transparent && opts.opacity!=null && opts.opacity<0.6 && metal<0.2 && rough<0.25);
+  const liquid=!!(opts.transparent && opts.opacity!=null && opts.opacity>=0.6 && opts.opacity<0.95 && metal<0.2 && rough<0.25);
+  const tooth=!glass && !liquid && rough>=0.72;
+  return new THREE.MeshPhysicalMaterial({
+    color:opts.color,
+    roughness:glass?0.04:(liquid?0.06:rough),
+    metalness:(glass||liquid)?0:metal,
+    envMapIntensity:glass?1.5:(liquid?1.25:(metal>0.45?1.35:0.85)),
+    clearcoat:glass?1:(liquid?0.85:(metal>0.4?0.55:(rough<0.5?0.16:0))),
+    clearcoatRoughness:glass||liquid?0.03:0.35,
+    sheen:(!glass && !liquid && metal<0.3 && rough<=0.82)?0.6:0,
+    sheenRoughness:0.48,
+    sheenColor:opts.color,
+    emissive:opts.emissive||0x000000,
+    emissiveIntensity:opts.emissiveIntensity||0,
+    side:opts.side||THREE.FrontSide,
+    transparent:!!(opts.transparent||glass||liquid),
+    opacity:glass?1:(liquid?0.92:(opts.opacity==null?1:opts.opacity)),
+    transmission:glass?0.86:(liquid?0.55:0),
+    thickness:glass?1.1:(liquid?0.35:0),
+    ior:liquid?1.33:1.5,
+    attenuationColor:opts.color,
+    attenuationDistance:liquid?0.45:glass?0.9:Infinity,
+    bumpMap:tooth?GRAIN:null,
+    bumpScale:tooth?(rough>=0.9?0.02:0.045):0
+  });
+}
 function rod(parent, ax, ay, az, bx, by, bz, rad, color){
   const A=new THREE.Vector3(ax,ay,az), B=new THREE.Vector3(bx,by,bz);
   const dir=B.clone().sub(A); const len=dir.length();
-  const mesh=new THREE.Mesh(new THREE.CylinderGeometry(rad,rad,Math.max(len,1e-4),8), new THREE.MeshStandardMaterial({color:color, roughness:.45, metalness:.2}));
+  const mesh=new THREE.Mesh(new THREE.CylinderGeometry(rad,rad,Math.max(len,1e-4),24), skin({color:color, roughness:.3, metalness:.82}));
   mesh.position.copy(A).add(B).multiplyScalar(.5);
   mesh.quaternion.setFromUnitVectors(UP, dir.multiplyScalar(1/Math.max(len,1e-8)));
   parent.add(mesh); return mesh;
 }
 function bead(parent, x, y, z, rad, color){
-  const m=new THREE.Mesh(new THREE.SphereGeometry(rad, 20, 14), new THREE.MeshStandardMaterial({color:color, roughness:.35, metalness:.15}));
+  const m=new THREE.Mesh(new THREE.SphereGeometry(rad, 64, 40), skin({color:color, roughness:.35, metalness:.15}));
   m.position.set(x,y,z); parent.add(m); return m;
 }
 function floor(g,color,y){
-  const sand=new THREE.Mesh(new THREE.CircleGeometry(22,64), new THREE.MeshStandardMaterial({color:color, roughness:1}));
+  const sand=new THREE.Mesh(new THREE.CircleGeometry(22,128), skin({color:color, roughness:1}));
   sand.rotation.x=-Math.PI/2; sand.position.y=y; g.add(sand); sand.updateMatrixWorld();
   if(new THREE.Vector3(0,0,1).applyQuaternion(sand.quaternion).y<0.9) throw Error('floor facing');
 }
@@ -195,19 +247,19 @@ function build(g){
     clear();
     const n=Math.max(1, Math.round(v));
     if(KIND==='lantern'){
-      const body=new THREE.Mesh(new THREE.SphereGeometry(1, 40, 28), new THREE.MeshStandardMaterial({color:PAPER, roughness:.82, metalness:0}));
+      const body=new THREE.Mesh(new THREE.SphereGeometry(1, 96, 64), skin({color:PAPER, roughness:.82, metalness:0}));
       body.scale.set(1,1.05,1); holder.add(body);
       const ribs=new THREE.Group(); holder.add(ribs);
       const count=Math.min(n, EXTRA.n);
       for(let i=0;i<count;i++){
         const a=2*Math.PI*i/EXTRA.n;
         const rib=new THREE.Group();
-        rod(rib, Math.sin(a)*0.28,-1,Math.cos(a)*0.28, Math.sin(a)*1.05,0,Math.cos(a)*1.05, 0.025, INK);
-        rod(rib, Math.sin(a)*1.05,0,Math.cos(a)*1.05, Math.sin(a)*0.28,1,Math.cos(a)*0.28, 0.025, INK);
+        rod(rib, Math.sin(a)*0.28,-1,Math.cos(a)*0.28, Math.sin(a)*1.05,0,Math.cos(a)*1.05, 0.06, INK);
+        rod(rib, Math.sin(a)*1.05,0,Math.cos(a)*1.05, Math.sin(a)*0.28,1,Math.cos(a)*0.28, 0.06, INK);
         ribs.add(rib);
       }
       const flameH=2/3;
-      const flame=new THREE.Mesh(new THREE.ConeGeometry(0.18, flameH, 16), new THREE.MeshStandardMaterial({color:gold, emissive:gold, emissiveIntensity:.35, roughness:.4}));
+      const flame=new THREE.Mesh(new THREE.ConeGeometry(0.18, flameH, 40), skin({color:gold, emissive:gold, emissiveIntensity:2.4, roughness:.22}));
       flame.position.y=1+flameH/2; holder.add(flame);
       state.ribs=ribs.children.length; state.flame=flameH; state.body=2;
     } else if(KIND==='bloom'){
@@ -217,7 +269,7 @@ function build(g){
       for(let i=0;i<count;i++){
         const a=2*Math.PI*i/EXTRA.n;
         const radial=new THREE.Vector3(Math.sin(a), 0, Math.cos(a));
-        const m=new THREE.Mesh(new THREE.SphereGeometry(0.22, 18, 12), new THREE.MeshStandardMaterial({color:i%2?ACCENT:INK, roughness:.45}));
+        const m=new THREE.Mesh(new THREE.SphereGeometry(0.22, 48, 32), skin({color:i%2?ACCENT:INK, roughness:.45}));
         m.scale.set(0.7, 2, 0.7);
         m.quaternion.setFromUnitVectors(UP, radial);
         m.position.copy(radial).multiplyScalar(0.78);
@@ -228,7 +280,7 @@ function build(g){
     } else if(KIND==='mobile'){
       const count=Math.min(n, EXTRA.n);
       const width=Math.max(0.2, (EXTRA.n-1)*0.48);
-      const bar=new THREE.Mesh(new THREE.CylinderGeometry(0.035,0.035,width+0.3,10), new THREE.MeshStandardMaterial({color:INK, metalness:.65, roughness:.3}));
+      const bar=new THREE.Mesh(new THREE.CylinderGeometry(0.035,0.035,width+0.3,24), skin({color:INK, metalness:.65, roughness:.3}));
       bar.quaternion.setFromUnitVectors(UP, new THREE.Vector3(1,0,0));
       bar.position.y=1.05; holder.add(bar);
       const weights=new THREE.Group(); holder.add(weights);
@@ -245,7 +297,7 @@ function build(g){
       const count=Math.min(n, EXTRA.n);
       let r=0.58, y=-0.85+r*0.62;
       for(let i=0;i<count;i++){
-        const m=new THREE.Mesh(new THREE.SphereGeometry(r, 24, 16), new THREE.MeshStandardMaterial({color:i%2?INK:ACCENT, roughness:.92}));
+        const m=new THREE.Mesh(new THREE.SphereGeometry(r, 56, 36), skin({color:i%2?INK:ACCENT, roughness:.92}));
         m.scale.y=0.62; m.position.y=y; stones.add(m);
         const next=r*0.8;
         y+=r*0.62+next*0.62;
@@ -254,7 +306,7 @@ function build(g){
       state.stones=stones.children.length;
       state.top=0.58*Math.pow(0.8, count-1);
     } else if(KIND==='quilt'){
-      const glass=new THREE.Mesh(new THREE.SphereGeometry(0.92, 36, 24), new THREE.MeshStandardMaterial({color:PAPER, roughness:.7}));
+      const glass=new THREE.Mesh(new THREE.SphereGeometry(0.92, 80, 56), skin({color:PAPER, roughness:.7}));
       holder.add(glass);
       const patches=new THREE.Group(); holder.add(patches);
       const count=Math.min(n, EXTRA.w*EXTRA.h);
@@ -264,7 +316,7 @@ function build(g){
         const theta=Math.PI*(j+0.5)/EXTRA.h;
         const phi=2*Math.PI*(i+0.5)/EXTRA.w;
         const y=Math.cos(theta), rad=Math.sin(theta);
-        const box=new THREE.Mesh(new THREE.BoxGeometry(0.28,0.28,0.08), new THREE.MeshStandardMaterial({color:(i+j)%2===0?INK:ACCENT, roughness:.8}));
+        const box=new THREE.Mesh(new THREE.BoxGeometry(0.28,0.28,0.08), skin({color:(i+j)%2===0?INK:ACCENT, roughness:.8}));
         box.position.set(rad*Math.cos(phi)*1.02, y*1.02, rad*Math.sin(phi)*1.02);
         box.lookAt(0,0,0);
         if((i+j)%2===0) dark++;
@@ -277,7 +329,7 @@ function build(g){
       const step=0.2;
       for(let i=0;i<count;i++){
         const radius=0.95-i*(0.5/EXTRA.n);
-        const m=new THREE.Mesh(new THREE.TorusGeometry(Math.max(0.25,radius), 0.07, 10, 40), new THREE.MeshStandardMaterial({color:i%2?ACCENT:INK, roughness:.85}));
+        const m=new THREE.Mesh(new THREE.TorusGeometry(Math.max(0.25,radius), 0.07, 24, 80), skin({color:i%2?ACCENT:INK, roughness:.85}));
         m.rotation.x=Math.PI/2;
         m.position.y=-((EXTRA.n-1)/2)*step + i*step;
         rings.add(m);
@@ -290,7 +342,7 @@ function build(g){
       for(let i=0;i<count;i++){
         const angle=Math.PI-(i+0.5)*Math.PI/EXTRA.n;
         const radial=new THREE.Vector3(Math.cos(angle), Math.sin(angle), 0);
-        const m=new THREE.Mesh(new THREE.BoxGeometry(0.26, 0.48, 0.32), new THREE.MeshStandardMaterial({color:i%2?INK:ACCENT, roughness:.9}));
+        const m=new THREE.Mesh(new THREE.BoxGeometry(0.26, 0.48, 0.32), skin({color:i%2?INK:ACCENT, roughness:.9}));
         m.quaternion.setFromUnitVectors(UP, radial.clone().normalize());
         m.position.copy(radial).multiplyScalar(1.25);
         m.position.y-=0.15;
@@ -299,7 +351,7 @@ function build(g){
       }
       state.stones=stones.children.length; state.crown=crownI;
     } else if(KIND==='fountain'){
-      const basin=new THREE.Mesh(new THREE.SphereGeometry(0.85, 28, 16), new THREE.MeshStandardMaterial({color:INK, roughness:.35, metalness:.25}));
+      const basin=new THREE.Mesh(new THREE.SphereGeometry(0.85, 72, 48), skin({color:INK, roughness:.35, metalness:.25}));
       basin.scale.set(1.35,0.4,1.35); basin.position.y=-0.15; holder.add(basin);
       const jets=new THREE.Group(); holder.add(jets);
       const count=Math.min(n, EXTRA.n);
@@ -307,13 +359,13 @@ function build(g){
       for(let i=0;i<count;i++){
         const a=2*Math.PI*i/EXTRA.n;
         x+=Math.cos(a); z+=Math.sin(a);
-        const m=new THREE.Mesh(new THREE.ConeGeometry(0.07, 0.8, 10), new THREE.MeshStandardMaterial({color:ACCENT, transparent:true, opacity:.8, roughness:.15}));
+        const m=new THREE.Mesh(new THREE.ConeGeometry(0.07, 0.8, 28), skin({color:ACCENT, transparent:true, opacity:.8, roughness:.15}));
         m.position.set(Math.cos(a)*0.72, 0.45, Math.sin(a)*0.72);
         jets.add(m);
       }
       state.jets=jets.children.length; state.sum=Math.hypot(x,z); state.ratio=0.8/0.4;
     } else if(KIND==='ribbon'){
-      const globe=new THREE.Mesh(new THREE.SphereGeometry(0.92, 36, 24), new THREE.MeshStandardMaterial({color:PAPER, roughness:.55}));
+      const globe=new THREE.Mesh(new THREE.SphereGeometry(0.92, 80, 56), skin({color:PAPER, roughness:.55}));
       holder.add(globe);
       const beads=new THREE.Group(); holder.add(beads);
       const count=Math.min(n, EXTRA.n);
@@ -326,19 +378,19 @@ function build(g){
       }
       state.beads=beads.children.length; state.turns=2;
     } else if(KIND==='crown'){
-      const ring=new THREE.Mesh(new THREE.TorusGeometry(0.78, 0.07, 10, 40), new THREE.MeshStandardMaterial({color:INK, metalness:.7, roughness:.28}));
+      const ring=new THREE.Mesh(new THREE.TorusGeometry(0.78, 0.07, 24, 80), skin({color:INK, metalness:.7, roughness:.28}));
       ring.rotation.x=Math.PI/2; ring.position.y=0.15; holder.add(ring);
       const tines=new THREE.Group(); holder.add(tines);
       const count=Math.min(n, EXTRA.n);
       for(let i=0;i<count;i++){
         const a=2*Math.PI*i/EXTRA.n;
-        const m=new THREE.Mesh(new THREE.ConeGeometry(0.09, 0.55, 10), new THREE.MeshStandardMaterial({color:gold, metalness:.4, roughness:.35}));
+        const m=new THREE.Mesh(new THREE.ConeGeometry(0.09, 0.55, 28), skin({color:gold, metalness:.4, roughness:.35}));
         m.position.set(Math.cos(a)*0.78, 0.48, Math.sin(a)*0.78);
         tines.add(m);
       }
       state.tines=tines.children.length;
     } else if(KIND==='window'){
-      const ring=new THREE.Mesh(new THREE.TorusGeometry(1.05, 0.05, 8, 48), new THREE.MeshStandardMaterial({color:INK, metalness:.5, roughness:.35}));
+      const ring=new THREE.Mesh(new THREE.TorusGeometry(1.05, 0.05, 20, 96), skin({color:INK, metalness:.5, roughness:.35}));
       holder.add(ring);
       bead(holder, 0, 0, 0, 0.16, gold);
       const lights=new THREE.Group(); holder.add(lights);
@@ -349,7 +401,7 @@ function build(g){
       }
       state.lights=lights.children.length; state.center=1;
     } else if(KIND==='sail'){
-      const hull=new THREE.Mesh(new THREE.SphereGeometry(0.7, 28, 16), new THREE.MeshStandardMaterial({color:INK, roughness:.7}));
+      const hull=new THREE.Mesh(new THREE.SphereGeometry(0.7, 64, 40), skin({color:INK, roughness:.7}));
       hull.scale.set(1.5,0.38,0.85); hull.position.y=-0.15; holder.add(hull);
       rod(holder, 0,-0.05,0, 0,1.7,0, 0.03, INK);
       const foot=0.6, rise=1.2, y0=0.35;
@@ -364,7 +416,7 @@ function build(g){
       }
       state.reefs=reefs.children.length; state.ratio=rise/foot;
     } else if(KIND==='prism'){
-      const glass=new THREE.Mesh(new THREE.CylinderGeometry(0.42,0.42,1.3,3), new THREE.MeshStandardMaterial({color:PAPER, transparent:true, opacity:.45, roughness:.08, metalness:.05}));
+      const glass=new THREE.Mesh(new THREE.CylinderGeometry(0.42,0.42,1.3,3,16), skin({color:PAPER, transparent:true, opacity:.45, roughness:.08, metalness:.05}));
       glass.position.y=0.3; holder.add(glass);
       const colors=new THREE.Group(); holder.add(colors);
       const count=Math.min(n, EXTRA.n);
@@ -374,9 +426,9 @@ function build(g){
       }
       state.colors=colors.children.length; state.sides=glass.geometry.parameters.radialSegments;
     } else if(KIND==='bell'){
-      const crown=new THREE.Mesh(new THREE.SphereGeometry(0.42, 24, 16), new THREE.MeshStandardMaterial({color:gold, metalness:.55, roughness:.3}));
+      const crown=new THREE.Mesh(new THREE.SphereGeometry(0.42, 56, 36), skin({color:gold, metalness:.55, roughness:.3}));
       crown.position.y=0.95; holder.add(crown);
-      const skirt=new THREE.Mesh(new THREE.CylinderGeometry(0.85,0.28,1.15,24), new THREE.MeshStandardMaterial({color:INK, metalness:.6, roughness:.32}));
+      const skirt=new THREE.Mesh(new THREE.CylinderGeometry(0.85,0.28,1.15,64), skin({color:INK, metalness:.6, roughness:.32}));
       skirt.position.y=0.15; holder.add(skirt);
       const holes=new THREE.Group(); holder.add(holes);
       const count=Math.min(n, EXTRA.n);
@@ -386,7 +438,7 @@ function build(g){
       }
       state.holes=holes.children.length;
     } else if(KIND==='loom'){
-      const beam=new THREE.Mesh(new THREE.SphereGeometry(0.7, 28, 18), new THREE.MeshStandardMaterial({color:PAPER, roughness:.8}));
+      const beam=new THREE.Mesh(new THREE.SphereGeometry(0.7, 64, 42), skin({color:PAPER, roughness:.8}));
       beam.position.set(0,0.2,-0.4); holder.add(beam);
       const warps=new THREE.Group(); holder.add(warps);
       const count=Math.min(n, EXTRA.n);
@@ -404,16 +456,16 @@ function build(g){
       const count=Math.min(n, EXTRA.n);
       const step=0.5;
       for(let i=0;i<count;i++){
-        const m=new THREE.Mesh(new THREE.TorusGeometry(0.55, 0.045, 8, 36), new THREE.MeshStandardMaterial({color:i%2?ACCENT:INK, roughness:.25, metalness:.1}));
+        const m=new THREE.Mesh(new THREE.TorusGeometry(0.55, 0.045, 20, 72), skin({color:i%2?ACCENT:INK, roughness:.25, metalness:.1}));
         m.rotation.y=Math.PI/2;
         m.position.set(0, 0.15+Math.sin(i*0.7)*0.08, -((EXTRA.n-1)/2)*step + i*step);
         crests.add(m);
       }
       state.crests=crests.children.length; state.step=step;
     } else if(KIND==='orchard'){
-      const trunk=new THREE.Mesh(new THREE.CylinderGeometry(0.1,0.14,1.15,12), new THREE.MeshStandardMaterial({color:INK, roughness:.85}));
+      const trunk=new THREE.Mesh(new THREE.CylinderGeometry(0.1,0.14,1.15,24), skin({color:INK, roughness:.85}));
       trunk.position.y=-0.15; holder.add(trunk);
-      const crown=new THREE.Mesh(new THREE.SphereGeometry(0.78, 28, 18), new THREE.MeshStandardMaterial({color:0x2f6b45, roughness:.7}));
+      const crown=new THREE.Mesh(new THREE.SphereGeometry(0.78, 64, 42), skin({color:0x2f6b45, roughness:.7}));
       crown.position.y=0.85; holder.add(crown);
       const fruit=new THREE.Group(); holder.add(fruit);
       const count=Math.min(n, EXTRA.n);
@@ -440,11 +492,11 @@ function build(g){
       state.tail=tail.children.length;
       state.second=scales.length>1?scales[1]/scales[0]:0;
     } else if(KIND==='drum'){
-      const shell=new THREE.Mesh(new THREE.CylinderGeometry(0.85,0.85,0.48,28), new THREE.MeshStandardMaterial({color:INK, roughness:.62}));
+      const shell=new THREE.Mesh(new THREE.CylinderGeometry(0.85,0.85,0.48,72), skin({color:INK, roughness:.62}));
       shell.position.y=0.15; holder.add(shell);
       const heads=new THREE.Group(); holder.add(heads);
       for(const y of [0.39,-0.09]){
-        const head=new THREE.Mesh(new THREE.CircleGeometry(0.85, 32), new THREE.MeshStandardMaterial({color:PAPER, roughness:.7, side:THREE.DoubleSide}));
+        const head=new THREE.Mesh(new THREE.CircleGeometry(0.85, 72), skin({color:PAPER, roughness:.7, side:THREE.DoubleSide}));
         head.rotation.x=-Math.PI/2; head.position.y=y; heads.add(head);
       }
       const lugs=new THREE.Group(); holder.add(lugs);
@@ -455,12 +507,12 @@ function build(g){
       }
       state.lugs=lugs.children.length; state.heads=heads.children.length;
     } else if(KIND==='ink'){
-      const drop=new THREE.Mesh(new THREE.SphereGeometry(0.28, 22, 14), new THREE.MeshStandardMaterial({color:INK, roughness:.15, metalness:.05}));
+      const drop=new THREE.Mesh(new THREE.SphereGeometry(0.28, 48, 32), skin({color:INK, roughness:.15, metalness:.05}));
       drop.scale.y=0.35; drop.position.y=-0.95; holder.add(drop);
       const rings=new THREE.Group(); holder.add(rings);
       const count=Math.min(n, EXTRA.n);
       for(let k=1;k<=count;k++){
-        const m=new THREE.Mesh(new THREE.TorusGeometry(0.28*k, 0.018, 8, 48), new THREE.MeshStandardMaterial({color:k%2?ACCENT:INK, roughness:.4}));
+        const m=new THREE.Mesh(new THREE.TorusGeometry(0.28*k, 0.018, 16, 96), skin({color:k%2?ACCENT:INK, roughness:.4}));
         m.rotation.x=Math.PI/2; m.position.y=-1.05; rings.add(m);
       }
       state.rings=rings.children.length;
@@ -518,10 +570,18 @@ function build(g){
 function hero(){
   const g=new THREE.Group(); S.add(g);
   S.background=new THREE.Color(PAPER);
-  S.fog=new THREE.FogExp2(new THREE.Color(PAPER), 0.035);
+  S.fog=new THREE.FogExp2(new THREE.Color(PAPER), 0.012);
   floor(g, new THREE.Color(PAPER).offsetHSL(0,-0.08,-0.18).getHex(), -1.35);
-  const plinth=new THREE.Mesh(new THREE.CylinderGeometry(1.15,1.25,0.16,28), new THREE.MeshStandardMaterial({color:INK, roughness:.9}));
+  const plinth=new THREE.Mesh(new THREE.CylinderGeometry(1.15,1.25,0.16,80), skin({color:INK, roughness:.9}));
   plinth.position.y=-1.18; g.add(plinth);
+  const shade=document.createElement('canvas'); shade.width=shade.height=256;
+  const sg=shade.getContext('2d');
+  const grd=sg.createRadialGradient(128,128,16,128,128,128);
+  grd.addColorStop(0,'rgba(18,10,8,.58)'); grd.addColorStop(1,'rgba(18,10,8,0)');
+  sg.fillStyle=grd; sg.fillRect(0,0,256,256);
+  const tex=new THREE.CanvasTexture(shade); tex.anisotropy=R.capabilities.getMaxAnisotropy();
+  const contact=new THREE.Mesh(new THREE.CircleGeometry(1.45,64), new THREE.MeshBasicMaterial({map:tex, transparent:true, depthWrite:false}));
+  contact.rotation.x=-Math.PI/2; contact.position.y=-1.092; g.add(contact);
   const run=agentRun();
   const play=!reduce && !/[?&]thumb=1/.test(location.search);
   const api=build(g);
