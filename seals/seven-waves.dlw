@@ -1,0 +1,1 @@
+{"slug":"seven-waves","seal":"f6c205b693ffc5e249f4bb78de82da00ae5692d37d1945e998d926d54d3b7361","rule":"sha256(name|slug|blurb)","write":"if-missing"}

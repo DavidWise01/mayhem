@@ -1,0 +1,1 @@
+{"slug":"nursery-mobile","seal":"6b295aee90c2f2a5a2cef6554fe658bc5d4f4bf750856f00bda95fb8759cab22","rule":"sha256(name|slug|blurb)","write":"if-missing"}

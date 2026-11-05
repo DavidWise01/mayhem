@@ -1,0 +1,1 @@
+{"slug":"wool-loom","seal":"fc2879ecdb6607681edf239b3384b42858ccf9ce4d6693908de667e66ee9c518","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"seven-fruit","seal":"cf5d4f49b66766cc261bed09070f9129d62eaba2bdfa70d3b6d61c7cc042720d","rule":"sha256(name|slug|blurb)","write":"if-missing"}

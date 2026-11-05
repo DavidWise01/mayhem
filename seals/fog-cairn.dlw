@@ -1,0 +1,1 @@
+{"slug":"fog-cairn","seal":"06c7cf5cdfa4a8474be84ad815bd3965f6537f078807679d96b6ea91c14324ca","rule":"sha256(name|slug|blurb)","write":"if-missing"}

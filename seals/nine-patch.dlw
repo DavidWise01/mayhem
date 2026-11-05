@@ -1,0 +1,1 @@
+{"slug":"nine-patch","seal":"4c8aea23135d3f4444928d88b45bf9b33340432ab034de09cdcb812947a922fc","rule":"sha256(name|slug|blurb)","write":"if-missing"}

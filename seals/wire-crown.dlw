@@ -1,0 +1,1 @@
+{"slug":"wire-crown","seal":"9ec0caf7bc5bc9baa0ea5e3987f3303c3f0059434faf38e6bc1ebbae8d6194b9","rule":"sha256(name|slug|blurb)","write":"if-missing"}

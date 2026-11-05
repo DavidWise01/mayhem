@@ -1,0 +1,1 @@
+{"slug":"moon-arch","seal":"8fd03b1bf6f6c1853bd03f4b46b335729075a60ce9fe4587c7f6414160424cdc","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"six-rose","seal":"a56e60f581a3389371b6bc193fd5fc93efd7e143561ccf9dc7482a604bd5c498","rule":"sha256(name|slug|blurb)","write":"if-missing"}

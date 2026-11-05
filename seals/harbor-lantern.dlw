@@ -1,0 +1,1 @@
+{"slug":"harbor-lantern","seal":"38613c9a05b9bbbaf172a436366982f4ad1153c0fdbfef869a5c4d7aaad0b248","rule":"sha256(name|slug|blurb)","write":"if-missing"}

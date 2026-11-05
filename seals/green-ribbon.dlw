@@ -1,0 +1,1 @@
+{"slug":"green-ribbon","seal":"7650b396deb1cd6a002b5ac46d5e48c97a733fe0489de221289cad6d21de783f","rule":"sha256(name|slug|blurb)","write":"if-missing"}

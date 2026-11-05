@@ -1,0 +1,1 @@
+{"slug":"winter-globe","seal":"da9073e945e8e97b209e95d5459428806a19de2e1f871f8bcdb131d569a527e8","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"eleven-fruit","seal":"82dac9be6ed97c27d2c65c3eda29e83a3f94097e7c0c39cf08f6b42e499d239c","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"floor-drum","seal":"7890b5a265ac140002ddbfe64d1dbfa20667a4d82eaf49e5e1fc1369892ca1f2","rule":"sha256(name|slug|blurb)","write":"if-missing"}

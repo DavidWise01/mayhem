@@ -1,0 +1,1 @@
+{"slug":"sixteen-patch","seal":"d9755f72b3ee224bd3c4f78c9ccaad23e29af1ba5ee634ab7e6426abebb354b0","rule":"sha256(name|slug|blurb)","write":"if-missing"}

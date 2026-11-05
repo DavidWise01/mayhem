@@ -1,0 +1,1 @@
+{"slug":"first-drop","seal":"c75e45f428859a2b45430080622d96ebc6a27de782731a93044e1ae4d7489703","rule":"sha256(name|slug|blurb)","write":"if-missing"}

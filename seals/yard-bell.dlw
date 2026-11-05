@@ -1,0 +1,1 @@
+{"slug":"yard-bell","seal":"d09f87275679bb4c1ad33940da52cfce0ea6948a838fdbf44320018f8713434c","rule":"sha256(name|slug|blurb)","write":"if-missing"}

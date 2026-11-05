@@ -1,0 +1,1 @@
+{"slug":"court-fountain","seal":"05ee9a72a88c16093a792f36a1956e911dd3795e323e09fa946507bd977d845b","rule":"sha256(name|slug|blurb)","write":"if-missing"}

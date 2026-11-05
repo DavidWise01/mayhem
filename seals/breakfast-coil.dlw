@@ -1,0 +1,1 @@
+{"slug":"breakfast-coil","seal":"d9be68138e0de7f70a4e5cb905e7313574ef5c130a437546cd831d4401cd098f","rule":"sha256(name|slug|blurb)","write":"if-missing"}

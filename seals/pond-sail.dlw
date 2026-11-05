@@ -1,0 +1,1 @@
+{"slug":"pond-sail","seal":"990792910d25ef1b940e5d8b74c2908454e268b78c64a63d93d0ca37a28c062f","rule":"sha256(name|slug|blurb)","write":"if-missing"}

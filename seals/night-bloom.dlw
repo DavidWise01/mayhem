@@ -1,0 +1,1 @@
+{"slug":"night-bloom","seal":"e2d5a74d0d9d8e97772729666be1034bdb07ef51767c11be6458345718abd20a","rule":"sha256(name|slug|blurb)","write":"if-missing"}

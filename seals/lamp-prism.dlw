@@ -1,0 +1,1 @@
+{"slug":"lamp-prism","seal":"edddf7e5f45517830a70f9ef912f01b01c791521a47c68ac4f2cf6ead788165f","rule":"sha256(name|slug|blurb)","write":"if-missing"}

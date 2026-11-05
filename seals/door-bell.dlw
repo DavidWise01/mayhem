@@ -1,0 +1,1 @@
+{"slug":"door-bell","seal":"24fa6a5cd12109bb9f34c20be638e993007aeaf53bf3dc1b24bab84be6276103","rule":"sha256(name|slug|blurb)","write":"if-missing"}

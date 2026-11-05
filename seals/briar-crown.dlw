@@ -1,0 +1,1 @@
+{"slug":"briar-crown","seal":"1269effc048eeef4a4504bafee5a2a6762fb4f5e2983768b445d67aadd687ed4","rule":"sha256(name|slug|blurb)","write":"if-missing"}

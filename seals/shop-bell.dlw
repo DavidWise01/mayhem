@@ -1,0 +1,1 @@
+{"slug":"shop-bell","seal":"5d01538a0ce43365c5b5c53e28ef372f14c1937c3b30eeb6b9335d28169e530b","rule":"sha256(name|slug|blurb)","write":"if-missing"}

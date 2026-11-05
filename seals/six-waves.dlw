@@ -1,0 +1,1 @@
+{"slug":"six-waves","seal":"02e57b6d6975fb553786f97efe8cbbe995de0c0b0c9a59ffe82f57836ab02d4d","rule":"sha256(name|slug|blurb)","write":"if-missing"}

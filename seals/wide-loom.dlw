@@ -1,0 +1,1 @@
+{"slug":"wide-loom","seal":"a13d8eb54e7b1dbf325b53a595c54a526f7b37d11c3dd4348809ccf02c14b90f","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"orchard-light","seal":"244e594ec5c05b7a516580c90eb59038f575377e2ba719305286b0c204a0dfd2","rule":"sha256(name|slug|blurb)","write":"if-missing"}

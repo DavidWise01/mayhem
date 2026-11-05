@@ -1,0 +1,1 @@
+{"slug":"black-ribbon","seal":"7465d44c38cac5f1cdce438f7d3f1197ce6c34fe202cc417741822bc3f76d0df","rule":"sha256(name|slug|blurb)","write":"if-missing"}

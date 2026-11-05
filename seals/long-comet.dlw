@@ -1,0 +1,1 @@
+{"slug":"long-comet","seal":"de62682c3074ed31cde0b8c4e611b05f446342b3206bbaf934b11d0310b0ac2b","rule":"sha256(name|slug|blurb)","write":"if-missing"}

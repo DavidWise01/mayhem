@@ -1,0 +1,1 @@
+{"slug":"ash-coil","seal":"f0c2a0cf7eb90ce8e0f2fb38b47df701faa10b67a5343f3df8fd108889a3006d","rule":"sha256(name|slug|blurb)","write":"if-missing"}

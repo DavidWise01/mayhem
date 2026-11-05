@@ -1,0 +1,1 @@
+{"slug":"short-comet","seal":"8697dced7d5a9b8544b823beb401ab318cc16fafb63719705c223ad41963fffc","rule":"sha256(name|slug|blurb)","write":"if-missing"}

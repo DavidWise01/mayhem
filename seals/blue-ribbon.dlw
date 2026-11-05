@@ -1,0 +1,1 @@
+{"slug":"blue-ribbon","seal":"c2a975cea3f8f47d4f574c36b659d4fa905dd025bb4cdae51ba5fe5758ffc209","rule":"sha256(name|slug|blurb)","write":"if-missing"}

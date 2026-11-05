@@ -1,0 +1,1 @@
+{"slug":"studio-mobile","seal":"88b21e1d8f09ba7aef0589d1800b940967a4ba22aab3be643cfdf9e6d06b7b0a","rule":"sha256(name|slug|blurb)","write":"if-missing"}

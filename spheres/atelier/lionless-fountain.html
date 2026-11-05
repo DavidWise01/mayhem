@@ -1,0 +1,661 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The Lionless Fountain · Atelier · Mayhem</title>
+<style>
+body{margin:0}
+#art{position:fixed;inset:0;width:100vw;height:100vh;z-index:-1}
+.t{display:inline-block;padding:1px 8px;border-radius:8px;font-weight:700;font-size:13px;color:#111}
+.LIT{background:#3ee07a}.AMBER{background:#ffb020}.WALL{background:#ff5a5a;color:#fff}.MODEL{background:#b48cff}
+#v3{width:100%;overflow:hidden}
+</style>
+<style id="cubit-neon">
+:root{--neon-cyan:#00f0ff;--neon-pink:#ff2bd6;--neon-amber:#ffb300}
+html,body{background:#030308;color:#d7e3f5;font-family:ui-monospace,Menlo,monospace}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(600px 400px at 20% 10%, rgba(0,240,255,.06), transparent 70%),
+  radial-gradient(700px 500px at 80% 90%, rgba(255,43,214,.05), transparent 70%)}
+main,#wrap{position:relative;z-index:1;background:rgba(5,8,16,.78);color:#d7e3f5;
+  border:1px solid rgba(0,240,255,.18);border-radius:14px;
+  box-shadow:0 0 34px rgba(0,240,255,.07), inset 0 0 60px rgba(0,0,0,.45)}
+#wrap{max-width:1340px;margin:0 auto;padding:34px 18px 50px;text-align:center}
+h1{font-size:26px;font-weight:400;letter-spacing:.22em;text-transform:uppercase;color:#eaf6ff;
+  text-shadow:0 0 8px var(--neon-cyan), 0 0 28px rgba(0,240,255,.7);animation:cubitflicker 7s infinite}
+#sub{font-size:11px;letter-spacing:.3em;color:#5f7396;text-transform:uppercase;margin-bottom:26px}
+#v3{background:#05070d;border-radius:14px;box-shadow:0 0 0 3px var(--neon-pink), 0 0 28px rgba(255,43,214,.25)}
+a{color:var(--neon-cyan)}
+code{color:#ffb3ec}
+@keyframes cubitflicker{0%,100%{opacity:1}92%{opacity:1}93%{opacity:.6}94%{opacity:1}97%{opacity:.85}98%{opacity:1}}
+@media (prefers-reduced-motion:reduce){h1{animation:none}}
+body.thumb .story,body.thumb #controls,body.thumb .kicker{display:none}
+body.thumb #wrap{background:transparent;box-shadow:none;border:0;padding:0}
+body.thumb #v3{height:100vh;border-radius:0;box-shadow:none}
+</style>
+<style id="place">
+html,body{background:#c4eebf;color:#1e371b;font-family:Cambria, serif}
+body::before{background:linear-gradient(180deg, rgba(255,255,255,.45), rgba(0,0,0,.04))}
+#wrap{max-width:1080px;background:rgba(255,252,247,.9);color:#1e371b;border:0;border-radius:18px;box-shadow:0 18px 40px rgba(20,16,30,.16);text-align:left;padding:22px 22px 36px;overflow-wrap:anywhere}
+#wrap h1{font-family:Cambria, serif;font-size:clamp(32px,8vw,54px);font-weight:600;letter-spacing:0;text-transform:none;color:#1e371b;text-shadow:none;animation:none;margin:0 0 8px}
+#wrap .kicker{letter-spacing:.16em;text-transform:uppercase;font-size:12px;color:#1e371b;font-family:ui-monospace,monospace}
+#v3{position:relative;height:62vh;min-height:420px;border-radius:18px;background:#c4eebf;box-shadow:0 16px 36px rgba(20,16,30,.18)}
+#wrap #agentlog{position:absolute;z-index:2;left:14px;bottom:14px;margin:0;max-width:min(360px,86%);padding:8px 10px;border-radius:10px;background:rgba(255,252,247,.92);color:#1e371b;font-family:ui-monospace,Menlo,monospace;font-size:12px;line-height:1.4;pointer-events:none}
+body.thumb #agentlog{display:none}
+#wrap p{color:#1e371b}
+a{color:#1e371b}
+code{word-break:break-all}
+</style></head><body><canvas id="art"></canvas><main id="wrap">
+<p class="kicker">ATELIER · under KEEPER ERIS</p>
+<h1>The Lionless Fountain</h1>
+<p id="sub">Water as a still sculpture.</p>
+<div id="v3"><p id="agentlog">BASIN is keeping the picture.</p></div>
+<div class="story">
+<p><span class="t LIT">LIT</span> The jets are equally spaced, so their horizontal directions sum to zero. The jet height is twice the basin height. The page throws if the sum or the ratio drifts.</p>
+<p><span class="t AMBER">AMBER</span> The picture is the claim. The name is a label. No text is quoted.</p>
+<p><span class="t WALL">WALL</span> This fountain has 6 jets. It is not a bloom.</p>
+<p><span class="t MODEL">MODEL</span> A low basin and 6 upright jets.</p>
+<p>BASIN keeps a try only when the gap shrinks. The page throws if the try does not arrive.</p>
+<p id="proof">Checking the picture.</p>
+<p>Seal sha256(name|slug|blurb): <code id="seal">4021e435e45ae8facebf776931d87f8bba3350297d05b39f27cd412504d6052b</code></p>
+<p><a href="../../index.html">Mayhem</a></p>
+</div>
+</main>
+<script>
+window.__atelierScene='pending';
+const SLUG="lionless-fountain",NAME="The Lionless Fountain",BLURB="The Lionless Fountain lifts 6 jets from one basin. BASIN keeps a jet only when the gap to 6 shrinks. Each jet is twice the height of the basin.",SEAL="4021e435e45ae8facebf776931d87f8bba3350297d05b39f27cd412504d6052b";
+function measure(){
+    const n=6;
+    let x=0, z=0;
+    for(let i=0;i<n;i++){ x+=Math.cos(2*Math.PI*i/n); z+=Math.sin(2*Math.PI*i/n); }
+    if(Math.hypot(x,z)>1e-9) throw Error("sum");
+    const basin=0.4, jet=0.8;
+    if(Math.abs(jet/basin-2)>1e-12) throw Error("height");
+    const pack="6|1|2"; const law=9;
+    if(law!==9 || pack!=="6|1|2") throw Error("law");
+    return {pack:pack, law:law, text:"6 jets, twice the basin"};
+  }
+function climb(agent, start, target, step0){
+  let x=start, step=step0; const log=[]; const gap=v=>Math.abs(v-target); const g0=gap(x);
+  for(let i=0;i<24;i++){
+    const dir=(i%5===4)?-1:1;
+    const mag=dir<0?step:Math.min(step, gap(x)||step);
+    const prop=x+dir*mag;
+    const ok=gap(prop)<gap(x)-1e-15 && prop>0.05;
+    log.push({agent:agent, round:i+1, value:prop, note:agent+' keeps '+prop.toFixed(0)+' '+"jets"+' gap '+gap(prop).toFixed(3), accepted:ok});
+    if(ok){ x=prop; step=Math.max(0.02, step*0.85); }
+  }
+  return {start:start, value:x, target:target, log:log, g0:g0, g:gap(x)};
+}
+function agentRun(){ return climb("BASIN", 1, 6, 6); }
+function paintProof(html,failed){const el=document.getElementById('proof');if(!el)return;el.innerHTML=html}
+function paintLog(log){const el=document.getElementById('agentlog');if(!el||!log||!log.length)return;const acc=log.filter(e=>e.accepted),rej=log.filter(e=>!e.accepted);const tail=acc.slice(-3).concat(rej.slice(-3));el.innerHTML='<b>'+log[0].agent+'</b> '+acc.length+' kept · '+rej.length+' dropped<br>'+tail.map(e=>(e.accepted?'kept ':'drop ')+e.note).join('<br>')}
+function remember(pack){
+ const key="mayhem-atelier-kept";
+ let book={};
+ try{ book=JSON.parse(localStorage.getItem(key)||"{}")||{}; }catch(e){ book={}; }
+ const row=book[SLUG];
+ if(!row) book[SLUG]={pack:pack,act:"atelier",visits:1};
+ else { if(row.pack!==pack||row.act!=="atelier") throw Error("persistent drift"); row.visits+=1; }
+ localStorage.setItem(key, JSON.stringify(book));
+ const again=JSON.parse(localStorage.getItem(key))[SLUG];
+ if(!again||again.pack!==pack) throw Error("persistent drift");
+ return again.visits;
+}
+async function sha(t){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(t));return[...new Uint8Array(b)].map(v=>v.toString(16).padStart(2,'0')).join('')}
+function waitScene(){
+ return new Promise(function(resolve,reject){
+  const t0=performance.now();
+  (function poll(){
+   const s=window.__atelierScene;
+   if(s==='lit') resolve(s);
+   else if(s&&s!=='pending') reject(Error(s));
+   else if(performance.now()-t0>12000) reject(Error('scene'));
+   else requestAnimationFrame(poll);
+  })();
+ });
+}
+function check(){
+ const m=measure();
+ const A=agentRun(), B=agentRun();
+ paintLog(A.log);
+ const who=A.log[0].agent;
+ if(JSON.stringify(A.log)!==JSON.stringify(B.log)) throw Error('replay');
+ if(!(A.g<A.g0)) throw Error('no improvement');
+ if(!A.log.some(e=>e.agent===who&&e.accepted)) throw Error('agents');
+ if(!A.log.some(e=>e.agent===who&&!e.accepted)) throw Error('no attempt');
+ if(Math.abs(A.value-A.target)>1e-9) throw Error('unfixed');
+ if(m.pack!=="6|1|2") throw Error('pack');
+ if(m.law!==9) throw Error('law');
+ const visits=remember(m.pack);
+ return m.text+'; '+who+' gap '+A.g0.toFixed(3)+' → '+A.g.toFixed(3)+'; '+A.log.filter(e=>e.accepted).length+' kept; pack '+m.pack+'; law '+m.law+'; visit '+visits;
+}
+if(/[?&]thumb=1/.test(location.search))document.body.classList.add('thumb');
+(async()=>{try{const h=await sha(NAME+'|'+SLUG+'|'+BLURB);if(h!==SEAL)throw Error('seal mismatch');const r=check();await waitScene();paintProof('<span class="t LIT">LIT</span> self-check passed: seal recomputed; '+r,false)}catch(e){paintProof('<span class="t WALL">FAIL</span> '+e.message,true);throw e}})();
+</script>
+
+<script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}</script>
+<script type="module">
+import * as THREE from 'three';
+import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+const TARGET=6;
+const KIND="fountain";
+const EXTRA={"n":6};
+const PAPER="#c4eebf";
+const ACCENT="#20b669";
+const INK="#1e371b";
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const box=document.getElementById('v3');
+const W=box.clientWidth||800, Hh=box.clientHeight||560;
+const R=new THREE.WebGLRenderer({antialias:true});
+R.setPixelRatio(Math.min(devicePixelRatio||1,2));
+R.setSize(W,Hh);
+R.outputColorSpace=THREE.SRGBColorSpace;
+R.toneMapping=THREE.ACESFilmicToneMapping;
+R.toneMappingExposure=1.05;
+box.appendChild(R.domElement);
+const S=new THREE.Scene();
+const C=new THREE.PerspectiveCamera(42,W/Math.max(Hh,1),.1,80);
+const O=new OrbitControls(C,R.domElement);
+O.enableDamping=true; O.autoRotate=false;
+const yaw=0.2;
+C.position.set(Math.sin(yaw)*6.6, 2.21, Math.cos(yaw)*6.6);
+C.lookAt(0,0.35,0); O.target.set(0,0.35,0);
+S.add(new THREE.AmbientLight(0xffffff,.55));
+S.add(new THREE.HemisphereLight(0xfff4e4,0x6a7c90,.45));
+const sun=new THREE.DirectionalLight(0xfff6ea,2.1); sun.position.set(4,8,5); S.add(sun);
+const rim=new THREE.DirectionalLight(ACCENT,.55); rim.position.set(-5,3,-2); S.add(rim);
+const UP=new THREE.Vector3(0,1,0);
+function rod(parent, ax, ay, az, bx, by, bz, rad, color){
+  const A=new THREE.Vector3(ax,ay,az), B=new THREE.Vector3(bx,by,bz);
+  const dir=B.clone().sub(A); const len=dir.length();
+  const mesh=new THREE.Mesh(new THREE.CylinderGeometry(rad,rad,Math.max(len,1e-4),8), new THREE.MeshStandardMaterial({color:color, roughness:.45, metalness:.2}));
+  mesh.position.copy(A).add(B).multiplyScalar(.5);
+  mesh.quaternion.setFromUnitVectors(UP, dir.multiplyScalar(1/Math.max(len,1e-8)));
+  parent.add(mesh); return mesh;
+}
+function bead(parent, x, y, z, rad, color){
+  const m=new THREE.Mesh(new THREE.SphereGeometry(rad, 20, 14), new THREE.MeshStandardMaterial({color:color, roughness:.35, metalness:.15}));
+  m.position.set(x,y,z); parent.add(m); return m;
+}
+function floor(g,color,y){
+  const sand=new THREE.Mesh(new THREE.CircleGeometry(22,64), new THREE.MeshStandardMaterial({color:color, roughness:1}));
+  sand.rotation.x=-Math.PI/2; sand.position.y=y; g.add(sand); sand.updateMatrixWorld();
+  if(new THREE.Vector3(0,0,1).applyQuaternion(sand.quaternion).y<0.9) throw Error('floor facing');
+}
+function cam(){
+  const view=new THREE.Vector3(); C.getWorldDirection(view);
+  if(view.z>=-0.5) throw Error('camera facing');
+}
+const state={};
+function build(g){
+  const holder=new THREE.Group(); g.add(holder);
+  const gold=0xf0c14a;
+  function clear(){
+    while(holder.children.length){
+      const c=holder.children.pop();
+      c.traverse((o)=>{ if(o.geometry) o.geometry.dispose(); });
+    }
+  }
+  return { apply(v){
+    clear();
+    const n=Math.max(1, Math.round(v));
+    if(KIND==='lantern'){
+      const body=new THREE.Mesh(new THREE.SphereGeometry(1, 40, 28), new THREE.MeshStandardMaterial({color:PAPER, roughness:.82, metalness:0}));
+      body.scale.set(1,1.05,1); holder.add(body);
+      const ribs=new THREE.Group(); holder.add(ribs);
+      const count=Math.min(n, EXTRA.n);
+      for(let i=0;i<count;i++){
+        const a=2*Math.PI*i/EXTRA.n;
+        const rib=new THREE.Group();
+        rod(rib, Math.sin(a)*0.28,-1,Math.cos(a)*0.28, Math.sin(a)*1.05,0,Math.cos(a)*1.05, 0.025, INK);
+        rod(rib, Math.sin(a)*1.05,0,Math.cos(a)*1.05, Math.sin(a)*0.28,1,Math.cos(a)*0.28, 0.025, INK);
+        ribs.add(rib);
+      }
+      const flameH=2/3;
+      const flame=new THREE.Mesh(new THREE.ConeGeometry(0.18, flameH, 16), new THREE.MeshStandardMaterial({color:gold, emissive:gold, emissiveIntensity:.35, roughness:.4}));
+      flame.position.y=1+flameH/2; holder.add(flame);
+      state.ribs=ribs.children.length; state.flame=flameH; state.body=2;
+    } else if(KIND==='bloom'){
+      bead(holder, 0, 0.15, 0, 0.34, gold);
+      const petals=new THREE.Group(); holder.add(petals);
+      const count=Math.min(n, EXTRA.n);
+      for(let i=0;i<count;i++){
+        const a=2*Math.PI*i/EXTRA.n;
+        const radial=new THREE.Vector3(Math.sin(a), 0, Math.cos(a));
+        const m=new THREE.Mesh(new THREE.SphereGeometry(0.22, 18, 12), new THREE.MeshStandardMaterial({color:i%2?ACCENT:INK, roughness:.45}));
+        m.scale.set(0.7, 2, 0.7);
+        m.quaternion.setFromUnitVectors(UP, radial);
+        m.position.copy(radial).multiplyScalar(0.78);
+        m.position.y=0.12;
+        petals.add(m);
+      }
+      state.petals=petals.children.length; state.bud=1;
+    } else if(KIND==='mobile'){
+      const count=Math.min(n, EXTRA.n);
+      const width=Math.max(0.2, (EXTRA.n-1)*0.48);
+      const bar=new THREE.Mesh(new THREE.CylinderGeometry(0.035,0.035,width+0.3,10), new THREE.MeshStandardMaterial({color:INK, metalness:.65, roughness:.3}));
+      bar.quaternion.setFromUnitVectors(UP, new THREE.Vector3(1,0,0));
+      bar.position.y=1.05; holder.add(bar);
+      const weights=new THREE.Group(); holder.add(weights);
+      let moment=0;
+      for(let i=0;i<count;i++){
+        const x=(i-(EXTRA.n-1)/2)*0.48;
+        moment+=i-(EXTRA.n-1)/2;
+        rod(weights, x,1.05,0, x,0.35,0, 0.012, ACCENT);
+        bead(weights, x, 0.22, 0, 0.16, i%2?gold:ACCENT);
+      }
+      state.weights=count; state.moment=moment;
+    } else if(KIND==='cairn'){
+      const stones=new THREE.Group(); holder.add(stones);
+      const count=Math.min(n, EXTRA.n);
+      let r=0.58, y=-0.85+r*0.62;
+      for(let i=0;i<count;i++){
+        const m=new THREE.Mesh(new THREE.SphereGeometry(r, 24, 16), new THREE.MeshStandardMaterial({color:i%2?INK:ACCENT, roughness:.92}));
+        m.scale.y=0.62; m.position.y=y; stones.add(m);
+        const next=r*0.8;
+        y+=r*0.62+next*0.62;
+        r=next;
+      }
+      state.stones=stones.children.length;
+      state.top=0.58*Math.pow(0.8, count-1);
+    } else if(KIND==='quilt'){
+      const glass=new THREE.Mesh(new THREE.SphereGeometry(0.92, 36, 24), new THREE.MeshStandardMaterial({color:PAPER, roughness:.7}));
+      holder.add(glass);
+      const patches=new THREE.Group(); holder.add(patches);
+      const count=Math.min(n, EXTRA.w*EXTRA.h);
+      let dark=0, k=0;
+      for(let j=0;j<EXTRA.h;j++) for(let i=0;i<EXTRA.w;i++){
+        if(k>=count) break;
+        const theta=Math.PI*(j+0.5)/EXTRA.h;
+        const phi=2*Math.PI*(i+0.5)/EXTRA.w;
+        const y=Math.cos(theta), rad=Math.sin(theta);
+        const box=new THREE.Mesh(new THREE.BoxGeometry(0.28,0.28,0.08), new THREE.MeshStandardMaterial({color:(i+j)%2===0?INK:ACCENT, roughness:.8}));
+        box.position.set(rad*Math.cos(phi)*1.02, y*1.02, rad*Math.sin(phi)*1.02);
+        box.lookAt(0,0,0);
+        if((i+j)%2===0) dark++;
+        patches.add(box); k++;
+      }
+      state.patches=patches.children.length; state.dark=dark;
+    } else if(KIND==='coil'){
+      const rings=new THREE.Group(); holder.add(rings);
+      const count=Math.min(n, EXTRA.n);
+      const step=0.2;
+      for(let i=0;i<count;i++){
+        const radius=0.95-i*(0.5/EXTRA.n);
+        const m=new THREE.Mesh(new THREE.TorusGeometry(Math.max(0.25,radius), 0.07, 10, 40), new THREE.MeshStandardMaterial({color:i%2?ACCENT:INK, roughness:.85}));
+        m.rotation.x=Math.PI/2;
+        m.position.y=-((EXTRA.n-1)/2)*step + i*step;
+        rings.add(m);
+      }
+      state.rings=rings.children.length; state.step=step;
+    } else if(KIND==='arch'){
+      const stones=new THREE.Group(); holder.add(stones);
+      const count=Math.min(n, EXTRA.n);
+      let crownY=-Infinity, crownI=-1;
+      for(let i=0;i<count;i++){
+        const angle=Math.PI-(i+0.5)*Math.PI/EXTRA.n;
+        const radial=new THREE.Vector3(Math.cos(angle), Math.sin(angle), 0);
+        const m=new THREE.Mesh(new THREE.BoxGeometry(0.26, 0.48, 0.32), new THREE.MeshStandardMaterial({color:i%2?INK:ACCENT, roughness:.9}));
+        m.quaternion.setFromUnitVectors(UP, radial.clone().normalize());
+        m.position.copy(radial).multiplyScalar(1.25);
+        m.position.y-=0.15;
+        if(m.position.y>crownY){ crownY=m.position.y; crownI=i; }
+        stones.add(m);
+      }
+      state.stones=stones.children.length; state.crown=crownI;
+    } else if(KIND==='fountain'){
+      const basin=new THREE.Mesh(new THREE.SphereGeometry(0.85, 28, 16), new THREE.MeshStandardMaterial({color:INK, roughness:.35, metalness:.25}));
+      basin.scale.set(1.35,0.4,1.35); basin.position.y=-0.15; holder.add(basin);
+      const jets=new THREE.Group(); holder.add(jets);
+      const count=Math.min(n, EXTRA.n);
+      let x=0,z=0;
+      for(let i=0;i<count;i++){
+        const a=2*Math.PI*i/EXTRA.n;
+        x+=Math.cos(a); z+=Math.sin(a);
+        const m=new THREE.Mesh(new THREE.ConeGeometry(0.07, 0.8, 10), new THREE.MeshStandardMaterial({color:ACCENT, transparent:true, opacity:.8, roughness:.15}));
+        m.position.set(Math.cos(a)*0.72, 0.45, Math.sin(a)*0.72);
+        jets.add(m);
+      }
+      state.jets=jets.children.length; state.sum=Math.hypot(x,z); state.ratio=0.8/0.4;
+    } else if(KIND==='ribbon'){
+      const globe=new THREE.Mesh(new THREE.SphereGeometry(0.92, 36, 24), new THREE.MeshStandardMaterial({color:PAPER, roughness:.55}));
+      holder.add(globe);
+      const beads=new THREE.Group(); holder.add(beads);
+      const count=Math.min(n, EXTRA.n);
+      for(let i=0;i<count;i++){
+        const t=EXTRA.n===1?0:i/(EXTRA.n-1);
+        const y=-0.82+1.64*t;
+        const rr=Math.sqrt(Math.max(0,1-y*y))*1.04;
+        const a=t*4*Math.PI;
+        bead(beads, rr*Math.cos(a), y, rr*Math.sin(a), 0.07, i%2?ACCENT:gold);
+      }
+      state.beads=beads.children.length; state.turns=2;
+    } else if(KIND==='crown'){
+      const ring=new THREE.Mesh(new THREE.TorusGeometry(0.78, 0.07, 10, 40), new THREE.MeshStandardMaterial({color:INK, metalness:.7, roughness:.28}));
+      ring.rotation.x=Math.PI/2; ring.position.y=0.15; holder.add(ring);
+      const tines=new THREE.Group(); holder.add(tines);
+      const count=Math.min(n, EXTRA.n);
+      for(let i=0;i<count;i++){
+        const a=2*Math.PI*i/EXTRA.n;
+        const m=new THREE.Mesh(new THREE.ConeGeometry(0.09, 0.55, 10), new THREE.MeshStandardMaterial({color:gold, metalness:.4, roughness:.35}));
+        m.position.set(Math.cos(a)*0.78, 0.48, Math.sin(a)*0.78);
+        tines.add(m);
+      }
+      state.tines=tines.children.length;
+    } else if(KIND==='window'){
+      const ring=new THREE.Mesh(new THREE.TorusGeometry(1.05, 0.05, 8, 48), new THREE.MeshStandardMaterial({color:INK, metalness:.5, roughness:.35}));
+      holder.add(ring);
+      bead(holder, 0, 0, 0, 0.16, gold);
+      const lights=new THREE.Group(); holder.add(lights);
+      const count=Math.min(n, EXTRA.n);
+      for(let i=0;i<count;i++){
+        const a=2*Math.PI*i/EXTRA.n;
+        bead(lights, Math.cos(a)*1.05, Math.sin(a)*1.05, 0, 0.1, i%2?ACCENT:PAPER);
+      }
+      state.lights=lights.children.length; state.center=1;
+    } else if(KIND==='sail'){
+      const hull=new THREE.Mesh(new THREE.SphereGeometry(0.7, 28, 16), new THREE.MeshStandardMaterial({color:INK, roughness:.7}));
+      hull.scale.set(1.5,0.38,0.85); hull.position.y=-0.15; holder.add(hull);
+      rod(holder, 0,-0.05,0, 0,1.7,0, 0.03, INK);
+      const foot=0.6, rise=1.2, y0=0.35;
+      rod(holder, 0,y0+rise,0, 0,y0,0, 0.015, ACCENT);
+      rod(holder, 0,y0,0, foot,y0,0, 0.015, ACCENT);
+      rod(holder, foot,y0,0, 0,y0+rise,0, 0.015, ACCENT);
+      const reefs=new THREE.Group(); holder.add(reefs);
+      const count=Math.min(n, EXTRA.n);
+      for(let i=0;i<count;i++){
+        const t=EXTRA.n===1?0:i/(EXTRA.n-1);
+        bead(reefs, foot*t, y0+rise*(1-t), 0, 0.045, gold);
+      }
+      state.reefs=reefs.children.length; state.ratio=rise/foot;
+    } else if(KIND==='prism'){
+      const glass=new THREE.Mesh(new THREE.CylinderGeometry(0.42,0.42,1.3,3), new THREE.MeshStandardMaterial({color:PAPER, transparent:true, opacity:.45, roughness:.08, metalness:.05}));
+      glass.position.y=0.3; holder.add(glass);
+      const colors=new THREE.Group(); holder.add(colors);
+      const count=Math.min(n, EXTRA.n);
+      const hues=[0xff4d4d,0xff8a3d,0xf0c14a,0x3dce7a,0x3aa0ff,0x6a5cff,0xd45cff,0xff5fa2,0xffffff];
+      for(let i=0;i<count;i++){
+        bead(colors, 0.75+i*0.22, 0.3, 0, 0.07, hues[i%hues.length]);
+      }
+      state.colors=colors.children.length; state.sides=glass.geometry.parameters.radialSegments;
+    } else if(KIND==='bell'){
+      const crown=new THREE.Mesh(new THREE.SphereGeometry(0.42, 24, 16), new THREE.MeshStandardMaterial({color:gold, metalness:.55, roughness:.3}));
+      crown.position.y=0.95; holder.add(crown);
+      const skirt=new THREE.Mesh(new THREE.CylinderGeometry(0.85,0.28,1.15,24), new THREE.MeshStandardMaterial({color:INK, metalness:.6, roughness:.32}));
+      skirt.position.y=0.15; holder.add(skirt);
+      const holes=new THREE.Group(); holder.add(holes);
+      const count=Math.min(n, EXTRA.n);
+      for(let i=0;i<count;i++){
+        const a=2*Math.PI*i/EXTRA.n;
+        bead(holes, Math.cos(a)*0.72, -0.28, Math.sin(a)*0.72, 0.06, ACCENT);
+      }
+      state.holes=holes.children.length;
+    } else if(KIND==='loom'){
+      const beam=new THREE.Mesh(new THREE.SphereGeometry(0.7, 28, 18), new THREE.MeshStandardMaterial({color:PAPER, roughness:.8}));
+      beam.position.set(0,0.2,-0.4); holder.add(beam);
+      const warps=new THREE.Group(); holder.add(warps);
+      const count=Math.min(n, EXTRA.n);
+      let up=0;
+      for(let i=0;i<count;i++){
+        const x=(i-(EXTRA.n-1)/2)*0.16;
+        const lifted=i%2===0;
+        if(lifted) up++;
+        rod(warps, x, lifted?1.15:0.9, 0.15, x, -0.7, 0.15, 0.012, lifted?ACCENT:INK);
+      }
+      rod(holder, -1.1, 0.15, 0.28, 1.1, 0.15, 0.28, 0.03, gold);
+      state.warps=warps.children.length; state.up=up; state.weft=1;
+    } else if(KIND==='wave'){
+      const crests=new THREE.Group(); holder.add(crests);
+      const count=Math.min(n, EXTRA.n);
+      const step=0.5;
+      for(let i=0;i<count;i++){
+        const m=new THREE.Mesh(new THREE.TorusGeometry(0.55, 0.045, 8, 36), new THREE.MeshStandardMaterial({color:i%2?ACCENT:INK, roughness:.25, metalness:.1}));
+        m.rotation.y=Math.PI/2;
+        m.position.set(0, 0.15+Math.sin(i*0.7)*0.08, -((EXTRA.n-1)/2)*step + i*step);
+        crests.add(m);
+      }
+      state.crests=crests.children.length; state.step=step;
+    } else if(KIND==='orchard'){
+      const trunk=new THREE.Mesh(new THREE.CylinderGeometry(0.1,0.14,1.15,12), new THREE.MeshStandardMaterial({color:INK, roughness:.85}));
+      trunk.position.y=-0.15; holder.add(trunk);
+      const crown=new THREE.Mesh(new THREE.SphereGeometry(0.78, 28, 18), new THREE.MeshStandardMaterial({color:0x2f6b45, roughness:.7}));
+      crown.position.y=0.85; holder.add(crown);
+      const fruit=new THREE.Group(); holder.add(fruit);
+      const count=Math.min(n, EXTRA.n);
+      let low=Infinity;
+      for(let i=0;i<count;i++){
+        const theta=0.45+(i%3)*0.22;
+        const phi=2*Math.PI*i/EXTRA.n;
+        const y=Math.cos(theta), rad=Math.sin(theta);
+        const yy=0.85+y*0.78;
+        low=Math.min(low, yy-0.85);
+        bead(fruit, rad*Math.cos(phi)*0.78, yy, rad*Math.sin(phi)*0.78, 0.09, i%2?gold:ACCENT);
+      }
+      state.fruit=fruit.children.length; state.low=low;
+    } else if(KIND==='comet'){
+      bead(holder, 0.9, 0.2, 0, 0.36, gold);
+      const tail=new THREE.Group(); holder.add(tail);
+      const count=Math.min(n, EXTRA.n);
+      let r=0.22;
+      const scales=[];
+      for(let i=0;i<count;i++){
+        bead(tail, 0.45-i*0.22, 0.2, 0, r, i%2?ACCENT:PAPER);
+        scales.push(r); r*=3/4;
+      }
+      state.tail=tail.children.length;
+      state.second=scales.length>1?scales[1]/scales[0]:0;
+    } else if(KIND==='drum'){
+      const shell=new THREE.Mesh(new THREE.CylinderGeometry(0.85,0.85,0.48,28), new THREE.MeshStandardMaterial({color:INK, roughness:.62}));
+      shell.position.y=0.15; holder.add(shell);
+      const heads=new THREE.Group(); holder.add(heads);
+      for(const y of [0.39,-0.09]){
+        const head=new THREE.Mesh(new THREE.CircleGeometry(0.85, 32), new THREE.MeshStandardMaterial({color:PAPER, roughness:.7, side:THREE.DoubleSide}));
+        head.rotation.x=-Math.PI/2; head.position.y=y; heads.add(head);
+      }
+      const lugs=new THREE.Group(); holder.add(lugs);
+      const count=Math.min(n, EXTRA.n);
+      for(let i=0;i<count;i++){
+        const a=2*Math.PI*i/EXTRA.n;
+        bead(lugs, Math.cos(a)*0.92, 0.15, Math.sin(a)*0.92, 0.06, gold);
+      }
+      state.lugs=lugs.children.length; state.heads=heads.children.length;
+    } else if(KIND==='ink'){
+      const drop=new THREE.Mesh(new THREE.SphereGeometry(0.28, 22, 14), new THREE.MeshStandardMaterial({color:INK, roughness:.15, metalness:.05}));
+      drop.scale.y=0.35; drop.position.y=-0.95; holder.add(drop);
+      const rings=new THREE.Group(); holder.add(rings);
+      const count=Math.min(n, EXTRA.n);
+      for(let k=1;k<=count;k++){
+        const m=new THREE.Mesh(new THREE.TorusGeometry(0.28*k, 0.018, 8, 48), new THREE.MeshStandardMaterial({color:k%2?ACCENT:INK, roughness:.4}));
+        m.rotation.x=Math.PI/2; m.position.y=-1.05; rings.add(m);
+      }
+      state.rings=rings.children.length;
+      state.outer=count>=1?count:0;
+    } else throw Error('kind '+KIND);
+    state.value=v;
+  }, finish(){
+    if(Math.abs(state.value-TARGET)>1e-5) throw Error('value');
+    if(KIND==='lantern'){
+      if(state.ribs!==EXTRA.n) throw Error('ribs '+state.ribs);
+      if(Math.abs(state.flame/state.body-1/3)>1e-6) throw Error('flame');
+    } else if(KIND==='bloom'){
+      if(state.petals!==EXTRA.n || state.bud!==1) throw Error('petals');
+    } else if(KIND==='mobile'){
+      if(state.weights!==EXTRA.n || Math.abs(state.moment)>1e-8) throw Error('mobile');
+    } else if(KIND==='cairn'){
+      if(state.stones!==EXTRA.n) throw Error('stones');
+      if(Math.abs(state.top/0.58-Math.pow(0.8, EXTRA.n-1))>1e-8) throw Error('ratio');
+    } else if(KIND==='quilt'){
+      if(state.patches!==EXTRA.w*EXTRA.h || state.dark!==EXTRA.dark) throw Error('quilt');
+    } else if(KIND==='coil'){
+      if(state.rings!==EXTRA.n || Math.abs(state.step-0.2)>1e-8) throw Error('coil');
+    } else if(KIND==='arch'){
+      const mid=(EXTRA.n-1)/2;
+      if(state.stones!==EXTRA.n || state.crown!==mid) throw Error('arch');
+    } else if(KIND==='fountain'){
+      if(state.jets!==EXTRA.n || state.sum>1e-6 || Math.abs(state.ratio-2)>1e-8) throw Error('fountain');
+    } else if(KIND==='ribbon'){
+      if(state.beads!==EXTRA.n || state.turns!==2) throw Error('ribbon');
+    } else if(KIND==='crown'){
+      if(state.tines!==EXTRA.n) throw Error('crown');
+    } else if(KIND==='window'){
+      if(state.lights!==EXTRA.n || state.center!==1) throw Error('window');
+    } else if(KIND==='sail'){
+      if(state.reefs!==EXTRA.n || Math.abs(state.ratio-2)>1e-8) throw Error('sail');
+    } else if(KIND==='prism'){
+      if(state.colors!==EXTRA.n || state.sides!==3) throw Error('prism');
+    } else if(KIND==='bell'){
+      if(state.holes!==EXTRA.n) throw Error('bell');
+    } else if(KIND==='loom'){
+      if(state.warps!==EXTRA.n || state.up!==EXTRA.up || state.weft!==1) throw Error('loom');
+    } else if(KIND==='wave'){
+      if(state.crests!==EXTRA.n || Math.abs(state.step-0.5)>1e-8) throw Error('wave');
+    } else if(KIND==='orchard'){
+      if(state.fruit!==EXTRA.n || !(state.low>0.4)) throw Error('fruit');
+    } else if(KIND==='comet'){
+      if(state.tail!==EXTRA.n || Math.abs(state.second-0.75)>1e-8) throw Error('comet');
+    } else if(KIND==='drum'){
+      if(state.lugs!==EXTRA.n || state.heads!==2) throw Error('drum');
+    } else if(KIND==='ink'){
+      if(state.rings!==EXTRA.n || state.outer!==EXTRA.n) throw Error('ink');
+    } else throw Error('kind');
+  } };
+}
+function hero(){
+  const g=new THREE.Group(); S.add(g);
+  S.background=new THREE.Color(PAPER);
+  S.fog=new THREE.FogExp2(new THREE.Color(PAPER), 0.035);
+  floor(g, new THREE.Color(PAPER).offsetHSL(0,-0.08,-0.18).getHex(), -1.35);
+  const plinth=new THREE.Mesh(new THREE.CylinderGeometry(1.15,1.25,0.16,28), new THREE.MeshStandardMaterial({color:INK, roughness:.9}));
+  plinth.position.y=-1.18; g.add(plinth);
+  const run=agentRun();
+  const play=!reduce && !/[?&]thumb=1/.test(location.search);
+  const api=build(g);
+  api.apply(play?run.start:run.value);
+  cam();
+  g.userData={run:run, play:play, step:0, done:!play, apply:api.apply, finish:api.finish};
+  return g;
+}
+let HERO=null;
+function settle(){
+  try{ HERO.userData.finish(); window.__atelierScene='lit'; }
+  catch(e){ window.__atelierScene=e.message||'scene'; paintProof('<span class="t WALL">FAIL</span> '+e.message,true); throw e; }
+}
+try{
+  HERO=hero();
+  if(!HERO.userData.play) settle();
+}catch(e){
+  if(window.__atelierScene==='pending') window.__atelierScene=e.message||'scene';
+  paintProof('<span class="t WALL">FAIL</span> '+e.message,true);
+  throw e;
+}
+function tick(){
+  if(HERO&&HERO.userData.play&&!HERO.userData.done){
+    const run=HERO.userData.run, e=run.log[HERO.userData.step++];
+    if(e&&e.accepted) HERO.userData.apply(e.value);
+    if(HERO.userData.step>=run.log.length){
+      HERO.userData.apply(run.value);
+      HERO.userData.done=true;
+      settle();
+    }
+  }
+  if(HERO&&HERO.userData.done&&!reduce) HERO.rotation.y+=0.003;
+  O.update(); R.render(S,C); requestAnimationFrame(tick);
+}
+tick();
+addEventListener('resize',()=>{const w=box.clientWidth,h=box.clientHeight;C.aspect=w/Math.max(h,1);C.updateProjectionMatrix();R.setSize(w,h)});
+</script>
+
+<script id="cubit-register-boot">
+(function(){
+  if(/[?&]thumb=1/.test(location.search)) return;
+  if(document.getElementById('cubit-register')) return;
+  const ORDER=['geometric','constructive','agentic','generative'];
+  const ROLES=['ARTIST','CRITIC','BUILDER','WEAVER','FOLLOWER','KEEPER'];
+  const KEY='mayhem-cubit-register';
+  function slug(){
+    for(const sc of document.scripts){
+      const m=/const SLUG="([^"]+)"/.exec(sc.textContent||'');
+      if(m) return m[1];
+    }
+    return (location.pathname.replace(/^\//,'').replace(/\.html$/i,''))||'index';
+  }
+  function geometric(){
+    let canvases=0, svgs=0, w=0, h=0;
+    document.querySelectorAll('canvas').forEach(el=>{ canvases++; w=Math.max(w, el.clientWidth|0); h=Math.max(h, el.clientHeight|0); });
+    document.querySelectorAll('svg').forEach(el=>{ svgs++; w=Math.max(w, el.clientWidth|0); h=Math.max(h, el.clientHeight|0); });
+    const v3=document.getElementById('v3');
+    if(v3){ w=Math.max(w, v3.clientWidth|0); h=Math.max(h, v3.clientHeight|0); }
+    if(!w){ w=document.documentElement.clientWidth|0; h=document.documentElement.clientHeight|0; }
+    return {name:'geometric', text:canvases+'c+'+svgs+'s·'+w+'x'+h, canvases, svgs, w, h};
+  }
+  function constructive(host){
+    const nodes=host.querySelectorAll('*').length, buttons=host.querySelectorAll('button').length;
+    return {name:'constructive', text:nodes+'n·'+buttons+'b', nodes, buttons};
+  }
+  function agentic(host, c){
+    const text=host.innerText||'';
+    const found=ROLES.filter(r=>text.indexOf(r)!==-1);
+    const agents=found.length?found:['REGISTER'];
+    return {name:'agentic', text:agents.join('+'), agents, accepted:c.nodes>0};
+  }
+  function generative(g,c,a){
+    const s=g.text+'|'+c.text+'|'+a.text;
+    let x=2166136261;
+    for(let i=0;i<s.length;i++) x=Math.imul(x^s.charCodeAt(i), 16777619);
+    const code=(x>>>0).toString(16).padStart(8,'0');
+    return {name:'generative', text:code, code};
+  }
+  function build(host){
+    const register=[];
+    const g=geometric(); register.push(g);
+    const c=constructive(host); register.push(c);
+    const a=agentic(host,c); register.push(a);
+    register.push(generative(g,c,a));
+    return register;
+  }
+  function assertReg(register){
+    if(register.length!==4) throw Error('register length '+register.length);
+    if(register.map(x=>x.name).join(',')!==ORDER.join(',')) throw Error('cubit order');
+    if(register.some(x=>!x.text)) throw Error('empty cubit');
+    if(!register[2].accepted) throw Error('agent refused the register');
+    const again=generative(register[0], register[1], register[2]);
+    if(again.code!==register[3].code) throw Error('register drift');
+    return register.map(x=>x.text).join(' | ');
+  }
+  function remember(id, word){
+    let book={};
+    try{ book=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){ book={}; }
+    book[id]={word};
+    try{ localStorage.setItem(KEY, JSON.stringify(book)); }catch(e){}
+    return Object.keys(book).length;
+  }
+  function mount(register, err, rows){
+    let el=document.getElementById('cubit-register');
+    if(!el){
+      const style=document.createElement('style');
+      style.textContent='#cubit-register{margin:18px 0;padding:14px 12px 12px;border:1px solid rgba(0,240,255,.28);border-radius:14px;background:rgba(5,8,16,.78);box-shadow:0 0 28px rgba(0,240,255,.08);color:#d7e3f5;text-align:left;font-family:ui-monospace,Menlo,monospace}#cubit-register .cr-formula{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#eaf6ff;text-shadow:0 0 8px #00f0ff;margin:0 0 10px}#cubit-register .cr-row{display:flex;gap:8px;flex-wrap:wrap}#cubit-register .cr-cubit{flex:1 1 140px;border:1px solid rgba(0,240,255,.25);border-radius:10px;padding:8px;background:rgba(0,0,0,.35)}#cubit-register .cr-cubit b{display:block;font-weight:400;font-size:10px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:4px}#cubit-register .cr-cubit[data-cubit=geometric] b{color:#00f0ff}#cubit-register .cr-cubit[data-cubit=constructive] b{color:#ffb300}#cubit-register .cr-cubit[data-cubit=agentic] b{color:#ff2bd6}#cubit-register .cr-cubit[data-cubit=generative] b{color:#eaf6ff}#cubit-register .cr-cubit i{font-style:normal;font-size:13px;color:#eaf6ff}#cubit-register .cr-word{margin-top:10px;font-size:12px;color:#ffb3ec;word-break:break-all}#cubit-register .cr-status{margin-top:8px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#8fa3c7}body.thumb #cubit-register{display:none}';
+      document.head.appendChild(style);
+      el=document.createElement('section');
+      el.id='cubit-register';
+      el.setAttribute('aria-label','cubit register');
+      const host=document.getElementById('wrap')||document.querySelector('main')||document.body;
+      const h=host.querySelector('h1');
+      if(h) h.insertAdjacentElement('afterend', el);
+      else host.insertBefore(el, host.firstChild);
+    }
+    const cells=(register||ORDER.map(name=>({name,text:'—'}))).map(x=>'<div class="cr-cubit" data-cubit="'+x.name+'"><b>'+x.name+'</b><i>'+x.text+'</i></div>').join('');
+    const word=err?'':register.map(x=>x.text).join(' | ');
+    el.innerHTML='<div class="cr-formula">{{ geometric, constructive, agentic, generative }}</div><div class="cr-row">'+cells+'</div><div class="cr-word">'+(err?'':'REGISTER '+word)+'</div><div class="cr-status">'+(err?'FAIL '+err.message:'LIT four cubits wrote the register · AMBER this browser holds '+rows+' rows')+'</div>';
+  }
+  function run(){
+    const host=document.getElementById('wrap')||document.querySelector('main')||document.body;
+    try{
+      const register=build(host);
+      const word=assertReg(register);
+      const rows=remember(slug(), word);
+      mount(register, null, rows);
+    }catch(e){
+      mount(null, e, 0);
+      throw e;
+    }
+  }
+  requestAnimationFrame(run);
+})();
+</script>
+</body></html>

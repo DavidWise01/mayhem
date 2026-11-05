@@ -1,0 +1,1 @@
+{"slug":"quiet-mobile","seal":"30a867388e93c6741a1687e46291e9527ea29f0bd54fc9851764e40d068cd368","rule":"sha256(name|slug|blurb)","write":"if-missing"}

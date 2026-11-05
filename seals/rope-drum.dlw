@@ -1,0 +1,1 @@
+{"slug":"rope-drum","seal":"acf5b5cf60a860ab21fdf5ef9703aa36f1d62e30da7273a7f10484106f559329","rule":"sha256(name|slug|blurb)","write":"if-missing"}

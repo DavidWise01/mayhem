@@ -1,0 +1,1 @@
+{"slug":"parade-drum","seal":"b3bae606f3efc03824fb4f6dcce7815ed39048404fb856e9fd38d4271648e6e6","rule":"sha256(name|slug|blurb)","write":"if-missing"}

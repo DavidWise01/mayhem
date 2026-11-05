@@ -1,0 +1,1 @@
+{"slug":"tea-coil","seal":"253201c721c5551ab8f654863ad1e9213a487338ad94989256e96f44eebdd4fa","rule":"sha256(name|slug|blurb)","write":"if-missing"}

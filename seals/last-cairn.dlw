@@ -1,0 +1,1 @@
+{"slug":"last-cairn","seal":"7c9702234b9dd8aab31e8be95646edf963e660dfeb4c143b4a437c781a72cfba","rule":"sha256(name|slug|blurb)","write":"if-missing"}

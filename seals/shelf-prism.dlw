@@ -1,0 +1,1 @@
+{"slug":"shelf-prism","seal":"8bf57269c81129cf00d616cce1ccb7ef5b53aa6e5a973fe710df9761f408ee86","rule":"sha256(name|slug|blurb)","write":"if-missing"}

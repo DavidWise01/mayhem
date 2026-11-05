@@ -1,0 +1,1 @@
+{"slug":"thirteen-fruit","seal":"4c16e95c51455f28c88cf001a7fcec1b8760e443753383a9ec10965d1139d1cc","rule":"sha256(name|slug|blurb)","write":"if-missing"}

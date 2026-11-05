@@ -1,0 +1,1 @@
+{"slug":"kitchen-mobile","seal":"d4db46061f1901546482955fc6abacb7309c608e29850113c0507a87c6031ac2","rule":"sha256(name|slug|blurb)","write":"if-missing"}

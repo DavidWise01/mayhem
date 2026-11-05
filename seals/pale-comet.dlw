@@ -1,0 +1,1 @@
+{"slug":"pale-comet","seal":"8ad59441a9ce2bbce928743afb9b916f21c3d6468e22001502320cba16b90f7a","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"red-ribbon","seal":"0895c464a5f7686ad7e66bf158ff2f069fb5f1a5de5a9a466972991380630310","rule":"sha256(name|slug|blurb)","write":"if-missing"}

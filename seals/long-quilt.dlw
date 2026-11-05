@@ -1,0 +1,1 @@
+{"slug":"long-quilt","seal":"5414a0375bc02fd37b72ddaf5d0e34a7bb34c5b634b6ed28c8a415da46b94258","rule":"sha256(name|slug|blurb)","write":"if-missing"}

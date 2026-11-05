@@ -1,0 +1,1 @@
+{"slug":"twelve-rose","seal":"1335619154e018f6a8cef38786be869cd50f48c4b3ef7d42ff387e6f16d032da","rule":"sha256(name|slug|blurb)","write":"if-missing"}

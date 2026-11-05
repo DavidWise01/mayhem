@@ -1,0 +1,1 @@
+{"slug":"court-quilt","seal":"fd2b86a1741cc5b6b0e67f2e61b23739ad03e1002f69178bab420e15063bca49","rule":"sha256(name|slug|blurb)","write":"if-missing"}

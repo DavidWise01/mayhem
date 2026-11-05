@@ -1,0 +1,1 @@
+{"slug":"orchard-arch","seal":"4d723d9a76639b34d52e61ef05040166e2ceef0dad81c113ea1393474951b2b0","rule":"sha256(name|slug|blurb)","write":"if-missing"}

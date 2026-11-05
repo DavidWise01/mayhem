@@ -1,0 +1,1 @@
+{"slug":"ink-poppy","seal":"2d0e3d0fe37e4da665dd6171232b279359768362f997401c310c94500800dae9","rule":"sha256(name|slug|blurb)","write":"if-missing"}

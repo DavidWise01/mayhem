@@ -1,0 +1,1 @@
+{"slug":"ten-rose","seal":"e10734d60e6b50d6d890adbb9fa51493a27e0f34f47754a77b85315dc67a705a","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"lake-sail","seal":"ca1cac5007404d572f47b5c8a6ebdfa619035ca3912ef9be73d3570810cc3cab","rule":"sha256(name|slug|blurb)","write":"if-missing"}

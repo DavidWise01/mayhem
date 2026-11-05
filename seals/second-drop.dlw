@@ -1,0 +1,1 @@
+{"slug":"second-drop","seal":"3eec91a026806d972c6cca4bdb63e6f92562612acdbc45c6464686ee4b3faad7","rule":"sha256(name|slug|blurb)","write":"if-missing"}

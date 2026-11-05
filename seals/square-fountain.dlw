@@ -1,0 +1,1 @@
+{"slug":"square-fountain","seal":"badce5a29c6cd066aeddfdc34f5a0657cbec50731f59cfcb443570ebab6ce52e","rule":"sha256(name|slug|blurb)","write":"if-missing"}

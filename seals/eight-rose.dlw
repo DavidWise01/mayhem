@@ -1,0 +1,1 @@
+{"slug":"eight-rose","seal":"6b1151ed0747cfbe7e04318a4bd5683ba992b8e70332b0d2437005a58fafbec3","rule":"sha256(name|slug|blurb)","write":"if-missing"}

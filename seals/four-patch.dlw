@@ -1,0 +1,1 @@
+{"slug":"four-patch","seal":"50ed08663eb4286bb1eea28668877d11e9665a413efdac3a337b8e96a3c7b62f","rule":"sha256(name|slug|blurb)","write":"if-missing"}

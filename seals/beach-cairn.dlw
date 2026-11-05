@@ -1,0 +1,1 @@
+{"slug":"beach-cairn","seal":"8faa78716a80ecced718adeeceff812aa6af3d0d13ab2d66580ad6a564c6a3fa","rule":"sha256(name|slug|blurb)","write":"if-missing"}

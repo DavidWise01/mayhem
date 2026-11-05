@@ -1,0 +1,1 @@
+{"slug":"gate-arch","seal":"43655427a48ba1ab5447826ebfe23e1b26f9548dfff69e416ee7f59c5c340220","rule":"sha256(name|slug|blurb)","write":"if-missing"}

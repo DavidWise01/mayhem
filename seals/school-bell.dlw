@@ -1,0 +1,1 @@
+{"slug":"school-bell","seal":"0099e8bf31ebaab8b2aa2ff54f36ee0f9b59bbed10cf6feda21f771458dbf57d","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"gold-ribbon","seal":"bb2a913748f624ee706fbb93f335f4fadb174ded55c25def6b8c59a0378752fa","rule":"sha256(name|slug|blurb)","write":"if-missing"}

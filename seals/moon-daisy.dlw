@@ -1,0 +1,1 @@
+{"slug":"moon-daisy","seal":"832c0410fc3f128a9bce424974145cae8b91f245d3b80e707a319f0d90661526","rule":"sha256(name|slug|blurb)","write":"if-missing"}

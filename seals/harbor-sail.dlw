@@ -1,0 +1,1 @@
+{"slug":"harbor-sail","seal":"7d115ec1a2d6fa1f369dc22418f31224f10bd788477726d2f7def74318f27b4f","rule":"sha256(name|slug|blurb)","write":"if-missing"}

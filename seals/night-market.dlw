@@ -1,0 +1,1 @@
+{"slug":"night-market","seal":"00ef1f82dd81f3c434c18b9eb93d2fc0859e7308524b89cd9995e6b76926e76b","rule":"sha256(name|slug|blurb)","write":"if-missing"}

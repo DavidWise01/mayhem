@@ -1,0 +1,1 @@
+{"slug":"bay-sail","seal":"38b1e6cd857021c7b4c8f1f0228169a80b24ab9b004076163fb0c7e3ff21ad25","rule":"sha256(name|slug|blurb)","write":"if-missing"}

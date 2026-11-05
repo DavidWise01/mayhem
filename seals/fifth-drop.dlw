@@ -1,0 +1,1 @@
+{"slug":"fifth-drop","seal":"dad528d5d58b0c8d4f4cf250c9988ce03375ac4645560eb3b4e750e1f5865676","rule":"sha256(name|slug|blurb)","write":"if-missing"}

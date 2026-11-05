@@ -1,0 +1,1 @@
+{"slug":"nine-fruit","seal":"7657023d8b4d9c893e384b09093365bd894ceb849f6c341f0a286c20aa753499","rule":"sha256(name|slug|blurb)","write":"if-missing"}

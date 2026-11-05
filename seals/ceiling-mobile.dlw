@@ -1,0 +1,1 @@
+{"slug":"ceiling-mobile","seal":"bdaed5128a62eb3a1c209e1735f1a1a776f83c2f228b9f4d885c0f16513dd347","rule":"sha256(name|slug|blurb)","write":"if-missing"}

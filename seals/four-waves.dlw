@@ -1,0 +1,1 @@
+{"slug":"four-waves","seal":"40fbef8d7f48c02bbf84358f770e75a52be998690358cf4262ab01e5e4af0009","rule":"sha256(name|slug|blurb)","write":"if-missing"}

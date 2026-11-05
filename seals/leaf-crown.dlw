@@ -1,0 +1,1 @@
+{"slug":"leaf-crown","seal":"019509215d17bc4a65e39e43bb083e4cadb02920494ea32eb21a4b2a6a40e606","rule":"sha256(name|slug|blurb)","write":"if-missing"}

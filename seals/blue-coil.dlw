@@ -1,0 +1,1 @@
+{"slug":"blue-coil","seal":"6e14946bbf597b7bb60633cfa5a9c8f3701efd6442d57743fee4d54766d21d89","rule":"sha256(name|slug|blurb)","write":"if-missing"}
