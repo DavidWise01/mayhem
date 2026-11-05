@@ -860,6 +860,108 @@ Dave: the flat studio was not a graphics upgrade, so add spheres to World Mayhem
 - [The Hemisphere](./spheres/orbs/hemisphere-cap.html): Orbs. seal 36e1211fcbd58b517a8b6bea568b52e71a275e9e61bff081191eff0eea3c53f5
 - [The Matched Disks](./spheres/orbs/matched-disks.html): Orbs. seal 41e4bdfd7c21db673ab7495086e91db6b09dc9304edbf774fba447cb7aae0cb0
 
+## Hundred
+Dave asked to keep building spheres on World Mayhem and to shoot for 100. One hundred pages. Each page is a different cut, count, or motion on the ball: caps, lunes, wedges, chords, parallels, belts, a closed cylinder, cups, a cone, the dodecahedron, the cuboctahedron, the truncated icosahedron, two geodesic domes, a dual pair, five defects, five dihedral cosines, a tangent field, an odd height, two projections, a Mercator scale, an equirectangle, gores, tangent cones, a mast, four phases, five Descartes triples, three cube radii, triangles, Napier checks, a model season, a daylight cosine, an angular diameter, two solid angles, a Fibonacci sprinkle, three turns, a gimbal, antipodes, a tilted cut, an interior power, an inversion, a touch, a similitude, an equatorial square, and a long edge. A try is kept only when the gap shrinks. A second run must match. No NES cartridge is on these pages. Each page still builds the cubit register. Thumbnail views skip the register. Seals were written once. The keeper seal was not rewritten. The 0root hallway was not published. Board key mayhem-hundred-kept.
+- [The Quarter Cap](./spheres/hundred/quarter-cap.html): Hundred. seal 0439600dd2e7ba42313e8043378ac92c68977fbe1ba0149fa6acea8023a15a28
+- [The Fifteen Lune](./spheres/hundred/lune-fifteen.html): Hundred. seal 524f34b7d9b8fb22ab6e4c3a4e02c16160dd7537ab0b9b2741aa3f5df2a9d1fc
+- [The Thirty Wedge](./spheres/hundred/wedge-thirty.html): Hundred. seal f0ec9b3b3ad3db986e606a1f9129e232ff88f0963a0232bff1d1a921e9e45613
+- [The Thirty Chord](./spheres/hundred/chord-thirty.html): Hundred. seal 12018788fd60d76407a5dbcf09fbbdc54c56c7041b0047aefc9380aa182a97cc
+- [The Fifteen Parallel](./spheres/hundred/ring-fifteen.html): Hundred. seal 46fec5ae435347847f653764654ab76a4c8c3ac810a1a2b5a4dcab97be119597
+- [The Four Belts](./spheres/hundred/four-belts.html): Hundred. seal 4cd17ea7a99f091d5527572983e8d0d62efb29de5f61a929389ad66d8f5938d9
+- [The Fifth Shift](./spheres/hundred/shift-fifth.html): Hundred. seal 2fdf40502326c4b185f60c481b8b340d5e77231831bb0858cb4eaba1dee10c5a
+- [The Two-Thirds Vessel](./spheres/hundred/vessel-two-thirds.html): Hundred. seal 361e993273bfbf147048b461b7c67eb2e3132d83386bd0807853011721406bc6
+- [The Fifth Cap](./spheres/hundred/fifth-cap.html): Hundred. seal 1d05d1b462956f7c2b47d3454e7e22f0ada82c6d876e66a576369456bfe8705e
+- [The Thirty Lune](./spheres/hundred/lune-thirty.html): Hundred. seal ab526ee3e92d10f739c2194146594a48b99a0e812ce42e2d577efffc92c5a685
+- [The Forty-Five Wedge](./spheres/hundred/wedge-forty-five.html): Hundred. seal abbefc888c16248d6609a75e35ec81665cf7fc7ee7c0530eae875a1871edfaf1
+- [The Sixty Chord](./spheres/hundred/chord-sixty.html): Hundred. seal 3ef9afa28868b28ae6d97d8d7d5d5404a5b8034004224d762435184bb67b7c30
+- [The Thirty Parallel](./spheres/hundred/ring-thirty.html): Hundred. seal eea327541cb35fc68d7e90619a22a9151679a7bee3903c2dd5966ef11ce055cb
+- [The Five Belts](./spheres/hundred/five-belts.html): Hundred. seal b13b78d83f98268804a99b7277cdefedabac6327e89d6828f8652b3c9644aac7
+- [The Two-Fifth Shift](./spheres/hundred/shift-two-fifth.html): Hundred. seal e32c1cbd02c4069c78c825db5d1441a3a8df78a810390796ec68590fcc6a3708
+- [The Half-Height Cup](./spheres/hundred/cap-volume-half.html): Hundred. seal 64e40b294158d0c1e5ca4f20d6ab275d28c68892854b9615de8b27c404a712fa
+- [The Two-Fifth Cap](./spheres/hundred/two-fifth-cap.html): Hundred. seal 88d89c44fafb1f732b3754bbd9374ac1fb44acaca51f50d6fdd443e135763cb7
+- [The Thirty-Six Lune](./spheres/hundred/lune-thirty-six.html): Hundred. seal 04c4520f24b3d8bcf404599ea051e1c06294dad90956f3d96ede3c1974dbc972
+- [The Sixty Wedge](./spheres/hundred/wedge-sixty.html): Hundred. seal 46bd2f06e78113c6acb660e60438049a43293174365426c0353c7784d92a0304
+- [The Seventy-Two Chord](./spheres/hundred/chord-seventy-two.html): Hundred. seal 72e7836f4c700069d98590f8c7ddff79d79af143110a0391a3c72377be4f5a23
+- [The Sixty Parallel](./spheres/hundred/ring-sixty.html): Hundred. seal 56172dc0b84a60eb0bc3b05e1016821355cb7d4f82fdc551402945155e581892
+- [The Eight Belts](./spheres/hundred/eight-belts.html): Hundred. seal d905605a4516ae833ac02417c9d19564522056d6c7c1eedd298dc72986c51b20
+- [The Three-Fifth Shift](./spheres/hundred/shift-three-fifth.html): Hundred. seal d0d832d8ef1740fd4e96f25866ac09d2adecddcf823640e0171ef4742f1fdeaf
+- [The Deep Cup](./spheres/hundred/cap-volume-three-half.html): Hundred. seal 287f2587ce03c5eab27ee02f98b0a7005de75a38a2c0647770035094ba387250
+- [The Three-Fifth Cap](./spheres/hundred/three-fifth-cap.html): Hundred. seal 3f66eba472b6456afa284aad4d0974d7c302cf2698a81e511210a87241c40d35
+- [The Forty-Five Lune](./spheres/hundred/lune-forty-five.html): Hundred. seal 4d28e45d5eb77d7388bc12c08cdc99253e72938ad33c2793f4ce274e90932920
+- [The One-Twenty Wedge](./spheres/hundred/wedge-one-twenty.html): Hundred. seal 2f56aa58a692d8247c8cd7ceeb963686d5c53fe066aaa9bc84fb558dfabaea42
+- [The One-Twenty Chord](./spheres/hundred/chord-one-twenty.html): Hundred. seal 9cf53fb4715a1817bf3f32b9740747bd04f8f1a2ce21510a690c83d82600e3c2
+- [The Seventy-Five Parallel](./spheres/hundred/ring-seventy-five.html): Hundred. seal 9b70fb1b6ea4b5607b6a95215d3b2c69ec93b4b7931dccd17ccb2a3a02ce2bf7
+- [The Cone Under the Cup](./spheres/hundred/cone-under-cap.html): Hundred. seal 4c943fea28242c612db136b647ae5ccda2cf81631e4a93057bf98b9a47f145d8
+- [The Four-Fifth Cap](./spheres/hundred/four-fifth-cap.html): Hundred. seal f0465d4210f2279c6156273858e9fcd042b66b42e93141439faaf9d5d22e933b
+- [The Seventy-Two Lune](./spheres/hundred/lune-seventy-two.html): Hundred. seal 029df7e2258cecdd54813974e4e51ad6d615c7ae105f22914d41724740800f1a
+- [The Antipode Chord](./spheres/hundred/chord-one-eighty.html): Hundred. seal 69de2f92a32d47b0516ada65b47d2ff1dd68591dd356b47aaf32d1f04d11c4fc
+- [The Dodeca Ball](./spheres/hundred/dodeca-ball.html): Hundred. seal d112a8ca8545be6d5fd2de74dc3d57772d39d254a900d39b8fb6911f4cb1a08d
+- [The Three-Quarter Cap](./spheres/hundred/three-quarter-cap.html): Hundred. seal 1c5e38b3dd482850a0714a98f30042643fbe60c4440f629da93b18c4aac24dc4
+- [The One-Twenty Lune](./spheres/hundred/lune-one-twenty.html): Hundred. seal 067927a0c460da4e5df753680c3b99486a208769d8eeeadcdac63cbeaa12edff
+- [The Cubocta Ball](./spheres/hundred/cubocta-ball.html): Hundred. seal 686ec1453b3ed1ab9eb223f5e3634c3fb5e6fb6ae09c7f6974c1bedb3a0ee408
+- [The Five-Quarter Cap](./spheres/hundred/five-quarter-cap.html): Hundred. seal dcdf984553a07eee8ccba4ac4380ee1f265fa4e5dcfc2470620f447fa3e6404f
+- [The Bucky Ball](./spheres/hundred/bucky-ball.html): Hundred. seal 6d0abcfd520aa9a1f880975ab16a38c5512ccdd9dd7b94b8aa2c1ec8fd0768e2
+- [The Three-Half Cap](./spheres/hundred/three-half-cap.html): Hundred. seal cd78563b9751704e8f316f7c12a10dd7f0682fcc95786a4bc7ea1bab931a2daf
+- [The Second Dome](./spheres/hundred/dome-two.html): Hundred. seal ac5097255121e51bb85f91830c054defee179757e771408a072c576e47d64364
+- [The Third Dome](./spheres/hundred/dome-three.html): Hundred. seal 9a0a4bbe42a251860c0cf75ff3e93e15564103e6c689d73618d9280c6a4438fc
+- [The Cube and the Octahedron](./spheres/hundred/cube-octa-dual.html): Hundred. seal cfec6cda097938a344933fffea547d86150d3f465050fb05b318056ea9cf395f
+- [The Tetra Defect](./spheres/hundred/tetra-defect.html): Hundred. seal 9d538419f1a03fdf287d3f237588d6d03dc0044cacbb81cd1b43b13986844034
+- [The Cube Defect](./spheres/hundred/cube-defect.html): Hundred. seal 3e328f89ae3cc1180bc495e20076797437e6384b1374d88a09013b1e65d69ef5
+- [The Octa Defect](./spheres/hundred/octa-defect.html): Hundred. seal 41fe566d7cc689eda36be904a2038f4df6ec1cb556381025e8e2c275eb3c878a
+- [The Icosa Defect](./spheres/hundred/icosa-defect.html): Hundred. seal dda6c63e8ccb37418a1968c5d19ff2bd726e2b6549ee4edc9edf4cd07f4a8e5a
+- [The Dodeca Defect](./spheres/hundred/dodeca-defect.html): Hundred. seal a4b659cff83068d29423c634105aa23c6c6e0f7cd207778a352697872cd2ac90
+- [The Tetra Dihedral](./spheres/hundred/tetra-dihedral.html): Hundred. seal 7a2fc89d9ec947054c1856d9d454e653a19619f16668b0b3940e0734d047895b
+- [The Octa Dihedral](./spheres/hundred/octa-dihedral.html): Hundred. seal 5bfb7e1653897fea1c33ff604d3748d8173b61c4853db9b4e8265e87253da346
+- [The Cube Dihedral](./spheres/hundred/cube-dihedral.html): Hundred. seal 52fc6b676804d45088f791d311704454472fa6e7651a90731131e2e9b985c37d
+- [The Icosa Dihedral](./spheres/hundred/icosa-dihedral.html): Hundred. seal 73a7ebec9bcd782d70b8ca0af1d91b0cf3389765c60eb509ec03ba588c96aa46
+- [The Dodeca Dihedral](./spheres/hundred/dodeca-dihedral.html): Hundred. seal b5af2dbcb5a353374eb4980de5eb167227822ba4f7c5e28d47351f27627bb96b
+- [The Hairy Poles](./spheres/hundred/hairy-poles.html): Hundred. seal 21b5eca38132b64ffda451098718f33ed50b475515606ea1c97484347df22dd8
+- [The Odd Height](./spheres/hundred/odd-height.html): Hundred. seal ddb31f2d6e1fecd793cfb098cdd4054d511395545420ff45dc52dfdb61f4aa82
+- [The Ortho Disk](./spheres/hundred/ortho-disk.html): Hundred. seal dc5fae8f976642d6fc485c8b987bc67311cb74748961d2e236fb36e464392505
+- [The Lambert Disk](./spheres/hundred/lambert-disk.html): Hundred. seal 9862521ebee995691d3976be1c1ef8fd547827742c7be3bc0efa0ce2f1e68644
+- [The Mercator Sixty](./spheres/hundred/mercator-sixty.html): Hundred. seal df7ca969bd7940a97c7614ab6e710c903aca36517ff1c0730a0e684138a3bbc5
+- [The Equirect Sheet](./spheres/hundred/equirect-sheet.html): Hundred. seal d02f1ae47d757d6774837362550683e84cfbe81bd2078dcffb8e612add22c057
+- [The Six Gores](./spheres/hundred/six-gores.html): Hundred. seal 3dd6b1227f9c3074a94aba5ea295bd6907ae71b7496cf48f8daf0646b92ce53a
+- [The Eight Gores](./spheres/hundred/eight-gores.html): Hundred. seal ab0e53b997d3db0e946919e0bd23007b997214404d38ad9fa4088e7af515fffa
+- [The Twelve Gores](./spheres/hundred/twelve-gores.html): Hundred. seal 986564793ed6574a00f428ba358dbe4cf74970f661c3de7ae7cfbbfd3a33c1e4
+- [The Twenty-Four Gores](./spheres/hundred/twenty-four-gores.html): Hundred. seal 9d1d0b585191fad5479069821477abc9eff1436f501dba0542e469ce4d4b8ea5
+- [The Apex Two](./spheres/hundred/apex-two.html): Hundred. seal dc627b2d5b9cb9a4b4e8e6bc9c8b4bef23ba42ca6fd4f7440d8843f33e7abacb
+- [The Apex Three](./spheres/hundred/apex-three.html): Hundred. seal a56df52746eb3d90217e1ddf64ced5c0c6b1f5934b7d465692ee3da70c535238
+- [The Mast Sixty](./spheres/hundred/mast-sixty.html): Hundred. seal 93f5377fb6b3cc4471048b5e30aa1d2048d3c261f8577c6b5da5d5ff30b942e8
+- [The Sixty Phase](./spheres/hundred/phase-sixty.html): Hundred. seal e1469244cae468b4c174ba830ee3e039e4408c9487b5845e2051d62fbcb758e5
+- [The Right Phase](./spheres/hundred/phase-ninety.html): Hundred. seal 4240ae38bd1910471ee2f54574dd1d4366a11e3a434100015b80e22858fa8522
+- [The One-Twenty Phase](./spheres/hundred/phase-one-twenty.html): Hundred. seal 2086220d6654316e2174f42b4ff7e8df52b8b5ccedc3431ace144315703147e1
+- [The Dark Phase](./spheres/hundred/phase-one-eighty.html): Hundred. seal a28a236c407bd0bed02a1587a1b5b0ee155d5a394c6abcee208325df67851f08
+- [The Soddy Twenty-Three](./spheres/hundred/soddy-twenty-three.html): Hundred. seal c5f2a59f5b96575d069025b2269eead2d6bd7879970bb5713e13da9337711a7e
+- [The Soddy Fifteen](./spheres/hundred/soddy-fifteen.html): Hundred. seal aea32527c48834abbfa85d0a6e746ca0afabade4543ae11f15e487afa2c1e0ca
+- [The Soddy Thirty-Three](./spheres/hundred/soddy-thirty-three.html): Hundred. seal 549cc8aa33c2afa30ba3cd81c15394826ba83ed6637e3899ccf7240ec9da9173
+- [The Soddy Thirty-Eight](./spheres/hundred/soddy-thirty-eight.html): Hundred. seal d808b42a6672ea0a919489d344f7594ae23beaf0a01e0de7a429958a9e08e4bd
+- [The Soddy Twenty-Four](./spheres/hundred/soddy-twenty-four.html): Hundred. seal ad4d1c998bf10de8762225f6657b671890f999fc408b969e16af99bedf9cfb7a
+- [The Midradius](./spheres/hundred/midradius.html): Hundred. seal f23987b6bad6901855d9223f71058a1b2dc47c98219211c454a098c496877613
+- [The Polar Triangle](./spheres/hundred/polar-triangle.html): Hundred. seal 3641f553aad39d1340295349fd3ca9305e0a3747720adef1df4734fa21b6b68e
+- [The Obtuse Triangle](./spheres/hundred/obtuse-triangle.html): Hundred. seal 42ef7816fc5ae10575fc1975252a924eb775b582af0897d085973bbb1770c3bb
+- [The Small Triangle](./spheres/hundred/small-triangle.html): Hundred. seal fdf29a44c058cff0903d602910c8a5a3add9d078ac168b93099a568968bf21c0
+- [The Right and the Third](./spheres/hundred/right-third.html): Hundred. seal c265e70c6c939b75d52af8c4f6ddc6e33344bb67865733ad645e669d54e84a4e
+- [The Napier Sixty](./spheres/hundred/napier-sixty.html): Hundred. seal 092d76e8f7e2e6832706bcbe26b98036304aa42e9386784b0f73eebf341292df
+- [The Napier Fifth](./spheres/hundred/napier-fifth.html): Hundred. seal bda63f2c0ea7d7e95d8df619d9724df9749c811f2252b8a3c2ccd4c2c37d5466
+- [The Season Thirty](./spheres/hundred/season-thirty.html): Hundred. seal c11d84123ebe2fe92a075586523661147fd408e1198c6cf0b3f0d10cae2ea3fa
+- [The Daylight Thirty](./spheres/hundred/daylight-thirty.html): Hundred. seal 3244d4c0bafae30c3221a6f7e2913f2721fa6df20ea2b764701c805628944a8d
+- [The Angular Thirty](./spheres/hundred/angular-thirty.html): Hundred. seal f8499cd5bef4287802d989361eb2a6c9f231f455aadfaf284ec7bdd142a7ea54
+- [The Solid Forty-Five](./spheres/hundred/solid-forty-five.html): Hundred. seal febeae1669bd942ccc970c04e0b4e63038bee88ed5af36e79442468c4b9ae209
+- [The Solid Thirty](./spheres/hundred/solid-thirty.html): Hundred. seal 1240259f8ec5797a2519b53f4d826bc46c89cd49464af9b6ec1f49f62bbd9279
+- [The Fibonacci Twenty](./spheres/hundred/fibonacci-twenty.html): Hundred. seal 7d98d85c0983b4791df2e96dd48c399607500ca810cfe2828cf79313276cb691
+- [The Quarter Turn](./spheres/hundred/quarter-turn.html): Hundred. seal e69ae785802716896f67119fc8fda384bf0a8c63fe1f7e5190b3d96a67e42166
+- [The Half Turn](./spheres/hundred/half-turn.html): Hundred. seal 1d313066793b29140f0be3c14248074536e8b7b83d916fb0e26ff303f38fcdff
+- [The Composed Turn](./spheres/hundred/composed-turn.html): Hundred. seal f7c0b202927075207b6c5274cc36e352613aac459266df8cd6fe40b2ec61ea30
+- [The Gimbal Lock](./spheres/hundred/gimbal-lock.html): Hundred. seal 5d7aafb8b695d5603dcbe13492f1018676dabfd02735f8adbe2c60473d60939a
+- [The Antipodal Sample](./spheres/hundred/antipodal-sample.html): Hundred. seal 9933237c28b84d0d5302e2ccbf852cab68042f369773eee956447bf31890d971
+- [The Tilted Cut](./spheres/hundred/tilted-cut.html): Hundred. seal f7eeab2eb3dafe1d780d5463cab558538da81199bedd481354ae19844e9fe58d
+- [The Interior Power](./spheres/hundred/interior-power.html): Hundred. seal b1b8cb407907c8dc5bb8b719141d8aacf572e67efad22d058e0fc667e32c0aa1
+- [The Three Inverses](./spheres/hundred/three-inverses.html): Hundred. seal 253bbec79cad7be8b0267ae773563e53e08bdc97b0a216058d76817543f91ede
+- [The External Touch](./spheres/hundred/external-touch.html): Hundred. seal 95a30e456cd3e00a695d62f48cc643216f4e193891cb41c2039b70ae93652d5c
+- [The Center of Similitude](./spheres/hundred/center-of-similitude.html): Hundred. seal fe2e80e40b848946d7c37b8f32afd7dcb774a1172baab7cff4da9ae48af1620f
+- [The Octa Square](./spheres/hundred/octa-square.html): Hundred. seal 2a90c28ea681a764ac0be1eebebb1cefc60aea376a42e32fe16d29eecffb5cb5
+- [The Long Edge](./spheres/hundred/long-edge.html): Hundred. seal ef1ada2df379f4aba8236d146d3feaeba71b7ac90d6462e3d3f1fc78f612d8bd
 ## Rounds
 Dave asked for at least twenty new spheres. Twenty rounds. Each picture is a different cut of the ball: a bead, a shell, a horizon, a wedge, plates, a sector, a kiss, a radical plane, cube corners, an octahedron, an icosahedron, a stereograph, a gnomon, a route, a rhumb, a Viviani curve, a Clairaut circle, curvature, an isoperimetric champion, and a steradian. A try is kept only when the gap shrinks. A second run must match. The hatbox page stays the open wall. The lune stays the right-angle area. The octant stays the spherical triangle. The parallel stays the forty-five degree latitude. No NES cartridge is on these pages. Each page still builds the cubit register. Thumbnail views skip the register. Seals were written once. The keeper seal was not rewritten. The 0root hallway was not published. Board key mayhem-round-kept.
 - [The Bead](./spheres/rounds/bead.html): Rounds. seal d518d88ca9cfbc27f8eb04d84c4351b272546de7b278a5c5070ad8d334d097d8

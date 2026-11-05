@@ -1,0 +1,1 @@
+{"slug":"midradius","seal":"f23987b6bad6901855d9223f71058a1b2dc47c98219211c454a098c496877613","rule":"sha256(name|slug|blurb)","write":"if-missing"}

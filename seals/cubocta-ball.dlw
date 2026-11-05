@@ -1,0 +1,1 @@
+{"slug":"cubocta-ball","seal":"686ec1453b3ed1ab9eb223f5e3634c3fb5e6fb6ae09c7f6974c1bedb3a0ee408","rule":"sha256(name|slug|blurb)","write":"if-missing"}

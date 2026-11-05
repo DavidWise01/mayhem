@@ -1,0 +1,1 @@
+{"slug":"octa-square","seal":"2a90c28ea681a764ac0be1eebebb1cefc60aea376a42e32fe16d29eecffb5cb5","rule":"sha256(name|slug|blurb)","write":"if-missing"}

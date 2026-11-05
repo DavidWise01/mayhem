@@ -1,0 +1,1 @@
+{"slug":"antipodal-sample","seal":"9933237c28b84d0d5302e2ccbf852cab68042f369773eee956447bf31890d971","rule":"sha256(name|slug|blurb)","write":"if-missing"}

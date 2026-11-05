@@ -1,0 +1,1 @@
+{"slug":"ring-sixty","seal":"56172dc0b84a60eb0bc3b05e1016821355cb7d4f82fdc551402945155e581892","rule":"sha256(name|slug|blurb)","write":"if-missing"}

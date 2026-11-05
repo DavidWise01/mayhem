@@ -1,0 +1,1 @@
+{"slug":"tetra-dihedral","seal":"7a2fc89d9ec947054c1856d9d454e653a19619f16668b0b3940e0734d047895b","rule":"sha256(name|slug|blurb)","write":"if-missing"}

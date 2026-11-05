@@ -1,0 +1,1 @@
+{"slug":"bucky-ball","seal":"6d0abcfd520aa9a1f880975ab16a38c5512ccdd9dd7b94b8aa2c1ec8fd0768e2","rule":"sha256(name|slug|blurb)","write":"if-missing"}

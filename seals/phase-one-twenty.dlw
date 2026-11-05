@@ -1,0 +1,1 @@
+{"slug":"phase-one-twenty","seal":"2086220d6654316e2174f42b4ff7e8df52b8b5ccedc3431ace144315703147e1","rule":"sha256(name|slug|blurb)","write":"if-missing"}

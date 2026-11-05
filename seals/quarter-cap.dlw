@@ -1,0 +1,1 @@
+{"slug":"quarter-cap","seal":"0439600dd2e7ba42313e8043378ac92c68977fbe1ba0149fa6acea8023a15a28","rule":"sha256(name|slug|blurb)","write":"if-missing"}

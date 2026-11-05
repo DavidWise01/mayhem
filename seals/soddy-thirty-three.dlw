@@ -1,0 +1,1 @@
+{"slug":"soddy-thirty-three","seal":"549cc8aa33c2afa30ba3cd81c15394826ba83ed6637e3899ccf7240ec9da9173","rule":"sha256(name|slug|blurb)","write":"if-missing"}

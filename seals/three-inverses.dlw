@@ -1,0 +1,1 @@
+{"slug":"three-inverses","seal":"253bbec79cad7be8b0267ae773563e53e08bdc97b0a216058d76817543f91ede","rule":"sha256(name|slug|blurb)","write":"if-missing"}

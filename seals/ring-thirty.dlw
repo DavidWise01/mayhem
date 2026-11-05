@@ -1,0 +1,1 @@
+{"slug":"ring-thirty","seal":"eea327541cb35fc68d7e90619a22a9151679a7bee3903c2dd5966ef11ce055cb","rule":"sha256(name|slug|blurb)","write":"if-missing"}

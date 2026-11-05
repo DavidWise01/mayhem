@@ -1,0 +1,1 @@
+{"slug":"chord-one-eighty","seal":"69de2f92a32d47b0516ada65b47d2ff1dd68591dd356b47aaf32d1f04d11c4fc","rule":"sha256(name|slug|blurb)","write":"if-missing"}

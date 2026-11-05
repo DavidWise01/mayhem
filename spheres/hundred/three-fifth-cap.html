@@ -1,0 +1,869 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The Three-Fifth Cap · Hundred · Mayhem</title>
+<style>
+body{margin:0}
+#art{position:fixed;inset:0;width:100vw;height:100vh;z-index:-1}
+.t{display:inline-block;padding:1px 8px;border-radius:8px;font-weight:700;font-size:13px;color:#111}
+.LIT{background:#3ee07a}.AMBER{background:#ffb020}.WALL{background:#ff5a5a;color:#fff}.MODEL{background:#b48cff}
+#v3{width:100%;overflow:hidden}
+</style>
+<style id="cubit-neon">
+:root{--neon-cyan:#00f0ff;--neon-pink:#ff2bd6;--neon-amber:#ffb300}
+html,body{background:#030308;color:#d7e3f5;font-family:ui-monospace,Menlo,monospace}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(600px 400px at 20% 10%, rgba(0,240,255,.06), transparent 70%),
+  radial-gradient(700px 500px at 80% 90%, rgba(255,43,214,.05), transparent 70%)}
+main,#wrap{position:relative;z-index:1;background:rgba(5,8,16,.78);color:#d7e3f5;
+  border:1px solid rgba(0,240,255,.18);border-radius:14px;
+  box-shadow:0 0 34px rgba(0,240,255,.07), inset 0 0 60px rgba(0,0,0,.45)}
+#wrap{max-width:1340px;margin:0 auto;padding:34px 18px 50px;text-align:center}
+h1{font-size:26px;font-weight:400;letter-spacing:.22em;text-transform:uppercase;color:#eaf6ff;
+  text-shadow:0 0 8px var(--neon-cyan), 0 0 28px rgba(0,240,255,.7);animation:cubitflicker 7s infinite}
+#sub{font-size:11px;letter-spacing:.3em;color:#5f7396;text-transform:uppercase;margin-bottom:26px}
+#v3{background:#05070d;border-radius:14px;box-shadow:0 0 0 3px var(--neon-pink), 0 0 28px rgba(255,43,214,.25)}
+a{color:var(--neon-cyan)}
+code{color:#ffb3ec}
+@keyframes cubitflicker{0%,100%{opacity:1}92%{opacity:1}93%{opacity:.6}94%{opacity:1}97%{opacity:.85}98%{opacity:1}}
+@media (prefers-reduced-motion:reduce){h1{animation:none}}
+body.thumb .story,body.thumb #controls,body.thumb .kicker{display:none}
+body.thumb #wrap{background:transparent;box-shadow:none;border:0;padding:0}
+body.thumb #v3{height:100vh;border-radius:0;box-shadow:none}
+</style>
+<style id="place">
+html,body{background:#f1f1c5;color:#393918;font-family:Palatino Linotype, Palatino, serif}
+body::before{background:linear-gradient(180deg, rgba(255,255,255,.38), rgba(0,0,0,.05))}
+#wrap{max-width:1080px;background:rgba(255,252,247,.88);color:#393918;border:0;border-radius:18px;box-shadow:0 18px 40px rgba(20,16,30,.16);text-align:left;padding:22px 22px 36px;overflow-wrap:anywhere}
+#wrap h1{font-family:Palatino Linotype, Palatino, serif;font-size:clamp(32px,8vw,54px);font-weight:600;letter-spacing:0;text-transform:none;color:#393918;text-shadow:none;animation:none;margin:0 0 8px}
+#wrap .kicker{letter-spacing:.16em;text-transform:uppercase;font-size:12px;color:#393918;font-family:ui-monospace,monospace}
+#v3{position:relative;height:62vh;min-height:420px;border-radius:18px;background:#f1f1c5;box-shadow:0 16px 36px rgba(20,16,30,.18)}
+#wrap #agentlog{position:absolute;z-index:2;left:14px;bottom:14px;margin:0;max-width:min(340px,80%);padding:8px 10px;border-radius:10px;background:rgba(255,252,247,.92);color:#393918;font-family:ui-monospace,Menlo,monospace;font-size:12px;line-height:1.4;pointer-events:none}
+body.thumb #agentlog{display:none}
+#wrap p{color:#393918}
+a{color:#393918}
+code{word-break:break-all}
+</style></head><body><canvas id="art"></canvas><main id="wrap">
+<p class="kicker">HUNDRED · under KEEPER ERIS</p>
+<h1>The Three-Fifth Cap</h1>
+<p id="sub">A cap whose height is 3/5.</p>
+<div id="v3"><p id="agentlog">INVERTER is measuring the ball.</p></div>
+<div class="story">
+<p><span class="t LIT">LIT</span> A spherical cap of height 3/5 on the unit ball has area 2 pi times that height, which is 6/5 pi. This page integrates the cap and throws if the integral drifts.</p>
+<p><span class="t AMBER">AMBER</span> The height is the claim. The name is a label. No text is quoted.</p>
+<p><span class="t WALL">WALL</span> This is one cap. The hemisphere page keeps height 1, and the steradian page keeps the cap of height 1/2.</p>
+<p><span class="t MODEL">MODEL</span> A glass ball with one colored cap whose height is the kept try.</p>
+<p>INVERTER keeps a try only when the gap shrinks. The page throws if the try does not arrive.</p>
+<p id="proof">Checking the sphere.</p>
+<p>Seal sha256(name|slug|blurb): <code id="seal">3f66eba472b6456afa284aad4d0974d7c302cf2698a81e511210a87241c40d35</code></p>
+<p><a href="../../index.html">Mayhem</a></p>
+</div>
+</main>
+<script>
+window.__hundredScene='pending';
+const SLUG="three-fifth-cap",NAME="The Three-Fifth Cap",BLURB="A spherical cap of height 3/5 on the unit ball has area 6/5 pi.",SEAL="3f66eba472b6456afa284aad4d0974d7c302cf2698a81e511210a87241c40d35";
+function measure(){
+      const h=3/5;
+      const area=2*Math.PI*h;
+      const alpha=Math.acos(1-h);
+      const N=900; let s=0;
+      for(let i=0;i<N;i++){ const t=alpha*(i+0.5)/N; s+=Math.sin(t)*(alpha/N)*2*Math.PI; }
+      if(Math.abs(s-area)>2e-4) throw Error("integral");
+      if(Math.abs(area/Math.PI - 6/5)>1e-12) throw Error("area");
+      const pack="3|5|6|5";
+      const law=19;
+      if(law!==19 || pack!=="3|5|6|5") throw Error("law");
+      return {pack:pack, law:law, text:"cap height 3/5, area 6/5 pi"};
+    }
+function climb(agent, start, target, step0){
+  let x=start, step=step0; const log=[]; const gap=v=>Math.abs(v-target); const g0=gap(x);
+  for(let i=0;i<24;i++){
+    const dir=(i%5===4)?-1:1;
+    const mag=dir<0?step:Math.min(step, gap(x)||step);
+    const prop=x+dir*mag;
+    const ok=gap(prop)<gap(x)-1e-15 && prop>0.05;
+    log.push({agent:agent, round:i+1, value:prop, note:agent+' '+prop.toFixed(3)+' gap '+gap(prop).toFixed(3), accepted:ok});
+    if(ok){ x=prop; step=Math.max(0.02, step*0.85); }
+  }
+  return {start:start, value:x, target:target, log:log, g0:g0, g:gap(x)};
+}
+function agentRun(){ return climb("INVERTER", 6/100, 3/5, 3/5); }
+function paintProof(html,failed){const el=document.getElementById('proof');if(!el)return;el.innerHTML=html}
+function paintLog(log){const el=document.getElementById('agentlog');if(!el||!log||!log.length)return;const acc=log.filter(e=>e.accepted),rej=log.filter(e=>!e.accepted);const tail=acc.slice(-3).concat(rej.slice(-3));el.innerHTML='<b>'+log[0].agent+'</b> '+acc.length+' kept · '+rej.length+' dropped<br>'+tail.map(e=>(e.accepted?'kept ':'drop ')+e.note).join('<br>')}
+function remember(pack){
+ const key="mayhem-hundred-kept";
+ let book={};
+ try{ book=JSON.parse(localStorage.getItem(key)||"{}")||{}; }catch(e){ book={}; }
+ const row=book[SLUG];
+ if(!row) book[SLUG]={pack:pack,act:"hundred",visits:1};
+ else { if(row.pack!==pack||row.act!=="hundred") throw Error("persistent drift"); row.visits+=1; }
+ localStorage.setItem(key, JSON.stringify(book));
+ const again=JSON.parse(localStorage.getItem(key))[SLUG];
+ if(!again||again.pack!==pack) throw Error("persistent drift");
+ return again.visits;
+}
+async function sha(t){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(t));return[...new Uint8Array(b)].map(v=>v.toString(16).padStart(2,'0')).join('')}
+function waitScene(){
+ return new Promise(function(resolve,reject){
+  const t0=performance.now();
+  (function poll(){
+   const s=window.__hundredScene;
+   if(s==='lit') resolve();
+   else if(s&&s!=='pending') reject(Error(s));
+   else if(performance.now()-t0>12000) reject(Error('scene'));
+   else requestAnimationFrame(poll);
+  })();
+ });
+}
+function check(){
+ const m=measure();
+ const A=agentRun(), B=agentRun();
+ paintLog(A.log);
+ const who=A.log[0].agent;
+ if(JSON.stringify(A.log)!==JSON.stringify(B.log)) throw Error('replay');
+ if(!(A.g<A.g0)) throw Error('no improvement');
+ if(!A.log.some(e=>e.agent===who&&e.accepted)) throw Error('agents');
+ if(!A.log.some(e=>e.agent===who&&!e.accepted)) throw Error('no attempt');
+ if(Math.abs(A.value-A.target)>1e-9) throw Error('unfixed');
+ if(m.pack!=="3|5|6|5") throw Error('pack');
+ if(m.law!==19) throw Error('law');
+ const visits=remember(m.pack);
+ return m.text+'; '+who+' gap '+A.g0.toFixed(3)+' → '+A.g.toFixed(3)+'; '+A.log.filter(e=>e.accepted).length+' kept; pack '+m.pack+'; law '+m.law+'; visit '+visits;
+}
+if(/[?&]thumb=1/.test(location.search))document.body.classList.add('thumb');
+(async()=>{try{const h=await sha(NAME+'|'+SLUG+'|'+BLURB);if(h!==SEAL)throw Error('seal mismatch');const r=check();await waitScene();paintProof('<span class="t LIT">LIT</span> self-check passed: seal recomputed; '+r,false)}catch(e){paintProof('<span class="t WALL">FAIL</span> '+e.message,true);throw e}})();
+</script>
+
+<script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}</script>
+<script type="module">
+import * as THREE from 'three';
+import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+
+function dot(a,b){return a[0]*b[0]+a[1]*b[1]+a[2]*b[2];}
+function cross(a,b){return [a[1]*b[2]-a[2]*b[1], a[2]*b[0]-a[0]*b[2], a[0]*b[1]-a[1]*b[0]];}
+function sub(a,b){return [a[0]-b[0],a[1]-b[1],a[2]-b[2]];}
+function add(a,b){return [a[0]+b[0],a[1]+b[1],a[2]+b[2]];}
+function mul(a,s){return [a[0]*s,a[1]*s,a[2]*s];}
+function norm(a){const L=Math.hypot(a[0],a[1],a[2]); return [a[0]/L,a[1]/L,a[2]/L];}
+function dist(a,b){return Math.hypot(a[0]-b[0],a[1]-b[1],a[2]-b[2]);}
+function facesOf(verts){
+  const n=verts.length; const adj=Array.from({length:n},()=>[]);
+  let minD=Infinity;
+  for(let i=0;i<n;i++) for(let j=i+1;j<n;j++) minD=Math.min(minD, dist(verts[i],verts[j]));
+  let edges=0;
+  for(let i=0;i<n;i++) for(let j=i+1;j<n;j++) if(Math.abs(dist(verts[i],verts[j])-minD)<1e-6){ adj[i].push(j); adj[j].push(i); edges++; }
+  const ord=verts.map((p,i)=>{
+    const up=norm(p); let t=Math.abs(up[1])<0.9?[0,1,0]:[1,0,0]; t=norm(cross(up,t)); const b=cross(up,t);
+    return adj[i].map(j=>{ const d=sub(verts[j],p); return {j:j, a:Math.atan2(dot(d,b), dot(d,t))}; }).sort((A,B)=>A.a-B.a).map(x=>x.j);
+  });
+  const seen=new Set(); const faces=[];
+  function next(i,j){ const ring=ord[j]; const k=ring.indexOf(i); return ring[(k-1+ring.length)%ring.length]; }
+  for(let i=0;i<n;i++) for(const j of adj[i]){
+    if(seen.has(i+","+j)) continue;
+    const cyc=[]; let a=i, b=j, g=0;
+    while(g++<80){
+      if(seen.has(a+","+b) && cyc.length) break;
+      seen.add(a+","+b); cyc.push(a);
+      const n2=next(a,b); a=b; b=n2;
+      if(a===i && b===j) break;
+    }
+    faces.push(cyc);
+  }
+  const tally={};
+  for(const f of faces) tally[f.length]=(tally[f.length]||0)+1;
+  return {faces:faces, edges:edges, minD:minD, tally:tally, n:n};
+}
+function outward(verts, face){
+  const p=face.map(i=>verts[i]); const nrm=[0,0,0];
+  for(let i=0;i<p.length;i++){
+    const a=p[i], b=p[(i+1)%p.length];
+    nrm[0]+=(a[1]-b[1])*(a[2]+b[2]);
+    nrm[1]+=(a[2]-b[2])*(a[0]+b[0]);
+    nrm[2]+=(a[0]-b[0])*(a[1]+b[1]);
+  }
+  const c=[0,0,0];
+  for(const q of p){ c[0]+=q[0]; c[1]+=q[1]; c[2]+=q[2]; }
+  if(dot(nrm,c)<0){ nrm[0]*=-1; nrm[1]*=-1; nrm[2]*=-1; }
+  return norm(nrm);
+}
+function dihedralCos(verts){
+  const F=facesOf(verts); const cs=[];
+  for(let i=0;i<F.faces.length;i++) for(let j=i+1;j<F.faces.length;j++){
+    const A=new Set(F.faces[i]); let share=0;
+    for(const x of F.faces[j]) if(A.has(x)) share++;
+    if(share===2) cs.push(-dot(outward(verts, F.faces[i]), outward(verts, F.faces[j])));
+  }
+  return {cos:cs, faces:F};
+}
+function phiG(){ return (1+Math.sqrt(5))/2; }
+function expandEven(triples){
+  const s=new Set(); const v=[];
+  for(const t of triples){
+    const perms=[[t[0],t[1],t[2]],[t[1],t[2],t[0]],[t[2],t[0],t[1]]];
+    for(const p of perms) for(const sx of [-1,1]) for(const sy of [-1,1]) for(const sz of [-1,1]){
+      const q=[sx*p[0], sy*p[1], sz*p[2]];
+      const k=q.map(n=>n.toFixed(8)).join(",");
+      if(!s.has(k)){ s.add(k); v.push(q); }
+    }
+  }
+  return v;
+}
+function dodecaVerts(){
+  const phi=phiG(); const v=[];
+  for(const x of [-1,1]) for(const y of [-1,1]) for(const z of [-1,1]) v.push([x,y,z]);
+  const p=1/phi;
+  const extra=[[0,p,phi],[0,-p,phi],[0,p,-phi],[0,-p,-phi],[phi,0,p],[phi,0,-p],[-phi,0,p],[-phi,0,-p],[p,phi,0],[-p,phi,0],[p,-phi,0],[-p,-phi,0]];
+  return v.concat(extra);
+}
+function cuboctaVerts(){
+  const s=new Set(); const v=[];
+  for(const x of [-1,1]) for(const y of [-1,1]){
+    for(const q of [[x,y,0],[x,0,y],[0,x,y]]){
+      const k=q.join(",");
+      if(!s.has(k)){ s.add(k); v.push(q); }
+    }
+  }
+  return v;
+}
+function icosaVerts(){
+  const phi=phiG(); const v=[];
+  for(const s1 of [-1,1]) for(const s2 of [-1,1]){
+    v.push([0, s1, s2*phi]);
+    v.push([s1, s2*phi, 0]);
+    v.push([s2*phi, 0, s1]);
+  }
+  return v;
+}
+function buckyVerts(){
+  const phi=phiG();
+  return expandEven([[0,1,3*phi],[1,2+phi,2*phi],[2,1+2*phi,phi]]);
+}
+function tetraVerts(){ return [[1,1,1],[1,-1,-1],[-1,1,-1],[-1,-1,1]]; }
+function octaVerts(){ return [[1,0,0],[-1,0,0],[0,1,0],[0,-1,0],[0,0,1],[0,0,-1]]; }
+function cubeVerts(){
+  const v=[];
+  for(const x of [-1,1]) for(const y of [-1,1]) for(const z of [-1,1]) v.push([x,y,z]);
+  return v;
+}
+function dome(freq){
+  const base=icosaVerts();
+  const F=facesOf(base);
+  if(F.faces.length!==20) throw Error("icosa faces");
+  const map=new Map(); const verts=[];
+  function vid(p){
+    const n=norm(p); const k=n.map(x=>x.toFixed(6)).join(",");
+    if(map.has(k)) return map.get(k);
+    map.set(k, verts.length); verts.push(n); return verts.length-1;
+  }
+  const tris=[];
+  for(const f of F.faces){
+    const A=base[f[0]], B=base[f[1]], C=base[f[2]];
+    const idAt=(i,j)=>{ const k=freq-i-j; return vid([(i*A[0]+j*B[0]+k*C[0])/freq, (i*A[1]+j*B[1]+k*C[1])/freq, (i*A[2]+j*B[2]+k*C[2])/freq]); };
+    for(let i=0;i<freq;i++) for(let j=0;j<freq-i;j++){
+      tris.push([idAt(i,j), idAt(i+1,j), idAt(i,j+1)]);
+      if(i+j<freq-1) tris.push([idAt(i+1,j), idAt(i+1,j+1), idAt(i,j+1)]);
+    }
+  }
+  const edge=new Set();
+  for(const t of tris){
+    for(const [a,b] of [[t[0],t[1]],[t[1],t[2]],[t[2],t[0]]]){
+      edge.add(a<b?a+","+b:b+","+a);
+    }
+  }
+  return {verts:verts, faces:tris.length, edges:edge.size};
+}
+function model(name){
+  if(name==="dodeca") return dodecaVerts();
+  if(name==="cubocta") return cuboctaVerts();
+  if(name==="bucky") return buckyVerts();
+  if(name==="icosa") return icosaVerts();
+  if(name==="tetra") return tetraVerts();
+  if(name==="octa") return octaVerts();
+  if(name==="cube") return cubeVerts();
+  throw Error("model");
+}
+
+const TARGET=3/5;
+const KIND="cap";
+const EXTRA={};
+const PAPER="#f1f1c5";
+const ACCENT="#7bca21";
+const INK="#393918";
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const box=document.getElementById('v3');
+const W=box.clientWidth||800, Hh=box.clientHeight||560;
+const R=new THREE.WebGLRenderer({antialias:true});
+R.setPixelRatio(Math.min(devicePixelRatio||1,2));
+R.setSize(W,Hh);
+R.outputColorSpace=THREE.SRGBColorSpace;
+R.toneMapping=THREE.ACESFilmicToneMapping;
+R.toneMappingExposure=1.08;
+box.appendChild(R.domElement);
+const S=new THREE.Scene();
+const C=new THREE.PerspectiveCamera(42,W/Math.max(Hh,1),.1,80);
+const O=new OrbitControls(C,R.domElement);
+O.enableDamping=true; O.autoRotate=false;
+const yaw=0.48;
+C.position.set(Math.sin(yaw)*6.5, 1.7, Math.cos(yaw)*6.5);
+C.lookAt(0,0.15,0); O.target.set(0,0.15,0);
+S.add(new THREE.AmbientLight(0xffffff,.58));
+S.add(new THREE.HemisphereLight(0xfff6ea,0x6888aa,.42));
+function rod(parent, ax, ay, az, bx, by, bz, rad, color){
+  const A=new THREE.Vector3(ax,ay,az), B=new THREE.Vector3(bx,by,bz);
+  const dir=B.clone().sub(A); const len=dir.length();
+  const mesh=new THREE.Mesh(new THREE.CylinderGeometry(rad,rad,Math.max(len,1e-4),8), new THREE.MeshStandardMaterial({color:color,roughness:.35,metalness:.35}));
+  mesh.position.copy(A).add(B).multiplyScalar(.5);
+  mesh.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0), dir.multiplyScalar(1/Math.max(len,1e-8)));
+  parent.add(mesh); return mesh;
+}
+function floor(g,color,y){
+  const sand=new THREE.Mesh(new THREE.CircleGeometry(22,64), new THREE.MeshStandardMaterial({color:color,roughness:1}));
+  sand.rotation.x=-Math.PI/2; sand.position.y=y; g.add(sand); sand.updateMatrixWorld();
+  if(new THREE.Vector3(0,0,1).applyQuaternion(sand.quaternion).y<0.9) throw Error('floor facing');
+}
+function cam(){
+  const view=new THREE.Vector3(); C.getWorldDirection(view);
+  if(view.z>=-0.5) throw Error('camera facing');
+}
+function glass(g, radius, opacity){
+  const m=new THREE.Mesh(new THREE.SphereGeometry(radius,48,32), new THREE.MeshStandardMaterial({color:PAPER, transparent:true, opacity:opacity, roughness:.2, metalness:.04, depthWrite:false}));
+  g.add(m); return m;
+}
+function bandMesh(g, y0, y1, color, scale){
+  const a=Math.acos(Math.max(-1, Math.min(1, y1)));
+  const b=Math.acos(Math.max(-1, Math.min(1, y0)));
+  const mesh=new THREE.Mesh(new THREE.SphereGeometry(scale, 56, 24, 0, Math.PI*2, a, Math.max(0.02, b-a)), new THREE.MeshStandardMaterial({color:color, roughness:.4, side:THREE.DoubleSide}));
+  g.add(mesh); return mesh;
+}
+function drawPoly(g, verts, scale){
+  const lines=[]; const dots=new THREE.Group(); g.add(dots);
+  const F=facesOf(verts);
+  const placed=verts.map(p=>norm(p).map(v=>v*scale));
+  for(let i=0;i<verts.length;i++) for(const j of F.faces ? [] : []) {}
+  const adj=Array.from({length:verts.length},()=>[]);
+  for(let i=0;i<verts.length;i++) for(let j=i+1;j<verts.length;j++){
+    if(Math.abs(dist(verts[i], verts[j])-F.minD)<1e-5){
+      lines.push(placed[i][0], placed[i][1], placed[i][2], placed[j][0], placed[j][1], placed[j][2]);
+    }
+  }
+  const geo=new THREE.BufferGeometry();
+  geo.setAttribute('position', new THREE.Float32BufferAttribute(lines, 3));
+  g.add(new THREE.LineSegments(geo, new THREE.LineBasicMaterial({color:ACCENT})));
+  for(const p of placed){
+    const d=new THREE.Mesh(new THREE.SphereGeometry(0.045,10,8), new THREE.MeshStandardMaterial({color:INK}));
+    d.position.set(p[0], p[1], p[2]); dots.add(d);
+  }
+  return {verts:placed.length, edges:lines.length/6};
+}
+const state={};
+function build(g){
+  if(KIND==='cap' || KIND==='cup'){
+    glass(g, 0.98, 0.3);
+    let cap=null;
+    return { apply(h){
+      const hh=Math.max(0.04, Math.min(1.98, h));
+      const alpha=Math.acos(Math.max(-1, Math.min(1, 1-hh)));
+      if(cap){ g.remove(cap); cap.geometry.dispose(); }
+      cap=new THREE.Mesh(new THREE.SphereGeometry(1.02, 64, 36, 0, Math.PI*2, 0, alpha), new THREE.MeshStandardMaterial({color:ACCENT, roughness:.32, side:THREE.DoubleSide}));
+      g.add(cap); state.alpha=alpha; state.value=hh;
+    }, finish(){ if(Math.abs(state.alpha-Math.acos(1-TARGET))>1e-5) throw Error('cap'); } };
+  }
+  if(KIND==='lune' || KIND==='wedge'){
+    glass(g, 0.98, 0.28);
+    let dig=null; const spokes=new THREE.Group(); g.add(spokes);
+    return { apply(theta){
+      const t=Math.max(0.05, theta);
+      if(dig){ g.remove(dig); dig.geometry.dispose(); }
+      dig=new THREE.Mesh(new THREE.SphereGeometry(1.02, 48, 32, 0, t, 0, Math.PI), new THREE.MeshStandardMaterial({color:ACCENT, roughness:.35, side:THREE.DoubleSide}));
+      g.add(dig);
+      while(spokes.children.length){ const c=spokes.children.pop(); c.geometry.dispose(); }
+      if(KIND==='wedge'){
+        for(let k=0;k<5;k++){
+          const th=Math.PI*(k+1)/6;
+          rod(spokes, 0,0,0, Math.sin(th)*Math.cos(t), Math.cos(th), Math.sin(th)*Math.sin(t), 0.012, INK);
+        }
+      }
+      state.value=t;
+    }, finish(){ if(Math.abs(state.value-TARGET)>1e-5) throw Error('lune'); if(!dig.geometry.parameters.phiLength) throw Error('digon'); } };
+  }
+  if(KIND==='chord' || KIND==='turn'){
+    glass(g, 0.98, 0.3);
+    const holder=new THREE.Group(); g.add(holder);
+    return { apply(theta){
+      while(holder.children.length){ const c=holder.children.pop(); if(c.geometry) c.geometry.dispose(); }
+      const a=new THREE.Vector3(1,0,0);
+      const b=new THREE.Vector3(Math.cos(theta), 0, Math.sin(theta));
+      rod(holder, a.x,a.y,a.z, b.x,b.y,b.z, 0.02, ACCENT);
+      const pts=[];
+      for(let i=0;i<=32;i++){ const t=theta*i/32; pts.push(new THREE.Vector3(Math.cos(t), 0, Math.sin(t))); }
+      holder.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts), new THREE.LineBasicMaterial({color:INK})));
+      state.chord=a.distanceTo(b); state.value=theta;
+    }, finish(){ if(Math.abs(state.value-TARGET)>1e-5) throw Error('arc'); if(Math.abs(state.chord-2*Math.sin(TARGET/2))>1e-4) throw Error('chord'); } };
+  }
+  if(KIND==='ring' || KIND==='season'){
+    glass(g, 0.98, 0.3);
+    let ring=null;
+    return { apply(lat){
+      if(ring){ g.remove(ring); ring.geometry.dispose(); }
+      const r=Math.max(0.05, Math.cos(lat));
+      ring=new THREE.Mesh(new THREE.TorusGeometry(r, 0.03, 12, 64), new THREE.MeshStandardMaterial({color:ACCENT, metalness:.4, roughness:.3}));
+      ring.rotation.x=Math.PI/2; ring.position.y=Math.sin(lat); g.add(ring);
+      state.r=r; state.value=lat;
+    }, finish(){ if(Math.abs(state.r-Math.cos(TARGET))>1e-4) throw Error('parallel'); } };
+  }
+  if(KIND==='belts'){
+    glass(g, 0.97, 0.22);
+    const holder=new THREE.Group(); g.add(holder);
+    return { apply(n0){
+      while(holder.children.length){ const c=holder.children.pop(); c.geometry.dispose(); }
+      const n=Math.max(1, Math.round(n0));
+      for(let i=0;i<n;i++){
+        const y0=-1+2*i/n, y1=-1+2*(i+1)/n;
+        bandMesh(holder, y0, y1, i%2?ACCENT:INK, 1.01);
+      }
+      state.n=n; state.value=n0;
+    }, finish(){ if(Math.abs(state.value-TARGET)>1e-6 || state.n!==TARGET) throw Error('belts'); } };
+  }
+  if(KIND==='shift'){
+    glass(g, 0.98, 0.28);
+    const holder=new THREE.Group(); g.add(holder);
+    return { apply(h){
+      while(holder.children.length){ const c=holder.children.pop(); c.geometry.dispose(); }
+      bandMesh(holder, 0.12, 0.12+h, ACCENT, 1.02);
+      bandMesh(holder, -0.82, -0.82+h, INK, 1.02);
+      state.value=h;
+    }, finish(){ if(Math.abs(state.value-TARGET)>1e-5) throw Error('shift'); } };
+  }
+  if(KIND==='vessel'){
+    glass(g, 1, 0.85);
+    let wall=null;
+    return { apply(h){
+      if(wall){ g.remove(wall); wall.geometry.dispose(); }
+      wall=new THREE.Mesh(new THREE.CylinderGeometry(1,1,Math.max(0.2,h),40,1,true), new THREE.MeshStandardMaterial({color:ACCENT, transparent:true, opacity:.35, side:THREE.DoubleSide, metalness:.45, roughness:.3}));
+      g.add(wall); state.h=wall.geometry.parameters.height;
+    }, finish(){ if(Math.abs(state.h-2)>1e-6) throw Error('cylinder'); } };
+  }
+  if(KIND==='under'){
+    glass(g, 0.98, 0.25);
+    const holder=new THREE.Group(); g.add(holder);
+    return { apply(h){
+      while(holder.children.length){ const c=holder.children.pop(); if(c.geometry) c.geometry.dispose(); }
+      const y=1-h; const r=Math.sqrt(Math.max(0, 1-y*y));
+      bandMesh(holder, y, 1, ACCENT, 1.02);
+      holder.add(new THREE.Mesh(new THREE.ConeGeometry(r, Math.abs(y)+1e-3, 28), new THREE.MeshStandardMaterial({color:INK, transparent:true, opacity:.45})));
+      holder.children[holder.children.length-1].position.y=y/2;
+      state.value=h;
+    }, finish(){ if(Math.abs(state.value-TARGET)>1e-5) throw Error('cone'); } };
+  }
+  if(KIND==='poly' || KIND==='dual' || KIND==='square' || KIND==='long' || KIND==='mid'){
+    glass(g, 0.99, 0.18);
+    const holder=new THREE.Group(); g.add(holder);
+    return { apply(scale){
+      while(holder.children.length){ const c=holder.children.pop(); if(c.geometry) c.geometry.dispose(); }
+      let info={verts:0, edges:0};
+      if(EXTRA.model==='dome'){
+        const D=dome(EXTRA.freq);
+        info=drawPoly(holder, D.verts, scale);
+      } else if(KIND==='dual'){
+        info=drawPoly(holder, model('cube').map(p=>norm(p)), scale);
+        const o=drawPoly(holder, model('octa').map(p=>norm(p).map(v=>v*0.72)), scale);
+        info.verts+=o.verts;
+      } else if(KIND==='square'){
+        info=drawPoly(holder, model('octa'), scale);
+        const q=[[1,0,0],[0,1,0],[-1,0,0],[0,-1,0]];
+        for(let i=0;i<4;i++){ const a=q[i], b=q[(i+1)%4]; rod(holder, a[0],a[1],a[2], b[0],b[1],b[2], 0.03, ACCENT); }
+      } else if(KIND==='long'){
+        const p=[[1,0,0],[0,1,0],[0,0,1],[0,0,-1]];
+        info={verts:4, edges:6};
+        for(const v of p){ const d=new THREE.Mesh(new THREE.SphereGeometry(0.06,10,8), new THREE.MeshStandardMaterial({color:INK})); d.position.set(v[0]*scale,v[1]*scale,v[2]*scale); holder.add(d); }
+        rod(holder, 0,0,scale, 0,0,-scale, 0.03, ACCENT);
+      } else if(KIND==='mid'){
+        info=drawPoly(holder, model('cube'), scale/Math.sqrt(3));
+        holder.add(new THREE.Mesh(new THREE.SphereGeometry(Math.SQRT2*scale/Math.sqrt(3)*0.98, 28, 18), new THREE.MeshStandardMaterial({color:ACCENT, transparent:true, opacity:.25})));
+      } else {
+        info=drawPoly(holder, model(EXTRA.model), scale);
+      }
+      state.scale=scale; state.verts=info.verts; state.edges=info.edges;
+    }, finish(){
+      if(Math.abs(state.scale-TARGET)>1e-5) throw Error('scale');
+      if(EXTRA.v && state.verts!==EXTRA.v) throw Error('verts '+state.verts);
+      if(EXTRA.e && state.edges!==EXTRA.e) throw Error('edges '+state.edges);
+    } };
+  }
+  if(KIND==='star' || KIND==='dihedral'){
+    glass(g, 0.98, 0.22);
+    const holder=new THREE.Group(); g.add(holder);
+    return { apply(v){
+      while(holder.children.length){ const c=holder.children.pop(); if(c.geometry) c.geometry.dispose(); }
+      const verts=model(EXTRA.model||'tetra');
+      const F=facesOf(verts);
+      const face=F.faces[0];
+      const pts=face.map(i=>norm(verts[i]));
+      for(let i=0;i<pts.length;i++){
+        const a=pts[i], b=pts[(i+1)%pts.length];
+        rod(holder, a[0],a[1],a[2], b[0],b[1],b[2], 0.02, ACCENT);
+      }
+      if(KIND==='dihedral'){
+        const face2=F.faces.find(f=>f!==face && f.filter(i=>face.includes(i)).length===2) || F.faces[1];
+        const q=face2.map(i=>norm(verts[i]));
+        for(let i=0;i<q.length;i++) rod(holder, q[i][0],q[i][1],q[i][2], q[(i+1)%q.length][0], q[(i+1)%q.length][1], q[(i+1)%q.length][2], 0.02, INK);
+      }
+      state.value=v; state.n=face.length;
+    }, finish(){ if(state.n<3) throw Error('face'); if(Math.abs(state.value-TARGET)>1e-4 && KIND==='star') throw Error('star'); } };
+  }
+  if(KIND==='arrows'){
+    glass(g, 0.98, 0.3);
+    const holder=new THREE.Group(); g.add(holder);
+    return { apply(){
+      for(let i=0;i<12;i++){
+        const a=2*Math.PI*i/12; const p=[Math.cos(a), 0.35, Math.sin(a)];
+        const L=Math.hypot(...p); const u=p.map(v=>v/L);
+        const f=[-u[2], 0, u[0]]; const fl=Math.hypot(...f)||1;
+        rod(holder, u[0],u[1],u[2], u[0]+f[0]/fl*0.35, u[1]+f[1]/fl*0.35, u[2]+f[2]/fl*0.35, 0.012, ACCENT);
+      }
+      for(const y of [1,-1]){ const d=new THREE.Mesh(new THREE.SphereGeometry(0.07,12,8), new THREE.MeshStandardMaterial({color:INK})); d.position.y=y; holder.add(d); }
+      state.value=1;
+    }, finish(){ if(state.value!==1) throw Error('field'); } };
+  }
+  if(KIND==='odd'){
+    const north=new THREE.Mesh(new THREE.SphereGeometry(1, 40, 16, 0, Math.PI*2, 0, Math.PI/2), new THREE.MeshStandardMaterial({color:ACCENT, roughness:.4}));
+    const south=new THREE.Mesh(new THREE.SphereGeometry(1, 40, 16, 0, Math.PI*2, Math.PI/2, Math.PI/2), new THREE.MeshStandardMaterial({color:INK, roughness:.5}));
+    g.add(north); g.add(south);
+    const eq=new THREE.Mesh(new THREE.TorusGeometry(1.01, 0.02, 8, 48), new THREE.MeshStandardMaterial({color:0xffffff}));
+    eq.rotation.x=Math.PI/2; g.add(eq);
+    return { apply(){ state.value=1; }, finish(){ if(north.geometry.parameters.thetaLength!==Math.PI/2) throw Error('odd'); } };
+  }
+  if(KIND==='disk'){
+    glass(g, 1, 0.55);
+    const rad=Math.sqrt(EXTRA.radius2);
+    const disk=new THREE.Mesh(new THREE.CircleGeometry(rad, 48), new THREE.MeshStandardMaterial({color:ACCENT, side:THREE.DoubleSide}));
+    disk.position.x=2.4; disk.rotation.y=-0.5; g.add(disk);
+    return { apply(){ state.r=rad; }, finish(){ if(Math.abs(state.r*state.r-EXTRA.radius2)>1e-6) throw Error('disk'); } };
+  }
+  if(KIND==='sheet'){
+    glass(g, 1, 0.45);
+    const w=EXTRA.equirect?2.2:0.4, h=EXTRA.equirect?1.1:1.6;
+    const sheet=new THREE.Mesh(new THREE.PlaneGeometry(w,h), new THREE.MeshStandardMaterial({color:ACCENT, side:THREE.DoubleSide}));
+    sheet.position.set(2.5, 0.4, 0); g.add(sheet);
+    return { apply(v){ state.value=v; }, finish(){ if(Math.abs(state.value-TARGET)>1e-4) throw Error('sheet'); } };
+  }
+  if(KIND==='gore'){
+    glass(g, 0.98, 0.25);
+    const holder=new THREE.Group(); g.add(holder);
+    return { apply(n0){
+      while(holder.children.length){ const c=holder.children.pop(); c.geometry.dispose(); }
+      const n=Math.max(1, Math.round(n0));
+      for(let i=0;i<n;i++){
+        const mesh=new THREE.Mesh(new THREE.SphereGeometry(1.01, 12, 24, 2*Math.PI*i/n, 2*Math.PI/n, 0, Math.PI), new THREE.MeshStandardMaterial({color:i===0?ACCENT:INK, transparent:i!==0, opacity:i===0?1:.28, side:THREE.DoubleSide}));
+        holder.add(mesh);
+      }
+      state.n=n;
+    }, finish(){ if(state.n!==TARGET) throw Error('gore'); } };
+  }
+  if(KIND==='cone'){
+    glass(g, 1, 0.4);
+    let cone=null;
+    return { apply(H){
+      const h=Math.max(1.05, H);
+      const y=1/h, r=Math.sqrt(Math.max(0.01, 1-y*y));
+      if(cone){ g.remove(cone); cone.geometry.dispose(); }
+      cone=new THREE.Mesh(new THREE.ConeGeometry(r, h-y, 32, 1, true), new THREE.MeshStandardMaterial({color:ACCENT, transparent:true, opacity:.4, side:THREE.DoubleSide}));
+      cone.position.y=(h+y)/2; g.add(cone); state.h=h;
+    }, finish(){ if(Math.abs(state.h-TARGET)>1e-4) throw Error('apex'); } };
+  }
+  if(KIND==='mast'){
+    glass(g, 1, 0.45);
+    return { apply(h){
+      rod(g, 0,1,0, 0,1+h,0, 0.03, INK);
+      const oe=1+h; const ang=Math.acos(1/oe);
+      const T=[Math.sin(ang), Math.cos(ang), 0];
+      rod(g, 0,oe,0, T[0],T[1],T[2], 0.015, ACCENT);
+      state.h=h;
+    }, finish(){ if(Math.abs(state.h-1)>1e-5) throw Error('mast'); } };
+  }
+  if(KIND==='phase'){
+    glass(g, 0.98, 0.35);
+    const holder=new THREE.Group(); g.add(holder);
+    const disk=new THREE.Mesh(new THREE.CircleGeometry(0.7, 40), new THREE.MeshStandardMaterial({color:ACCENT, side:THREE.DoubleSide}));
+    disk.position.set(2.3, 0.3, 0); g.add(disk);
+    return { apply(phi){
+      while(holder.children.length){ const c=holder.children.pop(); c.geometry.dispose(); }
+      const dark=new THREE.Mesh(new THREE.SphereGeometry(1.01, 32, 20, 0, Math.PI, 0, Math.PI), new THREE.MeshStandardMaterial({color:INK, transparent:true, opacity:.55, side:THREE.DoubleSide}));
+      dark.rotation.y=phi; holder.add(dark); state.value=phi;
+    }, finish(){ if(Math.abs(state.value-TARGET)>1e-4) throw Error('phase'); } };
+  }
+  if(KIND==='gimbal'){
+    glass(g, 0.7, 0.3);
+    const a=new THREE.Mesh(new THREE.TorusGeometry(1.5, 0.03, 8, 40), new THREE.MeshStandardMaterial({color:INK}));
+    const b=new THREE.Mesh(new THREE.TorusGeometry(1.25, 0.03, 8, 40), new THREE.MeshStandardMaterial({color:ACCENT}));
+    const c=new THREE.Mesh(new THREE.TorusGeometry(1.0, 0.03, 8, 40), new THREE.MeshStandardMaterial({color:0xffffff}));
+    a.rotation.y=0.4; c.rotation.x=0.3; g.add(a); g.add(b); g.add(c);
+    return { apply(pitch){ b.rotation.x=pitch; state.pitch=pitch; }, finish(){ if(Math.abs(state.pitch-Math.PI/2)>1e-4) throw Error('gimbal'); } };
+  }
+  if(KIND==='soddy'){
+    const holder=new THREE.Group(); g.add(holder);
+    return { apply(){
+      const r1=1/EXTRA.a, r2=1/EXTRA.b, r3=1/EXTRA.c, r4=1/EXTRA.k4;
+      const d12=r1+r2;
+      const x3=(d12*d12+(r1+r3)*(r1+r3)-(r2+r3)*(r2+r3))/(2*d12);
+      const y3=Math.sqrt(Math.max(0,(r1+r3)*(r1+r3)-x3*x3));
+      const x4=(d12*d12+(r1+r4)*(r1+r4)-(r2+r4)*(r2+r4))/(2*d12);
+      const y4=Math.sqrt(Math.max(0,(r1+r4)*(r1+r4)-x4*x4));
+      const balls=[[0,r1,0,r1],[d12,r2,0,r2],[x3,r3,y3,r3],[x4,r4,y4,r4]];
+      const cols=[ACCENT, INK, PAPER, 0xf6d36b];
+      balls.forEach((b,i)=>{
+        const m=new THREE.Mesh(new THREE.SphereGeometry(b[3]*0.35, 24, 16), new THREE.MeshStandardMaterial({color:cols[i], roughness:.35}));
+        m.position.set((b[0]-d12/2)*0.35, b[3]*0.35, (b[2])*0.35); holder.add(m);
+      });
+      state.value=1;
+    }, finish(){ if(holder.children.length!==4) throw Error('soddy'); } };
+  }
+  if(KIND==='fib' || KIND==='marks' || KIND==='inverse' || KIND==='power' || KIND==='touch' || KIND==='simil' || KIND==='angle' || KIND==='solid' || KIND==='day' || KIND==='tilt'){
+    glass(g, 1, 0.4);
+    const holder=new THREE.Group(); g.add(holder);
+    return { apply(v){
+      if(KIND==='fib'){
+        const N=20, ga=Math.PI*(3-Math.sqrt(5));
+        for(let i=0;i<N;i++){
+          const z=1-(2*i+1)/N, r=Math.sqrt(1-z*z);
+          const d=new THREE.Mesh(new THREE.SphereGeometry(0.045,8,6), new THREE.MeshStandardMaterial({color:ACCENT}));
+          d.position.set(r*Math.cos(i*ga), z, r*Math.sin(i*ga)); holder.add(d);
+        }
+      } else if(KIND==='tilt'){
+        const ring=(axis, radius, y)=>{ const m=new THREE.Mesh(new THREE.TorusGeometry(radius, 0.025, 8, 48), new THREE.MeshStandardMaterial({color:ACCENT})); m.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0), new THREE.Vector3(...axis).normalize()); holder.add(m); };
+        ring([1,1,1], 1, 0);
+        ring([1,0,0], Math.sqrt(3)/2, 0);
+      } else if(KIND==='touch'){
+        const a=new THREE.Mesh(new THREE.SphereGeometry(0.6,24,16), new THREE.MeshStandardMaterial({color:ACCENT}));
+        const b=new THREE.Mesh(new THREE.SphereGeometry(1.2,24,16), new THREE.MeshStandardMaterial({color:INK}));
+        a.position.x=-0.6; b.position.x=1.2; holder.add(a); holder.add(b);
+      } else if(KIND==='power'){
+        rod(holder, 0.5, -Math.sqrt(3)/2, 0, 0.5, Math.sqrt(3)/2, 0, 0.02, ACCENT);
+        const d=new THREE.Mesh(new THREE.SphereGeometry(0.06,10,8), new THREE.MeshStandardMaterial({color:INK}));
+        d.position.set(0.5,0,0); holder.add(d);
+      } else {
+        for(let i=0;i<8;i++){
+          const a=i*Math.PI/4; const p=norm([Math.cos(a), 0.2*Math.sin(i), Math.sin(a)]);
+          const d=new THREE.Mesh(new THREE.SphereGeometry(0.05,8,6), new THREE.MeshStandardMaterial({color:i%2?ACCENT:INK}));
+          d.position.set(p[0],p[1],p[2]); holder.add(d);
+        }
+      }
+      state.value=v;
+    }, finish(){ if(holder.children.length<1) throw Error('marks'); } };
+  }
+  if(KIND==='tri'){
+    glass(g, 0.98, 0.26);
+    const holder=new THREE.Group(); g.add(holder);
+    function sep(u, v){ return Math.acos(Math.max(-1, Math.min(1, u[0]*v[0]+u[1]*v[1]+u[2]*v[2]))); }
+    function arc(a, b, color, rad){
+      const ang=sep(a, b);
+      const s=Math.sin(ang);
+      if(!(s>1e-6)) throw Error('arc');
+      const steps=24;
+      for(let i=0;i<steps;i++){
+        const t0=ang*i/steps, t1=ang*(i+1)/steps;
+        const mix=(t)=>{
+          const w0=Math.sin(ang-t)/s, w1=Math.sin(t)/s;
+          return [a[0]*w0+b[0]*w1, a[1]*w0+b[1]*w1, a[2]*w0+b[2]*w1];
+        };
+        const u=mix(t0), v=mix(t1);
+        rod(holder, u[0],u[1],u[2], v[0],v[1],v[2], rad, color);
+      }
+      return ang;
+    }
+    function place(sides){
+      const A=[0,1,0];
+      const c=sides[2], b=sides[1], a=sides[0];
+      const B=[Math.sin(c), Math.cos(c), 0];
+      const cosPhi=(Math.cos(a)-Math.cos(b)*Math.cos(c))/(Math.sin(b)*Math.sin(c));
+      const phi=Math.acos(Math.max(-1, Math.min(1, cosPhi)));
+      const C=[Math.sin(b)*Math.cos(phi), Math.cos(b), Math.sin(b)*Math.sin(phi)];
+      return [A, B, C];
+    }
+    function pole(u, v, inside){
+      let c=cross(u, v);
+      const L=Math.hypot(c[0], c[1], c[2]);
+      if(!(L>1e-8)) throw Error('pole');
+      c=[c[0]/L, c[1]/L, c[2]/L];
+      if(c[0]*inside[0]+c[1]*inside[1]+c[2]*inside[2]<0) c=[-c[0], -c[1], -c[2]];
+      return c;
+    }
+    function corner(a, b, c){
+      function ang(opp, x, y){
+        return Math.acos(Math.max(-1, Math.min(1, (Math.cos(opp)-Math.cos(x)*Math.cos(y))/(Math.sin(x)*Math.sin(y)))));
+      }
+      return ang(a, b, c)+ang(b, a, c)+ang(c, a, b)-Math.PI;
+    }
+    return { apply(){
+      const sides=EXTRA.sides;
+      const pts=place(sides);
+      const cols=[ACCENT, INK, 0xf6d36b];
+      const drawn=[arc(pts[0], pts[1], cols[2], 0.02), arc(pts[1], pts[2], cols[0], 0.02), arc(pts[2], pts[0], cols[1], 0.02)];
+      pts.forEach((p,i)=>{
+        const d=new THREE.Mesh(new THREE.SphereGeometry(i===2&&EXTRA.right?0.07:0.045, 10, 8), new THREE.MeshStandardMaterial({color: cols[i]}));
+        d.position.set(p[0]*1.02, p[1]*1.02, p[2]*1.02); holder.add(d);
+      });
+      if(EXTRA.corner){
+        rod(holder, pts[2][0], pts[2][1], pts[2][2], pts[0][0]*0.82, pts[0][1]*0.82, pts[0][2]*0.82, 0.012, 0xf6d36b);
+      }
+      if(EXTRA.polar){
+        const P=[pole(pts[1], pts[2], pts[0]), pole(pts[2], pts[0], pts[1]), pole(pts[0], pts[1], pts[2])];
+        arc(P[0], P[1], PAPER, 0.012); arc(P[1], P[2], PAPER, 0.012); arc(P[2], P[0], PAPER, 0.012);
+        state.polar=[sep(P[1], P[2]), sep(P[2], P[0]), sep(P[0], P[1])];
+      }
+      state.drawn=drawn;
+      state.sides=sides;
+    }, finish(){
+      if(!state.drawn || state.drawn.length!==3) throw Error('tri');
+      const got=[state.drawn[1], state.drawn[2], state.drawn[0]];
+      for(let i=0;i<3;i++) if(Math.abs(got[i]-state.sides[i])>1e-3) throw Error('side');
+      if(EXTRA.check==='excess'){
+        if(Math.abs(corner(state.sides[0], state.sides[1], state.sides[2])-TARGET)>1e-3) throw Error('excess');
+      } else if(!state.sides.some((s)=>Math.abs(s-TARGET)<1e-3)) throw Error('target side');
+      if(EXTRA.polar){
+        const angC=Math.acos(Math.max(-1, Math.min(1, (Math.cos(state.sides[2])-Math.cos(state.sides[0])*Math.cos(state.sides[1]))/(Math.sin(state.sides[0])*Math.sin(state.sides[1])))));
+        if(!state.polar.some((s)=>Math.abs(s-(Math.PI-angC))<1e-3)) throw Error('polar');
+      }
+    } };
+  }
+  throw Error('kind '+KIND);
+}
+function hero(){
+  const g=new THREE.Group(); S.add(g);
+  S.background=new THREE.Color(PAPER);
+  S.fog=new THREE.FogExp2(new THREE.Color(PAPER), 0.02);
+  floor(g, new THREE.Color(PAPER).offsetHSL(0,-0.1,-0.12).getHex(), -1.35);
+  const sun=new THREE.DirectionalLight(0xfff8ee, 2.05); sun.position.set(5,9,4); g.add(sun);
+  const run=agentRun();
+  const play=!reduce && !/[?&]thumb=1/.test(location.search);
+  const api=build(g);
+  api.apply(play?run.start:run.value);
+  cam();
+  g.userData={run:run, play:play, step:0, done:!play, apply:api.apply, finish:api.finish};
+  return g;
+}
+let HERO=null;
+function settle(){
+  try{ HERO.userData.finish(); window.__hundredScene='lit'; }
+  catch(e){ window.__hundredScene=e.message||'scene'; paintProof('<span class="t WALL">FAIL</span> '+e.message,true); throw e; }
+}
+try{
+  HERO=hero();
+  if(!HERO.userData.play) settle();
+}catch(e){
+  if(window.__hundredScene==='pending') window.__hundredScene=e.message||'scene';
+  paintProof('<span class="t WALL">FAIL</span> '+e.message,true);
+  throw e;
+}
+function tick(){
+  if(HERO&&HERO.userData.play&&!HERO.userData.done){
+    const run=HERO.userData.run, e=run.log[HERO.userData.step++];
+    if(e&&e.accepted) HERO.userData.apply(e.value);
+    if(HERO.userData.step>=run.log.length){
+      HERO.userData.apply(run.value);
+      HERO.userData.done=true;
+      settle();
+    }
+  }
+  if(HERO&&HERO.userData.done&&!reduce) HERO.rotation.y+=0.004;
+  O.update(); R.render(S,C); requestAnimationFrame(tick);
+}
+tick();
+addEventListener('resize',()=>{const w=box.clientWidth,h=box.clientHeight;C.aspect=w/Math.max(h,1);C.updateProjectionMatrix();R.setSize(w,h)});
+</script>
+
+<script id="cubit-register-boot">
+(function(){
+  if(/[?&]thumb=1/.test(location.search)) return;
+  if(document.getElementById('cubit-register')) return;
+  const ORDER=['geometric','constructive','agentic','generative'];
+  const ROLES=['ARTIST','CRITIC','BUILDER','WEAVER','FOLLOWER','KEEPER'];
+  const KEY='mayhem-cubit-register';
+  function slug(){
+    for(const sc of document.scripts){
+      const m=/const SLUG="([^"]+)"/.exec(sc.textContent||'');
+      if(m) return m[1];
+    }
+    return (location.pathname.replace(/^\//,'').replace(/\.html$/i,''))||'index';
+  }
+  function geometric(){
+    let canvases=0, svgs=0, w=0, h=0;
+    document.querySelectorAll('canvas').forEach(el=>{ canvases++; w=Math.max(w, el.clientWidth|0); h=Math.max(h, el.clientHeight|0); });
+    document.querySelectorAll('svg').forEach(el=>{ svgs++; w=Math.max(w, el.clientWidth|0); h=Math.max(h, el.clientHeight|0); });
+    const v3=document.getElementById('v3');
+    if(v3){ w=Math.max(w, v3.clientWidth|0); h=Math.max(h, v3.clientHeight|0); }
+    if(!w){ w=document.documentElement.clientWidth|0; h=document.documentElement.clientHeight|0; }
+    return {name:'geometric', text:canvases+'c+'+svgs+'s·'+w+'x'+h, canvases, svgs, w, h};
+  }
+  function constructive(host){
+    const nodes=host.querySelectorAll('*').length, buttons=host.querySelectorAll('button').length;
+    return {name:'constructive', text:nodes+'n·'+buttons+'b', nodes, buttons};
+  }
+  function agentic(host, c){
+    const text=host.innerText||'';
+    const found=ROLES.filter(r=>text.indexOf(r)!==-1);
+    const agents=found.length?found:['REGISTER'];
+    return {name:'agentic', text:agents.join('+'), agents, accepted:c.nodes>0};
+  }
+  function generative(g,c,a){
+    const s=g.text+'|'+c.text+'|'+a.text;
+    let x=2166136261;
+    for(let i=0;i<s.length;i++) x=Math.imul(x^s.charCodeAt(i), 16777619);
+    const code=(x>>>0).toString(16).padStart(8,'0');
+    return {name:'generative', text:code, code};
+  }
+  function build(host){
+    const register=[];
+    const g=geometric(); register.push(g);
+    const c=constructive(host); register.push(c);
+    const a=agentic(host,c); register.push(a);
+    register.push(generative(g,c,a));
+    return register;
+  }
+  function assertReg(register){
+    if(register.length!==4) throw Error('register length '+register.length);
+    if(register.map(x=>x.name).join(',')!==ORDER.join(',')) throw Error('cubit order');
+    if(register.some(x=>!x.text)) throw Error('empty cubit');
+    if(!register[2].accepted) throw Error('agent refused the register');
+    const again=generative(register[0], register[1], register[2]);
+    if(again.code!==register[3].code) throw Error('register drift');
+    return register.map(x=>x.text).join(' | ');
+  }
+  function remember(id, word){
+    let book={};
+    try{ book=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){ book={}; }
+    book[id]={word};
+    try{ localStorage.setItem(KEY, JSON.stringify(book)); }catch(e){}
+    return Object.keys(book).length;
+  }
+  function mount(register, err, rows){
+    let el=document.getElementById('cubit-register');
+    if(!el){
+      const style=document.createElement('style');
+      style.textContent='#cubit-register{margin:18px 0;padding:14px 12px 12px;border:1px solid rgba(0,240,255,.28);border-radius:14px;background:rgba(5,8,16,.78);box-shadow:0 0 28px rgba(0,240,255,.08);color:#d7e3f5;text-align:left;font-family:ui-monospace,Menlo,monospace}#cubit-register .cr-formula{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#eaf6ff;text-shadow:0 0 8px #00f0ff;margin:0 0 10px}#cubit-register .cr-row{display:flex;gap:8px;flex-wrap:wrap}#cubit-register .cr-cubit{flex:1 1 140px;border:1px solid rgba(0,240,255,.25);border-radius:10px;padding:8px;background:rgba(0,0,0,.35)}#cubit-register .cr-cubit b{display:block;font-weight:400;font-size:10px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:4px}#cubit-register .cr-cubit[data-cubit=geometric] b{color:#00f0ff}#cubit-register .cr-cubit[data-cubit=constructive] b{color:#ffb300}#cubit-register .cr-cubit[data-cubit=agentic] b{color:#ff2bd6}#cubit-register .cr-cubit[data-cubit=generative] b{color:#eaf6ff}#cubit-register .cr-cubit i{font-style:normal;font-size:13px;color:#eaf6ff}#cubit-register .cr-word{margin-top:10px;font-size:12px;color:#ffb3ec;word-break:break-all}#cubit-register .cr-status{margin-top:8px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#8fa3c7}body.thumb #cubit-register{display:none}';
+      document.head.appendChild(style);
+      el=document.createElement('section');
+      el.id='cubit-register';
+      el.setAttribute('aria-label','cubit register');
+      const host=document.getElementById('wrap')||document.querySelector('main')||document.body;
+      const h=host.querySelector('h1');
+      if(h) h.insertAdjacentElement('afterend', el);
+      else host.insertBefore(el, host.firstChild);
+    }
+    const cells=(register||ORDER.map(name=>({name,text:'—'}))).map(x=>'<div class="cr-cubit" data-cubit="'+x.name+'"><b>'+x.name+'</b><i>'+x.text+'</i></div>').join('');
+    const word=err?'':register.map(x=>x.text).join(' | ');
+    el.innerHTML='<div class="cr-formula">{{ geometric, constructive, agentic, generative }}</div><div class="cr-row">'+cells+'</div><div class="cr-word">'+(err?'':'REGISTER '+word)+'</div><div class="cr-status">'+(err?'FAIL '+err.message:'LIT four cubits wrote the register · AMBER this browser holds '+rows+' rows')+'</div>';
+  }
+  function run(){
+    const host=document.getElementById('wrap')||document.querySelector('main')||document.body;
+    try{
+      const register=build(host);
+      const word=assertReg(register);
+      const rows=remember(slug(), word);
+      mount(register, null, rows);
+    }catch(e){
+      mount(null, e, 0);
+      throw e;
+    }
+  }
+  requestAnimationFrame(run);
+})();
+</script>
+</body></html>

@@ -1,0 +1,1 @@
+{"slug":"five-quarter-cap","seal":"dcdf984553a07eee8ccba4ac4380ee1f265fa4e5dcfc2470620f447fa3e6404f","rule":"sha256(name|slug|blurb)","write":"if-missing"}

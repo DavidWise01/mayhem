@@ -1,0 +1,1 @@
+{"slug":"cube-dihedral","seal":"52fc6b676804d45088f791d311704454472fa6e7651a90731131e2e9b985c37d","rule":"sha256(name|slug|blurb)","write":"if-missing"}

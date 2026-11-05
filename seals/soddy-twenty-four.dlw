@@ -1,0 +1,1 @@
+{"slug":"soddy-twenty-four","seal":"ad4d1c998bf10de8762225f6657b671890f999fc408b969e16af99bedf9cfb7a","rule":"sha256(name|slug|blurb)","write":"if-missing"}

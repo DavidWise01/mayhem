@@ -1,0 +1,1 @@
+{"slug":"icosa-dihedral","seal":"73a7ebec9bcd782d70b8ca0af1d91b0cf3389765c60eb509ec03ba588c96aa46","rule":"sha256(name|slug|blurb)","write":"if-missing"}

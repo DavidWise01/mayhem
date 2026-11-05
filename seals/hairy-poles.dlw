@@ -1,0 +1,1 @@
+{"slug":"hairy-poles","seal":"21b5eca38132b64ffda451098718f33ed50b475515606ea1c97484347df22dd8","rule":"sha256(name|slug|blurb)","write":"if-missing"}

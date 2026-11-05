@@ -1,0 +1,1 @@
+{"slug":"cone-under-cap","seal":"4c943fea28242c612db136b647ae5ccda2cf81631e4a93057bf98b9a47f145d8","rule":"sha256(name|slug|blurb)","write":"if-missing"}

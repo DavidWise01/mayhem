@@ -1,0 +1,1 @@
+{"slug":"five-belts","seal":"b13b78d83f98268804a99b7277cdefedabac6327e89d6828f8652b3c9644aac7","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"twelve-gores","seal":"986564793ed6574a00f428ba358dbe4cf74970f661c3de7ae7cfbbfd3a33c1e4","rule":"sha256(name|slug|blurb)","write":"if-missing"}

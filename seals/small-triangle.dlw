@@ -1,0 +1,1 @@
+{"slug":"small-triangle","seal":"fdf29a44c058cff0903d602910c8a5a3add9d078ac168b93099a568968bf21c0","rule":"sha256(name|slug|blurb)","write":"if-missing"}

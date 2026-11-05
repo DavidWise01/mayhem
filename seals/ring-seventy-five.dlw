@@ -1,0 +1,1 @@
+{"slug":"ring-seventy-five","seal":"9b70fb1b6ea4b5607b6a95215d3b2c69ec93b4b7931dccd17ccb2a3a02ce2bf7","rule":"sha256(name|slug|blurb)","write":"if-missing"}

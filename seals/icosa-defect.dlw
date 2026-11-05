@@ -1,0 +1,1 @@
+{"slug":"icosa-defect","seal":"dda6c63e8ccb37418a1968c5d19ff2bd726e2b6549ee4edc9edf4cd07f4a8e5a","rule":"sha256(name|slug|blurb)","write":"if-missing"}

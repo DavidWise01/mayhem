@@ -1,0 +1,1 @@
+{"slug":"polar-triangle","seal":"3641f553aad39d1340295349fd3ca9305e0a3747720adef1df4734fa21b6b68e","rule":"sha256(name|slug|blurb)","write":"if-missing"}

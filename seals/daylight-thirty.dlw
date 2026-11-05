@@ -1,0 +1,1 @@
+{"slug":"daylight-thirty","seal":"3244d4c0bafae30c3221a6f7e2913f2721fa6df20ea2b764701c805628944a8d","rule":"sha256(name|slug|blurb)","write":"if-missing"}

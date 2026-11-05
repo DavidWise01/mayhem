@@ -1,0 +1,1 @@
+{"slug":"phase-ninety","seal":"4240ae38bd1910471ee2f54574dd1d4366a11e3a434100015b80e22858fa8522","rule":"sha256(name|slug|blurb)","write":"if-missing"}

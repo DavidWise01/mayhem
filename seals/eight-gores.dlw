@@ -1,0 +1,1 @@
+{"slug":"eight-gores","seal":"ab0e53b997d3db0e946919e0bd23007b997214404d38ad9fa4088e7af515fffa","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"twenty-four-gores","seal":"9d1d0b585191fad5479069821477abc9eff1436f501dba0542e469ce4d4b8ea5","rule":"sha256(name|slug|blurb)","write":"if-missing"}

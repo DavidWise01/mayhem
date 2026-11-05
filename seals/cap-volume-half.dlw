@@ -1,0 +1,1 @@
+{"slug":"cap-volume-half","seal":"64e40b294158d0c1e5ca4f20d6ab275d28c68892854b9615de8b27c404a712fa","rule":"sha256(name|slug|blurb)","write":"if-missing"}

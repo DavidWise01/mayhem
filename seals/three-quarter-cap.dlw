@@ -1,0 +1,1 @@
+{"slug":"three-quarter-cap","seal":"1c5e38b3dd482850a0714a98f30042643fbe60c4440f629da93b18c4aac24dc4","rule":"sha256(name|slug|blurb)","write":"if-missing"}

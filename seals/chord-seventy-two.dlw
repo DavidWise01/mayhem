@@ -1,0 +1,1 @@
+{"slug":"chord-seventy-two","seal":"72e7836f4c700069d98590f8c7ddff79d79af143110a0391a3c72377be4f5a23","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"cube-defect","seal":"3e328f89ae3cc1180bc495e20076797437e6384b1374d88a09013b1e65d69ef5","rule":"sha256(name|slug|blurb)","write":"if-missing"}

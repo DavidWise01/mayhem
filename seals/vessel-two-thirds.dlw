@@ -1,0 +1,1 @@
+{"slug":"vessel-two-thirds","seal":"361e993273bfbf147048b461b7c67eb2e3132d83386bd0807853011721406bc6","rule":"sha256(name|slug|blurb)","write":"if-missing"}

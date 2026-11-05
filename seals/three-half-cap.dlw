@@ -1,0 +1,1 @@
+{"slug":"three-half-cap","seal":"cd78563b9751704e8f316f7c12a10dd7f0682fcc95786a4bc7ea1bab931a2daf","rule":"sha256(name|slug|blurb)","write":"if-missing"}

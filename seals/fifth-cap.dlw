@@ -1,0 +1,1 @@
+{"slug":"fifth-cap","seal":"1d05d1b462956f7c2b47d3454e7e22f0ada82c6d876e66a576369456bfe8705e","rule":"sha256(name|slug|blurb)","write":"if-missing"}

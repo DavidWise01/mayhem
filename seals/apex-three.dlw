@@ -1,0 +1,1 @@
+{"slug":"apex-three","seal":"a56df52746eb3d90217e1ddf64ced5c0c6b1f5934b7d465692ee3da70c535238","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"dome-two","seal":"ac5097255121e51bb85f91830c054defee179757e771408a072c576e47d64364","rule":"sha256(name|slug|blurb)","write":"if-missing"}

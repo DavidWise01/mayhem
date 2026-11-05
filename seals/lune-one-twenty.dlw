@@ -1,0 +1,1 @@
+{"slug":"lune-one-twenty","seal":"067927a0c460da4e5df753680c3b99486a208769d8eeeadcdac63cbeaa12edff","rule":"sha256(name|slug|blurb)","write":"if-missing"}

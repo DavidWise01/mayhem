@@ -1,0 +1,1 @@
+{"slug":"dodeca-dihedral","seal":"b5af2dbcb5a353374eb4980de5eb167227822ba4f7c5e28d47351f27627bb96b","rule":"sha256(name|slug|blurb)","write":"if-missing"}

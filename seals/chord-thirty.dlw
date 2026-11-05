@@ -1,0 +1,1 @@
+{"slug":"chord-thirty","seal":"12018788fd60d76407a5dbcf09fbbdc54c56c7041b0047aefc9380aa182a97cc","rule":"sha256(name|slug|blurb)","write":"if-missing"}

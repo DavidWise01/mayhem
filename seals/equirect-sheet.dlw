@@ -1,0 +1,1 @@
+{"slug":"equirect-sheet","seal":"d02f1ae47d757d6774837362550683e84cfbe81bd2078dcffb8e612add22c057","rule":"sha256(name|slug|blurb)","write":"if-missing"}

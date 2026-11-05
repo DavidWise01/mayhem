@@ -1,0 +1,1 @@
+{"slug":"chord-one-twenty","seal":"9cf53fb4715a1817bf3f32b9740747bd04f8f1a2ce21510a690c83d82600e3c2","rule":"sha256(name|slug|blurb)","write":"if-missing"}

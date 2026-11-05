@@ -1,0 +1,1 @@
+{"slug":"right-third","seal":"c265e70c6c939b75d52af8c4f6ddc6e33344bb67865733ad645e669d54e84a4e","rule":"sha256(name|slug|blurb)","write":"if-missing"}

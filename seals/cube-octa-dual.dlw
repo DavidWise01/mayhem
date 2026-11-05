@@ -1,0 +1,1 @@
+{"slug":"cube-octa-dual","seal":"cfec6cda097938a344933fffea547d86150d3f465050fb05b318056ea9cf395f","rule":"sha256(name|slug|blurb)","write":"if-missing"}

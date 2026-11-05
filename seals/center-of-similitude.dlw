@@ -1,0 +1,1 @@
+{"slug":"center-of-similitude","seal":"fe2e80e40b848946d7c37b8f32afd7dcb774a1172baab7cff4da9ae48af1620f","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"shift-fifth","seal":"2fdf40502326c4b185f60c481b8b340d5e77231831bb0858cb4eaba1dee10c5a","rule":"sha256(name|slug|blurb)","write":"if-missing"}

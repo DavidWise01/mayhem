@@ -1,0 +1,1 @@
+{"slug":"phase-sixty","seal":"e1469244cae468b4c174ba830ee3e039e4408c9487b5845e2051d62fbcb758e5","rule":"sha256(name|slug|blurb)","write":"if-missing"}

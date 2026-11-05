@@ -1,0 +1,1 @@
+{"slug":"interior-power","seal":"b1b8cb407907c8dc5bb8b719141d8aacf572e67efad22d058e0fc667e32c0aa1","rule":"sha256(name|slug|blurb)","write":"if-missing"}

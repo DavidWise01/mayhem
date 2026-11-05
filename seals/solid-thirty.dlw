@@ -1,0 +1,1 @@
+{"slug":"solid-thirty","seal":"1240259f8ec5797a2519b53f4d826bc46c89cd49464af9b6ec1f49f62bbd9279","rule":"sha256(name|slug|blurb)","write":"if-missing"}

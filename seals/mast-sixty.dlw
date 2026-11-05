@@ -1,0 +1,1 @@
+{"slug":"mast-sixty","seal":"93f5377fb6b3cc4471048b5e30aa1d2048d3c261f8577c6b5da5d5ff30b942e8","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"shift-three-fifth","seal":"d0d832d8ef1740fd4e96f25866ac09d2adecddcf823640e0171ef4742f1fdeaf","rule":"sha256(name|slug|blurb)","write":"if-missing"}

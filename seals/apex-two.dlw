@@ -1,0 +1,1 @@
+{"slug":"apex-two","seal":"dc627b2d5b9cb9a4b4e8e6bc9c8b4bef23ba42ca6fd4f7440d8843f33e7abacb","rule":"sha256(name|slug|blurb)","write":"if-missing"}

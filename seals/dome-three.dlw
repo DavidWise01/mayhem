@@ -1,0 +1,1 @@
+{"slug":"dome-three","seal":"9a0a4bbe42a251860c0cf75ff3e93e15564103e6c689d73618d9280c6a4438fc","rule":"sha256(name|slug|blurb)","write":"if-missing"}

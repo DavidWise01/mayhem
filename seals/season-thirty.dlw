@@ -1,0 +1,1 @@
+{"slug":"season-thirty","seal":"c11d84123ebe2fe92a075586523661147fd408e1198c6cf0b3f0d10cae2ea3fa","rule":"sha256(name|slug|blurb)","write":"if-missing"}

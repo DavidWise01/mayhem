@@ -1,0 +1,1 @@
+{"slug":"four-belts","seal":"4cd17ea7a99f091d5527572983e8d0d62efb29de5f61a929389ad66d8f5938d9","rule":"sha256(name|slug|blurb)","write":"if-missing"}

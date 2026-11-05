@@ -1,0 +1,1 @@
+{"slug":"lune-fifteen","seal":"524f34b7d9b8fb22ab6e4c3a4e02c16160dd7537ab0b9b2741aa3f5df2a9d1fc","rule":"sha256(name|slug|blurb)","write":"if-missing"}

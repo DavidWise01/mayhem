@@ -1,0 +1,1 @@
+{"slug":"lambert-disk","seal":"9862521ebee995691d3976be1c1ef8fd547827742c7be3bc0efa0ce2f1e68644","rule":"sha256(name|slug|blurb)","write":"if-missing"}

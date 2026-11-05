@@ -1,0 +1,1 @@
+{"slug":"lune-thirty-six","seal":"04c4520f24b3d8bcf404599ea051e1c06294dad90956f3d96ede3c1974dbc972","rule":"sha256(name|slug|blurb)","write":"if-missing"}
