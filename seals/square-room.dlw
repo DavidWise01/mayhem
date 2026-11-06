@@ -1,0 +1,1 @@
+{"slug":"square-room","seal":"6420640b8c723b3d098d0ef2459639706d5e4269c9d5b00cf9995db958c0dc52","rule":"sha256(name|slug|blurb)","write":"if-missing"}

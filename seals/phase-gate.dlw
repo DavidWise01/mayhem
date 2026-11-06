@@ -1,0 +1,1 @@
+{"slug":"phase-gate","seal":"cce61dc4aa465d72e94977f31766d760ebaf7abcf0d8f5d14878147a6f21758d","rule":"sha256(name|slug|blurb)","write":"if-missing"}

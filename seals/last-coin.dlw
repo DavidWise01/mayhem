@@ -1,0 +1,1 @@
+{"slug":"last-coin","seal":"dfcf7869624ad9cb5fdffffe34434af63c8c043c6af5c8bd71e13f1d1f8379a9","rule":"sha256(name|slug|blurb)","write":"if-missing"}

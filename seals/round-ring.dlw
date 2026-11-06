@@ -1,0 +1,1 @@
+{"slug":"round-ring","seal":"13a57945537fcfd946da6144bbf93a5b77379bd337ffc730de79bdabaa8c734b","rule":"sha256(name|slug|blurb)","write":"if-missing"}

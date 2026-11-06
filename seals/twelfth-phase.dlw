@@ -1,0 +1,1 @@
+{"slug":"twelfth-phase","seal":"0fe031e73c86329bb0251df3850f4d81b1177d5b9e8ff3ddfdc889c5eae899cd","rule":"sha256(name|slug|blurb)","write":"if-missing"}

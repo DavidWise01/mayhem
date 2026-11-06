@@ -1,0 +1,1 @@
+{"slug":"odd-bond","seal":"0b612a9a382d1f35ccdca1ff3108d309a78f6a0cce6fba8feedc6e98003a884e","rule":"sha256(name|slug|blurb)","write":"if-missing"}

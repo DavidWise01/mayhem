@@ -1,0 +1,1 @@
+{"slug":"quarter-phase","seal":"5b25e70b49c60e4a91ba5c59452ea114e7385adf075544836625209eae9a0e85","rule":"sha256(name|slug|blurb)","write":"if-missing"}

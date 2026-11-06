@@ -1,0 +1,1 @@
+{"slug":"four-cups","seal":"9fef834c6929d348f3f5980bcf5f366fd9ad15716c8250c38d387f0a4c05b2a4","rule":"sha256(name|slug|blurb)","write":"if-missing"}

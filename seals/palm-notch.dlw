@@ -1,0 +1,1 @@
+{"slug":"palm-notch","seal":"7ee3e0aa33aa4b1bbaadb61686495386f78f68e72a0f2865f17ab96dbbb7c7c2","rule":"sha256(name|slug|blurb)","write":"if-missing"}

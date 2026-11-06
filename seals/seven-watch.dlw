@@ -1,0 +1,1 @@
+{"slug":"seven-watch","seal":"90b62fd2acaaa18bb407f2867f09307cd8e1a866d624cbe1a4fec30128a1fbbd","rule":"sha256(name|slug|blurb)","write":"if-missing"}

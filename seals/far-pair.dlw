@@ -1,0 +1,1 @@
+{"slug":"far-pair","seal":"07ffd833978340a1987419f2f4c997948efbd23555c8ad1a926a62e7e19563bb","rule":"sha256(name|slug|blurb)","write":"if-missing"}

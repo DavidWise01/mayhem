@@ -1,0 +1,1 @@
+{"slug":"short-notch","seal":"4fb28e637f9470028aa1f7a69d68e7912cc6be62403aab2e1988bc2021a67533","rule":"sha256(name|slug|blurb)","write":"if-missing"}

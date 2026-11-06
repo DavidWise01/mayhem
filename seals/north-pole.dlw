@@ -1,0 +1,1 @@
+{"slug":"north-pole","seal":"bb0d363f9596557b45c31f65e74c71e5d5103fb92e39aaa0797d8c239aff9043","rule":"sha256(name|slug|blurb)","write":"if-missing"}

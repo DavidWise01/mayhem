@@ -1,0 +1,1 @@
+{"slug":"silver-coin","seal":"f9d0917e3dc3558cf4510731a51686bff2213727b1d9d3a2afee659ab002bfbb","rule":"sha256(name|slug|blurb)","write":"if-missing"}

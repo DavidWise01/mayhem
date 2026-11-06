@@ -1,0 +1,1 @@
+{"slug":"alpha-stack","seal":"bbdc8d7846e0b3f0b98eb29bb5f62414f5f2c01764f2ae9b6a38d46cdd01f069","rule":"sha256(name|slug|blurb)","write":"if-missing"}

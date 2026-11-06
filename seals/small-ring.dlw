@@ -1,0 +1,1 @@
+{"slug":"small-ring","seal":"e7fcd5a5dc4163ae89afe9d49053e78879f5f74c16cd79324cff66eb13747dfe","rule":"sha256(name|slug|blurb)","write":"if-missing"}

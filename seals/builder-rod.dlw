@@ -1,0 +1,1 @@
+{"slug":"builder-rod","seal":"3fc58a7ded6367c1f47e49dd5968587a6277b1d0dd8efcf82eb003788750533a","rule":"sha256(name|slug|blurb)","write":"if-missing"}

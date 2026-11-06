@@ -1,0 +1,1 @@
+{"slug":"south-pole","seal":"98260d1fda4e1ef17bd1803435bf58ac07b2f5532c73bdb63d90110906b4a0ad","rule":"sha256(name|slug|blurb)","write":"if-missing"}

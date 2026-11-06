@@ -1,0 +1,1 @@
+{"slug":"tower-boss","seal":"636b8c9a56ab304b2e5a21b0e1d88acbed945211beb2b6501f2d1d226a25cb21","rule":"sha256(name|slug|blurb)","write":"if-missing"}

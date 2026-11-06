@@ -1,0 +1,1 @@
+{"slug":"six-cups","seal":"d388e8733bbc1c7bf3ca7227d8d3d16c5224f24e534dbbeda44699be22646ee9","rule":"sha256(name|slug|blurb)","write":"if-missing"}

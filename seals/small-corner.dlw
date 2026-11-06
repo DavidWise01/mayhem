@@ -1,0 +1,1 @@
+{"slug":"small-corner","seal":"e5f8d80af610f18891958c7c21e2258b2b95db2b8833f63f5542f0fd3ce2e9f0","rule":"sha256(name|slug|blurb)","write":"if-missing"}

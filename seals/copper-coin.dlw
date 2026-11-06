@@ -1,0 +1,1 @@
+{"slug":"copper-coin","seal":"791f4d0aa06249bd5ff50797412773a21a320955858fdff6803dc7b2155b0e74","rule":"sha256(name|slug|blurb)","write":"if-missing"}

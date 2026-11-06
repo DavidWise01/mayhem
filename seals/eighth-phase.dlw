@@ -1,0 +1,1 @@
+{"slug":"eighth-phase","seal":"ad94f410d86e5386c75bca2d555c8d4e2570a6a58748a119936fb95e3838fca8","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"hall-boss","seal":"ea349c68893d573d55544b7a1067c6a034e1a376ab9e7271bf5edeb4525ec15c","rule":"sha256(name|slug|blurb)","write":"if-missing"}

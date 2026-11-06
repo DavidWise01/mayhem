@@ -1,0 +1,1 @@
+{"slug":"third-life","seal":"58bdec180cc72109d88345ac23ba3e049bc84114a2d21f9c1b91187a6661d6f2","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"garden-trail","seal":"3edd4c837b0fb0027360616099673f3e2957c0d2155804fe77e4ddef235c8a8a","rule":"sha256(name|slug|blurb)","write":"if-missing"}

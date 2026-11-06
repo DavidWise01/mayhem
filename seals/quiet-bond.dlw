@@ -1,0 +1,1 @@
+{"slug":"quiet-bond","seal":"11b384518f755b797f9d0540dd6e206b53c262ae1c399b711de82afe475b1b7b","rule":"sha256(name|slug|blurb)","write":"if-missing"}

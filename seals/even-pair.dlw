@@ -1,0 +1,1 @@
+{"slug":"even-pair","seal":"6ad0e539051df3452c61e3868296b56e70322db681d712f7faf13ca583efbe6c","rule":"sha256(name|slug|blurb)","write":"if-missing"}

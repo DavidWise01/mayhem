@@ -1,0 +1,1 @@
+{"slug":"phase-bead","seal":"d6211b3cdd70d893903e93dfe4d9a2b46e6e8a03db4390e81c7ec2fae4494527","rule":"sha256(name|slug|blurb)","write":"if-missing"}

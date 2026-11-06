@@ -1,0 +1,1 @@
+{"slug":"eleven-watch","seal":"7e3679703d1df6b724362746ca2b58b7166e2772508ced26b86a760ed3122fac","rule":"sha256(name|slug|blurb)","write":"if-missing"}

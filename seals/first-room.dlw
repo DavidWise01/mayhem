@@ -1,0 +1,1 @@
+{"slug":"first-room","seal":"760a853e69951f2dadf62fbb46e64ee0c6ba8d65682572719b87bbc5c79dc3ec","rule":"sha256(name|slug|blurb)","write":"if-missing"}

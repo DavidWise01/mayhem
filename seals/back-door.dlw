@@ -1,0 +1,1 @@
+{"slug":"back-door","seal":"34de3de078be8aa43918214010d1deb68d0e5bd0c3b770fb91fda92cb1814744","rule":"sha256(name|slug|blurb)","write":"if-missing"}

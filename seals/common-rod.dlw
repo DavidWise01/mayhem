@@ -1,0 +1,1 @@
+{"slug":"common-rod","seal":"1c0db101d671bb185c6168cf9da518d66d79382279874d96cc469215aa3ee9c8","rule":"sha256(name|slug|blurb)","write":"if-missing"}

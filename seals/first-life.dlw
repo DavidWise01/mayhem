@@ -1,0 +1,1 @@
+{"slug":"first-life","seal":"362bfb287e19d8e6a0742835883f5b4d90392d1713c8da2bff3b665df95145f9","rule":"sha256(name|slug|blurb)","write":"if-missing"}

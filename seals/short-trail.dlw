@@ -1,0 +1,1 @@
+{"slug":"short-trail","seal":"e4ff19ef7c3ae1e095e7960f39208a1d30b3fdec2a9c9e7001ea9219bba12405","rule":"sha256(name|slug|blurb)","write":"if-missing"}

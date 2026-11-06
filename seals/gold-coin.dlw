@@ -1,0 +1,1 @@
+{"slug":"gold-coin","seal":"321fad5e249482e0a2f3733bc8f7061cb57cfb35dfd308fd221ddbe1fef72498","rule":"sha256(name|slug|blurb)","write":"if-missing"}

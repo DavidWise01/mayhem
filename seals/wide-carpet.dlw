@@ -1,0 +1,1 @@
+{"slug":"wide-carpet","seal":"f59bb1a9671809177dcd00fc7f7b1162782a314204ef6b80c1a713f662207633","rule":"sha256(name|slug|blurb)","write":"if-missing"}

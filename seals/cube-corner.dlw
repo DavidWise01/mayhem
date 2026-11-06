@@ -1,0 +1,1 @@
+{"slug":"cube-corner","seal":"d84070894a0556dcb551400130cb4d70ceb6498943224ab859f4713dc612c671","rule":"sha256(name|slug|blurb)","write":"if-missing"}

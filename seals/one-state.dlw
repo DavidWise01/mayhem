@@ -1,0 +1,1 @@
+{"slug":"one-state","seal":"e44423d00417d5dd50fe0568465f4e05b468b46ed63f721699152283d28468b1","rule":"sha256(name|slug|blurb)","write":"if-missing"}

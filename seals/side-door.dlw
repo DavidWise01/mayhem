@@ -1,0 +1,1 @@
+{"slug":"side-door","seal":"c58cacca88064dec24fb59123ec06cbc3853eae15964d12ffee98cc13c98173d","rule":"sha256(name|slug|blurb)","write":"if-missing"}

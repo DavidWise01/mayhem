@@ -1,0 +1,1 @@
+{"slug":"ell-notch","seal":"86e221fb91d5552443979f86979687320b1067e32f1964e1f9827fae7fe2756c","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"last-door","seal":"3fa7dd69ce88cce90a8e81947a71320475b3d3c7eea86aef8f74f9c302c0d1af","rule":"sha256(name|slug|blurb)","write":"if-missing"}

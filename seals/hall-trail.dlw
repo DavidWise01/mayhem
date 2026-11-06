@@ -1,0 +1,1 @@
+{"slug":"hall-trail","seal":"612ea18d58f77886d1121407081ddcc8a605388b190e855805d6aef4a0550c58","rule":"sha256(name|slug|blurb)","write":"if-missing"}

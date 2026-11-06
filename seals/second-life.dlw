@@ -1,0 +1,1 @@
+{"slug":"second-life","seal":"e07b876c92aceb1395b851dfe343b68a7cf6b20792369b4b551f18c4dd648223","rule":"sha256(name|slug|blurb)","write":"if-missing"}

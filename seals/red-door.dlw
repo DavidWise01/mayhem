@@ -1,0 +1,1 @@
+{"slug":"red-door","seal":"d19f6a3b433e82df15a997699f2d11c5ffb558e1079844752bb7b60e2e89189d","rule":"sha256(name|slug|blurb)","write":"if-missing"}

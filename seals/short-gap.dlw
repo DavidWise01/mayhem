@@ -1,0 +1,1 @@
+{"slug":"short-gap","seal":"9bb36c13cf4302a50b9e11a7a9bcb8bca184a5ac5acd81b107ddbe93fcf550d0","rule":"sha256(name|slug|blurb)","write":"if-missing"}

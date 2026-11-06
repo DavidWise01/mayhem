@@ -1,0 +1,1 @@
+{"slug":"three-cups","seal":"6921a2deebcc94d49aaa392af3f36480f875eea1e1d9bc5407df7142d765921c","rule":"sha256(name|slug|blurb)","write":"if-missing"}

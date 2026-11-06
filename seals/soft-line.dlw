@@ -1,0 +1,1 @@
+{"slug":"soft-line","seal":"b805e426cdcc633db12da8f398ab67efa15e141c727b871758cf1aabcc678990","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"last-boss","seal":"7d62449d7c4060ca21abb7dfc85fdd4ac5fa53f914c129c1a6472dd56e91c3dd","rule":"sha256(name|slug|blurb)","write":"if-missing"}

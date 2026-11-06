@@ -1,0 +1,1 @@
+{"slug":"hard-line","seal":"44c8ac5fe367775adf50ed87caf9932911cc12edb22d66c68e6e50c53c7b434e","rule":"sha256(name|slug|blurb)","write":"if-missing"}

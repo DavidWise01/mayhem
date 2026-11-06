@@ -1,0 +1,1 @@
+{"slug":"letter-stack","seal":"ec70ef844f0fe0042c18ce2676fac7840131b9a53330c75c5e6e2aef61e8faab","rule":"sha256(name|slug|blurb)","write":"if-missing"}

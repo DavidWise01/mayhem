@@ -1,0 +1,1 @@
+{"slug":"span-notch","seal":"2012dcb4e1f76716d2ed80811cb382c265c603709a57d807d5a95ec0f89808aa","rule":"sha256(name|slug|blurb)","write":"if-missing"}

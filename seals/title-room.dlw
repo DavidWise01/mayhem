@@ -1,0 +1,1 @@
+{"slug":"title-room","seal":"92a98cec2c9d694fe5e01d45e6a6c7e3e9d3e8d9a52d6218768234d83ad6de5b","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"small-carpet","seal":"6f1c988bf5f532fde4d633c679c529121897ede5a5f7da16acb0cce41d214efe","rule":"sha256(name|slug|blurb)","write":"if-missing"}

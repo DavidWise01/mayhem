@@ -1,0 +1,1 @@
+{"slug":"even-bond","seal":"f84b7452673b84bfdef335cd7d719c979d2fc84d16b28e38283685d03e8e3cb3","rule":"sha256(name|slug|blurb)","write":"if-missing"}

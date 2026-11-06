@@ -1,0 +1,1 @@
+{"slug":"tenth-phase","seal":"10171d27fb3f3da0d461b635ec5f9af5ad5e829105f3713b79b592f1f325f880","rule":"sha256(name|slug|blurb)","write":"if-missing"}

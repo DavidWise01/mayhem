@@ -1,0 +1,1 @@
+{"slug":"bell-pair","seal":"fa896f0bf99405e79d26fc05ff1d9f9cfd89c4f22ebf7f939358a3b6622a7bb2","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"full-ring","seal":"28eaa7b978b5b242855036e1fb4681d036ca80b0f65ad5ee8f626137d2a1431b","rule":"sha256(name|slug|blurb)","write":"if-missing"}

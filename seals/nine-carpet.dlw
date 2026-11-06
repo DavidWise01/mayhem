@@ -1,0 +1,1 @@
+{"slug":"nine-carpet","seal":"828500f7b12b4b3d609b817e560e0421d0685eac21d1c1393087b1fb5cf2b542","rule":"sha256(name|slug|blurb)","write":"if-missing"}
