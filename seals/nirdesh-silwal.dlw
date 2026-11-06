@@ -1,0 +1,1 @@
+{"slug":"nirdesh-silwal","seal":"3f33bb764c0cb985458828b4e6d1181df5683c6e58c922f7292726e60007fccf","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"kaffa-massacre","seal":"b1a14709a8b9d42d61ed49342a0afe47390899be8be79ea64bd4d4db4f01101a","rule":"sha256(name|slug|blurb)","write":"if-missing"}

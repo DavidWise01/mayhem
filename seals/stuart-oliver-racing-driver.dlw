@@ -1,0 +1,1 @@
+{"slug":"stuart-oliver-racing-driver","seal":"72fe28a68e7d8f678653547c5f32fb3d1e72f1ba111d20c1110ef37ccb025c21","rule":"sha256(name|slug|blurb)","write":"if-missing"}

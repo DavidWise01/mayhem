@@ -1,0 +1,1 @@
+{"slug":"jay-beasley","seal":"ac55b3b0844b086cc8f9ce8bd8f7178ff31e607c90ab16bba9fdfdf0a2393bf5","rule":"sha256(name|slug|blurb)","write":"if-missing"}

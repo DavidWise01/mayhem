@@ -1,0 +1,1 @@
+{"slug":"pentaceratops","seal":"008db957042283977e6acdedd8b0f90c226668a9d8bec0609ddb71936ae55582","rule":"sha256(name|slug|blurb)","write":"if-missing"}

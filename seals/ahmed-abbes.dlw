@@ -1,0 +1,1 @@
+{"slug":"ahmed-abbes","seal":"a5430a92d4c323ff6e41300b809977a8d0d70576f6215f49abf737241989f7bf","rule":"sha256(name|slug|blurb)","write":"if-missing"}

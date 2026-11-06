@@ -1,0 +1,1 @@
+{"slug":"yanfolila","seal":"9bcf086a8f80e2e12e14a5d29c7f5497b880bea1e9df75b891f8e31cdfaf7eae","rule":"sha256(name|slug|blurb)","write":"if-missing"}

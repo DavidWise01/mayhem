@@ -1,0 +1,1 @@
+{"slug":"rich-mississippi","seal":"5656178536cbd77815f1d3effd558b0b1c243723ffaa110ee8a6e0cd266f13d2","rule":"sha256(name|slug|blurb)","write":"if-missing"}

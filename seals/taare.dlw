@@ -1,0 +1,1 @@
+{"slug":"taare","seal":"951d4abfce13159d7e96c38e84d2168e6c266afba516755c808b034cc8e413aa","rule":"sha256(name|slug|blurb)","write":"if-missing"}

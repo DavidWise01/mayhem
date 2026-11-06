@@ -1,0 +1,1 @@
+{"slug":"picton-north-yorkshire","seal":"42a369a1e3fc779f1c924024ad6cba07d257df227b41c6642a8c5494982df242","rule":"sha256(name|slug|blurb)","write":"if-missing"}

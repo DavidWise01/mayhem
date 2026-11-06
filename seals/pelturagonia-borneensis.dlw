@@ -1,0 +1,1 @@
+{"slug":"pelturagonia-borneensis","seal":"7740beadec7bc85e542a088cad65acf8cd257458a160102ae2c4cb12a81d2c3d","rule":"sha256(name|slug|blurb)","write":"if-missing"}

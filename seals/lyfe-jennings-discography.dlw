@@ -1,0 +1,1 @@
+{"slug":"lyfe-jennings-discography","seal":"b8255be9330fd2aef2efd43e4e941996783402a9d5130033da14bfd212a35252","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"fernand-wery","seal":"be54f179244cc6662790bc2505da5c31b1c0cee8f523adaac5e618fc80d99026","rule":"sha256(name|slug|blurb)","write":"if-missing"}

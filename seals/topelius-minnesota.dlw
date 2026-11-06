@@ -1,0 +1,1 @@
+{"slug":"topelius-minnesota","seal":"2d646c580489f6d1b5c76f32310d5d44aa628d0bf3b4e86277d72fd52cc5551c","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"levon-bayramyan","seal":"ee3eefbc67089af90d3a8f7d534df0a0a8381180ea076689273619e53ba015e9","rule":"sha256(name|slug|blurb)","write":"if-missing"}

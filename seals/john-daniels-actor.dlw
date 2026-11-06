@@ -1,0 +1,1 @@
+{"slug":"john-daniels-actor","seal":"ce59fec53cd58958744e038ecc3f3ed4acc7e3e8f4d12992902ff38409f05bfe","rule":"sha256(name|slug|blurb)","write":"if-missing"}

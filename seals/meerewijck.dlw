@@ -1,0 +1,1 @@
+{"slug":"meerewijck","seal":"c815bf2834227221f735e53867294d3a2a279ce346f3b1a6173e40249a82a2ca","rule":"sha256(name|slug|blurb)","write":"if-missing"}

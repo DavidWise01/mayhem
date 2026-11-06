@@ -1,0 +1,1 @@
+{"slug":"iraj-nazeri","seal":"b78d5f677eec80c3624ee3fcb468b16a41e0b7a42a789f7537b6d2946bab5a2b","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"annika-marks","seal":"f844041b60dce36b12fabe8475aabd803c210f4ef65da93874c4293610c75730","rule":"sha256(name|slug|blurb)","write":"if-missing"}

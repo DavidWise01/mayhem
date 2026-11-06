@@ -1,0 +1,1 @@
+{"slug":"fairfield-township-jackson-county-iowa","seal":"688befb40a83dc6d9bece11705877643739b020ada02781647bd21707cb3ce27","rule":"sha256(name|slug|blurb)","write":"if-missing"}

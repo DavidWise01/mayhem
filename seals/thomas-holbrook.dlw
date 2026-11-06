@@ -1,0 +1,1 @@
+{"slug":"thomas-holbrook","seal":"951ea09d3947dd13d2a17eb6e135990e3da0ebe16c8feec6446eaa139790ae81","rule":"sha256(name|slug|blurb)","write":"if-missing"}

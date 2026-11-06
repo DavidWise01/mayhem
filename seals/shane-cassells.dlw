@@ -1,0 +1,1 @@
+{"slug":"shane-cassells","seal":"431474f80cbed93cc8d54d2cb81d6f23f6950b34d5729751bd1e23a23376b842","rule":"sha256(name|slug|blurb)","write":"if-missing"}

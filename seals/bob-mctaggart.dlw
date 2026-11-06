@@ -1,0 +1,1 @@
+{"slug":"bob-mctaggart","seal":"b033cd2493e209c33e048bd57e4689b13fe3a47fd3f9050468d037281ab090b5","rule":"sha256(name|slug|blurb)","write":"if-missing"}

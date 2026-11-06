@@ -1,0 +1,1 @@
+{"slug":"hermon-h-conwell","seal":"3b6c73cab10699753ec6d79519fa4336f54798798bb1d598834e3dd6102f8ea9","rule":"sha256(name|slug|blurb)","write":"if-missing"}

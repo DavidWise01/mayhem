@@ -1,0 +1,1 @@
+{"slug":"solipuram-madhusudhan-reddy","seal":"353699652608a044189e0a49ed4a40e7bc0ce8f7c090df517e1cc93bddb688f5","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"palestina-peru","seal":"08cf6070c26d5aff8923f6a8c7777592ed739fc7efd6af7a1d404d955b730c5a","rule":"sha256(name|slug|blurb)","write":"if-missing"}

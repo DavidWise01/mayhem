@@ -1,0 +1,1 @@
+{"slug":"other-people-s-children-2015-film","seal":"de980a5a92f640dcaafb71316b855b10769875773e4f61f0cd8d26f0c77932f5","rule":"sha256(name|slug|blurb)","write":"if-missing"}

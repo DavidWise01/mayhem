@@ -1,0 +1,1 @@
+{"slug":"boinali-said","seal":"e280dd9b963b37c93a8a50c772494e4eec78fce07fc9375db9581d458b4ec050","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"peyghambar","seal":"b95230e7a88fe2b40317079e3abfb6e51e2a11c188abd8bd3d00b31fe3e33518","rule":"sha256(name|slug|blurb)","write":"if-missing"}

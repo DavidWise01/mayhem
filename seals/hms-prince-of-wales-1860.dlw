@@ -1,0 +1,1 @@
+{"slug":"hms-prince-of-wales-1860","seal":"2bd4e280233f7193a711bcae145d324d6e26ac185b5b5c6076d2f7931fee4e88","rule":"sha256(name|slug|blurb)","write":"if-missing"}

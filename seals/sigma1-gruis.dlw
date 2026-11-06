@@ -1,0 +1,1 @@
+{"slug":"sigma1-gruis","seal":"9e66d8b8f9ee32ad20a84ad7489d043f02093f7ba8209e2cccbbfec83f3ab807","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"moscow-850","seal":"a87587539e3d4168fb0217e3e1d1ed5e28dd20976188e1be1920ce703c1e7223","rule":"sha256(name|slug|blurb)","write":"if-missing"}

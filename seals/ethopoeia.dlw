@@ -1,0 +1,1 @@
+{"slug":"ethopoeia","seal":"d16ea87fa49e330087a1ace599c36d4af9e8baa5b299ad650f5d0a6813588c8b","rule":"sha256(name|slug|blurb)","write":"if-missing"}

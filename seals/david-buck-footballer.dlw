@@ -1,0 +1,1 @@
+{"slug":"david-buck-footballer","seal":"7d753c7ba91af0867d69860961786f9df471fcba9cea73914b48a99b93e62929","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"liriodendrin","seal":"d1de62b7322bcefc9af968da70a0342a07a500e9eeef5663904734de8e028950","rule":"sha256(name|slug|blurb)","write":"if-missing"}

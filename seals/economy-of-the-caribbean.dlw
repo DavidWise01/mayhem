@@ -1,0 +1,1 @@
+{"slug":"economy-of-the-caribbean","seal":"db384fc0c6fd403d6ee907d3489b438d84fb3f38c2a39317bc23eb502b655dc2","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"claude-auguste-lamy","seal":"88d0ddd981c3db642fe1000d373c7295128d28e3b5e49cf9b346a258810d3065","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"doug-edmeades","seal":"f7c7ad7bac359ff1eb2cb5d0263dbe1ec23837e8a56e322b69d1f93c51769adf","rule":"sha256(name|slug|blurb)","write":"if-missing"}

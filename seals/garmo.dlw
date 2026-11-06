@@ -1,0 +1,1 @@
+{"slug":"garmo","seal":"5d9cda61e2ae5532167e1200437e5c532b19511c0ba5e698eb32607e6535a398","rule":"sha256(name|slug|blurb)","write":"if-missing"}

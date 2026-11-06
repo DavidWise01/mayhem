@@ -1,0 +1,1 @@
+{"slug":"james-frederick-talcott","seal":"8c8216a92ecae8516182928a542b30afeae03dabd8ae418fc45bc3e3dcd02bb5","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"university-of-queensland-gatton-campus","seal":"89694342b27535eaa0fc55fff51716e56b9f41ef1b71d3ecaf2d9a7445a57441","rule":"sha256(name|slug|blurb)","write":"if-missing"}

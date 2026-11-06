@@ -1,0 +1,1 @@
+{"slug":"miroslav-skoro","seal":"583509266ca679aa223fc64e75388be0d41aa361a98697abc8752e7f8903488e","rule":"sha256(name|slug|blurb)","write":"if-missing"}

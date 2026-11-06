@@ -1,0 +1,1 @@
+{"slug":"toto-koopman","seal":"46641aa96705c7515fc1bec264ea4c369467c314c8fbaaf9f73baf1e514f2f60","rule":"sha256(name|slug|blurb)","write":"if-missing"}

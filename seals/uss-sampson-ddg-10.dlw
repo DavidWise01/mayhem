@@ -1,0 +1,1 @@
+{"slug":"uss-sampson-ddg-10","seal":"6dfd7a4cc080149cfa5ff035a45d4126924403f5451c74a2161f2885dbfac0ff","rule":"sha256(name|slug|blurb)","write":"if-missing"}

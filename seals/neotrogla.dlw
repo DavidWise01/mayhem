@@ -1,0 +1,1 @@
+{"slug":"neotrogla","seal":"d5fa42ad1b302e03499c3575f6a853655682c0349915f8b758e2cd682335874a","rule":"sha256(name|slug|blurb)","write":"if-missing"}

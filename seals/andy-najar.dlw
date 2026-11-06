@@ -1,0 +1,1 @@
+{"slug":"andy-najar","seal":"72a11ab8aac4a58bff5926e74da27ede2b0b0c4ea90f5e038826c670b0126c15","rule":"sha256(name|slug|blurb)","write":"if-missing"}

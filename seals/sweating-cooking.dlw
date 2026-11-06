@@ -1,0 +1,1 @@
+{"slug":"sweating-cooking","seal":"326d7e842a074fb7fa0d212f36dab57319d46482ea46831766384aefbec7cabf","rule":"sha256(name|slug|blurb)","write":"if-missing"}

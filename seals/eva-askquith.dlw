@@ -1,0 +1,1 @@
+{"slug":"eva-askquith","seal":"fec152891d4bfd6eaf7a0176bc2dfaf1b52bcb1a1fe0318e07be36c85baafcba","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"francis-bonczak","seal":"39a381dc484783650ca846db4890278f07e4129c60dfff89ae83f4cfedd70b37","rule":"sha256(name|slug|blurb)","write":"if-missing"}

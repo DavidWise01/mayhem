@@ -1,0 +1,1 @@
+{"slug":"srdjan-stankovic","seal":"6fa7a5f3124fad36dd699a1a710ced31a657243c2a26b54b5ae6c07b12ea1535","rule":"sha256(name|slug|blurb)","write":"if-missing"}

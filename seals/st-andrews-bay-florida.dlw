@@ -1,0 +1,1 @@
+{"slug":"st-andrews-bay-florida","seal":"fdfae6786fab36138a2f61f1e2d2affbb1ca6ad17f38c77959cc7227cf215680","rule":"sha256(name|slug|blurb)","write":"if-missing"}

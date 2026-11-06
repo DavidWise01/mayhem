@@ -1,0 +1,1 @@
+{"slug":"asuka-120","seal":"f1d542e5c59d2e333d6fc156b94c7579e24e679c51695dbceca118d14da00ebf","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"gilbert-mendonca","seal":"5ea03887f183a0e21cef1455ad4981bd38a6b2551bb3c0962ade35995262479f","rule":"sha256(name|slug|blurb)","write":"if-missing"}

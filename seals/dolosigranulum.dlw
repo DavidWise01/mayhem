@@ -1,0 +1,1 @@
+{"slug":"dolosigranulum","seal":"bd1077c1d22b02315de801a918eace57a26fedf43be0e98463b53e1ee3f4678b","rule":"sha256(name|slug|blurb)","write":"if-missing"}

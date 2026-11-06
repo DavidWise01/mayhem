@@ -1,0 +1,1 @@
+{"slug":"babe-frump","seal":"8bfc6482bd2cba44b429bbb819b70eb4266214f308803bf3c846af62670cd68e","rule":"sha256(name|slug|blurb)","write":"if-missing"}

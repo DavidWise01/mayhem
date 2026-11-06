@@ -1,0 +1,1 @@
+{"slug":"otagoa-chathamensis","seal":"4c33ff9860496bc4654fad48f28d9302dc6359ff47ea967276440ff11025a90f","rule":"sha256(name|slug|blurb)","write":"if-missing"}

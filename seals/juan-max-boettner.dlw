@@ -1,0 +1,1 @@
+{"slug":"juan-max-boettner","seal":"31c6918667de6b1f26145a148cd5c4c54ded3b03b8fd5fffc9fc042e4c3472e0","rule":"sha256(name|slug|blurb)","write":"if-missing"}

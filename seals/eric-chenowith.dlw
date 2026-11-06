@@ -1,0 +1,1 @@
+{"slug":"eric-chenowith","seal":"6ff9780f955a5b6ef93be919a3503d6540d2b4f9da1abffef6babecf80b78ccf","rule":"sha256(name|slug|blurb)","write":"if-missing"}

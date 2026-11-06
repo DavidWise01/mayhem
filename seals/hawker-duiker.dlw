@@ -1,0 +1,1 @@
+{"slug":"hawker-duiker","seal":"bca84f67c6ba101f6cb1abf02b13f2d93bae6b7c2d07440e2033aa6d6ac9ad6b","rule":"sha256(name|slug|blurb)","write":"if-missing"}

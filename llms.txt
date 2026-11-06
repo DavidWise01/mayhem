@@ -860,6 +860,109 @@ Dave: the flat studio was not a graphics upgrade, so add spheres to World Mayhem
 - [The Hemisphere](./spheres/orbs/hemisphere-cap.html): Orbs. seal 36e1211fcbd58b517a8b6bea568b52e71a275e9e61bff081191eff0eea3c53f5
 - [The Matched Disks](./spheres/orbs/matched-disks.html): Orbs. seal 41e4bdfd7c21db673ab7495086e91db6b09dc9304edbf774fba447cb7aae0cb0
 
+## Random
+Dave asked for sprite and SVG graphics from now on, and for one hundred pages from one hundred English Wikipedia articles drawn by Special:Random. One hundred sprite cards. Each card cites one article title and URL. The article body is not copied. Each card has an original SVG sprite. Each card has an agent that keeps a try only when the gap shrinks. A second run must match. The six roles ARTIST, CRITIC, BUILDER, WEAVER, FOLLOWER, and KEEPER are on each page. Each page still builds the cubit register. Thumbnail views skip the register. Seals were written once. The keeper seal was not rewritten. The 0root hallway was not published. Board key mayhem-random-kept.
+- [Poppies (poem)](./spheres/random/poppies-poem.html): Random. seal 7ca9001cf55b45d8ef02ea9d8e6bd1e1202d3e2f3db6f518d1c676d1bd78113f
+- [USS Sampson (DDG-10)](./spheres/random/uss-sampson-ddg-10.html): Random. seal 6dfd7a4cc080149cfa5ff035a45d4126924403f5451c74a2161f2885dbfac0ff
+- [Hermon H. Conwell](./spheres/random/hermon-h-conwell.html): Random. seal 3b6c73cab10699753ec6d79519fa4336f54798798bb1d598834e3dd6102f8ea9
+- [Asuka 120%](./spheres/random/asuka-120.html): Random. seal f1d542e5c59d2e333d6fc156b94c7579e24e679c51695dbceca118d14da00ebf
+- [Black butcherbird](./spheres/random/black-butcherbird.html): Random. seal 29f0792c1cc0fad0d5adbd60665c5c71861451a8e654e60b61a7cfaf87d5c79c
+- [Battle of Aldy](./spheres/random/battle-of-aldy.html): Random. seal 65646f5b3dfc7f631d8a7a9ae1990f21ec9f639134475f47501b1ca99f3e83fa
+- [Yanfolila](./spheres/random/yanfolila.html): Random. seal 9bcf086a8f80e2e12e14a5d29c7f5497b880bea1e9df75b891f8e31cdfaf7eae
+- [Mohammad B. Ghaffari](./spheres/random/mohammad-b-ghaffari.html): Random. seal a43b1bdbc0c90bfd770f2fbe25e58d1e4447b8386cbfb3c300912911a344e83e
+- [Juan Max Boettner](./spheres/random/juan-max-boettner.html): Random. seal 31c6918667de6b1f26145a148cd5c4c54ded3b03b8fd5fffc9fc042e4c3472e0
+- [Edward Feetham](./spheres/random/edward-feetham.html): Random. seal ea0634cd49f7313ea7e53cb5e652528aace2c6968eb651572e74068f9e367b72
+- [Solipuram Madhusudhan Reddy](./spheres/random/solipuram-madhusudhan-reddy.html): Random. seal 353699652608a044189e0a49ed4a40e7bc0ce8f7c090df517e1cc93bddb688f5
+- [Srdjan Stankovic](./spheres/random/srdjan-stankovic.html): Random. seal 6fa7a5f3124fad36dd699a1a710ced31a657243c2a26b54b5ae6c07b12ea1535
+- [Stuart Oliver (racing driver)](./spheres/random/stuart-oliver-racing-driver.html): Random. seal 72fe28a68e7d8f678653547c5f32fb3d1e72f1ba111d20c1110ef37ccb025c21
+- [Nishovë](./spheres/random/nishove.html): Random. seal b4155294d261f97f389aca889342936e52913a16239fe3d0cbacd1e0cf78c8f4
+- [Fairfield Township, Jackson County, Iowa](./spheres/random/fairfield-township-jackson-county-iowa.html): Random. seal 688befb40a83dc6d9bece11705877643739b020ada02781647bd21707cb3ce27
+- [Ivanacara](./spheres/random/ivanacara.html): Random. seal 95e806f63d35dc97f6bd5c1a4e68c6a8c4316798d67906784e8218174db2cced
+- [Other People's Children (2015 film)](./spheres/random/other-people-s-children-2015-film.html): Random. seal de980a5a92f640dcaafb71316b855b10769875773e4f61f0cd8d26f0c77932f5
+- [James Frederick Talcott](./spheres/random/james-frederick-talcott.html): Random. seal 8c8216a92ecae8516182928a542b30afeae03dabd8ae418fc45bc3e3dcd02bb5
+- [Garmo](./spheres/random/garmo.html): Random. seal 5d9cda61e2ae5532167e1200437e5c532b19511c0ba5e698eb32607e6535a398
+- [Topelius, Minnesota](./spheres/random/topelius-minnesota.html): Random. seal 2d646c580489f6d1b5c76f32310d5d44aa628d0bf3b4e86277d72fd52cc5551c
+- [Dolosigranulum](./spheres/random/dolosigranulum.html): Random. seal bd1077c1d22b02315de801a918eace57a26fedf43be0e98463b53e1ee3f4678b
+- [University of Queensland Gatton Campus](./spheres/random/university-of-queensland-gatton-campus.html): Random. seal 89694342b27535eaa0fc55fff51716e56b9f41ef1b71d3ecaf2d9a7445a57441
+- [St. Andrews Bay (Florida)](./spheres/random/st-andrews-bay-florida.html): Random. seal fdfae6786fab36138a2f61f1e2d2affbb1ca6ad17f38c77959cc7227cf215680
+- [Nirdesh Silwal](./spheres/random/nirdesh-silwal.html): Random. seal 3f33bb764c0cb985458828b4e6d1181df5683c6e58c922f7292726e60007fccf
+- [Jay Beasley](./spheres/random/jay-beasley.html): Random. seal ac55b3b0844b086cc8f9ce8bd8f7178ff31e607c90ab16bba9fdfdf0a2393bf5
+- [Sweating (cooking)](./spheres/random/sweating-cooking.html): Random. seal 326d7e842a074fb7fa0d212f36dab57319d46482ea46831766384aefbec7cabf
+- [Hawker Duiker](./spheres/random/hawker-duiker.html): Random. seal bca84f67c6ba101f6cb1abf02b13f2d93bae6b7c2d07440e2033aa6d6ac9ad6b
+- [Mykhailo Lozynsky](./spheres/random/mykhailo-lozynsky.html): Random. seal e27b1b5180067fce1dbccfac7f7e7a6e0c5f04bff6d2dddc699ff205b01b0cd9
+- [Lyfe Jennings discography](./spheres/random/lyfe-jennings-discography.html): Random. seal b8255be9330fd2aef2efd43e4e941996783402a9d5130033da14bfd212a35252
+- [Neotrogla](./spheres/random/neotrogla.html): Random. seal d5fa42ad1b302e03499c3575f6a853655682c0349915f8b758e2cd682335874a
+- [Mario Ridolfi](./spheres/random/mario-ridolfi.html): Random. seal c593bf4e4f36d694fe62848bcaccc1a30fa3cdb1f7c20e14fc1bb64e31a17591
+- [Czechoslovak First Ice Hockey League](./spheres/random/czechoslovak-first-ice-hockey-league.html): Random. seal baeefb5c2d0d58f8685ddab8ee1e93aa495ad44f094e3d16259f6bca0cb7ecc4
+- [Babe Frump](./spheres/random/babe-frump.html): Random. seal 8bfc6482bd2cba44b429bbb819b70eb4266214f308803bf3c846af62670cd68e
+- [3851 Alhambra](./spheres/random/3851-alhambra.html): Random. seal e120de8c54350d94dcf88a3a29bc6844c9b75cfd301833c08335caf1d0bb016e
+- [Otagoa chathamensis](./spheres/random/otagoa-chathamensis.html): Random. seal 4c33ff9860496bc4654fad48f28d9302dc6359ff47ea967276440ff11025a90f
+- [Pelturagonia borneensis](./spheres/random/pelturagonia-borneensis.html): Random. seal 7740beadec7bc85e542a088cad65acf8cd257458a160102ae2c4cb12a81d2c3d
+- [1902 Boston Beaneaters season](./spheres/random/1902-boston-beaneaters-season.html): Random. seal db37579247e10e35d480b4976e5b1ebaeea0e33d0d90ee2bc795b9771ade52e9
+- [Ardglen Tunnel](./spheres/random/ardglen-tunnel.html): Random. seal 95077ddacb90f91d2408bbc6b0a138068fb11fa9c1f637772d4cc49f8322346c
+- [Claude-Auguste Lamy](./spheres/random/claude-auguste-lamy.html): Random. seal 88d0ddd981c3db642fe1000d373c7295128d28e3b5e49cf9b346a258810d3065
+- [Peyghambar](./spheres/random/peyghambar.html): Random. seal b95230e7a88fe2b40317079e3abfb6e51e2a11c188abd8bd3d00b31fe3e33518
+- [Muhabran](./spheres/random/muhabran.html): Random. seal 38c0c48dc3e998e6ec452414756d3cabb7622c6393e30e23ca88e3b2c57b5a6e
+- [David Buck (footballer)](./spheres/random/david-buck-footballer.html): Random. seal 7d753c7ba91af0867d69860961786f9df471fcba9cea73914b48a99b93e62929
+- [Andreas Gestrich](./spheres/random/andreas-gestrich.html): Random. seal 21b8709d046c381677e298fcadff59e3618b67f332358c6c47bc0f22deeed045
+- [Double cloth](./spheres/random/double-cloth.html): Random. seal bf587069353de129f0d8fe1fda4fdd6a262e812ff389843eb55df9e4cd7bdb06
+- [Thomas Holbrook](./spheres/random/thomas-holbrook.html): Random. seal 951ea09d3947dd13d2a17eb6e135990e3da0ebe16c8feec6446eaa139790ae81
+- [2017–18 LEB Plata season](./spheres/random/2017-18-leb-plata-season.html): Random. seal 94cada029b6b7d8dae9fae88c4dc1d4a6ca15eb14f8d32ebba28adb9cdb8b8e0
+- [2010 Intercontinental Rally Challenge](./spheres/random/2010-intercontinental-rally-challenge.html): Random. seal d0ce0fee9f93237ab681f043c62605a96e86bcc7a7d9424dec5b60972d8feaed
+- [Economy of the Caribbean](./spheres/random/economy-of-the-caribbean.html): Random. seal db384fc0c6fd403d6ee907d3489b438d84fb3f38c2a39317bc23eb502b655dc2
+- [Mahajananiki Maradalu Pilla](./spheres/random/mahajananiki-maradalu-pilla.html): Random. seal d611dfdc0220a4393d0691680e26f2516ca014c04ea05d2733e616f00bae2958
+- [Liriodendrin](./spheres/random/liriodendrin.html): Random. seal d1de62b7322bcefc9af968da70a0342a07a500e9eeef5663904734de8e028950
+- [1999–2000 Brown Bears women's ice hockey season](./spheres/random/1999-2000-brown-bears-women-s-ice-hockey-season.html): Random. seal ac75f91d7d298ea0a121f387020bf2fa59e2fd2675c2bdeb908fc10e08d16eb7
+- [Eucharideae](./spheres/random/eucharideae.html): Random. seal 19d6a9051067f5df6db772105e335390dd1505d6ec8e860788f4f28f6c9ef572
+- [Sigma1 Gruis](./spheres/random/sigma1-gruis.html): Random. seal 9e66d8b8f9ee32ad20a84ad7489d043f02093f7ba8209e2cccbbfec83f3ab807
+- [Picton, North Yorkshire](./spheres/random/picton-north-yorkshire.html): Random. seal 42a369a1e3fc779f1c924024ad6cba07d257df227b41c6642a8c5494982df242
+- [National Register of Historic Places listings in Kosciusko County, Indiana](./spheres/random/national-register-of-historic-places-listings-in.html): Random. seal 7f098f0b6ddab0065b97e9e7baadadca7accbfb34c0a5a8b2bdabe7a7731dce9
+- [Bob McTaggart](./spheres/random/bob-mctaggart.html): Random. seal b033cd2493e209c33e048bd57e4689b13fe3a47fd3f9050468d037281ab090b5
+- [2012 Canadian federal electoral redistribution](./spheres/random/2012-canadian-federal-electoral-redistribution.html): Random. seal 9b5f50dab57711ace0d29a9469f6afb97abb68c203bd070c2816db83296818a9
+- [John Daniels (actor)](./spheres/random/john-daniels-actor.html): Random. seal ce59fec53cd58958744e038ecc3f3ed4acc7e3e8f4d12992902ff38409f05bfe
+- [2005 Libyan Super Cup](./spheres/random/2005-libyan-super-cup.html): Random. seal a0bd6a1982b1498ebcb4a4f6815073fe489dcbc09ea0c7bf4acbfd882f75c11c
+- [William Newton (priest)](./spheres/random/william-newton-priest.html): Random. seal 5d78d7191d85131e3a8c95e4e8ba906dc66d491647108db599fffdfdc535cf46
+- [Pantami, Gombe](./spheres/random/pantami-gombe.html): Random. seal fda342752f464de6426c52802af294ebf38bbbfee087ae870157aae98c684c96
+- [Slovakia Davis Cup team](./spheres/random/slovakia-davis-cup-team.html): Random. seal 49e4f8cdf937ed779349b66eb6f7cfce4dd0a8d95817e1d62c76361f58abdff3
+- [Rich, Mississippi](./spheres/random/rich-mississippi.html): Random. seal 5656178536cbd77815f1d3effd558b0b1c243723ffaa110ee8a6e0cd266f13d2
+- [Eric Chenowith](./spheres/random/eric-chenowith.html): Random. seal 6ff9780f955a5b6ef93be919a3503d6540d2b4f9da1abffef6babecf80b78ccf
+- [Annika Marks](./spheres/random/annika-marks.html): Random. seal f844041b60dce36b12fabe8475aabd803c210f4ef65da93874c4293610c75730
+- [Andy Najar](./spheres/random/andy-najar.html): Random. seal 72a11ab8aac4a58bff5926e74da27ede2b0b0c4ea90f5e038826c670b0126c15
+- [Levon Bayramyan](./spheres/random/levon-bayramyan.html): Random. seal ee3eefbc67089af90d3a8f7d534df0a0a8381180ea076689273619e53ba015e9
+- [Canoeing at the 2000 Summer Olympics – Men's C-1 500 metres](./spheres/random/canoeing-at-the-2000-summer-olympics-men-s-c-1-5.html): Random. seal 112e745511dc42447493cb5388a6320655af2587e2f973276ca61936f49350f6
+- [Kaffa massacre](./spheres/random/kaffa-massacre.html): Random. seal b1a14709a8b9d42d61ed49342a0afe47390899be8be79ea64bd4d4db4f01101a
+- [Soviet Union men's national under-21 volleyball team](./spheres/random/soviet-union-men-s-national-under-21-volleyball.html): Random. seal 232fda940323fa6543fe64f2685815aaebe845c31a1ad1d9aa5b5dfdc27829f1
+- [Miroslav Škoro](./spheres/random/miroslav-skoro.html): Random. seal 583509266ca679aa223fc64e75388be0d41aa361a98697abc8752e7f8903488e
+- [Meerewijck](./spheres/random/meerewijck.html): Random. seal c815bf2834227221f735e53867294d3a2a279ce346f3b1a6173e40249a82a2ca
+- [Eva Askquith](./spheres/random/eva-askquith.html): Random. seal fec152891d4bfd6eaf7a0176bc2dfaf1b52bcb1a1fe0318e07be36c85baafcba
+- [Rio Bravo-Greeley Union Elementary School District](./spheres/random/rio-bravo-greeley-union-elementary-school-distri.html): Random. seal dbae233c0151381a2aba0060e23b90eca1fc8503eb6ff17e53715a4c76947715
+- [Moscow-850](./spheres/random/moscow-850.html): Random. seal a87587539e3d4168fb0217e3e1d1ed5e28dd20976188e1be1920ce703c1e7223
+- [Iraj Nazeri](./spheres/random/iraj-nazeri.html): Random. seal b78d5f677eec80c3624ee3fcb468b16a41e0b7a42a789f7537b6d2946bab5a2b
+- [Toto Koopman](./spheres/random/toto-koopman.html): Random. seal 46641aa96705c7515fc1bec264ea4c369467c314c8fbaaf9f73baf1e514f2f60
+- [Ahmed Abbes](./spheres/random/ahmed-abbes.html): Random. seal a5430a92d4c323ff6e41300b809977a8d0d70576f6215f49abf737241989f7bf
+- [Fox News controversies](./spheres/random/fox-news-controversies.html): Random. seal d328a83425542b71504eeb2d762a9c31024766d895481cc6d2e60fcca689f4f6
+- [William Aubrey Burnage](./spheres/random/william-aubrey-burnage.html): Random. seal dc6ed30f25bb44c0b479bd25867612d31eb154705dfae443c2c871e274683d73
+- [Pentaceratops](./spheres/random/pentaceratops.html): Random. seal 008db957042283977e6acdedd8b0f90c226668a9d8bec0609ddb71936ae55582
+- [Fernand Wéry](./spheres/random/fernand-wery.html): Random. seal be54f179244cc6662790bc2505da5c31b1c0cee8f523adaac5e618fc80d99026
+- [Doug Edmeades](./spheres/random/doug-edmeades.html): Random. seal f7c7ad7bac359ff1eb2cb5d0263dbe1ec23837e8a56e322b69d1f93c51769adf
+- [Shane Cassells](./spheres/random/shane-cassells.html): Random. seal 431474f80cbed93cc8d54d2cb81d6f23f6950b34d5729751bd1e23a23376b842
+- [Daily News (Wahpeton)](./spheres/random/daily-news-wahpeton.html): Random. seal fe628aab2bb923c3dba5c34e686f52ca1f3656289f60ef08383c92a72783a320
+- [Francis Bonczak](./spheres/random/francis-bonczak.html): Random. seal 39a381dc484783650ca846db4890278f07e4129c60dfff89ae83f4cfedd70b37
+- [HMS Prince of Wales (1860)](./spheres/random/hms-prince-of-wales-1860.html): Random. seal 2bd4e280233f7193a711bcae145d324d6e26ac185b5b5c6076d2f7931fee4e88
+- [Ethopoeia](./spheres/random/ethopoeia.html): Random. seal d16ea87fa49e330087a1ace599c36d4af9e8baa5b299ad650f5d0a6813588c8b
+- [Boinali Saïd](./spheres/random/boinali-said.html): Random. seal e280dd9b963b37c93a8a50c772494e4eec78fce07fc9375db9581d458b4ec050
+- [Thiratoscirtus elgonensis](./spheres/random/thiratoscirtus-elgonensis.html): Random. seal c02cf1fa0841412f57a3286e610b34cce8daf46c1e08b9bdaa1259d192950f0e
+- [JS Kinshasa](./spheres/random/js-kinshasa.html): Random. seal 399359ff18d74b9cb4de1152f047326dd1e72a8da64461ae58529aa5edc1931f
+- [F.C. Maia](./spheres/random/f-c-maia.html): Random. seal 25d70c1550f3d31d30d4ddbf91a5f60f666d522f69f5bf2ccb2f98e86524663e
+- [Taare](./spheres/random/taare.html): Random. seal 951d4abfce13159d7e96c38e84d2168e6c266afba516755c808b034cc8e413aa
+- [The Golden Age of Knowhere](./spheres/random/the-golden-age-of-knowhere.html): Random. seal 907d8c620bc0b0d60634c793cbc2fda8c834c1446fdd74f6523b587273c64689
+- [Palestina, Peru](./spheres/random/palestina-peru.html): Random. seal 08cf6070c26d5aff8923f6a8c7777592ed739fc7efd6af7a1d404d955b730c5a
+- [Gilbert Mendonca](./spheres/random/gilbert-mendonca.html): Random. seal 5ea03887f183a0e21cef1455ad4981bd38a6b2551bb3c0962ade35995262479f
+- [El Junco](./spheres/random/el-junco.html): Random. seal 79525672786ef3fec537a3f405b307c023975de98300caf932e90f1a384870ea
+- [Transportation in Markham, Ontario](./spheres/random/transportation-in-markham-ontario.html): Random. seal 764dc4e5f6b0d040afdedfbbcb0ff63210266411bdb6fa20920971894546cbcc
+- [Western Illinois Purple and Gold football, 1902–1909](./spheres/random/western-illinois-purple-and-gold-football-1902-1.html): Random. seal 6c252529e8b7f6dafc4048255b0d32a93eea8dea496bfa3c844889d1711ea724
+- [2015 Australian GT Championship](./spheres/random/2015-australian-gt-championship.html): Random. seal a5d2b45388a11e0b12e205365ab906b1df1554750c20dd5500b13cc031064fbe
+
 ## Qubit
 Dave asked for 100 more spheres, full agentic pages describing something about something: cubits, qubits, and the game Qubit. One hundred pictures. Each picture describes a cubit, a qubit, or a room of the original game Qubit, drawn at pixel cap 3 with physical materials, a room environment, and a contact shadow. Each picture has an agent that keeps a try only when the gap shrinks. A second run must match. The six roles ARTIST, CRITIC, BUILDER, WEAVER, FOLLOWER, and KEEPER are on each page. The game Qubit is original, in the manner of an NES stage. No cartridge is copied. Each page still builds the cubit register. Thumbnail views skip the register. Seals were written once. The keeper seal was not rewritten. The 0root hallway was not published. Board key mayhem-qubit-kept.
 - [The Royal Rod](./spheres/qubit/royal-rod.html): Qubit. seal edefa8f015c4f087bd5228f78ef80f88c4470fd057b4bb70f14f0fe79ea09905

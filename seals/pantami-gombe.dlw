@@ -1,0 +1,1 @@
+{"slug":"pantami-gombe","seal":"fda342752f464de6426c52802af294ebf38bbbfee087ae870157aae98c684c96","rule":"sha256(name|slug|blurb)","write":"if-missing"}

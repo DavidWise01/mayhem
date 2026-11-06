@@ -1,0 +1,1 @@
+{"slug":"ivanacara","seal":"95e806f63d35dc97f6bd5c1a4e68c6a8c4316798d67906784e8218174db2cced","rule":"sha256(name|slug|blurb)","write":"if-missing"}

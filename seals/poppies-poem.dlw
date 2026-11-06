@@ -1,0 +1,1 @@
+{"slug":"poppies-poem","seal":"7ca9001cf55b45d8ef02ea9d8e6bd1e1202d3e2f3db6f518d1c676d1bd78113f","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"eucharideae","seal":"19d6a9051067f5df6db772105e335390dd1505d6ec8e860788f4f28f6c9ef572","rule":"sha256(name|slug|blurb)","write":"if-missing"}
