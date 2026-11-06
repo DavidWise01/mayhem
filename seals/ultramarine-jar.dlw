@@ -1,0 +1,1 @@
+{"slug":"ultramarine-jar","seal":"4a8ec8b69bc67f69c37ef2ecffbbbfb917d88835d835aba790344a52644d6400","rule":"sha256(name|slug|blurb)","write":"if-missing"}

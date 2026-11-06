@@ -1,0 +1,1 @@
+{"slug":"ember-dish","seal":"54abbe22dba7acbb2c1f8c076769c9eb0c1f41f71c143c992adcb53a88c28403","rule":"sha256(name|slug|blurb)","write":"if-missing"}

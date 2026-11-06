@@ -1,0 +1,1 @@
+{"slug":"talc-dune","seal":"a1c3f47e37ad49242e099bc9be55d259cae9ee2b7ee6327bcf7d9eddfe5538a6","rule":"sha256(name|slug|blurb)","write":"if-missing"}

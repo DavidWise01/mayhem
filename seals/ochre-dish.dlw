@@ -1,0 +1,1 @@
+{"slug":"ochre-dish","seal":"ceecdf6466dd29b825db12448979c6e922013c4f5abd76c1011d33a4b081dff1","rule":"sha256(name|slug|blurb)","write":"if-missing"}

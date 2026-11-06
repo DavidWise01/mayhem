@@ -1,0 +1,1 @@
+{"slug":"talc-dish","seal":"2fd0b95e1e4e21fda6e5517e9544a9ecb3f68e0ff159c75d73655c0ff49cd94c","rule":"sha256(name|slug|blurb)","write":"if-missing"}

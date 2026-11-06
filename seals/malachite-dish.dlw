@@ -1,0 +1,1 @@
+{"slug":"malachite-dish","seal":"e7c55a6b959b3d9cf277d65aec3591848d674f50fc3bfd559352ac0190ac9b80","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"pearl-cone","seal":"6a65f999e31d3a4d1573b08c45d86f81a161672e831e390ac38d8d5d48d4f71d","rule":"sha256(name|slug|blurb)","write":"if-missing"}

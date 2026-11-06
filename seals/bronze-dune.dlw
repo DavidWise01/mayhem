@@ -1,0 +1,1 @@
+{"slug":"bronze-dune","seal":"539ef4cbaf0b1b9ba017f13a6964d854b1fd24a115a6a92978913b5443b6d4ff","rule":"sha256(name|slug|blurb)","write":"if-missing"}

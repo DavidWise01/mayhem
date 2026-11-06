@@ -1,0 +1,1 @@
+{"slug":"pearl-jar","seal":"19789b43ecc0d63b5f3602f839f98fdffb72215f58c7dceab986d633a28d99a4","rule":"sha256(name|slug|blurb)","write":"if-missing"}

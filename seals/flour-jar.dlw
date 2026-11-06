@@ -1,0 +1,1 @@
+{"slug":"flour-jar","seal":"fa46a88800d91e8294047c630ddfe84d494ba24c9784c0659c03dd93de1ad79c","rule":"sha256(name|slug|blurb)","write":"if-missing"}

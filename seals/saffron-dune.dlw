@@ -1,0 +1,1 @@
+{"slug":"saffron-dune","seal":"6c50fa0ba794291354c6f20f7c4147c83257dc79b1151499b4d39800445c0782","rule":"sha256(name|slug|blurb)","write":"if-missing"}

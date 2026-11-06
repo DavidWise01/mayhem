@@ -1,0 +1,1 @@
+{"slug":"malachite-cone","seal":"3e726083e584de010345e6b01d91ed63430de459bb01724fc96ec4f8d3152f9d","rule":"sha256(name|slug|blurb)","write":"if-missing"}

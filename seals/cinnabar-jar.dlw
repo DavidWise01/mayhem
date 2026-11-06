@@ -1,0 +1,1 @@
+{"slug":"cinnabar-jar","seal":"9409fdb52b93a47de4e4ffdf115e80c5443713c9e0c2c964acce0976f54970d2","rule":"sha256(name|slug|blurb)","write":"if-missing"}

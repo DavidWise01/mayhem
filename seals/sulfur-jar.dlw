@@ -1,0 +1,1 @@
+{"slug":"sulfur-jar","seal":"a604aad8e3324d8ac3511dba497e239721da6e392c481d40c3a20e39879a0fd9","rule":"sha256(name|slug|blurb)","write":"if-missing"}

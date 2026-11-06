@@ -1,0 +1,1 @@
+{"slug":"mica-jar","seal":"20a252fd81fe74495c0172c73d577773d7e5c5ab1ee4ea0d3707a90e6f3bf43b","rule":"sha256(name|slug|blurb)","write":"if-missing"}

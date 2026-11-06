@@ -1,0 +1,1 @@
+{"slug":"chalk-dune","seal":"c27b1b534ed15e79144fa319bd9ebbd99d9bad538f2495c99dc68b904410a451","rule":"sha256(name|slug|blurb)","write":"if-missing"}

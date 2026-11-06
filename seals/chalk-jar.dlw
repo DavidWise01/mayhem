@@ -1,0 +1,1 @@
+{"slug":"chalk-jar","seal":"d894a8825dfc2e51517835cb39350ac81fa9382353240e64e3913b363ab16ac8","rule":"sha256(name|slug|blurb)","write":"if-missing"}

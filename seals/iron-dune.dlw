@@ -1,0 +1,1 @@
+{"slug":"iron-dune","seal":"e62c3b18ae0471fce3befcc7e853d4a785992d93a5df367f365d51827e0e118a","rule":"sha256(name|slug|blurb)","write":"if-missing"}

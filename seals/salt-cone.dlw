@@ -1,0 +1,1 @@
+{"slug":"salt-cone","seal":"138a96e198d15e87e014687df780643ac237899d21e9fe61ebcb3d11998b3e92","rule":"sha256(name|slug|blurb)","write":"if-missing"}

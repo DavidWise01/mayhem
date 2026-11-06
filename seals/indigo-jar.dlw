@@ -1,0 +1,1 @@
+{"slug":"indigo-jar","seal":"afa890f80202ddb559365adaeb4ad598f2b249e8d9a256091061ddd3a897049e","rule":"sha256(name|slug|blurb)","write":"if-missing"}

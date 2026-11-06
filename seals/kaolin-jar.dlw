@@ -1,0 +1,1 @@
+{"slug":"kaolin-jar","seal":"57c17c4e7e91b11d491418bc7d7703b00035b82e1492a4159a6b3d30765d3ed0","rule":"sha256(name|slug|blurb)","write":"if-missing"}

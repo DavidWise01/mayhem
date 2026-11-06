@@ -1,0 +1,1 @@
+{"slug":"iron-jar","seal":"38a1680262e328ff67068a5b46a6499adaa6e9f04faaf012243aaea466a568bb","rule":"sha256(name|slug|blurb)","write":"if-missing"}

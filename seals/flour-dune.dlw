@@ -1,0 +1,1 @@
+{"slug":"flour-dune","seal":"141aad7df330969acea44fb2dab5e83e753becfa192e23c1cd287b08350c7b46","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"cinnabar-dish","seal":"bb197e0e58d51f2991ca30ae2583dba41487effda0e849739a93d45b8a16c09c","rule":"sha256(name|slug|blurb)","write":"if-missing"}

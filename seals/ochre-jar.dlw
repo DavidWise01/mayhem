@@ -1,0 +1,1 @@
+{"slug":"ochre-jar","seal":"b63d1ce346e1e2d7d0bd919a6eb9f4a57f0d04a74f3bda41719dc4a99b030ad3","rule":"sha256(name|slug|blurb)","write":"if-missing"}

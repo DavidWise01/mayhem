@@ -1,0 +1,1 @@
+{"slug":"ash-dune","seal":"b39690002aebb06ba3c0067fec417ba78095a87ab017f0b7c1eb2e1f8a69cdcb","rule":"sha256(name|slug|blurb)","write":"if-missing"}

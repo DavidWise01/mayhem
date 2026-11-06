@@ -1,0 +1,1 @@
+{"slug":"ash-dish","seal":"173f374eda087f57b34dc749c35f1116cc80e05206f0be158aa73e56a65a4b1b","rule":"sha256(name|slug|blurb)","write":"if-missing"}

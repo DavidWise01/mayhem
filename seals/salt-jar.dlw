@@ -1,0 +1,1 @@
+{"slug":"salt-jar","seal":"9ab94780450fa26f9f407c4515b6ec4f2303c14cf2d6e8b44efae8edfecc99f7","rule":"sha256(name|slug|blurb)","write":"if-missing"}

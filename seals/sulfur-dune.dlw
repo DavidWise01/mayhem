@@ -1,0 +1,1 @@
+{"slug":"sulfur-dune","seal":"ccd195ba553a4e28eec673de480657cad17901ddfceb202eec901b274879137e","rule":"sha256(name|slug|blurb)","write":"if-missing"}

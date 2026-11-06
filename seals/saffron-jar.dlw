@@ -1,0 +1,1 @@
+{"slug":"saffron-jar","seal":"9a070363504aca352c5d9a236cfde9ec0905b0bf8bc49349ddbb2e93c2a4fb5a","rule":"sha256(name|slug|blurb)","write":"if-missing"}

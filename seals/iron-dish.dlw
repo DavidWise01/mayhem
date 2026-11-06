@@ -1,0 +1,1 @@
+{"slug":"iron-dish","seal":"ecdaaabed5fd30a814af8437739875b977a3cb31c29183e89f05c9305e637d1f","rule":"sha256(name|slug|blurb)","write":"if-missing"}

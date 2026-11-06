@@ -1,0 +1,1 @@
+{"slug":"cocoa-cone","seal":"3cb58a9f5a03fb9c7079767dff18ab2bc2d9cd3ffe65395b68dcffa6b36f264e","rule":"sha256(name|slug|blurb)","write":"if-missing"}

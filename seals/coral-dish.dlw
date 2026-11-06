@@ -1,0 +1,1 @@
+{"slug":"coral-dish","seal":"906109842f020adec92e671a1592ed3d746c2d13ebda029fbecd44fc8ea5a64d","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"saffron-dish","seal":"fcf18504457f67daae3fc98ba94e4406a4a994483e3ff3dd6aced97103c4bf9d","rule":"sha256(name|slug|blurb)","write":"if-missing"}

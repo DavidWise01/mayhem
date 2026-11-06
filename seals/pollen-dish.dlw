@@ -1,0 +1,1 @@
+{"slug":"pollen-dish","seal":"0b4d245f62bd2ce37a44578a2aaed2f3b59e77c6a303c69cb72195f88e557aeb","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"ember-dune","seal":"1eb00dc894c42fcba4eeac158a56e0b5c3cba628bf80617a6d1cfd7521bded0d","rule":"sha256(name|slug|blurb)","write":"if-missing"}

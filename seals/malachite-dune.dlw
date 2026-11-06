@@ -1,0 +1,1 @@
+{"slug":"malachite-dune","seal":"e249a76fa33ed2d8a2d9f6df4d4779ba4761e867eebc89df9abbf80c50970cc6","rule":"sha256(name|slug|blurb)","write":"if-missing"}

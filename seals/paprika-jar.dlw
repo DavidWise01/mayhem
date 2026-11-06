@@ -1,0 +1,1 @@
+{"slug":"paprika-jar","seal":"64d197b242b8274dcfba3d81cb36b95c9010fab3c2ef6729d4a1b8c9040ad398","rule":"sha256(name|slug|blurb)","write":"if-missing"}

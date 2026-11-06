@@ -1,0 +1,1 @@
+{"slug":"ash-cone","seal":"1c3f4e30317178dfbe0bce2cdd7ece3db1f1da2552a12d41bd931bd408a22ab6","rule":"sha256(name|slug|blurb)","write":"if-missing"}

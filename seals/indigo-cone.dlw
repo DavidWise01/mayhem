@@ -1,0 +1,1 @@
+{"slug":"indigo-cone","seal":"cc1d8dd611b2a2348875326f012e45de93f5a3ad55889c209e7aedd092068989","rule":"sha256(name|slug|blurb)","write":"if-missing"}

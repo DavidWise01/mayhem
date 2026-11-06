@@ -1,0 +1,1 @@
+{"slug":"pollen-dune","seal":"787ad3017a35fd180ab6f21395ac4f42809378cde82d3eb2d5c11d0e07318192","rule":"sha256(name|slug|blurb)","write":"if-missing"}

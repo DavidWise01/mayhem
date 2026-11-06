@@ -1,0 +1,1 @@
+{"slug":"ember-jar","seal":"5b40f6b82b735308090dde51ca5efbe0f8ca6142e7c45b6e57d90a1fe8924656","rule":"sha256(name|slug|blurb)","write":"if-missing"}

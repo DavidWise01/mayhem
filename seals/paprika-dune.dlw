@@ -1,0 +1,1 @@
+{"slug":"paprika-dune","seal":"fc39fa986c3b6e49bdf50a35920e8dc2096a35cac19c25b06ac63bbfe4c9a40d","rule":"sha256(name|slug|blurb)","write":"if-missing"}

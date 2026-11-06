@@ -1,0 +1,1 @@
+{"slug":"pearl-dish","seal":"ab3c085ea4af6582a4b6d4ca762a0bcce12a90c3465ac6af4dc13e5fe623cfc8","rule":"sha256(name|slug|blurb)","write":"if-missing"}

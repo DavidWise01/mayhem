@@ -1,0 +1,1 @@
+{"slug":"matcha-jar","seal":"8c7f32fb6ed89398d45914510c922eb8aca5522ca3eae1bd136187eaa605c17a","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"salt-dune","seal":"bfdd053acd11ded257c414ec2a0d16d5ffa0058882c488840635a58640448a1f","rule":"sha256(name|slug|blurb)","write":"if-missing"}

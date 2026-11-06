@@ -1,0 +1,1 @@
+{"slug":"copper-cone","seal":"13de094ed8645090364e21370e59ac71b16d69ed3df36704cb1e9b2fe7cd2cd5","rule":"sha256(name|slug|blurb)","write":"if-missing"}

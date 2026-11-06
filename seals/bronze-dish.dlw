@@ -1,0 +1,1 @@
+{"slug":"bronze-dish","seal":"3ed9ad37132ee62ab8ce08219d10f15f5a36e85afd60e26cceb648c087feb754","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"gold-dune","seal":"f5f3468a1b7db5891c50f8cd4e0f8117963f62bf1280515bf444f6cb2806e649","rule":"sha256(name|slug|blurb)","write":"if-missing"}

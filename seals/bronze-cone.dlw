@@ -1,0 +1,1 @@
+{"slug":"bronze-cone","seal":"7d770e17f69fb2440653056db737ab655038bdde62cc11ceec3d9999bc4b7769","rule":"sha256(name|slug|blurb)","write":"if-missing"}

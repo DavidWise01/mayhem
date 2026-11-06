@@ -1,0 +1,1 @@
+{"slug":"ember-cone","seal":"b4f3ee3dcbd5f2c0875bd27546c77f77ef6b5e88bdf1b3bd0e2bb68ac984114c","rule":"sha256(name|slug|blurb)","write":"if-missing"}

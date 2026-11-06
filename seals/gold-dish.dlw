@@ -1,0 +1,1 @@
+{"slug":"gold-dish","seal":"bc39ac397f6325f9ed272eb3ed21e2303f316aab8cfebebf49953eb801f136d2","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"bronze-jar","seal":"6012bda9ef186ce2335ad8e233c194a5ffb091d0b424d4215a4f9717d7ad68af","rule":"sha256(name|slug|blurb)","write":"if-missing"}

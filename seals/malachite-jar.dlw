@@ -1,0 +1,1 @@
+{"slug":"malachite-jar","seal":"7945ba30be838c7e90996a02bfcf667f88edfbeb0fdde9011b339e8c04514ea2","rule":"sha256(name|slug|blurb)","write":"if-missing"}

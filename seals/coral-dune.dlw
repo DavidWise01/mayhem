@@ -1,0 +1,1 @@
+{"slug":"coral-dune","seal":"995b672d3eac08613a74a28b6676ebc4957a89c3389f7b8ac835fe114de10a7e","rule":"sha256(name|slug|blurb)","write":"if-missing"}

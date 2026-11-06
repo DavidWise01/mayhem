@@ -1,0 +1,1 @@
+{"slug":"copper-dish","seal":"f329a27b8fb3d645133c3ebafd47f6359a62e033a5d2d18614e176a84fc8041e","rule":"sha256(name|slug|blurb)","write":"if-missing"}

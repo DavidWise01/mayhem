@@ -1,0 +1,1 @@
+{"slug":"ochre-dune","seal":"2d22876c7d6733f38b8c8ccaf9b6e1821f494807cfa0e0c7d14b8a15b059096d","rule":"sha256(name|slug|blurb)","write":"if-missing"}

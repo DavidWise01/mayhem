@@ -1,0 +1,1 @@
+{"slug":"ultramarine-dish","seal":"3af6670befe14776946274e98567a7b11fb8e37aa12108e3e3846cd372a40036","rule":"sha256(name|slug|blurb)","write":"if-missing"}

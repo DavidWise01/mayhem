@@ -1,0 +1,1 @@
+{"slug":"cinnabar-cone","seal":"bc0746fd22e481b79dbe337ace496c0e2e8ce68b05891e8216c3c15df7966170","rule":"sha256(name|slug|blurb)","write":"if-missing"}

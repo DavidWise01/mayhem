@@ -1,0 +1,1 @@
+{"slug":"gold-jar","seal":"afc0423a472c5b9135e20a2fce60e11e11486928c6669bd4c44dc111c7065740","rule":"sha256(name|slug|blurb)","write":"if-missing"}

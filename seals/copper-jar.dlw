@@ -1,0 +1,1 @@
+{"slug":"copper-jar","seal":"90f40d1de94005058ad04b6e6f149dd68e6938a1b02eaf9f88ab82022613c830","rule":"sha256(name|slug|blurb)","write":"if-missing"}

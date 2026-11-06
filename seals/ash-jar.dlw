@@ -1,0 +1,1 @@
+{"slug":"ash-jar","seal":"1a5bef1f6894a36005ebb5ef902679e74aec3ccb53d05c84fae6dc02d146ec83","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"talc-cone","seal":"b5790a6eee18a137f857083a4d735e93d6ad343ad81b34896d54242d845af01c","rule":"sha256(name|slug|blurb)","write":"if-missing"}

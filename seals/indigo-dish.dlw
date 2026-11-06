@@ -1,0 +1,1 @@
+{"slug":"indigo-dish","seal":"f12a67aa5e1cc25b986ba1f9a30bf857705f8fa34da78f70195df811760e4e62","rule":"sha256(name|slug|blurb)","write":"if-missing"}

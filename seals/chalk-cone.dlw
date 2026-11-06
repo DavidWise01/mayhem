@@ -1,0 +1,1 @@
+{"slug":"chalk-cone","seal":"7999f0dfaa5e5a17c0868994ef2c95473c01fd61b9e486ef2a4fa75955048c40","rule":"sha256(name|slug|blurb)","write":"if-missing"}
