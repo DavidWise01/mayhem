@@ -48,10 +48,10 @@ code{word-break:break-all}
 <p class="kicker">POWDER · under KEEPER ERIS</p>
 <h1>The Gold Dune</h1>
 <p id="sub">12 scoops in one pile</p>
-<div id="v3"><p id="agentlog">CLOUDER is keeping the picture.</p></div>
+<div id="v3"><p id="agentlog">CLOUDER is improving the cell.</p></div>
 <div class="story">
 <p>The Gold Dune is a pile of powder in a studio light. The grains are this page's picture.</p>
-<p>The page keeps six roles in view: ARTIST, CRITIC, BUILDER, WEAVER, FOLLOWER, and KEEPER. CLOUDER keeps a mark only when the gap to 12 shrinks. The page throws if the try does not arrive.</p>
+<p>The page keeps six roles in view: ARTIST, CRITIC, BUILDER, WEAVER, FOLLOWER, and KEEPER. CLOUDER keeps a mark only when the gap to 12 shrinks. The agent keeps improving the cell and drops a try that does not. The page throws if the try does not arrive.</p>
 <p><span class="t LIT">LIT</span> The scoops stand at 12. The pack is 12|1 and the law is 13. A second run must match.</p>
 <p><span class="t AMBER">AMBER</span> The color is a label for this pile. No recipe is on the page.</p>
 <p><span class="t WALL">WALL</span> This picture is not a weighed sample. A neighbor on this shelf is a different powder.</p>
@@ -70,16 +70,20 @@ function measure(){
   return {pack:pack, law:law, text:n+" scoops in one pile"};
 }
 function climb(agent, start, target, step0){
-  let x=start, step=step0; const log=[]; const gap=v=>Math.abs(v-target); const g0=gap(x);
-  for(let i=0;i<24;i++){
-    const dir=(i%5===4)?-1:1;
-    const mag=dir<0?step:Math.min(step, gap(x)||step);
-    const prop=x+dir*mag;
-    const ok=gap(prop)<gap(x)-1e-15 && prop>0.05;
-    log.push({agent:agent, round:i+1, value:prop, note:agent+' keeps '+prop.toFixed(0)+' '+"scoops"+' gap '+gap(prop).toFixed(3), accepted:ok});
-    if(ok){ x=prop; step=Math.max(0.02, step*0.85); }
+  void step0;
+  let x=start; const log=[]; const gap=v=>Math.abs(v-target); const g0=gap(x); const cell=[x];
+  let round=0;
+  while(x<target && round<24){
+    round++;
+    const worse=round%3===0;
+    const prop=worse?x+(target-x)+2:x+1;
+    const ok=!worse && gap(prop)<gap(x)-1e-15 && prop>0.05;
+    log.push({agent:agent, round:round, value:prop, note:agent+(ok?' keeps the cell at ':' drops a worse cell at ')+prop+' scoops gap '+gap(prop).toFixed(3), accepted:ok});
+    if(ok){ x=prop; cell.push(x); }
   }
-  return {start:start, value:x, target:target, log:log, g0:g0, g:gap(x)};
+  if(x!==target) throw Error('cell');
+  window.__powderCell={agent:agent, scoops:x, steps:cell.slice()};
+  return {start:start, value:x, target:target, log:log, g0:g0, g:gap(x), cell:cell};
 }
 function agentRun(){ return climb("CLOUDER", 1, 12, 12); }
 function paintProof(html){const el=document.getElementById('proof');if(el) el.innerHTML=html;}
@@ -141,6 +145,8 @@ const METAL=0.9;
 const SHEEN=0.12;
 const EMIT=0;
 const YAW=0.62;
+const SCOOPS=12;
+const AGENT="CLOUDER";
 const SEED=1666902;
 const thumb=/[?&]thumb=1/.test(location.search);
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -257,13 +263,14 @@ const grains=new THREE.InstancedMesh(new THREE.SphereGeometry(1, 6, 4), new THRE
   sheenRoughness:0.4, sheenColor:new THREE.Color(POWDER), envMapIntensity:METAL>0.5?1.3:0.42
 }), N);
 const dummy=new THREE.Object3D();
+const home=[];
 const col=new THREE.Color();
 const rx=moundScale.x, ry=moundScale.y, rz=moundScale.z;
 for(let i=0;i<N;i++){
   const spill=i>N*0.86;
   const air=i>N*0.95;
   const a=rnd()*Math.PI*2;
-  let x, z, y;
+  let x, z, y, capY;
   if(VESSEL==='cone' && spill && !air){
     if(rnd()<0.3){
       const rad=0.98+rnd()*0.4;
@@ -286,11 +293,14 @@ for(let i=0;i<N;i++){
     const under=1-(x*x)/(rx*rx)-(z*z)/(rz*rz);
     const cap=under>0?ry*Math.sqrt(under):0;
     y=air?(moundPos.y+ry+0.02+rnd()*0.22):(spill?0.016+rnd()*0.01:moundPos.y+cap+rnd()*0.004);
+    capY=air?(moundPos.y+cap+0.012):(spill?y:moundPos.y+cap);
   }
   const sc=air?0.0016+rnd()*0.0018:(spill?0.0022+rnd()*0.0022:0.0024+rnd()*0.0034);
+  if(capY===undefined) capY=y;
   dummy.position.set(moundPos.x+x, y, moundPos.z+z);
   dummy.scale.setScalar(sc);
   dummy.rotation.set(rnd()*6, rnd()*6, rnd()*6);
+  home.push({x:dummy.position.x, y:y, z:dummy.position.z, s:sc, cap:capY, air:air?1:0, rx:dummy.rotation.x, ry:dummy.rotation.y, rz:dummy.rotation.z, on:1});
   dummy.updateMatrix();
   grains.setMatrixAt(i, dummy.matrix);
   col.set(POWDER).offsetHSL((rnd()-0.5)*0.015, (rnd()-0.5)*0.05, (rnd()-0.32)*0.2);
@@ -313,10 +323,63 @@ function size(){
 }
 size();
 addEventListener('resize', size);
+function putGrain(i){
+  const h=home[i];
+  dummy.position.set(h.x, h.y, h.z);
+  dummy.scale.setScalar(h.on?h.s:0);
+  dummy.rotation.set(h.rx, h.ry, h.rz);
+  dummy.updateMatrix();
+  grains.setMatrixAt(i, dummy.matrix);
+}
+function showCell(k){
+  const pile=[];
+  for(let i=0;i<N;i++) if(!home[i].air) pile.push(i);
+  const show=Math.round(pile.length*k/SCOOPS);
+  for(let p=0;p<pile.length;p++){
+    home[pile[p]].on=p<show?1:0;
+    putGrain(pile[p]);
+  }
+  grains.instanceMatrix.needsUpdate=true;
+  window.__powderFill=k;
+}
+let filled=(thumb||reduce)?SCOOPS:1;
+let cursor=0, keptG=0, dropG=0, nextAt=performance.now()+420;
+if(thumb||reduce) window.__powderFill=SCOOPS;
+else showCell(1);
+function improveCell(){
+  let got=0, tries=0, last='drop';
+  while(got<18 && tries<480){
+    tries++;
+    const i=cursor%N; cursor++;
+    const h=home[i];
+    if(!h.on) continue;
+    const prop=Math.max(h.cap, h.y-(h.air?0.02:0.0022));
+    if(!(Math.abs(prop-h.cap)<Math.abs(h.y-h.cap)-1e-8)){ dropG++; continue; }
+    h.y=prop; keptG++; got++; last='keep'; putGrain(i);
+  }
+  if(got) grains.instanceMatrix.needsUpdate=true;
+  return got?last:'drop';
+}
+function cellNote(kind){
+  const el=document.getElementById('agentlog');
+  if(!el) return;
+  const line=kind==='drop'?AGENT+' drops a worse grain':kind==='keep'?AGENT+' keeps a closer grain':AGENT+' keeps the cell';
+  el.innerHTML='<b>'+AGENT+'</b> cell '+filled+'/'+SCOOPS+' · '+keptG+' grain keeps · '+dropG+' drops<br>'+line;
+}
 function frame(){
   if(controls) controls.update();
   if(!thumb && !reduce){
-    grains.position.y=Math.sin(performance.now()*0.0006)*0.008;
+    const now=performance.now();
+    grains.position.y=Math.sin(now*0.0006)*0.008;
+    if(filled<SCOOPS && now>nextAt){
+      filled++;
+      showCell(filled);
+      cellNote('cell');
+      nextAt=now+420;
+    }else if(filled>=SCOOPS){
+      const kind=improveCell();
+      if(cursor%40===0) cellNote(kind);
+    }
   }
   R.render(S, C);
   window.__powderScene='lit';
