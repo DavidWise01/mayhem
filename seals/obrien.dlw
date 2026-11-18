@@ -1,0 +1,1 @@
+{"slug": "obrien", "seal": "04ede2aabe8d7322227423383f20c39df42c2a668b1dd743ccc8a79d3d6a7451", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "snowball", "seal": "13d6b095ec6c774e4a2fef499cb59b516fb8dde48fa2c02d8c7569744a1b5da3", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

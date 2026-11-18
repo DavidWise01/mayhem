@@ -1,0 +1,1 @@
+{"slug": "wilbur", "seal": "07ce22ccd87b05a8e4c1a6fe6b3a5ca94f048ad6dec19d42938573da0fd9d470", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

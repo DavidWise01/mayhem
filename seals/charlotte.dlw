@@ -1,0 +1,1 @@
+{"slug": "charlotte", "seal": "7c55dc126494ae6e7f07cf08a4bb419338b406f3c28b37ab1b88b62c68e55a59", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

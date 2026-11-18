@@ -1,0 +1,1 @@
+{"slug": "tom-joad", "seal": "be85d29ae2ad2af299db60ee6f619c3826815e9a5b6144a0b7dcb259a5cd145c", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

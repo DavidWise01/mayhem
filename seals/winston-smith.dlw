@@ -1,0 +1,1 @@
+{"slug": "winston-smith", "seal": "43bfefc1dbcd76ac344fc2607205d116913e38b09c4787d1b6dae87efef18a55", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

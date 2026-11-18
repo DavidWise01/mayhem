@@ -1,0 +1,1 @@
+{"slug": "boxer", "seal": "ef8a821a3a8468a52c0554f3999e7f4f39412350f774aba72164e7b092315a9b", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

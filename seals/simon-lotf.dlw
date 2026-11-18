@@ -1,0 +1,1 @@
+{"slug": "simon-lotf", "seal": "7ed0c7d6d0765be6852a24f96aa97577a0de7ff3e6c64345c01ebe82709e0912", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

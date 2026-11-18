@@ -1,0 +1,1 @@
+{"slug": "whymper", "seal": "38a0e951f99c7e1781a8d1f82cab51083c75f45fe6888449ef8d1e03197cdf5f", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

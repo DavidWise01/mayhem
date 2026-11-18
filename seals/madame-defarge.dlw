@@ -1,0 +1,1 @@
+{"slug": "madame-defarge", "seal": "02001c083a4e331414249d9554ada46d827f6926a0e969079869e30dcb78ecd9", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

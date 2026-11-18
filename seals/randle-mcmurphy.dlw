@@ -1,0 +1,1 @@
+{"slug": "randle-mcmurphy", "seal": "250c279c43ca38a670d4292560fccd4d62cbbd2e12c70094fd1f89f357ade758", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

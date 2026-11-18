@@ -1,0 +1,1 @@
+{"slug": "chief-bromden", "seal": "a5899508c2714f149e4fdc50978681c1e8f116edd60ec8f4c03a2d0102dc3503", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

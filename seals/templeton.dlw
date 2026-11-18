@@ -1,0 +1,1 @@
+{"slug": "templeton", "seal": "bbc4fd8b92117c17010c52ad944c0c3d29a9c4e46b8efa1b1bcc7961f7005bb9", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "john-savage", "seal": "96ff7e81543c12c358500aa047079a5362a1c44de4ca4f70f087fd8d206d7942", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

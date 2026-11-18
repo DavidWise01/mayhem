@@ -1,0 +1,1 @@
+{"slug": "farmer-frederick", "seal": "02d9f24bd6b28014c090ff7889790e3137b604df9a9ab28a6dcc816c6331aea5", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

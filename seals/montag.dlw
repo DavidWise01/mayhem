@@ -1,0 +1,1 @@
+{"slug": "montag", "seal": "b205a0edf05ec85953138e4464bf046bbb826ff4224dc93a7f408a4062f4e57f", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "muriel", "seal": "50b2c5225568bac375065f52fd5de2e1eda63d279c31c1f2db03c3314c2dd55f", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

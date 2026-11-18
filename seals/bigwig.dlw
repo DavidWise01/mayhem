@@ -1,0 +1,1 @@
+{"slug": "bigwig", "seal": "942d8f8f13cf8e48c49604bdbec8fb3bd52f15348dbe800b089cfc2806f938df", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

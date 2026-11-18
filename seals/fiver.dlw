@@ -1,0 +1,1 @@
+{"slug": "fiver", "seal": "df83d48e768562e1b58a9c2f15537a662402102a632c8dbfb201c0e76298fdeb", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

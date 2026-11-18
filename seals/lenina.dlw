@@ -1,0 +1,1 @@
+{"slug": "lenina", "seal": "c8a05b4b1d4592ed543adcd5ea7d0a843e6382c61eb7a8affc9a97b813da1502", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

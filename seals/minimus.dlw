@@ -1,0 +1,1 @@
+{"slug": "minimus", "seal": "2b63381977aedb32937df986f938e8f6717c8c56fc39df2e7a41e6216d3bdd80", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

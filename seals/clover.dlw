@@ -1,0 +1,1 @@
+{"slug": "clover", "seal": "38913acf2c18113320646ce6ee955648ff3da11bc28b110850563dc07c34772d", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

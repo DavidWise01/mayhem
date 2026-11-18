@@ -1,0 +1,1 @@
+{"slug": "pilkington", "seal": "7f8473a9b5cd5609aeefa3c344798b952142c9b2d13547d57cf66eb484c7d575", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

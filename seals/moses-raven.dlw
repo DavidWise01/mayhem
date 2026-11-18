@@ -1,0 +1,1 @@
+{"slug": "moses-raven", "seal": "4c348c229806577047fe79dd6dcccc131610e5f941261103b8eafeb8dc9d963b", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

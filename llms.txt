@@ -64,6 +64,51 @@ Forty-two spots. From The Glass Raft on, DIATOM and WATER BEAR cross with the to
 - [The Crystal Gill](./spheres/osmosis/crystal-gill.html): TOROID and BOX osmose 41 of crystal. DIATOM and WATER BEAR cross together. Persistent gap. LIT. seal 35cb4b32b80524e362080dbaf2199f37d162eef77fe957351c2af91fbfb29f6e
 - [The Quiet Pool](./spheres/osmosis/quiet-pool.html): TOROID and BOX osmose 42 of rain. DIATOM and WATER BEAR cross together. Persistent gap. LIT. seal b0aebdc183120b17d70f652168e95ffc2414ecf6e6ecc462eb7c9f1f3edb7ce3
 
+## Primers
+Forty-two primers. The first book is Animal Farm, in cliff notes written for the page. The book's own sentences are not copied. Each later page adds a character in a similar role. DIATOM holds WATER BEAR, and WATER BEAR holds MITOCHONDRION. They are homeostatic, cooperative, and evolutionary. A selfish step is dropped. A step away from the set point is dropped. A worse mutant is dropped. A step is kept only when the shared gap shrinks. Not a hallway seat.
+- [Old Major](./spheres/primers/old-major.html): Animal Farm. Nested three bodies. Set point 1. LIT. seal ccc38a8b3d82a2d1cc214b5d2e2ac0d8600fe5bd31a2e69a02e06fd8a6a297be
+- [Napoleon](./spheres/primers/napoleon.html): Animal Farm. Nested three bodies. Set point 2. LIT. seal 85f96bdcb7bd0f37d492a245095426161b07684872e2591f1a68f604c68fdf1b
+- [Snowball](./spheres/primers/snowball.html): Animal Farm. Nested three bodies. Set point 3. LIT. seal 13d6b095ec6c774e4a2fef499cb59b516fb8dde48fa2c02d8c7569744a1b5da3
+- [Squealer](./spheres/primers/squealer.html): Animal Farm. Nested three bodies. Set point 4. LIT. seal e685dfde4304b8af9cf5cbb822b7dcc1fefa6d70a47c16f585a478cc27903ac5
+- [Boxer](./spheres/primers/boxer.html): Animal Farm. Nested three bodies. Set point 5. LIT. seal ef8a821a3a8468a52c0554f3999e7f4f39412350f774aba72164e7b092315a9b
+- [Clover](./spheres/primers/clover.html): Animal Farm. Nested three bodies. Set point 6. LIT. seal 38913acf2c18113320646ce6ee955648ff3da11bc28b110850563dc07c34772d
+- [Benjamin](./spheres/primers/benjamin.html): Animal Farm. Nested three bodies. Set point 7. LIT. seal ff66e97d55e8c35784b60f78ae8f73d7d093974e868b414f54b342ae2d3d2f4e
+- [Mollie](./spheres/primers/mollie.html): Animal Farm. Nested three bodies. Set point 8. LIT. seal 155b9e830daeb98cee0991e3aa4663781fe596655c842723a44c62a208169efd
+- [Moses](./spheres/primers/moses-raven.html): Animal Farm. Nested three bodies. Set point 9. LIT. seal 4c348c229806577047fe79dd6dcccc131610e5f941261103b8eafeb8dc9d963b
+- [Mr. Jones](./spheres/primers/farmer-jones.html): Animal Farm. Nested three bodies. Set point 10. LIT. seal 718fd41996c56b0d365020ce2854d4ce94a7f38355c7db3c625a16771736a8cd
+- [Muriel](./spheres/primers/muriel.html): Animal Farm. Nested three bodies. Set point 11. LIT. seal 50b2c5225568bac375065f52fd5de2e1eda63d279c31c1f2db03c3314c2dd55f
+- [Minimus](./spheres/primers/minimus.html): Animal Farm. Nested three bodies. Set point 12. LIT. seal 2b63381977aedb32937df986f938e8f6717c8c56fc39df2e7a41e6216d3bdd80
+- [Mr. Pilkington](./spheres/primers/pilkington.html): Animal Farm. Nested three bodies. Set point 13. LIT. seal 7f8473a9b5cd5609aeefa3c344798b952142c9b2d13547d57cf66eb484c7d575
+- [Mr. Frederick](./spheres/primers/farmer-frederick.html): Animal Farm. Nested three bodies. Set point 14. LIT. seal 02d9f24bd6b28014c090ff7889790e3137b604df9a9ab28a6dcc816c6331aea5
+- [Whymper](./spheres/primers/whymper.html): Animal Farm. Nested three bodies. Set point 15. LIT. seal 38a0e951f99c7e1781a8d1f82cab51083c75f45fe6888449ef8d1e03197cdf5f
+- [Ralph](./spheres/primers/ralph.html): Lord of the Flies. Nested three bodies. Set point 16. LIT. seal e0c908fe1b499d6a6764d3eefd9484b0403de658e17410f0baa2edd3dbb6880d
+- [Jack](./spheres/primers/jack-meridew.html): Lord of the Flies. Nested three bodies. Set point 17. LIT. seal b6ed32b5c9d3bba604f3173721be3e9f96febb74bebbb7bd56dda3c3ea76803c
+- [Piggy](./spheres/primers/piggy.html): Lord of the Flies. Nested three bodies. Set point 18. LIT. seal 08e7ec9ce4abce6c3744a699f46221e815c7ba7e9404be6f51bf6e394b45d9a1
+- [Simon](./spheres/primers/simon-lotf.html): Lord of the Flies. Nested three bodies. Set point 19. LIT. seal 7ed0c7d6d0765be6852a24f96aa97577a0de7ff3e6c64345c01ebe82709e0912
+- [Winston Smith](./spheres/primers/winston-smith.html): Nineteen Eighty-Four. Nested three bodies. Set point 20. LIT. seal 43bfefc1dbcd76ac344fc2607205d116913e38b09c4787d1b6dae87efef18a55
+- [O'Brien](./spheres/primers/obrien.html): Nineteen Eighty-Four. Nested three bodies. Set point 21. LIT. seal 04ede2aabe8d7322227423383f20c39df42c2a668b1dd743ccc8a79d3d6a7451
+- [Parsons](./spheres/primers/parsons.html): Nineteen Eighty-Four. Nested three bodies. Set point 22. LIT. seal 3b6e2df12a51cc56cb37b57b5132cb86f8e8260786d7b104ea02fb6f88e57a41
+- [John](./spheres/primers/john-savage.html): Brave New World. Nested three bodies. Set point 23. LIT. seal 96ff7e81543c12c358500aa047079a5362a1c44de4ca4f70f087fd8d206d7942
+- [Mustapha Mond](./spheres/primers/mustapha-mond.html): Brave New World. Nested three bodies. Set point 24. LIT. seal 055e8d572624fa3a491048f3a0ca1b945a699a10ea5f3fe4addfe9219a09bc47
+- [Lenina](./spheres/primers/lenina.html): Brave New World. Nested three bodies. Set point 25. LIT. seal c8a05b4b1d4592ed543adcd5ea7d0a843e6382c61eb7a8affc9a97b813da1502
+- [Guy Montag](./spheres/primers/montag.html): Fahrenheit 451. Nested three bodies. Set point 26. LIT. seal b205a0edf05ec85953138e4464bf046bbb826ff4224dc93a7f408a4062f4e57f
+- [Captain Beatty](./spheres/primers/beatty.html): Fahrenheit 451. Nested three bodies. Set point 27. LIT. seal ea8de2cd0ca8998ec504e8a4fd71dbf5ef7b06b162c96e2b9d223b26c05c72bc
+- [Clarisse](./spheres/primers/clarisse.html): Fahrenheit 451. Nested three bodies. Set point 28. LIT. seal bab0aabcf69f0837b055a0baa60a06da96f71f58f3ce2d1edc89ff9bc83ee4c2
+- [Charlotte](./spheres/primers/charlotte.html): Charlotte's Web. Nested three bodies. Set point 29. LIT. seal 7c55dc126494ae6e7f07cf08a4bb419338b406f3c28b37ab1b88b62c68e55a59
+- [Wilbur](./spheres/primers/wilbur.html): Charlotte's Web. Nested three bodies. Set point 30. LIT. seal 07ce22ccd87b05a8e4c1a6fe6b3a5ca94f048ad6dec19d42938573da0fd9d470
+- [Templeton](./spheres/primers/templeton.html): Charlotte's Web. Nested three bodies. Set point 31. LIT. seal bbc4fd8b92117c17010c52ad944c0c3d29a9c4e46b8efa1b1bcc7961f7005bb9
+- [Hazel](./spheres/primers/hazel.html): Watership Down. Nested three bodies. Set point 32. LIT. seal 9c8c20609c3addb24d333c0b085680fa1a950741a52c67b2d30166efa44bfde6
+- [Bigwig](./spheres/primers/bigwig.html): Watership Down. Nested three bodies. Set point 33. LIT. seal 942d8f8f13cf8e48c49604bdbec8fb3bd52f15348dbe800b089cfc2806f938df
+- [Fiver](./spheres/primers/fiver.html): Watership Down. Nested three bodies. Set point 34. LIT. seal df83d48e768562e1b58a9c2f15537a662402102a632c8dbfb201c0e76298fdeb
+- [Madame Defarge](./spheres/primers/madame-defarge.html): A Tale of Two Cities. Nested three bodies. Set point 35. LIT. seal 02001c083a4e331414249d9554ada46d827f6926a0e969079869e30dcb78ecd9
+- [Sydney Carton](./spheres/primers/sydney-carton.html): A Tale of Two Cities. Nested three bodies. Set point 36. LIT. seal be58e9bd2d03a88f5c4229535c1475c958ee754301fde4e56783a2c2cf0ffd17
+- [Tom Joad](./spheres/primers/tom-joad.html): The Grapes of Wrath. Nested three bodies. Set point 37. LIT. seal be85d29ae2ad2af299db60ee6f619c3826815e9a5b6144a0b7dcb259a5cd145c
+- [Ma Joad](./spheres/primers/ma-joad.html): The Grapes of Wrath. Nested three bodies. Set point 38. LIT. seal 0285b04a90a51e265d171d8600858b692b2e23e679eae9f1c917db14fbb0ffb8
+- [Jim Casy](./spheres/primers/jim-casy.html): The Grapes of Wrath. Nested three bodies. Set point 39. LIT. seal e13dd959913e991f3508037d86aba41a930f7e38a7e7e82ff4561a6278b766d5
+- [Randle McMurphy](./spheres/primers/randle-mcmurphy.html): One Flew Over the Cuckoo's Nest. Nested three bodies. Set point 40. LIT. seal 250c279c43ca38a670d4292560fccd4d62cbbd2e12c70094fd1f89f357ade758
+- [Nurse Ratched](./spheres/primers/nurse-ratched.html): One Flew Over the Cuckoo's Nest. Nested three bodies. Set point 41. LIT. seal a98e1aef84fb7e2cce506cb7791ab9abf12db61d29648950bba4fb8adc89c4bd
+- [Chief Bromden](./spheres/primers/chief-bromden.html): One Flew Over the Cuckoo's Nest. Nested three bodies. Set point 42. LIT. seal a5899508c2714f149e4fdc50978681c1e8f116edd60ec8f4c03a2d0102dc3503
+
 ## Agentic spheres (Dave t196u)
 - [The Zebes Run](./spheres/metroid-agents.html): STEWARD IV · BOUTON'S TABLE. Agents G, R and O try to beat an abstract NES-Metroid map, posting tips to a shared board while K watches. seal 92d18c04fd59a78a4b6f4ffec44e8311dfc1b9db81218518fbfcbfa98d595a24
 - [Poetical Science](./spheres/poetical-science.html): STEWARD I · WOLFRAM'S ROW. Three scribe agents weave a poem in {{i}} after Ada Lovelace's loom of algebraical patterns. seal 9855b6d77cb1ca7e8fcc69fdf02295ca238d869aabc79c44a36bb6147bad1fe6

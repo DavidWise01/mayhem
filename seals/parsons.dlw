@@ -1,0 +1,1 @@
+{"slug": "parsons", "seal": "3b6e2df12a51cc56cb37b57b5132cb86f8e8260786d7b104ea02fb6f88e57a41", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

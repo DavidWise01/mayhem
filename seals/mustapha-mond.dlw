@@ -1,0 +1,1 @@
+{"slug": "mustapha-mond", "seal": "055e8d572624fa3a491048f3a0ca1b945a699a10ea5f3fe4addfe9219a09bc47", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
