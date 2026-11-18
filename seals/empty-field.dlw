@@ -1,0 +1,1 @@
+{"slug": "empty-field", "seal": "577e44d9ed6d0527699818bb930bdfbefa9afeb467749474b143f4dc75096383", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

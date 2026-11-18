@@ -1,0 +1,1 @@
+{"slug": "quiet-room", "seal": "728df313d16b90bd3ea643f474761d18cc157b9d7de829114089cdf681ceb7a6", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
