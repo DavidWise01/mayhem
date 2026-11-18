@@ -1,0 +1,1 @@
+{"slug": "pollen-lock", "seal": "bb4a7f9f7fd4a81644fcfbb9b6dd58fc303dc324f928c0d03e264f0e32ef34f2", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

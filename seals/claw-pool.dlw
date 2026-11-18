@@ -1,0 +1,1 @@
+{"slug": "claw-pool", "seal": "af6163d655e079ed080480f7af9988c89b8f6d8ac520b71ade999d14066b9407", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "spore-window", "seal": "a6481e0f70ebb9007dbc6ca05bf35d65e91ef30317778872a70c03b5b275a5da", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

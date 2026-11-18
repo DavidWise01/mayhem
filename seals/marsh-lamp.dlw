@@ -1,0 +1,1 @@
+{"slug": "marsh-lamp", "seal": "92c3175b7461b9d0c72f5ae6807b3dccece00e34d2580c808dc162a0c6f08627", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

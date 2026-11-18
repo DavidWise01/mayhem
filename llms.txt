@@ -20,7 +20,7 @@ Three spheres of the world Mayhem. Each page is a Three.js picture with two agen
 - [The Single Door](./spheres/worlds/single-door.html): two faces minus one opening is 1. Agentics HINGE and PORTER. LIT.
 
 ## Osmosis
-Twenty-five spots. Each spot keeps two persistent gap agents, TOROID and BOX. A worse step is dropped. A step is kept only when the gap shrinks. What leaves the toroid arrives in the box. The kept gap is stored in this browser. Not a hallway seat.
+Forty-two spots. From The Glass Raft on, DIATOM and WATER BEAR cross with the toroid and the box, and a selfish step is dropped. Each spot keeps two persistent gap agents, TOROID and BOX. A worse step is dropped. A step is kept only when the gap shrinks. What leaves the toroid arrives in the box. The kept gap is stored in this browser. Not a hallway seat.
 - [The Salt Gate](./spheres/osmosis/salt-gate.html): TOROID and BOX osmose 1 of salt. Persistent gap. LIT. seal a4fbb92c677971491bb0d795622eb077714f1342ce00fa1ac749c8e6055c43bd
 - [The Ink Well](./spheres/osmosis/ink-well.html): TOROID and BOX osmose 2 of ink. Persistent gap. LIT. seal 247f04dd8d5cc795d322e05871f81eabd4670b2f0fa5389724f40be4468539bc
 - [The Warm Cup](./spheres/osmosis/warm-cup.html): TOROID and BOX osmose 3 of heat. Persistent gap. LIT. seal fa3505ec49102cfb3afe5bd8f95848e4eccbaf6a8d275bfb1e664dff458438ce
@@ -46,6 +46,23 @@ Twenty-five spots. Each spot keeps two persistent gap agents, TOROID and BOX. A 
 - [The Coral Mouth](./spheres/osmosis/coral-mouth.html): TOROID and BOX osmose 23 of coral. Persistent gap. LIT. seal 953516cb23d7aa38d6816d8c774cc47af62b5028062ac2d5415189eebe9ae2f8
 - [The Pine Pitch](./spheres/osmosis/pine-pitch.html): TOROID and BOX osmose 24 of pitch. Persistent gap. LIT. seal a06ed8ae383c8543010dc2737bdc3221dffb6abd90202caac8c7b4214d78035d
 - [The Silver Vein](./spheres/osmosis/silver-vein.html): TOROID and BOX osmose 25 of silver. Persistent gap. LIT. seal 650c41ec6a8ebc8df265365abcee664fc566c1b622596c4db098c730b5362ca5
+- [The Glass Raft](./spheres/osmosis/glass-raft.html): TOROID and BOX osmose 26 of silica. DIATOM and WATER BEAR cross together. Persistent gap. LIT. seal 8265b54a0b673dba9d0e99d0a685715bcf350a2a6ddc7c6b3198cdd54210465f
+- [The Claw Pool](./spheres/osmosis/claw-pool.html): TOROID and BOX osmose 27 of brine. DIATOM and WATER BEAR cross together. Persistent gap. LIT. seal af6163d655e079ed080480f7af9988c89b8f6d8ac520b71ade999d14066b9407
+- [The Amber Film](./spheres/osmosis/amber-film.html): TOROID and BOX osmose 28 of amber. DIATOM and WATER BEAR cross together. Persistent gap. LIT. seal 32ac3d27e0c40853e0bb7c2f7f7d758e05e9c26dfebabdc0d9eb8889db612c42
+- [The Kelp Stair](./spheres/osmosis/kelp-stair.html): TOROID and BOX osmose 29 of kelp. DIATOM and WATER BEAR cross together. Persistent gap. LIT. seal 85ae0eb6d92a10b0990c94ff2539fb3a979cd52828feef7f41142f8058f93995
+- [The Foam Gate](./spheres/osmosis/foam-gate.html): TOROID and BOX osmose 30 of foam. DIATOM and WATER BEAR cross together. Persistent gap. LIT. seal c33cda1f62411304a8f6162466feb05919c7ea2a38a211b063b663cab8043870
+- [The Pollen Lock](./spheres/osmosis/pollen-lock.html): TOROID and BOX osmose 31 of pollen. DIATOM and WATER BEAR cross together. Persistent gap. LIT. seal bb4a7f9f7fd4a81644fcfbb9b6dd58fc303dc324f928c0d03e264f0e32ef34f2
+- [The Spore Window](./spheres/osmosis/spore-window.html): TOROID and BOX osmose 32 of spore. DIATOM and WATER BEAR cross together. Persistent gap. LIT. seal a6481e0f70ebb9007dbc6ca05bf35d65e91ef30317778872a70c03b5b275a5da
+- [The Reed Mouth](./spheres/osmosis/reed-mouth.html): TOROID and BOX osmose 33 of reed. DIATOM and WATER BEAR cross together. Persistent gap. LIT. seal 9f30154e3e2a96f22528bf67a4f36c0b1c86f2d3e1b3c7376a804bc815c4c6c9
+- [The Lotus Pier](./spheres/osmosis/lotus-pier.html): TOROID and BOX osmose 34 of lotus. DIATOM and WATER BEAR cross together. Persistent gap. LIT. seal 063480bd45f140bcf512341d71f262a9bdde0287e22d69b86d2479fdd40385f2
+- [The Silt Bank](./spheres/osmosis/silt-bank.html): TOROID and BOX osmose 35 of silt. DIATOM and WATER BEAR cross together. Persistent gap. LIT. seal c368bf98a846c0139f49226f9e7153d25686098c80fe9eb298f18b1fb1d5d8d1
+- [The Nectar Bell](./spheres/osmosis/nectar-bell.html): TOROID and BOX osmose 36 of nectar. DIATOM and WATER BEAR cross together. Persistent gap. LIT. seal 4c3de91d9541905c96af36947cedb9695f18b828a98632fb23fafda4fe7ad87a
+- [The Dew Bowl](./spheres/osmosis/dew-bowl.html): TOROID and BOX osmose 37 of dew. DIATOM and WATER BEAR cross together. Persistent gap. LIT. seal f026f5faf1a3ff3504e3878ec0763eaf82937796cceba53cae9ce108d00b7665
+- [The Algae Vein](./spheres/osmosis/algae-vein.html): TOROID and BOX osmose 38 of algae. DIATOM and WATER BEAR cross together. Persistent gap. LIT. seal af64835382aecd7f30320c21b944e7b80715065990ce92af5106677c378f8556
+- [The Shell Rain](./spheres/osmosis/shell-rain.html): TOROID and BOX osmose 39 of shell. DIATOM and WATER BEAR cross together. Persistent gap. LIT. seal 64b3465ce691954ec080bb94b8e3441790612dde3f943177ae6ca2f7207a4805
+- [The Marsh Lamp](./spheres/osmosis/marsh-lamp.html): TOROID and BOX osmose 40 of marsh. DIATOM and WATER BEAR cross together. Persistent gap. LIT. seal 92c3175b7461b9d0c72f5ae6807b3dccece00e34d2580c808dc162a0c6f08627
+- [The Crystal Gill](./spheres/osmosis/crystal-gill.html): TOROID and BOX osmose 41 of crystal. DIATOM and WATER BEAR cross together. Persistent gap. LIT. seal 35cb4b32b80524e362080dbaf2199f37d162eef77fe957351c2af91fbfb29f6e
+- [The Quiet Pool](./spheres/osmosis/quiet-pool.html): TOROID and BOX osmose 42 of rain. DIATOM and WATER BEAR cross together. Persistent gap. LIT. seal b0aebdc183120b17d70f652168e95ffc2414ecf6e6ecc462eb7c9f1f3edb7ce3
 
 ## Agentic spheres (Dave t196u)
 - [The Zebes Run](./spheres/metroid-agents.html): STEWARD IV · BOUTON'S TABLE. Agents G, R and O try to beat an abstract NES-Metroid map, posting tips to a shared board while K watches. seal 92d18c04fd59a78a4b6f4ffec44e8311dfc1b9db81218518fbfcbfa98d595a24

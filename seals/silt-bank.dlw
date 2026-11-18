@@ -1,0 +1,1 @@
+{"slug": "silt-bank", "seal": "c368bf98a846c0139f49226f9e7153d25686098c80fe9eb298f18b1fb1d5d8d1", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

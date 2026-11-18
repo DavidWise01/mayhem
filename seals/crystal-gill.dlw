@@ -1,0 +1,1 @@
+{"slug": "crystal-gill", "seal": "35cb4b32b80524e362080dbaf2199f37d162eef77fe957351c2af91fbfb29f6e", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

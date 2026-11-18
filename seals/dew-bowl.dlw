@@ -1,0 +1,1 @@
+{"slug": "dew-bowl", "seal": "f026f5faf1a3ff3504e3878ec0763eaf82937796cceba53cae9ce108d00b7665", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

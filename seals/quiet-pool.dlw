@@ -1,0 +1,1 @@
+{"slug": "quiet-pool", "seal": "b0aebdc183120b17d70f652168e95ffc2414ecf6e6ecc462eb7c9f1f3edb7ce3", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

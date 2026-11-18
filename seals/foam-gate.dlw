@@ -1,0 +1,1 @@
+{"slug": "foam-gate", "seal": "c33cda1f62411304a8f6162466feb05919c7ea2a38a211b063b663cab8043870", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "algae-vein", "seal": "af64835382aecd7f30320c21b944e7b80715065990ce92af5106677c378f8556", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

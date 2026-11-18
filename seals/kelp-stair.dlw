@@ -1,0 +1,1 @@
+{"slug": "kelp-stair", "seal": "85ae0eb6d92a10b0990c94ff2539fb3a979cd52828feef7f41142f8058f93995", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

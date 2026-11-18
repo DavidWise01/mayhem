@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Lotus Pier · a sphere of Mayhem</title>
+<style>
+html,body{margin:0;background:#f8e0ea;color:#3a2030;font-family:Georgia,serif}
+#wrap{max-width:1100px;margin:0 auto;padding:22px 22px 40px}
+h1{font-weight:500;font-size:clamp(32px,5vw,52px);margin:0 0 8px}
+.kicker{font-family:ui-monospace,monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+#v3{position:relative;height:74vh;min-height:520px;border-radius:18px;overflow:hidden;background:#f8e0ea}
+#v3 canvas{display:block;width:100%;height:100%}
+#agentlog{position:absolute;z-index:2;left:14px;bottom:14px;margin:0;max-width:min(520px,90%);padding:8px 10px;border-radius:10px;background:rgba(255,252,247,.92);color:#3a2030;font-family:ui-monospace,monospace;font-size:12px;line-height:1.45}
+.story{max-width:68ch;line-height:1.6}
+.t{display:inline-block;padding:1px 8px;border-radius:8px;font-weight:700;font-size:13px;color:#111}
+.LIT{background:#3ee07a}.AMBER{background:#ffb020}.WALL{background:#ff5a5a;color:#fff}.MODEL{background:#b48cff}
+a{color:#3a2030}
+code{font-family:ui-monospace,monospace;font-size:12px;word-break:break-all}
+body.thumb .story,body.thumb .kicker,body.thumb #agentlog{display:none}
+body.thumb #wrap{padding:0;max-width:none}
+body.thumb #v3{height:100vh;min-height:0;border-radius:0}
+</style>
+</head>
+<body>
+<main id="wrap">
+<p class="kicker">A sphere of Mayhem · keeper ERIS</p>
+<h1>The Lotus Pier</h1>
+<div id="v3"><p id="agentlog">TOROID, BOX, DIATOM and WATER BEAR are in the tank.</p></div>
+<div class="story">
+<p>At The Lotus Pier, the tank held a toroid, a box, a diatom, and a water bear. TOROID held the lotus. A worse step was dropped, then it kept a step only when the gap to 34 shrank. BOX took the same path, so 34 measures arrived. DIATOM rode on WATER BEAR. A selfish step, one of them moving alone, was dropped. They kept a step only when the shared gap shrank, and they crossed the tank together.</p>
+<p>Four agents hold this spot. TOROID and BOX osmose. DIATOM and WATER BEAR are cooperative: a selfish step is dropped, and a step is kept only when the shared gap shrinks. A second run matches, and this browser stores the kept gap.</p>
+<p><span class="t LIT">LIT</span> 34 measures of lotus crossed. DIATOM and WATER BEAR arrived together. The gap is under 0.001. This page throws if the sides disagree.</p>
+<p><span class="t MODEL">MODEL</span> The picture is the tank after the crossing. The diatom stays on the bear.</p>
+<p id="proof">Checking the sphere.</p>
+<p>Seal sha256(name|slug|blurb): <code id="seal">063480bd45f140bcf512341d71f262a9bdde0287e22d69b86d2479fdd40385f2</code></p>
+<p><a href="../../index.html">Mayhem</a></p>
+</div>
+</main>
+<script>
+const SLUG="lotus-pier",NAME="The Lotus Pier",BLURB="TOROID and BOX osmose 34 measures of lotus at The Lotus Pier. DIATOM and WATER BEAR cross together. A selfish step is dropped. A step is kept only when the shared gap shrinks.",SEAL="063480bd45f140bcf512341d71f262a9bdde0287e22d69b86d2479fdd40385f2",DOSE=34;
+if(/[?&]thumb=1/.test(location.search)) document.body.classList.add('thumb');
+function climb(agent, target){
+  let x=0, gap=Math.abs(target-x), kept=[], dropped=0;
+  const bad=x-gap*0.25, bg=Math.abs(target-bad);
+  if(bg<gap) throw Error(agent+' kept a worse step');
+  dropped=1;
+  for(let i=0;i<16;i++){
+    const next=x+(target-x)/2, g=Math.abs(target-next);
+    if(!(g<gap)) throw Error(agent+' worse');
+    x=next; gap=g; kept.push(+x.toFixed(6));
+  }
+  if(gap>1e-3) throw Error(agent+' gap');
+  return {agent:agent, x:x, gap:gap, kept:kept, dropped:dropped};
+}
+function pairGap(d, b, target){ return Math.max(Math.abs(target-d), Math.abs(target-b)); }
+function cooperate(target){
+  let d=0, b=0, gap=pairGap(d, b, target), kept=[], dropped=0;
+  const selfish=d+(target-d)*0.8;
+  if(pairGap(selfish, b, target)<gap) throw Error('selfish step was kept');
+  dropped=1;
+  for(let i=0;i<16;i++){
+    const nd=d+(target-d)/2, nb=b+(target-b)/2, g=pairGap(nd, nb, target);
+    if(!(g<gap)) throw Error('gap stuck');
+    if(Math.abs(nd-nb)>1e-9) throw Error('split');
+    d=nd; b=nb; gap=g; kept.push(+d.toFixed(6));
+  }
+  if(gap>1e-3) throw Error('bear gap');
+  if(Math.abs(d-b)>1e-9) throw Error('apart');
+  if(Math.round(d)!==target) throw Error('together');
+  return {d:d, b:b, gap:gap, kept:kept, dropped:dropped};
+}
+function once(){
+  const tor=climb('TOROID', DOSE), box=climb('BOX', DOSE), coop=cooperate(DOSE);
+  if(tor.dropped!==1||box.dropped!==1||coop.dropped!==1) throw Error('no drop');
+  if(tor.kept.join()!=box.kept.join()) throw Error('osmosis');
+  if(coop.kept.join()!=tor.kept.join()) throw Error('coop');
+  if(Math.abs(tor.x-box.x)>1e-9||Math.abs(coop.d-coop.b)>1e-9) throw Error('sides');
+  if(Math.abs(tor.x-DOSE)>1e-3) throw Error('dose');
+  if(Math.round(tor.x)!==DOSE) throw Error('count');
+  return tor.agent+'='+tor.x.toFixed(6)+'|'+box.agent+'='+box.x.toFixed(6)+'|DIATOM='+coop.d.toFixed(6)+'|BEAR='+coop.b.toFixed(6);
+}
+function remember(word){
+  const key='mayhem-osmosis-kept';
+  let book={};
+  try{ book=JSON.parse(localStorage.getItem(key)||'{}')||{}; }catch(e){ book={}; }
+  const row=book[SLUG];
+  if(!row) book[SLUG]={word:word, visits:1};
+  else { if(row.word!==word) throw Error('persistent drift'); row.visits+=1; }
+  localStorage.setItem(key, JSON.stringify(book));
+  const again=JSON.parse(localStorage.getItem(key))[SLUG];
+  if(!again||again.word!==word) throw Error('persistent drift');
+  return again.visits;
+}
+function check(){
+  const a=once(), b=once();
+  if(a!==b) throw Error('second run');
+  const visits=remember(a);
+  if(visits<1) throw Error('memory');
+  const el=document.getElementById('agentlog');
+  if(el) el.textContent='TOROID released '+DOSE+'. BOX received '+DOSE+'. DIATOM and WATER BEAR crossed together. visit '+visits;
+  return 'TOROID + BOX osmosed '+DOSE+'; DIATOM + BEAR together';
+}
+async function sha(t){
+  const d=await crypto.subtle.digest('SHA-256', new TextEncoder().encode(t));
+  return [...new Uint8Array(d)].map(function(b){return b.toString(16).padStart(2,'0');}).join('');
+}
+(async function(){
+  const p=document.getElementById('proof');
+  try{
+    const h=await sha(NAME+'|'+SLUG+'|'+BLURB);
+    if(h!==SEAL) throw Error('seal mismatch');
+    const r=check();
+    const r2=check();
+    if(r!==r2) throw Error('second run');
+    p.innerHTML='<span class="t LIT">LIT</span> self-check passed: '+r;
+  }catch(e){
+    p.innerHTML='<span class="t WALL">FAIL</span> '+e.message;
+    throw e;
+  }
+})();
+</script>
+<script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}</script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+const host=document.getElementById('v3');
+const thumb=/[?&]thumb=1/.test(location.search);
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const DOSE=34;
+const scene=new THREE.Scene();
+scene.background=new THREE.Color("#f8e0ea");
+scene.fog=new THREE.Fog("#f8e0ea", 9, 18);
+const camera=new THREE.PerspectiveCamera(40, 1, 0.08, 40);
+camera.position.set(0.35, 1.85, 6.4);
+const renderer=new THREE.WebGLRenderer({antialias:true});
+renderer.setPixelRatio(Math.min(2, devicePixelRatio||1));
+renderer.outputColorSpace=THREE.SRGBColorSpace;
+renderer.toneMapping=THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure=1.08;
+host.appendChild(renderer.domElement);
+scene.add(new THREE.HemisphereLight(0xfff8ee, 0x6a8f78, 0.85));
+const sun=new THREE.DirectionalLight(0xfff4dd, 1.05);
+sun.position.set(3.2, 6.5, 4);
+scene.add(sun);
+const cool=new THREE.PointLight(0x9fe7ff, 6, 9);
+cool.position.set(-1.2, 1.8, 0.4);
+scene.add(cool);
+const warm=new THREE.PointLight(0xffc27a, 4, 8);
+warm.position.set(1.4, 0.8, 1.2);
+scene.add(warm);
+const ground=new THREE.Mesh(new THREE.CircleGeometry(3.6, 48), new THREE.MeshStandardMaterial({color:"#f0b8cc", roughness:1}));
+ground.rotation.x=-Math.PI/2;
+scene.add(ground);
+ground.updateWorldMatrix(true, true);
+const up=new THREE.Vector3(0,0,1).applyQuaternion(ground.quaternion);
+if(up.y<0.9) throw Error('ground faces down');
+const tank=new THREE.Mesh(new THREE.BoxGeometry(5.2, 2.7, 3.5), new THREE.MeshStandardMaterial({color:"#f0b8cc", transparent:true, opacity:0.16, roughness:0.04, metalness:0.02, side:THREE.DoubleSide}));
+tank.position.y=1.25;
+scene.add(tank);
+const membrane=new THREE.Mesh(new THREE.PlaneGeometry(2.4, 2.0), new THREE.MeshStandardMaterial({color:0xffffff, transparent:true, opacity:0.22, roughness:0.05, side:THREE.DoubleSide}));
+membrane.rotation.y=Math.PI/2;
+membrane.position.set(0, 1.05, 0);
+scene.add(membrane);
+membrane.updateWorldMatrix(true, true);
+const face=new THREE.Vector3(0,0,1).applyQuaternion(membrane.quaternion);
+if(face.x<0.9) throw Error('membrane turned');
+for(let s=0;s<3;s++){
+  const shaft=new THREE.Mesh(new THREE.PlaneGeometry(0.45, 2.3), new THREE.MeshBasicMaterial({color:0xfff6dd, transparent:true, opacity:0.13, side:THREE.DoubleSide, depthWrite:false}));
+  shaft.position.set(-1.5+s*1.5, 1.5, -0.6);
+  shaft.rotation.z=-0.18;
+  scene.add(shaft);
+}
+for(let p=0;p<9;p++){
+  const pebble=new THREE.Mesh(new THREE.DodecahedronGeometry(0.08+ (p%3)*0.03, 0), new THREE.MeshStandardMaterial({color:"#8a3858", roughness:0.85}));
+  pebble.position.set(-1.6+(p%5)*0.7, 0.06, -0.8+(p%3)*0.55);
+  scene.add(pebble);
+}
+const toroid=new THREE.Mesh(new THREE.TorusGeometry(0.46, 0.15, 20, 48), new THREE.MeshStandardMaterial({color:"#e07098", roughness:0.28, metalness:0.18}));
+toroid.position.set(-1.45, 1.05, -0.15);
+toroid.rotation.y=Math.PI/2;
+scene.add(toroid);
+toroid.updateWorldMatrix(true, true);
+const hole=new THREE.Vector3(0,0,1).applyQuaternion(toroid.quaternion);
+if(hole.x<0.9) throw Error('toroid faces away');
+const cube=new THREE.Mesh(new THREE.BoxGeometry(0.78, 0.78, 0.78), new THREE.MeshStandardMaterial({color:"#8a3858", roughness:0.42, metalness:0.12}));
+cube.position.set(1.35, 0.72, -0.1);
+scene.add(cube);
+const skin=new THREE.MeshStandardMaterial({color:'#e7b08a', roughness:0.55, metalness:0.02});
+const glass=new THREE.MeshPhysicalMaterial({color:'#d7f36a', roughness:0.12, metalness:0.0, transmission:0.55, thickness:0.25, transparent:true, opacity:0.92});
+const bear=new THREE.Group();
+const body=new THREE.Mesh(new THREE.SphereGeometry(0.34, 28, 18), skin);
+body.scale.set(1.5, 0.74, 0.9);
+bear.add(body);
+const head=new THREE.Mesh(new THREE.SphereGeometry(0.16, 18, 12), skin);
+head.position.set(0.46, 0.05, 0);
+bear.add(head);
+const snout=new THREE.Mesh(new THREE.SphereGeometry(0.07, 12, 8), skin);
+snout.position.set(0.58, 0.02, 0);
+snout.userData.role='nose';
+bear.add(snout);
+for(let i=0;i<8;i++){
+  const side=i<4?-1:1, along=i%4;
+  const leg=new THREE.Mesh(new THREE.CylinderGeometry(0.03, 0.045, 0.22, 8), skin);
+  leg.position.set(-0.18+along*0.16, -0.16, side*0.18);
+  leg.rotation.z=side*-0.55;
+  leg.userData.role='leg';
+  bear.add(leg);
+}
+const diatom=new THREE.Group();
+const disc=new THREE.Mesh(new THREE.CylinderGeometry(0.22, 0.22, 0.045, 28), glass);
+diatom.add(disc);
+for(let i=0;i<12;i++){
+  const rib=new THREE.Mesh(new THREE.BoxGeometry(0.2, 0.018, 0.016), glass);
+  rib.position.y=0.03;
+  rib.rotation.y=i*Math.PI/12;
+  rib.userData.role='rib';
+  diatom.add(rib);
+}
+const hub=new THREE.Mesh(new THREE.SphereGeometry(0.045, 12, 8), glass);
+hub.position.y=0.04;
+diatom.add(hub);
+diatom.position.set(0.02, 0.32, 0);
+bear.add(diatom);
+const from=new THREE.Vector3(-1.2, 0.36, 0.9);
+const home=new THREE.Vector3(1.05, 0.36, 0.9);
+bear.position.copy(home);
+bear.rotation.y=0;
+scene.add(bear);
+bear.updateWorldMatrix(true, true);
+const noseAt=new THREE.Vector3(), belly=new THREE.Vector3();
+snout.getWorldPosition(noseAt);
+bear.getWorldPosition(belly);
+const front=noseAt.sub(belly);
+front.y=0; front.normalize();
+const travel=home.clone().sub(from);
+travel.y=0; travel.normalize();
+if(front.dot(travel)<0.9) throw Error('bear faces off the path');
+if(diatom.parent!==bear) throw Error('diatom left the bear');
+let legs=0, ribs=0;
+bear.traverse(function(o){ if(o.userData&&o.userData.role==='leg') legs++; if(o.userData&&o.userData.role==='rib') ribs++; });
+if(legs!==8||ribs!==12) throw Error('body');
+const dropGeo=new THREE.SphereGeometry(0.045, 10, 8);
+const dropMat=new THREE.MeshStandardMaterial({color:"#ffd0e0", roughness:0.25, emissive:"#ffd0e0", emissiveIntensity:0.2});
+const drops=new THREE.InstancedMesh(dropGeo, dropMat, DOSE);
+const dummy=new THREE.Object3D();
+const homes=[];
+for(let i=0;i<DOSE;i++){
+  const col=i%7, row=Math.floor(i/7);
+  const spot=new THREE.Vector3(1.05+(col-3)*0.1, 0.28+row*0.09, 0.15+((i%3)-1)*0.08);
+  homes.push(spot);
+  dummy.position.copy(spot);
+  dummy.updateMatrix();
+  drops.setMatrixAt(i, dummy.matrix);
+}
+drops.instanceMatrix.needsUpdate=true;
+if(drops.count!==DOSE) throw Error('drops');
+scene.add(drops);
+const bubbleGeo=new THREE.SphereGeometry(0.05, 10, 8);
+const bubbleMat=new THREE.MeshStandardMaterial({color:0xffffff, transparent:true, opacity:0.35, roughness:0.05});
+const bubbles=new THREE.InstancedMesh(bubbleGeo, bubbleMat, 16);
+const bubbleAt=[];
+for(let i=0;i<16;i++){
+  const spot=new THREE.Vector3(-1.3+(i%8)*0.38, 0.3+(i%5)*0.28, -0.4+(i%4)*0.25);
+  bubbleAt.push(spot.clone());
+  dummy.position.copy(spot);
+  dummy.scale.setScalar(0.45+(i%4)*0.2);
+  dummy.updateMatrix();
+  bubbles.setMatrixAt(i, dummy.matrix);
+}
+bubbles.instanceMatrix.needsUpdate=true;
+scene.add(bubbles);
+const controls=new OrbitControls(camera, renderer.domElement);
+controls.target.set(0, 0.95, 0);
+controls.enableDamping=true;
+controls.autoRotate=!(reduce||thumb);
+controls.autoRotateSpeed=0.35;
+camera.lookAt(controls.target);
+bear.userData.from=from;
+bear.userData.home=home.clone();
+bear.userData.t=0;
+if(!(reduce||thumb)) bear.position.copy(from);
+function fit(){
+  const w=host.clientWidth||640, h=Math.max(host.clientHeight||520, 1);
+  camera.aspect=w/h;
+  camera.updateProjectionMatrix();
+  renderer.setSize(w, h, false);
+}
+fit();
+addEventListener('resize', fit);
+function frame(){
+  if(!(reduce||thumb)){
+    bear.userData.t=Math.min(1, bear.userData.t+0.008);
+    bear.position.lerpVectors(bear.userData.from, bear.userData.home, bear.userData.t);
+    for(let i=0;i<DOSE;i++){
+      dummy.position.lerpVectors(toroid.position, homes[i], bear.userData.t);
+      dummy.scale.setScalar(1);
+      dummy.updateMatrix();
+      drops.setMatrixAt(i, dummy.matrix);
+    }
+    drops.instanceMatrix.needsUpdate=true;
+    for(let i=0;i<16;i++){
+      const spot=bubbleAt[i];
+      dummy.position.set(spot.x, spot.y+bear.userData.t*0.65, spot.z);
+      dummy.scale.setScalar(0.45+(i%4)*0.2);
+      dummy.updateMatrix();
+      bubbles.setMatrixAt(i, dummy.matrix);
+    }
+    bubbles.instanceMatrix.needsUpdate=true;
+  }
+  controls.update();
+  renderer.render(scene, camera);
+  if(!(reduce||thumb)) requestAnimationFrame(frame);
+}
+frame();
+</script>
+<script id="cubit-register-boot">
+(function(){
+  if(/[?&]thumb=1/.test(location.search)) return;
+  if(document.getElementById('cubit-register')) return;
+  const ORDER=['geometric','constructive','agentic','generative'];
+  const ROLES=['ARTIST','CRITIC','BUILDER','WEAVER','FOLLOWER','KEEPER'];
+  const KEY='mayhem-cubit-register';
+  function slug(){
+    for(const sc of document.scripts){
+      const m=/const SLUG="([^"]+)"/.exec(sc.textContent||'');
+      if(m) return m[1];
+    }
+    return (location.pathname.replace(/^\//,'').replace(/\.html$/i,''))||'index';
+  }
+  function geometric(){
+    let canvases=0, svgs=0, w=0, h=0;
+    document.querySelectorAll('canvas').forEach(el=>{ canvases++; w=Math.max(w, el.clientWidth|0); h=Math.max(h, el.clientHeight|0); });
+    document.querySelectorAll('svg').forEach(el=>{ svgs++; w=Math.max(w, el.clientWidth|0); h=Math.max(h, el.clientHeight|0); });
+    const v3=document.getElementById('v3');
+    if(v3){ w=Math.max(w, v3.clientWidth|0); h=Math.max(h, v3.clientHeight|0); }
+    if(!w){ w=document.documentElement.clientWidth|0; h=document.documentElement.clientHeight|0; }
+    return {name:'geometric', text:canvases+'c+'+svgs+'s·'+w+'x'+h, canvases, svgs, w, h};
+  }
+  function constructive(host){
+    const nodes=host.querySelectorAll('*').length, buttons=host.querySelectorAll('button').length;
+    return {name:'constructive', text:nodes+'n·'+buttons+'b', nodes, buttons};
+  }
+  function agentic(host, c){
+    const text=host.innerText||'';
+    const found=ROLES.filter(r=>text.indexOf(r)!==-1);
+    const agents=found.length?found:['REGISTER'];
+    return {name:'agentic', text:agents.join('+'), agents, accepted:c.nodes>0};
+  }
+  function generative(g,c,a){
+    const s=g.text+'|'+c.text+'|'+a.text;
+    let x=2166136261;
+    for(let i=0;i<s.length;i++) x=Math.imul(x^s.charCodeAt(i), 16777619);
+    const code=(x>>>0).toString(16).padStart(8,'0');
+    return {name:'generative', text:code, code};
+  }
+  function build(host){
+    const register=[];
+    const g=geometric(); register.push(g);
+    const c=constructive(host); register.push(c);
+    const a=agentic(host,c); register.push(a);
+    register.push(generative(g,c,a));
+    return register;
+  }
+  function assertReg(register){
+    if(register.length!==4) throw Error('register length '+register.length);
+    if(register.map(x=>x.name).join(',')!==ORDER.join(',')) throw Error('cubit order');
+    if(register.some(x=>!x.text)) throw Error('empty cubit');
+    if(!register[2].accepted) throw Error('agent refused the register');
+    const again=generative(register[0], register[1], register[2]);
+    if(again.code!==register[3].code) throw Error('register drift');
+    return register.map(x=>x.text).join(' | ');
+  }
+  function remember(id, word){
+    let book={};
+    try{ book=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){ book={}; }
+    book[id]={word};
+    try{ localStorage.setItem(KEY, JSON.stringify(book)); }catch(e){}
+    return Object.keys(book).length;
+  }
+  function mount(register, err, rows){
+    let el=document.getElementById('cubit-register');
+    if(!el){
+      const style=document.createElement('style');
+      style.textContent='#cubit-register{margin:18px 0;padding:14px 12px 12px;border:1px solid rgba(0,240,255,.28);border-radius:14px;background:rgba(5,8,16,.78);box-shadow:0 0 28px rgba(0,240,255,.08);color:#d7e3f5;text-align:left;font-family:ui-monospace,Menlo,monospace}#cubit-register .cr-formula{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#eaf6ff;text-shadow:0 0 8px #00f0ff;margin:0 0 10px}#cubit-register .cr-row{display:flex;gap:8px;flex-wrap:wrap}#cubit-register .cr-cubit{flex:1 1 140px;border:1px solid rgba(0,240,255,.25);border-radius:10px;padding:8px;background:rgba(0,0,0,.35)}#cubit-register .cr-cubit b{display:block;font-weight:400;font-size:10px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:4px}#cubit-register .cr-cubit[data-cubit=geometric] b{color:#00f0ff}#cubit-register .cr-cubit[data-cubit=constructive] b{color:#ffb300}#cubit-register .cr-cubit[data-cubit=agentic] b{color:#ff2bd6}#cubit-register .cr-cubit[data-cubit=generative] b{color:#eaf6ff}#cubit-register .cr-cubit i{font-style:normal;font-size:13px;color:#eaf6ff}#cubit-register .cr-word{margin-top:10px;font-size:12px;color:#ffb3ec;word-break:break-all}#cubit-register .cr-status{margin-top:8px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#8fa3c7}body.thumb #cubit-register{display:none}';
+      document.head.appendChild(style);
+      el=document.createElement('section');
+      el.id='cubit-register';
+      el.setAttribute('aria-label','cubit register');
+      const host=document.getElementById('wrap')||document.querySelector('main')||document.body;
+      const h=host.querySelector('h1');
+      if(h) h.insertAdjacentElement('afterend', el);
+      else host.insertBefore(el, host.firstChild);
+    }
+    const cells=(register||ORDER.map(name=>({name,text:'—'}))).map(x=>'<div class="cr-cubit" data-cubit="'+x.name+'"><b>'+x.name+'</b><i>'+x.text+'</i></div>').join('');
+    const word=err?'':register.map(x=>x.text).join(' | ');
+    el.innerHTML='<div class="cr-formula">{{ geometric, constructive, agentic, generative }}</div><div class="cr-row">'+cells+'</div><div class="cr-word">'+(err?'':'REGISTER '+word)+'</div><div class="cr-status">'+(err?'FAIL '+err.message:'LIT four cubits wrote the register · AMBER this browser holds '+rows+' rows')+'</div>';
+  }
+  function run(){
+    const host=document.getElementById('wrap')||document.querySelector('main')||document.body;
+    try{
+      const register=build(host);
+      const word=assertReg(register);
+      const rows=remember(slug(), word);
+      mount(register, null, rows);
+    }catch(e){
+      mount(null, e, 0);
+      throw e;
+    }
+  }
+  requestAnimationFrame(run);
+})();
+</script>
+</body>
+</html>
