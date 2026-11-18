@@ -1,0 +1,1 @@
+{"slug": "gabriel-conroy", "seal": "1995bffdd28699c767337dfe8a5c47a6591444795d71a7f088e47e2c83523b3b", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

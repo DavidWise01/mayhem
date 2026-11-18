@@ -1,0 +1,1 @@
+{"slug": "ebenezer-scrooge", "seal": "f829b03df6550b4a30f81bab96275dbd529d2be56a41c550de3de3fdf8b43728", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

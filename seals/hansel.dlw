@@ -1,0 +1,1 @@
+{"slug": "hansel", "seal": "eae25bac0e5354926e67482b6fa08158f245ed614347db15899672dd5c1ffb93", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

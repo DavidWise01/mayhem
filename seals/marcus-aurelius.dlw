@@ -1,0 +1,1 @@
+{"slug": "marcus-aurelius", "seal": "9ff7877b59f49e4d8565c4bc0986c5753bba49f8f82af0b73f79e32a9e74b9b3", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

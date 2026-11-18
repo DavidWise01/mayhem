@@ -1,0 +1,1 @@
+{"slug": "hercule-poirot", "seal": "4db6c26fc9c3b20616878ffa51772e85dc40269ac672535ec899447e8276fa3b", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

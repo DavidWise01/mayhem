@@ -1,0 +1,1 @@
+{"slug": "jane-eyre", "seal": "c0f3f8d27b2dc32496aa497a1210c26a45b7bc90cacf4f022eb9b4ae758c4155", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

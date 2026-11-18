@@ -1,0 +1,1 @@
+{"slug": "heathcliff", "seal": "f4b31eda5643d6e08a4c9e87436846b36f15c9c56e6c898a9e0eebd16bb8cad3", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

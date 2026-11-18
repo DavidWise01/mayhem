@@ -1,0 +1,1 @@
+{"slug": "frederic-henry", "seal": "8c9da1ba6da4b2a90e1573553a7ecd5baee6a2b60dad5d452fbf42e560c5172e", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

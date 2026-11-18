@@ -1,0 +1,1 @@
+{"slug": "augustine", "seal": "230b58f72af08a2f9571890f62e9258d6f81126b26149ad59096beb4ddad840e", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

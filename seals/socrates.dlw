@@ -1,0 +1,1 @@
+{"slug": "socrates", "seal": "69918679a2f8d95df23a69c2b2c69725effa8f75ee77b7396a9b3694b4c54c84", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

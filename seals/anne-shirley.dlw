@@ -1,0 +1,1 @@
+{"slug": "anne-shirley", "seal": "274f54a62ae7dba5f06209337d45d5f73ecd6b19d217ab6ae41eabbab7872f15", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

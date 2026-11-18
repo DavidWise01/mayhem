@@ -1,0 +1,1 @@
+{"slug": "walter-hartright", "seal": "9944310c312bf7b80cd0f13f9055355e078e43340b2c2e108001ba36ada23796", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

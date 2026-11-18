@@ -1,0 +1,1 @@
+{"slug": "charles-darwin", "seal": "3c3f1117320cb6bf95adc3836f4cedba2f48dfc4853b70ff5b97fc66f6aaba6e", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

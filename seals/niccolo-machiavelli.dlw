@@ -1,0 +1,1 @@
+{"slug": "niccolo-machiavelli", "seal": "c2738855019ec12e9b3fa319eb628c76a680d601c169cbeffd2bc2cca8127ac1", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

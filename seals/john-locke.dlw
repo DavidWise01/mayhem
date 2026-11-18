@@ -1,0 +1,1 @@
+{"slug": "john-locke", "seal": "93a9d8a0b7f808ec7a5ea0dc33cc007a13ed575c745603224a9760e6b01e4262", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "anthony-cade", "seal": "15e4867106191e0b70e41f6a9d194dc26685729c43bbed22ca32722922511014", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

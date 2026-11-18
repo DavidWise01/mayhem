@@ -1,0 +1,1 @@
+{"slug": "macbeth", "seal": "e5b9f6cff2d6c5176e45fc683ca5e55f49581d41129c80997393779845bc22b9", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

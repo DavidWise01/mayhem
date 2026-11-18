@@ -1,0 +1,1 @@
+{"slug": "othello", "seal": "4bfbb4ca4e1336a6c614c1761ba63b6cbc0632775dc6b517d62739a114afa7ce", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

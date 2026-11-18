@@ -1,0 +1,1 @@
+{"slug": "miss-matty", "seal": "270d2a9e7b5c8c66668caa98cf5927989070072c10f44a3cdba501871c7f81dc", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

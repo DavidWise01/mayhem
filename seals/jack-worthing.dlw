@@ -1,0 +1,1 @@
+{"slug": "jack-worthing", "seal": "2557b9704305e0c124e7ae1db7934ce2120aacd23fb2721e3d3440b7a8b1ac1c", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

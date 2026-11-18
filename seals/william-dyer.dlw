@@ -1,0 +1,1 @@
+{"slug": "william-dyer", "seal": "ad7f1c9834d894e91087acdafe927b72b2f34face2d7823fdf31d7ce6027e320", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

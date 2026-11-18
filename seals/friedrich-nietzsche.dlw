@@ -1,0 +1,1 @@
+{"slug": "friedrich-nietzsche", "seal": "72117c9f7fa6c4fabf52a33eef9c5ba6e27b9c88fa7164f70cf5778c63c968ab", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

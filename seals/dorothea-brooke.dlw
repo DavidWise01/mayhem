@@ -1,0 +1,1 @@
+{"slug": "dorothea-brooke", "seal": "edbb48b4a033937b1b3d58b9e00c51d7245946fcc2d3b39fcb1e37f40595fe50", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

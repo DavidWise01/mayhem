@@ -1,0 +1,1 @@
+{"slug": "huckleberry-finn", "seal": "0d072fe8be6feb075083fd00699b2ea5b91d16f7bf16022eda7299ad7eb5efa5", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "odysseus", "seal": "1a392d4838bdf52954cae35014aac8e98182ab077bd20cae57741a352d6b3a2e", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

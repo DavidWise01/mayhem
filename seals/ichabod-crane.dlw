@@ -1,0 +1,1 @@
+{"slug": "ichabod-crane", "seal": "191ee6820dd5a196d8a57cabba67e1fb628a0152c4add9481fcdc9fec2ba11d2", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

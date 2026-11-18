@@ -1,0 +1,1 @@
+{"slug": "henry-jekyll", "seal": "4921c95057ff5239e92fba063ca52332732ff8e03a83f94a779b7119ab032d66", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

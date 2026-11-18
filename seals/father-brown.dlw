@@ -1,0 +1,1 @@
+{"slug": "father-brown", "seal": "5acc4f8ba651a16d56631cd45a5a3b53649cbf29b7607a7ee4d7e796c50d055c", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

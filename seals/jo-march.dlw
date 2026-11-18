@@ -1,0 +1,1 @@
+{"slug": "jo-march", "seal": "7a3c45773b7a1921453f494abd237cffb318cc2455831aad6538831a722808db", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

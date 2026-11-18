@@ -1,0 +1,1 @@
+{"slug": "augustus-van-dusen", "seal": "7288bed03927eb9fd06c5441c0ec512f19de0270f0318f75ba050cf86b299ae6", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "john-stuart-mill", "seal": "7a78e2fec67e2c07a5b64a013afce9568e1bc545ae65da8717261b0bae13b775", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

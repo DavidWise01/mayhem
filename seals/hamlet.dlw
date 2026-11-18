@@ -1,0 +1,1 @@
+{"slug": "hamlet", "seal": "0e1e08cea4b747ce4837f5675125c4111a8e259296181b6e4060cd14b5113c8b", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

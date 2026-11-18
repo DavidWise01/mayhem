@@ -1,0 +1,1 @@
+{"slug": "adam-smith", "seal": "c6ad0ee976a539fb85d0560bb869f24f70b4070fba2451fc1e2fba112b56db71", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

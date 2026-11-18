@@ -1,0 +1,1 @@
+{"slug": "dante", "seal": "99f3d660e90a74538102be37cc8a94eb57c7f60eec960a75258c732d821d4610", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "frederick-douglass", "seal": "695b56dfa445cad13b7e1c151a6e918da4570fd07a06f6ab2826db0b47b2eaf9", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

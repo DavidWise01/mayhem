@@ -1,0 +1,1 @@
+{"slug": "ambrosio", "seal": "29fc41b0d2e55814a63aeaaa4068b38fe5c3b86d07ad3f69f53b333312168b43", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

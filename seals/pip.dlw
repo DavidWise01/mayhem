@@ -1,0 +1,1 @@
+{"slug": "pip", "seal": "0a72fa4f97a13334aa27ceb679fed3ac696d1d6c76283689315b6349abebb5d4", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

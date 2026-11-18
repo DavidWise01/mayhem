@@ -1,0 +1,1 @@
+{"slug": "christine-daae", "seal": "98cdc9258e42ed355b9c2e8f0b6239eebe371dcc9db48911e90ebf3c6d496ae1", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

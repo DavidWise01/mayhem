@@ -1,0 +1,1 @@
+{"slug": "dr-watson", "seal": "c86e7617145faa933c6cad3dbceb063d28cab8deeb5fe85487be794a5105998f", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

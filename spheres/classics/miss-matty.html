@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Miss Matty · a sphere of Mayhem</title>
+<style>
+html,body{margin:0;background:#f3deee;color:#401c38;font-family:Garamond, Palatino, serif}
+#wrap{max-width:1180px;margin:0 auto;padding:24px;display:grid;gap:16px;grid-template-columns:0.88fr 1.18fr;grid-template-areas:"copy mast" "stage mast";align-items:stretch}
+.mast{grid-area:mast}
+#v3{grid-area:stage;position:relative;height:66vh;min-height:420px;border-radius:14px;overflow:hidden;background:#f3deee;border:1px dashed #401c38;box-shadow:0 18px 40px rgba(0,0,0,.12)}
+#v3 canvas{display:block;width:100%;height:100%}
+.story{grid-area:copy;max-width:78ch;line-height:1.55;column-count:2;column-gap:28px;text-align:center}
+h1{font-weight:500;font-size:clamp(28px,6vw,40px);margin:0 0 6px;letter-spacing:0.06em;text-align:center}
+.kicker,.land{font-family:ui-monospace,monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin:0 0 8px}
+.land{letter-spacing:.22em}
+#agentlog{position:absolute;z-index:2;left:14px;bottom:14px;margin:0;max-width:min(520px,92%);padding:8px 10px;border-radius:10px;background:rgba(255,252,247,.92);color:#401c38;font-family:ui-monospace,monospace;font-size:12px;line-height:1.45}
+.t{display:inline-block;padding:1px 8px;border-radius:8px;font-weight:700;font-size:13px;color:#111}
+.LIT{background:#3ee07a}.AMBER{background:#ffb020}.WALL{background:#ff5a5a;color:#fff}.MODEL{background:#b48cff}
+a{color:#401c38}
+code{font-family:ui-monospace,monospace;font-size:12px;word-break:break-all}
+body.thumb .story,body.thumb .mast,body.thumb #agentlog{display:none}
+body.thumb #wrap{display:block;padding:0;max-width:none;height:100vh}
+body.thumb #v3{height:100vh;min-height:0;border-radius:0;border:0;box-shadow:none;transform:none}
+</style>
+</head>
+<body>
+<main id="wrap">
+<header class="mast">
+<p class="kicker">A sphere of Mayhem · Cranford · [[DIATOM{{WATER BEAR((MITOCHONDRION))}}]] · keeper ERIS</p>
+<h1>Miss Matty</h1>
+<p class="land">the cranford street</p>
+</header>
+<div id="v3"><p id="agentlog">The land is growing. DIATOM holds WATER BEAR. WATER BEAR holds MITOCHONDRION.</p></div>
+<div class="story">
+<p>Miss Matty keeps the gentle habits of Cranford while the town&#x27;s money and its old stories come due. Similar on this shelf: Hester Prynne, Elinor Dashwood, and Heathcliff. The book's own sentences are not copied here.</p>
+<p>On this land, DIATOM holds WATER BEAR, and WATER BEAR holds MITOCHONDRION. Set point 23 is this classic's place on the shelf. The three bodies are homeostatic, cooperative, and evolutionary. A selfish step is dropped. A step away from home is dropped. A worse mutant is dropped. A step is kept only when the shared gap shrinks. Seventeen steps bring the three bodies home. A second run matches, and this browser stores the kept gap.</p>
+<p>ARTIST draws the land, CRITIC checks the gap, BUILDER keeps the shell, WEAVER writes the classic, FOLLOWER walks with the bear, and KEEPER stores the row.</p>
+<p><span class="t LIT">LIT</span> set point 23. The three arrived together. The gap is under 0.001. This page throws if a body splits, drifts off home, keeps a worse mutant, or keeps a worse height.</p>
+<p><span class="t MODEL">MODEL</span> The picture is the generative landscape the cranford street. A worse height is dropped. A height is kept only when the gap shrinks. The mitochondrion stays inside the bear, and the bear stays inside the diatom.</p>
+<p id="proof">Checking the sphere.</p>
+<p>Seal sha256(name|slug|blurb): <code id="seal">270d2a9e7b5c8c66668caa98cf5927989070072c10f44a3cdba501871c7f81dc</code></p>
+<p><a href="https://www.gutenberg.org/ebooks/394">Project Gutenberg ebook 394</a></p>
+<p><a href="../../index.html">Mayhem</a></p>
+</div>
+</main>
+<script>
+const SLUG="miss-matty",NAME="Miss Matty",BLURB="At Miss Matty, DIATOM holds WATER BEAR and WATER BEAR holds MITOCHONDRION. They are homeostatic, cooperative, and evolutionary. A selfish step is dropped. A step away from the set point is dropped. A worse mutant is dropped. A step is kept only when the shared gap shrinks. Classic: Cranford by Elizabeth Gaskell, Project Gutenberg ebook 394, set point 23.",SEAL="270d2a9e7b5c8c66668caa98cf5927989070072c10f44a3cdba501871c7f81dc",SET=23;
+const KIND="road",LANDNAME="the cranford street",VARIANT=23,N=34,WATER=0,MARK="post";
+if(/[?&]thumb=1/.test(location.search)) document.body.classList.add('thumb');
+function trioGap(xs, target){
+  let g=0;
+  for(let i=0;i<xs.length;i++){
+    const d=Math.abs(target-xs[i]);
+    if(d>g) g=d;
+  }
+  return g;
+}
+function bodies(target){
+  let d=0, w=0, m=0, gap=trioGap([d,w,m], target), kept=[], dropped=0;
+  const selfish=d+(target-d)*0.8;
+  if(trioGap([selfish,w,m], target)<gap) throw Error('selfish step was kept');
+  dropped++;
+  const away=d-Math.abs(target-d)*0.25;
+  if(trioGap([away,away,away], target)<gap) throw Error('a step away from home was kept');
+  dropped++;
+  const mutant=d+(target-d)*3;
+  if(Math.abs(target-mutant)<gap) throw Error('a worse mutant was kept');
+  dropped++;
+  for(let gen=0; gen<17; gen++){
+    const nd=d+(target-d)/2, nw=w+(target-w)/2, nm=m+(target-m)/2;
+    const g=trioGap([nd,nw,nm], target);
+    if(!(g<gap)) throw Error('gap stuck');
+    if(Math.abs(nd-nw)>1e-9||Math.abs(nw-nm)>1e-9) throw Error('split');
+    if(!(Math.abs(target-nd)<Math.abs(target-d))) throw Error('evolution');
+    d=nd; w=nw; m=nm; gap=g;
+    kept.push(+d.toFixed(6));
+  }
+  if(gap>1e-3) throw Error('home gap');
+  if(Math.abs(d-w)>1e-9||Math.abs(w-m)>1e-9) throw Error('apart');
+  if(Math.round(d)!==target) throw Error('set point');
+  return {d:d, w:w, m:m, gap:gap, kept:kept, dropped:dropped};
+}
+function once(){
+  const a=bodies(SET), b=bodies(SET);
+  if(a.dropped!==3||b.dropped!==3) throw Error('no drop');
+  if(a.kept.join()!==b.kept.join()) throw Error('lineage');
+  if(Math.abs(a.d-SET)>1e-3) throw Error('set');
+  return 'DIATOM='+a.d.toFixed(6)+'|BEAR='+a.w.toFixed(6)+'|MITO='+a.m.toFixed(6);
+}
+function remember(word){
+  const key='mayhem-bodies-kept';
+  let book={};
+  try{ book=JSON.parse(localStorage.getItem(key)||'{}')||{}; }catch(e){ book={}; }
+  const row=book[SLUG];
+  if(!row) book[SLUG]={word:word, visits:1};
+  else { if(row.word!==word) throw Error('persistent drift'); row.visits+=1; }
+  localStorage.setItem(key, JSON.stringify(book));
+  const again=JSON.parse(localStorage.getItem(key))[SLUG];
+  if(!again||again.word!==word) throw Error('persistent drift');
+  return again.visits;
+}
+function rememberLand(word){
+  const key='mayhem-landscape-kept';
+  let book={};
+  try{ book=JSON.parse(localStorage.getItem(key)||'{}')||{}; }catch(e){ book={}; }
+  const row=book[SLUG];
+  if(!row) book[SLUG]={word:word, visits:1};
+  else { if(row.word!==word) throw Error('land drift'); row.visits+=1; }
+  localStorage.setItem(key, JSON.stringify(book));
+  const again=JSON.parse(localStorage.getItem(key))[SLUG];
+  if(!again||again.word!==word) throw Error('land drift');
+  return again.visits;
+}
+function seedOf(s){
+  let x=2166136261;
+  for(let i=0;i<s.length;i++) x=Math.imul(x^s.charCodeAt(i), 16777619);
+  return x>>>0;
+}
+function hash2(ix, iz, seed){
+  let x=(seed ^ Math.imul(ix+97, 374761393) ^ Math.imul(iz+57, 668265263))>>>0;
+  x=Math.imul(x^(x>>>13), 1274126177)>>>0;
+  return ((x^(x>>>16))>>>0)/4294967296;
+}
+function tri(u){
+  const m=((u%2)+2)%2;
+  return m<1?m:2-m;
+}
+function axes(u, v){
+  let a=u, b=v;
+  if(VARIANT%2) a=-a;
+  if(VARIANT%3===0) b=-b;
+  if(VARIANT%5===0){ const t=a; a=b; b=t; }
+  return [a, b];
+}
+function shape(kind, u, v, n){
+  const ab=axes(u, v); u=ab[0]; v=ab[1];
+  const r=Math.sqrt(u*u+v*v);
+  let h=0.05;
+  if(kind==='mound') h=Math.max(0, 1.35*(0.9-r))+n*0.28;
+  else if(kind==='mesa') h=(r<0.4?1.12:0.1)+n*0.1;
+  else if(kind==='ridge') h=Math.max(0, 1.15-Math.abs(v)*2.3)+n*0.18;
+  else if(kind==='canyon') h=0.12+Math.min(1.15, Math.abs(v)*1.7)+n*0.08;
+  else if(kind==='dunes') h=0.2+tri(u*3.1)*0.62+tri(v*2.2)*0.28+n*0.12;
+  else if(kind==='islands') h=(r<0.28 || (Math.abs(u-0.5)<0.18 && Math.abs(v+0.35)<0.18)) ? 0.75+n*0.4 : 0.06;
+  else if(kind==='steps') h=0.1+Math.floor((u+1)*3.2)*0.28+n*0.06;
+  else if(kind==='river') h=0.08+Math.min(1.2, Math.abs(u)*1.55)+n*0.1;
+  else if(kind==='spires') h=0.12+(n>0.78?(n-0.78)*4.2:n*0.2);
+  else if(kind==='basin') h=0.08+Math.min(1.25, r*1.35)+n*0.08;
+  else if(kind==='cliff') h=(u>0.08?1.05:0.12)+n*0.1;
+  else if(kind==='bowl') h=0.12+r*r*1.15+n*0.1;
+  else if(kind==='pass') h=0.16+Math.abs(u)*0.35+Math.max(0, Math.abs(v)-0.22)*1.7+n*0.08;
+  else if(kind==='plain') h=0.16+n*0.42;
+  else if(kind==='terrace') h=0.1+Math.floor((1-Math.min(1, r))*4)*0.28+n*0.05;
+  else if(kind==='road') h=0.1+Math.abs(v)*1.15+n*0.08;
+  else if(kind==='marsh') h=0.08+Math.min(0.55, Math.abs(u)*0.4)+tri(v*2.4)*0.22+n*0.16;
+  else if(kind==='bridge') h=(Math.abs(v)<0.16?0.42:0.08+Math.abs(v)*0.9)+n*0.08;
+  else if(kind==='drive') h=0.12+Math.abs(u)*0.22+Math.max(0, Math.abs(v)-0.18)*1.4+n*0.06;
+  else throw Error('kind');
+  h=Math.min(1.65, Math.max(0.05, h));
+  return h;
+}
+function targetField(){
+  const SEED=seedOf(SLUG);
+  const raw=new Array(N*N);
+  for(let z=0;z<N;z++){
+    for(let x=0;x<N;x++){
+      const u=x/(N-1)*2-1, v=z/(N-1)*2-1;
+      const n=hash2(x, z, SEED)*0.65+hash2(x>>1, z>>1, (SEED^0x9e3779b9)>>>0)*0.35;
+      raw[z*N+x]=shape(KIND, u, v, n);
+    }
+  }
+  const smooth=raw.slice();
+  for(let z=1;z<N-1;z++){
+    for(let x=1;x<N-1;x++){
+      const i=z*N+x;
+      smooth[i]=(raw[i]*4+raw[i-1]+raw[i+1]+raw[i-N]+raw[i+N])/8;
+    }
+  }
+  return smooth;
+}
+function climbHeights(target){
+  const kept=new Array(target.length);
+  const t0=target[0], bad=0-Math.abs(t0)*0.25;
+  if(Math.abs(t0-bad)<Math.abs(t0)) throw Error('landscape kept a worse height');
+  for(let i=0;i<target.length;i++){
+    let x=0, g=Math.abs(target[i]-x);
+    for(let k=0;k<16;k++){
+      const next=x+(target[i]-x)/2, ng=Math.abs(target[i]-next);
+      if(!(ng<g)) throw Error('landscape gap');
+      x=next; g=ng;
+    }
+    if(g>1e-3) throw Error('landscape residual');
+    kept[i]=+x.toFixed(5);
+  }
+  return kept;
+}
+function same(a, b){
+  if(a.length!==b.length) return false;
+  for(let i=0;i<a.length;i++) if(a[i]!==b[i]) return false;
+  return true;
+}
+function landWord(kept){
+  let x=2166136261;
+  for(let i=0;i<kept.length;i++){
+    const s=kept[i].toFixed(5);
+    for(let j=0;j<s.length;j++) x=Math.imul(x^s.charCodeAt(j), 16777619);
+  }
+  return (x>>>0).toString(16).padStart(8,'0');
+}
+function landOnce(){
+  const a=climbHeights(targetField()), b=climbHeights(targetField());
+  if(!same(a, b)) throw Error('land drift');
+  return a;
+}
+const landKept=landOnce();
+window.LAND=landKept;
+window.LANDN=N;
+window.LANDSPAN=10;
+window.LANDWORD=landWord(landKept);
+function check(){
+  const a=once(), b=once();
+  if(a!==b) throw Error('second run');
+  const visits=remember(a);
+  if(visits<1) throw Error('memory');
+  const again=landWord(climbHeights(targetField()));
+  if(again!==window.LANDWORD) throw Error('land drift');
+  const lv=rememberLand(window.LANDWORD);
+  if(lv<1) throw Error('land memory');
+  const el=document.getElementById('agentlog');
+  if(el) el.textContent=LANDNAME+' kept its heights. DIATOM, WATER BEAR and MITOCHONDRION hold set point '+SET+'. visit '+visits;
+  return 'DIATOM + BEAR + MITO held '+SET+'; LAND '+window.LANDWORD;
+}
+async function sha(t){
+  const d=await crypto.subtle.digest('SHA-256', new TextEncoder().encode(t));
+  return [...new Uint8Array(d)].map(function(b){return b.toString(16).padStart(2,'0');}).join('');
+}
+(async function(){
+  const p=document.getElementById('proof');
+  try{
+    const h=await sha(NAME+'|'+SLUG+'|'+BLURB);
+    if(h!==SEAL) throw Error('seal mismatch');
+    const r=check();
+    const r2=check();
+    if(r!==r2) throw Error('second run');
+    p.innerHTML='<span class="t LIT">LIT</span> self-check passed: '+r;
+  }catch(e){
+    p.innerHTML='<span class="t WALL">FAIL</span> '+e.message;
+    throw e;
+  }
+})();
+</script>
+<script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}</script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+const host=document.getElementById('v3');
+const thumb=/[?&]thumb=1/.test(location.search);
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const H=window.LAND, N=window.LANDN, SPAN=window.LANDSPAN;
+if(!H||H.length!==N*N) throw Error('land missing');
+const SKY="#e1efe9", FOG="#e1efe9", LOW="#82354c", HIGH="#d19a94", WATERCOL="#76bc8c", INK="#401c38", SUN="#fff4dd";
+const WATER=0, MARK="post", PATHZ=0.00;
+const scene=new THREE.Scene();
+scene.background=new THREE.Color(SKY);
+scene.fog=new THREE.Fog(FOG, 12, 28);
+const camera=new THREE.PerspectiveCamera(42, 1, 0.08, 80);
+camera.position.set(3.60, 4.00, 4.80);
+const renderer=new THREE.WebGLRenderer({antialias:true});
+renderer.setPixelRatio(Math.min(2, devicePixelRatio||1));
+renderer.outputColorSpace=THREE.SRGBColorSpace;
+renderer.toneMapping=THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure=1.08;
+host.appendChild(renderer.domElement);
+scene.add(new THREE.HemisphereLight(0xfff6ea, 0x6a7a58, 0.95));
+const sun=new THREE.DirectionalLight(SUN, 1.25);
+sun.position.set(3.00, 8.50, -3.00);
+scene.add(sun);
+const fill=new THREE.PointLight(0xfff1d0, 6, 18);
+fill.position.set(-2.2, 3.4, 2.1);
+scene.add(fill);
+const positions=new Float32Array(N*N*3);
+const colors=new Float32Array(N*N*3);
+const lowC=new THREE.Color(LOW), highC=new THREE.Color(HIGH), tint=new THREE.Color();
+for(let z=0;z<N;z++){
+  for(let x=0;x<N;x++){
+    const i=z*N+x;
+    const X=(x/(N-1)-0.5)*SPAN;
+    const Z=(z/(N-1)-0.5)*SPAN;
+    positions[i*3]=X;
+    positions[i*3+1]=H[i];
+    positions[i*3+2]=Z;
+    tint.copy(lowC).lerp(highC, Math.min(1, H[i]/1.35));
+    colors[i*3]=tint.r; colors[i*3+1]=tint.g; colors[i*3+2]=tint.b;
+  }
+}
+const indices=[];
+for(let z=0;z<N-1;z++){
+  for(let x=0;x<N-1;x++){
+    const a=z*N+x, b=a+1, c=a+N, d=c+1;
+    indices.push(a,c,b, b,c,d);
+  }
+}
+const geo=new THREE.BufferGeometry();
+geo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+geo.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+geo.setIndex(indices);
+geo.computeVertexNormals();
+const a0=0, c0=N, b0=1;
+const pa=new THREE.Vector3(positions[a0*3], positions[a0*3+1], positions[a0*3+2]);
+const pc=new THREE.Vector3(positions[c0*3], positions[c0*3+1], positions[c0*3+2]);
+const pb=new THREE.Vector3(positions[b0*3], positions[b0*3+1], positions[b0*3+2]);
+const nrm=new THREE.Vector3().crossVectors(pc.clone().sub(pa), pb.clone().sub(pa));
+if(nrm.y<=0) throw Error('land faces down');
+const land=new THREE.Mesh(geo, new THREE.MeshStandardMaterial({vertexColors:true, roughness:0.92, metalness:0.02}));
+scene.add(land);
+function sample(x, z){
+  const u=Math.min(N-1.001, Math.max(0, (x/SPAN+0.5)*(N-1)));
+  const v=Math.min(N-1.001, Math.max(0, (z/SPAN+0.5)*(N-1)));
+  const x0=Math.floor(u), z0=Math.floor(v);
+  const tx=u-x0, tz=v-z0;
+  const i00=H[z0*N+x0], i10=H[z0*N+x0+1], i01=H[(z0+1)*N+x0], i11=H[(z0+1)*N+x0+1];
+  return i00*(1-tx)*(1-tz)+i10*tx*(1-tz)+i01*(1-tx)*tz+i11*tx*tz;
+}
+if(WATER){
+  const water=new THREE.Mesh(new THREE.CircleGeometry(SPAN*0.62, 48), new THREE.MeshStandardMaterial({color:WATERCOL, transparent:true, opacity:0.45, roughness:0.06, metalness:0.04, side:THREE.DoubleSide, depthWrite:false}));
+  water.rotation.x=-Math.PI/2;
+  water.position.y=0.2;
+  scene.add(water);
+  water.updateWorldMatrix(true, true);
+  const up=new THREE.Vector3(0,0,1).applyQuaternion(water.quaternion);
+  if(up.y<0.9) throw Error('water faces down');
+}
+let marks=0;
+const markMat=new THREE.MeshStandardMaterial({color:INK, roughness:0.7});
+const leafMat=new THREE.MeshStandardMaterial({color:HIGH, roughness:0.6});
+for(let z=1;z<N-1 && marks<16;z+=2){
+  for(let x=1;x<N-1 && marks<16;x+=2){
+    const i=z*N+x;
+    const X=positions[i*3], Z=positions[i*3+2];
+    if(Math.abs(Z-PATHZ)<1.15) continue;
+    if(Math.abs(X-1.8)<0.9 && Math.abs(Z-PATHZ)<1.4) continue;
+    const gate=hash2(x, z, 99);
+    if(gate>0.18) continue;
+    const y=H[i];
+    let prop;
+    if(MARK==='tree'){
+      prop=new THREE.Group();
+      const trunk=new THREE.Mesh(new THREE.CylinderGeometry(0.04, 0.06, 0.28, 6), markMat);
+      trunk.position.y=0.14;
+      const cap=new THREE.Mesh(new THREE.ConeGeometry(0.18, 0.36, 7), leafMat);
+      cap.position.y=0.4;
+      prop.add(trunk); prop.add(cap);
+    }else if(MARK==='reed'){
+      prop=new THREE.Mesh(new THREE.CylinderGeometry(0.015, 0.02, 0.45, 5), leafMat);
+      prop.position.y=0.22;
+    }else if(MARK==='post'){
+      prop=new THREE.Mesh(new THREE.BoxGeometry(0.06, 0.42, 0.06), markMat);
+      prop.position.y=0.21;
+    }else if(MARK==='stone'){
+      prop=new THREE.Mesh(new THREE.DodecahedronGeometry(0.1, 0), markMat);
+      prop.position.y=0.08;
+    }else throw Error('mark');
+    prop.position.x=X; prop.position.z=Z; prop.position.y+=y;
+    scene.add(prop);
+    marks++;
+  }
+}
+function hash2(ix, iz, seed){
+  let x=(seed ^ Math.imul(ix+97, 374761393) ^ Math.imul(iz+57, 668265263))>>>0;
+  x=Math.imul(x^(x>>>13), 1274126177)>>>0;
+  return ((x^(x>>>16))>>>0)/4294967296;
+}
+const glass=new THREE.MeshPhysicalMaterial({color:"#d7f36a", roughness:0.08, metalness:0, transmission:0.72, thickness:0.4, transparent:true, opacity:0.32, depthWrite:false});
+const belly=new THREE.MeshPhysicalMaterial({color:"#f0c0a0", roughness:0.4, metalness:0, transmission:0.45, thickness:0.25, transparent:true, opacity:0.62, depthWrite:false});
+const hide=new THREE.MeshStandardMaterial({color:"#f0c0a0", roughness:0.5});
+const mitoMat=new THREE.MeshStandardMaterial({color:'#ff7a3a', emissive:'#ff5a1f', emissiveIntensity:1.35, roughness:0.25});
+const diatom=new THREE.Group();
+const shell=new THREE.Mesh(new THREE.SphereGeometry(0.58, 32, 22), glass);
+shell.scale.set(1.16, 0.78, 0.92);
+diatom.add(shell);
+for(let i=0;i<12;i++){
+  const rib=new THREE.Mesh(new THREE.BoxGeometry(0.7, 0.018, 0.016), glass);
+  rib.position.y=0.02;
+  rib.rotation.y=i*Math.PI/12;
+  rib.userData.role='rib';
+  diatom.add(rib);
+}
+const bear=new THREE.Group();
+const body=new THREE.Mesh(new THREE.SphereGeometry(0.2, 24, 16), belly);
+body.scale.set(1.35, 0.7, 0.82);
+bear.add(body);
+const head=new THREE.Mesh(new THREE.SphereGeometry(0.09, 16, 12), hide);
+head.position.set(0.26, 0.04, 0);
+bear.add(head);
+const snout=new THREE.Mesh(new THREE.SphereGeometry(0.042, 12, 8), hide);
+snout.position.set(0.4, 0.02, 0);
+snout.userData.role='nose';
+bear.add(snout);
+for(let i=0;i<8;i++){
+  const side=i<4?-1:1, along=i%4;
+  const leg=new THREE.Mesh(new THREE.CylinderGeometry(0.018, 0.028, 0.14, 6), hide);
+  leg.position.set(-0.1+along*0.09, -0.12, side*0.11);
+  leg.rotation.z=side*-0.45;
+  leg.userData.role='leg';
+  bear.add(leg);
+}
+const mito=new THREE.Group();
+const bean=new THREE.Mesh(new THREE.SphereGeometry(0.065, 14, 10), mitoMat);
+bean.scale.set(1.5, 0.7, 0.85);
+mito.add(bean);
+for(let i=0;i<6;i++){
+  const crista=new THREE.Mesh(new THREE.BoxGeometry(0.08, 0.01, 0.018), mitoMat);
+  crista.position.set((i-2.5)*0.016, 0, 0);
+  crista.userData.role='crista';
+  mito.add(crista);
+}
+mito.add(new THREE.PointLight(0xffb45a, 1.8, 1.1));
+mito.position.set(0, 0.02, 0);
+bear.add(mito);
+diatom.add(bear);
+diatom.scale.setScalar(1.2);
+const from=new THREE.Vector3(-2.4, 0, PATHZ);
+const home=new THREE.Vector3(1.8, 0, PATHZ);
+function plant(v){ v.y=sample(v.x, v.z)+0.62; return v; }
+plant(from); plant(home);
+diatom.position.copy(home);
+diatom.rotation.y=0;
+bear.rotation.y=0;
+scene.add(diatom);
+diatom.updateWorldMatrix(true, true);
+if(bear.parent!==diatom) throw Error('bear left the diatom');
+if(mito.parent!==bear) throw Error('mito left the bear');
+const noseAt=new THREE.Vector3(), bellyAt=new THREE.Vector3(), mitoAt=new THREE.Vector3();
+snout.getWorldPosition(noseAt);
+bear.getWorldPosition(bellyAt);
+mito.getWorldPosition(mitoAt);
+const front=noseAt.sub(bellyAt);
+front.y=0; front.normalize();
+const travel=home.clone().sub(from);
+travel.y=0; travel.normalize();
+if(front.dot(travel)<0.9) throw Error('bear faces off the path');
+if(mitoAt.distanceTo(bellyAt)>0.25) throw Error('mito outside the bear');
+if(diatom.position.y<sample(home.x, home.z)+0.3) throw Error('buried');
+let legs=0, ribs=0, cristae=0;
+diatom.traverse(function(o){
+  if(!o.userData) return;
+  if(o.userData.role==='leg') legs++;
+  if(o.userData.role==='rib') ribs++;
+  if(o.userData.role==='crista') cristae++;
+});
+if(legs!==8||ribs!==12||cristae!==6) throw Error('body');
+const controls=new OrbitControls(camera, renderer.domElement);
+controls.target.set(0.2, 0.45, 0);
+controls.enableDamping=true;
+controls.autoRotate=!(reduce||thumb);
+controls.autoRotateSpeed=0.28;
+camera.lookAt(controls.target);
+diatom.userData.from=from.clone();
+diatom.userData.home=home.clone();
+diatom.userData.t=0;
+if(!(reduce||thumb)) diatom.position.copy(from);
+function fit(){
+  const w=host.clientWidth||640, h=Math.max(host.clientHeight||520, 1);
+  camera.aspect=w/h;
+  camera.updateProjectionMatrix();
+  renderer.setSize(w, h, false);
+}
+fit();
+addEventListener('resize', fit);
+function frame(){
+  if(!(reduce||thumb)){
+    diatom.userData.t=Math.min(1, diatom.userData.t+0.006);
+    const t=diatom.userData.t;
+    diatom.position.lerpVectors(diatom.userData.from, diatom.userData.home, t);
+    diatom.position.y=sample(diatom.position.x, diatom.position.z)+0.62;
+  }
+  controls.update();
+  renderer.render(scene, camera);
+  if(!(reduce||thumb)) requestAnimationFrame(frame);
+}
+frame();
+</script>
+<script id="cubit-register-boot">
+(function(){
+  if(/[?&]thumb=1/.test(location.search)) return;
+  if(document.getElementById('cubit-register')) return;
+  const ORDER=['geometric','constructive','agentic','generative'];
+  const ROLES=['ARTIST','CRITIC','BUILDER','WEAVER','FOLLOWER','KEEPER'];
+  const KEY='mayhem-cubit-register';
+  function slug(){
+    for(const sc of document.scripts){
+      const m=/const SLUG="([^"]+)"/.exec(sc.textContent||'');
+      if(m) return m[1];
+    }
+    return (location.pathname.replace(/^\//,'').replace(/\.html$/i,''))||'index';
+  }
+  function geometric(){
+    let canvases=0, svgs=0, w=0, h=0;
+    document.querySelectorAll('canvas').forEach(el=>{ canvases++; w=Math.max(w, el.clientWidth|0); h=Math.max(h, el.clientHeight|0); });
+    document.querySelectorAll('svg').forEach(el=>{ svgs++; w=Math.max(w, el.clientWidth|0); h=Math.max(h, el.clientHeight|0); });
+    const v3=document.getElementById('v3');
+    if(v3){ w=Math.max(w, v3.clientWidth|0); h=Math.max(h, v3.clientHeight|0); }
+    if(!w){ w=document.documentElement.clientWidth|0; h=document.documentElement.clientHeight|0; }
+    return {name:'geometric', text:canvases+'c+'+svgs+'s·'+w+'x'+h, canvases, svgs, w, h};
+  }
+  function constructive(host){
+    const nodes=host.querySelectorAll('*').length, buttons=host.querySelectorAll('button').length;
+    return {name:'constructive', text:nodes+'n·'+buttons+'b', nodes, buttons};
+  }
+  function agentic(host, c){
+    const text=host.innerText||'';
+    const found=ROLES.filter(r=>text.indexOf(r)!==-1);
+    const agents=found.length?found:['REGISTER'];
+    return {name:'agentic', text:agents.join('+'), agents, accepted:c.nodes>0};
+  }
+  function generative(g,c,a){
+    const s=g.text+'|'+c.text+'|'+a.text;
+    let x=2166136261;
+    for(let i=0;i<s.length;i++) x=Math.imul(x^s.charCodeAt(i), 16777619);
+    const code=(x>>>0).toString(16).padStart(8,'0');
+    return {name:'generative', text:code, code};
+  }
+  function build(host){
+    const register=[];
+    const g=geometric(); register.push(g);
+    const c=constructive(host); register.push(c);
+    const a=agentic(host,c); register.push(a);
+    register.push(generative(g,c,a));
+    return register;
+  }
+  function assertReg(register){
+    if(register.length!==4) throw Error('register length '+register.length);
+    if(register.map(x=>x.name).join(',')!==ORDER.join(',')) throw Error('cubit order');
+    if(register.some(x=>!x.text)) throw Error('empty cubit');
+    if(!register[2].accepted) throw Error('agent refused the register');
+    const again=generative(register[0], register[1], register[2]);
+    if(again.code!==register[3].code) throw Error('register drift');
+    return register.map(x=>x.text).join(' | ');
+  }
+  function remember(id, word){
+    let book={};
+    try{ book=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){ book={}; }
+    book[id]={word};
+    try{ localStorage.setItem(KEY, JSON.stringify(book)); }catch(e){}
+    return Object.keys(book).length;
+  }
+  function mount(register, err, rows){
+    let el=document.getElementById('cubit-register');
+    if(!el){
+      const style=document.createElement('style');
+      style.textContent='#cubit-register{margin:18px 0;padding:14px 12px 12px;border:1px solid rgba(0,240,255,.28);border-radius:14px;background:rgba(5,8,16,.78);box-shadow:0 0 28px rgba(0,240,255,.08);color:#d7e3f5;text-align:left;font-family:ui-monospace,Menlo,monospace}#cubit-register .cr-formula{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#eaf6ff;text-shadow:0 0 8px #00f0ff;margin:0 0 10px}#cubit-register .cr-row{display:flex;gap:8px;flex-wrap:wrap}#cubit-register .cr-cubit{flex:1 1 140px;border:1px solid rgba(0,240,255,.25);border-radius:10px;padding:8px;background:rgba(0,0,0,.35)}#cubit-register .cr-cubit b{display:block;font-weight:400;font-size:10px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:4px}#cubit-register .cr-cubit[data-cubit=geometric] b{color:#00f0ff}#cubit-register .cr-cubit[data-cubit=constructive] b{color:#ffb300}#cubit-register .cr-cubit[data-cubit=agentic] b{color:#ff2bd6}#cubit-register .cr-cubit[data-cubit=generative] b{color:#eaf6ff}#cubit-register .cr-cubit i{font-style:normal;font-size:13px;color:#eaf6ff}#cubit-register .cr-word{margin-top:10px;font-size:12px;color:#ffb3ec;word-break:break-all}#cubit-register .cr-status{margin-top:8px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#8fa3c7}body.thumb #cubit-register{display:none}';
+      document.head.appendChild(style);
+      el=document.createElement('section');
+      el.id='cubit-register';
+      el.setAttribute('aria-label','cubit register');
+      const host=document.getElementById('wrap')||document.querySelector('main')||document.body;
+      const h=host.querySelector('h1');
+      if(h) h.insertAdjacentElement('afterend', el);
+      else host.insertBefore(el, host.firstChild);
+    }
+    const cells=(register||ORDER.map(name=>({name,text:'—'}))).map(x=>'<div class="cr-cubit" data-cubit="'+x.name+'"><b>'+x.name+'</b><i>'+x.text+'</i></div>').join('');
+    const word=err?'':register.map(x=>x.text).join(' | ');
+    el.innerHTML='<div class="cr-formula">{{ geometric, constructive, agentic, generative }}</div><div class="cr-row">'+cells+'</div><div class="cr-word">'+(err?'':'REGISTER '+word)+'</div><div class="cr-status">'+(err?'FAIL '+err.message:'LIT four cubits wrote the register · AMBER this browser holds '+rows+' rows')+'</div>';
+  }
+  function run(){
+    const host=document.getElementById('wrap')||document.querySelector('main')||document.body;
+    try{
+      const register=build(host);
+      const word=assertReg(register);
+      const rows=remember(slug(), word);
+      mount(register, null, rows);
+    }catch(e){
+      mount(null, e, 0);
+      throw e;
+    }
+  }
+  requestAnimationFrame(run);
+})();
+</script>
+</body>
+</html>

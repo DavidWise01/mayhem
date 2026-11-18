@@ -1,0 +1,1 @@
+{"slug": "elinor-dashwood", "seal": "99709e39bd8b870bffe41129c32579371cbd7d27ff2c6ead13a9d4b535e31f2b", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

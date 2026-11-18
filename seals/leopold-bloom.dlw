@@ -1,0 +1,1 @@
+{"slug": "leopold-bloom", "seal": "806821b066733b61c5e36f006c918c632af94c0585854d005efdc9b452488cb5", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

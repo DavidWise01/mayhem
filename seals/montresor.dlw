@@ -1,0 +1,1 @@
+{"slug": "montresor", "seal": "fd2c43f506ae0c08f74309e70e84845e78b9d01d01340a31f254554157097dcc", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

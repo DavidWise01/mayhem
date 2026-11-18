@@ -1,0 +1,1 @@
+{"slug": "athos", "seal": "3a4593119ee0a6a8defe8496f3a2071adf556aed80126b7703533ab93e2ebac8", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

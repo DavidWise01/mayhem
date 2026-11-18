@@ -1,0 +1,1 @@
+{"slug": "victor-frankenstein", "seal": "01b5631e31cdfaceac294308463bddc468b6ef4c7069d230c4a8b1e7c8d6e6ea", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

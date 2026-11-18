@@ -1,0 +1,1 @@
+{"slug": "the-governess", "seal": "589a1da1ae5b00499308533bf05c83d9d194f2895385ae41da17d9c5a17452b1", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

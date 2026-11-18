@@ -1,0 +1,1 @@
+{"slug": "yellow-wallpaper", "seal": "7fa48cea5ad4bf9684e35326f19e35d6f325c586c7aa04d62f48118e87b45aef", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

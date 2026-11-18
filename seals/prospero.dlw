@@ -1,0 +1,1 @@
+{"slug": "prospero", "seal": "e2ce9d81cd7edffac3b2c98bfcd91fd08a30f81da4175af147ef2f548f66b397", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

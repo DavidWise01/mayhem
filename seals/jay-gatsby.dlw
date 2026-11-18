@@ -1,0 +1,1 @@
+{"slug": "jay-gatsby", "seal": "db27b5d0cf835a8d5cc2498ca9a8c9326cb0a3abf5f8a51b6c4bfe094119b46a", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

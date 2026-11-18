@@ -1,0 +1,1 @@
+{"slug": "king-in-yellow", "seal": "165ee7b9ca41f2120e6c919e3eb533be82723d5f513a50be3163465456e4892c", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

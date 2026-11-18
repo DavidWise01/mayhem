@@ -1,0 +1,1 @@
+{"slug": "oliver-twist", "seal": "6ec7ab93c8f08fec0f19ebe22dbc15ecc8cfad61e44e35f2c25fb9cc49a26d82", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

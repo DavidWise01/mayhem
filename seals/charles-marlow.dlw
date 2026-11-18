@@ -1,0 +1,1 @@
+{"slug": "charles-marlow", "seal": "579b4e3b27ceaffec77b8de69a5098b6ab7da3c599bdebf1eeaf6de2b1a4adc7", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

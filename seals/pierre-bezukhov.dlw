@@ -1,0 +1,1 @@
+{"slug": "pierre-bezukhov", "seal": "df1928bb8c332440e34fa9eccec0bf9a1585f232daa3517e6611c448dac26365", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

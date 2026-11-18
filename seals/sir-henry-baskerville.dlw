@@ -1,0 +1,1 @@
+{"slug": "sir-henry-baskerville", "seal": "e7bcb881d5a6ef3aa03ae1604e93575e37cbb86324d791f2a185c8b9e0623ec1", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

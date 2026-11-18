@@ -1,0 +1,1 @@
+{"slug": "spoon-river", "seal": "f499a82007c118e0c5165397ac711e0f30ce4672d4435d6fc9eea00e184328de", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

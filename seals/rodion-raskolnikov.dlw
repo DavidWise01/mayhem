@@ -1,0 +1,1 @@
+{"slug": "rodion-raskolnikov", "seal": "8bc9cad514cdcd6bdf5869560551c6601f45922dcb436cd0d9d6a3c1cc8e5b73", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

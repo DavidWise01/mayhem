@@ -1,0 +1,1 @@
+{"slug": "franklin-blake", "seal": "ce7b6cdb22d172a9bd47e2a4c6d2ca8f45d9aeb8ad4ae59da176b75e4b55dea5", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

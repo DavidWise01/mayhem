@@ -1,0 +1,1 @@
+{"slug": "lotty-wilkins", "seal": "43257f03da40c211838ec8ff8546547e381485cb6a2e746cc317ab8e391343e9", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "henry-david-thoreau", "seal": "76c73bdea0212ca4870f848d59ef07d5c4b19e1e7abc5cfaa31aaa5937052cc8", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

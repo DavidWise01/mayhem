@@ -1,0 +1,1 @@
+{"slug": "lucy-honeychurch", "seal": "50c5b5497c0ad00c5e7237c0071b9e9fd2a58594e77ed3d77936490695d1535c", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

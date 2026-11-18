@@ -1,0 +1,1 @@
+{"slug": "dorothy-gale", "seal": "31e8d6e82724a4158034a1e69ce768c6b1b2b96b3876b2fa051e8142da98d25e", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

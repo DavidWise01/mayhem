@@ -1,0 +1,1 @@
+{"slug": "fritz", "seal": "4c3ae9a4e322328f9f35f9e8f7129112aa9a33b0751228331e1debdabd53a77b", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

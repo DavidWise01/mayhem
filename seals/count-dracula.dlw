@@ -1,0 +1,1 @@
+{"slug": "count-dracula", "seal": "98f058c7f96605dd3ad1ebf330d0cfb76cf7c575108606aeb97d64cd43f0a573", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

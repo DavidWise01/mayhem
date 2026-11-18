@@ -1,0 +1,1 @@
+{"slug": "peter-pan", "seal": "9ac36332155db0a3bc03b331cf857ddf2b089418321bf81d7298bb5d783d5bd6", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

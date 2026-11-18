@@ -1,0 +1,1 @@
+{"slug": "sherlock-holmes", "seal": "52c6ffeec6721ad94d8e059edff0822775838e827036c06fdd1a8f4cffd5ef39", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

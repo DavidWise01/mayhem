@@ -1,0 +1,1 @@
+{"slug": "web-du-bois", "seal": "bdb36e0d77e35b278d0b41839e8271cfbc8a7d5ac67470e7f3792b09d20b9c87", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

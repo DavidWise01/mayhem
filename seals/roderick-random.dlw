@@ -1,0 +1,1 @@
+{"slug": "roderick-random", "seal": "71b5e08e8f68f98726665cf767d9f988b0494e099d6601d2177e194cf7bb9547", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

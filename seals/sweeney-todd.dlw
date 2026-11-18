@@ -1,0 +1,1 @@
+{"slug": "sweeney-todd", "seal": "2b698b33f76cb7caa7fdc1cc2a86d5e59d27ccf61a2e5f2fca5efc7344b5ed18", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

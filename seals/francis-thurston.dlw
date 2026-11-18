@@ -1,0 +1,1 @@
+{"slug": "francis-thurston", "seal": "17df915891476e0a65ab42b9d57fad74e6250619b622f087094459f0d87446e9", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

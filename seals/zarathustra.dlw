@@ -1,0 +1,1 @@
+{"slug": "zarathustra", "seal": "5db34e33a781b055a57ffdfa2c8eb12ce2d6c309e275a572bbe17c9225256ecc", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

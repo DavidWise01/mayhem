@@ -1,0 +1,1 @@
+{"slug": "peter-wimsey", "seal": "4f47851f92ff2ce418fe3fe636b3a3f003c695a0a3df177ec817021d90eaae0b", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "hester-prynne", "seal": "15fb573b2d8e5286c7fa67416b1d68c27535bd88c0d5e60eb919a7514c4cbde9", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
