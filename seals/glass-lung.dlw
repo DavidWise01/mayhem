@@ -1,0 +1,1 @@
+{"slug": "glass-lung", "seal": "0874dc97a1c525f6c4b54b78fdbd1db14728468accf50359d39a9b153838cedc", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

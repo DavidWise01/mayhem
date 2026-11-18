@@ -1,0 +1,1 @@
+{"slug": "honey-cell", "seal": "8d0bf33d94f828fbb6db7b6cff98c389726077e03e073a1b72c17f9d0554b3ef", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

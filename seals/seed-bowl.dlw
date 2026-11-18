@@ -1,0 +1,1 @@
+{"slug": "seed-bowl", "seal": "2b2426b11e501f53e810a5c29a34c5a6ca3065bd0bd9a3f0b437d4aa8e573732", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

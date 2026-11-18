@@ -1,0 +1,1 @@
+{"slug": "dry-mouth", "seal": "79c538e0c77b7b0c00940cd216e50003059bc7fb97e4f7ba353c43d91a3e551d", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

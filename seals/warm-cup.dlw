@@ -1,0 +1,1 @@
+{"slug": "warm-cup", "seal": "fa3505ec49102cfb3afe5bd8f95848e4eccbaf6a8d275bfb1e664dff458438ce", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

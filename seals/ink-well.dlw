@@ -1,0 +1,1 @@
+{"slug": "ink-well", "seal": "247f04dd8d5cc795d322e05871f81eabd4670b2f0fa5389724f40be4468539bc", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

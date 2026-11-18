@@ -1,0 +1,1 @@
+{"slug": "salt-gate", "seal": "a4fbb92c677971491bb0d795622eb077714f1342ce00fa1ac749c8e6055c43bd", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

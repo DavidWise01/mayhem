@@ -1,0 +1,1 @@
+{"slug": "blue-vein", "seal": "f316c73f3c4b6e8d690d396b3093eaabef129adeeb0ae2b01d2bfc623eb55e42", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
