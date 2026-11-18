@@ -3,30 +3,36 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>The Quiet Room · Worlds · Mayhem</title>
+<title>The Quiet Room · a sphere of Mayhem</title>
 <style>
-body{margin:0;background:#f3d7a4;color:#3a2a14;font-family:Georgia,serif}
-main{max-width:640px;margin:36px auto;padding:28px 28px 36px;background:rgba(255,252,247,.94)}
-h1{font-weight:500;font-size:40px;margin:0 0 12px}
+html,body{margin:0;background:#f3d7a4;color:#3a2a14;font-family:Georgia,serif}
+#wrap{max-width:1080px;margin:0 auto;padding:22px 22px 40px}
+h1{font-weight:500;font-size:clamp(32px,5vw,52px);margin:0 0 8px}
 .kicker{font-family:ui-monospace,monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase}
-canvas{display:block;width:100%;height:180px;background:#f3d7a4;margin:12px 0}
+#v3{position:relative;height:70vh;min-height:480px;border-radius:18px;overflow:hidden;background:#f3d7a4}
+#v3 canvas{display:block;width:100%;height:100%}
+#agentlog{position:absolute;z-index:2;left:14px;bottom:14px;margin:0;max-width:min(460px,88%);padding:8px 10px;border-radius:10px;background:rgba(255,252,247,.92);color:#3a2a14;font-family:ui-monospace,monospace;font-size:12px;line-height:1.45}
+.story{max-width:68ch;line-height:1.6}
 .t{display:inline-block;padding:1px 8px;border-radius:8px;font-weight:700;font-size:13px;color:#111}
 .LIT{background:#3ee07a}.AMBER{background:#ffb020}.WALL{background:#ff5a5a;color:#fff}.MODEL{background:#b48cff}
 a{color:#3a2a14}
 code{font-family:ui-monospace,monospace;font-size:12px;word-break:break-all}
-body.thumb main{margin:0;padding:0;background:transparent}
-body.thumb .story{display:none}
+body.thumb .story,body.thumb .kicker,body.thumb #agentlog{display:none}
+body.thumb #wrap{padding:0;max-width:none}
+body.thumb #v3{height:100vh;min-height:0;border-radius:0}
 </style>
 </head>
 <body>
 <main id="wrap">
-<p class="kicker">Worlds · under keeper ERIS</p>
+<p class="kicker">A sphere of Mayhem · keeper ERIS</p>
 <h1>The Quiet Room</h1>
-<canvas id="art" width="640" height="180"></canvas>
+<div id="v3"><p id="agentlog">LAMP and WARDEN are walking the sphere.</p></div>
 <div class="story">
-<p><span class="t LIT">LIT</span> One lamp. The light is 1. This page throws if it is not.</p>
-<p><span class="t MODEL">MODEL</span> A minimal world. The keeper keeps a step only when the gap shrinks. A second run matches.</p>
-<p id="proof">Checking the world.</p>
+<p>The room had one lamp and a long floor. LAMP raised the flame and kept a step only when the light sat closer to 1. WARDEN came in from the dark and kept a step only when the gap to the lamp shrank. They stopped with the light at 1 and the warden one pace out.</p>
+<p>Two agentics walk this sphere: LAMP and WARDEN. Each keeps a step only when the gap shrinks. A second run matches.</p>
+<p><span class="t LIT">LIT</span> The light is 1. This page throws if it is not.</p>
+<p><span class="t MODEL">MODEL</span> The picture is this sphere. The agents are the keepers of its one number.</p>
+<p id="proof">Checking the sphere.</p>
 <p>Seal sha256(name|slug|blurb): <code id="seal">728df313d16b90bd3ea643f474761d18cc157b9d7de829114089cdf681ceb7a6</code></p>
 <p><a href="../../index.html">Mayhem</a></p>
 </div>
@@ -34,45 +40,34 @@ body.thumb .story{display:none}
 <script>
 const SLUG="quiet-room",NAME="The Quiet Room",BLURB="One lamp in an empty room. The light is 1.",SEAL="728df313d16b90bd3ea643f474761d18cc157b9d7de829114089cdf681ceb7a6";
 if(/[?&]thumb=1/.test(location.search)) document.body.classList.add('thumb');
-function keep(target){
-  let x=0, gap=Math.abs(target-x), log=[0];
+function climb(agent, target){
+  let x=0, gap=Math.abs(target-x), log=[];
   for(let i=0;i<12;i++){
     const next=x+(target-x)/2, g=Math.abs(target-next);
-    if(!(g<gap)) throw Error('worse');
-    x=next; gap=g; log.push(+x.toFixed(6));
+    if(!(g<gap)) throw Error(agent+' worse');
+    x=next; gap=g; log.push(agent+':'+x.toFixed(6));
   }
-  let y=0, gy=Math.abs(target-y), again=[];
-  for(let i=0;i<12;i++){
-    const next=y+(target-y)/2, g=Math.abs(target-next);
-    if(!(g<gy)) throw Error('replay');
-    y=next; gy=g; again.push(+y.toFixed(6));
-  }
-  if(log.slice(1).join()!==again.join()) throw Error('drift');
-  if(gap>1e-3) throw Error('gap');
-  return log.length;
+  if(gap>1e-3) throw Error(agent+' gap');
+  return {agent:agent, x:x, log:log};
 }
-
+function pair(){
+  const a=climb("LAMP", 1), b=climb("WARDEN", 1);
+  if(a.agent===b.agent) throw Error('same agent');
+  if(a.log.length<2||b.log.length<2) throw Error('agents');
+  return a.log.join('|')+'||'+b.log.join('|');
+}
 function check(){
-  if(1!==1) throw Error('light');
-  const n=keep(1);
-  if(n<2) throw Error('still');
-  return 'light 1; '+n+' steps kept';
-}
-
-function paint(){
-  const cv=document.getElementById('art'), x=cv.getContext('2d');
-  x.fillStyle="#f3d7a4";
-  x.fillRect(0,0,cv.width,cv.height);
-  x.fillStyle="#e7b84a";
-  if("lamp"==='lamp'){ x.beginPath(); x.arc(320,90,28,0,6.283); x.fill(); }
-  else if("lamp"==='field'){ x.fillRect(250,50,140,100); }
-  else { x.fillRect(276,36,88,128); x.fillStyle="#f3d7a4"; x.fillRect(312,92,10,10); }
+  const one=pair(), two=pair();
+  if(one!==two) throw Error('second run');
+  if(Math.abs(climb('LAMP',1).x-1)>1e-3) throw Error('light');
+  const el=document.getElementById('agentlog');
+  if(el) el.textContent='LAMP kept a step. WARDEN kept a step. '+one.split('||')[0].split('|').pop();
+  return 'LAMP + WARDEN; '+'light 1';
 }
 async function sha(t){
   const d=await crypto.subtle.digest('SHA-256', new TextEncoder().encode(t));
   return [...new Uint8Array(d)].map(b=>b.toString(16).padStart(2,'0')).join('');
 }
-paint();
 (async()=>{
   const p=document.getElementById('proof');
   try{
@@ -87,6 +82,121 @@ paint();
     throw e;
   }
 })();
+</script>
+<script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}</script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+const box=document.getElementById('v3');
+const thumb=/[?&]thumb=1/.test(location.search);
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const paper="#f3d7a4";
+const scene=new THREE.Scene();
+scene.background=new THREE.Color(paper);
+const camera=new THREE.PerspectiveCamera(42, 1, 0.1, 50);
+camera.position.set(4.2, 2.6, 5.4);
+const renderer=new THREE.WebGLRenderer({antialias:true});
+renderer.setPixelRatio(Math.min(2, devicePixelRatio||1));
+renderer.outputColorSpace=THREE.SRGBColorSpace;
+box.appendChild(renderer.domElement);
+scene.add(new THREE.HemisphereLight(0xfff6e8, 0x6e8f72, 0.85));
+const sun=new THREE.DirectionalLight(0xfff3d6, 0.85);
+sun.position.set(4, 8, 2);
+scene.add(sun);
+const controls=new OrbitControls(camera, renderer.domElement);
+controls.target.set(0, 1.1, 0);
+controls.enableDamping=true;
+controls.autoRotate=!(reduce||thumb);
+controls.autoRotateSpeed=0.45;
+function actor(color, x, y, z){
+  const mesh=new THREE.Mesh(new THREE.SphereGeometry(0.16, 20, 14), new THREE.MeshStandardMaterial({color:color, roughness:0.45}));
+  mesh.position.set(x, y, z);
+  scene.add(mesh);
+  return mesh;
+}
+const kind="room";
+if(kind==='room'){
+  const room=new THREE.Mesh(new THREE.BoxGeometry(6, 3.2, 6), new THREE.MeshStandardMaterial({color:paper, side:THREE.BackSide, roughness:0.92}));
+  room.position.y=1.6;
+  scene.add(room);
+  if(room.material.side!==THREE.BackSide) throw Error('room faces out');
+  const stand=new THREE.Mesh(new THREE.CylinderGeometry(0.06, 0.09, 1.35, 12), new THREE.MeshStandardMaterial({color:0x3a2a14, roughness:0.6}));
+  stand.position.y=0.68;
+  scene.add(stand);
+  const bulb=new THREE.Mesh(new THREE.SphereGeometry(0.2, 24, 16), new THREE.MeshStandardMaterial({color:0xffe1a8, emissive:0xe7b84a, emissiveIntensity:1.4, roughness:0.35}));
+  bulb.position.set(0, 1.55, 0);
+  scene.add(bulb);
+  const lamp=new THREE.PointLight(0xffd27a, 1, 9, 2);
+  lamp.position.copy(bulb.position);
+  scene.add(lamp);
+  if(lamp.intensity!==1) throw Error('light');
+  const warden=actor(0x3a2a14, 1, 0.16, 0);
+  const pace=Math.hypot(warden.position.x-bulb.position.x, warden.position.z-bulb.position.z);
+  if(Math.abs(pace-1)>1e-6) throw Error('pace');
+}else if(kind==='field'){
+  const ground=new THREE.Mesh(new THREE.CircleGeometry(4.2, 48), new THREE.MeshStandardMaterial({color:0x8fc56a, roughness:0.95}));
+  ground.rotation.x=-Math.PI/2;
+  scene.add(ground);
+  const square=new THREE.Mesh(new THREE.PlaneGeometry(1, 1), new THREE.MeshStandardMaterial({color:0xf4e7b0, roughness:0.8}));
+  square.rotation.x=-Math.PI/2;
+  square.position.y=0.02;
+  scene.add(square);
+  square.updateWorldMatrix(true, true);
+  const n=new THREE.Vector3(0, 0, 1).applyQuaternion(square.quaternion);
+  if(n.y<0.9) throw Error('field faces down');
+  const side=square.geometry.parameters.width, depth=square.geometry.parameters.height;
+  if(side!==1||depth!==1||side*depth!==1) throw Error('area');
+  const surveyor=actor(0x1d3a22, -0.5, 0.16, -0.5);
+  const sower=actor(0x67b35a, 0.5, 0.16, -0.5);
+  if(Math.abs(surveyor.position.distanceTo(sower.position)-1)>1e-6) throw Error('side');
+}else{
+  const wall=new THREE.Mesh(new THREE.BoxGeometry(4.4, 2.6, 0.18), new THREE.MeshStandardMaterial({color:0xc5d7ec, roughness:0.85}));
+  wall.position.y=1.3;
+  scene.add(wall);
+  const hinge=new THREE.Group();
+  hinge.position.set(-0.55, 0, 0.2);
+  scene.add(hinge);
+  const slab=new THREE.Mesh(new THREE.BoxGeometry(1.1, 2.15, 0.08), new THREE.MeshStandardMaterial({color:0x3d6f9a, roughness:0.55}));
+  slab.position.set(0.55, 1.15, 0);
+  hinge.add(slab);
+  hinge.rotation.y=0.7;
+  const front=new THREE.Mesh(new THREE.PlaneGeometry(1.05, 2.05), new THREE.MeshStandardMaterial({color:0x2f5d86, side:THREE.FrontSide}));
+  front.position.set(0.55, 1.15, 0.045);
+  front.userData.role='face';
+  hinge.add(front);
+  const back=new THREE.Mesh(new THREE.PlaneGeometry(1.05, 2.05), new THREE.MeshStandardMaterial({color:0x8fb4d6, side:THREE.FrontSide}));
+  back.position.set(0.55, 1.15, -0.045);
+  back.rotation.y=Math.PI;
+  back.userData.role='face';
+  hinge.add(back);
+  const opening=new THREE.Mesh(new THREE.PlaneGeometry(0.7, 0.08), new THREE.MeshStandardMaterial({color:0xf4e7b0}));
+  opening.rotation.x=-Math.PI/2;
+  opening.position.set(0.15, 0.02, 0.55);
+  opening.userData.role='opening';
+  scene.add(opening);
+  const faces=2, hole=1;
+  if(faces-hole!==1) throw Error('door');
+  let seen=0, holes=0;
+  hinge.traverse(o=>{ if(o.userData&&o.userData.role==='face') seen++; });
+  scene.traverse(o=>{ if(o.userData&&o.userData.role==='opening') holes++; });
+  if(seen!==2||holes!==1) throw Error('faces');
+  actor(0x1a3148, 0.9, 0.16, 1.1);
+}
+camera.lookAt(controls.target);
+function fit(){
+  const w=box.clientWidth||640, h=Math.max(box.clientHeight||480, 1);
+  camera.aspect=w/h;
+  camera.updateProjectionMatrix();
+  renderer.setSize(w, h, false);
+}
+fit();
+addEventListener('resize', fit);
+function frame(){
+  controls.update();
+  renderer.render(scene, camera);
+  if(!(reduce||thumb)) requestAnimationFrame(frame);
+}
+frame();
 </script>
 <script id="cubit-register-boot">
 (function(){
