@@ -5,36 +5,43 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Benjamin · a sphere of Mayhem</title>
 <style>
-html,body{margin:0;background:#efe6c8;color:#3a2a14;font-family:Georgia,serif}
-#wrap{max-width:1100px;margin:0 auto;padding:22px 22px 40px}
-h1{font-weight:500;font-size:clamp(32px,5vw,52px);margin:0 0 8px}
-.kicker{font-family:ui-monospace,monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase}
-#v3{position:relative;height:74vh;min-height:520px;border-radius:18px;overflow:hidden;background:#efe6c8}
+html,body{margin:0;background:#ece8e2;color:#2a2824;font-family:Candara, sans-serif}
+#wrap{max-width:1180px;margin:0 auto;padding:18px;display:grid;gap:22px;grid-template-columns:0.82fr 1.23fr;grid-template-areas:"mast mast" "stage copy";align-items:stretch}
+.mast{grid-area:mast}
+#v3{grid-area:stage;position:relative;height:70vh;min-height:420px;border-radius:8px;overflow:hidden;background:#ece8e2;border:8px solid #2a2824;box-shadow:0 18px 40px rgba(0,0,0,.12)}
 #v3 canvas{display:block;width:100%;height:100%}
-#agentlog{position:absolute;z-index:2;left:14px;bottom:14px;margin:0;max-width:min(520px,90%);padding:8px 10px;border-radius:10px;background:rgba(255,252,247,.92);color:#3a2a14;font-family:ui-monospace,monospace;font-size:12px;line-height:1.45}
-.story{max-width:68ch;line-height:1.6}
+.story{grid-area:copy;max-width:78ch;line-height:1.55;column-count:1;column-gap:28px;text-align:left}
+h1{font-weight:500;font-size:clamp(28px,4vw,36px);margin:0 0 6px;letter-spacing:0.09em;text-align:left}
+.kicker,.land{font-family:ui-monospace,monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin:0 0 8px}
+.land{letter-spacing:.22em}
+#agentlog{position:absolute;z-index:2;left:14px;bottom:14px;margin:0;max-width:min(520px,92%);padding:8px 10px;border-radius:10px;background:rgba(255,252,247,.92);color:#2a2824;font-family:ui-monospace,monospace;font-size:12px;line-height:1.45}
 .t{display:inline-block;padding:1px 8px;border-radius:8px;font-weight:700;font-size:13px;color:#111}
 .LIT{background:#3ee07a}.AMBER{background:#ffb020}.WALL{background:#ff5a5a;color:#fff}.MODEL{background:#b48cff}
-a{color:#3a2a14}
+a{color:#2a2824}
 code{font-family:ui-monospace,monospace;font-size:12px;word-break:break-all}
-body.thumb .story,body.thumb .kicker,body.thumb #agentlog{display:none}
-body.thumb #wrap{padding:0;max-width:none}
-body.thumb #v3{height:100vh;min-height:0;border-radius:0}
+
+body.thumb .story,body.thumb .mast,body.thumb #agentlog{display:none}
+body.thumb #wrap{display:block;padding:0;max-width:none;height:100vh}
+body.thumb #v3{height:100vh;min-height:0;border-radius:0;border:0;box-shadow:none;transform:none}
 </style>
 </head>
 <body>
 <main id="wrap">
+<header class="mast">
 <p class="kicker">A sphere of Mayhem · Animal Farm · [[DIATOM{{WATER BEAR((MITOCHONDRION))}}]] · keeper ERIS</p>
 <h1>Benjamin</h1>
-<div id="v3"><p id="agentlog">DIATOM holds WATER BEAR. WATER BEAR holds MITOCHONDRION.</p></div>
+<p class="land">one stone</p>
+</header>
+<div id="v3"><p id="agentlog">The land is growing. DIATOM holds WATER BEAR. WATER BEAR holds MITOCHONDRION.</p></div>
 <div class="story">
-<p>The primer is Animal Farm, in cliff notes written for this page. Benjamin is the old donkey who can read, expects nothing, and stays. Similar on this shelf: Templeton and Chief Bromden. The book's own sentences are not copied here.</p><p>In the tank, DIATOM holds WATER BEAR, and WATER BEAR holds MITOCHONDRION. Set point 7 is this primer's place on the shelf. The three bodies are homeostatic, cooperative, and evolutionary. A selfish step is dropped. A step away from home is dropped. A worse mutant is dropped. A step is kept only when the shared gap shrinks. A second run matches, and this browser stores the kept gap.</p><p>ARTIST draws the tank, CRITIC checks the gap, BUILDER keeps the shell, WEAVER writes the primer, FOLLOWER walks with the bear, and KEEPER stores the row.</p><p><span class="t LIT">LIT</span> set point 7. The three arrived together. The gap is under 0.001. This page throws if a body splits, drifts off home, or keeps a worse mutant.</p><p><span class="t MODEL">MODEL</span> The picture is the tank at the set point. The mitochondrion stays inside the bear, and the bear stays inside the diatom. The primer names Benjamin.</p><p id="proof">Checking the sphere.</p>
+<p>The primer is Animal Farm, in cliff notes written for this page. Benjamin is the old donkey who can read, expects nothing, and stays. Similar on this shelf: Templeton and Chief Bromden. The book's own sentences are not copied here.</p><p>On this land, DIATOM holds WATER BEAR, and WATER BEAR holds MITOCHONDRION. Set point 7 is this primer's place on the shelf. The three bodies are homeostatic, cooperative, and evolutionary. A selfish step is dropped. A step away from home is dropped. A worse mutant is dropped. A step is kept only when the shared gap shrinks. A second run matches, and this browser stores the kept gap.</p><p>ARTIST draws the tank, CRITIC checks the gap, BUILDER keeps the shell, WEAVER writes the primer, FOLLOWER walks with the bear, and KEEPER stores the row.</p><p><span class="t LIT">LIT</span> set point 7. The three arrived together. The gap is under 0.001. This page throws if a body splits, drifts off home, keeps a worse mutant, or keeps a worse height.</p><p><span class="t MODEL">MODEL</span> The picture is the generative landscape one stone. A worse height is dropped. A height is kept only when the gap shrinks. The mitochondrion stays inside the bear, and the bear stays inside the diatom.</p><p id="proof">Checking the sphere.</p>
 <p>Seal sha256(name|slug|blurb): <code id="seal">ff66e97d55e8c35784b60f78ae8f73d7d093974e868b414f54b342ae2d3d2f4e</code></p>
 <p><a href="../../index.html">Mayhem</a></p>
 </div>
 </main>
 <script>
 const SLUG="benjamin",NAME="Benjamin",BLURB="At Benjamin, DIATOM holds WATER BEAR and WATER BEAR holds MITOCHONDRION. They are homeostatic, cooperative, and evolutionary. A selfish step is dropped. A step away from the set point is dropped. A worse mutant is dropped. A step is kept only when the shared gap shrinks. Primer: Animal Farm, set point 7.",SEAL="ff66e97d55e8c35784b60f78ae8f73d7d093974e868b414f54b342ae2d3d2f4e",SET=7;
+const KIND="spires",LANDNAME="one stone",VARIANT=7,N=34,WATER=0,MARK="stone";
 if(/[?&]thumb=1/.test(location.search)) document.body.classList.add('thumb');
 function trioGap(xs, target){
   let g=0;
@@ -88,14 +95,133 @@ function remember(word){
   if(!again||again.word!==word) throw Error('persistent drift');
   return again.visits;
 }
+function rememberLand(word){
+  const key='mayhem-landscape-kept';
+  let book={};
+  try{ book=JSON.parse(localStorage.getItem(key)||'{}')||{}; }catch(e){ book={}; }
+  const row=book[SLUG];
+  if(!row) book[SLUG]={word:word, visits:1};
+  else { if(row.word!==word) throw Error('land drift'); row.visits+=1; }
+  localStorage.setItem(key, JSON.stringify(book));
+  const again=JSON.parse(localStorage.getItem(key))[SLUG];
+  if(!again||again.word!==word) throw Error('land drift');
+  return again.visits;
+}
+function seedOf(s){
+  let x=2166136261;
+  for(let i=0;i<s.length;i++) x=Math.imul(x^s.charCodeAt(i), 16777619);
+  return x>>>0;
+}
+function hash2(ix, iz, seed){
+  let x=(seed ^ Math.imul(ix+97, 374761393) ^ Math.imul(iz+57, 668265263))>>>0;
+  x=Math.imul(x^(x>>>13), 1274126177)>>>0;
+  return ((x^(x>>>16))>>>0)/4294967296;
+}
+function tri(u){
+  const m=((u%2)+2)%2;
+  return m<1?m:2-m;
+}
+function axes(u, v){
+  let a=u, b=v;
+  if(VARIANT%2) a=-a;
+  if(VARIANT%3===0) b=-b;
+  if(VARIANT%5===0){ const t=a; a=b; b=t; }
+  return [a, b];
+}
+function shape(kind, u, v, n){
+  const ab=axes(u, v); u=ab[0]; v=ab[1];
+  const r=Math.sqrt(u*u+v*v);
+  let h=0.05;
+  if(kind==='mound') h=Math.max(0, 1.35*(0.9-r))+n*0.28;
+  else if(kind==='mesa') h=(r<0.4?1.12:0.1)+n*0.1;
+  else if(kind==='ridge') h=Math.max(0, 1.15-Math.abs(v)*2.3)+n*0.18;
+  else if(kind==='canyon') h=0.12+Math.min(1.15, Math.abs(v)*1.7)+n*0.08;
+  else if(kind==='dunes') h=0.2+tri(u*3.1)*0.62+tri(v*2.2)*0.28+n*0.12;
+  else if(kind==='islands') h=(r<0.28 || (Math.abs(u-0.5)<0.18 && Math.abs(v+0.35)<0.18)) ? 0.75+n*0.4 : 0.06;
+  else if(kind==='steps') h=0.1+Math.floor((u+1)*3.2)*0.28+n*0.06;
+  else if(kind==='river') h=0.08+Math.min(1.2, Math.abs(u)*1.55)+n*0.1;
+  else if(kind==='spires') h=0.12+(n>0.78?(n-0.78)*4.2:n*0.2);
+  else if(kind==='basin') h=0.08+Math.min(1.25, r*1.35)+n*0.08;
+  else if(kind==='cliff') h=(u>0.08?1.05:0.12)+n*0.1;
+  else if(kind==='bowl') h=0.12+r*r*1.15+n*0.1;
+  else if(kind==='pass') h=0.16+Math.abs(u)*0.35+Math.max(0, Math.abs(v)-0.22)*1.7+n*0.08;
+  else if(kind==='plain') h=0.16+n*0.42;
+  else if(kind==='terrace') h=0.1+Math.floor((1-Math.min(1, r))*4)*0.28+n*0.05;
+  else if(kind==='road') h=0.1+Math.abs(v)*1.15+n*0.08;
+  else throw Error('kind');
+  h=Math.min(1.65, Math.max(0.05, h));
+  return h;
+}
+function targetField(){
+  const SEED=seedOf(SLUG);
+  const raw=new Array(N*N);
+  for(let z=0;z<N;z++){
+    for(let x=0;x<N;x++){
+      const u=x/(N-1)*2-1, v=z/(N-1)*2-1;
+      const n=hash2(x, z, SEED)*0.65+hash2(x>>1, z>>1, (SEED^0x9e3779b9)>>>0)*0.35;
+      raw[z*N+x]=shape(KIND, u, v, n);
+    }
+  }
+  const smooth=raw.slice();
+  for(let z=1;z<N-1;z++){
+    for(let x=1;x<N-1;x++){
+      const i=z*N+x;
+      smooth[i]=(raw[i]*4+raw[i-1]+raw[i+1]+raw[i-N]+raw[i+N])/8;
+    }
+  }
+  return smooth;
+}
+function climbHeights(target){
+  const kept=new Array(target.length);
+  const t0=target[0], bad=0-Math.abs(t0)*0.25;
+  if(Math.abs(t0-bad)<Math.abs(t0)) throw Error('landscape kept a worse height');
+  for(let i=0;i<target.length;i++){
+    let x=0, g=Math.abs(target[i]-x);
+    for(let k=0;k<16;k++){
+      const next=x+(target[i]-x)/2, ng=Math.abs(target[i]-next);
+      if(!(ng<g)) throw Error('landscape gap');
+      x=next; g=ng;
+    }
+    if(g>1e-3) throw Error('landscape residual');
+    kept[i]=+x.toFixed(5);
+  }
+  return kept;
+}
+function same(a, b){
+  if(a.length!==b.length) return false;
+  for(let i=0;i<a.length;i++) if(a[i]!==b[i]) return false;
+  return true;
+}
+function landWord(kept){
+  let x=2166136261;
+  for(let i=0;i<kept.length;i++){
+    const s=kept[i].toFixed(5);
+    for(let j=0;j<s.length;j++) x=Math.imul(x^s.charCodeAt(j), 16777619);
+  }
+  return (x>>>0).toString(16).padStart(8,'0');
+}
+function landOnce(){
+  const a=climbHeights(targetField()), b=climbHeights(targetField());
+  if(!same(a, b)) throw Error('land drift');
+  return a;
+}
+const landKept=landOnce();
+window.LAND=landKept;
+window.LANDN=N;
+window.LANDSPAN=10;
+window.LANDWORD=landWord(landKept);
 function check(){
   const a=once(), b=once();
   if(a!==b) throw Error('second run');
   const visits=remember(a);
   if(visits<1) throw Error('memory');
+  const again=landWord(climbHeights(targetField()));
+  if(again!==window.LANDWORD) throw Error('land drift');
+  const lv=rememberLand(window.LANDWORD);
+  if(lv<1) throw Error('land memory');
   const el=document.getElementById('agentlog');
-  if(el) el.textContent='DIATOM, WATER BEAR and MITOCHONDRION hold set point '+SET+'. visit '+visits;
-  return 'DIATOM + BEAR + MITO held '+SET;
+  if(el) el.textContent=LANDNAME+' kept its heights. DIATOM, WATER BEAR and MITOCHONDRION hold set point '+SET+'. visit '+visits;
+  return 'DIATOM + BEAR + MITO held '+SET+'; LAND '+window.LANDWORD;
 }
 async function sha(t){
   const d=await crypto.subtle.digest('SHA-256', new TextEncoder().encode(t));
@@ -123,188 +249,173 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 const host=document.getElementById('v3');
 const thumb=/[?&]thumb=1/.test(location.search);
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-const SET=7;
-const PROP="wall";
-const PAPER="efe6c8", INK="3a2a14", WATER="d9c48a", TORUS="c4552a", BOXC="6a4a28", DROP="fff6d8";
+const H=window.LAND, N=window.LANDN, SPAN=window.LANDSPAN;
+if(!H||H.length!==N*N) throw Error('land missing');
+const SKY="#f4f2ee", FOG="#f4f2ee", LOW="#8a8680", HIGH="#c8c4bc", WATERCOL="#a8a49c", INK="#2a2824", SUN="#fff4dd";
+const WATER=0, MARK="stone", PATHZ=-0.65;
 const scene=new THREE.Scene();
-scene.background=new THREE.Color(PAPER);
-scene.fog=new THREE.Fog(PAPER, 9, 18);
-const camera=new THREE.PerspectiveCamera(40, 1, 0.08, 40);
-camera.position.set(0.35, 2.05, 6.6);
+scene.background=new THREE.Color(SKY);
+scene.fog=new THREE.Fog(FOG, 15, 28);
+const camera=new THREE.PerspectiveCamera(42, 1, 0.08, 80);
+camera.position.set(-3.30, 2.40, 7.60);
 const renderer=new THREE.WebGLRenderer({antialias:true});
 renderer.setPixelRatio(Math.min(2, devicePixelRatio||1));
 renderer.outputColorSpace=THREE.SRGBColorSpace;
 renderer.toneMapping=THREE.ACESFilmicToneMapping;
-renderer.toneMappingExposure=1.12;
+renderer.toneMappingExposure=1.08;
 host.appendChild(renderer.domElement);
-scene.add(new THREE.HemisphereLight(0xfff8ee, 0x6a8f78, 0.9));
-const sun=new THREE.DirectionalLight(0xfff4dd, 1.15);
-sun.position.set(3.2, 6.5, 4);
+scene.add(new THREE.HemisphereLight(0xfff6ea, 0x6a7a58, 0.95));
+const sun=new THREE.DirectionalLight(SUN, 1.25);
+sun.position.set(-2.00, 8.5, 4.00);
 scene.add(sun);
-const cool=new THREE.PointLight(0x9fe7ff, 8, 11);
-cool.position.set(-1.4, 2.1, 0.6);
-scene.add(cool);
-const warm=new THREE.PointLight(0xffc27a, 5, 9);
-warm.position.set(1.6, 1.1, 1.4);
-scene.add(warm);
-const ground=new THREE.Mesh(new THREE.CircleGeometry(3.8, 56), new THREE.MeshStandardMaterial({color:WATER, roughness:1}));
-ground.rotation.x=-Math.PI/2;
-scene.add(ground);
-ground.updateWorldMatrix(true, true);
-const up=new THREE.Vector3(0,0,1).applyQuaternion(ground.quaternion);
-if(up.y<0.9) throw Error('ground faces down');
-const tank=new THREE.Mesh(new THREE.BoxGeometry(5.4, 2.9, 3.6), new THREE.MeshPhysicalMaterial({color:WATER, transparent:true, opacity:0.14, roughness:0.04, metalness:0.02, transmission:0.25, thickness:0.4, side:THREE.DoubleSide, depthWrite:false}));
-tank.position.y=1.3;
-scene.add(tank);
-const fill=new THREE.Mesh(new THREE.BoxGeometry(4.9, 1.55, 3.15), new THREE.MeshStandardMaterial({color:WATER, transparent:true, opacity:0.2, roughness:0.06, side:THREE.DoubleSide, depthWrite:false}));
-fill.position.y=0.78;
+const fill=new THREE.PointLight(0xfff1d0, 6, 18);
+fill.position.set(-2.2, 3.4, 2.1);
 scene.add(fill);
-const membrane=new THREE.Mesh(new THREE.PlaneGeometry(2.5, 2.1), new THREE.MeshStandardMaterial({color:0xffffff, transparent:true, opacity:0.2, roughness:0.05, side:THREE.DoubleSide}));
-membrane.rotation.y=Math.PI/2;
-membrane.position.set(0, 1.1, 0);
-scene.add(membrane);
-membrane.updateWorldMatrix(true, true);
-const face=new THREE.Vector3(0,0,1).applyQuaternion(membrane.quaternion);
-if(face.x<0.9) throw Error('membrane turned');
-for(let s=0;s<3;s++){
-  const shaft=new THREE.Mesh(new THREE.PlaneGeometry(0.5, 2.5), new THREE.MeshBasicMaterial({color:0xfff6dd, transparent:true, opacity:0.14, side:THREE.DoubleSide, depthWrite:false}));
-  shaft.position.set(-1.5+s*1.5, 1.6, -0.7);
-  shaft.rotation.z=-0.16;
-  scene.add(shaft);
-}
-for(let p=0;p<9;p++){
-  const pebble=new THREE.Mesh(new THREE.DodecahedronGeometry(0.07+(p%3)*0.028, 0), new THREE.MeshStandardMaterial({color:BOXC, roughness:0.85}));
-  pebble.position.set(-1.7+(p%5)*0.72, 0.05, -0.85+(p%3)*0.5);
-  scene.add(pebble);
-}
-const toroid=new THREE.Mesh(new THREE.TorusGeometry(0.48, 0.15, 24, 52), new THREE.MeshStandardMaterial({color:TORUS, roughness:0.28, metalness:0.22}));
-toroid.position.set(-1.55, 1.15, -0.2);
-toroid.rotation.y=Math.PI/2;
-scene.add(toroid);
-toroid.updateWorldMatrix(true, true);
-const hole=new THREE.Vector3(0,0,1).applyQuaternion(toroid.quaternion);
-if(hole.x<0.9) throw Error('toroid faces away');
-const cube=new THREE.Mesh(new THREE.BoxGeometry(0.82, 0.82, 0.82), new THREE.MeshStandardMaterial({color:BOXC, roughness:0.4, metalness:0.16}));
-cube.position.set(1.45, 0.74, -0.15);
-scene.add(cube);
-const ring=new THREE.Mesh(new THREE.RingGeometry(0.46, 0.56, 48), new THREE.MeshBasicMaterial({color:DROP, side:THREE.DoubleSide, transparent:true, opacity:0.85}));
-ring.rotation.x=-Math.PI/2;
-ring.position.set(1.05, 0.025, 0.9);
-scene.add(ring);
-ring.updateWorldMatrix(true, true);
-const ringUp=new THREE.Vector3(0,0,1).applyQuaternion(ring.quaternion);
-if(ringUp.y<0.9) throw Error('set point ring');
-const primer=new THREE.Group();
-const cover=new THREE.Mesh(new THREE.BoxGeometry(0.64, 0.08, 0.46), new THREE.MeshStandardMaterial({color:INK, roughness:0.55}));
-const page=new THREE.Mesh(new THREE.BoxGeometry(0.56, 0.02, 0.38), new THREE.MeshStandardMaterial({color:PAPER, roughness:0.85}));
-page.position.y=0.05;
-primer.add(cover);
-primer.add(page);
-primer.position.set(-1.75, 0.06, -1.2);
-scene.add(primer);
-const KINDS=['crown','bell','cart','ribbon','dais','wall','shell','lamp'];
-if(KINDS.indexOf(PROP)<0) throw Error('prop');
-const propMat=new THREE.MeshStandardMaterial({color:INK, roughness:0.42, metalness:0.18});
-let prop;
-if(PROP==='crown'){
-  prop=new THREE.Mesh(new THREE.TorusGeometry(0.2, 0.045, 12, 28), propMat);
-  prop.rotation.x=Math.PI/2;
-  prop.position.set(1.75, 0.32, -1.1);
-  prop.updateWorldMatrix(true, true);
-  const crownHole=new THREE.Vector3(0,0,1).applyQuaternion(prop.quaternion);
-  if(crownHole.y>-0.9) throw Error('crown');
-}else if(PROP==='bell'){
-  prop=new THREE.Mesh(new THREE.ConeGeometry(0.16, 0.34, 18), propMat);
-  prop.position.set(1.75, 0.24, -1.1);
-}else if(PROP==='cart'){
-  prop=new THREE.Group();
-  const bed=new THREE.Mesh(new THREE.BoxGeometry(0.48, 0.16, 0.28), propMat);
-  bed.position.y=0.16;
-  prop.add(bed);
-  const wheelGeo=new THREE.CylinderGeometry(0.07, 0.07, 0.05, 12);
-  const w1=new THREE.Mesh(wheelGeo, propMat);
-  w1.rotation.z=Math.PI/2;
-  w1.position.set(-0.14, 0.07, 0.16);
-  prop.add(w1);
-  const w2=new THREE.Mesh(wheelGeo, propMat);
-  w2.rotation.z=Math.PI/2;
-  w2.position.set(0.14, 0.07, 0.16);
-  prop.add(w2);
-  prop.position.set(1.8, 0, -1.15);
-}else if(PROP==='ribbon'){
-  prop=new THREE.Mesh(new THREE.TorusGeometry(0.16, 0.028, 10, 24), propMat);
-  prop.position.set(1.75, 0.24, -1.1);
-}else if(PROP==='dais'){
-  prop=new THREE.Mesh(new THREE.CylinderGeometry(0.28, 0.32, 0.08, 24), propMat);
-  prop.position.set(1.75, 0.04, -1.1);
-}else if(PROP==='wall'){
-  prop=new THREE.Group();
-  for(let i=0;i<3;i++){
-    const slab=new THREE.Mesh(new THREE.BoxGeometry(0.08, 0.38, 0.24), propMat);
-    slab.position.set(i*0.14, 0.19, 0);
-    prop.add(slab);
+const positions=new Float32Array(N*N*3);
+const colors=new Float32Array(N*N*3);
+const lowC=new THREE.Color(LOW), highC=new THREE.Color(HIGH), tint=new THREE.Color();
+for(let z=0;z<N;z++){
+  for(let x=0;x<N;x++){
+    const i=z*N+x;
+    const X=(x/(N-1)-0.5)*SPAN;
+    const Z=(z/(N-1)-0.5)*SPAN;
+    positions[i*3]=X;
+    positions[i*3+1]=H[i];
+    positions[i*3+2]=Z;
+    tint.copy(lowC).lerp(highC, Math.min(1, H[i]/1.35));
+    colors[i*3]=tint.r; colors[i*3+1]=tint.g; colors[i*3+2]=tint.b;
   }
-  prop.position.set(1.55, 0, -1.15);
-}else if(PROP==='shell'){
-  prop=new THREE.Mesh(new THREE.IcosahedronGeometry(0.16, 0), propMat);
-  prop.position.set(1.75, 0.2, -1.1);
-}else{
-  prop=new THREE.Mesh(new THREE.SphereGeometry(0.1, 16, 12), new THREE.MeshStandardMaterial({color:DROP, emissive:DROP, emissiveIntensity:0.85, roughness:0.28}));
-  prop.position.set(1.75, 0.32, -1.1);
 }
-scene.add(prop);
-const glass=new THREE.MeshPhysicalMaterial({color:'#d7f36a', roughness:0.08, metalness:0, transmission:0.72, thickness:0.4, transparent:true, opacity:0.3, depthWrite:false});
-const belly=new THREE.MeshPhysicalMaterial({color:'#e7b08a', roughness:0.4, metalness:0, transmission:0.45, thickness:0.25, transparent:true, opacity:0.62, depthWrite:false});
-const hide=new THREE.MeshStandardMaterial({color:'#e7b08a', roughness:0.5});
-const mitoMat=new THREE.MeshStandardMaterial({color:'#ff7a3a', emissive:'#ff5a1f', emissiveIntensity:1.4, roughness:0.25});
+const indices=[];
+for(let z=0;z<N-1;z++){
+  for(let x=0;x<N-1;x++){
+    const a=z*N+x, b=a+1, c=a+N, d=c+1;
+    indices.push(a,c,b, b,c,d);
+  }
+}
+const geo=new THREE.BufferGeometry();
+geo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+geo.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+geo.setIndex(indices);
+geo.computeVertexNormals();
+const a0=0, c0=N, b0=1;
+const pa=new THREE.Vector3(positions[a0*3], positions[a0*3+1], positions[a0*3+2]);
+const pc=new THREE.Vector3(positions[c0*3], positions[c0*3+1], positions[c0*3+2]);
+const pb=new THREE.Vector3(positions[b0*3], positions[b0*3+1], positions[b0*3+2]);
+const nrm=new THREE.Vector3().crossVectors(pc.clone().sub(pa), pb.clone().sub(pa));
+if(nrm.y<=0) throw Error('land faces down');
+const land=new THREE.Mesh(geo, new THREE.MeshStandardMaterial({vertexColors:true, roughness:0.92, metalness:0.02}));
+scene.add(land);
+function sample(x, z){
+  const u=Math.min(N-1.001, Math.max(0, (x/SPAN+0.5)*(N-1)));
+  const v=Math.min(N-1.001, Math.max(0, (z/SPAN+0.5)*(N-1)));
+  const x0=Math.floor(u), z0=Math.floor(v);
+  const tx=u-x0, tz=v-z0;
+  const i00=H[z0*N+x0], i10=H[z0*N+x0+1], i01=H[(z0+1)*N+x0], i11=H[(z0+1)*N+x0+1];
+  return i00*(1-tx)*(1-tz)+i10*tx*(1-tz)+i01*(1-tx)*tz+i11*tx*tz;
+}
+if(WATER){
+  const water=new THREE.Mesh(new THREE.CircleGeometry(SPAN*0.62, 48), new THREE.MeshStandardMaterial({color:WATERCOL, transparent:true, opacity:0.45, roughness:0.06, metalness:0.04, side:THREE.DoubleSide, depthWrite:false}));
+  water.rotation.x=-Math.PI/2;
+  water.position.y=0.2;
+  scene.add(water);
+  water.updateWorldMatrix(true, true);
+  const up=new THREE.Vector3(0,0,1).applyQuaternion(water.quaternion);
+  if(up.y<0.9) throw Error('water faces down');
+}
+let marks=0;
+const markMat=new THREE.MeshStandardMaterial({color:INK, roughness:0.7});
+const leafMat=new THREE.MeshStandardMaterial({color:HIGH, roughness:0.6});
+for(let z=1;z<N-1 && marks<16;z+=2){
+  for(let x=1;x<N-1 && marks<16;x+=2){
+    const i=z*N+x;
+    const X=positions[i*3], Z=positions[i*3+2];
+    if(Math.abs(Z-PATHZ)<1.15) continue;
+    if(Math.abs(X-1.8)<0.9 && Math.abs(Z-PATHZ)<1.4) continue;
+    const gate=hash2(x, z, 99);
+    if(gate>0.18) continue;
+    const y=H[i];
+    let prop;
+    if(MARK==='tree'){
+      prop=new THREE.Group();
+      const trunk=new THREE.Mesh(new THREE.CylinderGeometry(0.04, 0.06, 0.28, 6), markMat);
+      trunk.position.y=0.14;
+      const cap=new THREE.Mesh(new THREE.ConeGeometry(0.18, 0.36, 7), leafMat);
+      cap.position.y=0.4;
+      prop.add(trunk); prop.add(cap);
+    }else if(MARK==='reed'){
+      prop=new THREE.Mesh(new THREE.CylinderGeometry(0.015, 0.02, 0.45, 5), leafMat);
+      prop.position.y=0.22;
+    }else if(MARK==='post'){
+      prop=new THREE.Mesh(new THREE.BoxGeometry(0.06, 0.42, 0.06), markMat);
+      prop.position.y=0.21;
+    }else if(MARK==='stone'){
+      prop=new THREE.Mesh(new THREE.DodecahedronGeometry(0.1, 0), markMat);
+      prop.position.y=0.08;
+    }else throw Error('mark');
+    prop.position.x=X; prop.position.z=Z; prop.position.y+=y;
+    scene.add(prop);
+    marks++;
+  }
+}
+function hash2(ix, iz, seed){
+  let x=(seed ^ Math.imul(ix+97, 374761393) ^ Math.imul(iz+57, 668265263))>>>0;
+  x=Math.imul(x^(x>>>13), 1274126177)>>>0;
+  return ((x^(x>>>16))>>>0)/4294967296;
+}
+const glass=new THREE.MeshPhysicalMaterial({color:"#d7f36a", roughness:0.08, metalness:0, transmission:0.72, thickness:0.4, transparent:true, opacity:0.32, depthWrite:false});
+const belly=new THREE.MeshPhysicalMaterial({color:"#f0c0a0", roughness:0.4, metalness:0, transmission:0.45, thickness:0.25, transparent:true, opacity:0.62, depthWrite:false});
+const hide=new THREE.MeshStandardMaterial({color:"#f0c0a0", roughness:0.5});
+const mitoMat=new THREE.MeshStandardMaterial({color:'#ff7a3a', emissive:'#ff5a1f', emissiveIntensity:1.35, roughness:0.25});
 const diatom=new THREE.Group();
-const shell=new THREE.Mesh(new THREE.SphereGeometry(0.64, 36, 24), glass);
-shell.scale.set(1.18, 0.8, 0.94);
+const shell=new THREE.Mesh(new THREE.SphereGeometry(0.58, 32, 22), glass);
+shell.scale.set(1.16, 0.78, 0.92);
 diatom.add(shell);
 for(let i=0;i<12;i++){
-  const rib=new THREE.Mesh(new THREE.BoxGeometry(0.78, 0.02, 0.018), glass);
+  const rib=new THREE.Mesh(new THREE.BoxGeometry(0.7, 0.018, 0.016), glass);
   rib.position.y=0.02;
   rib.rotation.y=i*Math.PI/12;
   rib.userData.role='rib';
   diatom.add(rib);
 }
 const bear=new THREE.Group();
-const body=new THREE.Mesh(new THREE.SphereGeometry(0.22, 28, 18), belly);
+const body=new THREE.Mesh(new THREE.SphereGeometry(0.2, 24, 16), belly);
 body.scale.set(1.35, 0.7, 0.82);
 bear.add(body);
-const head=new THREE.Mesh(new THREE.SphereGeometry(0.1, 18, 12), hide);
-head.position.set(0.28, 0.04, 0);
+const head=new THREE.Mesh(new THREE.SphereGeometry(0.09, 16, 12), hide);
+head.position.set(0.26, 0.04, 0);
 bear.add(head);
-const snout=new THREE.Mesh(new THREE.SphereGeometry(0.045, 12, 8), hide);
+const snout=new THREE.Mesh(new THREE.SphereGeometry(0.042, 12, 8), hide);
 snout.position.set(0.4, 0.02, 0);
 snout.userData.role='nose';
 bear.add(snout);
 for(let i=0;i<8;i++){
   const side=i<4?-1:1, along=i%4;
-  const leg=new THREE.Mesh(new THREE.CylinderGeometry(0.02, 0.03, 0.16, 8), hide);
-  leg.position.set(-0.12+along*0.1, -0.14, side*0.12);
-  leg.rotation.z=side*-0.5;
+  const leg=new THREE.Mesh(new THREE.CylinderGeometry(0.018, 0.028, 0.14, 6), hide);
+  leg.position.set(-0.1+along*0.09, -0.12, side*0.11);
+  leg.rotation.z=side*-0.45;
   leg.userData.role='leg';
   bear.add(leg);
 }
 const mito=new THREE.Group();
-const bean=new THREE.Mesh(new THREE.SphereGeometry(0.07, 16, 12), mitoMat);
-bean.scale.set(1.55, 0.7, 0.85);
+const bean=new THREE.Mesh(new THREE.SphereGeometry(0.065, 14, 10), mitoMat);
+bean.scale.set(1.5, 0.7, 0.85);
 mito.add(bean);
 for(let i=0;i<6;i++){
-  const crista=new THREE.Mesh(new THREE.BoxGeometry(0.09, 0.012, 0.02), mitoMat);
-  crista.position.set((i-2.5)*0.018, 0, 0);
+  const crista=new THREE.Mesh(new THREE.BoxGeometry(0.08, 0.01, 0.018), mitoMat);
+  crista.position.set((i-2.5)*0.016, 0, 0);
   crista.userData.role='crista';
   mito.add(crista);
 }
-const inner=new THREE.PointLight(0xffb45a, 2.4, 1.2);
-mito.add(inner);
+mito.add(new THREE.PointLight(0xffb45a, 1.8, 1.1));
 mito.position.set(0, 0.02, 0);
 bear.add(mito);
-bear.position.set(0, 0, 0);
 diatom.add(bear);
-const from=new THREE.Vector3(-1.2, 0.62, 0.9);
-const home=new THREE.Vector3(1.05, 0.62, 0.9);
+diatom.scale.setScalar(1.2);
+const from=new THREE.Vector3(-2.4, 0, PATHZ);
+const home=new THREE.Vector3(1.8, 0, PATHZ);
+function plant(v){ v.y=sample(v.x, v.z)+0.62; return v; }
+plant(from); plant(home);
 diatom.position.copy(home);
 diatom.rotation.y=0;
 bear.rotation.y=0;
@@ -312,18 +423,17 @@ scene.add(diatom);
 diatom.updateWorldMatrix(true, true);
 if(bear.parent!==diatom) throw Error('bear left the diatom');
 if(mito.parent!==bear) throw Error('mito left the bear');
-const noseAt=new THREE.Vector3(), bellyAt=new THREE.Vector3(), mitoAt=new THREE.Vector3(), shellAt=new THREE.Vector3();
+const noseAt=new THREE.Vector3(), bellyAt=new THREE.Vector3(), mitoAt=new THREE.Vector3();
 snout.getWorldPosition(noseAt);
 bear.getWorldPosition(bellyAt);
 mito.getWorldPosition(mitoAt);
-diatom.getWorldPosition(shellAt);
 const front=noseAt.sub(bellyAt);
 front.y=0; front.normalize();
 const travel=home.clone().sub(from);
 travel.y=0; travel.normalize();
 if(front.dot(travel)<0.9) throw Error('bear faces off the path');
-if(mitoAt.distanceTo(bellyAt)>0.2) throw Error('mito outside the bear');
-if(bellyAt.distanceTo(shellAt)>0.15) throw Error('bear outside the diatom');
+if(mitoAt.distanceTo(bellyAt)>0.25) throw Error('mito outside the bear');
+if(diatom.position.y<sample(home.x, home.z)+0.3) throw Error('buried');
 let legs=0, ribs=0, cristae=0;
 diatom.traverse(function(o){
   if(!o.userData) return;
@@ -332,47 +442,11 @@ diatom.traverse(function(o){
   if(o.userData.role==='crista') cristae++;
 });
 if(legs!==8||ribs!==12||cristae!==6) throw Error('body');
-for(let g=1;g<=3;g++){
-  const ghost=new THREE.Mesh(new THREE.SphereGeometry(0.34, 16, 12), new THREE.MeshBasicMaterial({color:0xd7f36a, transparent:true, opacity:0.08+g*0.05, depthWrite:false}));
-  ghost.scale.set(1.18, 0.8, 0.94);
-  ghost.position.lerpVectors(from, home, g/4);
-  scene.add(ghost);
-}
-const dropGeo=new THREE.SphereGeometry(0.04, 10, 8);
-const dropMat=new THREE.MeshStandardMaterial({color:DROP, roughness:0.25, emissive:DROP, emissiveIntensity:0.25});
-const drops=new THREE.InstancedMesh(dropGeo, dropMat, SET);
-const dummy=new THREE.Object3D();
-const homes=[];
-for(let i=0;i<SET;i++){
-  const col=i%7, row=Math.floor(i/7);
-  const spot=new THREE.Vector3(1.05+(col-3)*0.09, 0.22+row*0.08, 0.15+((i%3)-1)*0.07);
-  homes.push(spot);
-  dummy.position.copy(spot);
-  dummy.updateMatrix();
-  drops.setMatrixAt(i, dummy.matrix);
-}
-drops.instanceMatrix.needsUpdate=true;
-if(drops.count!==SET) throw Error('drops');
-scene.add(drops);
-const bubbleGeo=new THREE.SphereGeometry(0.045, 10, 8);
-const bubbleMat=new THREE.MeshStandardMaterial({color:0xffffff, transparent:true, opacity:0.35, roughness:0.05});
-const bubbles=new THREE.InstancedMesh(bubbleGeo, bubbleMat, 16);
-const bubbleAt=[];
-for(let i=0;i<16;i++){
-  const spot=new THREE.Vector3(-1.3+(i%8)*0.38, 0.35+(i%5)*0.26, -0.35+(i%4)*0.22);
-  bubbleAt.push(spot.clone());
-  dummy.position.copy(spot);
-  dummy.scale.setScalar(0.45+(i%4)*0.18);
-  dummy.updateMatrix();
-  bubbles.setMatrixAt(i, dummy.matrix);
-}
-bubbles.instanceMatrix.needsUpdate=true;
-scene.add(bubbles);
 const controls=new OrbitControls(camera, renderer.domElement);
-controls.target.set(0, 0.95, 0);
+controls.target.set(0.2, 0.45, 0);
 controls.enableDamping=true;
 controls.autoRotate=!(reduce||thumb);
-controls.autoRotateSpeed=0.32;
+controls.autoRotateSpeed=0.28;
 camera.lookAt(controls.target);
 diatom.userData.from=from.clone();
 diatom.userData.home=home.clone();
@@ -388,23 +462,10 @@ fit();
 addEventListener('resize', fit);
 function frame(){
   if(!(reduce||thumb)){
-    diatom.userData.t=Math.min(1, diatom.userData.t+0.008);
-    diatom.position.lerpVectors(diatom.userData.from, diatom.userData.home, diatom.userData.t);
-    for(let i=0;i<SET;i++){
-      dummy.position.lerpVectors(toroid.position, homes[i], diatom.userData.t);
-      dummy.scale.setScalar(1);
-      dummy.updateMatrix();
-      drops.setMatrixAt(i, dummy.matrix);
-    }
-    drops.instanceMatrix.needsUpdate=true;
-    for(let i=0;i<16;i++){
-      const spot=bubbleAt[i];
-      dummy.position.set(spot.x, spot.y+diatom.userData.t*0.7, spot.z);
-      dummy.scale.setScalar(0.45+(i%4)*0.18);
-      dummy.updateMatrix();
-      bubbles.setMatrixAt(i, dummy.matrix);
-    }
-    bubbles.instanceMatrix.needsUpdate=true;
+    diatom.userData.t=Math.min(1, diatom.userData.t+0.006);
+    const t=diatom.userData.t;
+    diatom.position.lerpVectors(diatom.userData.from, diatom.userData.home, t);
+    diatom.position.y=sample(diatom.position.x, diatom.position.z)+0.62;
   }
   controls.update();
   renderer.render(scene, camera);
