@@ -1,0 +1,1 @@
+{"slug": "cider-door", "seal": "7fb7a412b9bf1d9230e099117e9b282fedc495a5c680eea0da9898e90bff66ab", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -20,7 +20,7 @@ Three spheres of the world Mayhem. Each page is a Three.js picture with two agen
 - [The Single Door](./spheres/worlds/single-door.html): two faces minus one opening is 1. Agentics HINGE and PORTER. LIT.
 
 ## Osmosis
-Ten spots. Each spot keeps two persistent gap agents, TOROID and BOX. A worse step is dropped. A step is kept only when the gap shrinks. What leaves the toroid arrives in the box. The kept gap is stored in this browser. Not a hallway seat.
+Twenty-five spots. Each spot keeps two persistent gap agents, TOROID and BOX. A worse step is dropped. A step is kept only when the gap shrinks. What leaves the toroid arrives in the box. The kept gap is stored in this browser. Not a hallway seat.
 - [The Salt Gate](./spheres/osmosis/salt-gate.html): TOROID and BOX osmose 1 of salt. Persistent gap. LIT. seal a4fbb92c677971491bb0d795622eb077714f1342ce00fa1ac749c8e6055c43bd
 - [The Ink Well](./spheres/osmosis/ink-well.html): TOROID and BOX osmose 2 of ink. Persistent gap. LIT. seal 247f04dd8d5cc795d322e05871f81eabd4670b2f0fa5389724f40be4468539bc
 - [The Warm Cup](./spheres/osmosis/warm-cup.html): TOROID and BOX osmose 3 of heat. Persistent gap. LIT. seal fa3505ec49102cfb3afe5bd8f95848e4eccbaf6a8d275bfb1e664dff458438ce
@@ -31,6 +31,21 @@ Ten spots. Each spot keeps two persistent gap agents, TOROID and BOX. A worse st
 - [The Honey Cell](./spheres/osmosis/honey-cell.html): TOROID and BOX osmose 8 of honey. Persistent gap. LIT. seal 8d0bf33d94f828fbb6db7b6cff98c389726077e03e073a1b72c17f9d0554b3ef
 - [The Blue Vein](./spheres/osmosis/blue-vein.html): TOROID and BOX osmose 9 of dye. Persistent gap. LIT. seal f316c73f3c4b6e8d690d396b3093eaabef129adeeb0ae2b01d2bfc623eb55e42
 - [The Dry Mouth](./spheres/osmosis/dry-mouth.html): TOROID and BOX osmose 10 of water. Persistent gap. LIT. seal 79c538e0c77b7b0c00940cd216e50003059bc7fb97e4f7ba353c43d91a3e551d
+- [The Copper Rain](./spheres/osmosis/copper-rain.html): TOROID and BOX osmose 11 of copper. Persistent gap. LIT. seal d35b2df16876679b211c96aceb7ea25a01567d798e455b3c2693334870adab2b
+- [The Milk Stair](./spheres/osmosis/milk-stair.html): TOROID and BOX osmose 12 of milk. Persistent gap. LIT. seal 8cd3c3e97b703efaaaf09987bd50ae29a535fc374c99d7014560fa6705f0ca6c
+- [The Ash Window](./spheres/osmosis/ash-window.html): TOROID and BOX osmose 13 of ash. Persistent gap. LIT. seal c7beaf189fcabb9902bd8f3b462147ce125601b0588096c33ed02cfa0790ae6c
+- [The Pearl Lock](./spheres/osmosis/pearl-lock.html): TOROID and BOX osmose 14 of pearl. Persistent gap. LIT. seal b137ac11086cf3f7e26b01ee6d1147351fe8d4a4711b4a4a1e53f3fac5900357
+- [The Cider Door](./spheres/osmosis/cider-door.html): TOROID and BOX osmose 15 of cider. Persistent gap. LIT. seal 7fb7a412b9bf1d9230e099117e9b282fedc495a5c680eea0da9898e90bff66ab
+- [The Moss Bank](./spheres/osmosis/moss-bank.html): TOROID and BOX osmose 16 of moss. Persistent gap. LIT. seal f83e09c73c43758e81482fa3b8d1e29fbe3d6d00742c0f684df1d646d83b04d2
+- [The Quartz Throat](./spheres/osmosis/quartz-throat.html): TOROID and BOX osmose 17 of quartz. Persistent gap. LIT. seal 5705d9f34402f586c468101b6fdecc78a588addd7f7eb051a78a380a9afc05ae
+- [The Lemon Pier](./spheres/osmosis/lemon-pier.html): TOROID and BOX osmose 18 of lemon. Persistent gap. LIT. seal eced8d445ff6eb574d10da1c12c031449f199ad59731a4ef602ad18dfffed54f
+- [The Wool Gate](./spheres/osmosis/wool-gate.html): TOROID and BOX osmose 19 of wool. Persistent gap. LIT. seal 9ccb1d99432ca6360c09f98bdce867d8371115aaa102a80d5a0fc87462210ec8
+- [The Violet Pump](./spheres/osmosis/violet-pump.html): TOROID and BOX osmose 20 of violet. Persistent gap. LIT. seal c64bfc3f69c5ab281c528d050cb6500521b325dd4b584103103820148bc1fcdc
+- [The Brass Bell](./spheres/osmosis/brass-bell.html): TOROID and BOX osmose 21 of brass. Persistent gap. LIT. seal f0fb46163e06ef02a86dbc23bf446319ca003c3f6cb7f34e26c6a64aafd8d1ef
+- [The Rice Bowl](./spheres/osmosis/rice-bowl.html): TOROID and BOX osmose 22 of rice. Persistent gap. LIT. seal 6947ab5c6e7c43291a06f25c6a234441bbd4a694a36e2873a851e5b68e7d04ff
+- [The Coral Mouth](./spheres/osmosis/coral-mouth.html): TOROID and BOX osmose 23 of coral. Persistent gap. LIT. seal 953516cb23d7aa38d6816d8c774cc47af62b5028062ac2d5415189eebe9ae2f8
+- [The Pine Pitch](./spheres/osmosis/pine-pitch.html): TOROID and BOX osmose 24 of pitch. Persistent gap. LIT. seal a06ed8ae383c8543010dc2737bdc3221dffb6abd90202caac8c7b4214d78035d
+- [The Silver Vein](./spheres/osmosis/silver-vein.html): TOROID and BOX osmose 25 of silver. Persistent gap. LIT. seal 650c41ec6a8ebc8df265365abcee664fc566c1b622596c4db098c730b5362ca5
 
 ## Agentic spheres (Dave t196u)
 - [The Zebes Run](./spheres/metroid-agents.html): STEWARD IV · BOUTON'S TABLE. Agents G, R and O try to beat an abstract NES-Metroid map, posting tips to a shared board while K watches. seal 92d18c04fd59a78a4b6f4ffec44e8311dfc1b9db81218518fbfcbfa98d595a24

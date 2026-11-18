@@ -1,0 +1,1 @@
+{"slug": "rice-bowl", "seal": "6947ab5c6e7c43291a06f25c6a234441bbd4a694a36e2873a851e5b68e7d04ff", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

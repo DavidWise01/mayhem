@@ -1,0 +1,1 @@
+{"slug": "moss-bank", "seal": "f83e09c73c43758e81482fa3b8d1e29fbe3d6d00742c0f684df1d646d83b04d2", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "ash-window", "seal": "c7beaf189fcabb9902bd8f3b462147ce125601b0588096c33ed02cfa0790ae6c", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

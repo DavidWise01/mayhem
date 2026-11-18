@@ -1,0 +1,1 @@
+{"slug": "lemon-pier", "seal": "eced8d445ff6eb574d10da1c12c031449f199ad59731a4ef602ad18dfffed54f", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

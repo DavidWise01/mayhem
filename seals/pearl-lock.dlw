@@ -1,0 +1,1 @@
+{"slug": "pearl-lock", "seal": "b137ac11086cf3f7e26b01ee6d1147351fe8d4a4711b4a4a1e53f3fac5900357", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "brass-bell", "seal": "f0fb46163e06ef02a86dbc23bf446319ca003c3f6cb7f34e26c6a64aafd8d1ef", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

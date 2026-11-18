@@ -1,0 +1,1 @@
+{"slug": "coral-mouth", "seal": "953516cb23d7aa38d6816d8c774cc47af62b5028062ac2d5415189eebe9ae2f8", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
