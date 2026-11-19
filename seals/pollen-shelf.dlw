@@ -1,0 +1,1 @@
+{"slug":"pollen-shelf","seal":"a106f08d565fed1e2969f1abcf15169edc8c8fd20d66809d14af7d04a260a7db","rule":"sha256(name|slug|blurb)","write":"if-missing"}

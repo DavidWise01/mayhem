@@ -1,0 +1,1 @@
+{"slug":"silt-gate","seal":"516740484c69269d1c553799745c15f951a301498f2b6a147cc0be6197b7f987","rule":"sha256(name|slug|blurb)","write":"if-missing"}

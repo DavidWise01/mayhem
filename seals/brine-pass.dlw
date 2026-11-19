@@ -1,0 +1,1 @@
+{"slug":"brine-pass","seal":"e22bac37265b243bd2bac11681a684e8e33d313a0451939e98d08017f5ba1a87","rule":"sha256(name|slug|blurb)","write":"if-missing"}

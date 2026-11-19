@@ -1,0 +1,1 @@
+{"slug":"kelp-lens","seal":"db7e41f5c3b79f4ae15727f007e39c938152886e0d126c77686c823f65bf2e6d","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"green-mouth","seal":"421169c759c8a9817c8001a84d75651e3f9d972ee00024730b89047559a216c5","rule":"sha256(name|slug|blurb)","write":"if-missing"}

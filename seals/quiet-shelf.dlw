@@ -1,0 +1,1 @@
+{"slug":"quiet-shelf","seal":"e70f0a305d745338cf4d5a2f73b0e7052c1f5d7c28e6814af4f0108b4a4a6445","rule":"sha256(name|slug|blurb)","write":"if-missing"}

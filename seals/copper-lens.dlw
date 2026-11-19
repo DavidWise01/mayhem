@@ -1,0 +1,1 @@
+{"slug":"copper-lens","seal":"4a6f13c7cdb16e3c7b16b4ef3e33728d8ac1a2fcdfbe71d69e58ee2cbbe2586a","rule":"sha256(name|slug|blurb)","write":"if-missing"}

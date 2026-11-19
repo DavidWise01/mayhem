@@ -1,0 +1,1 @@
+{"slug":"amber-gate","seal":"39649e09102fc751af76169b608db03dfeefdde3e949fb1f958d30c12e5981b2","rule":"sha256(name|slug|blurb)","write":"if-missing"}

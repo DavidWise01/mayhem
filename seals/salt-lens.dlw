@@ -1,0 +1,1 @@
+{"slug":"salt-lens","seal":"6ac0b1dad67454cd177ef05ae8517ec1cf9f402f36d97abb7391fca37359d233","rule":"sha256(name|slug|blurb)","write":"if-missing"}

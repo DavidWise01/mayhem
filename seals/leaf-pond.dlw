@@ -1,0 +1,1 @@
+{"slug":"leaf-pond","seal":"653a5575deffc42db7f145e1d057b3a41d3b50e8df30986748fecd55a7b5a080","rule":"sha256(name|slug|blurb)","write":"if-missing"}

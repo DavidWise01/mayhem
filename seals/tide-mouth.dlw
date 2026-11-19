@@ -1,0 +1,1 @@
+{"slug":"tide-mouth","seal":"a3e0de8b64fecc9e7182189e7caa719515f30843c7346c3c91fd19a3595a0a4e","rule":"sha256(name|slug|blurb)","write":"if-missing"}

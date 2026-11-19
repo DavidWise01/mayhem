@@ -1,0 +1,1 @@
+{"slug":"coral-lens","seal":"843c001557c31a0dc8ab46a94c0343bf42833908d9bf76d960a39aaf8b764217","rule":"sha256(name|slug|blurb)","write":"if-missing"}

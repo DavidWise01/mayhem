@@ -1,0 +1,1 @@
+{"slug":"soft-shelf","seal":"911583ba5dc1b647a08ab0b1b8117d67aefb06b1707ad87790ee0a69a1e272f6","rule":"sha256(name|slug|blurb)","write":"if-missing"}

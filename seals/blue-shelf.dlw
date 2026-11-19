@@ -1,0 +1,1 @@
+{"slug":"blue-shelf","seal":"75845aea97b4fc6854f7f8a1e84ec369c2620253a56c9313dd9280ef004bef22","rule":"sha256(name|slug|blurb)","write":"if-missing"}

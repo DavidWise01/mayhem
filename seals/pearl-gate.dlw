@@ -1,0 +1,1 @@
+{"slug":"pearl-gate","seal":"b3da42f2f260ea0e75eebf58ebd3bb9c2315194fed08d83aa7e023597f091a1c","rule":"sha256(name|slug|blurb)","write":"if-missing"}

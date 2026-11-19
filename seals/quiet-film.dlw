@@ -1,0 +1,1 @@
+{"slug":"quiet-film","seal":"eb1a97bcea5a5c5689160ae67fb8cd6d259c55b1de0986b8f3a0eb908045a803","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"amber-lens","seal":"947b2d261832e6165ed422cb1277b85da298764dd94950cd16d55435887a308c","rule":"sha256(name|slug|blurb)","write":"if-missing"}

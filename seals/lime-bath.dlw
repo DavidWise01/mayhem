@@ -1,0 +1,1 @@
+{"slug":"lime-bath","seal":"dea5f3df29e4020b7e68b7ee0cf10a783583e509acc9b5b53f7287441a0d650f","rule":"sha256(name|slug|blurb)","write":"if-missing"}

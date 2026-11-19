@@ -1,0 +1,1 @@
+{"slug":"wool-pass","seal":"0edb033a76c42c20e70662f6093c6b2b71dfbb785caaef7b4860efbeb27a1184","rule":"sha256(name|slug|blurb)","write":"if-missing"}

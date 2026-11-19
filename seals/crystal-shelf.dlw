@@ -1,0 +1,1 @@
+{"slug":"crystal-shelf","seal":"f13e803445880c14d8f7c8836fb82b314694717c58c58e937b2a49e9f45a520f","rule":"sha256(name|slug|blurb)","write":"if-missing"}

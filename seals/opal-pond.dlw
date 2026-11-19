@@ -1,0 +1,1 @@
+{"slug":"opal-pond","seal":"2ba85a06d9b3d501bbd45ce8ca1083733efb01eff89bd57da817371b679d5c32","rule":"sha256(name|slug|blurb)","write":"if-missing"}

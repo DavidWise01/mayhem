@@ -1,0 +1,1 @@
+{"slug":"moss-shelf","seal":"a955dc925d3bf451b22437c887fed575cf8c7481b233f4fa0da2aa7bd922225f","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"copper-pool","seal":"b272eaf320534e92d3cea68ae73a4f52a18a925131052c0c61654fc36d5ac7ce","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -213,49 +213,99 @@ One hundred classics from Project Gutenberg. Each page has its own layout and ge
 - [Anthony Cade](./spheres/classics/anthony-cade.html): The Secret of Chimneys. the chimneys drive. Nested three bodies. Set point 100. LIT. seal 15e4867106191e0b70e41f6a9d194dc26685729c43bbed22ca32722922511014
 
 ## Cast
-Forty-two cast spheres. Each page has its own layout and generates its own high-definition landscape. The pixel ratio is 3. A room light wraps the glass. A contact shadow sits under the cast. A worse height is dropped. A height is kept only when the gap shrinks. ELECTROLYTE holds AMOEBA. AMOEBA holds DIATOM and BACTERIA. DIATOM holds WATER BEAR and CHLOROPHYLL. WATER BEAR holds MITOCHONDRION. They are homeostatic, cooperative, and evolutionary. A selfish step is dropped. A step away from the set point is dropped. A worse mutant is dropped. A step is kept only when the shared gap shrinks. Seventeen steps bring the seven bodies home. Not a hallway seat.
-- [The Glass Pond](./spheres/cast/glass-pond.html): the glass pond. High def. Seven bodies. Set point 1. LIT. seal ba8189237f466a5eb1cb22d9a98ece8e0d062eaa1c7f2b21f6c675802efe95af
-- [The Salt Film](./spheres/cast/salt-film.html): the salt film. High def. Seven bodies. Set point 2. LIT. seal 1f57f1686e0efc94f9fc3a143b676199e2cd4da7a05c5db1e50ec8db37cee85e
-- [The Green Shelf](./spheres/cast/green-shelf.html): the green shelf. High def. Seven bodies. Set point 3. LIT. seal 0ab92b8107105d26c6092192459ce65f7464449f0c6bdc5005a87e3ac5fca7c5
-- [The Ion Gate](./spheres/cast/ion-gate.html): the ion gate. High def. Seven bodies. Set point 4. LIT. seal 01c1f8dd862feb7e6dd658b2a2e5b5236c56e0c3f68e3fd04481368171dc7fdc
-- [The Soft Mouth](./spheres/cast/soft-mouth.html): the soft mouth. High def. Seven bodies. Set point 5. LIT. seal deea7fa7aed902ecb8da952eeb514c5f6f168ecc784b7800f535b14785fa9f1f
-- [The Amber Bath](./spheres/cast/amber-bath.html): the amber bath. High def. Seven bodies. Set point 6. LIT. seal 34cda416f4e3238a61baf164f1782516d72dde1e26f37fbd7e6331d9ed87ff75
-- [The Reed Lens](./spheres/cast/reed-lens.html): the reed lens. High def. Seven bodies. Set point 7. LIT. seal 0d4c1a4e68419274da0d923924155b20a82ac4086d2000a96512c423623a2019
-- [The Copper Skin](./spheres/cast/copper-skin.html): the copper skin. High def. Seven bodies. Set point 8. LIT. seal 1e148aa2ebb26b676f85243cf8b1fce131dd6eff6a9e6a189263fb1706969fc9
-- [The Quiet Drop](./spheres/cast/quiet-drop.html): the quiet drop. High def. Seven bodies. Set point 9. LIT. seal f9672cd8567abfc950b945f982db831628404756d25162f233a2fd9427c2f7ba
-- [The Tide Bead](./spheres/cast/tide-bead.html): the tide bead. High def. Seven bodies. Set point 10. LIT. seal e6072d9e0e54350b3996ac4cd5b69faf7c4d03e7bd7b614635343068331c584f
-- [The Mica Pool](./spheres/cast/mica-pool.html): the mica pool. High def. Seven bodies. Set point 11. LIT. seal f4eae95df0f61766e6cf8fd0325d859e79542463a12b2ba5305c7a150d8b58bc
-- [The Leaf Window](./spheres/cast/leaf-window.html): the leaf window. High def. Seven bodies. Set point 12. LIT. seal acba44385290dd2809ae416c42e9b612836dee8d7f946ac3e7d453c50450d37b
-- [The Pearl Drop](./spheres/cast/pearl-drop.html): the pearl drop. High def. Seven bodies. Set point 13. LIT. seal fc22238575e8a0bb8486fab1880f565475edb0b4cbba9e141b31ce9387e83e82
-- [The Warm Brine](./spheres/cast/warm-brine.html): the warm brine. High def. Seven bodies. Set point 14. LIT. seal c508f0b5490cb6edd3b38a0e89272a49395c817d2a36613c26663957acfe7ca4
-- [The Clover Film](./spheres/cast/clover-film.html): the clover film. High def. Seven bodies. Set point 15. LIT. seal a8eac1d4f0c436cc3a7730c478f061f99dd6a25f53539889bf8f10f88c86b8f6
-- [The Blue Meniscus](./spheres/cast/blue-meniscus.html): the blue meniscus. High def. Seven bodies. Set point 16. LIT. seal 32ed27ccecef75027b219ce1e13d4201c58a7880808ad4167e412240a467e0df
-- [The Sugar Glass](./spheres/cast/sugar-glass.html): the sugar glass. High def. Seven bodies. Set point 17. LIT. seal bc242354e1bd215803e43549597230bbd233715c2b143279e4492e9375bb35d1
-- [The Kelp Room](./spheres/cast/kelp-room.html): the kelp room. High def. Seven bodies. Set point 18. LIT. seal 981b6fafb4d12385e1cf2e9717e29f369005236a370842f8851e00bef36f33d9
-- [The Dawn Bath](./spheres/cast/dawn-bath.html): the dawn bath. High def. Seven bodies. Set point 19. LIT. seal 5cc24a647951206f66951807ec0107532b701828466981ecfe4b619ca2d08494
-- [The Silt Lens](./spheres/cast/silt-lens.html): the silt lens. High def. Seven bodies. Set point 20. LIT. seal 6ca02785b51256e304c6d61c307d63a43d4a062aca439b756d20cebfe511d92a
-- [The Opal Gate](./spheres/cast/opal-gate.html): the opal gate. High def. Seven bodies. Set point 21. LIT. seal a10a7793426ccf197e627b88ebdb992e8b913f4cb90e7a73e3452e55d268db22
-- [The Moss Mouth](./spheres/cast/moss-mouth.html): the moss mouth. High def. Seven bodies. Set point 22. LIT. seal 2c88b65954f7f6e17562bd613b51b1bafc5c1b6d1fa3cac9441723118ff141f8
-- [The Silver Spark](./spheres/cast/silver-spark.html): the silver spark. High def. Seven bodies. Set point 23. LIT. seal 85082a5f2cec403d0c5702b7c9124fac08e6a22c4a8ef9e6b95f1be1a7a737f9
-- [The Honey Skin](./spheres/cast/honey-skin.html): the honey skin. High def. Seven bodies. Set point 24. LIT. seal c8807a00e5051617616bea4d1c37dee4eed8b0c18df6738b2877443f925bf455
-- [The Coral Bath](./spheres/cast/coral-bath.html): the coral bath. High def. Seven bodies. Set point 25. LIT. seal 456938527efc11baa3b592f16abe785c6ffaeecb36213e10439017c8c2b17b0d
-- [The Rain Bead](./spheres/cast/rain-bead.html): the rain bead. High def. Seven bodies. Set point 26. LIT. seal 02f5976b873c74f865855a1654201535e591fe1e3667f1c62e92970a16397fcf
-- [The Fern Shelf](./spheres/cast/fern-shelf.html): the fern shelf. High def. Seven bodies. Set point 27. LIT. seal 88f2332fc823cf777ae4e09cebbaa863d9b8839aa460914d3e5bf627ac8b0a3f
-- [The Ink Pond](./spheres/cast/ink-pond.html): the ink pond. High def. Seven bodies. Set point 28. LIT. seal 3fce94b796fed85242dbda03bc3d6471cd5b80e13b6a85fa6a07dbe8777a6394
-- [The Quartz Skin](./spheres/cast/quartz-skin.html): the quartz skin. High def. Seven bodies. Set point 29. LIT. seal 3f76c357e3cea4b7819b802b25b2b08331f358000a07ab70ebdbb707b7c7a43a
-- [The Lime Sill](./spheres/cast/lime-sill.html): the lime sill. High def. Seven bodies. Set point 30. LIT. seal 0c79df40fb0e14167a0e1129d5b4ee8bb965fe1d3f243399f34b54867f836814
-- [The Pollen Bath](./spheres/cast/pollen-bath.html): the pollen bath. High def. Seven bodies. Set point 31. LIT. seal 3ba14f69672204825fc1bb2687998ee613426f2630d49e49ce56ce7957a6248f
-- [The Shell Lens](./spheres/cast/shell-lens.html): the shell lens. High def. Seven bodies. Set point 32. LIT. seal 33c7559b902ca9bd8d248d69e61ed59c5c03c6719883ca2186292cde4b931166
-- [The Nectar Pond](./spheres/cast/nectar-pond.html): the nectar pond. High def. Seven bodies. Set point 33. LIT. seal 7d2435647f8dcc715be1eaff458492c7d2a272b8e917e38ff93fb3405307c08f
-- [The Dew Film](./spheres/cast/dew-film.html): the dew film. High def. Seven bodies. Set point 34. LIT. seal b510e301e0d06d54f1d0484d3436c1cc7a411164971d58cf3a404aaa26f1641e
-- [The Algae Shelf](./spheres/cast/algae-shelf.html): the algae shelf. High def. Seven bodies. Set point 35. LIT. seal f7a5af764a1b4c37370df69a44adbcafe4fa9141d1b68a1852ee590f0739a866
-- [The Crystal Bath](./spheres/cast/crystal-bath.html): the crystal bath. High def. Seven bodies. Set point 36. LIT. seal 020f90fe808a8d33633e69d08b23b3e647265551e29417bed13672c77be5c6f6
-- [The Lotus Lens](./spheres/cast/lotus-lens.html): the lotus lens. High def. Seven bodies. Set point 37. LIT. seal 9f9847e3ac32b56bfc922f44328a2771c17d2f38040e2d1523114ae9c323e4f6
-- [The Cider Pool](./spheres/cast/cider-pool.html): the cider pool. High def. Seven bodies. Set point 38. LIT. seal 5635b5848fe913a1a5e73c63c6af0024a8fc99656eb81e297ac73815439567c9
-- [The Wool Pond](./spheres/cast/wool-pond.html): the wool pond. High def. Seven bodies. Set point 39. LIT. seal afae4aebd62b537655462edf22c93b0f4c2f87bbb456e0b47c18e2027e79ba86
-- [The Violet Bath](./spheres/cast/violet-bath.html): the violet bath. High def. Seven bodies. Set point 40. LIT. seal f02ff0048c394537c5f048b427c4d1a407e6a0ad9508ed72317745d928d5e869
-- [The Brass Pond](./spheres/cast/brass-pond.html): the brass pond. High def. Seven bodies. Set point 41. LIT. seal e9b3110b96aa0853c201aafea26610b9a0f2d59864db14b4b2263ddb0833db58
-- [The Pine Lens](./spheres/cast/pine-lens.html): the pine lens. High def. Seven bodies. Set point 42. LIT. seal d4ba1c12bca7111bc81fefda4680879f6b238c273c61cf55e203636cac3356bf
+Ninety-two cast spheres. Each page has its own layout and generates its own landscape. The pixel ratio follows the screen and stays at most 2. The camera sits low, close to the cast. A contact shadow sits under the cast. A worse height is dropped. A height is kept only when the gap shrinks. ELECTROLYTE holds AMOEBA. AMOEBA holds DIATOM and BACTERIA. DIATOM holds WATER BEAR and CHLOROPHYLL. WATER BEAR holds MITOCHONDRION. They are homeostatic, cooperative, and evolutionary. A selfish step is dropped. A step away from the set point is dropped. A worse mutant is dropped. A step is kept only when the shared gap shrinks. Seventeen steps bring the seven bodies home. Not a hallway seat.
+- [The Glass Pond](./spheres/cast/glass-pond.html): the glass pond. Clear. Seven bodies. Set point 1. LIT. seal ba8189237f466a5eb1cb22d9a98ece8e0d062eaa1c7f2b21f6c675802efe95af
+- [The Salt Film](./spheres/cast/salt-film.html): the salt film. Clear. Seven bodies. Set point 2. LIT. seal 1f57f1686e0efc94f9fc3a143b676199e2cd4da7a05c5db1e50ec8db37cee85e
+- [The Green Shelf](./spheres/cast/green-shelf.html): the green shelf. Clear. Seven bodies. Set point 3. LIT. seal 0ab92b8107105d26c6092192459ce65f7464449f0c6bdc5005a87e3ac5fca7c5
+- [The Ion Gate](./spheres/cast/ion-gate.html): the ion gate. Clear. Seven bodies. Set point 4. LIT. seal 01c1f8dd862feb7e6dd658b2a2e5b5236c56e0c3f68e3fd04481368171dc7fdc
+- [The Soft Mouth](./spheres/cast/soft-mouth.html): the soft mouth. Clear. Seven bodies. Set point 5. LIT. seal deea7fa7aed902ecb8da952eeb514c5f6f168ecc784b7800f535b14785fa9f1f
+- [The Amber Bath](./spheres/cast/amber-bath.html): the amber bath. Clear. Seven bodies. Set point 6. LIT. seal 34cda416f4e3238a61baf164f1782516d72dde1e26f37fbd7e6331d9ed87ff75
+- [The Reed Lens](./spheres/cast/reed-lens.html): the reed lens. Clear. Seven bodies. Set point 7. LIT. seal 0d4c1a4e68419274da0d923924155b20a82ac4086d2000a96512c423623a2019
+- [The Copper Skin](./spheres/cast/copper-skin.html): the copper skin. Clear. Seven bodies. Set point 8. LIT. seal 1e148aa2ebb26b676f85243cf8b1fce131dd6eff6a9e6a189263fb1706969fc9
+- [The Quiet Drop](./spheres/cast/quiet-drop.html): the quiet drop. Clear. Seven bodies. Set point 9. LIT. seal f9672cd8567abfc950b945f982db831628404756d25162f233a2fd9427c2f7ba
+- [The Tide Bead](./spheres/cast/tide-bead.html): the tide bead. Clear. Seven bodies. Set point 10. LIT. seal e6072d9e0e54350b3996ac4cd5b69faf7c4d03e7bd7b614635343068331c584f
+- [The Mica Pool](./spheres/cast/mica-pool.html): the mica pool. Clear. Seven bodies. Set point 11. LIT. seal f4eae95df0f61766e6cf8fd0325d859e79542463a12b2ba5305c7a150d8b58bc
+- [The Leaf Window](./spheres/cast/leaf-window.html): the leaf window. Clear. Seven bodies. Set point 12. LIT. seal acba44385290dd2809ae416c42e9b612836dee8d7f946ac3e7d453c50450d37b
+- [The Pearl Drop](./spheres/cast/pearl-drop.html): the pearl drop. Clear. Seven bodies. Set point 13. LIT. seal fc22238575e8a0bb8486fab1880f565475edb0b4cbba9e141b31ce9387e83e82
+- [The Warm Brine](./spheres/cast/warm-brine.html): the warm brine. Clear. Seven bodies. Set point 14. LIT. seal c508f0b5490cb6edd3b38a0e89272a49395c817d2a36613c26663957acfe7ca4
+- [The Clover Film](./spheres/cast/clover-film.html): the clover film. Clear. Seven bodies. Set point 15. LIT. seal a8eac1d4f0c436cc3a7730c478f061f99dd6a25f53539889bf8f10f88c86b8f6
+- [The Blue Meniscus](./spheres/cast/blue-meniscus.html): the blue meniscus. Clear. Seven bodies. Set point 16. LIT. seal 32ed27ccecef75027b219ce1e13d4201c58a7880808ad4167e412240a467e0df
+- [The Sugar Glass](./spheres/cast/sugar-glass.html): the sugar glass. Clear. Seven bodies. Set point 17. LIT. seal bc242354e1bd215803e43549597230bbd233715c2b143279e4492e9375bb35d1
+- [The Kelp Room](./spheres/cast/kelp-room.html): the kelp room. Clear. Seven bodies. Set point 18. LIT. seal 981b6fafb4d12385e1cf2e9717e29f369005236a370842f8851e00bef36f33d9
+- [The Dawn Bath](./spheres/cast/dawn-bath.html): the dawn bath. Clear. Seven bodies. Set point 19. LIT. seal 5cc24a647951206f66951807ec0107532b701828466981ecfe4b619ca2d08494
+- [The Silt Lens](./spheres/cast/silt-lens.html): the silt lens. Clear. Seven bodies. Set point 20. LIT. seal 6ca02785b51256e304c6d61c307d63a43d4a062aca439b756d20cebfe511d92a
+- [The Opal Gate](./spheres/cast/opal-gate.html): the opal gate. Clear. Seven bodies. Set point 21. LIT. seal a10a7793426ccf197e627b88ebdb992e8b913f4cb90e7a73e3452e55d268db22
+- [The Moss Mouth](./spheres/cast/moss-mouth.html): the moss mouth. Clear. Seven bodies. Set point 22. LIT. seal 2c88b65954f7f6e17562bd613b51b1bafc5c1b6d1fa3cac9441723118ff141f8
+- [The Silver Spark](./spheres/cast/silver-spark.html): the silver spark. Clear. Seven bodies. Set point 23. LIT. seal 85082a5f2cec403d0c5702b7c9124fac08e6a22c4a8ef9e6b95f1be1a7a737f9
+- [The Honey Skin](./spheres/cast/honey-skin.html): the honey skin. Clear. Seven bodies. Set point 24. LIT. seal c8807a00e5051617616bea4d1c37dee4eed8b0c18df6738b2877443f925bf455
+- [The Coral Bath](./spheres/cast/coral-bath.html): the coral bath. Clear. Seven bodies. Set point 25. LIT. seal 456938527efc11baa3b592f16abe785c6ffaeecb36213e10439017c8c2b17b0d
+- [The Rain Bead](./spheres/cast/rain-bead.html): the rain bead. Clear. Seven bodies. Set point 26. LIT. seal 02f5976b873c74f865855a1654201535e591fe1e3667f1c62e92970a16397fcf
+- [The Fern Shelf](./spheres/cast/fern-shelf.html): the fern shelf. Clear. Seven bodies. Set point 27. LIT. seal 88f2332fc823cf777ae4e09cebbaa863d9b8839aa460914d3e5bf627ac8b0a3f
+- [The Ink Pond](./spheres/cast/ink-pond.html): the ink pond. Clear. Seven bodies. Set point 28. LIT. seal 3fce94b796fed85242dbda03bc3d6471cd5b80e13b6a85fa6a07dbe8777a6394
+- [The Quartz Skin](./spheres/cast/quartz-skin.html): the quartz skin. Clear. Seven bodies. Set point 29. LIT. seal 3f76c357e3cea4b7819b802b25b2b08331f358000a07ab70ebdbb707b7c7a43a
+- [The Lime Sill](./spheres/cast/lime-sill.html): the lime sill. Clear. Seven bodies. Set point 30. LIT. seal 0c79df40fb0e14167a0e1129d5b4ee8bb965fe1d3f243399f34b54867f836814
+- [The Pollen Bath](./spheres/cast/pollen-bath.html): the pollen bath. Clear. Seven bodies. Set point 31. LIT. seal 3ba14f69672204825fc1bb2687998ee613426f2630d49e49ce56ce7957a6248f
+- [The Shell Lens](./spheres/cast/shell-lens.html): the shell lens. Clear. Seven bodies. Set point 32. LIT. seal 33c7559b902ca9bd8d248d69e61ed59c5c03c6719883ca2186292cde4b931166
+- [The Nectar Pond](./spheres/cast/nectar-pond.html): the nectar pond. Clear. Seven bodies. Set point 33. LIT. seal 7d2435647f8dcc715be1eaff458492c7d2a272b8e917e38ff93fb3405307c08f
+- [The Dew Film](./spheres/cast/dew-film.html): the dew film. Clear. Seven bodies. Set point 34. LIT. seal b510e301e0d06d54f1d0484d3436c1cc7a411164971d58cf3a404aaa26f1641e
+- [The Algae Shelf](./spheres/cast/algae-shelf.html): the algae shelf. Clear. Seven bodies. Set point 35. LIT. seal f7a5af764a1b4c37370df69a44adbcafe4fa9141d1b68a1852ee590f0739a866
+- [The Crystal Bath](./spheres/cast/crystal-bath.html): the crystal bath. Clear. Seven bodies. Set point 36. LIT. seal 020f90fe808a8d33633e69d08b23b3e647265551e29417bed13672c77be5c6f6
+- [The Lotus Lens](./spheres/cast/lotus-lens.html): the lotus lens. Clear. Seven bodies. Set point 37. LIT. seal 9f9847e3ac32b56bfc922f44328a2771c17d2f38040e2d1523114ae9c323e4f6
+- [The Cider Pool](./spheres/cast/cider-pool.html): the cider pool. Clear. Seven bodies. Set point 38. LIT. seal 5635b5848fe913a1a5e73c63c6af0024a8fc99656eb81e297ac73815439567c9
+- [The Wool Pond](./spheres/cast/wool-pond.html): the wool pond. Clear. Seven bodies. Set point 39. LIT. seal afae4aebd62b537655462edf22c93b0f4c2f87bbb456e0b47c18e2027e79ba86
+- [The Violet Bath](./spheres/cast/violet-bath.html): the violet bath. Clear. Seven bodies. Set point 40. LIT. seal f02ff0048c394537c5f048b427c4d1a407e6a0ad9508ed72317745d928d5e869
+- [The Brass Pond](./spheres/cast/brass-pond.html): the brass pond. Clear. Seven bodies. Set point 41. LIT. seal e9b3110b96aa0853c201aafea26610b9a0f2d59864db14b4b2263ddb0833db58
+- [The Pine Lens](./spheres/cast/pine-lens.html): the pine lens. Clear. Seven bodies. Set point 42. LIT. seal d4ba1c12bca7111bc81fefda4680879f6b238c273c61cf55e203636cac3356bf
+- [The Reed Sill](./spheres/cast/reed-sill.html): the reed sill. Clear. Seven bodies. Set point 43. LIT. seal b42fe3f11b51d12e65c4d098d4726ada4c457910180c39963bac13678f9e6437
+- [The Amber Lens](./spheres/cast/amber-lens.html): the amber lens. Clear. Seven bodies. Set point 44. LIT. seal 947b2d261832e6165ed422cb1277b85da298764dd94950cd16d55435887a308c
+- [The Quiet Film](./spheres/cast/quiet-film.html): the quiet film. Clear. Seven bodies. Set point 45. LIT. seal eb1a97bcea5a5c5689160ae67fb8cd6d259c55b1de0986b8f3a0eb908045a803
+- [The Brine Pass](./spheres/cast/brine-pass.html): the brine pass. Clear. Seven bodies. Set point 46. LIT. seal e22bac37265b243bd2bac11681a684e8e33d313a0451939e98d08017f5ba1a87
+- [The Green Mouth](./spheres/cast/green-mouth.html): the green mouth. Clear. Seven bodies. Set point 47. LIT. seal 421169c759c8a9817c8001a84d75651e3f9d972ee00024730b89047559a216c5
+- [The Copper Pool](./spheres/cast/copper-pool.html): the copper pool. Clear. Seven bodies. Set point 48. LIT. seal b272eaf320534e92d3cea68ae73a4f52a18a925131052c0c61654fc36d5ac7ce
+- [The Tide Shelf](./spheres/cast/tide-shelf.html): the tide shelf. Clear. Seven bodies. Set point 49. LIT. seal 0b2f093006a1202e4fdd3fe8639f210fa4243e35d7f76ace11b29c253d5cf5d4
+- [The Leaf Bath](./spheres/cast/leaf-bath.html): the leaf bath. Clear. Seven bodies. Set point 50. LIT. seal a0576846890ed6ffef8d002f25bea5426a12df628563da547164738b978b31f4
+- [The Pearl Film](./spheres/cast/pearl-film.html): the pearl film. Clear. Seven bodies. Set point 51. LIT. seal 9ac20f82691d92c0ac9fb1035f7714336ed98f2be006bfa4bb30194b31c1312d
+- [The Warm Gate](./spheres/cast/warm-gate.html): the warm gate. Clear. Seven bodies. Set point 52. LIT. seal bf27eb2183e0d387b53a65c39ee4d88216f02f1998981a37a431d0c3d3f25aa1
+- [The Clover Pond](./spheres/cast/clover-pond.html): the clover pond. Clear. Seven bodies. Set point 53. LIT. seal 394fbff94758f2278ed628332ae55172511544d401b674e6bf60135902075bc6
+- [The Blue Shelf](./spheres/cast/blue-shelf.html): the blue shelf. Clear. Seven bodies. Set point 54. LIT. seal 75845aea97b4fc6854f7f8a1e84ec369c2620253a56c9313dd9280ef004bef22
+- [The Sugar Pond](./spheres/cast/sugar-pond.html): the sugar pond. Clear. Seven bodies. Set point 55. LIT. seal bb874d3695887a8857b8d0804d789b26aea132e3edd17973753a1d3f07093b8e
+- [The Kelp Lens](./spheres/cast/kelp-lens.html): the kelp lens. Clear. Seven bodies. Set point 56. LIT. seal db7e41f5c3b79f4ae15727f007e39c938152886e0d126c77686c823f65bf2e6d
+- [The Dawn Pool](./spheres/cast/dawn-pool.html): the dawn pool. Clear. Seven bodies. Set point 57. LIT. seal bc6a54154d462922d17d7b4d3a21e013e20346af8a740ca522905a4a28eff405
+- [The Silt Gate](./spheres/cast/silt-gate.html): the silt gate. Clear. Seven bodies. Set point 58. LIT. seal 516740484c69269d1c553799745c15f951a301498f2b6a147cc0be6197b7f987
+- [The Opal Pond](./spheres/cast/opal-pond.html): the opal pond. Clear. Seven bodies. Set point 59. LIT. seal 2ba85a06d9b3d501bbd45ce8ca1083733efb01eff89bd57da817371b679d5c32
+- [The Moss Shelf](./spheres/cast/moss-shelf.html): the moss shelf. Clear. Seven bodies. Set point 60. LIT. seal a955dc925d3bf451b22437c887fed575cf8c7481b233f4fa0da2aa7bd922225f
+- [The Silver Bath](./spheres/cast/silver-bath.html): the silver bath. Clear. Seven bodies. Set point 61. LIT. seal a073c1e0e5297aa47e47419a061d7ae62cecd4467633ad1e63cf879c0cd9bb57
+- [The Honey Pond](./spheres/cast/honey-pond.html): the honey pond. Clear. Seven bodies. Set point 62. LIT. seal 67663f6f0bc34a7201ac0f0dd52aad791095bf3a47fa88437c205ab54b6c53f6
+- [The Coral Lens](./spheres/cast/coral-lens.html): the coral lens. Clear. Seven bodies. Set point 63. LIT. seal 843c001557c31a0dc8ab46a94c0343bf42833908d9bf76d960a39aaf8b764217
+- [The Rain Shelf](./spheres/cast/rain-shelf.html): the rain shelf. Clear. Seven bodies. Set point 64. LIT. seal acb95fb374caac3f7f609114371d0f22cd0b94facfa919d0fca8aae89ff12261
+- [The Fern Pond](./spheres/cast/fern-pond.html): the fern pond. Clear. Seven bodies. Set point 65. LIT. seal 60b3dd5cecc327e4a780ce86badd7e4bc53ec77f73773e7ddb1755e8de06329e
+- [The Ink Lens](./spheres/cast/ink-lens.html): the ink lens. Clear. Seven bodies. Set point 66. LIT. seal 933edaef7da6f6088ee4e1e7fca0cec956f3ca2abe61e4bec8efb7c1cd994cd4
+- [The Quartz Pool](./spheres/cast/quartz-pool.html): the quartz pool. Clear. Seven bodies. Set point 67. LIT. seal d7757c83effd0e472ab5a4a16e635fd40abc33c32f1a043eef007cae77f2de6e
+- [The Lime Bath](./spheres/cast/lime-bath.html): the lime bath. Clear. Seven bodies. Set point 68. LIT. seal dea5f3df29e4020b7e68b7ee0cf10a783583e509acc9b5b53f7287441a0d650f
+- [The Pollen Shelf](./spheres/cast/pollen-shelf.html): the pollen shelf. Clear. Seven bodies. Set point 69. LIT. seal a106f08d565fed1e2969f1abcf15169edc8c8fd20d66809d14af7d04a260a7db
+- [The Shell Pond](./spheres/cast/shell-pond.html): the shell pond. Clear. Seven bodies. Set point 70. LIT. seal fe7674b68073d55884042d9566ba82071c8e772183d5c5402372ae1f48053807
+- [The Nectar Lens](./spheres/cast/nectar-lens.html): the nectar lens. Clear. Seven bodies. Set point 71. LIT. seal 79c948e14b7881cddaf726cbbdc1cba26818abfb8f02e614ef09e8e24f644669
+- [The Dew Pond](./spheres/cast/dew-pond.html): the dew pond. Clear. Seven bodies. Set point 72. LIT. seal 369a7411558b123a214aa22a6008bc71060a6fba50654ed3ac224eb87397fd22
+- [The Algae Mouth](./spheres/cast/algae-mouth.html): the algae mouth. Clear. Seven bodies. Set point 73. LIT. seal 424db3c7c52be144ae249bfedd40426a9507f6dce575dc4430a0d9ae80c708b2
+- [The Crystal Shelf](./spheres/cast/crystal-shelf.html): the crystal shelf. Clear. Seven bodies. Set point 74. LIT. seal f13e803445880c14d8f7c8836fb82b314694717c58c58e937b2a49e9f45a520f
+- [The Lotus Pond](./spheres/cast/lotus-pond.html): the lotus pond. Clear. Seven bodies. Set point 75. LIT. seal 616b4fd4098b6682e0490434ac1886aff1366df64242f8a4b3d445285dddb30d
+- [The Cider Lens](./spheres/cast/cider-lens.html): the cider lens. Clear. Seven bodies. Set point 76. LIT. seal cc2aa47813d8ed705b461d167ecb31edcf69a974f338a59ead3a4415b2fc21ec
+- [The Wool Pass](./spheres/cast/wool-pass.html): the wool pass. Clear. Seven bodies. Set point 77. LIT. seal 0edb033a76c42c20e70662f6093c6b2b71dfbb785caaef7b4860efbeb27a1184
+- [The Violet Shelf](./spheres/cast/violet-shelf.html): the violet shelf. Clear. Seven bodies. Set point 78. LIT. seal e0b3ac92e92364931c026d2f4faeaee5c51b864b1438cc977611c1de69a12507
+- [The Brass Lens](./spheres/cast/brass-lens.html): the brass lens. Clear. Seven bodies. Set point 79. LIT. seal e3fd2ab1bb174025cb3a8b8a6f81910c16aa16c946d3b20cb2275f5610669f9c
+- [The Pine Pond](./spheres/cast/pine-pond.html): the pine pond. Clear. Seven bodies. Set point 80. LIT. seal fe82abf80e6f8babfc891d76315a39650c5681c2bd32a86bc7c5ccc00bb5386d
+- [The Glass Shelf](./spheres/cast/glass-shelf.html): the glass shelf. Clear. Seven bodies. Set point 81. LIT. seal 7bd145564ff60ac17fd2e97bc1586b9d41ee7bd7b651e8b1dc0dcbe7e6b0b346
+- [The Salt Lens](./spheres/cast/salt-lens.html): the salt lens. Clear. Seven bodies. Set point 82. LIT. seal 6ac0b1dad67454cd177ef05ae8517ec1cf9f402f36d97abb7391fca37359d233
+- [The Ion Pond](./spheres/cast/ion-pond.html): the ion pond. Clear. Seven bodies. Set point 83. LIT. seal 86a0db4769bbc252f440ebadf1d7a11cf622c1ce3137bb11dfa85b2663c187d0
+- [The Soft Shelf](./spheres/cast/soft-shelf.html): the soft shelf. Clear. Seven bodies. Set point 84. LIT. seal 911583ba5dc1b647a08ab0b1b8117d67aefb06b1707ad87790ee0a69a1e272f6
+- [The Amber Gate](./spheres/cast/amber-gate.html): the amber gate. Clear. Seven bodies. Set point 85. LIT. seal 39649e09102fc751af76169b608db03dfeefdde3e949fb1f958d30c12e5981b2
+- [The Reed Pool](./spheres/cast/reed-pool.html): the reed pool. Clear. Seven bodies. Set point 86. LIT. seal 405ee3ea35974e26519b558f82738ca48298bc785f5261ddf32a16b19188fbf4
+- [The Copper Lens](./spheres/cast/copper-lens.html): the copper lens. Clear. Seven bodies. Set point 87. LIT. seal 4a6f13c7cdb16e3c7b16b4ef3e33728d8ac1a2fcdfbe71d69e58ee2cbbe2586a
+- [The Quiet Shelf](./spheres/cast/quiet-shelf.html): the quiet shelf. Clear. Seven bodies. Set point 88. LIT. seal e70f0a305d745338cf4d5a2f73b0e7052c1f5d7c28e6814af4f0108b4a4a6445
+- [The Tide Mouth](./spheres/cast/tide-mouth.html): the tide mouth. Clear. Seven bodies. Set point 89. LIT. seal a3e0de8b64fecc9e7182189e7caa719515f30843c7346c3c91fd19a3595a0a4e
+- [The Mica Gate](./spheres/cast/mica-gate.html): the mica gate. Clear. Seven bodies. Set point 90. LIT. seal 34958e48f575860333ee0c22fd5487adc969b7400c5ecc988512ddc91e0707dc
+- [The Leaf Pond](./spheres/cast/leaf-pond.html): the leaf pond. Clear. Seven bodies. Set point 91. LIT. seal 653a5575deffc42db7f145e1d057b3a41d3b50e8df30986748fecd55a7b5a080
+- [The Pearl Gate](./spheres/cast/pearl-gate.html): the pearl gate. Clear. Seven bodies. Set point 92. LIT. seal b3da42f2f260ea0e75eebf58ebd3bb9c2315194fed08d83aa7e023597f091a1c
 
 ## Agentic spheres (Dave t196u)
 - [The Zebes Run](./spheres/metroid-agents.html): STEWARD IV · BOUTON'S TABLE. Agents G, R and O try to beat an abstract NES-Metroid map, posting tips to a shared board while K watches. seal 92d18c04fd59a78a4b6f4ffec44e8311dfc1b9db81218518fbfcbfa98d595a24

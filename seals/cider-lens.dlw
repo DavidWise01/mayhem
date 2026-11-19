@@ -1,0 +1,1 @@
+{"slug":"cider-lens","seal":"cc2aa47813d8ed705b461d167ecb31edcf69a974f338a59ead3a4415b2fc21ec","rule":"sha256(name|slug|blurb)","write":"if-missing"}

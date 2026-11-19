@@ -1,0 +1,1 @@
+{"slug":"leaf-bath","seal":"a0576846890ed6ffef8d002f25bea5426a12df628563da547164738b978b31f4","rule":"sha256(name|slug|blurb)","write":"if-missing"}

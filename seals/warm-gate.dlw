@@ -1,0 +1,1 @@
+{"slug":"warm-gate","seal":"bf27eb2183e0d387b53a65c39ee4d88216f02f1998981a37a431d0c3d3f25aa1","rule":"sha256(name|slug|blurb)","write":"if-missing"}

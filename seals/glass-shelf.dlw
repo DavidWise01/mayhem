@@ -1,0 +1,1 @@
+{"slug":"glass-shelf","seal":"7bd145564ff60ac17fd2e97bc1586b9d41ee7bd7b651e8b1dc0dcbe7e6b0b346","rule":"sha256(name|slug|blurb)","write":"if-missing"}

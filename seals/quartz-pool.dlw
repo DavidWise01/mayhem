@@ -1,0 +1,1 @@
+{"slug":"quartz-pool","seal":"d7757c83effd0e472ab5a4a16e635fd40abc33c32f1a043eef007cae77f2de6e","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"brass-lens","seal":"e3fd2ab1bb174025cb3a8b8a6f81910c16aa16c946d3b20cb2275f5610669f9c","rule":"sha256(name|slug|blurb)","write":"if-missing"}

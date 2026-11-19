@@ -1,0 +1,1 @@
+{"slug":"silver-bath","seal":"a073c1e0e5297aa47e47419a061d7ae62cecd4467633ad1e63cf879c0cd9bb57","rule":"sha256(name|slug|blurb)","write":"if-missing"}

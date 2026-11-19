@@ -1,0 +1,1 @@
+{"slug":"ion-pond","seal":"86a0db4769bbc252f440ebadf1d7a11cf622c1ce3137bb11dfa85b2663c187d0","rule":"sha256(name|slug|blurb)","write":"if-missing"}

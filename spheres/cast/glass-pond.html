@@ -37,7 +37,7 @@ body.thumb #v3{height:100vh;min-height:0;border-radius:0;border:0;box-shadow:non
 <p>On this land, ELECTROLYTE holds AMOEBA. AMOEBA holds DIATOM and BACTERIA. DIATOM holds WATER BEAR and CHLOROPHYLL. WATER BEAR holds MITOCHONDRION. Set point 1 is this cast's place on the shelf. They are homeostatic, cooperative, and evolutionary. A selfish step is dropped. A step away from home is dropped. A worse mutant is dropped. A step is kept only when the shared gap shrinks. Seventeen steps bring the seven bodies home. A second run matches, and this browser stores the kept gap.</p>
 <p>ARTIST draws the land, CRITIC checks the gap, BUILDER keeps the shell, WEAVER writes the cast, FOLLOWER walks with the bear, and KEEPER stores the row. AMOEBA is the soft body that keeps the others inside one skin. BACTERIA is the small partner that stays with the amoeba. CHLOROPHYLL is the green the diatom keeps in the light. ELECTROLYTE is the bath that carries the charge between them.</p>
 <p><span class="t LIT">LIT</span> set point 1. The seven arrived together. The gap is under 0.001. This page throws if a body splits, drifts off home, keeps a worse mutant, or keeps a worse height.</p>
-<p><span class="t MODEL">MODEL</span> The picture is the high-definition landscape the glass pond. The pixel ratio is 3. A room light wraps the glass. A contact shadow sits under the cast. A worse height is dropped. A height is kept only when the gap shrinks. The chlorophyll stays inside the diatom. The diatom and the bacterium stay inside the amoeba. The amoeba stays inside the electrolyte. The mitochondrion stays inside the bear, and the bear stays inside the diatom.</p>
+<p><span class="t MODEL">MODEL</span> The picture is a clear landscape the glass pond. The pixel ratio follows the screen and stays at most 2. The camera sits low, close to the cast. A contact shadow sits under the cast. A worse height is dropped. A height is kept only when the gap shrinks. The chlorophyll stays inside the diatom. The diatom and the bacterium stay inside the amoeba. The amoeba stays inside the electrolyte. The mitochondrion stays inside the bear, and the bear stays inside the diatom.</p>
 <p id="proof">Checking the sphere.</p>
 <p>Seal sha256(name|slug|blurb): <code id="seal">ba8189237f466a5eb1cb22d9a98ece8e0d062eaa1c7f2b21f6c675802efe95af</code></p>
 <p><a href="../../index.html">Mayhem</a></p>
@@ -251,11 +251,10 @@ async function sha(t){
   }
 })();
 </script>
-{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}</script>
+<script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}</script>
 <script type="module">
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 const host=document.getElementById('v3');
 const thumb=/[?&]thumb=1/.test(location.search);
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -267,15 +266,9 @@ const scene=new THREE.Scene();
 scene.background=new THREE.Color(SKY);
 scene.fog=new THREE.Fog(FOG, 12, 28);
 const camera=new THREE.PerspectiveCamera(42, 1, 0.08, 80);
-camera.position.set(-4.20, 2.40, 6.40);
 const renderer=new THREE.WebGLRenderer({antialias:true});
-renderer.setPixelRatio(3);
-if(renderer.getPixelRatio()<3) throw Error('pixel ratio');
-const pmrem=new THREE.PMREMGenerator(renderer);
-const room=new RoomEnvironment();
-scene.environment=pmrem.fromScene(room, 0.04).texture;
-room.dispose();
-pmrem.dispose();
+renderer.setPixelRatio(Math.min(2, window.devicePixelRatio||1));
+if(renderer.getPixelRatio()>2) throw Error('pixel ratio');
 renderer.outputColorSpace=THREE.SRGBColorSpace;
 renderer.toneMapping=THREE.ACESFilmicToneMapping;
 renderer.toneMappingExposure=1.08;
@@ -331,7 +324,7 @@ function sample(x, z){
   return i00*(1-tx)*(1-tz)+i10*tx*(1-tz)+i01*(1-tx)*tz+i11*tx*tz;
 }
 if(WATER){
-  const water=new THREE.Mesh(new THREE.CircleGeometry(SPAN*0.62, 96), new THREE.MeshStandardMaterial({color:WATERCOL, transparent:true, opacity:0.45, roughness:0.06, metalness:0.04, side:THREE.DoubleSide, depthWrite:false}));
+  const water=new THREE.Mesh(new THREE.CircleGeometry(SPAN*0.62, 40), new THREE.MeshStandardMaterial({color:WATERCOL, transparent:true, opacity:0.45, roughness:0.06, metalness:0.04, side:THREE.DoubleSide, depthWrite:false}));
   water.rotation.x=-Math.PI/2;
   water.position.y=0.2;
   scene.add(water);
@@ -379,12 +372,12 @@ function hash2(ix, iz, seed){
   x=Math.imul(x^(x>>>13), 1274126177)>>>0;
   return ((x^(x>>>16))>>>0)/4294967296;
 }
-const glass=new THREE.MeshPhysicalMaterial({color:"#d7f36a", roughness:0.08, metalness:0, transmission:0.72, thickness:0.4, transparent:true, opacity:0.32, depthWrite:false, clearcoat:1, clearcoatRoughness:0.05});
-const belly=new THREE.MeshPhysicalMaterial({color:"#f0c0a0", roughness:0.4, metalness:0, transmission:0.45, thickness:0.25, transparent:true, opacity:0.62, depthWrite:false});
-const hide=new THREE.MeshPhysicalMaterial({color:"#f0c0a0", roughness:0.42, metalness:0.02, clearcoat:0.25, clearcoatRoughness:0.3});
-const mitoMat=new THREE.MeshPhysicalMaterial({color:'#ff7a3a', emissive:'#ff5a1f', emissiveIntensity:1.35, roughness:0.25, clearcoat:0.4, clearcoatRoughness:0.2});
+const glass=new THREE.MeshStandardMaterial({color:"#d7f36a",roughness:0.08,metalness:0,transparent:true,opacity:0.46,depthWrite:false});
+const belly=new THREE.MeshStandardMaterial({color:"#f0c0a0",roughness:0.4,metalness:0,transparent:true,opacity:0.62,depthWrite:false});
+const hide=new THREE.MeshStandardMaterial({color:"#f0c0a0",roughness:0.42,metalness:0.02});
+const mitoMat=new THREE.MeshStandardMaterial({color:'#ff7a3a',emissive:'#ff5a1f',emissiveIntensity:1.35,roughness:0.25});
 const diatom=new THREE.Group();
-const shell=new THREE.Mesh(new THREE.SphereGeometry(0.58, 64, 48), glass);
+const shell=new THREE.Mesh(new THREE.SphereGeometry(0.58, 24, 16), glass);
 shell.scale.set(1.16, 0.78, 0.92);
 diatom.add(shell);
 for(let i=0;i<12;i++){
@@ -395,13 +388,13 @@ for(let i=0;i<12;i++){
   diatom.add(rib);
 }
 const bear=new THREE.Group();
-const body=new THREE.Mesh(new THREE.SphereGeometry(0.2, 48, 32), belly);
+const body=new THREE.Mesh(new THREE.SphereGeometry(0.2, 20, 14), belly);
 body.scale.set(1.35, 0.7, 0.82);
 bear.add(body);
-const head=new THREE.Mesh(new THREE.SphereGeometry(0.09, 32, 24), hide);
+const head=new THREE.Mesh(new THREE.SphereGeometry(0.09, 16, 12), hide);
 head.position.set(0.26, 0.04, 0);
 bear.add(head);
-const snout=new THREE.Mesh(new THREE.SphereGeometry(0.042, 24, 16), hide);
+const snout=new THREE.Mesh(new THREE.SphereGeometry(0.042, 12, 8), hide);
 snout.position.set(0.4, 0.02, 0);
 snout.userData.role='nose';
 bear.add(snout);
@@ -414,7 +407,7 @@ for(let i=0;i<8;i++){
   bear.add(leg);
 }
 const mito=new THREE.Group();
-const bean=new THREE.Mesh(new THREE.SphereGeometry(0.065, 32, 24), mitoMat);
+const bean=new THREE.Mesh(new THREE.SphereGeometry(0.065, 16, 12), mitoMat);
 bean.scale.set(1.5, 0.7, 0.85);
 mito.add(bean);
 for(let i=0;i<6;i++){
@@ -428,42 +421,42 @@ mito.position.set(0, 0.02, 0);
 bear.add(mito);
 diatom.add(bear);
 diatom.scale.setScalar(1.2);
-const bathMat=new THREE.MeshPhysicalMaterial({color:"#c9e7ff", roughness:0.06, metalness:0, transmission:0.82, thickness:0.8, transparent:true, opacity:0.22, depthWrite:false, clearcoat:1, clearcoatRoughness:0.04});
-const amoebaMat=new THREE.MeshPhysicalMaterial({color:"#f3c6a2", roughness:0.28, metalness:0, transmission:0.55, thickness:0.6, transparent:true, opacity:0.34, depthWrite:false, clearcoat:0.4, clearcoatRoughness:0.2});
-const bacMat=new THREE.MeshPhysicalMaterial({color:"#e7d27a", roughness:0.32, metalness:0.04, clearcoat:0.35, clearcoatRoughness:0.25});
-const greenMat=new THREE.MeshPhysicalMaterial({color:"#3f9a45", roughness:0.35, metalness:0, emissive:"#1f6a28", emissiveIntensity:0.7, clearcoat:0.5, clearcoatRoughness:0.2});
+const bathMat=new THREE.MeshStandardMaterial({color:"#c9e7ff",roughness:0.06,metalness:0,transparent:true,opacity:0.46,depthWrite:false});
+const amoebaMat=new THREE.MeshStandardMaterial({color:"#f3c6a2",roughness:0.28,metalness:0,transparent:true,opacity:0.46,depthWrite:false});
+const bacMat=new THREE.MeshStandardMaterial({color:"#e7d27a",roughness:0.32,metalness:0.04});
+const greenMat=new THREE.MeshStandardMaterial({color:"#3f9a45",roughness:0.35,metalness:0,emissive:"#1f6a28",emissiveIntensity:0.7});
 const shadowMat=new THREE.MeshBasicMaterial({color:"#1a140c", transparent:true, opacity:0.28, depthWrite:false});
 const electrolyte=new THREE.Group();
-const bath=new THREE.Mesh(new THREE.SphereGeometry(1.45, 64, 48), bathMat);
+const bath=new THREE.Mesh(new THREE.SphereGeometry(1.45, 24, 16), bathMat);
 bath.scale.set(1.15, 0.9, 1.08);
 bath.userData.role='electrolyte-skin';
 electrolyte.add(bath);
-const shadow=new THREE.Mesh(new THREE.CircleGeometry(0.95, 64), shadowMat);
+const shadow=new THREE.Mesh(new THREE.CircleGeometry(0.95, 28), shadowMat);
 shadow.rotation.x=-Math.PI/2;
 shadow.position.y=-0.58;
 shadow.userData.role='shadow';
 electrolyte.add(shadow);
 const amoeba=new THREE.Group();
-const blob=new THREE.Mesh(new THREE.SphereGeometry(1.05, 64, 48), amoebaMat);
+const blob=new THREE.Mesh(new THREE.SphereGeometry(1.05, 24, 16), amoebaMat);
 blob.scale.set(1.2, 0.82, 1.0);
 blob.userData.role='amoeba-skin';
 amoeba.add(blob);
 const blebOffsets=[[0.55,0.08,0.2],[-0.4,0.12,-0.25],[0.1,-0.2,0.55],[-0.2,0.22,0.15]];
 for(let i=0;i<blebOffsets.length;i++){
-  const bleb=new THREE.Mesh(new THREE.SphereGeometry(0.22, 24, 16), amoebaMat);
+  const bleb=new THREE.Mesh(new THREE.SphereGeometry(0.22, 12, 8), amoebaMat);
   bleb.position.set(blebOffsets[i][0], blebOffsets[i][1], blebOffsets[i][2]);
   bleb.userData.role='bleb';
   amoeba.add(bleb);
 }
 const bacteria=new THREE.Group();
 for(let i=0;i<3;i++){
-  const rod=new THREE.Mesh(new THREE.CylinderGeometry(0.03, 0.03, 0.2, 20), bacMat);
+  const rod=new THREE.Mesh(new THREE.CylinderGeometry(0.03, 0.03, 0.2, 8), bacMat);
   rod.rotation.z=-Math.PI/2;
   rod.position.set(0, (i-1)*0.08, 0);
   rod.userData.role='rod';
   bacteria.add(rod);
 }
-const bacNose=new THREE.Mesh(new THREE.SphereGeometry(0.045, 16, 12), bacMat);
+const bacNose=new THREE.Mesh(new THREE.SphereGeometry(0.045, 10, 8), bacMat);
 bacNose.position.set(0.16, 0, 0);
 bacNose.userData.role='bacteria-nose';
 bacteria.add(bacNose);
@@ -471,7 +464,7 @@ bacteria.position.set(-0.22, -0.06, 0.2);
 amoeba.add(bacteria);
 const chlorophyll=new THREE.Group();
 for(let i=0;i<5;i++){
-  const disc=new THREE.Mesh(new THREE.CylinderGeometry(0.14, 0.14, 0.012, 32), greenMat);
+  const disc=new THREE.Mesh(new THREE.CylinderGeometry(0.14, 0.14, 0.012, 16), greenMat);
   disc.position.y=(i-2)*0.028;
   disc.userData.role='chlorophyll-disc';
   chlorophyll.add(disc);
@@ -484,6 +477,7 @@ const from=new THREE.Vector3(-2.4, 0, PATHZ);
 const home=new THREE.Vector3(1.8, 0, PATHZ);
 function plant(v){ v.y=sample(v.x, v.z)+0.62; return v; }
 plant(from); plant(home);
+camera.position.set(home.x-1.85, 1.22, home.z+2.35);
 electrolyte.position.copy(home);
 electrolyte.rotation.y=0;
 amoeba.rotation.y=0;
@@ -544,11 +538,14 @@ electrolyte.traverse(function(o){
 });
 if(legs!==8||ribs!==12||cristae!==6||rods!==3||discs!==5||blebs!==4) throw Error('body');
 const controls=new OrbitControls(camera, renderer.domElement);
-controls.target.set(0.2, 0.45, 0);
+controls.target.copy(home);
 controls.enableDamping=true;
 controls.autoRotate=!(reduce||thumb);
 controls.autoRotateSpeed=0.28;
 camera.lookAt(controls.target);
+if(camera.position.y>1.6) throw Error('camera high');
+const camSpan=Math.max(Math.abs(camera.position.x), Math.abs(camera.position.z));
+if(!(camSpan>0)||camera.position.y>2.2*camSpan) throw Error('camera high');
 electrolyte.userData.from=from.clone();
 electrolyte.userData.home=home.clone();
 electrolyte.userData.t=0;
@@ -575,6 +572,7 @@ function frame(){
 frame();
 </script>
 
+<script id="cubit-register-boot">
 (function(){
   if(/[?&]thumb=1/.test(location.search)) return;
   if(document.getElementById('cubit-register')) return;

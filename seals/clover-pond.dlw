@@ -1,0 +1,1 @@
+{"slug":"clover-pond","seal":"394fbff94758f2278ed628332ae55172511544d401b674e6bf60135902075bc6","rule":"sha256(name|slug|blurb)","write":"if-missing"}

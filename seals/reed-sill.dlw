@@ -1,0 +1,1 @@
+{"slug":"reed-sill","seal":"b42fe3f11b51d12e65c4d098d4726ada4c457910180c39963bac13678f9e6437","rule":"sha256(name|slug|blurb)","write":"if-missing"}

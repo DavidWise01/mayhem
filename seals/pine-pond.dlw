@@ -1,0 +1,1 @@
+{"slug":"pine-pond","seal":"fe82abf80e6f8babfc891d76315a39650c5681c2bd32a86bc7c5ccc00bb5386d","rule":"sha256(name|slug|blurb)","write":"if-missing"}

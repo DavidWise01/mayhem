@@ -1,0 +1,1 @@
+{"slug":"reed-pool","seal":"405ee3ea35974e26519b558f82738ca48298bc785f5261ddf32a16b19188fbf4","rule":"sha256(name|slug|blurb)","write":"if-missing"}

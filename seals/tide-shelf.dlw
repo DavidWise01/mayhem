@@ -1,0 +1,1 @@
+{"slug":"tide-shelf","seal":"0b2f093006a1202e4fdd3fe8639f210fa4243e35d7f76ace11b29c253d5cf5d4","rule":"sha256(name|slug|blurb)","write":"if-missing"}
