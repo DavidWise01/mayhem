@@ -213,7 +213,7 @@ One hundred classics from Project Gutenberg. Each page has its own layout and ge
 - [Anthony Cade](./spheres/classics/anthony-cade.html): The Secret of Chimneys. the chimneys drive. Nested three bodies. Set point 100. LIT. seal 15e4867106191e0b70e41f6a9d194dc26685729c43bbed22ca32722922511014
 
 ## Wade
-Ten wade spheres. You wade the land with the water bear. The diatom holds the bear and keeps a mark only when the gap to the beacon shrinks. Arrow keys, WASD, or a click on the ground. A step away from the beacon is not kept. A step is kept only when the gap shrinks. The seven bodies stay. The pixel ratio follows the screen and stays at most 2. The camera sits low behind the bear. Not a hallway seat.
+Ten wade spheres. You wade the land with the water bear. The diatom holds the bear and keeps a mark only when the gap to the beacon shrinks. Arrow keys, WASD, or a click on the ground. A step away from the beacon is not kept. A step is kept only when the gap shrinks. The seven bodies stay. The pixel ratio follows the screen and stays at most 2. The picture is canvas 3D. The camera sits low behind the bear. Not a hallway seat.
 - [The Reed Wade](./spheres/wade/wade-reed.html): the reed wade. Wade. Clear. Water bear and diatom. Set point 1. LIT. seal 19a7f6917d278f43ea7638d52cde608469614442a690a5ca931d57ccd1c6cc9b
 - [The Stone Wade](./spheres/wade/wade-stone.html): the stone wade. Wade. Clear. Water bear and diatom. Set point 2. LIT. seal b6de11d63a7108a933cb27b22d0044f05cb0b58f52c0adee49b3bad39affe703
 - [The Cedar Wade](./spheres/wade/wade-cedar.html): the cedar wade. Wade. Clear. Water bear and diatom. Set point 3. LIT. seal e165a19def4d90697a4258c5072096966ef36bd6ac67257199e4c11fb3ee441e

@@ -17,7 +17,7 @@ html,body{margin:0;background:#eef4e6;color:#243024;font-family:Georgia, serif}#
 </header>
 <div id="v3" tabindex="0"><p id="wadehint">Arrows, WASD, or click the ground.</p><p id="agentlog">Click the ground, or use the arrows. The diatom waits.</p></div>
 <div class="story">
-<p>the salt wade is a land you can wade. Arrow keys or WASD steer the water bear. Click the ground and the bear wades there. The diatom holds the bear and keeps a mark only when the gap to the beacon shrinks. A step away from the beacon is not kept. Similar on this shelf: The Moss Wade, The Pearl Wade, The Linen Wade. The picture does not give a method for growing, extracting, or mixing any of them.</p><p>On this land, ELECTROLYTE holds AMOEBA. AMOEBA holds DIATOM and BACTERIA. DIATOM holds WATER BEAR and CHLOROPHYLL. WATER BEAR holds MITOCHONDRION. Set point 4 is this wade's place on the shelf. They are homeostatic, cooperative, and evolutionary. A selfish step is dropped. A step away from home is dropped. A worse mutant is dropped. A step is kept only when the shared gap shrinks. Seventeen steps bring the seven bodies home. Seventeen steps bring the wade home. A second run matches, and this browser stores the kept gap.</p><p>ARTIST draws the land, CRITIC checks the gap, BUILDER keeps the shell, WEAVER writes the wade, FOLLOWER walks with the bear, and KEEPER stores the row. The camera sits low behind the snout. The land is generated for this page. The diatom's marks are the steps that got closer.</p><p><span class="t LIT">LIT</span> the water bear can wade the salt wade. The diatom keeps a mark only when the gap shrinks. This page throws if a step away is kept, a body splits, or the ground faces down.</p><p><span class="t MODEL">MODEL</span> The picture is a clear field, the salt wade. You can wade it. The pixel ratio follows the screen and stays at most 2. The camera sits low, behind the cast. A contact shadow sits under the cast. A worse height is dropped. A height is kept only when the gap shrinks.</p>
+<p>the salt wade is a land you can wade. Arrow keys or WASD steer the water bear. Click the ground and the bear wades there. The diatom holds the bear and keeps a mark only when the gap to the beacon shrinks. A step away from the beacon is not kept. Similar on this shelf: The Moss Wade, The Pearl Wade, The Linen Wade. The picture does not give a method for growing, extracting, or mixing any of them.</p><p>On this land, ELECTROLYTE holds AMOEBA. AMOEBA holds DIATOM and BACTERIA. DIATOM holds WATER BEAR and CHLOROPHYLL. WATER BEAR holds MITOCHONDRION. Set point 4 is this wade's place on the shelf. They are homeostatic, cooperative, and evolutionary. A selfish step is dropped. A step away from home is dropped. A worse mutant is dropped. A step is kept only when the shared gap shrinks. Seventeen steps bring the seven bodies home. Seventeen steps bring the wade home. A second run matches, and this browser stores the kept gap.</p><p>ARTIST draws the land, CRITIC checks the gap, BUILDER keeps the shell, WEAVER writes the wade, FOLLOWER walks with the bear, and KEEPER stores the row. The camera sits low behind the snout. The land is generated for this page. The diatom's marks are the steps that got closer.</p><p><span class="t LIT">LIT</span> the water bear can wade the salt wade. The diatom keeps a mark only when the gap shrinks. This page throws if a step away is kept, a body splits, or the ground faces down.</p><p><span class="t MODEL">MODEL</span> The picture is canvas 3D, a clear field, the salt wade. You can wade it. The pixel ratio follows the screen and stays at most 2. The camera sits low, behind the cast. A contact shadow sits under the cast. A worse height is dropped. A height is kept only when the gap shrinks.</p>
 <p id="proof">Checking the sphere.</p>
 <p>Seal sha256(name|slug|blurb): <code id="seal">d23fdbdf4a41314b452b81dc942058caa590e0c4eb0892d20751bb28e11a00cf</code></p>
 <p><a href="../../index.html">Mayhem</a></p>
@@ -279,398 +279,369 @@ async function sha(t){
   }
 })();
 </script>
-<script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}</script>
-<script type="module">
-const SKY="#eef4e6", FOG="#eef4e6", LOW="#6f9460", HIGH="#c5d6b0", WATERCOL="#8fbf98", INK="#243024", SUN="#f7ffe8";
+<script id="wade-canvas">
+(function(){
+const SKY="#eef4e6", LOW="#6f9460", HIGH="#c5d6b0", WATERCOL="#8fbf98", INK="#243024";
 const WATER=1, MARK="post";
-import * as THREE from 'three';
 const host=document.getElementById('v3');
+if(!host) throw Error('canvas');
 const thumb=/[?&]thumb=1/.test(location.search);
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const H=window.LAND, N=window.LANDN, SPAN=window.LANDSPAN;
 if(!H||H.length!==N*N) throw Error('land missing');
 const START=window.START, BEACON=window.BEACON;
 if(!START||START.length!==2||!BEACON||BEACON.length!==2) throw Error('wade');
-const scene=new THREE.Scene();
-scene.background=new THREE.Color(SKY);
-scene.fog=new THREE.Fog(FOG, 12, 28);
-const camera=new THREE.PerspectiveCamera(36, 1, 0.08, 80);
-const renderer=new THREE.WebGLRenderer({antialias:true});
-renderer.setPixelRatio(Math.min(2, window.devicePixelRatio||1));
-if(renderer.getPixelRatio()>2) throw Error('pixel ratio');
-renderer.outputColorSpace=THREE.SRGBColorSpace;
-renderer.toneMapping=THREE.ACESFilmicToneMapping;
-renderer.toneMappingExposure=1.08;
-host.appendChild(renderer.domElement);
-scene.add(new THREE.HemisphereLight(0xfff6ea, 0x6a7a58, 0.95));
-const sun=new THREE.DirectionalLight(SUN, 1.15);
-sun.position.set(-3.0, 8.5, 2.0);
-scene.add(sun);
-const positions=new Float32Array(N*N*3);
-const colors=new Float32Array(N*N*3);
-const lowC=new THREE.Color(LOW), highC=new THREE.Color(HIGH), tint=new THREE.Color();
-for(let z=0;z<N;z++){
-  for(let x=0;x<N;x++){
-    const i=z*N+x;
-    positions[i*3]=(x/(N-1)-0.5)*SPAN;
-    positions[i*3+1]=H[i];
-    positions[i*3+2]=(z/(N-1)-0.5)*SPAN;
-    tint.copy(lowC).lerp(highC, Math.min(1, H[i]/1.35));
-    colors[i*3]=tint.r; colors[i*3+1]=tint.g; colors[i*3+2]=tint.b;
-  }
+const canvas=document.createElement('canvas');
+const ctx=canvas.getContext('2d');
+if(!ctx) throw Error('canvas');
+host.appendChild(canvas);
+const raw=window.devicePixelRatio||1;
+const dpr=raw>2?2:raw;
+if(dpr>2||(raw>2&&dpr!==2)) throw Error('pixel ratio');
+function fit(){
+  const cssW=host.clientWidth||640, cssH=host.clientHeight||520;
+  canvas.width=Math.max(1, Math.round(cssW*dpr));
+  canvas.height=Math.max(1, Math.round(cssH*dpr));
 }
-const indices=[];
-for(let z=0;z<N-1;z++){
-  for(let x=0;x<N-1;x++){
-    const a=z*N+x, b=a+1, c=a+N, d=c+1;
-    indices.push(a,c,b, b,c,d);
-  }
-}
-const geo=new THREE.BufferGeometry();
-geo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
-geo.setAttribute('color', new THREE.BufferAttribute(colors, 3));
-geo.setIndex(indices);
-geo.computeVertexNormals();
-const pa=new THREE.Vector3(positions[0], positions[1], positions[2]);
-const pc=new THREE.Vector3(positions[N*3], positions[N*3+1], positions[N*3+2]);
-const pb=new THREE.Vector3(positions[3], positions[4], positions[5]);
-const nrm=new THREE.Vector3().crossVectors(pc.clone().sub(pa), pb.clone().sub(pa));
-if(nrm.y<=0) throw Error('land faces down');
-function sample(x, z){
-  const u=Math.min(N-1.001, Math.max(0, (x/SPAN+0.5)*(N-1)));
-  const v=Math.min(N-1.001, Math.max(0, (z/SPAN+0.5)*(N-1)));
+function sample(wx, wz){
+  const u=Math.min(N-1.001, Math.max(0, (wx/SPAN+0.5)*(N-1)));
+  const v=Math.min(N-1.001, Math.max(0, (wz/SPAN+0.5)*(N-1)));
   const x0=Math.floor(u), z0=Math.floor(v);
   const tx=u-x0, tz=v-z0;
   const i00=H[z0*N+x0], i10=H[z0*N+x0+1], i01=H[(z0+1)*N+x0], i11=H[(z0+1)*N+x0+1];
   return i00*(1-tx)*(1-tz)+i10*tx*(1-tz)+i01*(1-tx)*tz+i11*tx*tz;
 }
-if(WATER){
-  const water=new THREE.Mesh(new THREE.CircleGeometry(SPAN*0.62, 40), new THREE.MeshStandardMaterial({color:WATERCOL, transparent:true, opacity:0.45, roughness:0.06, metalness:0.04, side:THREE.DoubleSide, depthWrite:false}));
-  water.rotation.x=-Math.PI/2;
-  water.position.y=0.16;
-  scene.add(water);
-  water.updateWorldMatrix(true, true);
-  const up=new THREE.Vector3(0,0,1).applyQuaternion(water.quaternion);
-  if(up.y<0.9) throw Error('water faces down');
+function cellNy(){
+  function gx(ix){ return (ix/(N-1)-0.5)*SPAN; }
+  function gz(iz){ return (iz/(N-1)-0.5)*SPAN; }
+  const ax=gx(0), ay=H[0], az=gz(0);
+  const cx=gx(0), cy=H[N], cz=gz(1);
+  const bx=gx(1), by=H[1], bz=gz(0);
+  const e1x=cx-ax, e1z=cz-az, e2x=bx-ax, e2z=bz-az;
+  return e1z*e2x-e1x*e2z;
 }
-
-const ground=new THREE.Mesh(geo, new THREE.MeshStandardMaterial({vertexColors:true, roughness:0.92, metalness:0.02}));
-ground.userData.role='ground';
-scene.add(ground);
-function hash2(ix, iz, seed){
-  let x=(seed ^ Math.imul(ix+97, 374761393) ^ Math.imul(iz+57, 668265263))>>>0;
-  x=Math.imul(x^(x>>>13), 1274126177)>>>0;
-  return ((x^(x>>>16))>>>0)/4294967296;
+const ny=cellNy();
+if(!(ny>0)) throw Error('land faces down');
+let posX=START[0], posZ=START[1];
+let yaw=Math.atan2(-(BEACON[1]-START[1]), BEACON[0]-START[0]);
+function heading(){ return {x:Math.cos(yaw), y:0, z:-Math.sin(yaw)}; }
+function basis(){
+  const hv=heading();
+  const py=sample(posX, posZ)+0.62;
+  const camx=posX-hv.x*2.15, camy=1.28, camz=posZ-hv.z*2.15;
+  let lx=posX-camx, ly=Math.min(1.05, py*0.45+0.4)-camy, lz=posZ-camz;
+  const llen=Math.hypot(lx, ly, lz);
+  if(!(llen>0)) throw Error('forward');
+  lx/=llen; ly/=llen; lz/=llen;
+  let rx=-lz, ry=0, rz=lx;
+  const rlen=Math.hypot(rx, rz);
+  if(!(rlen>0.2)) throw Error('picture right');
+  rx/=rlen; rz/=rlen;
+  let ux=ry*lz-rz*ly, uy=rz*lx-rx*lz, uz=rx*ly-ry*lx;
+  const ulen=Math.hypot(ux, uy, uz);
+  if(!(ulen>0.2)||!(uy>0)) throw Error('picture upside down');
+  ux/=ulen; uy/=ulen; uz/=ulen;
+  return {camx:camx, camy:camy, camz:camz, lx:lx, ly:ly, lz:lz, rx:rx, ry:ry, rz:rz, ux:ux, uy:uy, uz:uz, hv:hv, py:py};
 }
-let cover=0;
-const markMat=new THREE.MeshStandardMaterial({color:INK, roughness:0.7});
-const leafMat=new THREE.MeshStandardMaterial({color:HIGH, roughness:0.6});
-for(let z=1;z<N-1 && cover<10;z+=2){
-  for(let x=1;x<N-1 && cover<10;x+=2){
-    const X=(x/(N-1)-0.5)*SPAN, Z=(z/(N-1)-0.5)*SPAN;
-    if(Math.hypot(X-START[0], Z-START[1])<1.35) continue;
-    if(Math.hypot(X-BEACON[0], Z-BEACON[1])<1.35) continue;
-    if(hash2(x, z, 99)>0.16) continue;
-    let prop;
-    if(MARK==='tree'){
-      prop=new THREE.Group();
-      const trunk=new THREE.Mesh(new THREE.CylinderGeometry(0.04, 0.06, 0.28, 6), markMat);
-      trunk.position.y=0.14;
-      const cap=new THREE.Mesh(new THREE.ConeGeometry(0.18, 0.36, 7), leafMat);
-      cap.position.y=0.4;
-      prop.add(trunk); prop.add(cap);
-    }else if(MARK==='reed'){
-      prop=new THREE.Mesh(new THREE.CylinderGeometry(0.015, 0.02, 0.45, 5), leafMat);
-      prop.position.y=0.22;
-    }else if(MARK==='post'){
-      prop=new THREE.Mesh(new THREE.BoxGeometry(0.06, 0.42, 0.06), markMat);
-      prop.position.y=0.21;
-    }else if(MARK==='stone'){
-      prop=new THREE.Mesh(new THREE.DodecahedronGeometry(0.1, 0), markMat);
-      prop.position.y=0.08;
-    }else throw Error('mark');
-    prop.position.x=X; prop.position.z=Z; prop.position.y+=sample(X, Z);
-    scene.add(prop);
-    cover++;
-  }
+function project(p){
+  const b=basis();
+  const dx=p.x-b.camx, dy=p.y-b.camy, dz=p.z-b.camz;
+  const depth=dx*b.lx+dy*b.ly+dz*b.lz;
+  if(depth<0.05) return null;
+  const sx=(dx*b.rx+dy*b.ry+dz*b.rz)/depth;
+  const sy=(dx*b.ux+dy*b.uy+dz*b.uz)/depth;
+  const w=canvas.width, h=canvas.height;
+  return {x:w/2+sx*h*1.37, y:h/2-sy*h*1.37, depth:depth};
 }
-const glass=new THREE.MeshStandardMaterial({color:"#d7f36a",roughness:0.08,metalness:0,transparent:true,opacity:0.46,depthWrite:false});
-const belly=new THREE.MeshStandardMaterial({color:"#f0c0a0",roughness:0.4,metalness:0,transparent:true,opacity:0.62,depthWrite:false});
-const hide=new THREE.MeshStandardMaterial({color:"#f0c0a0",roughness:0.42,metalness:0.02});
-const mitoMat=new THREE.MeshStandardMaterial({color:'#ff7a3a',emissive:'#ff5a1f',emissiveIntensity:1.35,roughness:0.25});
-const diatom=new THREE.Group();
-const shell=new THREE.Mesh(new THREE.SphereGeometry(0.58, 24, 16), glass);
-shell.scale.set(1.16, 0.78, 0.92);
-diatom.add(shell);
-for(let i=0;i<12;i++){
-  const rib=new THREE.Mesh(new THREE.BoxGeometry(0.7, 0.018, 0.016), glass);
-  rib.position.y=0.02;
-  rib.rotation.y=i*Math.PI/12;
-  rib.userData.role='rib';
-  diatom.add(rib);
-}
-const bear=new THREE.Group();
-const body=new THREE.Mesh(new THREE.SphereGeometry(0.2, 20, 14), belly);
-body.scale.set(1.35, 0.7, 0.82);
-bear.add(body);
-const head=new THREE.Mesh(new THREE.SphereGeometry(0.09, 16, 12), hide);
-head.position.set(0.26, 0.04, 0);
-bear.add(head);
-const snout=new THREE.Mesh(new THREE.SphereGeometry(0.042, 12, 8), hide);
-snout.position.set(0.4, 0.02, 0);
-snout.userData.role='nose';
-bear.add(snout);
-for(let i=0;i<8;i++){
-  const side=i<4?-1:1, along=i%4;
-  const leg=new THREE.Mesh(new THREE.CylinderGeometry(0.018, 0.028, 0.14, 6), hide);
-  leg.position.set(-0.1+along*0.09, -0.12, side*0.11);
-  leg.rotation.z=side*-0.45;
-  leg.userData.role='leg';
-  bear.add(leg);
-}
-const mito=new THREE.Group();
-const bean=new THREE.Mesh(new THREE.SphereGeometry(0.065, 16, 12), mitoMat);
-bean.scale.set(1.5, 0.7, 0.85);
-mito.add(bean);
-for(let i=0;i<6;i++){
-  const crista=new THREE.Mesh(new THREE.BoxGeometry(0.08, 0.01, 0.018), mitoMat);
-  crista.position.set((i-2.5)*0.016, 0, 0);
-  crista.userData.role='crista';
-  mito.add(crista);
-}
-mito.add(new THREE.PointLight(0xffb45a, 1.8, 1.1));
-mito.position.set(0, 0.02, 0);
-bear.add(mito);
-diatom.add(bear);
-diatom.scale.setScalar(1.2);
-const bathMat=new THREE.MeshStandardMaterial({color:"#c9e7ff",roughness:0.06,metalness:0,transparent:true,opacity:0.46,depthWrite:false});
-const amoebaMat=new THREE.MeshStandardMaterial({color:"#f3c6a2",roughness:0.28,metalness:0,transparent:true,opacity:0.46,depthWrite:false});
-const bacMat=new THREE.MeshStandardMaterial({color:"#e7d27a",roughness:0.32,metalness:0.04});
-const greenMat=new THREE.MeshStandardMaterial({color:"#3f9a45",roughness:0.35,metalness:0,emissive:"#1f6a28",emissiveIntensity:0.7});
-const shadowMat=new THREE.MeshBasicMaterial({color:"#1a140c", transparent:true, opacity:0.28, depthWrite:false});
-const electrolyte=new THREE.Group();
-const bath=new THREE.Mesh(new THREE.SphereGeometry(1.45, 24, 16), bathMat);
-bath.scale.set(1.15, 0.9, 1.08);
-bath.userData.role='electrolyte-skin';
-electrolyte.add(bath);
-const shadow=new THREE.Mesh(new THREE.CircleGeometry(0.95, 28), shadowMat);
-shadow.rotation.x=-Math.PI/2;
-shadow.position.y=-0.58;
-shadow.userData.role='shadow';
-electrolyte.add(shadow);
-const amoeba=new THREE.Group();
-const blob=new THREE.Mesh(new THREE.SphereGeometry(1.05, 24, 16), amoebaMat);
-blob.scale.set(1.2, 0.82, 1.0);
-blob.userData.role='amoeba-skin';
-amoeba.add(blob);
-const blebOffsets=[[0.55,0.08,0.2],[-0.4,0.12,-0.25],[0.1,-0.2,0.55],[-0.2,0.22,0.15]];
-for(let i=0;i<blebOffsets.length;i++){
-  const bleb=new THREE.Mesh(new THREE.SphereGeometry(0.22, 12, 8), amoebaMat);
-  bleb.position.set(blebOffsets[i][0], blebOffsets[i][1], blebOffsets[i][2]);
-  bleb.userData.role='bleb';
-  amoeba.add(bleb);
-}
-const bacteria=new THREE.Group();
-for(let i=0;i<3;i++){
-  const rod=new THREE.Mesh(new THREE.CylinderGeometry(0.03, 0.03, 0.2, 8), bacMat);
-  rod.rotation.z=-Math.PI/2;
-  rod.position.set(0, (i-1)*0.08, 0);
-  rod.userData.role='rod';
-  bacteria.add(rod);
-}
-const bacNose=new THREE.Mesh(new THREE.SphereGeometry(0.045, 10, 8), bacMat);
-bacNose.position.set(0.16, 0, 0);
-bacNose.userData.role='bacteria-nose';
-bacteria.add(bacNose);
-bacteria.position.set(-0.22, -0.06, 0.2);
-amoeba.add(bacteria);
-const chlorophyll=new THREE.Group();
-for(let i=0;i<5;i++){
-  const disc=new THREE.Mesh(new THREE.CylinderGeometry(0.14, 0.14, 0.012, 16), greenMat);
-  disc.position.y=(i-2)*0.028;
-  disc.userData.role='chlorophyll-disc';
-  chlorophyll.add(disc);
-}
-chlorophyll.position.set(0, 0.04, 0);
-diatom.add(chlorophyll);
-amoeba.add(diatom);
-electrolyte.add(amoeba);
-
-scene.add(electrolyte);
-const beacon=new THREE.Group();
-const post=new THREE.Mesh(new THREE.BoxGeometry(0.08, 0.86, 0.08), new THREE.MeshStandardMaterial({color:HIGH, roughness:0.5}));
-post.position.y=0.43;
-const cap=new THREE.Mesh(new THREE.SphereGeometry(0.12, 12, 10), new THREE.MeshStandardMaterial({color:'#fff6d8', emissive:'#ffe0a0', emissiveIntensity:0.35, roughness:0.35}));
-cap.position.y=0.92;
-beacon.add(post); beacon.add(cap);
-beacon.position.set(BEACON[0], sample(BEACON[0], BEACON[1]), BEACON[1]);
-beacon.userData.role='beacon';
-scene.add(beacon);
-function plant(x, z){ return sample(x, z)+0.62; }
-electrolyte.position.set(START[0], plant(START[0], START[1]), START[1]);
-const faceDx=BEACON[0]-START[0], faceDz=BEACON[1]-START[1];
-electrolyte.rotation.y=Math.atan2(-faceDz, faceDx);
-amoeba.rotation.y=0;
-diatom.rotation.y=0;
-bear.rotation.y=0;
-bacteria.rotation.y=0;
-electrolyte.updateWorldMatrix(true, true);
-if(amoeba.parent!==electrolyte||diatom.parent!==amoeba||bacteria.parent!==amoeba) throw Error('nest');
-if(chlorophyll.parent!==diatom||bear.parent!==diatom||mito.parent!==bear) throw Error('inner nest');
-const noseAt=new THREE.Vector3(), bellyAt=new THREE.Vector3();
-snout.getWorldPosition(noseAt);
-bear.getWorldPosition(bellyAt);
-const front=noseAt.sub(bellyAt);
-front.y=0; front.normalize();
-const travel=new THREE.Vector3(faceDx, 0, faceDz);
-travel.normalize();
-if(front.dot(travel)<0.9) throw Error('bear faces off the path');
-const bacAt=new THREE.Vector3(), bacNoseAt=new THREE.Vector3();
-bacteria.getWorldPosition(bacAt);
-bacNose.getWorldPosition(bacNoseAt);
-const bacFront=bacNoseAt.clone().sub(bacAt);
-bacFront.y=0; bacFront.normalize();
-if(bacFront.dot(travel)<0.9) throw Error('bacteria faces off the path');
-const mitoAt=new THREE.Vector3();
-mito.getWorldPosition(mitoAt);
-if(mitoAt.distanceTo(bellyAt)>0.25) throw Error('mito outside the bear');
-const disc=chlorophyll.children[0];
-disc.updateWorldMatrix(true, true);
-if(disc.matrixWorld.elements[5]<0.9) throw Error('chlorophyll faces down');
-shadow.updateWorldMatrix(true, true);
-if(shadow.matrixWorld.elements[9]<0.9) throw Error('shadow faces down');
-if(amoeba.rotation.y!==0||diatom.rotation.y!==0||bear.rotation.y!==0||bacteria.rotation.y!==0) throw Error('yaw');
-if(Math.abs(diatom.scale.x-1.2)>1e-6||Math.abs(electrolyte.scale.x-1)>1e-6) throw Error('scale');
-let legs=0, ribs=0, cristae=0, rods=0, discs=0, blebs=0;
-electrolyte.traverse(function(o){
-  if(!o.userData) return;
-  if(o.userData.role==='leg') legs++;
-  if(o.userData.role==='rib') ribs++;
-  if(o.userData.role==='crista') cristae++;
-  if(o.userData.role==='rod') rods++;
-  if(o.userData.role==='chlorophyll-disc') discs++;
-  if(o.userData.role==='bleb') blebs++;
-});
-if(legs!==8||ribs!==12||cristae!==6||rods!==3||discs!==5||blebs!==4) throw Error('body');
-function followCam(){
-  electrolyte.updateWorldMatrix(true, true);
-  const fwd=new THREE.Vector3(1,0,0).applyQuaternion(electrolyte.quaternion);
-  fwd.y=0;
-  if(fwd.lengthSq()<1e-8) throw Error('forward');
-  fwd.normalize();
-  const p=electrolyte.position;
-  camera.position.set(p.x-fwd.x*2.15, 1.28, p.z-fwd.z*2.15);
-  camera.lookAt(p.x, Math.min(1.05, p.y*0.45+0.4), p.z);
-  const back=camera.position.clone().sub(p);
-  back.y=0; back.normalize();
-  if(back.dot(fwd)>-0.9) throw Error('camera ahead');
-}
-followCam();
-if(camera.position.y>1.6) throw Error('camera high');
-const camSpan=Math.max(Math.abs(camera.position.x), Math.abs(camera.position.z));
-if(!(camSpan>0)||camera.position.y>2.2*camSpan) throw Error('camera high');
-const keys={f:0,y:0};
+const keys={f:0, y:0};
 let goal=null;
 let best=Math.hypot(BEACON[0]-START[0], BEACON[1]-START[1]);
 let lastDrop=best;
 const kept=[];
-const keptMat=new THREE.MeshStandardMaterial({color:HIGH, roughness:0.4, transparent:true, opacity:0.72, depthWrite:false});
-function dropKept(x, z){
-  const puck=new THREE.Mesh(new THREE.CylinderGeometry(0.07, 0.07, 0.04, 8), keptMat);
-  puck.position.set(x, sample(x, z)+0.04, z);
-  puck.userData.role='kept';
-  scene.add(puck);
-  kept.push(puck);
+const STEP=0.016, SPEED=2.6, TURN=1.8;
+function aim(wx, wz){ goal={x:wx, z:wz}; keys.f=0; keys.y=0; }
+function move(){
+  if(reduce||thumb) return;
+  if(keys.y){ yaw+=keys.y*TURN*STEP; goal=null; }
+  let stepX=0, stepZ=0;
+  if(keys.f){
+    goal=null;
+    const hv=heading();
+    stepX=hv.x*keys.f*SPEED*STEP;
+    stepZ=hv.z*keys.f*SPEED*STEP;
+  }else if(goal){
+    const dx=goal.x-posX, dz=goal.z-posZ;
+    const dist=Math.hypot(dx, dz);
+    if(dist<0.18) goal=null;
+    else {
+      yaw=Math.atan2(-dz, dx);
+      const hv=heading();
+      const step=Math.min(SPEED*STEP, dist);
+      stepX=hv.x*step;
+      stepZ=hv.z*step;
+    }
+  }
+  posX+=stepX; posZ+=stepZ;
+  if(posX>4.4) posX=4.4;
+  if(posX<-4.4) posX=-4.4;
+  if(posZ>4.4) posZ=4.4;
+  if(posZ<-4.4) posZ=-4.4;
+  const distB=Math.hypot(BEACON[0]-posX, BEACON[1]-posZ);
+  if(distB+1e-4<best){
+    best=distB;
+    if(kept.length<16 && best<lastDrop-0.32){
+      kept.push({x:posX, z:posZ});
+      lastDrop=best;
+    }
+  }
 }
-function aim(x, z){ goal=new THREE.Vector3(x, 0, z); keys.f=0; keys.y=0; }
-const raycaster=new THREE.Raycaster();
+function hexRgb(h){
+  return [parseInt(h.slice(1,3),16), parseInt(h.slice(3,5),16), parseInt(h.slice(5,7),16)];
+}
+const lowRgb=hexRgb(LOW), highRgb=hexRgb(HIGH);
+function mix(t){
+  if(t<0) t=0;
+  if(t>1) t=1;
+  const r=(lowRgb[0]+(highRgb[0]-lowRgb[0])*t)|0;
+  const g=(lowRgb[1]+(highRgb[1]-lowRgb[1])*t)|0;
+  const b=(lowRgb[2]+(highRgb[2]-lowRgb[2])*t)|0;
+  return 'rgb('+r+','+g+','+b+')';
+}
+function coverRoll(ix, iz, seed){
+  let x=(seed ^ Math.imul(ix+97, 374761393) ^ Math.imul(iz+57, 668265263))>>>0;
+  x=Math.imul(x^(x>>>13), 1274126177)>>>0;
+  return ((x^(x>>>16))>>>0)/4294967296;
+}
+const covers=[];
+(function buildCovers(){
+  let n=0;
+  for(let z=1; z<N-1 && n<10; z+=2){
+    for(let x=1; x<N-1 && n<10; x+=2){
+      const X=(x/(N-1)-0.5)*SPAN, Z=(z/(N-1)-0.5)*SPAN;
+      if(Math.hypot(X-START[0], Z-START[1])<1.35) continue;
+      if(Math.hypot(X-BEACON[0], Z-BEACON[1])<1.35) continue;
+      if(coverRoll(x, z, 99)>0.16) continue;
+      covers.push({x:X, z:Z, y:sample(X, Z)});
+      n++;
+    }
+  }
+})();
+if(MARK!=='reed'&&MARK!=='stone'&&MARK!=='tree'&&MARK!=='post') throw Error('mark');
+const RING=[[1,0],[0.86603,0.5],[0.5,0.86603],[0,1],[-0.5,0.86603],[-0.86603,0.5],[-1,0],[-0.86603,-0.5],[-0.5,-0.86603],[0,-1],[0.5,-0.86603],[0.86603,-0.5]];
+let drewWater=0, quadCount=0, draws=0;
+function disc(s, radius, color, alpha){
+  if(!s) return;
+  const r=Math.max(1.6, radius/s.depth*canvas.height*1.37);
+  ctx.beginPath();
+  ctx.fillStyle=color;
+  ctx.globalAlpha=alpha;
+  ctx.arc(s.x, s.y, r, 0, 6.283185307179586);
+  ctx.fill();
+}
+function draw(){
+  const b=basis();
+  const hv=b.hv;
+  const py=b.py;
+  const bear={x:posX, y:py, z:posZ};
+  const bearS=project(bear);
+  const above=project({x:posX, y:py+1, z:posZ});
+  const ahead=project({x:posX+hv.x, y:py, z:posZ+hv.z});
+  const wright=project({x:posX-hv.z, y:py, z:posZ+hv.x});
+  if(!bearS||!above||!ahead||!wright) throw Error('picture empty');
+  if(!(ahead.depth>bearS.depth)) throw Error('picture faces back');
+  if(!(above.y<bearS.y)) throw Error('picture upside down');
+  if(!(wright.x>bearS.x)) throw Error('picture right');
+  ctx.globalAlpha=1;
+  ctx.fillStyle=SKY;
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  const quads=[];
+  for(let z=0; z<N-1; z+=2){
+    let z2=z+2; if(z2>N-1) z2=N-1;
+    for(let x=0; x<N-1; x+=2){
+      let x2=x+2; if(x2>N-1) x2=N-1;
+      const corners=[[x,z],[x2,z],[x2,z2],[x,z2]];
+      const pts=[];
+      let depth=0, ht=0, ok=1;
+      for(let i=0;i<4;i++){
+        const ix=corners[i][0], iz=corners[i][1];
+        const wx=(ix/(N-1)-0.5)*SPAN, wz=(iz/(N-1)-0.5)*SPAN, wy=H[iz*N+ix];
+        const s=project({x:wx, y:wy, z:wz});
+        if(!s){ ok=0; break; }
+        pts.push(s);
+        depth+=s.depth;
+        ht+=wy;
+      }
+      if(!ok) continue;
+      quads.push({depth:depth/4, pts:pts, color:mix((ht/4)/1.35)});
+    }
+  }
+  quads.sort(function(a,c){ return c.depth-a.depth; });
+  quadCount=quads.length;
+  if(quadCount<8) throw Error('picture empty');
+  for(let i=0;i<quads.length;i++){
+    const q=quads[i];
+    ctx.beginPath();
+    ctx.moveTo(q.pts[0].x, q.pts[0].y);
+    ctx.lineTo(q.pts[1].x, q.pts[1].y);
+    ctx.lineTo(q.pts[2].x, q.pts[2].y);
+    ctx.lineTo(q.pts[3].x, q.pts[3].y);
+    ctx.closePath();
+    ctx.fillStyle=q.color;
+    ctx.globalAlpha=1;
+    ctx.fill();
+  }
+  drewWater=0;
+  if(WATER){
+    const rad=SPAN*0.62;
+    const pts=[];
+    let depth=0;
+    for(let i=0;i<RING.length;i++){
+      const s=project({x:RING[i][0]*rad, y:0.16, z:RING[i][1]*rad});
+      if(!s) continue;
+      pts.push(s);
+      depth+=s.depth;
+    }
+    if(pts.length<4) throw Error('water');
+    ctx.beginPath();
+    ctx.moveTo(pts[0].x, pts[0].y);
+    for(let i=1;i<pts.length;i++) ctx.lineTo(pts[i].x, pts[i].y);
+    ctx.closePath();
+    ctx.fillStyle=WATERCOL;
+    ctx.globalAlpha=0.42;
+    ctx.fill();
+    drewWater=1;
+  }
+  const sprites=[];
+  const saw={};
+  function blob(name, p, radius, color, alpha, bias){
+    const s=project(p);
+    if(!s) return;
+    saw[name]=1;
+    sprites.push({depth:s.depth+(bias||0), x:s.x, y:s.y, r:Math.max(1.6, radius/s.depth*canvas.height*1.37), color:color, alpha:alpha});
+  }
+  blob('shadow', {x:posX, y:sample(posX, posZ)+0.03, z:posZ}, 0.46, '#1a140c', 0.28, 0.25);
+  blob('electrolyte', {x:posX, y:py, z:posZ}, 0.78, '#c9e7ff', 0.34, 0.2);
+  blob('amoeba', {x:posX, y:py+0.02, z:posZ}, 0.5, '#f3c6a2', 0.4, 0.12);
+  blob('diatom', {x:posX, y:py+0.04, z:posZ}, 0.36, '#d7f36a', 0.55, 0.15);
+  const right={x:-hv.z, y:0, z:hv.x};
+  blob('bacteria', {x:posX-hv.x*0.28+right.x*0.24, y:py-0.04, z:posZ-hv.z*0.28+right.z*0.24}, 0.07, '#e7d27a', 0.95, 0.02);
+  blob('chlorophyll', {x:posX+right.x*0.16, y:py+0.2, z:posZ+right.z*0.16}, 0.08, '#3f9a45', 0.95, 0.02);
+  blob('bear', bear, 0.2, '#f0c0a0', 0.96, 0);
+  blob('mito', {x:posX, y:py+0.06, z:posZ}, 0.055, '#ff7a3a', 1, -0.02);
+  blob('head', {x:posX+hv.x*0.16, y:py+0.08, z:posZ+hv.z*0.16}, 0.09, '#e7b394', 1, -0.03);
+  const nose={x:posX+hv.x*0.55, y:sample(posX+hv.x*0.55, posZ+hv.z*0.55)+0.08, z:posZ+hv.z*0.55};
+  blob('snout', nose, 0.055, INK, 1, -0.05);
+  const noseS=project(nose);
+  for(let i=0;i<kept.length;i++){
+    const k=kept[i];
+    blob('mark', {x:k.x, y:sample(k.x, k.z)+0.05, z:k.z}, 0.07, HIGH, 0.9, 0.04);
+  }
+  for(let i=0;i<covers.length;i++){
+    const c=covers[i];
+    if(MARK==='stone') blob('cover', {x:c.x, y:c.y+0.08, z:c.z}, 0.1, INK, 0.9, 0);
+    else if(MARK==='tree'){
+      blob('cover', {x:c.x, y:c.y+0.16, z:c.z}, 0.04, INK, 0.9, 0);
+      blob('cover', {x:c.x, y:c.y+0.4, z:c.z}, 0.14, HIGH, 0.9, -0.02);
+    }else if(MARK==='post') blob('cover', {x:c.x, y:c.y+0.24, z:c.z}, 0.045, INK, 0.95, 0);
+    else blob('cover', {x:c.x, y:c.y+0.28, z:c.z}, 0.035, HIGH, 0.95, 0);
+  }
+  const cap={x:BEACON[0], y:sample(BEACON[0], BEACON[1])+0.92, z:BEACON[1]};
+  blob('beacon', {x:BEACON[0], y:sample(BEACON[0], BEACON[1])+0.43, z:BEACON[1]}, 0.05, HIGH, 1, 0);
+  blob('beacon', cap, 0.12, '#fff6d8', 1, -0.02);
+  const need=['electrolyte','amoeba','diatom','chlorophyll','bacteria','bear','mito','snout'];
+  if(!draws){
+    for(let i=0;i<need.length;i++) if(!saw[need[i]]) throw Error('nest');
+    if(!project(cap)) throw Error('beacon');
+  }
+  sprites.sort(function(a,c){ return c.depth-a.depth; });
+  for(let i=0;i<sprites.length;i++){
+    const s=sprites[i];
+    ctx.beginPath();
+    ctx.fillStyle=s.color;
+    ctx.globalAlpha=s.alpha;
+    ctx.arc(s.x, s.y, s.r, 0, 6.283185307179586);
+    ctx.fill();
+  }
+  if(noseS&&bearS){
+    ctx.beginPath();
+    ctx.moveTo(bearS.x, bearS.y);
+    ctx.lineTo(noseS.x, noseS.y);
+    ctx.strokeStyle=INK;
+    ctx.globalAlpha=0.85;
+    ctx.lineWidth=Math.max(2, canvas.height*0.004);
+    ctx.stroke();
+  }
+  draws++;
+}
+function frame(){ move(); draw(); }
 function onPointer(ev){
-  if(!renderer.domElement.getBoundingClientRect) return;
-  const rect=renderer.domElement.getBoundingClientRect();
-  const w=rect.width||1, h=rect.height||1;
-  const ndc=new THREE.Vector2(((ev.clientX-rect.left)/w)*2-1, -((ev.clientY-rect.top)/h)*2+1);
-  raycaster.setFromCamera(ndc, camera);
-  const hits=raycaster.intersectObject(ground, false);
-  if(!hits.length) return;
-  aim(hits[0].point.x, hits[0].point.z);
+  if(!canvas.getBoundingClientRect) return;
+  const rect=canvas.getBoundingClientRect();
+  const rw=rect.width||1, rh=rect.height||1;
+  const px=((ev.clientX-rect.left)/rw)*canvas.width;
+  const py=((ev.clientY-rect.top)/rh)*canvas.height;
+  if(ev.preventDefault) ev.preventDefault();
+  const b=basis();
+  const sx=(px-canvas.width/2)/(canvas.height*1.37);
+  const sy=(canvas.height/2-py)/(canvas.height*1.37);
+  let dx=b.lx+b.rx*sx+b.ux*sy;
+  let dy=b.ly+b.ry*sx+b.uy*sy;
+  let dz=b.lz+b.rz*sx+b.uz*sy;
+  const len=Math.hypot(dx, dy, dz);
+  if(!(len>0)) return;
+  dx/=len; dy/=len; dz/=len;
+  if(!(dy<-1e-4)) return;
+  const t=-b.camy/dy;
+  if(!(t>0)) return;
+  aim(b.camx+dx*t, b.camz+dz*t);
   if(host.focus) host.focus();
 }
-if(renderer.domElement.addEventListener) renderer.domElement.addEventListener('pointerdown', onPointer);
+canvas.addEventListener('pointerdown', onPointer);
 function onKey(e, down){
   const k=e.key;
-  let bit=0, yaw=0;
+  let bit=0, turn=0;
   if(k==='w'||k==='W'||k==='ArrowUp') bit=1;
   else if(k==='s'||k==='S'||k==='ArrowDown') bit=-1;
-  else if(k==='a'||k==='A'||k==='ArrowLeft') yaw=1;
-  else if(k==='d'||k==='D'||k==='ArrowRight') yaw=-1;
+  else if(k==='a'||k==='A'||k==='ArrowLeft') turn=1;
+  else if(k==='d'||k==='D'||k==='ArrowRight') turn=-1;
   else return;
   if(e.preventDefault) e.preventDefault();
   if(bit) keys.f=down?bit:0;
-  if(yaw) keys.y=down?yaw:0;
+  if(turn) keys.y=down?turn:0;
   if(down) goal=null;
 }
 addEventListener('keydown', function(e){ onKey(e, 1); });
 addEventListener('keyup', function(e){ onKey(e, 0); });
-const STEP=0.016, SPEED=2.6, TURN=1.8;
-let tick=0;
-function frame(){
-  if(!(reduce||thumb)){
-    if(keys.y){ electrolyte.rotation.y+=keys.y*TURN*STEP; goal=null; }
-    let stepX=0, stepZ=0;
-    if(keys.f){
-      goal=null;
-      electrolyte.updateWorldMatrix(true, false);
-      const fwd=new THREE.Vector3(1,0,0).applyQuaternion(electrolyte.quaternion);
-      fwd.y=0; fwd.normalize();
-      stepX=fwd.x*keys.f*SPEED*STEP;
-      stepZ=fwd.z*keys.f*SPEED*STEP;
-    }else if(goal){
-      const dx=goal.x-electrolyte.position.x, dz=goal.z-electrolyte.position.z;
-      const dist=Math.hypot(dx, dz);
-      if(dist<0.18) goal=null;
-      else {
-        electrolyte.rotation.y=Math.atan2(-dz, dx);
-        electrolyte.updateWorldMatrix(true, false);
-        const fwd=new THREE.Vector3(1,0,0).applyQuaternion(electrolyte.quaternion);
-        fwd.y=0; fwd.normalize();
-        const step=Math.min(SPEED*STEP, dist);
-        stepX=fwd.x*step; stepZ=fwd.z*step;
-      }
-    }
-    let x=electrolyte.position.x+stepX, z=electrolyte.position.z+stepZ;
-    if(x>4.4) x=4.4;
-    if(x<-4.4) x=-4.4;
-    if(z>4.4) z=4.4;
-    if(z<-4.4) z=-4.4;
-    electrolyte.position.set(x, plant(x, z), z);
-    const distB=Math.hypot(BEACON[0]-x, BEACON[1]-z);
-    if(distB+1e-4<best){
-      best=distB;
-      if(kept.length<16 && best<lastDrop-0.32){
-        dropKept(x, z);
-        lastDrop=best;
-      }
-    }
-    tick++;
-    const w=tick%48;
-    const bob=w<24?w/24:(48-w)/24;
-    diatom.position.y=bob*0.03;
-  }
-  followCam();
-  renderer.render(scene, camera);
-  if(!(reduce||thumb)) requestAnimationFrame(frame);
-}
-function fit(){
-  const w=host.clientWidth||640, h=Math.max(host.clientHeight||520, 1);
-  camera.aspect=w/h;
-  camera.updateProjectionMatrix();
-  renderer.setSize(w, h, false);
-}
-fit();
 addEventListener('resize', fit);
-followCam();
-renderer.render(scene, camera);
-if(!(reduce||thumb)) frame();
+window.__wade={
+  frame:frame,
+  keys:keys,
+  aim:aim,
+  kept:kept,
+  heading:heading,
+  project:project,
+  canvas:canvas,
+  pos:function(){ return {x:posX, z:posZ, y:sample(posX, posZ)+0.62, yaw:yaw}; },
+  cam:function(){ const b=basis(); return {x:b.camx, y:b.camy, z:b.camz}; },
+  ny:ny,
+  water:WATER,
+  drewWater:function(){ return drewWater; },
+  quads:function(){ return quadCount; }
+};
+(function(){
+  const b=basis();
+  if(b.camy>1.6) throw Error('camera high');
+  const span=Math.max(Math.abs(b.camx), Math.abs(b.camz));
+  if(!(span>0)||b.camy>2.2*span) throw Error('camera high');
+})();
+fit();
+draw();
+if(!(reduce||thumb)){
+  const run=function(){ frame(); requestAnimationFrame(run); };
+  requestAnimationFrame(run);
+}
+})();
+
 </script>
 
 <script id="cubit-register-boot">
