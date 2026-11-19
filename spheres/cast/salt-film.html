@@ -33,11 +33,11 @@ body.thumb #v3{height:100vh;min-height:0;border-radius:0;border:0;box-shadow:non
 </header>
 <div id="v3"><p id="agentlog">The land is growing. ELECTROLYTE holds AMOEBA. AMOEBA holds DIATOM and BACTERIA. DIATOM holds WATER BEAR and CHLOROPHYLL. WATER BEAR holds MITOCHONDRION.</p></div>
 <div class="story">
-<p>The salt film is a thin shore where the bath dries to a pale skin. Similar on this shelf: The Green Shelf, The Ion Gate, and The Soft Mouth. The picture does not give a method for growing, extracting, or mixing any of them.</p>
+<p>The salt film is a thin shore where the bath dries to a pale skin. Similar on this shelf: The Green Shelf, The Ion Gate, and The Soft Mouth. The picture does not give a method for growing, extracting, or mixing any of them. The course is the salt film north lane. The biome advances along it. A shorter cover is dropped. A cover is kept only when the gap shrinks.</p>
 <p>On this land, ELECTROLYTE holds AMOEBA. AMOEBA holds DIATOM and BACTERIA. DIATOM holds WATER BEAR and CHLOROPHYLL. WATER BEAR holds MITOCHONDRION. Set point 2 is this cast's place on the shelf. They are homeostatic, cooperative, and evolutionary. A selfish step is dropped. A step away from home is dropped. A worse mutant is dropped. A step is kept only when the shared gap shrinks. Seventeen steps bring the seven bodies home. A second run matches, and this browser stores the kept gap.</p>
 <p>ARTIST draws the land, CRITIC checks the gap, BUILDER keeps the shell, WEAVER writes the cast, FOLLOWER walks with the bear, and KEEPER stores the row. AMOEBA is the soft body that keeps the others inside one skin. BACTERIA is the small partner that stays with the amoeba. CHLOROPHYLL is the green the diatom keeps in the light. ELECTROLYTE is the bath that carries the charge between them.</p>
 <p><span class="t LIT">LIT</span> set point 2. The seven arrived together. The gap is under 0.001. This page throws if a body splits, drifts off home, keeps a worse mutant, or keeps a worse height.</p>
-<p><span class="t MODEL">MODEL</span> The picture is a clear landscape the salt film. The pixel ratio follows the screen and stays at most 2. The camera sits low, close to the cast. A contact shadow sits under the cast. A worse height is dropped. A height is kept only when the gap shrinks. The chlorophyll stays inside the diatom. The diatom and the bacterium stay inside the amoeba. The amoeba stays inside the electrolyte. The mitochondrion stays inside the bear, and the bear stays inside the diatom.</p>
+<p><span class="t MODEL">MODEL</span> The picture is a clear landscape the salt film. The pixel ratio follows the screen and stays at most 2. The camera sits low, close to the cast. A contact shadow sits under the cast. The biome builds out along its own course. A worse height is dropped. A height is kept only when the gap shrinks. The chlorophyll stays inside the diatom. The diatom and the bacterium stay inside the amoeba. The amoeba stays inside the electrolyte. The mitochondrion stays inside the bear, and the bear stays inside the diatom.</p>
 <p id="proof">Checking the sphere.</p>
 <p>Seal sha256(name|slug|blurb): <code id="seal">1f57f1686e0efc94f9fc3a143b676199e2cd4da7a05c5db1e50ec8db37cee85e</code></p>
 <p><a href="../../index.html">Mayhem</a></p>
@@ -219,6 +219,65 @@ window.LAND=landKept;
 window.LANDN=N;
 window.LANDSPAN=10;
 window.LANDWORD=landWord(landKept);
+const COURSE_NAME="the salt film north lane";
+const COURSE_POINTS=[[-1.70,-3.20],[-1.70,-1.00],[-1.70,1.20],[-1.70,3.20]];
+function courseLength(pts){
+  let n=0;
+  if(!pts||pts.length<4) throw Error('course');
+  for(let i=1;i<pts.length;i++){
+    const dx=pts[i][0]-pts[i-1][0], dz=pts[i][1]-pts[i-1][1];
+    const d=Math.sqrt(dx*dx+dz*dz);
+    if(!(d>=0.5)) throw Error('course gap');
+    n+=d;
+  }
+  return n;
+}
+function biomeAdvance(target){
+  let x=0, gap=Math.abs(target-x), dropped=0, kept=[];
+  const selfish=x+(target-x)*0.8;
+  if(!(Math.abs(selfish)+1e-6<Math.abs(target))) throw Error('selfish cover was kept');
+  if(!(Math.abs(target-selfish)<gap)) throw Error('selfish cover was kept');
+  dropped++;
+  const away=x-Math.abs(target-x)*0.25;
+  if(Math.abs(target-away)<gap) throw Error('a cover away from home was kept');
+  dropped++;
+  const mutant=x+(target-x)*3;
+  if(Math.abs(target-mutant)<gap) throw Error('a worse cover was kept');
+  dropped++;
+  for(let gen=0; gen<17; gen++){
+    const next=x+(target-x)/2;
+    const g=Math.abs(target-next);
+    if(!(g<gap)) throw Error('biome gap');
+    x=next; gap=g;
+    kept.push(+x.toFixed(6));
+  }
+  if(gap>1e-3) throw Error('biome home');
+  if(!(Math.abs(target-x)<1e-3)) throw Error('biome short');
+  return {x:x, gap:gap, kept:kept, dropped:dropped};
+}
+function biomeOnce(){
+  const target=courseLength(COURSE_POINTS);
+  const a=biomeAdvance(target), b=biomeAdvance(target);
+  if(a.dropped!==3||b.dropped!==3) throw Error('biome drop');
+  if(a.kept.join()!==b.kept.join()) throw Error('biome lineage');
+  if(Math.abs(a.x-target)>1e-3) throw Error('biome short');
+  return 'COVER='+a.x.toFixed(6)+'|COURSE='+COURSE_NAME+'|STATIONS='+COURSE_POINTS.length;
+}
+function rememberBiome(word){
+  const key='mayhem-biome-kept';
+  let book={};
+  try{ book=JSON.parse(localStorage.getItem(key)||'{}')||{}; }catch(e){ book={}; }
+  const row=book[SLUG];
+  if(!row) book[SLUG]={word:word, visits:1};
+  else { if(row.word!==word) throw Error('biome drift'); row.visits+=1; }
+  localStorage.setItem(key, JSON.stringify(book));
+  const again=JSON.parse(localStorage.getItem(key))[SLUG];
+  if(!again||again.word!==word) throw Error('biome drift');
+  return again.visits;
+}
+const biomeWord=biomeOnce();
+window.BIOMEWORD=biomeWord;
+window.COURSE={name:COURSE_NAME, points:COURSE_POINTS};
 function check(){
   const a=once(), b=once();
   if(a!==b) throw Error('second run');
@@ -228,9 +287,13 @@ function check(){
   if(again!==window.LANDWORD) throw Error('land drift');
   const lv=rememberLand(window.LANDWORD);
   if(lv<1) throw Error('land memory');
+  const biomeAgain=biomeOnce();
+  if(biomeAgain!==window.BIOMEWORD) throw Error('biome drift');
+  const bv=rememberBiome(window.BIOMEWORD);
+  if(bv<1) throw Error('biome memory');
   const el=document.getElementById('agentlog');
-  if(el) el.textContent=LANDNAME+' kept its heights. The cast holds set point '+SET+'. visit '+visits;
-  return 'DIATOM + BEAR + MITO + AMOEBA + BACTERIA + CHLOROPHYLL + ELECTROLYTE held '+SET+'; LAND '+window.LANDWORD;
+  if(el) el.textContent=LANDNAME+' kept its heights. The biome advanced along '+COURSE_NAME+'. The cast holds set point '+SET+'. visit '+visits;
+  return 'DIATOM + BEAR + MITO + AMOEBA + BACTERIA + CHLOROPHYLL + ELECTROLYTE held '+SET+'; LAND '+window.LANDWORD+'; BIOME '+window.BIOMEWORD;
 }
 async function sha(t){
   const d=await crypto.subtle.digest('SHA-256', new TextEncoder().encode(t));
@@ -473,13 +536,71 @@ chlorophyll.position.set(0, 0.04, 0);
 diatom.add(chlorophyll);
 amoeba.add(diatom);
 electrolyte.add(amoeba);
-const from=new THREE.Vector3(-2.4, 0, PATHZ);
-const home=new THREE.Vector3(1.8, 0, PATHZ);
+const coursePts=window.COURSE.points;
+if(!coursePts||coursePts.length<4) throw Error('course');
+const biomeKnots=[];
+function biomeKnot(x, z){
+  let prop;
+  if(MARK==='tree'){
+    prop=new THREE.Group();
+    const trunk=new THREE.Mesh(new THREE.CylinderGeometry(0.035, 0.05, 0.22, 5), markMat);
+    trunk.position.y=0.11;
+    const cap=new THREE.Mesh(new THREE.ConeGeometry(0.14, 0.28, 6), leafMat);
+    cap.position.y=0.3;
+    prop.add(trunk); prop.add(cap);
+  }else if(MARK==='reed'){
+    prop=new THREE.Mesh(new THREE.CylinderGeometry(0.012, 0.018, 0.36, 5), leafMat);
+    prop.position.y=0.18;
+  }else if(MARK==='post'){
+    prop=new THREE.Mesh(new THREE.BoxGeometry(0.05, 0.34, 0.05), markMat);
+    prop.position.y=0.17;
+  }else if(MARK==='stone'){
+    prop=new THREE.Mesh(new THREE.DodecahedronGeometry(0.08, 0), markMat);
+    prop.position.y=0.06;
+  }else throw Error('mark');
+  prop.position.x=x;
+  prop.position.z=z;
+  prop.position.y+=sample(x, z);
+  prop.userData.role='biome';
+  scene.add(prop);
+  return prop;
+}
+const plankMat=new THREE.MeshStandardMaterial({color:HIGH, roughness:0.84, metalness:0.02});
+for(let i=0;i<coursePts.length;i++){
+  const prev=coursePts[Math.max(0, i-1)], next=coursePts[Math.min(coursePts.length-1, i+1)];
+  const dx=next[0]-prev[0], dz=next[1]-prev[1];
+  const len=Math.sqrt(dx*dx+dz*dz)||1;
+  const knot=biomeKnot(coursePts[i][0]+dz/len*0.42, coursePts[i][1]-dx/len*0.42);
+  biomeKnots.push(knot);
+}
+for(let i=1;i<coursePts.length;i++){
+  const dx=coursePts[i][0]-coursePts[i-1][0], dz=coursePts[i][1]-coursePts[i-1][1];
+  const len=Math.sqrt(dx*dx+dz*dz);
+  const plank=new THREE.Mesh(new THREE.BoxGeometry(len, 0.025, 0.16), plankMat);
+  plank.position.set((coursePts[i-1][0]+coursePts[i][0])/2, sample((coursePts[i-1][0]+coursePts[i][0])/2, (coursePts[i-1][1]+coursePts[i][1])/2)+0.04, (coursePts[i-1][1]+coursePts[i][1])/2);
+  plank.rotation.y=Math.atan2(-dz, dx);
+  plank.userData.role='course';
+  scene.add(plank);
+  if(i===1){
+    plank.updateWorldMatrix(true, true);
+    const axis=new THREE.Vector3(1,0,0).applyQuaternion(plank.quaternion);
+    axis.y=0; axis.normalize();
+    const dir=new THREE.Vector3(dx,0,dz).normalize();
+    if(axis.dot(dir)<0.9) throw Error('course faces off');
+  }
+}
+const from=new THREE.Vector3(coursePts[0][0], 0, coursePts[0][1]);
+const home=new THREE.Vector3(coursePts[coursePts.length-1][0], 0, coursePts[coursePts.length-1][1]);
 function plant(v){ v.y=sample(v.x, v.z)+0.62; return v; }
 plant(from); plant(home);
-camera.position.set(home.x-1.85, 1.22, home.z+2.35);
+let courseMx=0, courseMz=0;
+for(let i=0;i<coursePts.length;i++){ courseMx+=coursePts[i][0]; courseMz+=coursePts[i][1]; }
+courseMx/=coursePts.length; courseMz/=coursePts.length;
+camera.position.set(courseMx-1.90, 1.28, courseMz+2.25);
+const endA=coursePts[coursePts.length-2], endB=coursePts[coursePts.length-1];
+const endDx=endB[0]-endA[0], endDz=endB[1]-endA[1];
 electrolyte.position.copy(home);
-electrolyte.rotation.y=0;
+electrolyte.rotation.y=Math.atan2(-endDz, endDx);
 amoeba.rotation.y=0;
 diatom.rotation.y=0;
 bear.rotation.y=0;
@@ -498,8 +619,8 @@ bear.getWorldPosition(bellyAt);
 mito.getWorldPosition(mitoAt);
 const front=noseAt.sub(bellyAt);
 front.y=0; front.normalize();
-const travel=home.clone().sub(from);
-travel.y=0; travel.normalize();
+const travel=new THREE.Vector3(endDx, 0, endDz);
+travel.normalize();
 if(front.dot(travel)<0.9) throw Error('bear faces off the path');
 if(mitoAt.distanceTo(bellyAt)>0.25) throw Error('mito outside the bear');
 const bacAt=new THREE.Vector3(), bacNoseAt=new THREE.Vector3();
@@ -524,7 +645,8 @@ const shadowQ=new THREE.Quaternion();
 shadow.getWorldQuaternion(shadowQ);
 const shadowUp=new THREE.Vector3(0,0,1).applyQuaternion(shadowQ);
 if(shadowUp.y<0.9) throw Error('shadow faces down');
-if(electrolyte.rotation.y!==0||amoeba.rotation.y!==0||diatom.rotation.y!==0||bear.rotation.y!==0||bacteria.rotation.y!==0) throw Error('yaw');
+if(amoeba.rotation.y!==0||diatom.rotation.y!==0||bear.rotation.y!==0||bacteria.rotation.y!==0) throw Error('yaw');
+if(Math.abs(electrolyte.rotation.y-Math.atan2(-endDz, endDx))>1e-6) throw Error('yaw');
 if(electrolyte.position.y<sample(home.x, home.z)+0.3) throw Error('buried');
 let legs=0, ribs=0, cristae=0, rods=0, discs=0, blebs=0;
 electrolyte.traverse(function(o){
@@ -538,7 +660,7 @@ electrolyte.traverse(function(o){
 });
 if(legs!==8||ribs!==12||cristae!==6||rods!==3||discs!==5||blebs!==4) throw Error('body');
 const controls=new OrbitControls(camera, renderer.domElement);
-controls.target.copy(home);
+controls.target.set(courseMx, 0.55, courseMz);
 controls.enableDamping=true;
 controls.autoRotate=!(reduce||thumb);
 controls.autoRotateSpeed=0.28;
@@ -549,7 +671,39 @@ if(!(camSpan>0)||camera.position.y>2.2*camSpan) throw Error('camera high');
 electrolyte.userData.from=from.clone();
 electrolyte.userData.home=home.clone();
 electrolyte.userData.t=0;
-if(!(reduce||thumb)) electrolyte.position.copy(from);
+const courseSegs=[];
+let courseTotal=0;
+for(let i=1;i<coursePts.length;i++){
+  const dx=coursePts[i][0]-coursePts[i-1][0], dz=coursePts[i][1]-coursePts[i-1][1];
+  const len=Math.sqrt(dx*dx+dz*dz);
+  courseSegs.push({dx:dx, dz:dz, len:len, x:coursePts[i-1][0], z:coursePts[i-1][1]});
+  courseTotal+=len;
+}
+function poseAt(t){
+  let dist=Math.min(courseTotal, Math.max(0, t*courseTotal));
+  for(let s=0;s<courseSegs.length;s++){
+    const seg=courseSegs[s];
+    if(dist<=seg.len || s===courseSegs.length-1){
+      const u=seg.len?Math.min(1, dist/seg.len):0;
+      return {x:seg.x+seg.dx*u, z:seg.z+seg.dz*u, dx:seg.dx, dz:seg.dz};
+    }
+    dist-=seg.len;
+  }
+  const last=courseSegs[courseSegs.length-1];
+  return {x:last.x+last.dx, z:last.z+last.dz, dx:last.dx, dz:last.dz};
+}
+function growBiome(t){
+  const n=biomeKnots.length;
+  for(let i=0;i<n;i++){
+    const u=t*n-i+1;
+    biomeKnots[i].scale.setScalar(Math.max(0.05, Math.min(1, u)));
+  }
+}
+if(!(reduce||thumb)){
+  electrolyte.position.copy(from);
+  electrolyte.rotation.y=Math.atan2(-courseSegs[0].dz, courseSegs[0].dx);
+  growBiome(0.05);
+}else growBiome(1);
 function fit(){
   const w=host.clientWidth||640, h=Math.max(host.clientHeight||520, 1);
   camera.aspect=w/h;
@@ -560,10 +714,11 @@ fit();
 addEventListener('resize', fit);
 function frame(){
   if(!(reduce||thumb)){
-    electrolyte.userData.t=Math.min(1, electrolyte.userData.t+0.006);
-    const t=electrolyte.userData.t;
-    electrolyte.position.lerpVectors(electrolyte.userData.from, electrolyte.userData.home, t);
-    electrolyte.position.y=sample(electrolyte.position.x, electrolyte.position.z)+0.62;
+    electrolyte.userData.t=Math.min(1, electrolyte.userData.t+0.004);
+    const pose=poseAt(electrolyte.userData.t);
+    electrolyte.position.set(pose.x, sample(pose.x, pose.z)+0.62, pose.z);
+    electrolyte.rotation.y=Math.atan2(-pose.dz, pose.dx);
+    growBiome(electrolyte.userData.t);
   }
   controls.update();
   renderer.render(scene, camera);
