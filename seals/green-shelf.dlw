@@ -1,0 +1,1 @@
+{"slug": "green-shelf", "seal": "0ab92b8107105d26c6092192459ce65f7464449f0c6bdc5005a87e3ac5fca7c5", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

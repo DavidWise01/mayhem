@@ -1,0 +1,1 @@
+{"slug": "kelp-room", "seal": "981b6fafb4d12385e1cf2e9717e29f369005236a370842f8851e00bef36f33d9", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

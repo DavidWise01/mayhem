@@ -1,0 +1,1 @@
+{"slug": "pine-lens", "seal": "d4ba1c12bca7111bc81fefda4680879f6b238c273c61cf55e203636cac3356bf", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

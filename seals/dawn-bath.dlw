@@ -1,0 +1,1 @@
+{"slug": "dawn-bath", "seal": "5cc24a647951206f66951807ec0107532b701828466981ecfe4b619ca2d08494", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

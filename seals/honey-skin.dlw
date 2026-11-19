@@ -1,0 +1,1 @@
+{"slug": "honey-skin", "seal": "c8807a00e5051617616bea4d1c37dee4eed8b0c18df6738b2877443f925bf455", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

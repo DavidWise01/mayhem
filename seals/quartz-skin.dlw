@@ -1,0 +1,1 @@
+{"slug": "quartz-skin", "seal": "3f76c357e3cea4b7819b802b25b2b08331f358000a07ab70ebdbb707b7c7a43a", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

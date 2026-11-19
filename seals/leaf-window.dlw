@@ -1,0 +1,1 @@
+{"slug": "leaf-window", "seal": "acba44385290dd2809ae416c42e9b612836dee8d7f946ac3e7d453c50450d37b", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

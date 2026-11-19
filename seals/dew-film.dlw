@@ -1,0 +1,1 @@
+{"slug": "dew-film", "seal": "b510e301e0d06d54f1d0484d3436c1cc7a411164971d58cf3a404aaa26f1641e", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

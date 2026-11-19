@@ -1,0 +1,1 @@
+{"slug": "clover-film", "seal": "a8eac1d4f0c436cc3a7730c478f061f99dd6a25f53539889bf8f10f88c86b8f6", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

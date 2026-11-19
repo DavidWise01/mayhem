@@ -1,0 +1,1 @@
+{"slug": "opal-gate", "seal": "a10a7793426ccf197e627b88ebdb992e8b913f4cb90e7a73e3452e55d268db22", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

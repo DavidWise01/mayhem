@@ -1,0 +1,1 @@
+{"slug": "salt-film", "seal": "1f57f1686e0efc94f9fc3a143b676199e2cd4da7a05c5db1e50ec8db37cee85e", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

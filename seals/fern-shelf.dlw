@@ -1,0 +1,1 @@
+{"slug": "fern-shelf", "seal": "88f2332fc823cf777ae4e09cebbaa863d9b8839aa460914d3e5bf627ac8b0a3f", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

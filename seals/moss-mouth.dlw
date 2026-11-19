@@ -1,0 +1,1 @@
+{"slug": "moss-mouth", "seal": "2c88b65954f7f6e17562bd613b51b1bafc5c1b6d1fa3cac9441723118ff141f8", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "brass-pond", "seal": "e9b3110b96aa0853c201aafea26610b9a0f2d59864db14b4b2263ddb0833db58", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

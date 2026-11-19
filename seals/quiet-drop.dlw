@@ -1,0 +1,1 @@
+{"slug": "quiet-drop", "seal": "f9672cd8567abfc950b945f982db831628404756d25162f233a2fd9427c2f7ba", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

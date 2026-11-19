@@ -1,0 +1,1 @@
+{"slug": "rain-bead", "seal": "02f5976b873c74f865855a1654201535e591fe1e3667f1c62e92970a16397fcf", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

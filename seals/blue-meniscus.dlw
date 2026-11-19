@@ -1,0 +1,1 @@
+{"slug": "blue-meniscus", "seal": "32ed27ccecef75027b219ce1e13d4201c58a7880808ad4167e412240a467e0df", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

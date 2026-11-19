@@ -1,0 +1,1 @@
+{"slug": "shell-lens", "seal": "33c7559b902ca9bd8d248d69e61ed59c5c03c6719883ca2186292cde4b931166", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

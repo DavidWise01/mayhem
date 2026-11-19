@@ -1,0 +1,1 @@
+{"slug": "wool-pond", "seal": "afae4aebd62b537655462edf22c93b0f4c2f87bbb456e0b47c18e2027e79ba86", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "ink-pond", "seal": "3fce94b796fed85242dbda03bc3d6471cd5b80e13b6a85fa6a07dbe8777a6394", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

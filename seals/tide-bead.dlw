@@ -1,0 +1,1 @@
+{"slug": "tide-bead", "seal": "e6072d9e0e54350b3996ac4cd5b69faf7c4d03e7bd7b614635343068331c584f", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

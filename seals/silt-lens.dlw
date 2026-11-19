@@ -1,0 +1,1 @@
+{"slug": "silt-lens", "seal": "6ca02785b51256e304c6d61c307d63a43d4a062aca439b756d20cebfe511d92a", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

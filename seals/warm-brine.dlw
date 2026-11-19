@@ -1,0 +1,1 @@
+{"slug": "warm-brine", "seal": "c508f0b5490cb6edd3b38a0e89272a49395c817d2a36613c26663957acfe7ca4", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "copper-skin", "seal": "1e148aa2ebb26b676f85243cf8b1fce131dd6eff6a9e6a189263fb1706969fc9", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

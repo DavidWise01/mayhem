@@ -1,0 +1,1 @@
+{"slug": "violet-bath", "seal": "f02ff0048c394537c5f048b427c4d1a407e6a0ad9508ed72317745d928d5e869", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

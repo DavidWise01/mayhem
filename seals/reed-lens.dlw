@@ -1,0 +1,1 @@
+{"slug": "reed-lens", "seal": "0d4c1a4e68419274da0d923924155b20a82ac4086d2000a96512c423623a2019", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

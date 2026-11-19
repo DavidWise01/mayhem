@@ -1,0 +1,1 @@
+{"slug": "pearl-drop", "seal": "fc22238575e8a0bb8486fab1880f565475edb0b4cbba9e141b31ce9387e83e82", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
