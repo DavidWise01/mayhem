@@ -1,0 +1,1 @@
+{"slug": "wade-moss", "seal": "6e46045eed2d715c6c5c156f8a04ef9e810a4ce23cab6332236f51b2d8540f33", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

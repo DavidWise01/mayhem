@@ -1,0 +1,1 @@
+{"slug": "wade-salt", "seal": "d23fdbdf4a41314b452b81dc942058caa590e0c4eb0892d20751bb28e11a00cf", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

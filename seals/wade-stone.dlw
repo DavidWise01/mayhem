@@ -1,0 +1,1 @@
+{"slug": "wade-stone", "seal": "b6de11d63a7108a933cb27b22d0044f05cb0b58f52c0adee49b3bad39affe703", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

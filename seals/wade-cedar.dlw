@@ -1,0 +1,1 @@
+{"slug": "wade-cedar", "seal": "e165a19def4d90697a4258c5072096966ef36bd6ac67257199e4c11fb3ee441e", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

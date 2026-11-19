@@ -1,0 +1,1 @@
+{"slug": "wade-reed", "seal": "19a7f6917d278f43ea7638d52cde608469614442a690a5ca931d57ccd1c6cc9b", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

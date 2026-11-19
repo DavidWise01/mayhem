@@ -1,0 +1,1 @@
+{"slug": "wade-linen", "seal": "c72ea550154df72901f4499b591386e13ba2edd47142cab4f59cf26d95ffd67f", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

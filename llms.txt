@@ -212,6 +212,18 @@ One hundred classics from Project Gutenberg. Each page has its own layout and ge
 - [Yvain](./spheres/classics/yvain.html): Four Arthurian Romances. the fountain wood. Nested three bodies. Set point 99. LIT. seal b7f8d5b5714021f710965d5695d361d908c7048e08ad77f86034b6ea4d55c779
 - [Anthony Cade](./spheres/classics/anthony-cade.html): The Secret of Chimneys. the chimneys drive. Nested three bodies. Set point 100. LIT. seal 15e4867106191e0b70e41f6a9d194dc26685729c43bbed22ca32722922511014
 
+## Wade
+Ten wade spheres. You wade the land with the water bear. The diatom holds the bear and keeps a mark only when the gap to the beacon shrinks. Arrow keys, WASD, or a click on the ground. A step away from the beacon is not kept. A step is kept only when the gap shrinks. The seven bodies stay. The pixel ratio follows the screen and stays at most 2. The camera sits low behind the bear. Not a hallway seat.
+- [The Reed Wade](./spheres/wade/wade-reed.html): the reed wade. Wade. Clear. Water bear and diatom. Set point 1. LIT. seal 19a7f6917d278f43ea7638d52cde608469614442a690a5ca931d57ccd1c6cc9b
+- [The Stone Wade](./spheres/wade/wade-stone.html): the stone wade. Wade. Clear. Water bear and diatom. Set point 2. LIT. seal b6de11d63a7108a933cb27b22d0044f05cb0b58f52c0adee49b3bad39affe703
+- [The Cedar Wade](./spheres/wade/wade-cedar.html): the cedar wade. Wade. Clear. Water bear and diatom. Set point 3. LIT. seal e165a19def4d90697a4258c5072096966ef36bd6ac67257199e4c11fb3ee441e
+- [The Salt Wade](./spheres/wade/wade-salt.html): the salt wade. Wade. Clear. Water bear and diatom. Set point 4. LIT. seal d23fdbdf4a41314b452b81dc942058caa590e0c4eb0892d20751bb28e11a00cf
+- [The Moss Wade](./spheres/wade/wade-moss.html): the moss wade. Wade. Clear. Water bear and diatom. Set point 5. LIT. seal 6e46045eed2d715c6c5c156f8a04ef9e810a4ce23cab6332236f51b2d8540f33
+- [The Pearl Wade](./spheres/wade/wade-pearl.html): the pearl wade. Wade. Clear. Water bear and diatom. Set point 6. LIT. seal 7d9f5bc9d21c442d982afcba2a336c0eae093f7d19c5450b1cae052c753a89c0
+- [The Linen Wade](./spheres/wade/wade-linen.html): the linen wade. Wade. Clear. Water bear and diatom. Set point 7. LIT. seal c72ea550154df72901f4499b591386e13ba2edd47142cab4f59cf26d95ffd67f
+- [The Fern Wade](./spheres/wade/wade-fern.html): the fern wade. Wade. Clear. Water bear and diatom. Set point 8. LIT. seal 19686cbfd08c2602207f318e553c41ccb99e518423fe85cc3dd6ff9506d32d9f
+- [The Quartz Wade](./spheres/wade/wade-quartz.html): the quartz wade. Wade. Clear. Water bear and diatom. Set point 9. LIT. seal 49ea228dd1e84e37b3c94e3e8ca34910d96d78cdbd20cec601eadb34786e9550
+- [The Chalk Wade](./spheres/wade/wade-chalk.html): the chalk wade. Wade. Clear. Water bear and diatom. Set point 10. LIT. seal 32b8644ed0ebb33e0a6365e5bbd3dcd7beb975e923a706815202e0db1f85b25c
 ## Switch
 Sixteen switch spheres. Three lamps, A amber, B green, and C violet, go dark in order. The first six pages are the orders ABC, BCA, CAB, BAC, ACB, and CBA. The next ten are new lands, and each uses one of those orders again. A lamp that goes dark alone is dropped. A switch is kept only when the shared gap shrinks. The seven bodies stay. The pixel ratio follows the screen and stays at most 2. The camera sits low. Not a hallway seat.
 - [The ABC Switch](./spheres/switch/switch-abc.html): the abc switch. Order ABC. Clear. Seven bodies. Set point 1. LIT. seal 8bae294d84de6ecd2cb67ddd50d4a01b9e2bdb697c763526d2da1b256e40f4e5

@@ -1,0 +1,1 @@
+{"slug": "wade-chalk", "seal": "32b8644ed0ebb33e0a6365e5bbd3dcd7beb975e923a706815202e0db1f85b25c", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
