@@ -1,0 +1,1 @@
+{"slug": "switch-wick-gate", "seal": "75c62c57a7c4e983bf887184a99352cf3d50af277e7dd656b9d930d6eac37085", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

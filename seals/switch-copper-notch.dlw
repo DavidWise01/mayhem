@@ -1,0 +1,1 @@
+{"slug": "switch-copper-notch", "seal": "f347f661395441f973d5d9eb3af13e32b50a5a8336d94b2b7df63af5908d5663", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

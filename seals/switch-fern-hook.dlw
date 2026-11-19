@@ -1,0 +1,1 @@
+{"slug": "switch-fern-hook", "seal": "a62c162e07b4ed6268bf8987c86f0720046ec09326ff1776bd9a2061de982caa", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

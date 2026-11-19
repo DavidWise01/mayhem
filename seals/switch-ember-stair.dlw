@@ -1,0 +1,1 @@
+{"slug": "switch-ember-stair", "seal": "bf8f96d96d9c492519ea189fe84379859e7b91606ff2cddfe5f3a365d9a32760", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

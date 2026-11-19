@@ -1,0 +1,1 @@
+{"slug": "switch-chalk-mesa", "seal": "59c853e0528a5456344fcd645866c3b25d3146118df9f9a30503a26f578b19f2", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

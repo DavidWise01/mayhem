@@ -1,0 +1,1 @@
+{"slug": "switch-iris-lane", "seal": "49faac33270d71c28e7a34875efa3b6b356701916f7216409c942316f3b2092f", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

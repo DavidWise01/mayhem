@@ -1,0 +1,1 @@
+{"slug": "switch-halo-sill", "seal": "3fd31147536c1315207a7426e8c7383e0364f3e3a6fc50dfd27ee7f5385c92d1", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

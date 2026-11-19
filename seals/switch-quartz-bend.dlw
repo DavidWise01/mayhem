@@ -1,0 +1,1 @@
+{"slug": "switch-quartz-bend", "seal": "3666855cbe00e17b561d7dc7939d701989aed125490435f3286f4e9f5f05c825", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
