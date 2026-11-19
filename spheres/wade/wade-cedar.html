@@ -17,7 +17,7 @@ html,body{margin:0;background:#f6efe6;color:#3b2a22;font-family:Georgia, serif}#
 </header>
 <div id="v3" tabindex="0"><p id="wadehint">Arrows, WASD, or click the ground.</p><p id="agentlog">Click the ground, or use the arrows. The diatom waits.</p></div>
 <div class="story">
-<p>the cedar wade is a land you can wade. Arrow keys or WASD steer the water bear. Click the ground and the bear wades there. The diatom holds the bear and keeps a mark only when the gap to the beacon shrinks. A step away from the beacon is not kept. Similar on this shelf: The Salt Wade, The Moss Wade, The Pearl Wade. The picture does not give a method for growing, extracting, or mixing any of them.</p><p>On this land, ELECTROLYTE holds AMOEBA. AMOEBA holds DIATOM and BACTERIA. DIATOM holds WATER BEAR and CHLOROPHYLL. WATER BEAR holds MITOCHONDRION. Set point 3 is this wade's place on the shelf. They are homeostatic, cooperative, and evolutionary. A selfish step is dropped. A step away from home is dropped. A worse mutant is dropped. A step is kept only when the shared gap shrinks. Seventeen steps bring the seven bodies home. Seventeen steps bring the wade home. A second run matches, and this browser stores the kept gap.</p><p>ARTIST draws the land, CRITIC checks the gap, BUILDER keeps the shell, WEAVER writes the wade, FOLLOWER walks with the bear, and KEEPER stores the row. The camera sits low behind the snout. The land is generated for this page. The diatom's marks are the steps that got closer.</p><p><span class="t LIT">LIT</span> the water bear can wade the cedar wade. The diatom keeps a mark only when the gap shrinks. This page throws if a step away is kept, a body splits, or the ground faces down.</p><p><span class="t MODEL">MODEL</span> The picture is canvas 3D, a clear field, the cedar wade. You can wade it. The pixel ratio follows the screen and stays at most 2. The camera sits low, behind the cast. A contact shadow sits under the cast. A worse height is dropped. A height is kept only when the gap shrinks.</p>
+<p>the cedar wade is a land you can wade. Arrow keys or WASD steer the water bear. Click the ground and the bear wades there. The diatom holds the bear and keeps a mark only when the gap to the beacon shrinks. A step away from the beacon is not kept. Similar on this shelf: The Salt Wade, The Moss Wade, The Pearl Wade. The picture does not give a method for growing, extracting, or mixing any of them.</p><p>On this land, ELECTROLYTE holds AMOEBA. AMOEBA holds DIATOM and BACTERIA. DIATOM holds WATER BEAR and CHLOROPHYLL. WATER BEAR holds MITOCHONDRION. Set point 3 is this wade's place on the shelf. They are homeostatic, cooperative, and evolutionary. A selfish step is dropped. A step away from home is dropped. A worse mutant is dropped. A step is kept only when the shared gap shrinks. Seventeen steps bring the seven bodies home. Seventeen steps bring the wade home. A second run matches, and this browser stores the kept gap.</p><p>ARTIST draws the land, CRITIC checks the gap, BUILDER keeps the shell, WEAVER writes the wade, FOLLOWER walks with the bear, and KEEPER stores the row. The camera sits low behind the snout. The land is generated for this page. The diatom's marks are the steps that got closer.</p><p><span class="t LIT">LIT</span> the water bear can wade the cedar wade. The diatom keeps a mark only when the gap shrinks. This page throws if a step away is kept, a body splits, or the ground faces down.</p><p><span class="t MODEL">MODEL</span> The picture is a woodcut, canvas 3D, a clear field, the cedar wade. You can wade it. The pixel ratio follows the screen and stays at most 2. The camera sits low, behind the cast. A contact shadow sits under the cast. A worse height is dropped. A height is kept only when the gap shrinks.</p>
 <p id="proof">Checking the sphere.</p>
 <p>Seal sha256(name|slug|blurb): <code id="seal">e165a19def4d90697a4258c5072096966ef36bd6ac67257199e4c11fb3ee441e</code></p>
 <p><a href="../../index.html">Mayhem</a></p>
@@ -400,12 +400,13 @@ function hexRgb(h){
 }
 const lowRgb=hexRgb(LOW), highRgb=hexRgb(HIGH);
 function mix(t){
-  if(t<0) t=0;
-  if(t>1) t=1;
-  const r=(lowRgb[0]+(highRgb[0]-lowRgb[0])*t)|0;
-  const g=(lowRgb[1]+(highRgb[1]-lowRgb[1])*t)|0;
-  const b=(lowRgb[2]+(highRgb[2]-lowRgb[2])*t)|0;
-  return 'rgb('+r+','+g+','+b+')';
+  if(t<0.42) return LOW;
+  const r=(lowRgb[0]+(highRgb[0]-lowRgb[0])*0.5)|0;
+  const g=(lowRgb[1]+(highRgb[1]-lowRgb[1])*0.5)|0;
+  const b=(lowRgb[2]+(highRgb[2]-lowRgb[2])*0.5)|0;
+  const mid='rgb('+r+','+g+','+b+')';
+  if(t<0.74) return mid;
+  return HIGH;
 }
 function coverRoll(ix, iz, seed){
   let x=(seed ^ Math.imul(ix+97, 374761393) ^ Math.imul(iz+57, 668265263))>>>0;
@@ -451,9 +452,19 @@ function draw(){
   if(!(ahead.depth>bearS.depth)) throw Error('picture faces back');
   if(!(above.y<bearS.y)) throw Error('picture upside down');
   if(!(wright.x>bearS.x)) throw Error('picture right');
+  ctx.lineJoin='round';
+  ctx.lineCap='round';
   ctx.globalAlpha=1;
   ctx.fillStyle=SKY;
   ctx.fillRect(0, 0, canvas.width, canvas.height);
+  const sunR=canvas.height*0.07;
+  ctx.beginPath();
+  ctx.fillStyle=HIGH;
+  ctx.arc(canvas.width*0.8, canvas.height*0.14, sunR, 0, 6.283185307179586);
+  ctx.fill();
+  ctx.strokeStyle=INK;
+  ctx.lineWidth=Math.max(2, sunR*0.08);
+  ctx.stroke();
   const quads=[];
   for(let z=0; z<N-1; z+=2){
     let z2=z+2; if(z2>N-1) z2=N-1;
@@ -489,17 +500,19 @@ function draw(){
     ctx.fillStyle=q.color;
     ctx.globalAlpha=1;
     ctx.fill();
+    ctx.strokeStyle=INK;
+    ctx.globalAlpha=0.34;
+    ctx.lineWidth=1.6;
+    ctx.stroke();
   }
   drewWater=0;
   if(WATER){
     const rad=SPAN*0.62;
     const pts=[];
-    let depth=0;
     for(let i=0;i<RING.length;i++){
       const s=project({x:RING[i][0]*rad, y:0.16, z:RING[i][1]*rad});
       if(!s) continue;
       pts.push(s);
-      depth+=s.depth;
     }
     if(pts.length<4) throw Error('water');
     ctx.beginPath();
@@ -507,9 +520,34 @@ function draw(){
     for(let i=1;i<pts.length;i++) ctx.lineTo(pts[i].x, pts[i].y);
     ctx.closePath();
     ctx.fillStyle=WATERCOL;
-    ctx.globalAlpha=0.42;
+    ctx.globalAlpha=0.72;
     ctx.fill();
+    ctx.strokeStyle=INK;
+    ctx.globalAlpha=0.7;
+    ctx.lineWidth=Math.max(2, canvas.height*0.004);
+    ctx.stroke();
+    ctx.globalAlpha=0.35;
+    ctx.lineWidth=Math.max(1.5, canvas.height*0.0025);
+    for(let i=0;i<pts.length;i+=2){
+      const j=(i+5)%pts.length;
+      if(j===i) continue;
+      ctx.beginPath();
+      ctx.moveTo(pts[i].x, pts[i].y);
+      ctx.lineTo(pts[j].x, pts[j].y);
+      ctx.stroke();
+    }
     drewWater=1;
+  }
+  function cut(p, q){
+    const a=project(p), d=project(q);
+    if(!a||!d) return;
+    ctx.beginPath();
+    ctx.moveTo(a.x, a.y);
+    ctx.lineTo(d.x, d.y);
+    ctx.strokeStyle=INK;
+    ctx.globalAlpha=0.92;
+    ctx.lineWidth=Math.max(2.5, canvas.height*0.005);
+    ctx.stroke();
   }
   const sprites=[];
   const saw={};
@@ -517,16 +555,16 @@ function draw(){
     const s=project(p);
     if(!s) return;
     saw[name]=1;
-    sprites.push({depth:s.depth+(bias||0), x:s.x, y:s.y, r:Math.max(1.6, radius/s.depth*canvas.height*1.37), color:color, alpha:alpha});
+    sprites.push({depth:s.depth+(bias||0), x:s.x, y:s.y, r:Math.max(1.6, radius/s.depth*canvas.height*1.37), color:color, alpha:alpha, stroke:name!=='shadow', ribs:name==='diatom', rod:name==='bacteria', leaf:name==='chlorophyll', wx:p.x, wy:p.y, wz:p.z});
   }
   blob('shadow', {x:posX, y:sample(posX, posZ)+0.03, z:posZ}, 0.46, '#1a140c', 0.28, 0.25);
-  blob('electrolyte', {x:posX, y:py, z:posZ}, 0.78, '#c9e7ff', 0.34, 0.2);
-  blob('amoeba', {x:posX, y:py+0.02, z:posZ}, 0.5, '#f3c6a2', 0.4, 0.12);
-  blob('diatom', {x:posX, y:py+0.04, z:posZ}, 0.36, '#d7f36a', 0.55, 0.15);
+  blob('electrolyte', {x:posX, y:py, z:posZ}, 0.78, '#c9e7ff', 0.55, 0.2);
+  blob('amoeba', {x:posX, y:py+0.02, z:posZ}, 0.5, '#f3c6a2', 0.72, 0.12);
+  blob('diatom', {x:posX, y:py+0.04, z:posZ}, 0.36, '#d7f36a', 0.9, 0.15);
   const right={x:-hv.z, y:0, z:hv.x};
-  blob('bacteria', {x:posX-hv.x*0.28+right.x*0.24, y:py-0.04, z:posZ-hv.z*0.28+right.z*0.24}, 0.07, '#e7d27a', 0.95, 0.02);
-  blob('chlorophyll', {x:posX+right.x*0.16, y:py+0.2, z:posZ+right.z*0.16}, 0.08, '#3f9a45', 0.95, 0.02);
-  blob('bear', bear, 0.2, '#f0c0a0', 0.96, 0);
+  blob('bacteria', {x:posX-hv.x*0.28+right.x*0.24, y:py-0.04, z:posZ-hv.z*0.28+right.z*0.24}, 0.07, '#e7d27a', 1, 0.02);
+  blob('chlorophyll', {x:posX+right.x*0.16, y:py+0.2, z:posZ+right.z*0.16}, 0.08, '#3f9a45', 1, 0.02);
+  blob('bear', bear, 0.2, '#f0c0a0', 1, 0);
   blob('mito', {x:posX, y:py+0.06, z:posZ}, 0.055, '#ff7a3a', 1, -0.02);
   blob('head', {x:posX+hv.x*0.16, y:py+0.08, z:posZ+hv.z*0.16}, 0.09, '#e7b394', 1, -0.03);
   const nose={x:posX+hv.x*0.55, y:sample(posX+hv.x*0.55, posZ+hv.z*0.55)+0.08, z:posZ+hv.z*0.55};
@@ -534,19 +572,20 @@ function draw(){
   const noseS=project(nose);
   for(let i=0;i<kept.length;i++){
     const k=kept[i];
-    blob('mark', {x:k.x, y:sample(k.x, k.z)+0.05, z:k.z}, 0.07, HIGH, 0.9, 0.04);
+    blob('mark', {x:k.x, y:sample(k.x, k.z)+0.05, z:k.z}, 0.07, HIGH, 1, 0.04);
   }
   for(let i=0;i<covers.length;i++){
     const c=covers[i];
-    if(MARK==='stone') blob('cover', {x:c.x, y:c.y+0.08, z:c.z}, 0.1, INK, 0.9, 0);
+    const base={x:c.x, y:c.y, z:c.z};
+    if(MARK==='stone') blob('cover', {x:c.x, y:c.y+0.08, z:c.z}, 0.12, INK, 1, 0);
     else if(MARK==='tree'){
-      blob('cover', {x:c.x, y:c.y+0.16, z:c.z}, 0.04, INK, 0.9, 0);
-      blob('cover', {x:c.x, y:c.y+0.4, z:c.z}, 0.14, HIGH, 0.9, -0.02);
-    }else if(MARK==='post') blob('cover', {x:c.x, y:c.y+0.24, z:c.z}, 0.045, INK, 0.95, 0);
-    else blob('cover', {x:c.x, y:c.y+0.28, z:c.z}, 0.035, HIGH, 0.95, 0);
+      cut(base, {x:c.x, y:c.y+0.28, z:c.z});
+      blob('cover', {x:c.x, y:c.y+0.46, z:c.z}, 0.16, HIGH, 1, -0.02);
+    }else if(MARK==='post') cut(base, {x:c.x, y:c.y+0.5, z:c.z});
+    else cut(base, {x:c.x, y:c.y+0.62, z:c.z});
   }
   const cap={x:BEACON[0], y:sample(BEACON[0], BEACON[1])+0.92, z:BEACON[1]};
-  blob('beacon', {x:BEACON[0], y:sample(BEACON[0], BEACON[1])+0.43, z:BEACON[1]}, 0.05, HIGH, 1, 0);
+  cut({x:BEACON[0], y:sample(BEACON[0], BEACON[1]), z:BEACON[1]}, cap);
   blob('beacon', cap, 0.12, '#fff6d8', 1, -0.02);
   const need=['electrolyte','amoeba','diatom','chlorophyll','bacteria','bear','mito','snout'];
   if(!draws){
@@ -556,19 +595,78 @@ function draw(){
   sprites.sort(function(a,c){ return c.depth-a.depth; });
   for(let i=0;i<sprites.length;i++){
     const s=sprites[i];
+    if(s.leaf){
+      const tip=project({x:s.wx, y:s.wy+0.18, z:s.wz});
+      const lft=project({x:s.wx+right.x*0.1, y:s.wy-0.02, z:s.wz+right.z*0.1});
+      const rgt=project({x:s.wx-right.x*0.1, y:s.wy-0.02, z:s.wz-right.z*0.1});
+      if(tip&&lft&&rgt){
+        ctx.beginPath();
+        ctx.moveTo(tip.x, tip.y);
+        ctx.lineTo(lft.x, lft.y);
+        ctx.lineTo(rgt.x, rgt.y);
+        ctx.closePath();
+        ctx.fillStyle='#3f9a45';
+        ctx.globalAlpha=1;
+        ctx.fill();
+        ctx.strokeStyle=INK;
+        ctx.globalAlpha=0.9;
+        ctx.lineWidth=Math.max(2, s.r*0.16);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(tip.x, tip.y);
+        ctx.lineTo((lft.x+rgt.x)/2, (lft.y+rgt.y)/2);
+        ctx.stroke();
+      }
+      continue;
+    }
     ctx.beginPath();
     ctx.fillStyle=s.color;
     ctx.globalAlpha=s.alpha;
     ctx.arc(s.x, s.y, s.r, 0, 6.283185307179586);
     ctx.fill();
+    if(s.stroke){
+      ctx.strokeStyle=INK;
+      ctx.globalAlpha=0.9;
+      ctx.lineWidth=Math.max(2, s.r*0.1);
+      ctx.stroke();
+    }
+    if(s.ribs){
+      ctx.beginPath();
+      ctx.strokeStyle=INK;
+      ctx.globalAlpha=0.8;
+      ctx.lineWidth=Math.max(1.5, s.r*0.05);
+      for(let k=-2;k<=2;k++){
+        const yy=s.y+k*s.r*0.22;
+        const half=s.r*0.7;
+        ctx.moveTo(s.x-half, yy);
+        ctx.lineTo(s.x+half, yy);
+      }
+      ctx.stroke();
+    }
+    if(s.rod){
+      const a=project({x:s.wx-hv.x*0.16, y:s.wy, z:s.wz-hv.z*0.16});
+      const d=project({x:s.wx+hv.x*0.16, y:s.wy, z:s.wz+hv.z*0.16});
+      if(a&&d){
+        ctx.beginPath();
+        ctx.moveTo(a.x, a.y);
+        ctx.lineTo(d.x, d.y);
+        ctx.strokeStyle=INK;
+        ctx.globalAlpha=1;
+        ctx.lineWidth=Math.max(7, s.r*2.2);
+        ctx.stroke();
+        ctx.strokeStyle='#e7d27a';
+        ctx.lineWidth=Math.max(4, s.r*1.3);
+        ctx.stroke();
+      }
+    }
   }
   if(noseS&&bearS){
     ctx.beginPath();
     ctx.moveTo(bearS.x, bearS.y);
     ctx.lineTo(noseS.x, noseS.y);
     ctx.strokeStyle=INK;
-    ctx.globalAlpha=0.85;
-    ctx.lineWidth=Math.max(2, canvas.height*0.004);
+    ctx.globalAlpha=0.95;
+    ctx.lineWidth=Math.max(3, canvas.height*0.005);
     ctx.stroke();
   }
   draws++;
