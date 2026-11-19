@@ -1,0 +1,1 @@
+{"slug": "switch-acb", "seal": "b4498a28e67beec4b57b0f5e1f3b5785f93d85c2165cd7df191c4ebf6084daaa", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

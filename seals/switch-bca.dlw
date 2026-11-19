@@ -1,0 +1,1 @@
+{"slug": "switch-bca", "seal": "18fe29d639c60aedc2deb969f82f23fe87a49a90ce30bfa7657a5388e01549bb", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "switch-bac", "seal": "8f2daef5b41b7b1b806b6f0b03063b5db3d103b1ae2f0cfd5f7aca5fb18597ac", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -212,6 +212,15 @@ One hundred classics from Project Gutenberg. Each page has its own layout and ge
 - [Yvain](./spheres/classics/yvain.html): Four Arthurian Romances. the fountain wood. Nested three bodies. Set point 99. LIT. seal b7f8d5b5714021f710965d5695d361d908c7048e08ad77f86034b6ea4d55c779
 - [Anthony Cade](./spheres/classics/anthony-cade.html): The Secret of Chimneys. the chimneys drive. Nested three bodies. Set point 100. LIT. seal 15e4867106191e0b70e41f6a9d194dc26685729c43bbed22ca32722922511014
 
+## Switch
+Six switch spheres. Three lamps, A amber, B green, and C violet, go dark in a different order on each page. The orders are ABC, BCA, CAB, BAC, ACB, and CBA. A lamp that goes dark alone is dropped. A switch is kept only when the shared gap shrinks. The seven bodies stay. The pixel ratio follows the screen and stays at most 2. The camera sits low. Not a hallway seat.
+- [The ABC Switch](./spheres/switch/switch-abc.html): the abc switch. Order ABC. Clear. Seven bodies. Set point 1. LIT. seal 8bae294d84de6ecd2cb67ddd50d4a01b9e2bdb697c763526d2da1b256e40f4e5
+- [The BCA Switch](./spheres/switch/switch-bca.html): the bca switch. Order BCA. Clear. Seven bodies. Set point 2. LIT. seal 18fe29d639c60aedc2deb969f82f23fe87a49a90ce30bfa7657a5388e01549bb
+- [The CAB Switch](./spheres/switch/switch-cab.html): the cab switch. Order CAB. Clear. Seven bodies. Set point 3. LIT. seal 65935ce2ff654f188d1920cb1d262317c78ad3c2e68e633f3c8b82392b6ee4df
+- [The BAC Switch](./spheres/switch/switch-bac.html): the bac switch. Order BAC. Clear. Seven bodies. Set point 4. LIT. seal 8f2daef5b41b7b1b806b6f0b03063b5db3d103b1ae2f0cfd5f7aca5fb18597ac
+- [The ACB Switch](./spheres/switch/switch-acb.html): the acb switch. Order ACB. Clear. Seven bodies. Set point 5. LIT. seal b4498a28e67beec4b57b0f5e1f3b5785f93d85c2165cd7df191c4ebf6084daaa
+- [The CBA Switch](./spheres/switch/switch-cba.html): the cba switch. Order CBA. Clear. Seven bodies. Set point 6. LIT. seal dad3e6d9ae002fc1dae6678c4aa27d21bd7e44cad4ad339803ffce9e099b45b4
+
 ## Cast
 Ninety-two cast spheres. Each page has its own layout and generates its own landscape. The pixel ratio follows the screen and stays at most 2. The camera sits low, close to the cast. A contact shadow sits under the cast. Each sphere advances its own biome along its own course. A shorter cover is dropped. A cover is kept only when the gap shrinks. A worse height is dropped. A height is kept only when the gap shrinks. ELECTROLYTE holds AMOEBA. AMOEBA holds DIATOM and BACTERIA. DIATOM holds WATER BEAR and CHLOROPHYLL. WATER BEAR holds MITOCHONDRION. They are homeostatic, cooperative, and evolutionary. A selfish step is dropped. A step away from the set point is dropped. A worse mutant is dropped. A step is kept only when the shared gap shrinks. Seventeen steps bring the seven bodies home. Not a hallway seat.
 - [The Glass Pond](./spheres/cast/glass-pond.html): the glass pond. Course the glass pond east lane. Clear. Seven bodies. Set point 1. LIT. seal ba8189237f466a5eb1cb22d9a98ece8e0d062eaa1c7f2b21f6c675802efe95af

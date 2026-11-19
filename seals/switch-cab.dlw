@@ -1,0 +1,1 @@
+{"slug": "switch-cab", "seal": "65935ce2ff654f188d1920cb1d262317c78ad3c2e68e633f3c8b82392b6ee4df", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
