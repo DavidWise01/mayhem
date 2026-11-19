@@ -1,0 +1,1 @@
+{"slug": "civ-paper-cut", "seal": "8777f4a7d51fb218a29159c48e78201e2e19dcdb0fc07916e5099a14d9ef62e7", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

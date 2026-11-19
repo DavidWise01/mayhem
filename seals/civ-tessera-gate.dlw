@@ -1,0 +1,1 @@
+{"slug": "civ-tessera-gate", "seal": "b72700cbaa10419c75bf1dcaf43f5123d9882fdef6cec668bb63b6121f3ed96b", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "civ-lamp-fold", "seal": "ce7ef71c0422cd385d48deea4b3166b3a6b8e9c0afec05aba72e88d9017c62eb", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

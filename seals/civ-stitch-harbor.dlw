@@ -1,0 +1,1 @@
+{"slug": "civ-stitch-harbor", "seal": "938af949f807109689a6babd5de2e0f80fb006aefe52b39acddc02985896dba3", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

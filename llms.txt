@@ -212,6 +212,18 @@ One hundred classics from Project Gutenberg. Each page has its own layout and ge
 - [Yvain](./spheres/classics/yvain.html): Four Arthurian Romances. the fountain wood. Nested three bodies. Set point 99. LIT. seal b7f8d5b5714021f710965d5695d361d908c7048e08ad77f86034b6ea4d55c779
 - [Anthony Cade](./spheres/classics/anthony-cade.html): The Secret of Chimneys. the chimneys drive. Nested three bodies. Set point 100. LIT. seal 15e4867106191e0b70e41f6a9d194dc26685729c43bbed22ca32722922511014
 
+## Civ
+Ten civ spheres. Each water bear has a name. The diatom holds the bear and keeps a work only when the gap to the hall shrinks. Arrow keys, WASD, or a click on the ground. A step away from the hall is not kept. A step is kept only when the gap shrinks. WORKS=17 counts the seventeen halvings. The picture's buildings are the closer steps. Each picture is its own canvas style. The seven bodies stay. The pixel ratio follows the screen and stays at most 2. The camera sits low behind the bear. Not a hallway seat.
+- [The Button Yard](./spheres/civ/civ-button-yard.html): the button yard. Civ. Nim. Quilt. Set point 1. LIT. seal 2a836feb2e4c6be5a9c3335c1fc5bf2f04d0092fb060effaa3038f63ff0f694e
+- [The Lamp Fold](./spheres/civ/civ-lamp-fold.html): the lamp fold. Civ. Lumen. Stained glass. Set point 2. LIT. seal ce7ef71c0422cd385d48deea4b3166b3a6b8e9c0afec05aba72e88d9017c62eb
+- [The Margin Road](./spheres/civ/civ-margin-road.html): the margin road. Civ. Carta. Map. Set point 3. LIT. seal e4d0f604a3c5947213b6999946db2c4d1bc5af7e3e897aa8390f5e7839b42811
+- [The Tessera Gate](./spheres/civ/civ-tessera-gate.html): the tessera gate. Civ. Pebble. Mosaic. Set point 4. LIT. seal b72700cbaa10419c75bf1dcaf43f5123d9882fdef6cec668bb63b6121f3ed96b
+- [The Wash Stair](./spheres/civ/civ-wash-stair.html): the wash stair. Civ. Silt. Ink wash. Set point 5. LIT. seal bbf9ad4cdd6cdca7cb26a9f7c73c7c2d02b022aa70be4ec984cd90415d4c397a
+- [The Paper Cut](./spheres/civ/civ-paper-cut.html): the paper cut. Civ. Bract. Paper cut. Set point 6. LIT. seal 8777f4a7d51fb218a29159c48e78201e2e19dcdb0fc07916e5099a14d9ef62e7
+- [The Poster Pier](./spheres/civ/civ-poster-pier.html): the poster pier. Civ. Wick. Poster. Set point 7. LIT. seal 4aca51cca336a98362db77e98e1f0339aa6af7d92b21f10f34d200e2ed088295
+- [The Speck Market](./spheres/civ/civ-speck-market.html): the speck market. Civ. Dot. Stipple. Set point 8. LIT. seal d80e3bd87d760b154abcf90634df985b978c947b14ace6f3d2831b99b445eb32
+- [The Stitch Harbor](./spheres/civ/civ-stitch-harbor.html): the stitch harbor. Civ. Loom. Embroidery. Set point 9. LIT. seal 938af949f807109689a6babd5de2e0f80fb006aefe52b39acddc02985896dba3
+- [The Plan Kiln](./spheres/civ/civ-plan-kiln.html): the plan kiln. Civ. Kiln. Blueprint. Set point 10. LIT. seal 23f08d454074948ed8db21c44df01ba12660b3b5420d32b2adf73527ca24aa99
 ## Wade
 Ten wade spheres. You wade the land with the water bear. The diatom holds the bear and keeps a mark only when the gap to the beacon shrinks. Arrow keys, WASD, or a click on the ground. A step away from the beacon is not kept. A step is kept only when the gap shrinks. The seven bodies stay. The pixel ratio follows the screen and stays at most 2. The picture is a woodcut on canvas. The camera sits low behind the bear. Not a hallway seat.
 - [The Reed Wade](./spheres/wade/wade-reed.html): the reed wade. Wade. Clear. Water bear and diatom. Set point 1. LIT. seal 19a7f6917d278f43ea7638d52cde608469614442a690a5ca931d57ccd1c6cc9b

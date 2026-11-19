@@ -1,0 +1,1 @@
+{"slug": "civ-poster-pier", "seal": "4aca51cca336a98362db77e98e1f0339aa6af7d92b21f10f34d200e2ed088295", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

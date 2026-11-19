@@ -1,0 +1,1 @@
+{"slug": "civ-wash-stair", "seal": "bbf9ad4cdd6cdca7cb26a9f7c73c7c2d02b022aa70be4ec984cd90415d4c397a", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

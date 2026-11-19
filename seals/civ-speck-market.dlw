@@ -1,0 +1,1 @@
+{"slug": "civ-speck-market", "seal": "d80e3bd87d760b154abcf90634df985b978c947b14ace6f3d2831b99b445eb32", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

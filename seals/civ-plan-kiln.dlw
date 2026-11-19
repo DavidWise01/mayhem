@@ -1,0 +1,1 @@
+{"slug": "civ-plan-kiln", "seal": "23f08d454074948ed8db21c44df01ba12660b3b5420d32b2adf73527ca24aa99", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
