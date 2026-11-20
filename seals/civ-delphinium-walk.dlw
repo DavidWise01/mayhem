@@ -1,0 +1,1 @@
+{"slug": "civ-delphinium-walk", "seal": "72bf4f36abe81b8eaaf325545cbfc38ef5ae8a81287a46509ae08f464a730627", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

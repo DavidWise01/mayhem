@@ -1,0 +1,1 @@
+{"slug": "civ-feverfew-lane", "seal": "91cb05196ab5b89c8ba1479f7c174f747f3b35b6c62ef3f63e27d7b9c1be7f08", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

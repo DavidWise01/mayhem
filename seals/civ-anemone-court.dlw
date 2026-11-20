@@ -1,0 +1,1 @@
+{"slug": "civ-anemone-court", "seal": "5d93e2c7a6a9acd104b27bd689a668f0c6181649a15b4e07f5a1f0cd1a0eb693", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "civ-clematis-walk", "seal": "c3e2f1b75045475ca2bba63a36d57f0e8b1b458d98720a0410b5b1cb773803bf", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

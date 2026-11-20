@@ -1,0 +1,1 @@
+{"slug": "civ-bayberry-hall", "seal": "96c4d5cbdfac7ef40308439a4e3cd771fa302d5b22d85c0d9c7df79b33f05e44", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

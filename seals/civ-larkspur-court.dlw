@@ -1,0 +1,1 @@
+{"slug": "civ-larkspur-court", "seal": "ff9b883d672e6ea2b0350e2b7acd2215291ceec444c9eeceee9b392bc88b974a", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

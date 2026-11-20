@@ -1,0 +1,1 @@
+{"slug": "civ-cattail-gate", "seal": "5f663e3851da01b4be4fdeac953b72f05163f190032cffa8942a8bc684ab5aec", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

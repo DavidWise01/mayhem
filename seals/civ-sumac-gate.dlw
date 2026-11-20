@@ -1,0 +1,1 @@
+{"slug": "civ-sumac-gate", "seal": "4d74393609a2ee509a8928436534cb9debd2f8a18cab27aefe6abb939fef77c1", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

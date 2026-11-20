@@ -1,0 +1,1 @@
+{"slug": "civ-hyssop-court", "seal": "564af122f128099dbfe667383f848990ac1e378eb19fe8e295992a7d83d17249", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

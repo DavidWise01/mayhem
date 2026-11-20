@@ -1,0 +1,1 @@
+{"slug": "civ-cinquefoil-gate", "seal": "061672a06c0aca30afbc966821c05fb71056a2c87d3cefa5e162e985b0e8c3bc", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

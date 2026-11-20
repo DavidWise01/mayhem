@@ -1,0 +1,1 @@
+{"slug": "civ-plantain-walk", "seal": "63d7252e32282c202d23edc084e9529e6455ca789e7518a5dcccb003832a4179", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

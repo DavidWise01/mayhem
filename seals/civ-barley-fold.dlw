@@ -1,0 +1,1 @@
+{"slug": "civ-barley-fold", "seal": "974bc5f2c261e1155bc0d0f54514fb527b8031df96d6051e02ce96a91bdd3e2d", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

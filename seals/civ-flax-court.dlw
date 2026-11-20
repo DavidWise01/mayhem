@@ -1,0 +1,1 @@
+{"slug": "civ-flax-court", "seal": "7aee78b75cb1a6bca9c2c7b3f9af866857ea5680b38961bc61289ccde79d9c37", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

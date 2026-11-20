@@ -1,0 +1,1 @@
+{"slug": "civ-bryony-walk", "seal": "b362a7104f85f3ee4f167d9fdff4895463e7ddcb535a745cf9faa704ebad1a36", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

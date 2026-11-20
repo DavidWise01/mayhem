@@ -1,0 +1,1 @@
+{"slug": "civ-sedge-court", "seal": "45d06b4f74e03919e9611bc4e9e6c2d6c4cfed89cdb3889b96634e2b54f361b2", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

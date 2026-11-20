@@ -1,0 +1,1 @@
+{"slug": "civ-spindle-lane", "seal": "1e15f80fd130d268160213c56c44fa06e8e9d1246f60c87ac3f815dc9fc47a9c", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

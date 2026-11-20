@@ -1,0 +1,1 @@
+{"slug": "civ-daylily-gate", "seal": "2cd221224fd4797bb40ec63af6d3da3cd4dffd8b600a9b5ad8a5364eff982c27", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

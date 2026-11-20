@@ -1,0 +1,1 @@
+{"slug": "civ-borage-gate", "seal": "32debeba50d581b3f77794e193b12a0cf08ee3b4412e1513fb53622fbdbd2278", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

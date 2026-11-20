@@ -1,0 +1,1 @@
+{"slug": "civ-goldenrod-gate", "seal": "0bbf4a0eeec13787a795a23c41113b2a60dc8b496eb04de198070773b22a395c", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

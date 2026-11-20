@@ -1,0 +1,1 @@
+{"slug": "civ-bergamot-lane", "seal": "a47c383bf38dc14940b9f3831bf57b08c2d648c46280f37443c718223118bd02", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

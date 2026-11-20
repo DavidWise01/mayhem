@@ -1,0 +1,1 @@
+{"slug": "civ-cowslip-row", "seal": "70c12f4b5ea1de175d0c524624bee812810b3d8db87a38ddf8d360d240dff777", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

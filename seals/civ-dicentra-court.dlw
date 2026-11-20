@@ -1,0 +1,1 @@
+{"slug": "civ-dicentra-court", "seal": "19695a336da81cc1d681d7a9a12366e40f252374152e2e351f1e012275285930", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

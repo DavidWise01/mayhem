@@ -1,0 +1,1 @@
+{"slug": "civ-wisteria-fold", "seal": "98ecd06138e82dae0ba188a1b603d88c68a58763e46623460e1ebc6b549a497e", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

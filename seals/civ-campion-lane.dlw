@@ -1,0 +1,1 @@
+{"slug": "civ-campion-lane", "seal": "653de19a77ef0ab164d191e6d872969c0b13b4373ab2d0ebc56c66c702516f86", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "civ-celandine-lane", "seal": "be3b715834a7a6f19d0b344b57f913cd4732f4a4609db134a87e70a8f26e957a", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

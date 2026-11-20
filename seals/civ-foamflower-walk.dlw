@@ -1,0 +1,1 @@
+{"slug": "civ-foamflower-walk", "seal": "c1ede041e25954847a51ea053dd8a9c9d653e9dc1bb1f929cc99d7e666889960", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

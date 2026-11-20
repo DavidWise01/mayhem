@@ -1,0 +1,1 @@
+{"slug": "civ-gaura-court", "seal": "52ca5909eed5302bc49b93ea718d1b41b2100d2a734010698fc3e413ca71e71d", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

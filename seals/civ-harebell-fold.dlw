@@ -1,0 +1,1 @@
+{"slug": "civ-harebell-fold", "seal": "c11bce8416623c39922c3f60696a244e02c093fcdb09c91044bdcf3e98bb14b5", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

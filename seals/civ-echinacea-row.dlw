@@ -1,0 +1,1 @@
+{"slug": "civ-echinacea-row", "seal": "a1a0670b1e525cc7ca970d3716dfd61d87e03108da0f7ea698ce7a0ab45e9291", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

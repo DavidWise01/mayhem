@@ -1,0 +1,1 @@
+{"slug": "civ-candytuft-row", "seal": "8ca3338734fc54140c2b4eba42b22b8662cf13f9124aaddcc5dd4e50b845e784", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

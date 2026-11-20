@@ -1,0 +1,1 @@
+{"slug": "civ-figwort-gate", "seal": "f5f3545bb81d6bc2d0d8e3af4d1760acd5062f6a89eca2fbf305b2ea1de424b6", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

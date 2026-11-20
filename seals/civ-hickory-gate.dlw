@@ -1,0 +1,1 @@
+{"slug": "civ-hickory-gate", "seal": "92de606d554eac3771c62ccedde2f9499595203c466809cb6c1e416b0b3c25e1", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

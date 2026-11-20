@@ -1,0 +1,1 @@
+{"slug": "civ-sweetgale-walk", "seal": "3fa3b6cf697f21b99ae27edb19e96e56bcdc760be266e1e0e7af1ba6612eea21", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

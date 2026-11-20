@@ -1,0 +1,1 @@
+{"slug": "civ-pimpernel-gate", "seal": "f82b72faf660ab0c7b003d7947035a70d35fbe54f763221d1a8c7189d6a61c89", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

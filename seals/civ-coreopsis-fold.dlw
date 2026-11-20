@@ -1,0 +1,1 @@
+{"slug": "civ-coreopsis-fold", "seal": "156b8d33174ac2f03849b1ff588442d1fc7f8cb753e12297bd2b1e738b16f4c0", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

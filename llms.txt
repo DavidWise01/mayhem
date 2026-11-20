@@ -213,7 +213,7 @@ One hundred classics from Project Gutenberg. Each page has its own layout and ge
 - [Anthony Cade](./spheres/classics/anthony-cade.html): The Secret of Chimneys. the chimneys drive. Nested three bodies. Set point 100. LIT. seal 15e4867106191e0b70e41f6a9d194dc26685729c43bbed22ca32722922511014
 
 ## Civ
-One hundred ten civ spheres. Each water bear has a name. The diatom holds the bear and keeps a work only when the gap to the hall shrinks. Arrow keys, WASD, or a click on the ground. A step away from the hall is not kept. A step is kept only when the gap shrinks. WORKS=17 counts the seventeen halvings. The picture's buildings are the closer steps. Each picture is its own canvas style. The seven bodies stay. The pixel ratio follows the screen and stays at most 2. The camera sits low behind the bear. Not a hallway seat.
+One hundred sixty civ spheres. Each water bear has a name. The diatom holds the bear and keeps a work only when the gap to the hall shrinks. Arrow keys, WASD, or a click on the ground. A step away from the hall is not kept. A step is kept only when the gap shrinks. WORKS=17 counts the seventeen halvings. The picture's buildings are the closer steps. The first one hundred ten pictures are each their own canvas style. The next fifty change canvas style every other sphere. Set points 111 through 160 take eighteen steps to bring the seven bodies home. The seven bodies stay. The pixel ratio follows the screen and stays at most 2. The camera sits low behind the bear. Not a hallway seat.
 - [The Button Yard](./spheres/civ/civ-button-yard.html): the button yard. Civ. Nim. Quilt. Set point 1. LIT. seal 2a836feb2e4c6be5a9c3335c1fc5bf2f04d0092fb060effaa3038f63ff0f694e
 - [The Lamp Fold](./spheres/civ/civ-lamp-fold.html): the lamp fold. Civ. Lumen. Stained glass. Set point 2. LIT. seal ce7ef71c0422cd385d48deea4b3166b3a6b8e9c0afec05aba72e88d9017c62eb
 - [The Margin Road](./spheres/civ/civ-margin-road.html): the margin road. Civ. Carta. Map. Set point 3. LIT. seal e4d0f604a3c5947213b6999946db2c4d1bc5af7e3e897aa8390f5e7839b42811
@@ -324,6 +324,56 @@ One hundred ten civ spheres. Each water bear has a name. The diatom holds the be
 - [The Snowdrop Walk](./spheres/civ/civ-snowdrop-walk.html): the snowdrop walk. Civ. Magnolia. Rep weave. Set point 108. LIT. seal 43a2df97a6f2fe5f3ad919f805aa8b5f4f6cd97629fe1773fac38ec50d3a60e3
 - [The Tamarisk Court](./spheres/civ/civ-tamarisk-court.html): the tamarisk court. Civ. Camellia. Checker field. Set point 109. LIT. seal 7840956e73bd487eb981de32429917a7037fbba448bb28d54de1efa5bdaeef26
 - [The Bellflower Walk](./spheres/civ/civ-bellflower-walk.html): the bellflower walk. Civ. Snowdrop. Scumble. Set point 110. LIT. seal 1b53ec219e77ec56e059cb8b6259cc408a8a0fe2c2d4f403fcf4e4fae882f6fc
+- [The Anemone Court](./spheres/civ/civ-anemone-court.html): the anemone court. Civ. Aspen. Impasto. Set point 111. LIT. seal 5d93e2c7a6a9acd104b27bd689a668f0c6181649a15b4e07f5a1f0cd1a0eb693
+- [The Barley Fold](./spheres/civ/civ-barley-fold.html): the barley fold. Civ. Bay. Impasto. Set point 112. LIT. seal 974bc5f2c261e1155bc0d0f54514fb527b8031df96d6051e02ce96a91bdd3e2d
+- [The Bayberry Hall](./spheres/civ/civ-bayberry-hall.html): the bayberry hall. Civ. Borage. Chiaroscuro. Set point 113. LIT. seal 96c4d5cbdfac7ef40308439a4e3cd771fa302d5b22d85c0d9c7df79b33f05e44
+- [The Campion Lane](./spheres/civ/civ-campion-lane.html): the campion lane. Civ. Calyx. Chiaroscuro. Set point 114. LIT. seal 653de19a77ef0ab164d191e6d872969c0b13b4373ab2d0ebc56c66c702516f86
+- [The Cattail Gate](./spheres/civ/civ-cattail-gate.html): the cattail gate. Civ. Caraway. Sanguine. Set point 115. LIT. seal 5f663e3851da01b4be4fdeac953b72f05163f190032cffa8942a8bc684ab5aec
+- [The Chicory Walk](./spheres/civ/civ-chicory-walk.html): the chicory walk. Civ. Cassia. Sanguine. Set point 116. LIT. seal bb91c3425d20642d199233547ce07abf685aaea61e6d7e5f85a9bf75b172a328
+- [The Columbine Court](./spheres/civ/civ-columbine-court.html): the columbine court. Civ. Cress. Millefiori. Set point 117. LIT. seal c32c19b83a7177cf6de5a6db408ce7a40b7884e2bb39007bd5b7e6dfd5648eac
+- [The Cowslip Row](./spheres/civ/civ-cowslip-row.html): the cowslip row. Civ. Clove. Millefiori. Set point 118. LIT. seal 70c12f4b5ea1de175d0c524624bee812810b3d8db87a38ddf8d360d240dff777
+- [The Cypress Stair](./spheres/civ/civ-cypress-stair.html): the cypress stair. Civ. Columbine. Terrazzo. Set point 119. LIT. seal 58aa68d4ee47df6f1b4671671e2444cfaf4792234c9bd9304be923c82fcad38d
+- [The Flax Court](./spheres/civ/civ-flax-court.html): the flax court. Civ. Filbert. Terrazzo. Set point 120. LIT. seal 7aee78b75cb1a6bca9c2c7b3f9af866857ea5680b38961bc61289ccde79d9c37
+- [The Harebell Fold](./spheres/civ/civ-harebell-fold.html): the harebell fold. Civ. Cypress. Bargello. Set point 121. LIT. seal c11bce8416623c39922c3f60696a244e02c093fcdb09c91044bdcf3e98bb14b5
+- [The Hickory Gate](./spheres/civ/civ-hickory-gate.html): the hickory gate. Civ. Dill. Bargello. Set point 122. LIT. seal 92de606d554eac3771c62ccedde2f9499595203c466809cb6c1e416b0b3c25e1
+- [The Larch Walk](./spheres/civ/civ-larch-walk.html): the larch walk. Civ. Fennel. Collagraph. Set point 123. LIT. seal 4d26018b0f0c9d5c463952fdd06778dfb07f82511da9276a45e8946df83d62a1
+- [The Larkspur Court](./spheres/civ/civ-larkspur-court.html): the larkspur court. Civ. Flax. Collagraph. Set point 124. LIT. seal ff9b883d672e6ea2b0350e2b7acd2215291ceec444c9eeceee9b392bc88b974a
+- [The Meadowsweet Lane](./spheres/civ/civ-meadowsweet-lane.html): the meadowsweet lane. Civ. Harebell. Kirigami. Set point 125. LIT. seal 2a15447ae10e60eb6c1cb11105df97cf3c196e9cd1aa7c351d35854c75f7e8f8
+- [The Mullein Stair](./spheres/civ/civ-mullein-stair.html): the mullein stair. Civ. Hickory. Kirigami. Set point 126. LIT. seal 5a9fbd45640c20fb7e3cfcee20b5a445ef76dbee6d6e5e58e455c312e7cbfe64
+- [The Osier Fold](./spheres/civ/civ-osier-fold.html): the osier fold. Civ. Larch. Damask. Set point 127. LIT. seal a474aa90b3fb949500b632622a243657b275d071d8573bda53fc9e2b0d1354f4
+- [The Pimpernel Gate](./spheres/civ/civ-pimpernel-gate.html): the pimpernel gate. Civ. Larkspur. Damask. Set point 128. LIT. seal f82b72faf660ab0c7b003d7947035a70d35fbe54f763221d1a8c7189d6a61c89
+- [The Plantain Walk](./spheres/civ/civ-plantain-walk.html): the plantain walk. Civ. Linden. Batik. Set point 129. LIT. seal 63d7252e32282c202d23edc084e9529e6455ca789e7518a5dcccb003832a4179
+- [The Sedge Court](./spheres/civ/civ-sedge-court.html): the sedge court. Civ. Locust. Batik. Set point 130. LIT. seal 45d06b4f74e03919e9611bc4e9e6c2d6c4cfed89cdb3889b96634e2b54f361b2
+- [The Spindle Lane](./spheres/civ/civ-spindle-lane.html): the spindle lane. Civ. Marjoram. Gingham. Set point 131. LIT. seal 1e15f80fd130d268160213c56c44fa06e8e9d1246f60c87ac3f815dc9fc47a9c
+- [The Sumac Gate](./spheres/civ/civ-sumac-gate.html): the sumac gate. Civ. Mullein. Gingham. Set point 132. LIT. seal 4d74393609a2ee509a8928436534cb9debd2f8a18cab27aefe6abb939fef77c1
+- [The Sweetgale Walk](./spheres/civ/civ-sweetgale-walk.html): the sweetgale walk. Civ. Myrtle. Casein. Set point 133. LIT. seal 3fa3b6cf697f21b99ae27edb19e96e56bcdc760be266e1e0e7af1ba6612eea21
+- [The Walnut Court](./spheres/civ/civ-walnut-court.html): the walnut court. Civ. Osier. Casein. Set point 134. LIT. seal c703b942f1805d5dd6af8173aa6a8acd0065722c1d7c19dff8a3eee6d8f65fee
+- [The Wisteria Fold](./spheres/civ/civ-wisteria-fold.html): the wisteria fold. Civ. Parsley. Nishiki-e. Set point 135. LIT. seal 98ecd06138e82dae0ba188a1b603d88c68a58763e46623460e1ebc6b549a497e
+- [The Alyssum Court](./spheres/civ/civ-alyssum-court.html): the alyssum court. Civ. Pimpernel. Nishiki-e. Set point 136. LIT. seal 9e6be63486680c741d5de38c24aa0f44144cf918f037f82456f8538993cb5342
+- [The Bergamot Lane](./spheres/civ/civ-bergamot-lane.html): the bergamot lane. Civ. Plantain. Toile. Set point 137. LIT. seal a47c383bf38dc14940b9f3831bf57b08c2d648c46280f37443c718223118bd02
+- [The Borage Gate](./spheres/civ/civ-borage-gate.html): the borage gate. Civ. Poppy. Toile. Set point 138. LIT. seal 32debeba50d581b3f77794e193b12a0cf08ee3b4412e1513fb53622fbdbd2278
+- [The Bryony Walk](./spheres/civ/civ-bryony-walk.html): the bryony walk. Civ. Rue. Scagliola. Set point 139. LIT. seal b362a7104f85f3ee4f167d9fdff4895463e7ddcb535a745cf9faa704ebad1a36
+- [The Burnet Court](./spheres/civ/civ-burnet-court.html): the burnet court. Civ. Sedge. Scagliola. Set point 140. LIT. seal 28ecd06d343a25d0d2d739b9a5158288a29a4b4e48d75dde260799ff41d57af3
+- [The Candytuft Row](./spheres/civ/civ-candytuft-row.html): the candytuft row. Civ. Sesame. Spatter. Set point 141. LIT. seal 8ca3338734fc54140c2b4eba42b22b8662cf13f9124aaddcc5dd4e50b845e784
+- [The Celandine Lane](./spheres/civ/civ-celandine-lane.html): the celandine lane. Civ. Spindle. Spatter. Set point 142. LIT. seal be3b715834a7a6f19d0b344b57f913cd4732f4a4609db134a87e70a8f26e957a
+- [The Cinquefoil Gate](./spheres/civ/civ-cinquefoil-gate.html): the cinquefoil gate. Civ. Sumac. Crewel. Set point 143. LIT. seal 061672a06c0aca30afbc966821c05fb71056a2c87d3cefa5e162e985b0e8c3bc
+- [The Clematis Walk](./spheres/civ/civ-clematis-walk.html): the clematis walk. Civ. Tarragon. Crewel. Set point 144. LIT. seal c3e2f1b75045475ca2bba63a36d57f0e8b1b458d98720a0410b5b1cb773803bf
+- [The Comfrey Court](./spheres/civ/civ-comfrey-court.html): the comfrey court. Civ. Thyme. Monoprint. Set point 145. LIT. seal 810e887c5e5d14e3dd314b60a15611c8a864378f25b5c24f01f8bc2e8018b9f7
+- [The Coreopsis Fold](./spheres/civ/civ-coreopsis-fold.html): the coreopsis fold. Civ. Walnut. Monoprint. Set point 146. LIT. seal 156b8d33174ac2f03849b1ff588442d1fc7f8cb753e12297bd2b1e738b16f4c0
+- [The Cosmos Court](./spheres/civ/civ-cosmos-court.html): the cosmos court. Civ. Wisteria. Pleat. Set point 147. LIT. seal 4328e35764ca94fbdb42a34573858e2cdb5a5a756ab31806ce9d526a4aa6e43b
+- [The Daylily Gate](./spheres/civ/civ-daylily-gate.html): the daylily gate. Civ. Alyssum. Pleat. Set point 148. LIT. seal 2cd221224fd4797bb40ec63af6d3da3cd4dffd8b600a9b5ad8a5364eff982c27
+- [The Delphinium Walk](./spheres/civ/civ-delphinium-walk.html): the delphinium walk. Civ. Bergamot. Tambour. Set point 149. LIT. seal 72bf4f36abe81b8eaaf325545cbfc38ef5ae8a81287a46509ae08f464a730627
+- [The Dicentra Court](./spheres/civ/civ-dicentra-court.html): the dicentra court. Civ. Bryony. Tambour. Set point 150. LIT. seal 19695a336da81cc1d681d7a9a12366e40f252374152e2e351f1e012275285930
+- [The Echinacea Row](./spheres/civ/civ-echinacea-row.html): the echinacea row. Civ. Burnet. Kente. Set point 151. LIT. seal a1a0670b1e525cc7ca970d3716dfd61d87e03108da0f7ea698ce7a0ab45e9291
+- [The Feverfew Lane](./spheres/civ/civ-feverfew-lane.html): the feverfew lane. Civ. Candytuft. Kente. Set point 152. LIT. seal 91cb05196ab5b89c8ba1479f7c174f747f3b35b6c62ef3f63e27d7b9c1be7f08
+- [The Figwort Gate](./spheres/civ/civ-figwort-gate.html): the figwort gate. Civ. Celandine. Houndstooth. Set point 153. LIT. seal f5f3545bb81d6bc2d0d8e3af4d1760acd5062f6a89eca2fbf305b2ea1de424b6
+- [The Foamflower Walk](./spheres/civ/civ-foamflower-walk.html): the foamflower walk. Civ. Clematis. Houndstooth. Set point 154. LIT. seal c1ede041e25954847a51ea053dd8a9c9d653e9dc1bb1f929cc99d7e666889960
+- [The Gaura Court](./spheres/civ/civ-gaura-court.html): the gaura court. Civ. Comfrey. Distemper. Set point 155. LIT. seal 52ca5909eed5302bc49b93ea718d1b41b2100d2a734010698fc3e413ca71e71d
+- [The Germander Lane](./spheres/civ/civ-germander-lane.html): the germander lane. Civ. Cosmos. Distemper. Set point 156. LIT. seal fa4957387253132ca508680cf23f68f1452a08e1735866b50e22f7f844219072
+- [The Goldenrod Gate](./spheres/civ/civ-goldenrod-gate.html): the goldenrod gate. Civ. Delphinium. Benizuri-e. Set point 157. LIT. seal 0bbf4a0eeec13787a795a23c41113b2a60dc8b496eb04de198070773b22a395c
+- [The Heliotrope Walk](./spheres/civ/civ-heliotrope-walk.html): the heliotrope walk. Civ. Dicentra. Benizuri-e. Set point 158. LIT. seal 7907acae284609fb946e80f9cda784fdd91dc740ec84aa327034d450f0cd20c6
+- [The Hyssop Court](./spheres/civ/civ-hyssop-court.html): the hyssop court. Civ. Gaura. Burin. Set point 159. LIT. seal 564af122f128099dbfe667383f848990ac1e378eb19fe8e295992a7d83d17249
+- [The Loosestrife Lane](./spheres/civ/civ-loosestrife-lane.html): the loosestrife lane. Civ. Germander. Burin. Set point 160. LIT. seal fb9e161efaa2f10b09a70b82e1bab805859d2cb4070508a42d6205d7f16fd135
 ## Wade
 Ten wade spheres. You wade the land with the water bear. The diatom holds the bear and keeps a mark only when the gap to the beacon shrinks. Arrow keys, WASD, or a click on the ground. A step away from the beacon is not kept. A step is kept only when the gap shrinks. The seven bodies stay. The pixel ratio follows the screen and stays at most 2. The picture is a woodcut on canvas. The camera sits low behind the bear. Not a hallway seat.
 - [The Reed Wade](./spheres/wade/wade-reed.html): the reed wade. Wade. Clear. Water bear and diatom. Set point 1. LIT. seal 19a7f6917d278f43ea7638d52cde608469614442a690a5ca931d57ccd1c6cc9b

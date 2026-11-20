@@ -1,0 +1,1 @@
+{"slug": "civ-larch-walk", "seal": "4d26018b0f0c9d5c463952fdd06778dfb07f82511da9276a45e8946df83d62a1", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

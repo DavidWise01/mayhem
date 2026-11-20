@@ -1,0 +1,1 @@
+{"slug": "civ-chicory-walk", "seal": "bb91c3425d20642d199233547ce07abf685aaea61e6d7e5f85a9bf75b172a328", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
