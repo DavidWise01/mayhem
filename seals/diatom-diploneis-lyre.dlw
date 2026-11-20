@@ -1,0 +1,1 @@
+{"slug":"diatom-diploneis-lyre","seal":"884e55d0d8b5b2a269aa91e8c663020df72389a9283bb14d3a865b898e5483ce","rule":"sha256(name|slug|blurb)","write":"if-missing"}

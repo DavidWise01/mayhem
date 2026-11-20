@@ -1,0 +1,1 @@
+{"slug":"diatom-stauroneis-cross","seal":"0e90552703600d8bcaedcf4f5649da975dcb5a5e376deee924d7851b883316ed","rule":"sha256(name|slug|blurb)","write":"if-missing"}

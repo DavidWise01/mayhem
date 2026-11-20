@@ -1,0 +1,1 @@
+{"slug":"diatom-cocconeis-shield","seal":"d7d21756fbb1acb2cb55d9965b5c39f40119c9eb1931c1efaab9b1b48fef4e1d","rule":"sha256(name|slug|blurb)","write":"if-missing"}

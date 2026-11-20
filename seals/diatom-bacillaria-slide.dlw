@@ -1,0 +1,1 @@
+{"slug":"diatom-bacillaria-slide","seal":"3ef072b144528a1c92914ff14d02328180477978a7210e395e15031349ffd836","rule":"sha256(name|slug|blurb)","write":"if-missing"}
