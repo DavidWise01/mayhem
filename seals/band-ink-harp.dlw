@@ -1,0 +1,1 @@
+{"slug":"band-ink-harp","seal":"920eac0049c0a9197f4952b45c4465bb797bbd9d195a9cf35d013d6d87e24606","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"band-ink-fiddle","seal":"d04b07bf0b97e51a339c39e7c8619937c27870640eec11702572a57fb3f85c23","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"band-poppy-bell","seal":"7ebd52fb21bc10d96dd95f798f79e1f3024d949e48c6ed3dda68912e26c7d336","rule":"sha256(name|slug|blurb)","write":"if-missing"}

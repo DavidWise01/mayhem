@@ -1,0 +1,1 @@
+{"slug":"band-tile-drum","seal":"608b41c80f4dd70c586b3879cef02ac8e677a7404ed56650e885e96933e4236c","rule":"sha256(name|slug|blurb)","write":"if-missing"}

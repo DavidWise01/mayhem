@@ -1,0 +1,1 @@
+{"slug":"band-bold-harp","seal":"0471e5543d19853431597e353aff1614d215d58c63023f11009e904fa4edf5fd","rule":"sha256(name|slug|blurb)","write":"if-missing"}

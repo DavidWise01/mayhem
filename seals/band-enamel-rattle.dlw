@@ -1,0 +1,1 @@
+{"slug":"band-enamel-rattle","seal":"09908c7e61fd9cd1252baba893821c8d9bd3c4fcf7f0796b45ff4fc4d53c4b96","rule":"sha256(name|slug|blurb)","write":"if-missing"}

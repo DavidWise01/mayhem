@@ -1,0 +1,1 @@
+{"slug":"band-bold-gong","seal":"b333be71143a8c52f40b6f222ad0563818fd0bfb0e13d886b38c578b97b6c175","rule":"sha256(name|slug|blurb)","write":"if-missing"}

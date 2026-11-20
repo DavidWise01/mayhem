@@ -1,0 +1,1 @@
+{"slug":"band-chalk-box","seal":"c4080cbcbb1d4163e5a4fdfd912953c1b04ed87a5714ddf6c17bf1e23610f3f1","rule":"sha256(name|slug|blurb)","write":"if-missing"}

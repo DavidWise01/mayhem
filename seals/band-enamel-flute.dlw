@@ -1,0 +1,1 @@
+{"slug":"band-enamel-flute","seal":"69ef9369b368048b2a348e9f1213845a92dfb8a7539f1f6fa4f4728adb49b5b4","rule":"sha256(name|slug|blurb)","write":"if-missing"}

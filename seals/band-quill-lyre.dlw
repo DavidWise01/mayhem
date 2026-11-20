@@ -1,0 +1,1 @@
+{"slug":"band-quill-lyre","seal":"b98199a08525ad3178de82e56276d555b09f18584ea5f8401326d59cbaa3cb94","rule":"sha256(name|slug|blurb)","write":"if-missing"}

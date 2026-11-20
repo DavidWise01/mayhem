@@ -1,0 +1,1 @@
+{"slug":"band-ink-lyre","seal":"0ef12bfa4e13d9531894e20e1cd4e058afc0e4727e6a81e1cf3d5d58d41e8051","rule":"sha256(name|slug|blurb)","write":"if-missing"}

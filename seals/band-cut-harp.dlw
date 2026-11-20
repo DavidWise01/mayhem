@@ -1,0 +1,1 @@
+{"slug":"band-cut-harp","seal":"7c72fa015206172448e4043657494ed16fcd58e37b14d471c0adabb5344a4566","rule":"sha256(name|slug|blurb)","write":"if-missing"}

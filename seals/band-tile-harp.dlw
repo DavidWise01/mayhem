@@ -1,0 +1,1 @@
+{"slug":"band-tile-harp","seal":"cc1f44458480eb542c623973217e15b12ba2cb2b35a3678d9b818ad25c7760f6","rule":"sha256(name|slug|blurb)","write":"if-missing"}

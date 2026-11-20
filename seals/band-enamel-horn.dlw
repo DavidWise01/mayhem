@@ -1,0 +1,1 @@
+{"slug":"band-enamel-horn","seal":"0177ae8f0790d7be5bf1ae9fadfed5f4d50070262263d08ac8019d42b4dc26bf","rule":"sha256(name|slug|blurb)","write":"if-missing"}

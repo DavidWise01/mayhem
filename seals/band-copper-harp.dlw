@@ -1,0 +1,1 @@
+{"slug":"band-copper-harp","seal":"bfc8a6efc7bc727162e09f14473ea883ea62611f4b77ca4304b33d5ebac17964","rule":"sha256(name|slug|blurb)","write":"if-missing"}

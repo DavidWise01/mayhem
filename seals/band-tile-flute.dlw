@@ -1,0 +1,1 @@
+{"slug":"band-tile-flute","seal":"552b94a26823b2bd3e045cd1b1365388d1c03b7c32ee46b51f0524c18be65b23","rule":"sha256(name|slug|blurb)","write":"if-missing"}

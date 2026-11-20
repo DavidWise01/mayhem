@@ -1,0 +1,1 @@
+{"slug":"band-chalk-flute","seal":"02cda7856830de74b908ddd56f867f1b943f87044dafadcf3dc30694e19e1267","rule":"sha256(name|slug|blurb)","write":"if-missing"}

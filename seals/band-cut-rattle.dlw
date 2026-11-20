@@ -1,0 +1,1 @@
+{"slug":"band-cut-rattle","seal":"922b48c9e2ab2a18e7c64216723f2afc7a5eec8470e6946e2028554699da2687","rule":"sha256(name|slug|blurb)","write":"if-missing"}

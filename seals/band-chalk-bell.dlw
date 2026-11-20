@@ -1,0 +1,1 @@
+{"slug":"band-chalk-bell","seal":"2bca732181a50d49d297b9cfc079d1c03a3c022da7cfa4b64033c30ea2af8054","rule":"sha256(name|slug|blurb)","write":"if-missing"}

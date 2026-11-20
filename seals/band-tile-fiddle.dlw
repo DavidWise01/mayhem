@@ -1,0 +1,1 @@
+{"slug":"band-tile-fiddle","seal":"11f0677d33e13601fcbc45acd225d5fd2bf579e5ae37f3faed5677c2ac2859f7","rule":"sha256(name|slug|blurb)","write":"if-missing"}

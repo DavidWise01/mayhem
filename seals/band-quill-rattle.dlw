@@ -1,0 +1,1 @@
+{"slug":"band-quill-rattle","seal":"56989026e3b09eb772b3a8a19afb2ee44784f9c59232e4943971bdd8323a5654","rule":"sha256(name|slug|blurb)","write":"if-missing"}

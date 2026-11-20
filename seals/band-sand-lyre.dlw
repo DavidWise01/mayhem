@@ -1,0 +1,1 @@
+{"slug":"band-sand-lyre","seal":"da9b6c4bb4beb2eb5058f044ae703b38cc42feda01cbe5c4ffc7acec575ca3eb","rule":"sha256(name|slug|blurb)","write":"if-missing"}

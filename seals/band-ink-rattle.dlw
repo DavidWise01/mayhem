@@ -1,0 +1,1 @@
+{"slug":"band-ink-rattle","seal":"273ffffa0d90d7164c4eb4120eb304ecb929a6cd256bdf6ebeb9f336e8614e7e","rule":"sha256(name|slug|blurb)","write":"if-missing"}

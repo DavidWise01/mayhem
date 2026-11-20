@@ -1,0 +1,1 @@
+{"slug":"band-ink-flute","seal":"0cbfa83a393ff1ba411b396c8f66a3c73426347e5182f27c63ab2b4230db4d07","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"band-poppy-fiddle","seal":"438a3affefa5a63af59c697a0f4aa08a2fe40e59689e6cc3e5d2a9ae2e847227","rule":"sha256(name|slug|blurb)","write":"if-missing"}

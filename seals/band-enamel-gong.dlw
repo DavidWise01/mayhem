@@ -1,0 +1,1 @@
+{"slug":"band-enamel-gong","seal":"acc74f711bfd4d6be880b166ebe7e5697fe11a6d88df340201c7b78c7f34f897","rule":"sha256(name|slug|blurb)","write":"if-missing"}

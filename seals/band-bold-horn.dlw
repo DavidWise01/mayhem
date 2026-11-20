@@ -1,0 +1,1 @@
+{"slug":"band-bold-horn","seal":"5e2bb530f22fdc63633e8e08697d665cb39ccb98a7c65c7f1739f075031fd14b","rule":"sha256(name|slug|blurb)","write":"if-missing"}

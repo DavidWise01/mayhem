@@ -1,0 +1,1 @@
+{"slug":"band-chalk-fiddle","seal":"bab1d1dd88ec68f252b92c6f1dc090b77a8fe9f48719b9f9694cbd7f443c2c02","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"band-poppy-lyre","seal":"204cee96941cdefcde36ec2e584e1f5bfb6dc254ddbdcbc26b8e22db4c4fb54c","rule":"sha256(name|slug|blurb)","write":"if-missing"}

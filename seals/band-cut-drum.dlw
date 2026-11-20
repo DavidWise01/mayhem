@@ -1,0 +1,1 @@
+{"slug":"band-cut-drum","seal":"89af33ec18fd5258ef8344a4757c048bb3687ed580a3535eb0441be41d3fa414","rule":"sha256(name|slug|blurb)","write":"if-missing"}

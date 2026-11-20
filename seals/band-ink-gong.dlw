@@ -1,0 +1,1 @@
+{"slug":"band-ink-gong","seal":"9c013eea6f5eaf99bf385fa857a27997f8e6aa6abbfb1b65bb4425f5c8ed8b7c","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"band-copper-fiddle","seal":"63ba3f3469a8ca41115374e8723b13d1b39cc34a185cc82413e2b9dd2ad3688b","rule":"sha256(name|slug|blurb)","write":"if-missing"}

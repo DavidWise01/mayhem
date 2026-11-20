@@ -1,0 +1,1 @@
+{"slug":"band-cut-lyre","seal":"3269f00ef64b98ba1f49e4bb68f0696ef6c3a69e15eb8a43bce6acbe800e8b75","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"band-copper-rattle","seal":"043b8a5d4a4c8b2bd268210a250c6c4b2687ad76717ef691c5dbbc68ee4082e8","rule":"sha256(name|slug|blurb)","write":"if-missing"}

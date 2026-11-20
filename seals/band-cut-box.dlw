@@ -1,0 +1,1 @@
+{"slug":"band-cut-box","seal":"d49cbf43839eac4100d07ea26c00a67d8d66696a375c01f3e93f8db132f07248","rule":"sha256(name|slug|blurb)","write":"if-missing"}

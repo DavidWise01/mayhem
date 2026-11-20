@@ -1,0 +1,1 @@
+{"slug":"band-sand-bell","seal":"4faf42475ff853415934cb6322ce272684630174245c2179c3b79bb18600f046","rule":"sha256(name|slug|blurb)","write":"if-missing"}

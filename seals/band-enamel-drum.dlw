@@ -1,0 +1,1 @@
+{"slug":"band-enamel-drum","seal":"6b66fcd4faddeb76c9f90b6ee29b9e6252cb72b1a00c7a2415eac3dbb76b1e2f","rule":"sha256(name|slug|blurb)","write":"if-missing"}

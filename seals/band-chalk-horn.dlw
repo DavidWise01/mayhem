@@ -1,0 +1,1 @@
+{"slug":"band-chalk-horn","seal":"9da0acb12f0958d1fbe7d77ef2bc810e5aadd83df672df3cc87932583eadf15e","rule":"sha256(name|slug|blurb)","write":"if-missing"}

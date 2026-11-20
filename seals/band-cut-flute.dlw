@@ -1,0 +1,1 @@
+{"slug":"band-cut-flute","seal":"cb19a54fe8344b862e8f92b36cff3dba9c36212d6e4b2eadde0ec301c56a9243","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"band-quill-flute","seal":"7ab7fec841ed23c4dfd825fffa6c1f1c28d97e5c7725ec23de1c6aa14b2ea920","rule":"sha256(name|slug|blurb)","write":"if-missing"}

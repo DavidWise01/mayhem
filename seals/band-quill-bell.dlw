@@ -1,0 +1,1 @@
+{"slug":"band-quill-bell","seal":"5c68d392a7f5a769b8b7b43ad315629ec8ada836f925e54dee1e11c4e9cba5f2","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"band-quill-box","seal":"052e8a944c861c3632eb47f991b383c20b9bb768fe27660553402fdf4d5ac3fd","rule":"sha256(name|slug|blurb)","write":"if-missing"}

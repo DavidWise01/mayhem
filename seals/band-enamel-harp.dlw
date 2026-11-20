@@ -1,0 +1,1 @@
+{"slug":"band-enamel-harp","seal":"01e807b8873cf115a8271e327798bc2c917f5301b5890b2471919f32a73da84c","rule":"sha256(name|slug|blurb)","write":"if-missing"}

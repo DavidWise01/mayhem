@@ -1,0 +1,1 @@
+{"slug":"band-tile-box","seal":"ca9a379cf6a7b99c25cafc73cf20fdd723f10fc95031447c6c280b80eb3d619d","rule":"sha256(name|slug|blurb)","write":"if-missing"}

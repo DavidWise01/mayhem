@@ -1,0 +1,1 @@
+{"slug":"band-cut-fiddle","seal":"9884360d4beff4916ff6ae4427d186ce7d976d70d26e80bf9f1f471467821441","rule":"sha256(name|slug|blurb)","write":"if-missing"}

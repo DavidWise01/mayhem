@@ -1,0 +1,1 @@
+{"slug":"band-cut-horn","seal":"bc5ad37309d01e6e5114903ebe1c667af1a55367f7e66d29013b8c638c8132a0","rule":"sha256(name|slug|blurb)","write":"if-missing"}

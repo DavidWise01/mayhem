@@ -1,0 +1,1 @@
+{"slug":"band-quill-horn","seal":"4339737516b90400af66ce982d8c8c5ff6c7d035f89660f13c666271ee3bc794","rule":"sha256(name|slug|blurb)","write":"if-missing"}

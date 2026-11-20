@@ -1,0 +1,1 @@
+{"slug":"band-sand-fiddle","seal":"a0273f8c53993244f736982ea90fffc932c796a322b92a76a755a099d7292de1","rule":"sha256(name|slug|blurb)","write":"if-missing"}

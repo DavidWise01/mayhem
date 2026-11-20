@@ -1,0 +1,1 @@
+{"slug":"band-quill-harp","seal":"c6dae4759a0d296e2e5918724e4362831d1208e731f700e5a172ba9f2b33ce18","rule":"sha256(name|slug|blurb)","write":"if-missing"}

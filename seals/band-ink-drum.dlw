@@ -1,0 +1,1 @@
+{"slug":"band-ink-drum","seal":"5a6977a7401432eaa4f349e4e591c407ab6166b6057968236f56b5dbac710697","rule":"sha256(name|slug|blurb)","write":"if-missing"}

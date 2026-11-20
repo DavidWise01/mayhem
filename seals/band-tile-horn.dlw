@@ -1,0 +1,1 @@
+{"slug":"band-tile-horn","seal":"fe4f1928df8a780a726557cad93c5ed429262920971b6ce6119a32bb724264e1","rule":"sha256(name|slug|blurb)","write":"if-missing"}

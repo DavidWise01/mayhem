@@ -1,0 +1,1 @@
+{"slug":"band-poppy-horn","seal":"2fc7a21e86d96dd611a227f02e3ff74879905bb8e5a0a70d49ab813763cbf18e","rule":"sha256(name|slug|blurb)","write":"if-missing"}

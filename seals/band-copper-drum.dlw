@@ -1,0 +1,1 @@
+{"slug":"band-copper-drum","seal":"77977d428158e9e907d80089c5727a7e53c8dce84773793aeaa46e245f49fa89","rule":"sha256(name|slug|blurb)","write":"if-missing"}

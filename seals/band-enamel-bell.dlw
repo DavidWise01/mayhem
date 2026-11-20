@@ -1,0 +1,1 @@
+{"slug":"band-enamel-bell","seal":"ae60a3639e471e01ffed1807dff81f5d57e7673f0cbec853c346293f18bea0eb","rule":"sha256(name|slug|blurb)","write":"if-missing"}

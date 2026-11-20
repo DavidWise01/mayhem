@@ -1,0 +1,1 @@
+{"slug":"band-poppy-harp","seal":"2d16ef15d5826e4968018e7783e80a6602c48509aee6a5dce5cdc6b7f60b7dbe","rule":"sha256(name|slug|blurb)","write":"if-missing"}

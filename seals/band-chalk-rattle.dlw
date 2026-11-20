@@ -1,0 +1,1 @@
+{"slug":"band-chalk-rattle","seal":"f5b05bddd28355f70237767e3a9ff6b40eb5fa2cef77eb7ab30669d5ab6ae9cf","rule":"sha256(name|slug|blurb)","write":"if-missing"}

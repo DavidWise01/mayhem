@@ -1,0 +1,1 @@
+{"slug":"band-bold-fiddle","seal":"78627f5e2b36eac843fc126a63c5ee4aac9ab65e64af073bc72ebe9d1eccd208","rule":"sha256(name|slug|blurb)","write":"if-missing"}

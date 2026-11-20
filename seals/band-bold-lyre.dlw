@@ -1,0 +1,1 @@
+{"slug":"band-bold-lyre","seal":"38653bd965ea6f39f617b2ec676d0bb6ba74dbbf6d625e87d79d74d6a401a5ea","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"band-copper-flute","seal":"52540d1f0c44266e35abced962ad00f4233fd9c2a862c7777ece4bf7083cf71a","rule":"sha256(name|slug|blurb)","write":"if-missing"}

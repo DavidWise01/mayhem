@@ -1,0 +1,1 @@
+{"slug":"band-poppy-gong","seal":"fc77f27cc22a9c85a234ea49462b82cb9f710c1bbfb584a0814020c2dc928694","rule":"sha256(name|slug|blurb)","write":"if-missing"}

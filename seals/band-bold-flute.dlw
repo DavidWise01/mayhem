@@ -1,0 +1,1 @@
+{"slug":"band-bold-flute","seal":"845d706dc0686e460a74bb6807b3d007bab2130ff497cad9b8b93bb3c932af0e","rule":"sha256(name|slug|blurb)","write":"if-missing"}

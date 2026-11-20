@@ -1,0 +1,1 @@
+{"slug":"band-sand-harp","seal":"7460913e461a7a1cb0cd4e52c91a5b903f61f4502f9da6f2bdf948838060202e","rule":"sha256(name|slug|blurb)","write":"if-missing"}

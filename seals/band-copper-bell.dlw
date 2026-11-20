@@ -1,0 +1,1 @@
+{"slug":"band-copper-bell","seal":"39ff52d965ce194129ee232517515fa7e79499465485c6521b9c2c4aa6576405","rule":"sha256(name|slug|blurb)","write":"if-missing"}

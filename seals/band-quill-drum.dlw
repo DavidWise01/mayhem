@@ -1,0 +1,1 @@
+{"slug":"band-quill-drum","seal":"ccaed09d2505f265fd04419e12fbcf2f518ac3d3fdc85b459041f360ca936fe3","rule":"sha256(name|slug|blurb)","write":"if-missing"}

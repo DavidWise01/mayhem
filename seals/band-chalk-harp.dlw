@@ -1,0 +1,1 @@
+{"slug":"band-chalk-harp","seal":"8016c4f000de0753a3053a4cb28743b2801d662e646c6fa5824526675f424481","rule":"sha256(name|slug|blurb)","write":"if-missing"}
