@@ -1,0 +1,1 @@
+{"slug": "civ-cedar-court", "seal": "a7ff0c5e4e87ecd30f0b22ca2d2aa179b90ded6d43543466fb83daf468ce5759", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

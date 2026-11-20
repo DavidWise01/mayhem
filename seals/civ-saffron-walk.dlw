@@ -1,0 +1,1 @@
+{"slug": "civ-saffron-walk", "seal": "212773409e219decdcebc6c1a4d74263f5c52a370210f9da437736baa0f8baf0", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

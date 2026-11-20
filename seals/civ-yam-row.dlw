@@ -1,0 +1,1 @@
+{"slug": "civ-yam-row", "seal": "c7a58cf5e3c25802091a11046c58b0e7582152953286ad1da37c34e1dad7372c", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

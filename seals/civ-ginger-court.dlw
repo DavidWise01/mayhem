@@ -1,0 +1,1 @@
+{"slug": "civ-ginger-court", "seal": "7e54e34f34f93272966101b08039eb7c59d996eac9d177965d205d1294442e30", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

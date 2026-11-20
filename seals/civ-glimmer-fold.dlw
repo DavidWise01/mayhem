@@ -1,0 +1,1 @@
+{"slug": "civ-glimmer-fold", "seal": "da9000d9a4df06d63f5f02059ba2512786c4705f1c7f58a7514b5594eb1a130b", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

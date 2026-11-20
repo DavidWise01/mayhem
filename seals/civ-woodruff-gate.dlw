@@ -1,0 +1,1 @@
+{"slug": "civ-woodruff-gate", "seal": "2abf6dd6d7250e1af3452de2629c0fcbfde4fa0e244deed7d3f7a81205190f84", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

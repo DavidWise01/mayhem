@@ -1,0 +1,1 @@
+{"slug": "civ-elm-court", "seal": "1a3f1d4754dad422eab7d05b901d59148c4f0bd6ac98e75779ab4936d23d4c87", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

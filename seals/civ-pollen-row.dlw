@@ -1,0 +1,1 @@
+{"slug": "civ-pollen-row", "seal": "dee47268c6f8832547d0c5d685bae81d3f5e21ad96d77664ba285ef31c98b332", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

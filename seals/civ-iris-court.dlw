@@ -1,0 +1,1 @@
+{"slug": "civ-iris-court", "seal": "728fe274fea0c1682abe38e7b814417a5e2de2670a96f17be18b5d7b1aa430b1", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

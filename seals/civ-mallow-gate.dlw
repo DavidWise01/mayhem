@@ -1,0 +1,1 @@
+{"slug": "civ-mallow-gate", "seal": "7fbaf936ef12ac738212517d59825d8345a6563155b0634116db559245f21205", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

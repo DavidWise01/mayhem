@@ -1,0 +1,1 @@
+{"slug": "civ-finch-walk", "seal": "c017660f81c6ee1a4393642406caafdd55e0b32ca7fa6e3c641c5e4c38c122ae", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

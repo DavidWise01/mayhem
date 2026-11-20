@@ -1,0 +1,1 @@
+{"slug": "civ-sprig-gate", "seal": "5b4eeb4fcee3a46bfa2787ee0ed678e808fc06802feaa013ecb8305cba9a46b3", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

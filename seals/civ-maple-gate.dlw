@@ -1,0 +1,1 @@
+{"slug": "civ-maple-gate", "seal": "2f4cec57681c1b6d930cb08082019ce6f3132f915a681c5eb33a156066df8b21", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

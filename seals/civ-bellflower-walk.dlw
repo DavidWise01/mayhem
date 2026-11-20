@@ -1,0 +1,1 @@
+{"slug": "civ-bellflower-walk", "seal": "1b53ec219e77ec56e059cb8b6259cc408a8a0fe2c2d4f403fcf4e4fae882f6fc", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

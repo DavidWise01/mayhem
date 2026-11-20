@@ -1,0 +1,1 @@
+{"slug": "civ-clover-bench", "seal": "b4256534cc5765ffa92a89b06720f3d6dd9e5a3661167ddb2dd8baa2d2871f71", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

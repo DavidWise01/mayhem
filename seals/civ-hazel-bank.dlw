@@ -1,0 +1,1 @@
+{"slug": "civ-hazel-bank", "seal": "903af4ba8896bad2eda6d9eb3f3e86250ebcf7d61deef05c0e18ee743be33429", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

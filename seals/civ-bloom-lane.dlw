@@ -1,0 +1,1 @@
+{"slug": "civ-bloom-lane", "seal": "f0cde18129030a5d4c2fe62e5b050f716a9fc6ef5633f953daed7b603ebfb1fe", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

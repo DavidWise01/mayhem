@@ -1,0 +1,1 @@
+{"slug": "civ-cricket-yard", "seal": "14f86ac1bfce0ed72d578076307180ba4669a8e48bfc76653d0676eb18982e91", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

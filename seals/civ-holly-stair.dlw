@@ -1,0 +1,1 @@
+{"slug": "civ-holly-stair", "seal": "45731d34ab1719e6dd8120f8c65fe7d4c2a7e34c02846a3364aa14b36e9e1ea4", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

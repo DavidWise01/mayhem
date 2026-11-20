@@ -1,0 +1,1 @@
+{"slug": "civ-plum-walk", "seal": "2922f88129e6e57157db45562414807abbdf8ba18a1506491c2d61c5525898fc", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

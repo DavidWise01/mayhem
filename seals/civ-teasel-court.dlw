@@ -1,0 +1,1 @@
+{"slug": "civ-teasel-court", "seal": "996fda15be94cfee324d2d24a4275ddf0c1dc76e3765d52b0113677b9f4de023", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

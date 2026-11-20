@@ -1,0 +1,1 @@
+{"slug": "civ-narcissus-row", "seal": "c9270b928391d6ce5f3459c1c7fec1294fbdaa4ffd19d39aaea91f6e4de2d457", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

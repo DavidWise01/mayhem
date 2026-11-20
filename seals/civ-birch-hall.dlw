@@ -1,0 +1,1 @@
+{"slug": "civ-birch-hall", "seal": "910fe5e1aebafe4a2f275db4d89c01cb6e3fc60c3ccf76ac6c1820db6ab467be", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

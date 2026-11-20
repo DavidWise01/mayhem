@@ -1,0 +1,1 @@
+{"slug": "civ-tansy-walk", "seal": "2589a540cf7fcb9dd90c0922c965510c23de295e4520eb891ec7aa07942cbf8d", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

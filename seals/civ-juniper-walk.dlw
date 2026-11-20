@@ -1,0 +1,1 @@
+{"slug": "civ-juniper-walk", "seal": "a1d14dfb5065b588d78182377463b8e01c097a1730e2396c1014a0d6902a41ab", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

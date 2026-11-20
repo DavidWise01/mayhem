@@ -1,0 +1,1 @@
+{"slug": "civ-gold-meadow", "seal": "ddb6ad8f161461f8172934cdb66edfab150cdbb3360089dedd14be2f0fa8cc30", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

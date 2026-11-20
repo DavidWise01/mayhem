@@ -1,0 +1,1 @@
+{"slug": "civ-cinder-row", "seal": "6409258a4db294f2061bb4a08e97e8e88eaa834ea36826affd863afb2f1a51b7", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

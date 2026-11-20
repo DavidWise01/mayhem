@@ -1,0 +1,1 @@
+{"slug": "civ-peony-gate", "seal": "d137b7941e16638276d31d2bc7d341ecfbdecc46371a0cf355a3a642f59ff7a1", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

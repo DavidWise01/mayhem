@@ -1,0 +1,1 @@
+{"slug": "civ-cloud-pier", "seal": "6181aad9d62402b826c7f8c3b33eeaa5a69f55d923a99b1e608fa99abad112f5", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

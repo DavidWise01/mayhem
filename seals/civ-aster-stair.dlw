@@ -1,0 +1,1 @@
+{"slug": "civ-aster-stair", "seal": "d952a2295da44cfd4cee4cb930a23dad10f699bfbdd0a6675a1de8aa19be3246", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

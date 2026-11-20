@@ -1,0 +1,1 @@
+{"slug": "civ-coral-step", "seal": "cdafa6493dd146bf78c713c4f7a1421755f9ed521a9e5c26c9f0d785b0f3ffe6", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

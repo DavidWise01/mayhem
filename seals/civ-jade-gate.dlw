@@ -1,0 +1,1 @@
+{"slug": "civ-jade-gate", "seal": "74243e6fe7d3c1aac4c8e03f9c7b82dd5b67644366ef0e423fe23b0288f7d827", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

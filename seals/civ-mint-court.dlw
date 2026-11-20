@@ -1,0 +1,1 @@
+{"slug": "civ-mint-court", "seal": "36fb0ee48a392d7679ec5ba4c3a762949ad26b07d01a58bae319fef173e3fbf8", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

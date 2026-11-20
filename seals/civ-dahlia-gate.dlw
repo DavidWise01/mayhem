@@ -1,0 +1,1 @@
+{"slug": "civ-dahlia-gate", "seal": "02feb44405e6cf6bc6bd322682cc733facc0de7e2460b0eb6eec0833c42af4e1", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

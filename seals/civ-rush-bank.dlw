@@ -1,0 +1,1 @@
+{"slug": "civ-rush-bank", "seal": "f719d7b5049803d7f9f0e5db9eceffb2a7c6d00fbbe7d756e3d5aea1f940314a", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

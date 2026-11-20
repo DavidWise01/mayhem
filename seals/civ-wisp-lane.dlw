@@ -1,0 +1,1 @@
+{"slug": "civ-wisp-lane", "seal": "a3d71b9ef8b9f9303ebb42e84dc026f6715767e43066ecccc2c99e0ec41972fe", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

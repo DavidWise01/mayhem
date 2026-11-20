@@ -1,0 +1,1 @@
+{"slug": "civ-quince-court", "seal": "3836d0daf29914c795fc18f47bdc29373725d2ca4b5a433ea39374d735b68a3e", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

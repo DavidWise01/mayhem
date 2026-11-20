@@ -1,0 +1,1 @@
+{"slug": "civ-thistle-court", "seal": "0ba5b9369b232e7fbfa9ce643ac6b12ac7387364b2ce7382bcda181893f076af", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "civ-dune-house", "seal": "52c156b6160be66af0b2b8d48b2414740f683ebf6064eacd1a895983d3da9405", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

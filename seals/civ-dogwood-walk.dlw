@@ -1,0 +1,1 @@
+{"slug": "civ-dogwood-walk", "seal": "a6f683e912fbbc913f9c931d0df2f1ee1b2878c304f7915d122da380034c09ef", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

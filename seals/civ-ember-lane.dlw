@@ -1,0 +1,1 @@
+{"slug": "civ-ember-lane", "seal": "628412b348a0ec5cd3bba66302cc13a9cd6dac1c0eb4dac51d73aed5481cc412", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

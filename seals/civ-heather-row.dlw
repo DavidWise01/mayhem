@@ -1,0 +1,1 @@
+{"slug": "civ-heather-row", "seal": "cb488b074e530033ca2c2c4bd87216965fd240ebf428b0cdfe9107f0d3fea259", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

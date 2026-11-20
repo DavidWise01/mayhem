@@ -1,0 +1,1 @@
+{"slug": "civ-nettle-lane", "seal": "57d601e75569af8a96d9e480d452de2fa39deb63337704bb2adb2a0a36b1f995", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

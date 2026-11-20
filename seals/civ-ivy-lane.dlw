@@ -1,0 +1,1 @@
+{"slug": "civ-ivy-lane", "seal": "4ecca4a405ac0fce5bc9869db5195dd61fd8791ab9fe5bbfe875a06eda4b8f0a", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

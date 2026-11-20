@@ -1,0 +1,1 @@
+{"slug": "civ-flint-stair", "seal": "206ea0946b477163a4a1f1e1ae62fcb286fd114bd0bcca40d643139e0ec13529", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "civ-marigold-walk", "seal": "cd41cfbe4c837c36ce4e0cac1c3f7827bffc4f3a12f0975912451ad0f2c09d12", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

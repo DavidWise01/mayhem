@@ -1,0 +1,1 @@
+{"slug": "civ-magnolia-court", "seal": "1d7129982b89e88182f315184d0eb67b5f75b023018305eb7d71f73149e481fe", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

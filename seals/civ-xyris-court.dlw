@@ -1,0 +1,1 @@
+{"slug": "civ-xyris-court", "seal": "fcc5d1bf3cc2547ce87900398b94922191a1e75370e307fcaf49fc0a0a6b53d7", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

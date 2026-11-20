@@ -1,0 +1,1 @@
+{"slug": "civ-phlox-lane", "seal": "82f4da65907df99447fecbb3f9a7714cbd7bd531b8b66e67e2e103163996afce", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

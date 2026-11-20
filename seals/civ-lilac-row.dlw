@@ -1,0 +1,1 @@
+{"slug": "civ-lilac-row", "seal": "2445b32cfae6775883ef8c3c83cd855ef8e24528710bf7d27ace1b9a59e1eb57", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

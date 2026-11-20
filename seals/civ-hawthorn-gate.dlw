@@ -1,0 +1,1 @@
+{"slug": "civ-hawthorn-gate", "seal": "e9f775ef1d73cabe54657a1a56991e1215dd9dfb9a2f4c4c7e8a954e4951bae7", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "civ-eglantine-court", "seal": "42d97d27727acbf6ffda45b80b15406219695dc059f240ea31db11cd0b25d865", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

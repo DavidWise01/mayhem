@@ -1,0 +1,1 @@
+{"slug": "civ-crocus-lane", "seal": "e670f776a2b09f40232a1b4a108b7b328ade8f9ba161bc01a106fcedba7625c8", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

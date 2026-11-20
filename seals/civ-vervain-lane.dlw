@@ -1,0 +1,1 @@
+{"slug": "civ-vervain-lane", "seal": "812ba67729ff7f8b972c047097544b1fc791b3f78732b000b414f80ecd676b5a", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

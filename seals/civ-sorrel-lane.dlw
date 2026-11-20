@@ -1,0 +1,1 @@
+{"slug": "civ-sorrel-lane", "seal": "a4ed3cf1f55de3a5b871eda2b5e40faeaf43f1db29e0594604c1c8d75fe5d287", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "civ-foxglove-court", "seal": "7a3bff82915d6d7add66e34cca755d476d9288df7fd35c54a697c7c270026314", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

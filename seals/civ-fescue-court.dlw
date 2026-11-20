@@ -1,0 +1,1 @@
+{"slug": "civ-fescue-court", "seal": "64e688dc2a3c1caefe5f6c0003cafa503a20ed35c69e292707988406153048f7", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

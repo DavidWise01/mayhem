@@ -1,0 +1,1 @@
+{"slug": "civ-betony-lane", "seal": "55f6bf7d2599c93b8e1e3ac8673a64d563d2dc732130719e14d47fe861153ee4", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

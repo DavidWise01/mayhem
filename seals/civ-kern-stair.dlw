@@ -1,0 +1,1 @@
+{"slug": "civ-kern-stair", "seal": "89c373f3f2b76abaa5892e835da3f659199392e44cc8f1b4ae5a545b90972c00", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

@@ -1,0 +1,1 @@
+{"slug": "civ-lobelia-walk", "seal": "a02b3cbfacb20b1d98850b488a769cc65ea92bbe2929d5b5e156fb8e4e98a803", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

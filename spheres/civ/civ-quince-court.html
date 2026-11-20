@@ -1,0 +1,1009 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Quince Court · a sphere of Mayhem</title>
+<style>
+html,body{margin:0;background:#fafee2;color:#2a3036;font-family:Georgia, serif}#wrap{max-width:1180px;margin:0 auto;padding:12px;display:grid;gap:8px;grid-template-columns:1fr 1fr;grid-template-areas:"stage stage" "mast copy";align-items:stretch}.mast{grid-area:mast}#v3{grid-area:stage;position:relative;height:62vh;min-height:520px;border-radius:18px;overflow:hidden;background:#fafee2;border:0;box-shadow:0 18px 40px rgba(0,0,0,.12);touch-action:none}#v3:focus{outline:2px solid #2a3036;outline-offset:2px}#v3 canvas{display:block;width:100%;height:100%}.story{grid-area:copy;max-width:78ch;line-height:1.55}h1{font-weight:500;font-size:clamp(28px,4vw,40px);margin:0 0 6px}.kicker,.land{font-family:ui-monospace,monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin:0 0 8px}#agentlog{position:absolute;z-index:2;left:14px;bottom:14px;margin:0;max-width:min(520px,92%);padding:8px 10px;border-radius:10px;background:rgba(255,252,247,.92);color:#2a3036;font-family:ui-monospace,monospace;font-size:12px;line-height:1.45}#civhint{position:absolute;z-index:2;right:14px;top:14px;margin:0;padding:6px 8px;border-radius:8px;background:rgba(255,252,247,.92);color:#2a3036;font-family:ui-monospace,monospace;font-size:12px}.t{display:inline-block;padding:1px 8px;border-radius:8px;font-weight:700;font-size:13px;color:#111}.LIT{background:#3ee07a}.AMBER{background:#ffb020}.WALL{background:#ff5a5a;color:#fff}.MODEL{background:#b48cff}a{color:#2a3036}code{font-family:ui-monospace,monospace;font-size:12px;word-break:break-all}body.thumb .story,body.thumb .mast,body.thumb #agentlog,body.thumb #civhint{display:none}body.thumb #wrap{display:block;padding:0;max-width:none;height:100vh}body.thumb #v3{height:100vh;min-height:0;border-radius:0;box-shadow:none}
+</style>
+</head>
+<body>
+<main id="wrap">
+<header class="mast">
+<p class="kicker">A sphere of Mayhem · The Quince Court · Violet · [[ELECTROLYTE{{AMOEBA{{DIATOM{{WATER BEAR((MITOCHONDRION))CHLOROPHYLL}}BACTERIA}}}}]] · keeper ERIS</p>
+<h1>The Quince Court</h1>
+<p class="land">the quince court</p>
+</header>
+<div id="v3" tabindex="0"><p id="civhint">Arrows, WASD, or click the ground.</p><p id="agentlog">Violet waits. Click the ground, or use the arrows. The diatom waits.</p></div>
+<div class="story">
+<p>the quince court is a civ Violet the water bear builds with the diatom. Arrow keys or WASD steer the water bear. Click the ground and the bear walks there. The diatom holds the bear and keeps a work only when the gap to the hall shrinks. A step away from the hall is not kept. Violet lays a hall, a lane, a roof, a well, and a lamp. Similar on this shelf: The Rush Bank, The Rowan Court. The picture does not give a method for growing, extracting, or mixing any of them.</p><p>On this land, ELECTROLYTE holds AMOEBA. AMOEBA holds DIATOM and BACTERIA. DIATOM holds WATER BEAR and CHLOROPHYLL. WATER BEAR holds MITOCHONDRION. Set point 57 is this civ's place on the shelf. They are homeostatic, cooperative, and evolutionary. A selfish step is dropped. A step away from home is dropped. A worse mutant is dropped. A step is kept only when the shared gap shrinks. Seventeen steps bring the seven bodies home. Seventeen steps bring the civ home. WORKS=17 counts those seventeen halvings. The picture's buildings are the closer steps, and the picture keeps at most sixteen of them. A second run matches, and this browser stores the kept gap.</p><p>ARTIST draws the land, CRITIC checks the gap, BUILDER keeps the shell, WEAVER writes the civ, FOLLOWER walks with Violet, and KEEPER stores the row. The camera sits low behind the snout. The land is generated for this page. The diatom's works are the steps that got closer.</p><p><span class="t LIT">LIT</span> Violet the water bear can build the quince court. The diatom keeps a work only when the gap shrinks. This page throws if a step away is kept, a body splits, or the ground faces down.</p><p><span class="t MODEL">MODEL</span> The picture is a Sumi, canvas 3D, a clear field, the quince court. It does not give a workshop method. You can walk it. The pixel ratio follows the screen and stays at most 2. The camera sits low, behind the cast. A contact shadow sits under the cast. A worse height is dropped. A height is kept only when the gap shrinks.</p>
+<p id="proof">Checking the sphere.</p>
+<p>Seal sha256(name|slug|blurb): <code id="seal">3836d0daf29914c795fc18f47bdc29373725d2ca4b5a433ea39374d735b68a3e</code></p>
+<p><a href="../../index.html">Mayhem</a></p>
+</div>
+</main>
+<script>
+const SLUG="civ-quince-court",NAME="The Quince Court",BLURB="At The Quince Court, Violet the water bear builds a civ with the diatom. A step away from the hall is not kept. A step is kept only when the gap shrinks. ELECTROLYTE holds AMOEBA, AMOEBA holds DIATOM and BACTERIA, DIATOM holds WATER BEAR and CHLOROPHYLL, and WATER BEAR holds MITOCHONDRION. Civ: The Quince Court. Style: Sumi.",SEAL="3836d0daf29914c795fc18f47bdc29373725d2ca4b5a433ea39374d735b68a3e",SET=57;
+const KIND="ridge",LANDNAME="the quince court",VARIANT=57,N=24,WATER=1,MARK="stone";
+const BEARNAME="Violet";
+const START=[-0.50,2.20], BEACON=[2.30,-0.30];
+if(/[?&]thumb=1/.test(location.search)) document.body.classList.add('thumb');
+function trioGap(xs, target){
+  let g=0;
+  for(let i=0;i<xs.length;i++){
+    const d=Math.abs(target-xs[i]);
+    if(d>g) g=d;
+  }
+  return g;
+}
+function bodies(target){
+  let xs=[0,0,0,0,0,0,0], gap=trioGap(xs, target), kept=[], dropped=0;
+  const selfish=xs[0]+(target-xs[0])*0.8;
+  const trial=xs.slice(); trial[0]=selfish;
+  if(trioGap(trial, target)<gap) throw Error('selfish step was kept');
+  dropped++;
+  const away=xs[0]-Math.abs(target-xs[0])*0.25;
+  if(trioGap([away,away,away,away,away,away,away], target)<gap) throw Error('a step away from home was kept');
+  dropped++;
+  const mutant=xs[0]+(target-xs[0])*3;
+  if(Math.abs(target-mutant)<gap) throw Error('a worse mutant was kept');
+  dropped++;
+  for(let gen=0; gen<17; gen++){
+    const next=xs.map(function(v){return v+(target-v)/2;});
+    const g=trioGap(next, target);
+    if(!(g<gap)) throw Error('gap stuck');
+    for(let i=1;i<next.length;i++) if(Math.abs(next[0]-next[i])>1e-9) throw Error('split');
+    if(!(Math.abs(target-next[0])<Math.abs(target-xs[0]))) throw Error('evolution');
+    xs=next; gap=g;
+    kept.push(+xs[0].toFixed(6));
+  }
+  if(gap>1e-3) throw Error('home gap');
+  for(let i=1;i<xs.length;i++) if(Math.abs(xs[0]-xs[i])>1e-9) throw Error('apart');
+  if(Math.round(xs[0])!==target) throw Error('set point');
+  return {xs:xs, gap:gap, kept:kept, dropped:dropped};
+}
+function once(){
+  const a=bodies(SET), b=bodies(SET);
+  if(a.dropped!==3||b.dropped!==3) throw Error('no drop');
+  if(a.kept.join()!==b.kept.join()) throw Error('lineage');
+  if(Math.abs(a.xs[0]-SET)>1e-3) throw Error('set');
+  const names=['DIATOM','BEAR','MITO','AMOEBA','BACTERIA','CHLOROPHYLL','ELECTROLYTE'];
+  return names.map(function(name,i){return name+'='+a.xs[i].toFixed(6);}).join('|');
+}
+function remember(word){
+  const key='mayhem-cast-kept';
+  let book={};
+  try{ book=JSON.parse(localStorage.getItem(key)||'{}')||{}; }catch(e){ book={}; }
+  const row=book[SLUG];
+  if(!row) book[SLUG]={word:word, visits:1};
+  else { if(row.word!==word) throw Error('persistent drift'); row.visits+=1; }
+  localStorage.setItem(key, JSON.stringify(book));
+  const again=JSON.parse(localStorage.getItem(key))[SLUG];
+  if(!again||again.word!==word) throw Error('persistent drift');
+  return again.visits;
+}
+function rememberLand(word){
+  const key='mayhem-landscape-kept';
+  let book={};
+  try{ book=JSON.parse(localStorage.getItem(key)||'{}')||{}; }catch(e){ book={}; }
+  const row=book[SLUG];
+  if(!row) book[SLUG]={word:word, visits:1};
+  else { if(row.word!==word) throw Error('land drift'); row.visits+=1; }
+  localStorage.setItem(key, JSON.stringify(book));
+  const again=JSON.parse(localStorage.getItem(key))[SLUG];
+  if(!again||again.word!==word) throw Error('land drift');
+  return again.visits;
+}
+function seedOf(s){
+  let x=2166136261;
+  for(let i=0;i<s.length;i++) x=Math.imul(x^s.charCodeAt(i), 16777619);
+  return x>>>0;
+}
+function hash2(ix, iz, seed){
+  let x=(seed ^ Math.imul(ix+97, 374761393) ^ Math.imul(iz+57, 668265263))>>>0;
+  x=Math.imul(x^(x>>>13), 1274126177)>>>0;
+  return ((x^(x>>>16))>>>0)/4294967296;
+}
+function tri(u){
+  const m=((u%2)+2)%2;
+  return m<1?m:2-m;
+}
+function axes(u, v){
+  let a=u, b=v;
+  if(VARIANT%2) a=-a;
+  if(VARIANT%3===0) b=-b;
+  if(VARIANT%5===0){ const t=a; a=b; b=t; }
+  return [a, b];
+}
+function shape(kind, u, v, n){
+  const ab=axes(u, v); u=ab[0]; v=ab[1];
+  const r=Math.sqrt(u*u+v*v);
+  let h=0.05;
+  if(kind==='mound') h=Math.max(0, 1.35*(0.9-r))+n*0.28;
+  else if(kind==='mesa') h=(r<0.4?1.12:0.1)+n*0.1;
+  else if(kind==='ridge') h=Math.max(0, 1.15-Math.abs(v)*2.3)+n*0.18;
+  else if(kind==='canyon') h=0.12+Math.min(1.15, Math.abs(v)*1.7)+n*0.08;
+  else if(kind==='dunes') h=0.2+tri(u*3.1)*0.62+tri(v*2.2)*0.28+n*0.12;
+  else if(kind==='islands') h=(r<0.28 || (Math.abs(u-0.5)<0.18 && Math.abs(v+0.35)<0.18)) ? 0.75+n*0.4 : 0.06;
+  else if(kind==='steps') h=0.1+Math.floor((u+1)*3.2)*0.28+n*0.06;
+  else if(kind==='river') h=0.08+Math.min(1.2, Math.abs(u)*1.55)+n*0.1;
+  else if(kind==='spires') h=0.12+(n>0.78?(n-0.78)*4.2:n*0.2);
+  else if(kind==='basin') h=0.08+Math.min(1.25, r*1.35)+n*0.08;
+  else if(kind==='cliff') h=(u>0.08?1.05:0.12)+n*0.1;
+  else if(kind==='bowl') h=0.12+r*r*1.15+n*0.1;
+  else if(kind==='pass') h=0.16+Math.abs(u)*0.35+Math.max(0, Math.abs(v)-0.22)*1.7+n*0.08;
+  else if(kind==='plain') h=0.16+n*0.42;
+  else if(kind==='terrace') h=0.1+Math.floor((1-Math.min(1, r))*4)*0.28+n*0.05;
+  else if(kind==='road') h=0.1+Math.abs(v)*1.15+n*0.08;
+  else if(kind==='marsh') h=0.08+Math.min(0.55, Math.abs(u)*0.4)+tri(v*2.4)*0.22+n*0.16;
+  else if(kind==='bridge') h=(Math.abs(v)<0.16?0.42:0.08+Math.abs(v)*0.9)+n*0.08;
+  else if(kind==='drive') h=0.12+Math.abs(u)*0.22+Math.max(0, Math.abs(v)-0.18)*1.4+n*0.06;
+  else throw Error('kind');
+  h=Math.min(1.65, Math.max(0.05, h));
+  return h;
+}
+function targetField(){
+  const SEED=seedOf(SLUG);
+  const raw=new Array(N*N);
+  for(let z=0;z<N;z++){
+    for(let x=0;x<N;x++){
+      const u=x/(N-1)*2-1, v=z/(N-1)*2-1;
+      const n=hash2(x, z, SEED)*0.65+hash2(x>>1, z>>1, (SEED^0x9e3779b9)>>>0)*0.35;
+      raw[z*N+x]=shape(KIND, u, v, n);
+    }
+  }
+  const smooth=raw.slice();
+  for(let z=1;z<N-1;z++){
+    for(let x=1;x<N-1;x++){
+      const i=z*N+x;
+      smooth[i]=(raw[i]*4+raw[i-1]+raw[i+1]+raw[i-N]+raw[i+N])/8;
+    }
+  }
+  return smooth;
+}
+function climbHeights(target){
+  const kept=new Array(target.length);
+  const t0=target[0], bad=0-Math.abs(t0)*0.25;
+  if(Math.abs(t0-bad)<Math.abs(t0)) throw Error('landscape kept a worse height');
+  for(let i=0;i<target.length;i++){
+    let x=0, g=Math.abs(target[i]-x);
+    for(let k=0;k<16;k++){
+      const next=x+(target[i]-x)/2, ng=Math.abs(target[i]-next);
+      if(!(ng<g)) throw Error('landscape gap');
+      x=next; g=ng;
+    }
+    if(g>1e-3) throw Error('landscape residual');
+    kept[i]=+x.toFixed(5);
+  }
+  return kept;
+}
+function same(a, b){
+  if(a.length!==b.length) return false;
+  for(let i=0;i<a.length;i++) if(a[i]!==b[i]) return false;
+  return true;
+}
+function landWord(kept){
+  let x=2166136261;
+  for(let i=0;i<kept.length;i++){
+    const s=kept[i].toFixed(5);
+    for(let j=0;j<s.length;j++) x=Math.imul(x^s.charCodeAt(j), 16777619);
+  }
+  return (x>>>0).toString(16).padStart(8,'0');
+}
+function landOnce(){
+  const a=climbHeights(targetField()), b=climbHeights(targetField());
+  if(!same(a, b)) throw Error('land drift');
+  return a;
+}
+const landKept=landOnce();
+window.LAND=landKept;
+window.LANDN=N;
+window.LANDSPAN=10;
+window.LANDWORD=landWord(landKept);
+function civOnce(){
+  const dx=BEACON[0]-START[0], dz=BEACON[1]-START[1];
+  let gap=Math.hypot(dx, dz), dropped=0, kept=[];
+  const selfish=gap*0.8;
+  if(!(selfish<gap)) throw Error('a short civ was not closer');
+  dropped++;
+  const away=gap+0.35;
+  if(away<gap) throw Error('a civ away from home was kept');
+  dropped++;
+  const mutant=gap*3;
+  if(mutant<gap) throw Error('a worse civ was kept');
+  dropped++;
+  for(let gen=0; gen<17; gen++){
+    const next=gap/2;
+    if(!(next<gap)) throw Error('civ gap');
+    gap=next;
+    kept.push(+gap.toFixed(6));
+  }
+  if(gap>1e-3) throw Error('civ home');
+  if(kept.length!==17||dropped!==3) throw Error('civ count');
+  const word='GAP='+gap.toFixed(6)+'|WORKS=17|BEAR='+BEARNAME+'|CIV='+LANDNAME;
+  const again='GAP='+gap.toFixed(6)+'|WORKS=17|BEAR='+BEARNAME+'|CIV='+LANDNAME;
+  if(word!==again) throw Error('civ lineage');
+  return word;
+}
+function rememberCiv(word){
+  const key='mayhem-civ-kept';
+  let book={};
+  try{ book=JSON.parse(localStorage.getItem(key)||'{}')||{}; }catch(e){ book={}; }
+  const row=book[SLUG];
+  if(!row) book[SLUG]={word:word, visits:1};
+  else { if(row.word!==word) throw Error('civ drift'); row.visits+=1; }
+  localStorage.setItem(key, JSON.stringify(book));
+  const again=JSON.parse(localStorage.getItem(key))[SLUG];
+  if(!again||again.word!==word) throw Error('civ drift');
+  return again.visits;
+}
+const civWord=civOnce();
+const civWord2=civOnce();
+if(civWord!==civWord2) throw Error('civ drift');
+window.CIVWORD=civWord;
+window.START=START;
+window.BEACON=BEACON;
+function check(){
+  const a=once(), b=once();
+  if(a!==b) throw Error('second run');
+  const visits=remember(a);
+  if(visits<1) throw Error('memory');
+  const again=landWord(climbHeights(targetField()));
+  if(again!==window.LANDWORD) throw Error('land drift');
+  const lv=rememberLand(window.LANDWORD);
+  if(lv<1) throw Error('land memory');
+  const w=civOnce();
+  if(w!==window.CIVWORD) throw Error('civ drift');
+  const wv=rememberCiv(window.CIVWORD);
+  if(wv<1) throw Error('civ memory');
+  const el=document.getElementById('agentlog');
+  if(el) el.textContent=LANDNAME+' kept its heights. '+BEARNAME+' can build. The diatom keeps a work only when the gap shrinks. visit '+visits;
+  return 'DIATOM + BEAR + MITO + AMOEBA + BACTERIA + CHLOROPHYLL + ELECTROLYTE held '+SET+'; LAND '+window.LANDWORD+'; CIV '+window.CIVWORD;
+}
+async function sha(t){
+  const d=await crypto.subtle.digest('SHA-256', new TextEncoder().encode(t));
+  return [...new Uint8Array(d)].map(function(b){return b.toString(16).padStart(2,'0');}).join('');
+}
+(async function(){
+  const p=document.getElementById('proof');
+  try{
+    const h=await sha(NAME+'|'+SLUG+'|'+BLURB);
+    if(h!==SEAL) throw Error('seal mismatch');
+    const r=check();
+    const r2=check();
+    if(r!==r2) throw Error('second run');
+    p.innerHTML='<span class="t LIT">LIT</span> self-check passed: '+r;
+  }catch(e){
+    p.innerHTML='<span class="t WALL">FAIL</span> '+e.message;
+    throw e;
+  }
+})();
+</script>
+<script id="civ-canvas">
+
+(function(){
+const SKY="#fafee2", LOW="#a8a8a8", HIGH="#e8ecd0", WATERCOL="#509466", INK="#2a3036";
+const WATER=1, MARK="stone", STYLE="sumi", BEAR="Violet";
+const FAMILY=2, BANDS=3, ALPHA=0.72, WIDTH=2.5, DASH=4, INSET=0.68, DOTS=5, HATCH=2, SHIFT=11;
+if(!(FAMILY>=0&&FAMILY<=10)) throw Error('style');
+const host=document.getElementById('v3');
+if(!host) throw Error('canvas');
+const thumb=/[?&]thumb=1/.test(location.search);
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const H=window.LAND, N=window.LANDN, SPAN=window.LANDSPAN;
+if(!H||H.length!==N*N) throw Error('land missing');
+const START=window.START, BEACON=window.BEACON;
+if(!START||START.length!==2||!BEACON||BEACON.length!==2) throw Error('civ');
+const canvas=document.createElement('canvas');
+const ctx=canvas.getContext('2d');
+if(!ctx) throw Error('canvas');
+host.appendChild(canvas);
+const raw=window.devicePixelRatio||1;
+const dpr=raw>2?2:raw;
+if(dpr>2||(raw>2&&dpr!==2)) throw Error('pixel ratio');
+function fit(){
+  const cssW=host.clientWidth||640, cssH=host.clientHeight||520;
+  canvas.width=Math.max(1, Math.round(cssW*dpr));
+  canvas.height=Math.max(1, Math.round(cssH*dpr));
+}
+function sample(wx, wz){
+  const u=Math.min(N-1.001, Math.max(0, (wx/SPAN+0.5)*(N-1)));
+  const v=Math.min(N-1.001, Math.max(0, (wz/SPAN+0.5)*(N-1)));
+  const x0=Math.floor(u), z0=Math.floor(v);
+  const tx=u-x0, tz=v-z0;
+  const i00=H[z0*N+x0], i10=H[z0*N+x0+1], i01=H[(z0+1)*N+x0], i11=H[(z0+1)*N+x0+1];
+  return i00*(1-tx)*(1-tz)+i10*tx*(1-tz)+i01*(1-tx)*tz+i11*tx*tz;
+}
+function cellNy(){
+  function gx(ix){ return (ix/(N-1)-0.5)*SPAN; }
+  function gz(iz){ return (iz/(N-1)-0.5)*SPAN; }
+  const ax=gx(0), ay=H[0], az=gz(0);
+  const cx=gx(0), cy=H[N], cz=gz(1);
+  const bx=gx(1), by=H[1], bz=gz(0);
+  const e1x=cx-ax, e1z=cz-az, e2x=bx-ax, e2z=bz-az;
+  return e1z*e2x-e1x*e2z;
+}
+const ny=cellNy();
+if(!(ny>0)) throw Error('land faces down');
+let posX=START[0], posZ=START[1];
+let yaw=Math.atan2(-(BEACON[1]-START[1]), BEACON[0]-START[0]);
+function heading(){ return {x:Math.cos(yaw), y:0, z:-Math.sin(yaw)}; }
+function basis(){
+  const hv=heading();
+  const py=sample(posX, posZ)+0.62;
+  const camx=posX-hv.x*2.15, camy=1.28, camz=posZ-hv.z*2.15;
+  let lx=posX-camx, ly=Math.min(1.05, py*0.45+0.4)-camy, lz=posZ-camz;
+  const llen=Math.hypot(lx, ly, lz);
+  if(!(llen>0)) throw Error('forward');
+  lx/=llen; ly/=llen; lz/=llen;
+  let rx=-lz, ry=0, rz=lx;
+  const rlen=Math.hypot(rx, rz);
+  if(!(rlen>0.2)) throw Error('picture right');
+  rx/=rlen; rz/=rlen;
+  let ux=ry*lz-rz*ly, uy=rz*lx-rx*lz, uz=rx*ly-ry*lx;
+  const ulen=Math.hypot(ux, uy, uz);
+  if(!(ulen>0.2)||!(uy>0)) throw Error('picture upside down');
+  ux/=ulen; uy/=ulen; uz/=ulen;
+  return {camx:camx, camy:camy, camz:camz, lx:lx, ly:ly, lz:lz, rx:rx, ry:ry, rz:rz, ux:ux, uy:uy, uz:uz, hv:hv, py:py};
+}
+function project(p){
+  const b=basis();
+  const dx=p.x-b.camx, dy=p.y-b.camy, dz=p.z-b.camz;
+  const depth=dx*b.lx+dy*b.ly+dz*b.lz;
+  if(depth<0.05) return null;
+  const sx=(dx*b.rx+dy*b.ry+dz*b.rz)/depth;
+  const sy=(dx*b.ux+dy*b.uy+dz*b.uz)/depth;
+  const w=canvas.width, h=canvas.height;
+  return {x:w/2+sx*h*1.37, y:h/2-sy*h*1.37, depth:depth};
+}
+const keys={f:0, y:0};
+let goal=null;
+let best=Math.hypot(BEACON[0]-START[0], BEACON[1]-START[1]);
+let lastDrop=best;
+const kept=[];
+const STEP=0.016, SPEED=2.6, TURN=1.8;
+function aim(wx, wz){ goal={x:wx, z:wz}; keys.f=0; keys.y=0; }
+function move(){
+  if(reduce||thumb) return;
+  if(keys.y){ yaw+=keys.y*TURN*STEP; goal=null; }
+  let stepX=0, stepZ=0;
+  if(keys.f){
+    goal=null;
+    const hv=heading();
+    stepX=hv.x*keys.f*SPEED*STEP;
+    stepZ=hv.z*keys.f*SPEED*STEP;
+  }else if(goal){
+    const dx=goal.x-posX, dz=goal.z-posZ;
+    const dist=Math.hypot(dx, dz);
+    if(dist<0.18) goal=null;
+    else {
+      yaw=Math.atan2(-dz, dx);
+      const hv=heading();
+      const step=Math.min(SPEED*STEP, dist);
+      stepX=hv.x*step;
+      stepZ=hv.z*step;
+    }
+  }
+  posX+=stepX; posZ+=stepZ;
+  if(posX>4.4) posX=4.4;
+  if(posX<-4.4) posX=-4.4;
+  if(posZ>4.4) posZ=4.4;
+  if(posZ<-4.4) posZ=-4.4;
+  const distB=Math.hypot(BEACON[0]-posX, BEACON[1]-posZ);
+  if(distB+1e-4<best){
+    best=distB;
+    if(kept.length<16 && best<lastDrop-0.32){
+      kept.push({x:posX, z:posZ});
+      lastDrop=best;
+    }
+  }
+}
+function hexRgb(h){
+  return [parseInt(h.slice(1,3),16), parseInt(h.slice(3,5),16), parseInt(h.slice(5,7),16)];
+}
+const lowRgb=hexRgb(LOW), highRgb=hexRgb(HIGH);
+function mix(t){
+  const r1=(lowRgb[0]+(highRgb[0]-lowRgb[0])*0.33)|0;
+  const g1=(lowRgb[1]+(highRgb[1]-lowRgb[1])*0.33)|0;
+  const b1=(lowRgb[2]+(highRgb[2]-lowRgb[2])*0.33)|0;
+  const r2=(lowRgb[0]+(highRgb[0]-lowRgb[0])*0.66)|0;
+  const g2=(lowRgb[1]+(highRgb[1]-lowRgb[1])*0.66)|0;
+  const b2=(lowRgb[2]+(highRgb[2]-lowRgb[2])*0.66)|0;
+  const mid='rgb('+r2+','+g2+','+b2+')';
+  const lowmid='rgb('+r1+','+g1+','+b1+')';
+  if(BANDS===2) return t<0.58?LOW:HIGH;
+  if(BANDS===4){
+    if(t<0.28) return LOW;
+    if(t<0.5) return lowmid;
+    if(t<0.74) return mid;
+    return HIGH;
+  }
+  if(t<0.42) return LOW;
+  if(t<0.74) return mid;
+  return HIGH;
+}
+function coverRoll(ix, iz, seed){
+  let x=(seed ^ Math.imul(ix+97, 374761393) ^ Math.imul(iz+57, 668265263))>>>0;
+  x=Math.imul(x^(x>>>13), 1274126177)>>>0;
+  return ((x^(x>>>16))>>>0)/4294967296;
+}
+const covers=[];
+(function buildCovers(){
+  let n=0;
+  for(let z=1; z<N-1 && n<10; z+=2){
+    for(let x=1; x<N-1 && n<10; x+=2){
+      const X=(x/(N-1)-0.5)*SPAN, Z=(z/(N-1)-0.5)*SPAN;
+      if(Math.hypot(X-START[0], Z-START[1])<1.35) continue;
+      if(Math.hypot(X-BEACON[0], Z-BEACON[1])<1.35) continue;
+      if(coverRoll(x, z, 99)>0.16) continue;
+      covers.push({x:X, z:Z, y:sample(X, Z)});
+      n++;
+    }
+  }
+})();
+if(MARK!=='reed'&&MARK!=='stone'&&MARK!=='tree'&&MARK!=='post') throw Error('mark');
+const RING=[[1,0],[0.86603,0.5],[0.5,0.86603],[0,1],[-0.5,0.86603],[-0.86603,0.5],[-1,0],[-0.86603,-0.5],[-0.5,-0.86603],[0,-1],[0.5,-0.86603],[0.86603,-0.5]];
+const DASHES=[[], [8,5], [2,7], [12,4], [4,4], [1,6]];
+let drewWater=0, quadCount=0, draws=0, styleHits=0, sig='';
+function centroid(pts){
+  let x=0, y=0;
+  for(let i=0;i<pts.length;i++){ x+=pts[i].x; y+=pts[i].y; }
+  return {x:x/pts.length, y:y/pts.length};
+}
+function poly(pts){
+  ctx.beginPath();
+  ctx.moveTo(pts[0].x, pts[0].y);
+  for(let i=1;i<pts.length;i++) ctx.lineTo(pts[i].x, pts[i].y);
+  ctx.closePath();
+}
+function insetOf(pts, k){
+  const c=centroid(pts);
+  const out=[];
+  for(let i=0;i<pts.length;i++) out.push({x:c.x+(pts[i].x-c.x)*k, y:c.y+(pts[i].y-c.y)*k});
+  return out;
+}
+function applyDash(){
+  if(DASH===0) ctx.setLineDash([]);
+  else ctx.setLineDash(DASHES[DASH]);
+}
+function fillP(color, alpha){
+  ctx.fillStyle=color;
+  ctx.globalAlpha=alpha;
+  ctx.fill();
+  ctx.globalAlpha=1;
+}
+function strokeP(color, width){
+  applyDash();
+  ctx.strokeStyle=color;
+  ctx.globalAlpha=1;
+  ctx.lineWidth=width;
+  ctx.stroke();
+  ctx.setLineDash([]);
+}
+function paintPath(pts, color, alt){
+  ctx.setLineDash([]);
+  if(FAMILY===10){
+    poly(pts);
+    if(alt) strokeP(INK, WIDTH);
+    else fillP(color, ALPHA);
+    return 'K';
+  }
+  if(FAMILY===0){
+    poly(pts); fillP(color, ALPHA); return 'F';
+  }
+  if(FAMILY===1){
+    poly(pts); fillP(color, ALPHA); strokeP(INK, WIDTH); return 'B';
+  }
+  if(FAMILY===2){
+    poly(pts); strokeP(color, WIDTH); return 'S';
+  }
+  if(FAMILY===3){
+    poly(insetOf(pts, INSET)); fillP(color, ALPHA); return 'I';
+  }
+  if(FAMILY===4){
+    const c=centroid(pts);
+    const dots=[];
+    if(DOTS&1){ for(let i=0;i<pts.length;i++) dots.push(pts[i]); }
+    if(DOTS&2){
+      for(let i=0;i<pts.length;i++){
+        const n=pts[(i+1)%pts.length];
+        dots.push({x:(pts[i].x+n.x)/2, y:(pts[i].y+n.y)/2});
+      }
+    }
+    if(DOTS&4) dots.push(c);
+    ctx.fillStyle=INK;
+    ctx.globalAlpha=0.9;
+    const rad=Math.max(1.5, canvas.height*0.0035);
+    for(let i=0;i<dots.length;i++){
+      ctx.beginPath();
+      ctx.arc(dots[i].x, dots[i].y, rad, 0, 6.283185307179586);
+      ctx.fill();
+    }
+    ctx.globalAlpha=1;
+    return 'D';
+  }
+  if(FAMILY===5){
+    poly(pts); fillP(color, 0.28);
+    ctx.beginPath();
+    if(HATCH&1){ ctx.moveTo(pts[0].x, pts[0].y); ctx.lineTo(pts[2].x, pts[2].y); }
+    if(HATCH&2 && pts.length>3){ ctx.moveTo(pts[1].x, pts[1].y); ctx.lineTo(pts[3].x, pts[3].y); }
+    if(HATCH&4 && pts.length>3){
+      ctx.moveTo((pts[0].x+pts[1].x)/2, (pts[0].y+pts[1].y)/2);
+      ctx.lineTo((pts[3].x+pts[2].x)/2, (pts[3].y+pts[2].y)/2);
+    }
+    strokeP(INK, Math.max(1.2, WIDTH*0.45));
+    return 'H';
+  }
+  if(FAMILY===6){
+    poly(pts);
+    ctx.save();
+    ctx.translate(SHIFT, SHIFT);
+    fillP(INK, 0.35);
+    ctx.restore();
+    poly(pts);
+    fillP(color, ALPHA);
+    return 'O';
+  }
+  if(FAMILY===7){
+    if(pts.length===4){
+      poly([pts[0], pts[1], pts[2]]); fillP(color, ALPHA);
+      poly([pts[0], pts[2], pts[3]]); fillP(INK, Math.min(1, ALPHA));
+    }else{
+      poly(pts); fillP(color, ALPHA);
+    }
+    return 'T';
+  }
+  if(FAMILY===8){
+    poly(pts); strokeP(INK, WIDTH);
+    poly(insetOf(pts, INSET)); fillP(color, ALPHA);
+    return 'R';
+  }
+  if(FAMILY===9){
+    const wash=ALPHA>0.9?0.4:ALPHA;
+    poly(pts); fillP(color, wash);
+    if(pts.length===4){
+      const n=BANDS===2?1:BANDS===4?3:2;
+      ctx.beginPath();
+      for(let s=1;s<=n;s++){
+        const t=s/(n+1);
+        ctx.moveTo(pts[0].x+(pts[3].x-pts[0].x)*t, pts[0].y+(pts[3].y-pts[0].y)*t);
+        ctx.lineTo(pts[1].x+(pts[2].x-pts[1].x)*t, pts[1].y+(pts[2].y-pts[1].y)*t);
+      }
+      strokeP(INK, Math.max(1.4, WIDTH*0.55));
+    }
+    return 'P';
+  }
+  throw Error('style');
+}
+function paintSun(){
+  const sunR=canvas.height*0.07;
+  const sx=canvas.width*0.8, syy=canvas.height*0.14;
+  ctx.setLineDash([]);
+  ctx.beginPath();
+  ctx.arc(sx, syy, sunR, 0, 6.283185307179586);
+  if(FAMILY===2||FAMILY===5){
+    strokeP(INK, Math.max(2, sunR*0.08));
+  }else if(FAMILY===4){
+    ctx.beginPath();
+    ctx.fillStyle=INK;
+    ctx.globalAlpha=1;
+    ctx.arc(sx, syy, Math.max(2, sunR*0.12), 0, 6.283185307179586);
+    ctx.fill();
+  }else if(FAMILY===0||FAMILY===9){
+    ctx.fillStyle=HIGH;
+    ctx.globalAlpha=ALPHA>0.9?1:ALPHA;
+    ctx.fill();
+    ctx.globalAlpha=1;
+  }else{
+    ctx.fillStyle=HIGH;
+    ctx.globalAlpha=1;
+    ctx.fill();
+    strokeP(INK, Math.max(2, sunR*0.08));
+  }
+}
+function draw(){
+  const b=basis();
+  const hv=b.hv;
+  const py=b.py;
+  const right={x:-hv.z, y:0, z:hv.x};
+  const bear={x:posX, y:py, z:posZ};
+  const bearS=project(bear);
+  const above=project({x:posX, y:py+1, z:posZ});
+  const ahead=project({x:posX+hv.x, y:py, z:posZ+hv.z});
+  const wright=project({x:posX-hv.z, y:py, z:posZ+hv.x});
+  if(!bearS||!above||!ahead||!wright) throw Error('picture empty');
+  if(!(ahead.depth>bearS.depth)) throw Error('picture faces back');
+  if(!(above.y<bearS.y)) throw Error('picture upside down');
+  if(!(wright.x>bearS.x)) throw Error('picture right');
+  ctx.setLineDash([]);
+  ctx.lineJoin='round';
+  ctx.lineCap='round';
+  ctx.globalAlpha=1;
+  ctx.fillStyle=SKY;
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  paintSun();
+  const quads=[];
+  for(let z=0; z<N-1; z+=2){
+    let z2=z+2; if(z2>N-1) z2=N-1;
+    for(let x=0; x<N-1; x+=2){
+      let x2=x+2; if(x2>N-1) x2=N-1;
+      const corners=[[x,z],[x2,z],[x2,z2],[x,z2]];
+      const pts=[];
+      let depth=0, ht=0, ok=1;
+      for(let i=0;i<4;i++){
+        const ix=corners[i][0], iz=corners[i][1];
+        const wx=(ix/(N-1)-0.5)*SPAN, wz=(iz/(N-1)-0.5)*SPAN, wy=H[iz*N+ix];
+        const s=project({x:wx, y:wy, z:wz});
+        if(!s){ ok=0; break; }
+        pts.push(s);
+        depth+=s.depth;
+        ht+=wy;
+      }
+      if(!ok) continue;
+      quads.push({depth:depth/4, pts:pts, color:mix((ht/4)/1.35), alt:((((x/2)|0)+((z/2)|0))%2)===1});
+    }
+  }
+  quads.sort(function(a,c){ return c.depth-a.depth; });
+  quadCount=quads.length;
+  if(quadCount<8) throw Error('picture empty');
+  for(let i=0;i<quads.length;i++){
+    const mark=paintPath(quads[i].pts, quads[i].color, quads[i].alt);
+    if(!mark) throw Error('style');
+    if(sig && sig!==mark) throw Error('style');
+    sig=mark;
+    styleHits++;
+  }
+  drewWater=0;
+  if(WATER){
+    const rad=SPAN*0.62;
+    const pts=[];
+    for(let i=0;i<RING.length;i++){
+      const s=project({x:RING[i][0]*rad, y:0.16, z:RING[i][1]*rad});
+      if(!s) continue;
+      pts.push(s);
+    }
+    if(pts.length<4) throw Error('water');
+    const wmark=paintPath(pts, WATERCOL, 0);
+    if(!wmark) throw Error('water');
+    drewWater=1;
+  }
+  function cut(p, q){
+    const a=project(p), d=project(q);
+    if(!a||!d) return;
+    ctx.beginPath();
+    ctx.moveTo(a.x, a.y);
+    ctx.lineTo(d.x, d.y);
+    ctx.strokeStyle=INK;
+    ctx.globalAlpha=0.92;
+    ctx.lineWidth=Math.max(2.5, canvas.height*0.005);
+    ctx.setLineDash([]);
+    ctx.stroke();
+  }
+  cut({x:START[0], y:sample(START[0], START[1]), z:START[1]}, {x:BEACON[0], y:sample(BEACON[0], BEACON[1]), z:BEACON[1]});
+  function paintHouse(x, z, lift){
+    const y0=sample(x, z);
+    const left=project({x:x-hv.z*0.18, y:y0+lift, z:z+hv.x*0.18});
+    const rightp=project({x:x+hv.z*0.18, y:y0+lift, z:z-hv.x*0.18});
+    const base=project({x:x, y:y0+0.02, z:z});
+    const roof=project({x:x, y:y0+lift+0.36, z:z});
+    if(!left||!rightp||!base||!roof) return;
+    paintPath([left, rightp, base], HIGH, 0);
+    paintPath([left, roof, rightp], INK, 0);
+  }
+  for(let i=0;i<kept.length;i++) paintHouse(kept[i].x, kept[i].z, 0.16);
+  paintHouse(BEACON[0], BEACON[1], 0.34);
+  const wy=sample(BEACON[0]+right.x*0.8, BEACON[1]+right.z*0.8);
+  const well=project({x:BEACON[0]+right.x*0.8, y:wy+0.05, z:BEACON[1]+right.z*0.8});
+  if(well){
+    ctx.beginPath();
+    ctx.arc(well.x, well.y, Math.max(4, canvas.height*0.012), 0, 6.283185307179586);
+    ctx.strokeStyle=INK; ctx.globalAlpha=1; ctx.lineWidth=3; ctx.setLineDash([]); ctx.stroke();
+  }
+  const lamp=project({x:BEACON[0], y:sample(BEACON[0], BEACON[1])+1.2, z:BEACON[1]});
+  if(lamp){
+    ctx.beginPath();
+    ctx.fillStyle=HIGH; ctx.globalAlpha=1;
+    ctx.arc(lamp.x, lamp.y, Math.max(3, canvas.height*0.008), 0, 6.283185307179586);
+    ctx.fill();
+  }
+  const sprites=[];
+  const saw={};
+  function blob(name, p, radius, color, alpha, bias){
+    const s=project(p);
+    if(!s) return;
+    saw[name]=1;
+    sprites.push({name:name, depth:s.depth+(bias||0), x:s.x, y:s.y, r:Math.max(1.6, radius/s.depth*canvas.height*1.37), color:color, alpha:alpha, stroke:name!=='shadow', ribs:name==='diatom', rod:name==='bacteria', leaf:name==='chlorophyll', wx:p.x, wy:p.y, wz:p.z});
+  }
+  blob('shadow', {x:posX, y:sample(posX, posZ)+0.03, z:posZ}, 0.46, '#1a140c', 0.28, 0.25);
+  blob('electrolyte', {x:posX, y:py, z:posZ}, 0.78, '#c9e7ff', 0.55, 0.2);
+  blob('amoeba', {x:posX, y:py+0.02, z:posZ}, 0.5, '#f3c6a2', 0.72, 0.12);
+  blob('diatom', {x:posX, y:py+0.04, z:posZ}, 0.36, '#d7f36a', 0.9, 0.15);
+  blob('bacteria', {x:posX-hv.x*0.28+right.x*0.24, y:py-0.04, z:posZ-hv.z*0.28+right.z*0.24}, 0.07, '#e7d27a', 1, 0.02);
+  blob('chlorophyll', {x:posX+right.x*0.16, y:py+0.2, z:posZ+right.z*0.16}, 0.08, '#3f9a45', 1, 0.02);
+  blob('bear', bear, 0.2, '#f0c0a0', 1, 0);
+  blob('mito', {x:posX, y:py+0.06, z:posZ}, 0.055, '#ff7a3a', 1, -0.02);
+  blob('head', {x:posX+hv.x*0.16, y:py+0.08, z:posZ+hv.z*0.16}, 0.09, '#e7b394', 1, -0.03);
+  const nose={x:posX+hv.x*0.55, y:sample(posX+hv.x*0.55, posZ+hv.z*0.55)+0.08, z:posZ+hv.z*0.55};
+  blob('snout', nose, 0.055, INK, 1, -0.05);
+  const noseS=project(nose);
+  for(let i=0;i<covers.length;i++){
+    const c=covers[i];
+    const base={x:c.x, y:c.y, z:c.z};
+    if(MARK==='stone') blob('cover', {x:c.x, y:c.y+0.08, z:c.z}, 0.12, INK, 1, 0);
+    else if(MARK==='tree'){
+      cut(base, {x:c.x, y:c.y+0.28, z:c.z});
+      blob('cover', {x:c.x, y:c.y+0.46, z:c.z}, 0.16, HIGH, 1, -0.02);
+    }else if(MARK==='post') cut(base, {x:c.x, y:c.y+0.5, z:c.z});
+    else cut(base, {x:c.x, y:c.y+0.62, z:c.z});
+  }
+  const cap={x:BEACON[0], y:sample(BEACON[0], BEACON[1])+0.92, z:BEACON[1]};
+  const need=['electrolyte','amoeba','diatom','chlorophyll','bacteria','bear','mito','snout'];
+  if(!draws){
+    for(let i=0;i<need.length;i++) if(!saw[need[i]]) throw Error('nest');
+    if(!project(cap)) throw Error('beacon');
+  }
+  sprites.sort(function(a,c){ return c.depth-a.depth; });
+  for(let i=0;i<sprites.length;i++){
+    const s=sprites[i];
+    if(s.leaf){
+      const tip=project({x:s.wx, y:s.wy+0.18, z:s.wz});
+      const lft=project({x:s.wx+right.x*0.1, y:s.wy-0.02, z:s.wz+right.z*0.1});
+      const rgt=project({x:s.wx-right.x*0.1, y:s.wy-0.02, z:s.wz-right.z*0.1});
+      if(tip&&lft&&rgt){
+        ctx.beginPath();
+        ctx.moveTo(tip.x, tip.y);
+        ctx.lineTo(lft.x, lft.y);
+        ctx.lineTo(rgt.x, rgt.y);
+        ctx.closePath();
+        ctx.fillStyle='#3f9a45';
+        ctx.globalAlpha=1;
+        ctx.fill();
+        ctx.strokeStyle=INK;
+        ctx.globalAlpha=0.9;
+        ctx.lineWidth=Math.max(2, s.r*0.16);
+        ctx.setLineDash([]);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(tip.x, tip.y);
+        ctx.lineTo((lft.x+rgt.x)/2, (lft.y+rgt.y)/2);
+        ctx.stroke();
+      }
+      continue;
+    }
+    ctx.beginPath();
+    ctx.fillStyle=s.color;
+    ctx.globalAlpha=s.alpha;
+    ctx.arc(s.x, s.y, s.r, 0, 6.283185307179586);
+    ctx.fill();
+    if(s.stroke){
+      ctx.strokeStyle=INK;
+      ctx.globalAlpha=0.9;
+      ctx.lineWidth=Math.max(2, s.r*0.1);
+      ctx.setLineDash([]);
+      ctx.stroke();
+    }
+    if(s.ribs){
+      ctx.beginPath();
+      ctx.strokeStyle=INK;
+      ctx.globalAlpha=0.8;
+      ctx.lineWidth=Math.max(1.5, s.r*0.05);
+      for(let k=-2;k<=2;k++){
+        const yy=s.y+k*s.r*0.22;
+        const half=s.r*0.7;
+        ctx.moveTo(s.x-half, yy);
+        ctx.lineTo(s.x+half, yy);
+      }
+      ctx.stroke();
+    }
+    if(s.rod){
+      const a=project({x:s.wx-hv.x*0.16, y:s.wy, z:s.wz-hv.z*0.16});
+      const d=project({x:s.wx+hv.x*0.16, y:s.wy, z:s.wz+hv.z*0.16});
+      if(a&&d){
+        ctx.beginPath();
+        ctx.moveTo(a.x, a.y);
+        ctx.lineTo(d.x, d.y);
+        ctx.strokeStyle=INK;
+        ctx.globalAlpha=1;
+        ctx.lineWidth=Math.max(7, s.r*2.2);
+        ctx.setLineDash([]);
+        ctx.stroke();
+        ctx.strokeStyle='#e7d27a';
+        ctx.lineWidth=Math.max(4, s.r*1.3);
+        ctx.stroke();
+      }
+    }
+  }
+  if(noseS&&bearS){
+    ctx.beginPath();
+    ctx.moveTo(bearS.x, bearS.y);
+    ctx.lineTo(noseS.x, noseS.y);
+    ctx.strokeStyle=INK;
+    ctx.globalAlpha=0.95;
+    ctx.lineWidth=Math.max(3, canvas.height*0.005);
+    ctx.setLineDash([]);
+    ctx.stroke();
+  }
+  if(bearS){
+    ctx.globalAlpha=1;
+    ctx.fillStyle=INK;
+    ctx.font='600 '+Math.max(14, canvas.height*0.028)+'px Georgia, serif';
+    ctx.fillText(BEAR, bearS.x+12, bearS.y-18);
+  }
+  draws++;
+}
+function frame(){ move(); draw(); }
+function onPointer(ev){
+  if(!canvas.getBoundingClientRect) return;
+  const rect=canvas.getBoundingClientRect();
+  const rw=rect.width||1, rh=rect.height||1;
+  const px=((ev.clientX-rect.left)/rw)*canvas.width;
+  const py=((ev.clientY-rect.top)/rh)*canvas.height;
+  if(ev.preventDefault) ev.preventDefault();
+  const b=basis();
+  const sx=(px-canvas.width/2)/(canvas.height*1.37);
+  const sy=(canvas.height/2-py)/(canvas.height*1.37);
+  let dx=b.lx+b.rx*sx+b.ux*sy;
+  let dy=b.ly+b.ry*sx+b.uy*sy;
+  let dz=b.lz+b.rz*sx+b.uz*sy;
+  const len=Math.hypot(dx, dy, dz);
+  if(!(len>0)) return;
+  dx/=len; dy/=len; dz/=len;
+  if(!(dy<-1e-4)) return;
+  const t=-b.camy/dy;
+  if(!(t>0)) return;
+  aim(b.camx+dx*t, b.camz+dz*t);
+  if(host.focus) host.focus();
+}
+canvas.addEventListener('pointerdown', onPointer);
+function onKey(e, down){
+  const k=e.key;
+  let bit=0, turn=0;
+  if(k==='w'||k==='W'||k==='ArrowUp') bit=1;
+  else if(k==='s'||k==='S'||k==='ArrowDown') bit=-1;
+  else if(k==='a'||k==='A'||k==='ArrowLeft') turn=1;
+  else if(k==='d'||k==='D'||k==='ArrowRight') turn=-1;
+  else return;
+  if(e.preventDefault) e.preventDefault();
+  if(bit) keys.f=down?bit:0;
+  if(turn) keys.y=down?turn:0;
+  if(down) goal=null;
+}
+addEventListener('keydown', function(e){ onKey(e, 1); });
+addEventListener('keyup', function(e){ onKey(e, 0); });
+addEventListener('resize', fit);
+window.__civ={
+  frame:frame,
+  keys:keys,
+  aim:aim,
+  kept:kept,
+  heading:heading,
+  project:project,
+  canvas:canvas,
+  pos:function(){ return {x:posX, z:posZ, y:sample(posX, posZ)+0.62, yaw:yaw}; },
+  cam:function(){ const b=basis(); return {x:b.camx, y:b.camy, z:b.camz, hx:b.hv.x, hz:b.hv.z}; },
+  ny:ny,
+  water:WATER,
+  drewWater:function(){ return drewWater; },
+  quads:function(){ return quadCount; },
+  style:STYLE,
+  bear:BEAR,
+  painted:function(){ return styleHits>0?STYLE:''; },
+  mark:function(){ return sig; },
+  tune:function(){ return BANDS+'|'+ALPHA+'|'+WIDTH+'|'+DASH+'|'+INSET+'|'+DOTS+'|'+HATCH+'|'+SHIFT; }
+};
+(function(){
+  const b=basis();
+  if(b.camy>1.6) throw Error('camera high');
+  const span=Math.max(Math.abs(b.camx), Math.abs(b.camz));
+  if(!(span>0)||b.camy>2.2*span) throw Error('camera high');
+})();
+fit();
+draw();
+if(!(reduce||thumb)){
+  const run=function(){ frame(); requestAnimationFrame(run); };
+  requestAnimationFrame(run);
+}
+})();
+
+</script>
+
+<script id="cubit-register-boot">
+(function(){
+  if(/[?&]thumb=1/.test(location.search)) return;
+  if(document.getElementById('cubit-register')) return;
+  const ORDER=['geometric','constructive','agentic','generative'];
+  const ROLES=['ARTIST','CRITIC','BUILDER','WEAVER','FOLLOWER','KEEPER'];
+  const KEY='mayhem-cubit-register';
+  function slug(){
+    for(const sc of document.scripts){
+      const m=/const SLUG="([^"]+)"/.exec(sc.textContent||'');
+      if(m) return m[1];
+    }
+    return (location.pathname.replace(/^\//,'').replace(/\.html$/i,''))||'index';
+  }
+  function geometric(){
+    let canvases=0, svgs=0, w=0, h=0;
+    document.querySelectorAll('canvas').forEach(el=>{ canvases++; w=Math.max(w, el.clientWidth|0); h=Math.max(h, el.clientHeight|0); });
+    document.querySelectorAll('svg').forEach(el=>{ svgs++; w=Math.max(w, el.clientWidth|0); h=Math.max(h, el.clientHeight|0); });
+    const v3=document.getElementById('v3');
+    if(v3){ w=Math.max(w, v3.clientWidth|0); h=Math.max(h, v3.clientHeight|0); }
+    if(!w){ w=document.documentElement.clientWidth|0; h=document.documentElement.clientHeight|0; }
+    return {name:'geometric', text:canvases+'c+'+svgs+'s·'+w+'x'+h, canvases, svgs, w, h};
+  }
+  function constructive(host){
+    const nodes=host.querySelectorAll('*').length, buttons=host.querySelectorAll('button').length;
+    return {name:'constructive', text:nodes+'n·'+buttons+'b', nodes, buttons};
+  }
+  function agentic(host, c){
+    const text=host.innerText||'';
+    const found=ROLES.filter(r=>text.indexOf(r)!==-1);
+    const agents=found.length?found:['REGISTER'];
+    return {name:'agentic', text:agents.join('+'), agents, accepted:c.nodes>0};
+  }
+  function generative(g,c,a){
+    const s=g.text+'|'+c.text+'|'+a.text;
+    let x=2166136261;
+    for(let i=0;i<s.length;i++) x=Math.imul(x^s.charCodeAt(i), 16777619);
+    const code=(x>>>0).toString(16).padStart(8,'0');
+    return {name:'generative', text:code, code};
+  }
+  function build(host){
+    const register=[];
+    const g=geometric(); register.push(g);
+    const c=constructive(host); register.push(c);
+    const a=agentic(host,c); register.push(a);
+    register.push(generative(g,c,a));
+    return register;
+  }
+  function assertReg(register){
+    if(register.length!==4) throw Error('register length '+register.length);
+    if(register.map(x=>x.name).join(',')!==ORDER.join(',')) throw Error('cubit order');
+    if(register.some(x=>!x.text)) throw Error('empty cubit');
+    if(!register[2].accepted) throw Error('agent refused the register');
+    const again=generative(register[0], register[1], register[2]);
+    if(again.code!==register[3].code) throw Error('register drift');
+    return register.map(x=>x.text).join(' | ');
+  }
+  function remember(id, word){
+    let book={};
+    try{ book=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){ book={}; }
+    book[id]={word};
+    try{ localStorage.setItem(KEY, JSON.stringify(book)); }catch(e){}
+    return Object.keys(book).length;
+  }
+  function mount(register, err, rows){
+    let el=document.getElementById('cubit-register');
+    if(!el){
+      const style=document.createElement('style');
+      style.textContent='#cubit-register{margin:18px 0;padding:14px 12px 12px;border:1px solid rgba(0,240,255,.28);border-radius:14px;background:rgba(5,8,16,.78);box-shadow:0 0 28px rgba(0,240,255,.08);color:#d7e3f5;text-align:left;font-family:ui-monospace,Menlo,monospace}#cubit-register .cr-formula{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#eaf6ff;text-shadow:0 0 8px #00f0ff;margin:0 0 10px}#cubit-register .cr-row{display:flex;gap:8px;flex-wrap:wrap}#cubit-register .cr-cubit{flex:1 1 140px;border:1px solid rgba(0,240,255,.25);border-radius:10px;padding:8px;background:rgba(0,0,0,.35)}#cubit-register .cr-cubit b{display:block;font-weight:400;font-size:10px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:4px}#cubit-register .cr-cubit[data-cubit=geometric] b{color:#00f0ff}#cubit-register .cr-cubit[data-cubit=constructive] b{color:#ffb300}#cubit-register .cr-cubit[data-cubit=agentic] b{color:#ff2bd6}#cubit-register .cr-cubit[data-cubit=generative] b{color:#eaf6ff}#cubit-register .cr-cubit i{font-style:normal;font-size:13px;color:#eaf6ff}#cubit-register .cr-word{margin-top:10px;font-size:12px;color:#ffb3ec;word-break:break-all}#cubit-register .cr-status{margin-top:8px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#8fa3c7}body.thumb #cubit-register{display:none}';
+      document.head.appendChild(style);
+      el=document.createElement('section');
+      el.id='cubit-register';
+      el.setAttribute('aria-label','cubit register');
+      const host=document.getElementById('wrap')||document.querySelector('main')||document.body;
+      const h=host.querySelector('h1');
+      if(h) h.insertAdjacentElement('afterend', el);
+      else host.insertBefore(el, host.firstChild);
+    }
+    const cells=(register||ORDER.map(name=>({name,text:'—'}))).map(x=>'<div class="cr-cubit" data-cubit="'+x.name+'"><b>'+x.name+'</b><i>'+x.text+'</i></div>').join('');
+    const word=err?'':register.map(x=>x.text).join(' | ');
+    el.innerHTML='<div class="cr-formula">{{ geometric, constructive, agentic, generative }}</div><div class="cr-row">'+cells+'</div><div class="cr-word">'+(err?'':'REGISTER '+word)+'</div><div class="cr-status">'+(err?'FAIL '+err.message:'LIT four cubits wrote the register · AMBER this browser holds '+rows+' rows')+'</div>';
+  }
+  function run(){
+    const host=document.getElementById('wrap')||document.querySelector('main')||document.body;
+    try{
+      const register=build(host);
+      const word=assertReg(register);
+      const rows=remember(slug(), word);
+      mount(register, null, rows);
+    }catch(e){
+      mount(null, e, 0);
+      throw e;
+    }
+  }
+  requestAnimationFrame(run);
+})();
+</script>
+</body>
+</html>

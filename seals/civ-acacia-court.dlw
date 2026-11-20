@@ -1,0 +1,1 @@
+{"slug": "civ-acacia-court", "seal": "d9e970679adddf52fd2234e11ef2cc4bf5a6a7c738f41349a77e7525c4274494", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

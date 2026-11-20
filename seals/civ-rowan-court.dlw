@@ -1,0 +1,1 @@
+{"slug": "civ-rowan-court", "seal": "c15e721a82c9f827b0b0b68ea5e63bfca7a5845c7007436a73b4ab45b373d86a", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

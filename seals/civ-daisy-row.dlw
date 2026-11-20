@@ -1,0 +1,1 @@
+{"slug": "civ-daisy-row", "seal": "4eeafb31d0b95a54f13736ca96349b21d9f2ac4dea7d16b5e6d7077dee913255", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

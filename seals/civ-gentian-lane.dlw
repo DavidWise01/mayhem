@@ -1,0 +1,1 @@
+{"slug": "civ-gentian-lane", "seal": "fce3258d6331fc3cdc93efc55f5ef2a8e009040a85d76da6b98165fe11bcaec0", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}

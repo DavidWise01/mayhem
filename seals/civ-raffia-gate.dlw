@@ -1,0 +1,1 @@
+{"slug": "civ-raffia-gate", "seal": "67013946b06552009fc5867cd69f2bda6db7d85a6c34f5332804cf64cbc93532", "rule": "sha256(name|slug|blurb)", "write": "if-missing"}
