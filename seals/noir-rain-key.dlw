@@ -1,0 +1,1 @@
+{"slug":"noir-rain-key","seal":"52fae9c965f48286fae289c3a382489097f00fe6d85688bb161c75e8f76d07bb","rule":"sha256(name|slug|blurb)","write":"if-missing"}

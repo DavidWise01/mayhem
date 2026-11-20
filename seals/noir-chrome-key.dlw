@@ -1,0 +1,1 @@
+{"slug":"noir-chrome-key","seal":"71cb760f3b65b00745047efc7743d94294d1da5f525e227d5426d1df00f7a33e","rule":"sha256(name|slug|blurb)","write":"if-missing"}

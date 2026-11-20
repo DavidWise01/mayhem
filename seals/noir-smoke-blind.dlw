@@ -1,0 +1,1 @@
+{"slug":"noir-smoke-blind","seal":"e9d80d34c9a7a4450c75b4a5e17c9316fba60127038c5a4c0ecd4bb04cc8b695","rule":"sha256(name|slug|blurb)","write":"if-missing"}

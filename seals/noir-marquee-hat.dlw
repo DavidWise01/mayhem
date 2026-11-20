@@ -1,0 +1,1 @@
+{"slug":"noir-marquee-hat","seal":"aeb1ff92ad66ea0a1cb0d7f5be7a04499e96c912c0b99c1bfdd2e770e6ef6902","rule":"sha256(name|slug|blurb)","write":"if-missing"}

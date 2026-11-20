@@ -1,0 +1,1 @@
+{"slug":"noir-rain-coin","seal":"5bd33402a059a5b3e4cfd27d80579fe30dba6a535ca033c6f20bb0f524417634","rule":"sha256(name|slug|blurb)","write":"if-missing"}

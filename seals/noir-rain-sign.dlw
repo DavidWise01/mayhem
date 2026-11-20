@@ -1,0 +1,1 @@
+{"slug":"noir-rain-sign","seal":"f4fb5bbb1be6eef1db05bdfe80078deb6b104cb73ac43ef4021b06e5c9bc4e97","rule":"sha256(name|slug|blurb)","write":"if-missing"}

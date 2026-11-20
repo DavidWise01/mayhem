@@ -1,0 +1,1 @@
+{"slug":"noir-fog-train","seal":"a5fffa4fe35b3cc7334e3a358b363d95622216f7321e14ed71d65e929ca13bf7","rule":"sha256(name|slug|blurb)","write":"if-missing"}

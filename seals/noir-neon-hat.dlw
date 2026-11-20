@@ -1,0 +1,1 @@
+{"slug":"noir-neon-hat","seal":"117f02adf91dd48474d4a62983625b5b90854bd065ddb3c0ebda64ae947bb4a2","rule":"sha256(name|slug|blurb)","write":"if-missing"}

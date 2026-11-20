@@ -1,0 +1,1 @@
+{"slug":"noir-smoke-key","seal":"b42679133db6c39fdf68606238f3850377be478921bc831638ca2012ea40be9b","rule":"sha256(name|slug|blurb)","write":"if-missing"}

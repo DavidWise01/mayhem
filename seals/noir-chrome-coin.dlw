@@ -1,0 +1,1 @@
+{"slug":"noir-chrome-coin","seal":"b787caf23074ceefcb2df890dbdc0d5a5c9cb26ad2919b8d9828b5e4d90a4fbf","rule":"sha256(name|slug|blurb)","write":"if-missing"}

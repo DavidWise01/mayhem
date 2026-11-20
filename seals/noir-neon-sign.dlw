@@ -1,0 +1,1 @@
+{"slug":"noir-neon-sign","seal":"0f61b611f1a6cbf7c1ff87612d2e0acb42a0f84ace6eca72ba2f511f346a70be","rule":"sha256(name|slug|blurb)","write":"if-missing"}

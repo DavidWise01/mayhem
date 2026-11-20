@@ -1,0 +1,1 @@
+{"slug":"noir-pier-sign","seal":"0aa55d5385e630e69d18684d1265b75281f0f517934dcbcb1003fb1e84dfbe7e","rule":"sha256(name|slug|blurb)","write":"if-missing"}

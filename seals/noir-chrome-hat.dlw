@@ -1,0 +1,1 @@
+{"slug":"noir-chrome-hat","seal":"39333e960da1d15699e42b03afb704c0d12d76ed2d8b2646bd2c364843045d7d","rule":"sha256(name|slug|blurb)","write":"if-missing"}

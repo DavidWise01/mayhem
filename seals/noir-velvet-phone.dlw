@@ -1,0 +1,1 @@
+{"slug":"noir-velvet-phone","seal":"a4446b1d9dcadbdb185f6122b9acc25df0a272c266fb83d83838b5eaa2d87f70","rule":"sha256(name|slug|blurb)","write":"if-missing"}

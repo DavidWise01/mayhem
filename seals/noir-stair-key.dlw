@@ -1,0 +1,1 @@
+{"slug":"noir-stair-key","seal":"ecf4bb71ed0cfda9d33aa11548dcaea93312c5f02b71d765574e2d003cec3feb","rule":"sha256(name|slug|blurb)","write":"if-missing"}

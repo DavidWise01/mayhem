@@ -1,0 +1,1 @@
+{"slug":"noir-fog-case","seal":"5c3382a4f9aa174611cc8cb08c4ed38ecd3f72b2e2101bb8d0b995dcd181f21e","rule":"sha256(name|slug|blurb)","write":"if-missing"}

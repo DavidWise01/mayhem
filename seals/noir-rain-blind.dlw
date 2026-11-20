@@ -1,0 +1,1 @@
+{"slug":"noir-rain-blind","seal":"a5644f63d7e2e61f08124dbed8dc99ffc4989aee49a7ecf0546701e0a6815af9","rule":"sha256(name|slug|blurb)","write":"if-missing"}

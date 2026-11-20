@@ -1,0 +1,1 @@
+{"slug":"noir-pier-hat","seal":"91c7df0aa5201121f5c1af57e73da0b4c1d29c163a1566c55cbf0759d63e0fe1","rule":"sha256(name|slug|blurb)","write":"if-missing"}

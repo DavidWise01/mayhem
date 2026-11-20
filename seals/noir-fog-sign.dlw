@@ -1,0 +1,1 @@
+{"slug":"noir-fog-sign","seal":"b34453b31f2159fe8a544b84c6996e3815c912751639ae305e11374fa59bbfa2","rule":"sha256(name|slug|blurb)","write":"if-missing"}

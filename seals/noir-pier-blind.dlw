@@ -1,0 +1,1 @@
+{"slug":"noir-pier-blind","seal":"2cbd10831b0094641e1ab6e09fe6373be04db8a5a288933941be61fa4d0da16c","rule":"sha256(name|slug|blurb)","write":"if-missing"}

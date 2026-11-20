@@ -1,0 +1,1 @@
+{"slug":"noir-pier-coin","seal":"60929c74befd73f1ea8fa5138600729c039a923291b2d4908856d3a2522f5a82","rule":"sha256(name|slug|blurb)","write":"if-missing"}

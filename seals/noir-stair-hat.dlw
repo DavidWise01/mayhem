@@ -1,0 +1,1 @@
+{"slug":"noir-stair-hat","seal":"be6daca6dcdf3f7efd1a8fab00f34d38a5a6e39242316be51449764d56bdc249","rule":"sha256(name|slug|blurb)","write":"if-missing"}

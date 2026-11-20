@@ -1,0 +1,1 @@
+{"slug":"noir-rain-train","seal":"b8a1353ef5d7d3bcba84b327bb5ae9b68df8e93c2587dcc607624b55b7293661","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"noir-alley-phone","seal":"fe2d7cf46b738337edc2a524de6c8091b9923e4150768d8b23fb82a4560383aa","rule":"sha256(name|slug|blurb)","write":"if-missing"}

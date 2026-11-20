@@ -1,0 +1,1 @@
+{"slug":"noir-chrome-phone","seal":"d61b4321167d777b170ef16adf6b5331be8ae5597fd19e775172a5aec4dc05ac","rule":"sha256(name|slug|blurb)","write":"if-missing"}

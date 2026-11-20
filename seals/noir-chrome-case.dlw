@@ -1,0 +1,1 @@
+{"slug":"noir-chrome-case","seal":"5c7ef56e6de27273b84bc4bfccbcf4692f6aa2f801f29863ea5712dea31d5504","rule":"sha256(name|slug|blurb)","write":"if-missing"}

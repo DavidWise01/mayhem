@@ -1,0 +1,1 @@
+{"slug":"noir-neon-coin","seal":"82861dacdab162b5e722e1e7c0b34224c30089f64d8390c9b6f5e90e26f4bbbd","rule":"sha256(name|slug|blurb)","write":"if-missing"}

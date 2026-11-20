@@ -1,0 +1,1 @@
+{"slug":"noir-neon-lamp","seal":"41506c467f52625e94a55dc4dd950f18be7cd05b5a42e8802ca31bcc267357d9","rule":"sha256(name|slug|blurb)","write":"if-missing"}

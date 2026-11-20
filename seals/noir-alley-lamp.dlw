@@ -1,0 +1,1 @@
+{"slug":"noir-alley-lamp","seal":"ddc22bebe3263ecd76faab18cff5aedd71b4d85ceb8bf261e82d22df00b20c01","rule":"sha256(name|slug|blurb)","write":"if-missing"}

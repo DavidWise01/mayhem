@@ -1,0 +1,1 @@
+{"slug":"noir-stair-coin","seal":"520c0856ba435fc4f981a7eb719ac5a72a4dad3ae81e3f5c3e41a715655ae077","rule":"sha256(name|slug|blurb)","write":"if-missing"}

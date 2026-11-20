@@ -1,0 +1,1 @@
+{"slug":"noir-marquee-lamp","seal":"20b593de7bc08cdb31072fe5d544b35c7931199ecf55199c757363cd95734db5","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"noir-velvet-coin","seal":"96944fd60a5860b42ab76e4d94a3f92c8bc7fb56ba87e112a90e5df194bd146a","rule":"sha256(name|slug|blurb)","write":"if-missing"}

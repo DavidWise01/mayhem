@@ -1,0 +1,1 @@
+{"slug":"noir-pier-match","seal":"62783225f37745305c27fa0bad70022f6eaf1c443177a5d61d1bfbacbc842897","rule":"sha256(name|slug|blurb)","write":"if-missing"}

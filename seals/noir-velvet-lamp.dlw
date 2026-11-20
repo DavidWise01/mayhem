@@ -1,0 +1,1 @@
+{"slug":"noir-velvet-lamp","seal":"cddcb6ab6b99927af66212e488c88d1fe958b8e6a6f5b17c04596c9f7d7ea008","rule":"sha256(name|slug|blurb)","write":"if-missing"}

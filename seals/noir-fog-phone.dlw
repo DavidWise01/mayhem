@@ -1,0 +1,1 @@
+{"slug":"noir-fog-phone","seal":"6a9bba62d04cf787d1bb002b09b11c3938c4ce5d3b3624d349e3663c1979d710","rule":"sha256(name|slug|blurb)","write":"if-missing"}

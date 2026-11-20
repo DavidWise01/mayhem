@@ -1,0 +1,1 @@
+{"slug":"noir-smoke-case","seal":"c76f05a50f06a5efdea47f065735fee73a92fe7bc518f4b6e9200d86bc842331","rule":"sha256(name|slug|blurb)","write":"if-missing"}

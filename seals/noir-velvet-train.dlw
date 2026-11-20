@@ -1,0 +1,1 @@
+{"slug":"noir-velvet-train","seal":"2e3c4fa1ceb1a6c117a9ccf4d147310fccc1a9fdc9bf1b3d2c1308801923b3a0","rule":"sha256(name|slug|blurb)","write":"if-missing"}

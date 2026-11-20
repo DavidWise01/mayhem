@@ -1,0 +1,1 @@
+{"slug":"noir-smoke-sign","seal":"7ec814aa5b4a5cb2b0908943bc7dabe0daa4d0291a25a67b87fc9c8ef07c2ac5","rule":"sha256(name|slug|blurb)","write":"if-missing"}

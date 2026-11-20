@@ -1,0 +1,1 @@
+{"slug":"noir-pier-key","seal":"b18721a7d92b67216fd712c8f5cac19259512626a6530c798a704bc512a084d7","rule":"sha256(name|slug|blurb)","write":"if-missing"}

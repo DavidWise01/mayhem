@@ -1,0 +1,1 @@
+{"slug":"noir-alley-sign","seal":"071c27c14f839b014623cf4b99e988c1a9953a14bdc384d6bedc3886cf0833aa","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"noir-alley-coin","seal":"9ba7f3fced533e5036e2d46ded16c4b03495ca2d8f41c9c390d13d9d42d87468","rule":"sha256(name|slug|blurb)","write":"if-missing"}

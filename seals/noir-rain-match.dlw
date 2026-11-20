@@ -1,0 +1,1 @@
+{"slug":"noir-rain-match","seal":"ad98e74f6ec6838ceb97d49c2c23f861cfb23c2d051c78f7258dabdff2926567","rule":"sha256(name|slug|blurb)","write":"if-missing"}

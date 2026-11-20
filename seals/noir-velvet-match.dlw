@@ -1,0 +1,1 @@
+{"slug":"noir-velvet-match","seal":"41db87cf6038b8f11e0e9cca03b9a7a85685f27002e86a56536913e38ad12829","rule":"sha256(name|slug|blurb)","write":"if-missing"}

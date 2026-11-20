@@ -1,0 +1,1 @@
+{"slug":"noir-marquee-match","seal":"9a66877bf7c2f909d1917f2dd5b41702765d660439564f57801e5299e5adad72","rule":"sha256(name|slug|blurb)","write":"if-missing"}

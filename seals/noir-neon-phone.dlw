@@ -1,0 +1,1 @@
+{"slug":"noir-neon-phone","seal":"26707ac34760df6f48e980e208ceaab786bca874599b918f2f8e70a271e7e9bd","rule":"sha256(name|slug|blurb)","write":"if-missing"}

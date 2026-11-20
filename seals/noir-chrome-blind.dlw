@@ -1,0 +1,1 @@
+{"slug":"noir-chrome-blind","seal":"3824ad3be45a4fea1ec270fc26a5a1f738d911d98d68c1f64043db22573b1007","rule":"sha256(name|slug|blurb)","write":"if-missing"}

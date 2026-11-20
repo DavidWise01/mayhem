@@ -1,0 +1,1 @@
+{"slug":"noir-alley-hat","seal":"a5aabf1ae18f1920a73d6caa91d03ddc41e9c873e548c051c23fc8796e295c8d","rule":"sha256(name|slug|blurb)","write":"if-missing"}

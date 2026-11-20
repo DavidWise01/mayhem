@@ -1,0 +1,1 @@
+{"slug":"noir-neon-case","seal":"f092da482393edc2e2879cbde351def846a4756d1e317b0bfa613365d820e5dd","rule":"sha256(name|slug|blurb)","write":"if-missing"}

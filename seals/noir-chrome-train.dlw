@@ -1,0 +1,1 @@
+{"slug":"noir-chrome-train","seal":"70b9156ebbc888a14aa9ccb563a1f7f60a109a9ee31bccdd8942886568e2b505","rule":"sha256(name|slug|blurb)","write":"if-missing"}

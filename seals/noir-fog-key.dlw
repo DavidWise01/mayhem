@@ -1,0 +1,1 @@
+{"slug":"noir-fog-key","seal":"af94574c5ef6e0f56d4eac0e097e652a53d0f53606de23715816ac142f2297e6","rule":"sha256(name|slug|blurb)","write":"if-missing"}

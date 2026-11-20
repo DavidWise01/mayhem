@@ -1,0 +1,1 @@
+{"slug":"noir-velvet-case","seal":"838455fecc453b4a097d8cff86fe9cb2eae827af0a286c10247d16d3e86cedd3","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"noir-stair-train","seal":"3f79080fcd02f71e45861bb5331b4db4fdb25f53983b9c8e4f09c7e9277c544c","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"noir-fog-lamp","seal":"9c0cc5b27d6749af63bdb5a6365396ad32db4dd14bdb17025cb8112f73814a76","rule":"sha256(name|slug|blurb)","write":"if-missing"}

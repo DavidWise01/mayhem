@@ -1,0 +1,1 @@
+{"slug":"noir-smoke-train","seal":"5b1fd22e90e5854987b3a462104a6c99850d6486c60f944d05d4f2461a70820c","rule":"sha256(name|slug|blurb)","write":"if-missing"}

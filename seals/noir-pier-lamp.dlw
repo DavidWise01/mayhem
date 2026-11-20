@@ -1,0 +1,1 @@
+{"slug":"noir-pier-lamp","seal":"3aa5af224dc7d3beb7f015bce6a1d14c16036cef2a715905c02a72a4ba3c1b02","rule":"sha256(name|slug|blurb)","write":"if-missing"}

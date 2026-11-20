@@ -1,0 +1,1 @@
+{"slug":"noir-neon-train","seal":"ad8cee8fa5ef935de5bb04057d7013c99f7e60bcc9c6a411eb30af46cde6ea60","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"noir-velvet-blind","seal":"f4d4add2d1d19bc86beb5e694d3ecc872179fe005578ea3c9c5b94f13d26d1a1","rule":"sha256(name|slug|blurb)","write":"if-missing"}

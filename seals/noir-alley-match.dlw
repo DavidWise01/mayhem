@@ -1,0 +1,1 @@
+{"slug":"noir-alley-match","seal":"54475f3f09d781954aaa729a89f824cca318751a3806e2cb627a946e2675d5ab","rule":"sha256(name|slug|blurb)","write":"if-missing"}

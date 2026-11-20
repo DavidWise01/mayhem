@@ -1,0 +1,1 @@
+{"slug":"noir-alley-train","seal":"ebd4451ce67bde718313c997fcf4c718f92210ab674166569daa6c499798a59b","rule":"sha256(name|slug|blurb)","write":"if-missing"}

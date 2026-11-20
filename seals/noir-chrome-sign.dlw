@@ -1,0 +1,1 @@
+{"slug":"noir-chrome-sign","seal":"8356864b4f497db053e4d09a15d56e43c22ae03f5548ceeb629cb5a0e028d9ce","rule":"sha256(name|slug|blurb)","write":"if-missing"}

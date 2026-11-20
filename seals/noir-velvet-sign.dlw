@@ -1,0 +1,1 @@
+{"slug":"noir-velvet-sign","seal":"0f57b80a64135f64fe53c418b7296a5ea05f07a5efa5b3d94ab44061a074cf27","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"noir-marquee-train","seal":"c1c3860b983f6230624d63afe3c0b3bb95f2220a71289b2cbacb700553ea18ef","rule":"sha256(name|slug|blurb)","write":"if-missing"}

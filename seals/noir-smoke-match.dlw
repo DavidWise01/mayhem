@@ -1,0 +1,1 @@
+{"slug":"noir-smoke-match","seal":"53e4a885b46850c2769730b54404da92f2cd36853a9fd06c9e5c38fb0714de61","rule":"sha256(name|slug|blurb)","write":"if-missing"}

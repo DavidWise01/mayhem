@@ -1,0 +1,1 @@
+{"slug":"noir-fog-hat","seal":"eec5ab60461bd83bbed58b07acf4879c7a50b26d9703e20a5fdd3392d4c4a9ca","rule":"sha256(name|slug|blurb)","write":"if-missing"}

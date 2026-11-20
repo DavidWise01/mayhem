@@ -1,0 +1,1 @@
+{"slug":"noir-marquee-sign","seal":"0ba3d666f305c6a1c088d8bb33864f0d624de4527d4013b487bcca65d00066dc","rule":"sha256(name|slug|blurb)","write":"if-missing"}

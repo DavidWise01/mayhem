@@ -1,0 +1,1 @@
+{"slug":"noir-stair-case","seal":"3e893ebde6c88f5a4bcc4d1c225040871f8da18cccd9c097d8f0b93be3999a83","rule":"sha256(name|slug|blurb)","write":"if-missing"}
