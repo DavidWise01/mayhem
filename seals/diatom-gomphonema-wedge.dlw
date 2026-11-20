@@ -1,0 +1,1 @@
+{"slug":"diatom-gomphonema-wedge","seal":"2a9ab136c973c8565a0b8d3d5d6c2753d439abafc9bbc85bf5c6005b4666c0aa","rule":"sha256(name|slug|blurb)","write":"if-missing"}

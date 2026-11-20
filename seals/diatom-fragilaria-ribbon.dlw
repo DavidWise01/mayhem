@@ -1,0 +1,1 @@
+{"slug":"diatom-fragilaria-ribbon","seal":"c849b723d9e605433ff437e4e1cfed6c10102b89a68c84101bb8e81842e79e8d","rule":"sha256(name|slug|blurb)","write":"if-missing"}

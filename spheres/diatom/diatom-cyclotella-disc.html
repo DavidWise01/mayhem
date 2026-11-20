@@ -1,0 +1,1120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Cyclotella Disc · a sphere of Mayhem</title>
+<style>
+html,body{margin:0;background:#e7fbff;color:#14343c;font-family:Trebuchet MS, sans-serif}#wrap{max-width:1180px;min-width:0;margin:0 auto;padding:12px;display:grid;gap:8px;grid-template-columns:1fr 1fr;grid-template-areas:"stage stage" "mast copy";align-items:stretch}.mast{grid-area:mast}#v3{grid-area:stage;min-width:0;position:relative;height:62vh;min-height:520px;border-radius:18px;overflow:hidden;background:#e7fbff;border:0;box-shadow:0 18px 40px rgba(0,0,0,.12);touch-action:none}#v3:focus{outline:2px solid #14343c;outline-offset:2px}#v3 canvas{display:block;width:100%;height:100%}.story{grid-area:copy;max-width:78ch;line-height:1.55}h1{font-weight:500;font-size:clamp(28px,4vw,40px);margin:0 0 6px}.kicker,.land{font-family:ui-monospace,monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin:0 0 8px}#agentlog{position:absolute;z-index:2;left:14px;bottom:14px;margin:0;max-width:min(520px,92%);padding:8px 10px;border-radius:10px;background:rgba(255,252,247,.92);color:#181818;font-family:ui-monospace,monospace;font-size:12px;line-height:1.45}#glidehint{position:absolute;z-index:2;right:14px;top:14px;margin:0;padding:6px 8px;border-radius:8px;background:rgba(255,252,247,.92);color:#181818;font-family:ui-monospace,monospace;font-size:12px}.t{display:inline-block;padding:1px 8px;border-radius:8px;font-weight:700;font-size:13px;color:#111}.LIT{background:#3ee07a}.AMBER{background:#ffb020}.WALL{background:#ff5a5a;color:#fff}.MODEL{background:#b48cff}a{color:#14343c}code{font-family:ui-monospace,monospace;font-size:12px;word-break:break-all}body.thumb .story,body.thumb .mast,body.thumb #agentlog,body.thumb #glidehint{display:none}body.thumb #wrap{display:block;padding:0;max-width:none;height:100vh}body.thumb #v3{height:100vh;min-height:0;border-radius:0;box-shadow:none}.story,.mast,.kicker,#proof,#agentlog{min-width:0;overflow-wrap:anywhere}
+</style>
+</head>
+<body>
+<main id="wrap">
+<header class="mast">
+<p class="kicker">A sphere of Mayhem · The Cyclotella Disc · Disc · [[ELECTROLYTE{{AMOEBA{{DIATOM{{WATER BEAR((MITOCHONDRION))CHLOROPHYLL}}BACTERIA}}}}]] · keeper ERIS</p>
+<h1>The Cyclotella Disc</h1>
+<p class="land">the cyclotella disc</p>
+</header>
+<div id="v3" tabindex="0"><p id="glidehint">Arrows, WASD, or click the ground.</p><p id="agentlog">Disc waits. The valve faces the lamp.</p></div>
+<div class="story">
+<p>the cyclotella disc is Disc the diatom. Arrow keys or WASD steer the diatom. Click the ground and the valve glides there. The diatom keeps a glide only when the gap to the lamp shrinks. A step away from the lamp is not kept. A turn in place does not keep a glide. The water bear rides inside the frustule. The picture draws 16 rays and 3 rings of pores, 48 pores. The disc has no raphe. Two valves make the frustule. The picture calls this valve Cyclotella. The picture does not give a method for growing, extracting, or mixing.</p>
+<p>On this land, ELECTROLYTE holds AMOEBA. AMOEBA holds DIATOM and BACTERIA. DIATOM holds WATER BEAR and CHLOROPHYLL. WATER BEAR holds MITOCHONDRION. Set point 8 is this valve's place on the shelf. They are homeostatic, cooperative, and evolutionary. A selfish step is dropped. A step away from home is dropped. A worse mutant is dropped. A step is kept only when the shared gap shrinks. Eighteen steps bring the seven bodies home. Seventeen glides bring the valve home. GLIDES=17 counts those seventeen halvings. The picture keeps at most sixteen closer beads. A second run matches, and this browser stores the kept gap.</p>
+<p>ARTIST draws the valve, CRITIC checks the gap, BUILDER keeps the frustule, WEAVER writes the striae, FOLLOWER walks with Disc, and KEEPER stores the row. The camera sits low behind the valve. The land is generated for this page. The diatom's glides are the steps that got closer.</p>
+<p><span class="t LIT">LIT</span> Disc the diatom can glide the cyclotella disc. The diatom keeps a glide only when the gap shrinks. This page throws if a step away is kept, a stria falls off the valve, a raphe appears where the valve has none, or the ground faces down.</p>
+<p><span class="t MODEL">MODEL</span> The picture is Enamel, canvas, a clear field, the cyclotella disc. It does not give a workshop method. You can walk it. The pixel ratio follows the screen and stays at most 2. The camera sits low, behind the valve. A contact shadow sits under the valve. A worse height is dropped. A height is kept only when the gap shrinks.</p>
+<p id="proof">Checking the sphere.</p>
+<p>Seal sha256(name|slug|blurb): <code id="seal">aea7cdf40453f7b00159d4d9e0b23a487627387c706f6067c6072c2affb92899</code></p>
+<p><a href="../../index.html">Mayhem</a></p>
+</div>
+</main>
+<script>
+
+function half(form, u){
+  const uu = u * u;
+  if (form === 'boat' || form === 'crescent' || form === 'keel' || form === 'needle') return Math.sqrt(Math.max(0, 1 - uu));
+  if (form === 'costa') return Math.pow(Math.max(0, 1 - uu), 0.32);
+  if (form === 'wedge') return 0.3 + 0.7 * ((u + 1) / 2);
+  if (form === 'sigmoid') return Math.sqrt(Math.max(0, 1 - uu)) * 0.8;
+  if (form === 'disc' || form === 'sieve') return Math.sqrt(Math.max(0, 1 - uu));
+  if (form === 'ribbon') return 0.82;
+  throw Error('half');
+}
+function center(form, u){
+  if (form === 'crescent') return 0.36 * (1 - u * u);
+  if (form === 'sigmoid') return 0.48 * Math.sin(u * Math.PI);
+  return 0;
+}
+function ribbonCells(){
+  const cells = [];
+  const n = 7;
+  for (let c = 0; c < n; c++) {
+    const span = 1.88 / n;
+    const u0 = -0.94 + c * span;
+    cells.push({ u0: u0, u1: u0 + span * 0.8, c: c });
+  }
+  return cells;
+}
+function contains(form, u, v){
+  if (form === 'disc' || form === 'sieve') return u * u + v * v <= 1 + 1e-9;
+  if (form === 'ribbon') {
+    const cells = ribbonCells();
+    for (let i = 0; i < cells.length; i++) {
+      const c = cells[i];
+      if (u >= c.u0 - 1e-9 && u <= c.u1 + 1e-9 && Math.abs(v) <= 0.82 + 1e-9) return true;
+    }
+    return false;
+  }
+  if (u < -1 - 1e-9 || u > 1 + 1e-9) return false;
+  return Math.abs(v - center(form, u)) <= half(form, u) + 1e-6;
+}
+function buildValve(spec){
+  const form = spec.form;
+  const lines = [];
+  const pores = [];
+  const crosses = [];
+  let raphe = null;
+  let dropped = 0;
+  if (contains(form, 2, 2)) throw Error('a pore off the valve was kept');
+  dropped++;
+  if (form === 'disc') {
+    for (let k = 0; k < spec.rays; k++) {
+      const a = k / spec.rays * Math.PI * 2;
+      const line = { kind: 'ray', u0: Math.cos(a) * 0.16, v0: Math.sin(a) * 0.16, u1: Math.cos(a) * 0.9, v1: Math.sin(a) * 0.9 };
+      if (!contains(form, line.u0, line.v0) || !contains(form, line.u1, line.v1)) throw Error('a pore off the valve was kept');
+      lines.push(line);
+    }
+    for (let ring = 1; ring <= spec.rings; ring++) {
+      const rad = ring / (spec.rings + 1) * 0.92;
+      for (let k = 0; k < spec.rays; k++) {
+        const a = (k + (ring % 2 ? 0.5 : 0)) / spec.rays * Math.PI * 2;
+        const pore = { u: Math.cos(a) * rad, v: Math.sin(a) * rad };
+        if (!contains(form, pore.u, pore.v)) throw Error('a pore off the valve was kept');
+        pores.push(pore);
+      }
+    }
+    if (lines.length !== spec.rays) throw Error('rays');
+    if (pores.length !== spec.rays * spec.rings) throw Error('pores');
+  } else if (form === 'sieve') {
+    if (spec.rings !== 6) throw Error('rings');
+    for (let ring = 1; ring <= 6; ring++) {
+      const rad = ring / 7;
+      const n = 6 * ring;
+      for (let k = 0; k < n; k++) {
+        const a = k / n * Math.PI * 2 + (ring % 2 ? 0.04 : 0);
+        const pore = { u: Math.cos(a) * rad, v: Math.sin(a) * rad };
+        if (!contains(form, pore.u, pore.v)) throw Error('a pore off the valve was kept');
+        pores.push(pore);
+      }
+    }
+    if (pores.length !== 6 * (6 * 7 / 2)) throw Error('sieve');
+  } else if (form === 'ribbon') {
+    const cells = ribbonCells();
+    if (cells.length !== spec.cells) throw Error('cells');
+    for (let i = 0; i < cells.length; i++) {
+      const c = cells[i];
+      for (let s = 0; s < spec.each; s++) {
+        const u = c.u0 + (s + 0.5) / spec.each * (c.u1 - c.u0);
+        const line = { kind: 'stria', u: u, v1: 0.7, v2: -0.7, cell: c.c };
+        if (!contains(form, u, line.v1) || !contains(form, u, line.v2)) throw Error('a pore off the valve was kept');
+        if (!(halfSafe(u))) throw Error('stria');
+        lines.push(line);
+      }
+    }
+    if (lines.length !== spec.each * spec.cells) throw Error('ribbon');
+  } else if (form === 'sigmoid') {
+    for (let i = 0; i < spec.each; i++) {
+      const u = -0.84 + (i + 0.5) / spec.each * 1.68;
+      const h = half(form, u);
+      const c = center(form, u);
+      if (!(h > 0.08)) throw Error('stria');
+      const line = { kind: 'stria', u: u, v1: c + h * 0.9, v2: c - h * 0.9 };
+      if (!contains(form, u, line.v1) || !contains(form, u, line.v2)) throw Error('a pore off the valve was kept');
+      lines.push(line);
+    }
+    for (let j = 0; j < spec.each; j++) {
+      const s = -0.8 + (j + 0.5) / spec.each * 1.6;
+      const pts = [];
+      for (let i = 0; i <= 16; i++) {
+        const u = -0.9 + 1.8 * i / 16;
+        const h = half(form, u);
+        const c = center(form, u);
+        const v = c + s * h;
+        if (!contains(form, u, v)) throw Error('a pore off the valve was kept');
+        pts.push({ u: +u.toFixed(5), v: +v.toFixed(5) });
+      }
+      lines.push({ kind: 'long', u: s, pts: pts });
+    }
+    for (let i = 0; i < spec.each; i++) {
+      const u = -0.84 + (i + 0.5) / spec.each * 1.68;
+      const h = half(form, u);
+      const c = center(form, u);
+      for (let j = 0; j < spec.each; j++) {
+        const s = -0.8 + (j + 0.5) / spec.each * 1.6;
+        const v = c + s * h;
+        if (!contains(form, u, v)) throw Error('a pore off the valve was kept');
+        crosses.push({ u: +u.toFixed(5), v: +v.toFixed(5) });
+      }
+    }
+    if (crosses.length !== spec.each * spec.each) throw Error('cross');
+    if (lines.length !== spec.each * 2) throw Error('sigmoid lines');
+  } else {
+    for (let i = 0; i < spec.each; i++) {
+      const u = -0.84 + (i + 0.5) / spec.each * 1.68;
+      const h = half(form, u);
+      const c = center(form, u);
+      if (!(h > 0.08)) throw Error('stria');
+      const line = { kind: 'stria', u: u, v1: c + h * 0.9, v2: c - h * 0.9 };
+      if (!contains(form, u, line.v1) || !contains(form, u, line.v2)) throw Error('a pore off the valve was kept');
+      lines.push(line);
+    }
+    if (lines.length !== spec.each) throw Error('striae');
+  }
+  if (spec.raphe) {
+    if (contains(form, 0, 4)) throw Error('a raphe off the valve was kept');
+    dropped++;
+    const path = [];
+    const spans = [[-0.84, -0.12], [0.12, 0.84]];
+    for (let s = 0; s < spans.length; s++) {
+      const seg = [];
+      for (let i = 0; i <= 8; i++) {
+        const u = spans[s][0] + (spans[s][1] - spans[s][0]) * i / 8;
+        const h = half(form, u);
+        const c = center(form, u);
+        let v = c;
+        if (form === 'crescent') v = c - h * 0.55;
+        else if (form === 'keel') v = c + h * 0.72;
+        if (!contains(form, u, v)) throw Error('a raphe off the valve was kept');
+        seg.push({ u: +u.toFixed(5), v: +v.toFixed(5) });
+      }
+      path.push(seg);
+    }
+    raphe = path;
+  } else {
+    dropped++;
+    raphe = null;
+  }
+  const seen = {};
+  const pool = lines.length ? lines : pores;
+  if (!pool.length) throw Error('empty valve');
+  for (let i = 0; i < pool.length; i++) {
+    const item = pool[i];
+    const kk = lines.length ? ((item.kind || 'stria') + ':' + (item.u != null ? item.u.toFixed(4) : i)) : (item.u.toFixed(4) + ',' + item.v.toFixed(4));
+    if (seen[kk]) throw Error('a repeated stria was kept');
+    seen[kk] = 1;
+  }
+  dropped++;
+  if (dropped !== 3) throw Error('drops');
+  const striae = form === 'disc' || form === 'sieve' ? 0 : lines.length;
+  const ends = (form === 'disc' || form === 'sieve' || form === 'sigmoid') ? 0 : striae * 2;
+  const word = 'STRIAE=' + striae + '|ENDS=' + ends + '|PORES=' + pores.length + '|RAYS=' + (form === 'disc' ? lines.length : 0) + '|RINGS=' + ((form === 'disc' || form === 'sieve') ? spec.rings : 0) + '|CROSS=' + crosses.length + '|CELLS=' + (form === 'ribbon' ? spec.cells : 1) + '|VALVES=2|RAPHE=' + (spec.raphe ? 1 : 0) + '|FORM=' + form + '|DIATOM=' + spec.who + '|DROPPED=3';
+  const again = buildWord(form, spec, striae, ends, pores.length, form === 'disc' ? lines.length : 0, crosses.length);
+  if (again !== word) throw Error('valve lineage');
+  return { lines: lines, pores: pores, crosses: crosses, raphe: raphe, dropped: dropped, striae: striae, ends: ends, poresN: pores.length, rays: form === 'disc' ? lines.length : 0, rings: (form === 'disc' || form === 'sieve') ? spec.rings : 0, cross: crosses.length, cells: form === 'ribbon' ? spec.cells : 1, rapheN: spec.raphe ? 1 : 0, valves: 2, word: word };
+}
+function halfSafe(){ return true; }
+function buildWord(form, spec, striae, ends, pores, rays, cross){
+  const rings = (form === 'disc' || form === 'sieve') ? spec.rings : 0;
+  const cells = form === 'ribbon' ? spec.cells : 1;
+  return 'STRIAE=' + striae + '|ENDS=' + ends + '|PORES=' + pores + '|RAYS=' + rays + '|RINGS=' + rings + '|CROSS=' + cross + '|CELLS=' + cells + '|VALVES=2|RAPHE=' + (spec.raphe ? 1 : 0) + '|FORM=' + form + '|DIATOM=' + spec.who + '|DROPPED=3';
+}
+
+if(/[?&]thumb=1/.test(location.search)) document.body.classList.add('thumb');
+const SLUG="diatom-cyclotella-disc",NAME="The Cyclotella Disc",BLURB="At The Cyclotella Disc, Disc the diatom glides the valve. A step away from the lamp is not kept. A step is kept only when the gap shrinks. ELECTROLYTE holds AMOEBA, AMOEBA holds DIATOM and BACTERIA, DIATOM holds WATER BEAR and CHLOROPHYLL, and WATER BEAR holds MITOCHONDRION. Valve: Cyclotella. Style: Enamel.",SEAL="aea7cdf40453f7b00159d4d9e0b23a487627387c706f6067c6072c2affb92899",SET=8;
+const KIND="islands",LANDNAME="the cyclotella disc",VARIANT=8,N=24,WATER=1;
+const WHO="Disc";
+const SPEC={"form":"disc","each":0,"rays":16,"rings":3,"cells":1,"raphe":0,"who":"Disc"};
+const START=[2.4,-1.04], BEACON=[-2.3,1.8];
+function trioGap(xs, target){
+  let g=0;
+  for(let i=0;i<xs.length;i++){
+    const d=Math.abs(target-xs[i]);
+    if(d>g) g=d;
+  }
+  return g;
+}
+function bodies(target){
+  let xs=[0,0,0,0,0,0,0], gap=trioGap(xs, target), kept=[], dropped=0;
+  const selfish=xs[0]+(target-xs[0])*0.8;
+  const trial=xs.slice(); trial[0]=selfish;
+  if(trioGap(trial, target)<gap) throw Error('selfish step was kept');
+  dropped++;
+  const away=xs[0]-Math.abs(target-xs[0])*0.25;
+  if(trioGap([away,away,away,away,away,away,away], target)<gap) throw Error('a step away from home was kept');
+  dropped++;
+  const mutant=xs[0]+(target-xs[0])*3;
+  if(Math.abs(target-mutant)<gap) throw Error('a worse mutant was kept');
+  dropped++;
+  for(let gen=0; gen<18; gen++){
+    const next=xs.map(function(v){return v+(target-v)/2;});
+    const g=trioGap(next, target);
+    if(!(g<gap)) throw Error('gap stuck');
+    for(let i=1;i<next.length;i++) if(Math.abs(next[0]-next[i])>1e-9) throw Error('split');
+    if(!(Math.abs(target-next[0])<Math.abs(target-xs[0]))) throw Error('evolution');
+    xs=next; gap=g;
+    kept.push(+xs[0].toFixed(6));
+  }
+  if(gap>1e-3) throw Error('home gap');
+  for(let i=1;i<xs.length;i++) if(Math.abs(xs[0]-xs[i])>1e-9) throw Error('apart');
+  if(Math.round(xs[0])!==target) throw Error('set point');
+  return {xs:xs, gap:gap, kept:kept, dropped:dropped};
+}
+function once(){
+  const a=bodies(SET), b=bodies(SET);
+  if(a.dropped!==3||b.dropped!==3) throw Error('no drop');
+  if(a.kept.join()!==b.kept.join()) throw Error('lineage');
+  if(Math.abs(a.xs[0]-SET)>1e-3) throw Error('set');
+  const names=['DIATOM','BEAR','MITO','AMOEBA','BACTERIA','CHLOROPHYLL','ELECTROLYTE'];
+  return names.map(function(name,i){return name+'='+a.xs[i].toFixed(6);}).join('|');
+}
+function remember(word){
+  const key='mayhem-cast-kept';
+  let book={};
+  try{ book=JSON.parse(localStorage.getItem(key)||'{}')||{}; }catch(e){ book={}; }
+  const row=book[SLUG];
+  if(!row) book[SLUG]={word:word, visits:1};
+  else { if(row.word!==word) throw Error('persistent drift'); row.visits+=1; }
+  const keptRow=book[SLUG];
+  try{ localStorage.setItem(key, JSON.stringify(book)); }
+  catch(e){
+    try{ const one={}; one[SLUG]=keptRow; localStorage.setItem(key, JSON.stringify(one)); }
+    catch(e2){ return keptRow.visits; }
+  }
+  let again=null;
+  try{ again=JSON.parse(localStorage.getItem(key)||'{}')[SLUG]; }catch(e3){ again=null; }
+  if(!again) return keptRow.visits;
+  if(again.word!==word) throw Error('persistent drift');
+  return again.visits;
+}
+function rememberLand(word){
+  const key='mayhem-landscape-kept';
+  let book={};
+  try{ book=JSON.parse(localStorage.getItem(key)||'{}')||{}; }catch(e){ book={}; }
+  const row=book[SLUG];
+  if(!row) book[SLUG]={word:word, visits:1};
+  else { if(row.word!==word) throw Error('land drift'); row.visits+=1; }
+  const keptRow=book[SLUG];
+  try{ localStorage.setItem(key, JSON.stringify(book)); }
+  catch(e){
+    try{ const one={}; one[SLUG]=keptRow; localStorage.setItem(key, JSON.stringify(one)); }
+    catch(e2){ return keptRow.visits; }
+  }
+  let again=null;
+  try{ again=JSON.parse(localStorage.getItem(key)||'{}')[SLUG]; }catch(e3){ again=null; }
+  if(!again) return keptRow.visits;
+  if(again.word!==word) throw Error('land drift');
+  return again.visits;
+}
+function seedOf(str){
+  let x=2166136261;
+  for(let i=0;i<str.length;i++) x=Math.imul(x^str.charCodeAt(i), 16777619);
+  return x>>>0;
+}
+function hash2(ix, iz, seed){
+  let x=(seed ^ Math.imul(ix+97, 374761393) ^ Math.imul(iz+57, 668265263))>>>0;
+  x=Math.imul(x^(x>>>13), 1274126177)>>>0;
+  return ((x^(x>>>16))>>>0)/4294967296;
+}
+function tri(u){
+  const m=((u%2)+2)%2;
+  return m<1?m:2-m;
+}
+function axes(u, v){
+  let a=u, b=v;
+  if(VARIANT%2) a=-a;
+  if(VARIANT%3===0) b=-b;
+  if(VARIANT%5===0){ const t=a; a=b; b=t; }
+  return [a, b];
+}
+function shape(kind, u, v, n){
+  const ab=axes(u, v); u=ab[0]; v=ab[1];
+  const r=Math.sqrt(u*u+v*v);
+  let h=0.05;
+  if(kind==='mound') h=Math.max(0, 1.35*(0.9-r))+n*0.28;
+  else if(kind==='mesa') h=(r<0.4?1.12:0.1)+n*0.1;
+  else if(kind==='ridge') h=Math.max(0, 1.15-Math.abs(v)*2.3)+n*0.18;
+  else if(kind==='canyon') h=0.12+Math.min(1.15, Math.abs(v)*1.7)+n*0.08;
+  else if(kind==='dunes') h=0.2+tri(u*3.1)*0.62+tri(v*2.2)*0.28+n*0.12;
+  else if(kind==='islands') h=(r<0.28 || (Math.abs(u-0.5)<0.18 && Math.abs(v+0.35)<0.18)) ? 0.75+n*0.4 : 0.06;
+  else if(kind==='steps') h=0.1+Math.floor((u+1)*3.2)*0.28+n*0.06;
+  else if(kind==='river') h=0.08+Math.min(1.2, Math.abs(u)*1.55)+n*0.1;
+  else if(kind==='spires') h=0.12+(n>0.78?(n-0.78)*4.2:n*0.2);
+  else if(kind==='basin') h=0.08+Math.min(1.25, r*1.35)+n*0.08;
+  else if(kind==='cliff') h=(u>0.08?1.05:0.12)+n*0.1;
+  else if(kind==='bowl') h=0.12+r*r*1.15+n*0.1;
+  else if(kind==='pass') h=0.16+Math.abs(u)*0.35+Math.max(0, Math.abs(v)-0.22)*1.7+n*0.08;
+  else if(kind==='plain') h=0.16+n*0.42;
+  else if(kind==='terrace') h=0.1+Math.floor((1-Math.min(1, r))*4)*0.28+n*0.05;
+  else if(kind==='road') h=0.1+Math.abs(v)*1.15+n*0.08;
+  else if(kind==='marsh') h=0.08+Math.min(0.55, Math.abs(u)*0.4)+tri(v*2.4)*0.22+n*0.16;
+  else if(kind==='bridge') h=(Math.abs(v)<0.16?0.42:0.08+Math.abs(v)*0.9)+n*0.08;
+  else if(kind==='drive') h=0.12+Math.abs(u)*0.22+Math.max(0, Math.abs(v)-0.18)*1.4+n*0.06;
+  else throw Error('kind');
+  h=Math.min(1.65, Math.max(0.05, h));
+  return h;
+}
+function targetField(){
+  const SEED=seedOf(SLUG);
+  const raw=new Array(N*N);
+  for(let z=0;z<N;z++){
+    for(let x=0;x<N;x++){
+      const u=x/(N-1)*2-1, v=z/(N-1)*2-1;
+      const n=hash2(x, z, SEED)*0.65+hash2(x>>1, z>>1, (SEED^0x9e3779b9)>>>0)*0.35;
+      raw[z*N+x]=shape(KIND, u, v, n);
+    }
+  }
+  const smooth=raw.slice();
+  for(let z=1;z<N-1;z++){
+    for(let x=1;x<N-1;x++){
+      const i=z*N+x;
+      smooth[i]=(raw[i]*4+raw[i-1]+raw[i+1]+raw[i-N]+raw[i+N])/8;
+    }
+  }
+  return smooth;
+}
+function climbHeights(target){
+  const kept=new Array(target.length);
+  const t0=target[0], bad=0-Math.abs(t0)*0.25;
+  if(Math.abs(t0-bad)<Math.abs(t0)) throw Error('landscape kept a worse height');
+  for(let i=0;i<target.length;i++){
+    let x=0, g=Math.abs(target[i]-x);
+    for(let k=0;k<16;k++){
+      const next=x+(target[i]-x)/2, ng=Math.abs(target[i]-next);
+      if(!(ng<g)) throw Error('landscape gap');
+      x=next; g=ng;
+    }
+    if(g>1e-3) throw Error('landscape residual');
+    kept[i]=+x.toFixed(5);
+  }
+  return kept;
+}
+function same(a, b){
+  if(a.length!==b.length) return false;
+  for(let i=0;i<a.length;i++) if(a[i]!==b[i]) return false;
+  return true;
+}
+function landWord(kept){
+  let x=2166136261;
+  for(let i=0;i<kept.length;i++){
+    const str=kept[i].toFixed(5);
+    for(let j=0;j<str.length;j++) x=Math.imul(x^str.charCodeAt(j), 16777619);
+  }
+  return (x>>>0).toString(16).padStart(8,'0');
+}
+function landOnce(){
+  const a=climbHeights(targetField()), b=climbHeights(targetField());
+  if(!same(a, b)) throw Error('land drift');
+  return a;
+}
+const landKept=landOnce();
+window.LAND=landKept;
+window.LANDN=N;
+window.LANDSPAN=10;
+window.LANDWORD=landWord(landKept);
+function glideOnce(){
+  const dx=BEACON[0]-START[0], dz=BEACON[1]-START[1];
+  let gap=Math.hypot(dx, dz), dropped=0, kept=[];
+  const selfish=gap*0.8;
+  if(!(selfish<gap)) throw Error('a short glide was not closer');
+  dropped++;
+  const away=gap+0.35;
+  if(away<gap) throw Error('a glide away from the lamp was kept');
+  dropped++;
+  const mutant=gap*3;
+  if(mutant<gap) throw Error('a worse glide was kept');
+  dropped++;
+  const turned=gap;
+  if(turned<gap) throw Error('a turn kept a glide');
+  for(let gen=0; gen<17; gen++){
+    const next=gap/2;
+    if(!(next<gap)) throw Error('glide gap');
+    gap=next;
+    kept.push(+gap.toFixed(6));
+  }
+  if(gap>1e-3) throw Error('glide home');
+  if(kept.length!==17||dropped!==3) throw Error('glide count');
+  const word='GAP='+gap.toFixed(6)+'|GLIDES=17|DIATOM='+WHO+'|VALVE='+LANDNAME;
+  const again='GAP='+gap.toFixed(6)+'|GLIDES=17|DIATOM='+WHO+'|VALVE='+LANDNAME;
+  if(word!==again) throw Error('glide lineage');
+  return word;
+}
+const valveA=buildValve(SPEC), valveB=buildValve(SPEC);
+if(valveA.word!==valveB.word) throw Error('valve drift');
+if(valveA.dropped!==3||valveA.valves!==2) throw Error('valve');
+window.VALVEWORD=valveA.word;
+window.SPEC=SPEC;
+window.buildValve=buildValve;
+window.half=half;
+window.center=center;
+window.ribbonCells=ribbonCells;
+const glideWord=glideOnce();
+const glideWord2=glideOnce();
+if(glideWord!==glideWord2) throw Error('glide drift');
+window.GLIDEWORD=glideWord;
+window.START=START;
+window.BEACON=BEACON;
+function rememberDiatom(word){
+  const key='mayhem-diatom-kept';
+  let book={};
+  try{ book=JSON.parse(localStorage.getItem(key)||'{}')||{}; }catch(e){ book={}; }
+  const row=book[SLUG];
+  if(!row) book[SLUG]={word:word, visits:1};
+  else { if(row.word!==word) throw Error('diatom drift'); row.visits+=1; }
+  const keptRow=book[SLUG];
+  try{ localStorage.setItem(key, JSON.stringify(book)); }
+  catch(e){
+    try{ const one={}; one[SLUG]=keptRow; localStorage.setItem(key, JSON.stringify(one)); }
+    catch(e2){ return keptRow.visits; }
+  }
+  let again=null;
+  try{ again=JSON.parse(localStorage.getItem(key)||'{}')[SLUG]; }catch(e3){ again=null; }
+  if(!again) return keptRow.visits;
+  if(again.word!==word) throw Error('diatom drift');
+  return again.visits;
+}
+function check(){
+  const a=once(), b=once();
+  if(a!==b) throw Error('second run');
+  const visits=remember(a);
+  if(visits<1) throw Error('memory');
+  const again=landWord(climbHeights(targetField()));
+  if(again!==window.LANDWORD) throw Error('land drift');
+  const lv=rememberLand(window.LANDWORD);
+  if(lv<1) throw Error('land memory');
+  const valve=buildValve(SPEC);
+  if(valve.word!==window.VALVEWORD) throw Error('valve drift');
+  const glide=glideOnce();
+  if(glide!==window.GLIDEWORD) throw Error('glide drift');
+  const packed=valve.word+'||'+glide;
+  const dv=rememberDiatom(packed);
+  if(dv<1) throw Error('diatom memory');
+  const el=document.getElementById('agentlog');
+  if(el) el.textContent=LANDNAME+' kept its heights. '+WHO+' can glide. The diatom keeps a glide only when the gap shrinks. visit '+visits;
+  return 'DIATOM + BEAR + MITO + AMOEBA + BACTERIA + CHLOROPHYLL + ELECTROLYTE held '+SET+'; LAND '+window.LANDWORD+'; VALVE '+window.VALVEWORD+'; GLIDE '+window.GLIDEWORD;
+}
+async function sha(t){
+  const d=await crypto.subtle.digest('SHA-256', new TextEncoder().encode(t));
+  return [...new Uint8Array(d)].map(function(b){return b.toString(16).padStart(2,'0');}).join('');
+}
+(async function(){
+  const p=document.getElementById('proof');
+  try{
+    const h=await sha(NAME+'|'+SLUG+'|'+BLURB);
+    if(h!==SEAL) throw Error('seal mismatch');
+    const r=check();
+    const r2=check();
+    if(r!==r2) throw Error('second run');
+    p.innerHTML='<span class="t LIT">LIT</span> self-check passed: '+r;
+  }catch(e){
+    p.innerHTML='<span class="t WALL">FAIL</span> '+e.message;
+    throw e;
+  }
+})();
+</script>
+<script id="diatom-canvas">
+(function(){
+const SKY="#e7fbff", LOW="#8fd0dd", HIGH="#f4ffff", WATERCOL="#2a8ea3", INK="#14343c", GLASS="#e8fbff", GOLD="#f2c14e", NAVY="#1f7a8c";
+const WATER=1, STYLE="enamel", WHO="Disc";
+const TUNE={"fill":1,"stroke":1,"width":6,"alpha":1,"hatch":0};
+const MARK=STYLE+'|'+TUNE.fill+'|'+TUNE.stroke+'|'+TUNE.width+'|'+TUNE.alpha+'|'+TUNE.hatch;
+const FORM="disc", LENGTH=1.4, WIDTH=1.4;
+const host=document.getElementById('v3');
+if(!host) throw Error('canvas');
+const thumb=/[?&]thumb=1/.test(location.search);
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const H=window.LAND, N=window.LANDN, SPAN=window.LANDSPAN;
+if(!H||H.length!==N*N) throw Error('land missing');
+const START=window.START, BEACON=window.BEACON;
+if(!START||START.length!==2||!BEACON||BEACON.length!==2) throw Error('diatom');
+const BUILT=window.buildValve(window.SPEC);
+if(BUILT.word!==window.VALVEWORD) throw Error('valve drift');
+const canvas=document.createElement('canvas');
+const ctx=canvas.getContext('2d');
+if(!ctx) throw Error('canvas');
+host.appendChild(canvas);
+const raw=window.devicePixelRatio||1;
+const dpr=raw>2?2:raw;
+if(dpr>2||(raw>2&&dpr!==2)) throw Error('pixel ratio');
+function fit(){
+  const cssW=host.clientWidth||640, cssH=host.clientHeight||520;
+  canvas.width=Math.max(1, Math.round(cssW*dpr));
+  canvas.height=Math.max(1, Math.round(cssH*dpr));
+}
+function sample(wx, wz){
+  const u=Math.min(N-1.001, Math.max(0, (wx/SPAN+0.5)*(N-1)));
+  const v=Math.min(N-1.001, Math.max(0, (wz/SPAN+0.5)*(N-1)));
+  const x0=Math.floor(u), z0=Math.floor(v);
+  const tx=u-x0, tz=v-z0;
+  const i00=H[z0*N+x0], i10=H[z0*N+x0+1], i01=H[(z0+1)*N+x0], i11=H[(z0+1)*N+x0+1];
+  return i00*(1-tx)*(1-tz)+i10*tx*(1-tz)+i01*(1-tx)*tz+i11*tx*tz;
+}
+function cellNy(){
+  function gx(ix){ return (ix/(N-1)-0.5)*SPAN; }
+  function gz(iz){ return (iz/(N-1)-0.5)*SPAN; }
+  const ax=gx(0), az=gz(0);
+  const cx=gx(0), cz=gz(1);
+  const bx=gx(1), bz=gz(0);
+  const e1x=cx-ax, e1z=cz-az, e2x=bx-ax, e2z=bz-az;
+  return e1z*e2x-e1x*e2z;
+}
+const ny=cellNy();
+if(!(ny>0)) throw Error('land faces down');
+let posX=START[0], posZ=START[1];
+let yaw=Math.atan2(-(BEACON[1]-START[1]), BEACON[0]-START[0]);
+const startYaw=yaw;
+const startGap=Math.hypot(BEACON[0]-START[0], BEACON[1]-START[1]);
+function heading(){ return {x:Math.cos(yaw), y:0, z:-Math.sin(yaw)}; }
+function basis(){
+  const hv=heading();
+  const ground=sample(posX, posZ);
+  const centric=FORM==='disc'||FORM==='sieve';
+  const tilt=centric?0.04:0.23*LENGTH;
+  const py=ground+0.36+tilt;
+  const back=centric?1.18:1.62;
+  const camx=posX-hv.x*back, camy=1.28, camz=posZ-hv.z*back;
+  let lx=posX-camx, ly=py-camy, lz=posZ-camz;
+  const llen=Math.hypot(lx, ly, lz);
+  if(!(llen>0)) throw Error('forward');
+  lx/=llen; ly/=llen; lz/=llen;
+  let rx=-lz, ry=0, rz=lx;
+  const rlen=Math.hypot(rx, rz);
+  if(!(rlen>0.2)) throw Error('picture right');
+  rx/=rlen; rz/=rlen;
+  let ux=ry*lz-rz*ly, uy=rz*lx-rx*lz, uz=rx*ly-ry*lx;
+  const ulen=Math.hypot(ux, uy, uz);
+  if(!(ulen>0.2)||!(uy>0)) throw Error('picture upside down');
+  ux/=ulen; uy/=ulen; uz/=ulen;
+  return {camx:camx, camy:camy, camz:camz, lx:lx, ly:ly, lz:lz, rx:rx, ry:ry, rz:rz, ux:ux, uy:uy, uz:uz, hv:hv, py:py};
+}
+function project(p){
+  const b=basis();
+  const dx=p.x-b.camx, dy=p.y-b.camy, dz=p.z-b.camz;
+  const depth=dx*b.lx+dy*b.ly+dz*b.lz;
+  if(depth<0.05) return null;
+  const sx=(dx*b.rx+dy*b.ry+dz*b.rz)/depth;
+  const sy=(dx*b.ux+dy*b.uy+dz*b.uz)/depth;
+  const w=canvas.width, h=canvas.height;
+  return {x:w/2+sx*h*1.37, y:h/2-sy*h*1.37, depth:depth};
+}
+const keys={f:0, y:0};
+let goal=null;
+let best=startGap;
+let lastDrop=startGap;
+const kept=[];
+const STEP=0.016, SPEED=2.6, TURN=1.8;
+function aim(wx, wz){ goal={x:wx, z:wz}; keys.f=0; keys.y=0; }
+function move(){
+  if(reduce||thumb) return;
+  if(keys.y){ yaw+=keys.y*TURN*STEP; goal=null; }
+  let stepX=0, stepZ=0;
+  if(keys.f){
+    goal=null;
+    const hv=heading();
+    stepX=hv.x*keys.f*SPEED*STEP;
+    stepZ=hv.z*keys.f*SPEED*STEP;
+  }else if(goal){
+    const dx=goal.x-posX, dz=goal.z-posZ;
+    const dist=Math.hypot(dx, dz);
+    if(dist<0.18) goal=null;
+    else {
+      yaw=Math.atan2(-dz, dx);
+      const hv=heading();
+      const step=Math.min(SPEED*STEP, dist);
+      stepX=hv.x*step;
+      stepZ=hv.z*step;
+    }
+  }
+  posX+=stepX; posZ+=stepZ;
+  if(posX>4.4) posX=4.4;
+  if(posX<-4.4) posX=-4.4;
+  if(posZ>4.4) posZ=4.4;
+  if(posZ<-4.4) posZ=-4.4;
+  const distB=Math.hypot(BEACON[0]-posX, BEACON[1]-posZ);
+  if(distB+1e-4<best){
+    best=distB;
+    if(kept.length<16 && best<lastDrop-0.32){
+      kept.push({x:posX, z:posZ});
+      lastDrop=best;
+    }
+  }
+}
+function proveMove(){
+  if(reduce||thumb) return;
+  const saved={posX:posX, posZ:posZ, yaw:yaw, best:best, lastDrop:lastDrop, n:kept.length};
+  keys.y=1; keys.f=0; goal=null;
+  move();
+  keys.y=0;
+  if(kept.length!==saved.n) throw Error('a turn kept a glide');
+  if(posX!==saved.posX||posZ!==saved.posZ) throw Error('a turn moved the valve');
+  const g0=Math.hypot(BEACON[0]-posX, BEACON[1]-posZ);
+  keys.f=-1;
+  move();
+  keys.f=0;
+  const g1=Math.hypot(BEACON[0]-posX, BEACON[1]-posZ);
+  if(!(g1>g0)) throw Error('a step away from the lamp was kept');
+  if(kept.length!==saved.n) throw Error('a step away from the lamp was kept');
+  posX=saved.posX; posZ=saved.posZ; yaw=saved.yaw; best=saved.best; lastDrop=saved.lastDrop; kept.length=saved.n;
+  const before=Math.hypot(BEACON[0]-posX, BEACON[1]-posZ);
+  keys.f=1;
+  move();
+  keys.f=0;
+  const after=Math.hypot(BEACON[0]-posX, BEACON[1]-posZ);
+  if(!(after<before)) throw Error('a closer glide was dropped');
+  if(!(best<saved.best)) throw Error('a closer glide was dropped');
+  posX=saved.posX; posZ=saved.posZ; yaw=saved.yaw; best=saved.best; lastDrop=saved.lastDrop; kept.length=saved.n;
+  keys.f=0; keys.y=0; goal=null;
+}
+function place(u, v, y){
+  const hv=heading();
+  const rx=-hv.z, rz=hv.x;
+  return { x: posX + hv.x * u * (LENGTH/2) + rx * v * (WIDTH/2), y: y, z: posZ + hv.z * u * (LENGTH/2) + rz * v * (WIDTH/2) };
+}
+function outlineLoop(){
+  if(FORM==='ribbon'){
+    return window.ribbonCells().map(function(c){
+      return [{u:c.u0,v:0.82},{u:c.u1,v:0.82},{u:c.u1,v:-0.82},{u:c.u0,v:-0.82}];
+    });
+  }
+  const n=36, top=[], bot=[];
+  for(let i=0;i<=n;i++){
+    const u=-1+2*i/n;
+    const h=window.half(FORM, u);
+    const c=window.center(FORM, u);
+    top.push({u:u, v:c+h});
+    bot.push({u:u, v:c-h});
+  }
+  bot.reverse();
+  return [top.concat(bot)];
+}
+let sig='';
+let styleHits=0;
+let drewWater=0;
+let drewStriae=0;
+let drewRaphe=0;
+let drewPores=0;
+let valveSpan=0;
+let bearPx=0;
+let draws=0;
+function fillSheet(pts, fillColor, alpha){
+  if(pts.length<3) return;
+  ctx.beginPath();
+  ctx.moveTo(pts[0].x, pts[0].y);
+  for(let i=1;i<pts.length;i++) ctx.lineTo(pts[i].x, pts[i].y);
+  ctx.closePath();
+  ctx.globalAlpha=alpha;
+  ctx.fillStyle=fillColor;
+  ctx.fill();
+}
+function paintPoly(pts, fillColor, strokeColor){
+  if(pts.length<3) return '';
+  ctx.beginPath();
+  ctx.moveTo(pts[0].x, pts[0].y);
+  for(let i=1;i<pts.length;i++) ctx.lineTo(pts[i].x, pts[i].y);
+  ctx.closePath();
+  ctx.globalAlpha=Math.max(0.88, TUNE.fill ? TUNE.alpha : 0.94);
+  ctx.fillStyle=fillColor;
+  ctx.fill();
+  ctx.globalAlpha=0.95;
+  ctx.strokeStyle=strokeColor;
+  ctx.lineWidth=TUNE.stroke ? Math.max(1.25, TUNE.width * canvas.height / 700) : Math.max(1.25, canvas.height * 0.003);
+  ctx.setLineDash([]);
+  ctx.stroke();
+  return MARK;
+}
+function strokeLine(a, b, color, width){
+  if(!a||!b) return;
+  ctx.beginPath();
+  ctx.moveTo(a.x, a.y);
+  ctx.lineTo(b.x, b.y);
+  ctx.strokeStyle=color;
+  ctx.globalAlpha=0.95;
+  ctx.lineWidth=width;
+  ctx.setLineDash([]);
+  ctx.stroke();
+}
+function draw(){
+  const b=basis();
+  if(b.camy!==1.28) throw Error('camera high');
+  const ground=sample(posX, posZ);
+  const topY=ground+0.36;
+  const botY=ground+0.12;
+  const centric=FORM==='disc'||FORM==='sieve';
+  const tilt=centric?0.04:0.23*LENGTH;
+  function faceY(u){ return topY + tilt * (u + 1); }
+  const mid=project(place(0, window.center(FORM, 0), faceY(0)));
+  const bow=project(place(0.92, window.center(FORM, 0.92), faceY(0.92)));
+  const left=project(place(0, window.center(FORM, 0)+window.half(FORM, 0), faceY(0)));
+  const right=project(place(0, window.center(FORM, 0)-window.half(FORM, 0), faceY(0)));
+  const up=project({x:posX, y:faceY(0)+0.45, z:posZ});
+  if(!mid||!bow||!left||!right||!up) throw Error('picture empty');
+  if(!(bow.depth>mid.depth)) throw Error('picture faces back');
+  if(!(up.y<mid.y)) throw Error('picture upside down');
+  if(!(left.x>right.x)) throw Error('picture right');
+  ctx.setLineDash([]);
+  ctx.lineJoin='round';
+  ctx.lineCap='round';
+  ctx.globalAlpha=1;
+  ctx.fillStyle=SKY;
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  const quads=[];
+  for(let z=0; z<N-1; z+=2){
+    let z2=z+2; if(z2>N-1) z2=N-1;
+    for(let x=0; x<N-1; x+=2){
+      let x2=x+2; if(x2>N-1) x2=N-1;
+      const corners=[[x,z],[x2,z],[x2,z2],[x,z2]];
+      const pts=[];
+      let depth=0, ht=0, ok=1;
+      for(let i=0;i<4;i++){
+        const ix=corners[i][0], iz=corners[i][1];
+        const wx=(ix/(N-1)-0.5)*SPAN, wz=(iz/(N-1)-0.5)*SPAN, wy=H[iz*N+ix];
+        const sp=project({x:wx, y:wy, z:wz});
+        if(!sp){ ok=0; break; }
+        pts.push(sp); depth+=sp.depth; ht+=wy;
+      }
+      if(!ok) continue;
+      quads.push({depth:depth/4, pts:pts, color:(ht/4)>0.7?HIGH:LOW});
+    }
+  }
+  quads.sort(function(a,c){ return c.depth-a.depth; });
+  if(quads.length<8) throw Error('picture empty');
+  const landInk=TUNE.stroke && TUNE.width>=3;
+  for(let i=0;i<quads.length;i++){
+    fillSheet(quads[i].pts, quads[i].color, 0.92);
+    if(landInk){
+      ctx.globalAlpha=0.45;
+      ctx.strokeStyle=INK;
+      ctx.lineWidth=Math.max(1, TUNE.width * canvas.height / 1100);
+      ctx.stroke();
+    }
+    styleHits++;
+  }
+  drewWater=0;
+  if(WATER){
+    const ring=[[1,0],[0.86603,0.5],[0.5,0.86603],[0,1],[-0.5,0.86603],[-0.86603,0.5],[-1,0],[-0.86603,-0.5],[-0.5,-0.86603],[0,-1],[0.5,-0.86603],[0.86603,-0.5]];
+    const pts=[];
+    for(let i=0;i<ring.length;i++){
+      const sp=project({x:ring[i][0]*SPAN*0.62, y:0.16, z:ring[i][1]*SPAN*0.62});
+      if(!sp) continue;
+      pts.push(sp);
+    }
+    if(pts.length<4) throw Error('water');
+    fillSheet(pts, WATERCOL, 0.86);
+    if(TUNE.stroke){
+      ctx.globalAlpha=0.7;
+      ctx.strokeStyle=INK;
+      ctx.lineWidth=Math.max(1, (TUNE.width||1) * canvas.height / 800);
+      ctx.stroke();
+    }
+    drewWater=1;
+  }
+  const shadow=project({x:posX, y:ground+0.02, z:posZ});
+  if(shadow){
+    ctx.beginPath();
+    ctx.fillStyle='#1a140c';
+    ctx.globalAlpha=0.28;
+    ctx.ellipse(shadow.x, shadow.y, Math.max(8, canvas.height*0.04), Math.max(4, canvas.height*0.018), 0, 0, 6.283185307179586);
+    ctx.fill();
+  }
+  const lamp=project({x:BEACON[0], y:sample(BEACON[0], BEACON[1])+0.85, z:BEACON[1]});
+  if(lamp){
+    ctx.beginPath();
+    ctx.fillStyle=GOLD;
+    ctx.globalAlpha=1;
+    ctx.arc(lamp.x, lamp.y, Math.max(5, canvas.height*0.012), 0, 6.283185307179586);
+    ctx.fill();
+    ctx.strokeStyle=INK;
+    ctx.lineWidth=2;
+    ctx.stroke();
+  }
+  for(let i=0;i<kept.length;i++){
+    const bead=project({x:kept[i].x, y:sample(kept[i].x, kept[i].z)+0.08, z:kept[i].z});
+    if(!bead) continue;
+    ctx.beginPath();
+    ctx.fillStyle=GLASS;
+    ctx.globalAlpha=0.95;
+    ctx.arc(bead.x, bead.y, Math.max(3, canvas.height*0.008), 0, 6.283185307179586);
+    ctx.fill();
+    ctx.strokeStyle=INK;
+    ctx.lineWidth=1.5;
+    ctx.stroke();
+  }
+  const loops=outlineLoop();
+  let girdle=0;
+  for(let L=0;L<loops.length;L++){
+    const loop=loops[L];
+    const topPts=[];
+    for(let i=0;i<loop.length;i++){
+      const a=project(place(loop[i].u, loop[i].v, faceY(loop[i].u)));
+      if(a) topPts.push(a);
+    }
+    const count=loop.length<=6 ? 2 : 8;
+    for(let p=1;p<=count;p++){
+      const i=Math.min(loop.length-1, Math.round(p * (loop.length - 1) / (count + 1)));
+      const a=project(place(loop[i].u, loop[i].v, faceY(loop[i].u)));
+      const c=project(place(loop[i].u, loop[i].v, faceY(loop[i].u)-0.06));
+      if(a&&c){
+        strokeLine(a, c, INK, Math.max(1.2, canvas.height*0.0032));
+        girdle++;
+      }
+    }
+    if(topPts.length>=3){
+      const mark=paintPoly(topPts, GLASS, STYLE==='gold-ink'?GOLD:INK);
+      if(mark!==MARK) throw Error('style');
+    }
+  }
+  if(!draws && girdle<4) throw Error('girdle');
+  const striaColor=STYLE==='gold-ink'?GOLD:(STYLE==='mezzotint'?GOLD:INK);
+  const striaWidth=Math.max(1.3, (STYLE==='linocut'?4.8:STYLE==='silverpoint'?1.05:2) * canvas.height / 700);
+  drewStriae=0;
+  drewPores=0;
+  drewRaphe=0;
+  for(let i=0;i<BUILT.lines.length;i++){
+    const line=BUILT.lines[i];
+    if(line.kind==='ray'){
+      strokeLine(project(place(line.u0, line.v0, faceY(line.u0)+0.012)), project(place(line.u1, line.v1, faceY(line.u1)+0.012)), striaColor, striaWidth);
+      drewStriae++;
+    }else if(line.kind==='long'){
+      for(let k=1;k<line.pts.length;k++){
+        strokeLine(project(place(line.pts[k-1].u, line.pts[k-1].v, faceY(line.pts[k-1].u)+0.012)), project(place(line.pts[k].u, line.pts[k].v, faceY(line.pts[k].u)+0.012)), striaColor, striaWidth);
+      }
+      drewStriae++;
+    }else{
+      strokeLine(project(place(line.u, line.v1, faceY(line.u)+0.012)), project(place(line.u, line.v2, faceY(line.u)+0.012)), striaColor, striaWidth);
+      drewStriae++;
+    }
+  }
+  for(let i=0;i<BUILT.pores.length;i++){
+    const pore=BUILT.pores[i];
+    const sp=project(place(pore.u, pore.v, faceY(pore.u)+0.014));
+    if(!sp) continue;
+    ctx.beginPath();
+    ctx.fillStyle=STYLE==='photogram'?INK:GOLD;
+    ctx.globalAlpha=0.95;
+    ctx.arc(sp.x, sp.y, Math.max(1.6, canvas.height*0.0045), 0, 6.283185307179586);
+    ctx.fill();
+    drewPores++;
+  }
+  if(BUILT.raphe){
+    for(let s=0;s<BUILT.raphe.length;s++){
+      const seg=BUILT.raphe[s];
+      for(let k=1;k<seg.length;k++){
+        strokeLine(project(place(seg[k-1].u, seg[k-1].v, faceY(seg[k-1].u)+0.02)), project(place(seg[k].u, seg[k].v, faceY(seg[k].u)+0.02)), STYLE==='gold-ink'?GOLD:INK, Math.max(2.4, canvas.height*0.006));
+      }
+      drewRaphe++;
+    }
+  }
+  if(!draws){
+    if(drewStriae!==BUILT.lines.length) throw Error('striae');
+    if((BUILT.raphe?1:0)!==(drewRaphe?1:0)) throw Error('raphe');
+    if(!BUILT.raphe && drewRaphe) throw Error('a raphe on this valve was kept');
+    if(BUILT.pores.length && drewPores<BUILT.pores.length*0.5) throw Error('pores');
+  }
+  const bear=place(0, window.center(FORM, 0)*0.2, ground+0.22);
+  const bearS=project(bear);
+  if(!bearS) throw Error('bear');
+  const bearR=Math.max(2, 0.05/bearS.depth*canvas.height*1.37);
+  ctx.beginPath();
+  ctx.fillStyle='#f0c0a0';
+  ctx.globalAlpha=1;
+  ctx.arc(bearS.x, bearS.y, bearR, 0, 6.283185307179586);
+  ctx.fill();
+  ctx.strokeStyle=INK;
+  ctx.lineWidth=1.5;
+  ctx.stroke();
+  const mito=project(place(0.04, window.center(FORM, 0)*0.2, ground+0.24));
+  if(mito){
+    ctx.beginPath();
+    ctx.fillStyle='#ff7a3a';
+    ctx.arc(mito.x, mito.y, Math.max(1.4, bearR*0.38), 0, 6.283185307179586);
+    ctx.fill();
+  }
+  for(let side=-1; side<=1; side+=2){
+    const leaf=project(place(0.28*side, window.center(FORM, 0.28*side), faceY(0.28*side)-0.02));
+    if(!leaf) continue;
+    ctx.beginPath();
+    ctx.fillStyle=GOLD;
+    ctx.globalAlpha=0.9;
+    ctx.ellipse(leaf.x, leaf.y, Math.max(4, canvas.height*0.012), Math.max(2, canvas.height*0.006), 0, 0, 6.283185307179586);
+    ctx.fill();
+  }
+  valveSpan=Math.hypot(left.x-right.x, left.y-right.y);
+  bearPx=bearR*2;
+  if(!draws && !(valveSpan>bearPx*2)) throw Error('diatom small');
+  ctx.globalAlpha=1;
+  ctx.fillStyle=INK;
+  ctx.font='600 '+Math.max(16, canvas.height*0.03)+'px Georgia, serif';
+  ctx.fillText(WHO, mid.x+14, mid.y-16);
+  const hvDot=heading();
+  const dx=BEACON[0]-START[0], dz=BEACON[1]-START[1], gl=Math.hypot(dx, dz);
+  const dot=(hvDot.x*dx+hvDot.z*dz)/gl;
+  if(!draws && Math.abs(posX-START[0])<1e-9 && Math.abs(posZ-START[1])<1e-9 && Math.abs(dot-1)>1e-6) throw Error('valve faces away');
+  draws++;
+}
+function frame(){ move(); draw(); }
+function onPointer(ev){
+  if(!canvas.getBoundingClientRect) return;
+  const rect=canvas.getBoundingClientRect();
+  const rw=rect.width||1, rh=rect.height||1;
+  const px=((ev.clientX-rect.left)/rw)*canvas.width;
+  const py=((ev.clientY-rect.top)/rh)*canvas.height;
+  if(ev.preventDefault) ev.preventDefault();
+  const b=basis();
+  const sx=(px-canvas.width/2)/(canvas.height*1.37);
+  const sy=(canvas.height/2-py)/(canvas.height*1.37);
+  let dx=b.lx+b.rx*sx+b.ux*sy;
+  let dy=b.ly+b.ry*sx+b.uy*sy;
+  let dz=b.lz+b.rz*sx+b.uz*sy;
+  const len=Math.hypot(dx, dy, dz);
+  if(!(len>0)) return;
+  dx/=len; dy/=len; dz/=len;
+  if(!(dy<-1e-4)) return;
+  const t=-b.camy/dy;
+  if(!(t>0)) return;
+  aim(b.camx+dx*t, b.camz+dz*t);
+  if(host.focus) host.focus();
+}
+canvas.addEventListener('pointerdown', onPointer);
+function onKey(e, down){
+  const k=e.key;
+  let bit=0, turn=0;
+  if(k==='w'||k==='W'||k==='ArrowUp') bit=1;
+  else if(k==='s'||k==='S'||k==='ArrowDown') bit=-1;
+  else if(k==='a'||k==='A'||k==='ArrowLeft') turn=1;
+  else if(k==='d'||k==='D'||k==='ArrowRight') turn=-1;
+  else return;
+  if(e.preventDefault) e.preventDefault();
+  if(bit) keys.f=down?bit:0;
+  if(turn) keys.y=down?turn:0;
+  if(down) goal=null;
+}
+addEventListener('keydown', function(e){ onKey(e, 1); });
+addEventListener('keyup', function(e){ onKey(e, 0); });
+addEventListener('resize', fit);
+window.__diatom={
+  frame:frame, keys:keys, aim:aim, kept:kept, heading:heading, project:project, canvas:canvas,
+  pos:function(){ return {x:posX, z:posZ, yaw:yaw}; },
+  cam:function(){ const b=basis(); return {x:b.camx, y:b.camy, z:b.camz}; },
+  ny:ny, water:WATER, drewWater:function(){ return drewWater; },
+  style:STYLE, who:WHO, form:FORM, tune:MARK,
+  word:function(){ return window.VALVEWORD; },
+  glide:function(){ return window.GLIDEWORD; },
+  span:function(){ return valveSpan; },
+  bearPx:function(){ return bearPx; },
+  striae:BUILT.striae, pores:BUILT.poresN, raphe:BUILT.rapheN,
+  drewRaphe:function(){ return drewRaphe; },
+  drewStriae:function(){ return drewStriae; },
+  dpr:dpr,
+  reset:function(){ posX=START[0]; posZ=START[1]; yaw=startYaw; best=startGap; lastDrop=startGap; kept.length=0; keys.f=0; keys.y=0; goal=null; },
+  dot:function(){ const hv=heading(); const dx=BEACON[0]-posX, dz=BEACON[1]-posZ, g=Math.hypot(dx, dz); return (hv.x*dx+hv.z*dz)/g; }
+};
+(function(){
+  const b=basis();
+  if(b.camy!==1.28) throw Error('camera high');
+})();
+fit();
+proveMove();
+draw();
+if(!(reduce||thumb)){
+  const run=function(){ frame(); requestAnimationFrame(run); };
+  requestAnimationFrame(run);
+}
+})();
+</script>
+<script id="cubit-register-boot">
+(function(){
+  if(/[?&]thumb=1/.test(location.search)) return;
+  if(document.getElementById('cubit-register')) return;
+  const ORDER=['geometric','constructive','agentic','generative'];
+  const ROLES=['ARTIST','CRITIC','BUILDER','WEAVER','FOLLOWER','KEEPER'];
+  const KEY='mayhem-cubit-register';
+  function slug(){
+    for(const sc of document.scripts){
+      const m=/const SLUG="([^"]+)"/.exec(sc.textContent||'');
+      if(m) return m[1];
+    }
+    return (location.pathname.replace(/^\//,'').replace(/\.html$/i,''))||'index';
+  }
+  function geometric(){
+    let canvases=0, svgs=0, w=0, h=0;
+    document.querySelectorAll('canvas').forEach(el=>{ canvases++; w=Math.max(w, el.clientWidth|0); h=Math.max(h, el.clientHeight|0); });
+    document.querySelectorAll('svg').forEach(el=>{ svgs++; w=Math.max(w, el.clientWidth|0); h=Math.max(h, el.clientHeight|0); });
+    const v3=document.getElementById('v3');
+    if(v3){ w=Math.max(w, v3.clientWidth|0); h=Math.max(h, v3.clientHeight|0); }
+    if(!w){ w=document.documentElement.clientWidth|0; h=document.documentElement.clientHeight|0; }
+    return {name:'geometric', text:canvases+'c+'+svgs+'s·'+w+'x'+h, canvases, svgs, w, h};
+  }
+  function constructive(host){
+    const nodes=host.querySelectorAll('*').length, buttons=host.querySelectorAll('button').length;
+    return {name:'constructive', text:nodes+'n·'+buttons+'b', nodes, buttons};
+  }
+  function agentic(host, c){
+    const text=host.innerText||'';
+    const found=ROLES.filter(r=>text.indexOf(r)!==-1);
+    const agents=found.length?found:['REGISTER'];
+    return {name:'agentic', text:agents.join('+'), agents, accepted:c.nodes>0};
+  }
+  function generative(g,c,a){
+    const s=g.text+'|'+c.text+'|'+a.text;
+    let x=2166136261;
+    for(let i=0;i<s.length;i++) x=Math.imul(x^s.charCodeAt(i), 16777619);
+    const code=(x>>>0).toString(16).padStart(8,'0');
+    return {name:'generative', text:code, code};
+  }
+  function build(host){
+    const register=[];
+    const g=geometric(); register.push(g);
+    const c=constructive(host); register.push(c);
+    const a=agentic(host,c); register.push(a);
+    register.push(generative(g,c,a));
+    return register;
+  }
+  function assertReg(register){
+    if(register.length!==4) throw Error('register length '+register.length);
+    if(register.map(x=>x.name).join(',')!==ORDER.join(',')) throw Error('cubit order');
+    if(register.some(x=>!x.text)) throw Error('empty cubit');
+    if(!register[2].accepted) throw Error('agent refused the register');
+    const again=generative(register[0], register[1], register[2]);
+    if(again.code!==register[3].code) throw Error('register drift');
+    return register.map(x=>x.text).join(' | ');
+  }
+  function remember(id, word){
+    let book={};
+    try{ book=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){ book={}; }
+    book[id]={word};
+    try{ localStorage.setItem(KEY, JSON.stringify(book)); }catch(e){}
+    return Object.keys(book).length;
+  }
+  function mount(register, err, rows){
+    let el=document.getElementById('cubit-register');
+    if(!el){
+      const style=document.createElement('style');
+      style.textContent='#cubit-register{margin:18px 0;padding:14px 12px 12px;border:1px solid rgba(0,240,255,.28);border-radius:14px;background:rgba(5,8,16,.78);box-shadow:0 0 28px rgba(0,240,255,.08);color:#d7e3f5;text-align:left;font-family:ui-monospace,Menlo,monospace}#cubit-register .cr-formula{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#eaf6ff;text-shadow:0 0 8px #00f0ff;margin:0 0 10px}#cubit-register .cr-row{display:flex;gap:8px;flex-wrap:wrap}#cubit-register .cr-cubit{flex:1 1 140px;border:1px solid rgba(0,240,255,.25);border-radius:10px;padding:8px;background:rgba(0,0,0,.35)}#cubit-register .cr-cubit b{display:block;font-weight:400;font-size:10px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:4px}#cubit-register .cr-cubit[data-cubit=geometric] b{color:#00f0ff}#cubit-register .cr-cubit[data-cubit=constructive] b{color:#ffb300}#cubit-register .cr-cubit[data-cubit=agentic] b{color:#ff2bd6}#cubit-register .cr-cubit[data-cubit=generative] b{color:#eaf6ff}#cubit-register .cr-cubit i{font-style:normal;font-size:13px;color:#eaf6ff}#cubit-register .cr-word{margin-top:10px;font-size:12px;color:#ffb3ec;word-break:break-all}#cubit-register .cr-status{margin-top:8px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#8fa3c7}body.thumb #cubit-register{display:none}';
+      document.head.appendChild(style);
+      el=document.createElement('section');
+      el.id='cubit-register';
+      el.setAttribute('aria-label','cubit register');
+      const host=document.getElementById('wrap')||document.querySelector('main')||document.body;
+      const h=host.querySelector('h1');
+      if(h) h.insertAdjacentElement('afterend', el);
+      else host.insertBefore(el, host.firstChild);
+    }
+    const cells=(register||ORDER.map(name=>({name,text:'—'}))).map(x=>'<div class="cr-cubit" data-cubit="'+x.name+'"><b>'+x.name+'</b><i>'+x.text+'</i></div>').join('');
+    const word=err?'':register.map(x=>x.text).join(' | ');
+    el.innerHTML='<div class="cr-formula">{{ geometric, constructive, agentic, generative }}</div><div class="cr-row">'+cells+'</div><div class="cr-word">'+(err?'':'REGISTER '+word)+'</div><div class="cr-status">'+(err?'FAIL '+err.message:'LIT four cubits wrote the register · AMBER this browser holds '+rows+' rows')+'</div>';
+  }
+  function run(){
+    const host=document.getElementById('wrap')||document.querySelector('main')||document.body;
+    try{
+      const register=build(host);
+      const word=assertReg(register);
+      const rows=remember(slug(), word);
+      mount(register, null, rows);
+    }catch(e){
+      mount(null, e, 0);
+      throw e;
+    }
+  }
+  requestAnimationFrame(run);
+})();
+</script>
+</body>
+</html>

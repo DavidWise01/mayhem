@@ -1,0 +1,1 @@
+{"slug":"diatom-coscinodiscus-sieve","seal":"aab6876b20d3b73e18acfc7256dbc476c7b55de1a530b94e02f0738cd8f88099","rule":"sha256(name|slug|blurb)","write":"if-missing"}

@@ -1,0 +1,1 @@
+{"slug":"diatom-cymbella-crescent","seal":"da018153e82aab58086c77a33b1a8e1e1b95fbb4b7b98748dc8877f9dcff7dd4","rule":"sha256(name|slug|blurb)","write":"if-missing"}

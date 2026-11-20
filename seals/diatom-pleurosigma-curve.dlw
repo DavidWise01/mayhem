@@ -1,0 +1,1 @@
+{"slug":"diatom-pleurosigma-curve","seal":"0b109404d60c5b2f1d78dcffc996038b23d21310cc07da5e95766d51a1ac24ef","rule":"sha256(name|slug|blurb)","write":"if-missing"}

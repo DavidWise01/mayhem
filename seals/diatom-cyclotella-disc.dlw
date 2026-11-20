@@ -1,0 +1,1 @@
+{"slug":"diatom-cyclotella-disc","seal":"aea7cdf40453f7b00159d4d9e0b23a487627387c706f6067c6072c2affb92899","rule":"sha256(name|slug|blurb)","write":"if-missing"}

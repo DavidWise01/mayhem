@@ -1,0 +1,1 @@
+{"slug":"diatom-navicula-glide","seal":"787ffe71df6c47189c77bc010131ee6ffc212a7f2a4338b0b55168aa2c537989","rule":"sha256(name|slug|blurb)","write":"if-missing"}

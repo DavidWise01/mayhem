@@ -1,0 +1,1 @@
+{"slug":"diatom-synedra-needle","seal":"ae9626886c37935661a73c11dd0c2fa9c028791b48aba1d3ed05055d59047047","rule":"sha256(name|slug|blurb)","write":"if-missing"}
