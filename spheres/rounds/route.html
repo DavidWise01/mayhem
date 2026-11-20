@@ -117,9 +117,16 @@ function remember(pack){
  const row=book[SLUG];
  if(!row) book[SLUG]={pack:pack,act:"round",visits:1};
  else { if(row.pack!==pack||row.act!=="round") throw Error("persistent drift"); row.visits+=1; }
- localStorage.setItem(key, JSON.stringify(book));
- const again=JSON.parse(localStorage.getItem(key))[SLUG];
- if(!again||again.pack!==pack) throw Error("persistent drift");
+ const keptRow=book[SLUG];
+ try{ localStorage.setItem(key, JSON.stringify(book)); }
+ catch(e){
+   try{ const one={}; one[SLUG]=keptRow; localStorage.setItem(key, JSON.stringify(one)); }
+   catch(e2){ return keptRow.visits; }
+ }
+ let again=null;
+ try{ again=JSON.parse(localStorage.getItem(key)||'{}')[SLUG]; }catch(e3){ again=null; }
+ if(!again) return keptRow.visits;
+ if(again.pack!==pack) throw Error("persistent drift");
  return again.visits;
 }
 async function sha(t){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(t));return[...new Uint8Array(b)].map(v=>v.toString(16).padStart(2,'0')).join('')}

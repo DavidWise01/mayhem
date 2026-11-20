@@ -97,9 +97,16 @@ function remember(word){
   const row=book[SLUG];
   if(!row) book[SLUG]={word:word, visits:1};
   else { if(row.word!==word) throw Error('persistent drift'); row.visits+=1; }
-  localStorage.setItem(key, JSON.stringify(book));
-  const again=JSON.parse(localStorage.getItem(key))[SLUG];
-  if(!again||again.word!==word) throw Error('persistent drift');
+  const keptRow=book[SLUG];
+  try{ localStorage.setItem(key, JSON.stringify(book)); }
+  catch(e){
+    try{ const one={}; one[SLUG]=keptRow; localStorage.setItem(key, JSON.stringify(one)); }
+    catch(e2){ return keptRow.visits; }
+  }
+  let again=null;
+  try{ again=JSON.parse(localStorage.getItem(key)||'{}')[SLUG]; }catch(e3){ again=null; }
+  if(!again) return keptRow.visits;
+  if(again.word!==word) throw Error('persistent drift');
   return again.visits;
 }
 function rememberLand(word){
@@ -109,9 +116,16 @@ function rememberLand(word){
   const row=book[SLUG];
   if(!row) book[SLUG]={word:word, visits:1};
   else { if(row.word!==word) throw Error('land drift'); row.visits+=1; }
-  localStorage.setItem(key, JSON.stringify(book));
-  const again=JSON.parse(localStorage.getItem(key))[SLUG];
-  if(!again||again.word!==word) throw Error('land drift');
+  const keptRow=book[SLUG];
+  try{ localStorage.setItem(key, JSON.stringify(book)); }
+  catch(e){
+    try{ const one={}; one[SLUG]=keptRow; localStorage.setItem(key, JSON.stringify(one)); }
+    catch(e2){ return keptRow.visits; }
+  }
+  let again=null;
+  try{ again=JSON.parse(localStorage.getItem(key)||'{}')[SLUG]; }catch(e3){ again=null; }
+  if(!again) return keptRow.visits;
+  if(again.word!==word) throw Error('land drift');
   return again.visits;
 }
 function seedOf(s){
@@ -271,9 +285,16 @@ function rememberBiome(word){
   const row=book[SLUG];
   if(!row) book[SLUG]={word:word, visits:1};
   else { if(row.word!==word) throw Error('biome drift'); row.visits+=1; }
-  localStorage.setItem(key, JSON.stringify(book));
-  const again=JSON.parse(localStorage.getItem(key))[SLUG];
-  if(!again||again.word!==word) throw Error('biome drift');
+  const keptRow=book[SLUG];
+  try{ localStorage.setItem(key, JSON.stringify(book)); }
+  catch(e){
+    try{ const one={}; one[SLUG]=keptRow; localStorage.setItem(key, JSON.stringify(one)); }
+    catch(e2){ return keptRow.visits; }
+  }
+  let again=null;
+  try{ again=JSON.parse(localStorage.getItem(key)||'{}')[SLUG]; }catch(e3){ again=null; }
+  if(!again) return keptRow.visits;
+  if(again.word!==word) throw Error('biome drift');
   return again.visits;
 }
 const biomeWord=biomeOnce();
